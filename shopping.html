@@ -13,10 +13,25 @@
     <!-- Navigation -->
     <nav class="nav-sticky">
         <div class="nav-container">
-            <a href="index.html" class="nav-link">🔙 回首頁</a>
-            <span class="nav-link active">🛍️ 購物清單</span>
+            <a href="index.html" class="nav-link">🏠 首頁</a>
+            <a href="index.html#tickets" class="nav-link">🎫 票券</a>
+            <a href="index.html#overview" class="nav-link">📋 總覽</a>
+            <a href="index.html#day1" class="nav-link">Day 1</a>
+            <a href="index.html#day2" class="nav-link">Day 2</a>
+            <a href="index.html#day3" class="nav-link">Day 3</a>
+            <a href="index.html#day4" class="nav-link">Day 4</a>
+            <a href="index.html#day5" class="nav-link">Day 5</a>
+            <a href="index.html#day6" class="nav-link">Day 6</a>
+            <span class="nav-link active">🛍️ 購物</span>
         </div>
     </nav>
+    <header class="hero" style="min-height: 40vh; background: var(--gradient-spring);">
+        <div class="hero-content">
+            <span class="hero-badge">Shopping List</span>
+            <h1>🛍️ 我的購物採購清單</h1>
+            <p class="hero-subtitle">記錄下在日本想買的所有清單，滿載而歸！</p>
+        </div>
+    </header>
 
     <main class="main-content">
         <section class="section">
@@ -38,6 +53,38 @@
                 <ul id="shoppingList" class="shopping-list">
                     <!-- JS will populate this -->
                 </ul>
+            </div>
+        </section>
+        <section class="section">
+            <div class="section-header">
+                <h2>📍 行程相關購物推薦</h2>
+                <p>根據您的 6 天行程整理的購物熱點</p>
+            </div>
+            <div class="events-grid">
+                <div class="event-card">
+                    <h3>Day 1: 熱海商圈</h3>
+                    <p>平和通與仲見世通商店街</p>
+                    <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 1rem;">
+                        <button class="category-tag" onclick="addItem('溫泉饅頭')">+ 溫泉饅頭</button>
+                        <button class="category-tag" onclick="addItem('熱海布丁')">+ 熱海布丁</button>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <h3>Day 2: 伊東漁港</h3>
+                    <p>在地海產與乾貨</p>
+                    <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 1rem;">
+                        <button class="category-tag" onclick="addItem('伊勢龍蝦乾貨')">+ 伊勢龍蝦乾貨</button>
+                        <button class="category-tag" onclick="addItem('在地海產拌手禮')">+ 在地海產拌手禮</button>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <h3>Day 5: 秩父特產</h3>
+                    <p>傳統工藝與清酒</p>
+                    <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 1rem;">
+                        <button class="category-tag" onclick="addItem('秩父錦日本酒')">+ 秩父錦日本酒</button>
+                        <button class="category-tag" onclick="addItem('秩父味噌')">+ 秩父味噌</button>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
