@@ -135,7 +135,7 @@
                 li.innerHTML = `
                     <input type="checkbox" class="item-checkbox" ${item.completed ? 'checked' : ''} onchange="toggleItem(${index})">
                     <span class="item-text">${item.text}</span>
-                    <button class="btn-delete" onclick="deleteItem(${index})">🗑️</button>
+                    <button class="btn-delete" title="刪除項目" onclick="deleteItem(event, ${index})">🗑️</button>
                 `;
                 listEl.appendChild(li);
             });
@@ -156,11 +156,10 @@
             renderList();
         }
 
-        function deleteItem(index) {
-            if(confirm('確定要刪除嗎？')) {
-                items.splice(index, 1);
-                renderList();
-            }
+        function deleteItem(event, index) {
+            if (event) event.stopPropagation();
+            items.splice(index, 1);
+            renderList();
         }
 
         function save() {
