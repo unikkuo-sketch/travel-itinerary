@@ -1,0 +1,39 @@
+{
+  "meta": {
+    "slug": "YYYY_地區_性質",
+    "title": "行程標題",
+    "subtitle": "副標題 · 地點A × 地點B",
+    "badge": "YYYY年M月",
+    "dateRange": "MM/DD - MM/DD",
+    "ticketSummary": "交通票券摘要",
+    "highlights": ["亮點一", "亮點二"],
+    "footerWish": "祝您旅途順利！",
+    "footerDate": "行程規劃 · 日期區間"
+  },
+  "shopping": {
+    "suggestions": ["範例商品"],
+    "recommendations": [
+      { "title": "Day 1: 地點", "desc": "說明", "items": ["商品A", "商品B"] }
+    ]
+  },
+  "events": [
+    { "region": "地區名", "items": ["活動或季節特色"] }
+  ],
+  "weather": {
+    "temps": { "high": "00°C", "low": "00°C" },
+    "note": "氣候備註",
+    "tips": ["穿著建議一"]
+  },
+  "tickets": [],
+  "overview": [],
+  "days": [],
+  "budget": {
+    "categories": [],
+    "total": { "amount": "¥0", "twd": "約 NT$ 0 /人" }
+  },
+  "map": {
+    "center": [35.5, 139.5],
+    "zoom": 8,
+    "locations": []
+  }
+}

@@ -1,167 +1,41 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🌸 2026關東賞櫻6日遊 | 2026年3月</title>
-    <meta name="description" content="2026年3月關東賞櫻6日遊完整行程規劃，含熱海溫泉、伊東、秩父長瀞">
+    <title>我的旅遊行程</title>
+    <meta name="description" content="個人旅遊行程總覽">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
-  <script type="module" crossorigin src="/travel-itinerary-2026/assets/main-BoQiEbKd.js"></script>
-  <link rel="modulepreload" crossorigin href="/travel-itinerary-2026/assets/nav-BGA5Am4L.js">
-  <link rel="stylesheet" crossorigin href="/travel-itinerary-2026/assets/nav-DEvwEae7.css">
-  <link rel="stylesheet" crossorigin href="/travel-itinerary-2026/assets/main-CIGW-MKW.css">
+  <script type="module" crossorigin src="/travel-itinerary-2026/assets/hub-g2DFimrX.js"></script>
+  <link rel="modulepreload" crossorigin href="/travel-itinerary-2026/assets/load-trip-BSJqSYCQ.js">
+  <link rel="stylesheet" crossorigin href="/travel-itinerary-2026/assets/load-trip-BWSvmMOH.css">
 </head>
-
 <body>
-    <header class="hero">
+    <header class="hero hero-hub">
         <div class="hero-content">
-            <span class="hero-badge">2026年3月</span>
-            <h1>🌸 2026關東賞櫻6日遊</h1>
-            <p class="hero-subtitle">家庭溫泉之旅 · 熱海 × 伊東 × 長瀞 × 秩父</p>
-            <div class="hero-info">
-                <div class="info-item"><span class="info-icon">📅</span><span>03/27 - 04/01</span></div>
-                <div class="info-item"><span class="info-icon">🎫</span><span>單程購票 / IC卡 + 西武秩父套票</span></div>
-                <div class="info-item"><span class="info-icon">♨️</span><span>含溫泉飯店一泊二食</span></div>
-            </div>
-        </div>
-        <div class="scroll-indicator"><span>向下滑動</span>
-            <div class="scroll-arrow"></div>
+            <span class="hero-badge">Travel Hub</span>
+            <h1>✈️ 我的旅遊行程</h1>
+            <p class="hero-subtitle">所有旅程規劃，一站瀏覽</p>
         </div>
     </header>
 
-    <nav class="nav-sticky">
-        <div id="nav-container" class="nav-container"></div>
-    </nav>
-
     <main class="main-content">
-        <section id="tickets" class="section">
-            <div class="section-header">
-                <h2>🎫 推薦票券搭配</h2>
-                <p>善用交通票券，省錢又省心</p>
-            </div>
-            <div id="ticket-grid" class="ticket-grid"></div>
-        </section>
-
-        <section id="overview" class="section">
-            <div class="section-header">
-                <h2>📅 優化行程總覽</h2>
-                <p>6天5夜完整規劃一覽表</p>
-            </div>
-            <div class="overview-table-wrapper">
-                <table class="overview-table">
-                    <thead>
-                        <tr>
-                            <th>天數</th>
-                            <th>日期</th>
-                            <th>主要地點</th>
-                            <th>住宿</th>
-                            <th>交通重點</th>
-                        </tr>
-                    </thead>
-                    <tbody id="overview-body"></tbody>
-                </table>
-            </div>
-        </section>
-
-        <section id="route-map" class="section">
-            <div class="section-header">
-                <h2>🗺️ 本次旅程路線</h2>
-                <p>關東廣域橫跨路線圖</p>
-            </div>
-            <div id="leaflet-map" class="leaflet-map"></div>
-        </section>
-
-        <div id="days-root"></div>
-
-        <section id="budget" class="section">
-            <div class="section-header">
-                <h2>💰 預算總覽（每人）</h2>
-                <p>詳細費用估算</p>
-            </div>
-            <div id="budget-root"></div>
-        </section>
-
         <section class="section">
             <div class="section-header">
-                <h2>🌸 3月底特色活動</h2>
-                <p>季節限定體驗</p>
+                <h2>📋 行程列表</h2>
+                <p>選擇一趟旅程查看完整規劃</p>
             </div>
-            <div class="events-grid">
-                <div class="event-card">
-                    <h3>熱海地區</h3>
-                    <ul>
-                        <li>🌸 <strong>河津櫻</strong>：3月下旬可能尾聲</li>
-                        <li>🌸 <strong>熱海梅園</strong>：梅花季結束，迎接春天</li>
-                    </ul>
-                </div>
-                <div class="event-card">
-                    <h3>伊東地區</h3>
-                    <ul>
-                        <li>🌸 <strong>伊豆高原櫻花大道</strong>：3月底-4月初最美</li>
-                        <li>🏔️ <strong>大室山</strong>：春季草原景色</li>
-                    </ul>
-                </div>
-                <div class="event-card">
-                    <h3>長瀞地區</h3>
-                    <ul>
-                        <li>🌸 <strong>清雲寺枝垂櫻</strong>：3月底-4月初</li>
-                        <li>🌸 <strong>寶登山梅園</strong>：可能有梅花尾聲</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <section id="weather" class="section">
-            <div class="section-header">
-                <h2>🌤️ 關東春季氣候與穿著建議</h2>
-                <p>3月底至4月初天氣與穿搭參考</p>
-            </div>
-            <div class="weather-grid">
-                <div class="weather-card">
-                    <div class="weather-icon">🌸</div>
-                    <h3>氣溫概況</h3>
-                    <div class="weather-info">
-                        <div class="temp-row"><span>☀️ 白天高溫</span><span class="temp high">15°C - 18°C</span></div>
-                        <div class="temp-row"><span>🌙 夜晚低溫</span><span class="temp low">5°C - 8°C</span></div>
-                    </div>
-                    <p class="weather-note">關東地區春季日夜溫差大，秩父與長瀞等郊區或是山區氣溫通常會再低 2-3°C。</p>
-                </div>
-                <div class="weather-card">
-                    <div class="weather-icon">🧥</div>
-                    <h3>穿著建議</h3>
-                    <ul class="weather-tips">
-                        <li>✅ <strong>洋蔥式穿法</strong>：內搭薄長袖 + 保暖毛衣/針織衫 + 防風防寒厚外套。</li>
-                        <li>✅ <strong>方便穿脫</strong>：日本室內與車廂內暖氣仍強，建議穿脫方便的外套。</li>
-                        <li>✅ <strong>山區準備</strong>：前往大室山、寶登山時風勢較強，建議準備防風外套與帽子。</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <section class="section">
-            <div class="section-header">
-                <h2>📱 實用APP推薦</h2>
-            </div>
-            <div class="apps-grid">
-                <div class="app-item"><span class="app-icon">🗺️</span><span class="app-name">Google Maps</span><span class="app-desc">導航必備</span></div>
-                <div class="app-item"><span class="app-icon">🚃</span><span class="app-name">換乘案內</span><span class="app-desc">查詢電車時刻</span></div>
-                <div class="app-item"><span class="app-icon">🍜</span><span class="app-name">Tabelog</span><span class="app-desc">餐廳評價</span></div>
-                <div class="app-item"><span class="app-icon">🌐</span><span class="app-name">Google翻譯</span><span class="app-desc">即時翻譯</span></div>
-                <div class="app-item"><span class="app-icon">🌤️</span><span class="app-name">tenki.jp</span><span class="app-desc">天氣預報</span></div>
-            </div>
+            <div id="hub-grid" class="hub-grid"></div>
         </section>
     </main>
 
     <footer class="footer">
         <div class="footer-content">
-            <p class="footer-wish">🎌 祝您2026年3月的熱海長瀞之旅順利！✨</p>
-            <p class="footer-date">行程規劃 · 2026年3月27日 - 4月1日</p>
+            <p class="footer-wish">🌏 記錄每一段旅途</p>
         </div>
     </footer>
 
 </body>
-
 </html>
