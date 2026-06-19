@@ -1,0 +1,583 @@
+{
+  "meta": {
+    "slug": "2026_日本熱海長瀞_家族旅遊",
+    "title": "2026關東賞櫻6日遊",
+    "subtitle": "家庭溫泉之旅 · 熱海 × 伊東 × 長瀞 × 秩父",
+    "badge": "2026年3月",
+    "dateRange": "03/27 - 04/01",
+    "ticketSummary": "單程購票 / IC卡 + 西武秩父套票",
+    "highlights": [
+      "含溫泉飯店一泊二食"
+    ],
+    "footerWish": "祝您2026年3月的熱海長瀞之旅順利！",
+    "footerDate": "行程規劃 · 2026年3月27日 - 4月1日"
+  },
+  "shopping": {
+    "suggestions": [
+      "EVE止痛藥",
+      "合利他命",
+      "Wakamoto",
+      "DHC護唇膏",
+      "蒸氣眼罩",
+      "休足時間",
+      "熱海布丁",
+      "溫泉饅頭",
+      "秩父味噌",
+      "秩父錦日本酒"
+    ],
+    "recommendations": [
+      {
+        "title": "Day 1: 熱海商圈",
+        "desc": "平和通與仲見世通商店街",
+        "items": [
+          "溫泉饅頭",
+          "熱海布丁"
+        ]
+      },
+      {
+        "title": "Day 2: 伊東漁港",
+        "desc": "在地海產與乾貨",
+        "items": [
+          "伊勢龍蝦乾貨",
+          "在地海產拌手禮"
+        ]
+      },
+      {
+        "title": "Day 5: 秩父特產",
+        "desc": "傳統工藝與清酒",
+        "items": [
+          "秩父錦日本酒",
+          "秩父味噌"
+        ]
+      }
+    ]
+  },
+  "events": [
+    {
+      "region": "熱海地區",
+      "items": [
+        "河津櫻：3月下旬可能尾聲",
+        "熱海梅園：梅花季結束，迎接春天"
+      ]
+    },
+    {
+      "region": "伊東地區",
+      "items": [
+        "伊豆高原櫻花大道：3月底-4月初最美",
+        "大室山：春季草原景色"
+      ]
+    },
+    {
+      "region": "長瀞地區",
+      "items": [
+        "清雲寺枝垂櫻：3月底-4月初",
+        "寶登山梅園：可能有梅花尾聲"
+      ]
+    }
+  ],
+  "weather": {
+    "temps": {
+      "high": "15°C - 18°C",
+      "low": "5°C - 8°C"
+    },
+    "note": "關東地區春季日夜溫差大，秩父與長瀞等郊區或是山區氣溫通常會再低 2-3°C。",
+    "tips": [
+      "洋蔥式穿法：內搭薄長袖 + 保暖毛衣/針織衫 + 防風防寒厚外套。",
+      "方便穿脫：日本室內與車廂內暖氣仍強，建議穿脫方便的外套。",
+      "山區準備：前往大室山、寶登山時風勢較強，建議準備防風外套與帽子。"
+    ]
+  },
+  "tickets": [
+    {
+      "variant": "primary",
+      "title": "單程購票 / IC卡",
+      "badge": "彈性購票",
+      "price": "¥12,000",
+      "priceSuffix": "/人 (預估)",
+      "meta": "📆 使用日期：Day 1-3（03/27-03/29）",
+      "features": [
+        "✅ 使用 Suica/Pasmo 搭乘地鐵與一般電車",
+        "✅ 單程購買新幹線口票券 (東京→熱海)",
+        "✅ 指定席購票 (藍寶石踴子號)"
+      ]
+    },
+    {
+      "variant": "secondary",
+      "title": "西武鐵道秩父慢遊車票",
+      "badge": "2日券",
+      "price": "¥2,230",
+      "priceSuffix": "/人",
+      "meta": "📆 使用日期：Day 4-5（03/30-03/31）",
+      "features": [
+        "✅ 池袋⇔西武秩父 特急附單程券(+900円)",
+        "✅ 秩父鐵道全線一日券(1700円)",
+        "✅ 附西武秩父到三峯神社單程(944円)"
+      ]
+    }
+  ],
+  "overview": [
+    {
+      "day": 1,
+      "date": "03/27",
+      "places": "桃園→成田→熱海",
+      "hotel": "Resorpia Atami",
+      "transport": "單程購票 (巴士+新幹線)",
+      "transportClass": ""
+    },
+    {
+      "day": 2,
+      "date": "03/28",
+      "places": "伊東深度遊",
+      "hotel": "Hotel Yoshino",
+      "transport": "IC卡 (伊東線)",
+      "transportClass": ""
+    },
+    {
+      "day": 3,
+      "date": "03/29",
+      "places": "小室山公園賞櫻→池袋",
+      "hotel": "Super Hotel JR Ikebukuro West Exit",
+      "transport": "單程購票 (藍寶石踴子號)",
+      "transportClass": ""
+    },
+    {
+      "day": 4,
+      "date": "03/30",
+      "places": "池袋→長瀞→秩父",
+      "hotel": "Route-Inn Grand Chichibu",
+      "transport": "秩父漫遊車票",
+      "transportClass": "seibu"
+    },
+    {
+      "day": 5,
+      "date": "03/31",
+      "places": "三峯神社→秩父神社→池袋",
+      "hotel": "hotel hisoca ikebukuro",
+      "transport": "西武鐵道特急",
+      "transportClass": "seibu"
+    },
+    {
+      "day": 6,
+      "date": "04/01",
+      "places": "明治神宮→成田→桃園",
+      "hotel": "-",
+      "transport": "高速巴士",
+      "transportClass": ""
+    }
+  ],
+  "days": [
+    {
+      "id": "day1",
+      "number": 1,
+      "date": "03/27（五）",
+      "title": "抵達東京與熱海溫泉初體驗 🛫",
+      "timeline": [
+        {
+          "time": "06:40",
+          "place": "桃園國際機場",
+          "desc": "出發"
+        },
+        {
+          "time": "10:40",
+          "place": "成田國際機場",
+          "desc": "抵達日本、入境（搭11:10巴士）"
+        },
+        {
+          "time": "12:18",
+          "place": "東京車站",
+          "desc": "轉乘新幹線前往熱海（搭12:27 新幹線）",
+          "tag": "🎫 現場購票"
+        },
+        {
+          "time": "13:12",
+          "place": "熱海站",
+          "desc": "抵達熱海"
+        },
+        {
+          "time": "13:54",
+          "place": "Resorpia Atami",
+          "desc": "辦理入住",
+          "tag": "🏨 住宿"
+        },
+        {
+          "time": "14:19",
+          "place": "熱海站前平和通商店街",
+          "desc": "漫步商店街，品嚐溫泉饅頭與在地小吃"
+        },
+        {
+          "time": "16:41",
+          "place": "來宮神社",
+          "desc": "參訪以祈求健康長壽聞名的來宮神社，繞大楠樹一圈可延壽一年",
+          "tag": "⛩️ 能量景點",
+          "highlight": true
+        },
+        {
+          "place": "Resorpia Atami",
+          "desc": "享用晚餐、放鬆溫泉時光",
+          "tag": "♨️ 溫泉"
+        }
+      ],
+      "tips": [
+        "✅ <strong>成田→東京→熱海</strong>：搭11:10巴士至東京，再搭12:27新幹線直達熱海",
+        "✅ <strong>來宮神社</strong>：能量景點，傍晚參訪氛圍絕佳",
+        "✅ <strong>早點入住</strong>：充分享受Resorpia Atami溫泉設施"
+      ]
+    },
+    {
+      "id": "day2",
+      "number": 2,
+      "date": "03/28（六）",
+      "title": "伊東自然景觀探索 🏞️",
+      "timeline": [
+        {
+          "time": "09:36",
+          "place": "伊東車站",
+          "desc": "抵達伊東，前往 Hotel Yoshino 寄放行李"
+        },
+        {
+          "time": "11:03",
+          "place": "大室山 (Omuroyama)",
+          "desc": "搭乘纜車登山，欣賞360度壯麗全景，俯瞰伊豆高原與富士山美景。標高580公尺的休火山，擁有獨特碗狀火山口。",
+          "tag": "🏔️ 必訪",
+          "highlight": true
+        },
+        {
+          "time": "12:36",
+          "place": "本家鮪屋",
+          "desc": "享用新鮮海鮮午餐",
+          "tag": "🍣 美食"
+        },
+        {
+          "time": "14:43",
+          "place": "城崎海岸",
+          "desc": "探索城崎海岸，漫步於門脇吊橋，欣賞由熔岩冷卻形成的壯觀海蝕斷崖",
+          "tag": "🌊 絕景",
+          "highlight": true
+        },
+        {
+          "place": "Hotel Yoshino",
+          "desc": "入住、享用一泊二食晚餐、泡溫泉",
+          "tag": "♨️ 主要溫泉體驗"
+        }
+      ],
+      "tips": [
+        "✅ <strong>大室山</strong>：伊豆半島代表性火山，可沿火山口步道散步，享受無遮蔽絕佳視野",
+        "✅ <strong>城崎海岸</strong>：壯觀海蝕地形，門脇吊橋體驗",
+        "✅ <strong>Hotel Yoshino一泊二食</strong>：主要溫泉體驗日"
+      ]
+    },
+    {
+      "id": "day3",
+      "number": 3,
+      "date": "03/29（日）",
+      "title": "小室山公園賞櫻與池袋都會體驗 🌸",
+      "timeline": [
+        {
+          "time": "09:39",
+          "place": "小室山公園",
+          "desc": "賞櫻名所，欣賞粉紅櫻花與杜鵑花交織的春日美景",
+          "tag": "🌸 賞櫻",
+          "highlight": true
+        },
+        {
+          "time": "11:55",
+          "place": "Ito Fishing Port",
+          "desc": "體驗在地漁港風情，感受海港的活力",
+          "tag": "🐟 在地體驗"
+        },
+        {
+          "time": "12:10",
+          "place": "伊東車站",
+          "desc": "懷舊商店街體驗昭和風情"
+        },
+        {
+          "time": "15:10",
+          "place": "前往東京",
+          "desc": "搭乘15:10藍寶石踴子號 (Saphir Odoriko)，返回東京都會區",
+          "tag": "🎫 指定席購票",
+          "highlight": true
+        },
+        {
+          "time": "17:14",
+          "place": "池袋站",
+          "desc": "抵達東京重要交通樞紐，開始都會購物與美食探索",
+          "tag": "🛍️ 購物"
+        },
+        {
+          "time": "17:37",
+          "place": "Super Hotel JR Ikebukuro West Exit",
+          "desc": "入住飯店",
+          "tag": "🏨 住宿"
+        }
+      ],
+      "tips": [
+        "✅ <strong>小室山公園</strong>：從伊東的自然粉紅花海渡過至東京的繁華都會",
+        "✅ <strong>藍寶石踴子號</strong>：全車指定席，建議提前在 JR 官網或車站購買購票。",
+        "✅ <strong>池袋入住</strong>：Super Hotel JR Ikebukuro West Exit，隔天出發秩父超方便"
+      ]
+    },
+    {
+      "id": "day4",
+      "number": 4,
+      "date": "03/30（一）",
+      "title": "秩父神社文化與長瀞自然景觀 ⛰️",
+      "timeline": [
+        {
+          "time": "07:30",
+          "place": "池袋站出發",
+          "desc": "搭7:30特急，使用秩父漫遊車票前往西武秩父站",
+          "tag": "🎫 秩父漫遊車票"
+        },
+        {
+          "time": "08:50",
+          "place": "西武秩父站",
+          "desc": "抵達秩父，放行李"
+        },
+        {
+          "time": "11:18",
+          "place": "長瀞站",
+          "desc": "抵達長瀞，探索國家指定名勝「長瀞岩疊」",
+          "tag": "🏞️ 必訪",
+          "highlight": true
+        },
+        {
+          "time": "13:42",
+          "place": "寶登山神社",
+          "desc": "參訪秩父三社之一，感受莊嚴氛圍",
+          "tag": "⛩️ 景點",
+          "highlight": true
+        },
+        {
+          "time": "16:18",
+          "place": "清雲寺",
+          "desc": "欣賞寺廟建築與庭園美景，3月底枝垂櫻賞櫻名所",
+          "tag": "🌸 賞櫻"
+        },
+        {
+          "time": "17:58",
+          "place": "Hotel Route-Inn Grand Chichibu",
+          "desc": "入住飯店、晚餐",
+          "tag": "🏨 住宿"
+        }
+      ],
+      "tips": [
+        "✅ <strong>秩父漫遊車票</strong>：07:30從池袋搭特急出發",
+        "✅ <strong>長瀞岩疊</strong>：國家指定名勝天然紀念物",
+        "✅ <strong>彈性安排</strong>：手搖船需視天氣和體力調整"
+      ]
+    },
+    {
+      "id": "day5",
+      "number": 5,
+      "date": "03/31（二）",
+      "title": "三峯神社朝聖與秩父酒藏體驗 ⛩️",
+      "timeline": [
+        {
+          "time": "08:00",
+          "place": "飯店出發",
+          "desc": "享用早餐後出發"
+        },
+        {
+          "time": "10:04",
+          "place": "三峯神社參拜",
+          "desc": "位於海拔1100公尺深山中，以「狼」為守護神，是祈求開運與除厄的聖地。境內古木參天，筑圍莊嚴、擁有極強的靈氣。",
+          "tag": "🏔️ 關東最強能量",
+          "highlight": true
+        },
+        {
+          "time": "15:05",
+          "place": "秩父神社",
+          "desc": "參訪擁有2000年歷史的秩父神社，體驗日本傳統信仰",
+          "tag": "⛩️ 在地文化"
+        },
+        {
+          "time": "15:42",
+          "place": "Buko Shuzo Brewery 酒藏",
+          "desc": "前往在地酒藏品嚐秩父清酒，感受傳統釀造工藝",
+          "tag": "🍶 酒藏體驗"
+        },
+        {
+          "time": "16:20",
+          "place": "西武秩父站",
+          "desc": "搭16:24特急返回池袋",
+          "tag": "🚄 返回池袋"
+        },
+        {
+          "time": "17:50",
+          "place": "hotel hisoca ikebukuro",
+          "desc": "入住飯店",
+          "tag": "🏨 住宿"
+        },
+        {
+          "time": "18:10",
+          "place": "池袋燒肉晚餐",
+          "desc": "享用日本燒肉，結束秩父兩天的精彩旅程",
+          "tag": "🥩 美食",
+          "highlight": true
+        }
+      ],
+      "tips": [
+        "✅ <strong>三峯神社</strong>：關東最強能量景點，海拔1100公尺深山、狼守護神、境內筑圍莊嚴",
+        "✅ <strong>秩父神社</strong>：2000年歷史，體驗日本傳統信仰與建築",
+        "✅ <strong>Buko Shuzo Brewery</strong>：品嚐秩父清酒，感受傳統釀造工藝"
+      ]
+    },
+    {
+      "id": "day6",
+      "number": 6,
+      "date": "04/01（三）",
+      "title": "明治神宮參拜與返程 🛬",
+      "timeline": [
+        {
+          "time": "07:30",
+          "place": "飯店出發",
+          "desc": "早晨出發前往明治神宮"
+        },
+        {
+          "time": "08:00",
+          "place": "明治神宮參拜",
+          "desc": "漫步於廣闊的森林參道，感受都市中的寧靜與莊嚴。祭祀明治天皇與昭憲皇太后，是體驗日本神道文化與建築之美的最佳場所。",
+          "tag": "⛩️ 東京文化巡禮",
+          "highlight": true
+        },
+        {
+          "time": "09:10",
+          "place": "池袋西口（搭09:15巴士）",
+          "desc": "搭乘巴士前往成田國際機場",
+          "tag": "🚌 高速巴士",
+          "highlight": true
+        },
+        {
+          "time": "11:05",
+          "place": "成田國際機場",
+          "desc": "抵達成田機場，辦理登機、免稅店最後採購"
+        },
+        {
+          "time": "17:05",
+          "place": "桃園國際機場",
+          "desc": "抵達桃園，結束六天五夜的美好旅程 🌸",
+          "tag": "✈️ 返程",
+          "highlight": true
+        }
+      ],
+      "tips": []
+    }
+  ],
+  "budget": {
+    "categories": [
+      {
+        "icon": "🚄",
+        "title": "交通費用",
+        "items": [
+          {
+            "label": "成田→東京 (巴士) + 多場單程車票",
+            "amount": "¥12,000"
+          },
+          {
+            "label": "西武秩父套票 (2日)",
+            "amount": "¥2,230"
+          },
+          {
+            "label": "池袋→成田 (高速巴士)",
+            "amount": "¥1,900"
+          },
+          {
+            "label": "當地巴士/計程車",
+            "amount": "¥3,000"
+          }
+        ],
+        "subtotal": "¥19,130"
+      },
+      {
+        "icon": "🏨",
+        "title": "住宿費用（5晚）",
+        "items": [
+          {
+            "label": "Resorpia Atami（Day 1，1晚）",
+            "amount": "¥15,000"
+          },
+          {
+            "label": "Hotel Yoshino（Day 2，一泊二食）",
+            "amount": "¥30,000-40,000"
+          },
+          {
+            "label": "Super Hotel JR Ikebukuro West Exit（Day 3，1晚）",
+            "amount": "¥10,000"
+          },
+          {
+            "label": "Hotel Route-Inn Grand Chichibu（Day 4，1晚）",
+            "amount": "¥10,000"
+          },
+          {
+            "label": "hotel hisoca ikebukuro（Day 5，1晚）",
+            "amount": "¥10,000"
+          }
+        ],
+        "subtotal": "¥75,000-85,000"
+      },
+      {
+        "icon": "🍽️",
+        "title": "餐飲+門票",
+        "items": [
+          {
+            "label": "午餐、晚餐（5天）",
+            "amount": "¥20,000"
+          },
+          {
+            "label": "景點門票",
+            "amount": "¥5,000"
+          }
+        ],
+        "subtotal": "¥25,000"
+      }
+    ],
+    "total": {
+      "amount": "¥125,000 - 135,000",
+      "twd": "約 NT$ 26,000 - 28,000 /人"
+    }
+  },
+  "map": {
+    "center": [
+      35.5,
+      139.5
+    ],
+    "zoom": 8,
+    "locations": [
+      {
+        "name": "1. 成田機場 (Day 1起點 / Day 6終點)",
+        "coords": [
+          35.771986,
+          140.39285
+        ]
+      },
+      {
+        "name": "2. 熱海 (Day 1)",
+        "coords": [
+          35.09571,
+          139.076041
+        ]
+      },
+      {
+        "name": "3. 伊東 (Day 2)",
+        "coords": [
+          34.972986,
+          139.100913
+        ]
+      },
+      {
+        "name": "4. 東京池袋 (Day 3中轉)",
+        "coords": [
+          35.729503,
+          139.7109
+        ]
+      },
+      {
+        "name": "5. 秩父長瀞 (Day 4-5)",
+        "coords": [
+          36.096752,
+          139.117188
+        ]
+      }
+    ]
+  }
+}

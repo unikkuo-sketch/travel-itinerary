@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>旅遊行程</title>
+    <meta name="description" content="旅遊行程規劃">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <header id="hero-root" class="hero"></header>
+
+    <nav class="nav-sticky">
+        <div id="nav-container" class="nav-container"></div>
+    </nav>
+
+    <main class="main-content">
+        <section id="tickets" class="section">
+            <div class="section-header">
+                <h2>🎫 推薦票券搭配</h2>
+                <p>善用交通票券，省錢又省心</p>
+            </div>
+            <div id="ticket-grid" class="ticket-grid"></div>
+        </section>
+
+        <section id="overview" class="section">
+            <div class="section-header">
+                <h2>📅 優化行程總覽</h2>
+                <p>完整規劃一覽表</p>
+            </div>
+            <div class="overview-table-wrapper">
+                <table class="overview-table">
+                    <thead>
+                        <tr>
+                            <th>天數</th>
+                            <th>日期</th>
+                            <th>主要地點</th>
+                            <th>住宿</th>
+                            <th>交通重點</th>
+                        </tr>
+                    </thead>
+                    <tbody id="overview-body"></tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="route-map" class="section">
+            <div class="section-header">
+                <h2>🗺️ 本次旅程路線</h2>
+                <p>路線圖</p>
+            </div>
+            <div id="leaflet-map" class="leaflet-map"></div>
+        </section>
+
+        <div id="days-root"></div>
+
+        <section id="budget" class="section">
+            <div class="section-header">
+                <h2>💰 預算總覽（每人）</h2>
+                <p>詳細費用估算</p>
+            </div>
+            <div id="budget-root"></div>
+        </section>
+
+        <section class="section">
+            <div class="section-header">
+                <h2>🌸 季節特色活動</h2>
+                <p>季節限定體驗</p>
+            </div>
+            <div id="events-root" class="events-grid"></div>
+        </section>
+
+        <section id="weather" class="section">
+            <div class="section-header">
+                <h2>🌤️ 氣候與穿著建議</h2>
+                <p>天氣與穿搭參考</p>
+            </div>
+            <div id="weather-root" class="weather-grid"></div>
+        </section>
+
+        <section class="section">
+            <div class="section-header">
+                <h2>📱 實用APP推薦</h2>
+            </div>
+            <div class="apps-grid">
+                <div class="app-item"><span class="app-icon">🗺️</span><span class="app-name">Google Maps</span><span class="app-desc">導航必備</span></div>
+                <div class="app-item"><span class="app-icon">🚃</span><span class="app-name">換乘案內</span><span class="app-desc">查詢電車時刻</span></div>
+                <div class="app-item"><span class="app-icon">🍜</span><span class="app-name">Tabelog</span><span class="app-desc">餐廳評價</span></div>
+                <div class="app-item"><span class="app-icon">🌐</span><span class="app-name">Google翻譯</span><span class="app-desc">即時翻譯</span></div>
+                <div class="app-item"><span class="app-icon">🌤️</span><span class="app-name">tenki.jp</span><span class="app-desc">天氣預報</span></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div id="footer-root" class="footer-content"></div>
+    </footer>
+
+    <script type="module" src="/js/trip.js"></script>
+</body>
+</html>

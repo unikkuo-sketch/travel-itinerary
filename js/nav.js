@@ -1,43 +1,59 @@
-const INDEX_LINKS = [
-  { href: '#tickets', label: '🎫 票券' },
-  { href: '#overview', label: '📋 總覽' },
-  { href: '#route-map', label: '🗺️ 路線' },
-  { href: '#day1', label: 'Day 1' },
-  { href: '#day2', label: 'Day 2' },
-  { href: '#day3', label: 'Day 3' },
-  { href: '#day4', label: 'Day 4' },
-  { href: '#day5', label: 'Day 5' },
-  { href: '#day6', label: 'Day 6' },
-  { href: '#budget', label: '💰 預算' },
-  { href: 'shopping.html', label: '🛍️ 購物' },
-];
+import { tripUrl } from './load-trip.js';
 
-function indexUrl(hash = '') {
-  const base = import.meta.env.BASE_URL;
-  return `${base}index.html${hash}`;
+const base = import.meta.env.BASE_URL;
+
+function hubUrl() {
+  return base;
 }
 
-export function mountNav(page = 'index') {
+function buildTripNavLinks(tripId, days) {
+  const links = [
+    { href: hubUrl(), label: '🏠 總覽' },
+    { href: `${tripUrl(tripId)}#tickets`, label: '🎫 票券' },
+    { href: `${tripUrl(tripId)}#overview`, label: '📋 總覽' },
+    { href: `${tripUrl(tripId)}#route-map`, label: '🗺️ 路線' },
+  ];
+
+  (days || []).forEach((day) => {
+    links.push({
+      href: `${tripUrl(tripId)}#${day.id}`,
+      label: `Day ${day.number}`,
+    });
+  });
+
+  links.push(
+    { href: `${tripUrl(tripId)}#budget`, label: '💰 預算' },
+    { href: tripUrl(tripId, 'shopping'), label: '🛍️ 購物' }
+  );
+
+  return links;
+}
+
+function buildShoppingNavLinks(tripId, days) {
+  const links = [
+    { href: hubUrl(), label: '🏠 總覽' },
+    { href: `${tripUrl(tripId)}#tickets`, label: '🎫 票券' },
+    { href: `${tripUrl(tripId)}#overview`, label: '📋 總覽' },
+  ];
+
+  (days || []).forEach((day) => {
+    links.push({
+      href: `${tripUrl(tripId)}#${day.id}`,
+      label: `Day ${day.number}`,
+    });
+  });
+
+  links.push({ active: true, label: '🛍️ 購物' });
+  return links;
+}
+
+export function mountNav(page, tripId, days = []) {
   const container = document.getElementById('nav-container');
   if (!container) return;
 
   const links = page === 'shopping'
-    ? [
-        { href: indexUrl(), label: '🏠 首頁' },
-        { href: indexUrl('#tickets'), label: '🎫 票券' },
-        { href: indexUrl('#overview'), label: '📋 總覽' },
-        { href: indexUrl('#day1'), label: 'Day 1' },
-        { href: indexUrl('#day2'), label: 'Day 2' },
-        { href: indexUrl('#day3'), label: 'Day 3' },
-        { href: indexUrl('#day4'), label: 'Day 4' },
-        { href: indexUrl('#day5'), label: 'Day 5' },
-        { href: indexUrl('#day6'), label: 'Day 6' },
-        { active: true, label: '🛍️ 購物' },
-      ]
-    : INDEX_LINKS.map((l) => ({
-        ...l,
-        href: l.href.startsWith('#') ? l.href : `${import.meta.env.BASE_URL}${l.href}`,
-      }));
+    ? buildShoppingNavLinks(tripId, days)
+    : buildTripNavLinks(tripId, days);
 
   container.innerHTML = links.map((l) => {
     if (l.active) return `<span class="nav-link active">${l.label}</span>`;
@@ -46,10 +62,12 @@ export function mountNav(page = 'index') {
 }
 
 export function initNavScroll() {
-  document.querySelectorAll('.nav-link[href^="#"]').forEach((link) => {
+  document.querySelectorAll('.nav-link[href*="#"]').forEach((link) => {
     link.addEventListener('click', (e) => {
       const href = link.getAttribute('href');
-      const target = document.querySelector(href);
+      const hash = href?.includes('#') ? href.slice(href.indexOf('#')) : '';
+      if (!hash || hash === '#') return;
+      const target = document.querySelector(hash);
       if (target) {
         e.preventDefault();
         target.scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -58,7 +76,7 @@ export function initNavScroll() {
   });
 
   const sections = document.querySelectorAll('.section[id]');
-  const navLinks = document.querySelectorAll('.nav-link[href^="#"]');
+  const navLinks = document.querySelectorAll('.nav-link[href*="#"]');
 
   window.addEventListener('scroll', () => {
     let current = '';
@@ -66,7 +84,9 @@ export function initNavScroll() {
       if (scrollY >= section.offsetTop - 200) current = section.id;
     });
     navLinks.forEach((link) => {
-      link.classList.toggle('active', link.getAttribute('href') === `#${current}`);
+      const href = link.getAttribute('href') || '';
+      const hash = href.includes('#') ? href.slice(href.indexOf('#')) : '';
+      link.classList.toggle('active', hash === `#${current}`);
     });
   });
 }

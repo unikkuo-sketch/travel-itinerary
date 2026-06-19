@@ -1,6 +1,6 @@
-# 2026 關東賞櫻 6 日遊行程
+# 我的旅遊行程（Travel Hub）
 
-靜態行程網站：熱海、伊東、長瀞、秩父，含互動地圖與購物清單（localStorage 自動儲存）。
+所有旅程規劃集中於一個網站。每趟旅行一個資料夾，共用同一套 UI。
 
 **線上版：** https://unikkuo-sketch.github.io/travel-itinerary-2026/
 
@@ -12,30 +12,41 @@ npm install
 npm run dev
 ```
 
-開發伺服器：`http://localhost:5173/travel-itinerary-2026/`（base path 與 GitHub Pages 一致）
+| 頁面 | URL |
+|------|-----|
+| 行程總覽 Hub | `http://localhost:5173/travel-itinerary-2026/` |
+| 單一行程 | `http://localhost:5173/travel-itinerary-2026/trip.html?trip=2026_日本熱海長瀞_家族旅遊` |
+| 購物清單 | `.../shopping.html?trip=2026_日本熱海長瀞_家族旅遊` |
 
 ```powershell
 npm run build
 npm run preview
 ```
 
-## 頁面
+## 目錄結構
 
-| 檔案 | 說明 |
-|------|------|
-| [index.html](index.html) | 主行程殼層（內容由 JS 渲染） |
-| [shopping.html](shopping.html) | 購物清單 |
-| [data/itinerary.json](data/itinerary.json) | **行程資料來源**（票券、總覽、每日、預算、地圖） |
-| [docs/itinerary.md](docs/itinerary.md) | 文字摘要（人工閱讀用） |
+```
+traveling/                 # 根目錄：共用程式、Hub、建置設定
+├── index.html             # Hub 首頁
+├── trip.html              # 通用行程頁
+├── shopping.html          # 通用購物頁
+├── js/                    # 共用邏輯
+├── styles.css
+└── trips/
+    ├── manifest.json      # 行程索引
+    ├── _template/         # 新行程範本
+    └── 2026_日本熱海長瀞_家族旅遊/   # 單一趟行程
+        ├── itinerary.json # 必填
+        ├── notes.md       # 選填
+        └── assets/        # 選填
+```
 
-## 修改行程
+## 新增行程
 
-1. 編輯 [data/itinerary.json](data/itinerary.json)
-2. 可選：同步更新 [docs/itinerary.md](docs/itinerary.md) 摘要
-3. `npm run dev` 預覽
+見 [docs/add-trip.md](docs/add-trip.md)。
+
+命名：`{西元年}_{地區}_{性質}`，例如 `2027_泰國曼谷清邁_朋友旅遊`。
 
 ## 部署
 
-推送到 `main` 後，GitHub Actions 會自動 build 並發佈到 `gh-pages` 分支。
-
-Repo 設定：Settings → Pages → Source 選 **Deploy from a branch** → branch `gh-pages` / `/ (root)`。
+推送到 `main` 後 GitHub Actions 自動 build 並發佈到 `gh-pages`。

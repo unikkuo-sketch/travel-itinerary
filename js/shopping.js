@@ -1,21 +1,18 @@
+import { getTripId, loadTrip, tripUrl } from './load-trip.js';
 import { mountNav } from './nav.js';
-
-const STORAGE_KEY = 'travelShoppingList';
-const suggestions = [
-  'EVE止痛藥', '合利他命', 'Wakamoto', 'DHC護唇膏',
-  '蒸氣眼罩', '休足時間', '熱海布丁', '溫泉饅頭',
-  '秩父味噌', '秩父錦日本酒',
-];
-
-let items = JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]');
 
 const listEl = document.getElementById('shoppingList');
 const inputEl = document.getElementById('itemInput');
 const addBtn = document.getElementById('addBtn');
 const tagsContainer = document.getElementById('quickAddTags');
+const recRoot = document.getElementById('shopping-rec-root');
+const heroTitle = document.getElementById('shopping-trip-title');
+
+let items = [];
+let storageKey = '';
 
 function save() {
-  localStorage.setItem(STORAGE_KEY, JSON.stringify(items));
+  localStorage.setItem(storageKey, JSON.stringify(items));
 }
 
 function renderList() {
@@ -71,24 +68,63 @@ function deleteItem(event, index) {
   renderList();
 }
 
-mountNav('shopping');
+function renderRecommendations(recommendations) {
+  if (!recRoot || !recommendations?.length) return;
+  recRoot.innerHTML = recommendations.map((rec) => `
+    <div class="event-card">
+      <h3>${rec.title}</h3>
+      <p>${rec.desc}</p>
+      <div class="tag-row">
+        ${rec.items.map((item) => `<button type="button" class="category-tag" data-add-item="${item}">+ ${item}</button>`).join('')}
+      </div>
+    </div>
+  `).join('');
 
-suggestions.forEach((item) => {
-  const tag = document.createElement('button');
-  tag.type = 'button';
-  tag.className = 'category-tag';
-  tag.textContent = `+ ${item}`;
-  tag.addEventListener('click', () => addItem(item));
-  tagsContainer.appendChild(tag);
-});
+  recRoot.querySelectorAll('[data-add-item]').forEach((btn) => {
+    btn.addEventListener('click', () => addItem(btn.dataset.addItem));
+  });
+}
 
-document.querySelectorAll('[data-add-item]').forEach((btn) => {
-  btn.addEventListener('click', () => addItem(btn.dataset.addItem));
-});
+function renderSuggestions(suggestions) {
+  if (!tagsContainer) return;
+  tagsContainer.innerHTML = '';
+  (suggestions || []).forEach((item) => {
+    const tag = document.createElement('button');
+    tag.type = 'button';
+    tag.className = 'category-tag';
+    tag.textContent = `+ ${item}`;
+    tag.addEventListener('click', () => addItem(item));
+    tagsContainer.appendChild(tag);
+  });
+}
 
-addBtn.addEventListener('click', () => addItem());
-inputEl.addEventListener('keyup', (e) => {
-  if (e.key === 'Enter') addItem();
-});
+async function init() {
+  const tripId = getTripId();
+  if (!tripId) {
+    window.location.replace(import.meta.env.BASE_URL);
+    return;
+  }
 
-renderList();
+  storageKey = `travelShoppingList:${tripId}`;
+  items = JSON.parse(localStorage.getItem(storageKey) || '[]');
+
+  try {
+    const data = await loadTrip(tripId);
+    document.title = `🛍️ 購物清單 | ${data.meta?.title || tripId}`;
+    if (heroTitle) heroTitle.textContent = `🛍️ ${data.meta?.title || '購物清單'}`;
+    mountNav('shopping', tripId, data.days);
+    renderSuggestions(data.shopping?.suggestions);
+    renderRecommendations(data.shopping?.recommendations);
+  } catch {
+    mountNav('shopping', tripId, []);
+  }
+
+  addBtn.addEventListener('click', () => addItem());
+  inputEl.addEventListener('keyup', (e) => {
+    if (e.key === 'Enter') addItem();
+  });
+
+  renderList();
+}
+
+init();

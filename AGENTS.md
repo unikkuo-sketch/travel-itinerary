@@ -1,31 +1,33 @@
-# AGENTS — travel-itinerary
+# AGENTS — Travel Hub
 
 ## 專案地圖
 
 ```
-data/itinerary.json   行程資料（source of truth）
-js/render.js          渲染票券、總覽、每日、預算
-js/nav.js             共用導覽列
-js/main.js            首頁入口（載入 JSON、地圖、scroll spy）
-js/map.js             Leaflet 路線圖
-js/shopping.js        購物清單
-index.html            主頁殼層 + 靜態區（天氣、APP）
-shopping.html         購物頁殼層
-styles.css            全站樣式
-vite.config.js        base: /travel-itinerary-2026/
+index.html              Hub 行程總覽
+trip.html               單一行程頁（?trip=資料夾名）
+shopping.html           購物清單（?trip=資料夾名）
+js/hub.js               Hub 渲染
+js/trip.js              行程頁入口
+js/load-trip.js         fetch trips/{id}/itinerary.json
+js/render.js            渲染 hero、票券、每日、預算等
+js/nav.js               動態導覽（依 days 長度）
+trips/manifest.json     行程索引（Hub 卡片）
+trips/{id}/itinerary.json   單趟行程資料（source of truth）
+trips/_template/        新行程範本
 ```
 
-## 架構
+## 行程資料夾命名
 
-- Vite 多頁 build（index + shopping）
-- Leaflet 從 npm bundle，不再用 CDN
-- GitHub Actions → `gh-pages` 部署
+`{西元年}_{地區}_{性質}`，例如 `2026_日本熱海長瀞_家族旅遊`。
+
+`manifest.id` = 資料夾名 = `meta.slug` = URL `?trip=` 參數。
 
 ## 慣例
 
-- 改行程只動 `data/itinerary.json`
-- `travelShoppingList` 為購物清單 localStorage key，勿改
-- `import.meta.env.BASE_URL` 用於跨頁連結
+- 改行程內容：只編輯 `trips/{id}/itinerary.json`
+- 新增行程：複製 `_template`、更新 `manifest.json`（見 docs/add-trip.md）
+- 購物清單 localStorage：`travelShoppingList:{tripId}`
+- `trips/` 由 vite 插件在 dev/build 時提供靜態 JSON
 
 ## 常用指令
 
@@ -36,8 +38,7 @@ npm run build
 npm run preview
 ```
 
-## 已知決策
+## 部署
 
-- 交通：單程購票 / IC 卡 + 西武秩父套票
-- Day 4 Route-Inn 秩父、Day 5 hotel hisoca 池袋（分開住宿）
-- GitHub Pages project site，base path `/travel-itinerary-2026/`
+- base path：`/travel-itinerary-2026/`
+- CI：`.github/workflows/deploy.yml` → `gh-pages`
