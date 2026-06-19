@@ -2,17 +2,16 @@
   "name": "travel-itinerary",
   "version": "1.0.0",
   "description": "Travel itinerary for Atami and Nagatoro",
-  "main": "index.html",
+  "private": true,
   "scripts": {
-    "dev": "vite"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
     "vite": "^7.3.0"
   },
   "dependencies": {
-    "pdf-parse": "^2.4.5"
+    "leaflet": "^1.9.4"
   }
 }
