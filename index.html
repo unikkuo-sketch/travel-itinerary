@@ -8,14 +8,14 @@
     <meta name="description" content="2026年3月關東賞櫻6日遊完整行程規劃，含熱海溫泉、伊東、秩父長瀞">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <script type="module" crossorigin src="/travel-itinerary-2026/assets/main-BoQiEbKd.js"></script>
+  <link rel="modulepreload" crossorigin href="/travel-itinerary-2026/assets/nav-BGA5Am4L.js">
+  <link rel="stylesheet" crossorigin href="/travel-itinerary-2026/assets/nav-DEvwEae7.css">
+  <link rel="stylesheet" crossorigin href="/travel-itinerary-2026/assets/main-CIGW-MKW.css">
 </head>
 
 <body>
-    <!-- Hero Section -->
     <header class="hero">
         <div class="hero-content">
             <span class="hero-badge">2026年3月</span>
@@ -23,7 +23,7 @@
             <p class="hero-subtitle">家庭溫泉之旅 · 熱海 × 伊東 × 長瀞 × 秩父</p>
             <div class="hero-info">
                 <div class="info-item"><span class="info-icon">📅</span><span>03/27 - 04/01</span></div>
-                <div class="info-item"><span class="info-icon">🎫</span><span>JR廣域周遊券 + 西武秩父套票</span></div>
+                <div class="info-item"><span class="info-icon">🎫</span><span>單程購票 / IC卡 + 西武秩父套票</span></div>
                 <div class="info-item"><span class="info-icon">♨️</span><span>含溫泉飯店一泊二食</span></div>
             </div>
         </div>
@@ -32,59 +32,19 @@
         </div>
     </header>
 
-    <!-- Navigation -->
     <nav class="nav-sticky">
-        <div class="nav-container">
-            <a href="#tickets" class="nav-link">🎫 票券</a>
-            <a href="#overview" class="nav-link">📋 總覽</a>
-            <a href="#route-map" class="nav-link">🗺️ 路線</a>
-            <a href="#day1" class="nav-link">Day 1</a>
-            <a href="#day2" class="nav-link">Day 2</a>
-            <a href="#day3" class="nav-link">Day 3</a>
-            <a href="#day4" class="nav-link">Day 4</a>
-            <a href="#day5" class="nav-link">Day 5</a>
-            <a href="#day6" class="nav-link">Day 6</a>
-            <a href="#budget" class="nav-link">💰 預算</a>
-            <a href="shopping.html" class="nav-link">🛍️ 購物</a>
-        </div>
+        <div id="nav-container" class="nav-container"></div>
     </nav>
 
     <main class="main-content">
-        <!-- Tickets Section -->
         <section id="tickets" class="section">
             <div class="section-header">
                 <h2>🎫 推薦票券搭配</h2>
                 <p>善用交通票券，省錢又省心</p>
             </div>
-            <div class="ticket-grid">
-                <div class="ticket-card primary">
-                    <div class="ticket-header">
-                        <h3>單程購票 / IC卡</h3><span class="ticket-badge">彈性購票</span>
-                    </div>
-                    <div class="ticket-price">¥12,000<span>/人 (預估)</span></div>
-                    <div class="ticket-meta"><span>📆 使用日期：Day 1-3（03/27-03/29）</span></div>
-                    <ul class="ticket-features">
-                        <li>✅ 使用 Suica/Pasmo 搭乘地鐵與一般電車</li>
-                        <li>✅ 單程購買新幹線口票券 (東京→熱海)</li>
-                        <li>✅ 指定席購票 (藍寶石踴子號)</li>
-                    </ul>
-                </div>
-                <div class="ticket-card secondary">
-                    <div class="ticket-header">
-                        <h3>西武鐵道秩父慢遊車票</h3><span class="ticket-badge">2日券</span>
-                    </div>
-                    <div class="ticket-price">¥2,230<span>/人</span></div>
-                    <div class="ticket-meta"><span>📆 使用日期：Day 4-5（03/30-03/31）</span></div>
-                    <ul class="ticket-features">
-                        <li>✅ 池袋⇔西武秩父 特急附單程券(+900円)</li>
-                        <li>✅ 秩父鐵道全線一日券(1700円)</li>
-                        <li>✅ 附西武秩父到三峯神社單程(944円)</li>
-                    </ul>
-                </div>
-            </div>
+            <div id="ticket-grid" class="ticket-grid"></div>
         </section>
 
-        <!-- Overview Section -->
         <section id="overview" class="section">
             <div class="section-header">
                 <h2>📅 優化行程總覽</h2>
@@ -101,479 +61,29 @@
                             <th>交通重點</th>
                         </tr>
                     </thead>
-                    <tbody>
-                        <tr>
-                            <td><span class="day-badge">Day 1</span></td>
-                            <td>03/27</td>
-                            <td>桃園→成田→熱海</td>
-                            <td>Resorpia Atami</td>
-                            <td><span class="transport-tag">單程購票 (巴士+新幹線)</span></td>
-                        </tr>
-                        <tr>
-                            <td><span class="day-badge">Day 2</span></td>
-                            <td>03/28</td>
-                            <td>伊東深度遊</td>
-                            <td>Hotel Yoshino</td>
-                            <td><span class="transport-tag">IC卡 (伊東線)</span></td>
-                        </tr>
-                        <tr>
-                            <td><span class="day-badge">Day 3</span></td>
-                            <td>03/29</td>
-                            <td>小室山公園賞櫻→池袋</td>
-                            <td>Super Hotel JR Ikebukuro West Exit</td>
-                            <td><span class="transport-tag">單程購票 (藍寶石踴子號)</span></td>
-                        </tr>
-                        <tr>
-                            <td><span class="day-badge">Day 4</span></td>
-                            <td>03/30</td>
-                            <td>池袋→長瀞→秩父</td>
-                            <td>Route-Inn Grand Chichibu</td>
-                            <td><span class="transport-tag seibu">秩父漫遊車票</span></td>
-                        </tr>
-                        <tr>
-                            <td><span class="day-badge">Day 5</span></td>
-                            <td>03/31</td>
-                            <td>三峯神社→秩父神社→池袋</td>
-                            <td>hotel hisoca ikebukuro</td>
-                            <td><span class="transport-tag seibu">西武鐵道特急</span></td>
-                        </tr>
-                        <tr>
-                            <td><span class="day-badge">Day 6</span></td>
-                            <td>04/01</td>
-                            <td>明治神宮→成田→桃園</td>
-                            <td>-</td>
-                            <td><span class="transport-tag">高速巴士</span></td>
-                        </tr>
-                    </tbody>
+                    <tbody id="overview-body"></tbody>
                 </table>
             </div>
         </section>
 
-        <!-- Map Section -->
         <section id="route-map" class="section">
             <div class="section-header">
                 <h2>🗺️ 本次旅程路線</h2>
                 <p>關東廣域橫跨路線圖</p>
             </div>
-            <div id="leaflet-map" style="height: 400px; border-radius: var(--radius-lg); box-shadow: var(--shadow-md); z-index: 1;"></div>
+            <div id="leaflet-map" class="leaflet-map"></div>
         </section>
 
-        <!-- Day 1 -->
-        <section id="day1" class="section day-section">
-            <div class="day-header">
-                <div class="day-number">1</div>
-                <div class="day-info"><span class="day-date">03/27（五）</span>
-                    <h2>抵達東京與熱海溫泉初體驗 🛫</h2>
-                </div>
-            </div>
-            <div class="timeline">
-                <div class="timeline-item visible">
-                    <div class="timeline-time">06:40</div>
-                    <div class="timeline-content">
-                        <h4>桃園國際機場</h4>
-                        <p>出發</p>
-                    </div>
-                </div>
-                <div class="timeline-item visible">
-                    <div class="timeline-time">10:40</div>
-                    <div class="timeline-content">
-                        <h4>成田國際機場</h4>
-                        <p>抵達日本、入境（搭11:10巴士）</p>
-                    </div>
-                </div>
-                <div class="timeline-item visible">
-                    <div class="timeline-time">12:18</div>
-                    <div class="timeline-content">
-                        <h4>東京車站</h4>
-                        <p>轉乘新幹線前往熱海（搭12:27 新幹線）</p><span class="timeline-tag">🎫 現場購票</span>
-                    </div>
-                </div>
-                <div class="timeline-item visible">
-                    <div class="timeline-time">13:12</div>
-                    <div class="timeline-content">
-                        <h4>熱海站</h4>
-                        <p>抵達熱海</p>
-                    </div>
-                </div>
-                <div class="timeline-item visible">
-                    <div class="timeline-time">13:54</div>
-                    <div class="timeline-content">
-                        <h4>Resorpia Atami</h4>
-                        <p>辦理入住</p><span class="timeline-tag">🏨 住宿</span>
-                    </div>
-                </div>
-                <div class="timeline-item visible">
-                    <div class="timeline-time">14:19</div>
-                    <div class="timeline-content">
-                        <h4>熱海站前平和通商店街</h4>
-                        <p>漫步商店街，品嚐溫泉饅頭與在地小吃</p>
-                    </div>
-                </div>
-                <div class="timeline-item highlight visible">
-                    <div class="timeline-time">16:41</div>
-                    <div class="timeline-content">
-                        <h4>來宮神社</h4>
-                        <p>參訪以祈求健康長壽聞名的來宮神社，繞大楠樹一圈可延壽一年</p><span class="timeline-tag">⛩️ 能量景點</span>
-                    </div>
-                </div>
-                <div class="timeline-item visible">
-                    <div class="timeline-content">
-                        <h4>Resorpia Atami</h4>
-                        <p>享用晚餐、放鬆溫泉時光</p><span class="timeline-tag">♨️ 溫泉</span>
-                    </div>
-                </div>
-            </div>
-            <div class="tips-box">
-                <h4>💡 旅遊重點</h4>
-                <ul>
-                    <li>✅ <strong>成田→東京→熱海</strong>：搭11:10巴士至東京，再搭12:27新幹線直達熱海</li>
-                    <li>✅ <strong>來宮神社</strong>：能量景點，傍晚參訪氛圍絕佳</li>
-                    <li>✅ <strong>早點入住</strong>：充分享受Resorpia Atami溫泉設施</li>
-                </ul>
-            </div>
-        </section>
+        <div id="days-root"></div>
 
-        <!-- Day 2 -->
-        <section id="day2" class="section day-section">
-            <div class="day-header">
-                <div class="day-number">2</div>
-                <div class="day-info"><span class="day-date">03/28（六）</span>
-                    <h2>伊東自然景觀探索 🏞️</h2>
-                </div>
-            </div>
-            <div class="timeline">
-                <div class="timeline-item visible">
-                    <div class="timeline-time">09:36</div>
-                    <div class="timeline-content">
-                        <h4>伊東車站</h4>
-                        <p>抵達伊東，前往 Hotel Yoshino 寄放行李</p>
-                    </div>
-                </div>
-                <div class="timeline-item highlight visible">
-                    <div class="timeline-time">11:03</div>
-                    <div class="timeline-content">
-                        <h4>大室山 (Omuroyama)</h4>
-                        <p>搭乘纜車登山，欣賞360度壯麗全景，俯瞰伊豆高原與富士山美景。標高580公尺的休火山，擁有獨特碗狀火山口。</p><span class="timeline-tag">🏔️ 必訪</span>
-                    </div>
-                </div>
-                <div class="timeline-item visible">
-                    <div class="timeline-time">12:36</div>
-                    <div class="timeline-content">
-                        <h4>本家鮪屋</h4>
-                        <p>享用新鮮海鮮午餐</p><span class="timeline-tag">🍣 美食</span>
-                    </div>
-                </div>
-                <div class="timeline-item highlight visible">
-                    <div class="timeline-time">14:43</div>
-                    <div class="timeline-content">
-                        <h4>城崎海岸</h4>
-                        <p>探索城崎海岸，漫步於門脇吊橋，欣賞由熔岩冷卻形成的壯觀海蝕斷崖</p><span class="timeline-tag">🌊 絕景</span>
-                    </div>
-                </div>
-                <div class="timeline-item visible">
-                    <div class="timeline-content">
-                        <h4>Hotel Yoshino</h4>
-                        <p>入住、享用一泊二食晚餐、泡溫泉</p><span class="timeline-tag">♨️ 主要溫泉體驗</span>
-                    </div>
-                </div>
-            </div>
-            <div class="tips-box">
-                <h4>💡 旅遊重點</h4>
-                <ul>
-                    <li>✅ <strong>大室山</strong>：伊豆半島代表性火山，可沿火山口步道散步，享受無遮蔽絕佳視野</li>
-                    <li>✅ <strong>城崎海岸</strong>：壯觀海蝕地形，門脇吊橋體驗</li>
-                    <li>✅ <strong>Hotel Yoshino一泊二食</strong>：主要溫泉體驗日</li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- Day 3 -->
-        <section id="day3" class="section day-section">
-            <div class="day-header">
-                <div class="day-number">3</div>
-                <div class="day-info"><span class="day-date">03/29（日）</span>
-                    <h2>小室山公園賞櫻與池袋都會體驗 🌸</h2>
-                </div>
-            </div>
-            <div class="timeline">
-                <div class="timeline-item highlight visible">
-                    <div class="timeline-time">09:39</div>
-                    <div class="timeline-content">
-                        <h4>小室山公園</h4>
-                        <p>賞櫻名所，欣賞粉紅櫻花與杜鵑花交織的春日美景</p><span class="timeline-tag">🌸 賞櫻</span>
-                    </div>
-                </div>
-                <div class="timeline-item visible">
-                    <div class="timeline-time">11:55</div>
-                    <div class="timeline-content">
-                        <h4>Ito Fishing Port</h4>
-                        <p>體驗在地漁港風情，感受海港的活力</p><span class="timeline-tag">🐟 在地體驗</span>
-                    </div>
-                </div>
-                <div class="timeline-item visible">
-                    <div class="timeline-time">12:10</div>
-                    <div class="timeline-content">
-                        <h4>伊東車站</h4>
-                        <p>懷舊商店街體驗昭和風情</p>
-                    </div>
-                </div>
-                <div class="timeline-item highlight visible">
-                    <div class="timeline-time">15:10</div>
-                    <div class="timeline-content">
-                        <h4>前往東京</h4>
-                        <p>搭乘15:10藍寶石踴子號 (Saphir Odoriko)，返回東京都會區</p><span class="timeline-tag">🎫 指定席購票</span>
-                    </div>
-                </div>
-                <div class="timeline-item visible">
-                    <div class="timeline-time">17:14</div>
-                    <div class="timeline-content">
-                        <h4>池袋站</h4>
-                        <p>抵達東京重要交通樞紐，開始都會購物與美食探索</p><span class="timeline-tag">🛍️ 購物</span>
-                    </div>
-                </div>
-                <div class="timeline-item visible">
-                    <div class="timeline-time">17:37</div>
-                    <div class="timeline-content">
-                        <h4>Super Hotel JR Ikebukuro West Exit</h4>
-                        <p>入住飯店</p><span class="timeline-tag">🏨 住宿</span>
-                    </div>
-                </div>
-            </div>
-            <div class="tips-box">
-                <h4>💡 旅遊重點</h4>
-                <ul>
-                    <li>✅ <strong>小室山公園</strong>：從伊東的自然粉紅花海渡過至東京的繁華都會</li>
-                    <li>✅ <strong>藍寶石踴子號</strong>：全車指定席，建議提前在 JR 官網或車站購買購票。</li>
-                    <li>✅ <strong>池袋入住</strong>：Super Hotel JR Ikebukuro West Exit，隔天出發秩父超方便</li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- Day 4 -->
-        <section id="day4" class="section day-section">
-            <div class="day-header">
-                <div class="day-number">4</div>
-                <div class="day-info"><span class="day-date">03/30（一）</span>
-                    <h2>秩父神社文化與長瀞自然景觀 ⛰️</h2>
-                </div>
-            </div>
-            <div class="timeline">
-                <div class="timeline-item visible">
-                    <div class="timeline-time">07:30</div>
-                    <div class="timeline-content">
-                        <h4>池袋站出發</h4>
-                        <p>搭7:30特急，使用秩父漫遊車票前往西武秩父站</p><span class="timeline-tag">🎫 秩父漫遊車票</span>
-                    </div>
-                </div>
-                <div class="timeline-item visible">
-                    <div class="timeline-time">08:50</div>
-                    <div class="timeline-content">
-                        <h4>西武秩父站</h4>
-                        <p>抵達秩父，放行李</p>
-                    </div>
-                </div>
-                <div class="timeline-item highlight visible">
-                    <div class="timeline-time">11:18</div>
-                    <div class="timeline-content">
-                        <h4>長瀞站</h4>
-                        <p>抵達長瀞，探索國家指定名勝「長瀞岩疊」</p><span class="timeline-tag">🏞️ 必訪</span>
-                    </div>
-                </div>
-                <div class="timeline-item highlight visible">
-                    <div class="timeline-time">13:42</div>
-                    <div class="timeline-content">
-                        <h4>寶登山神社</h4>
-                        <p>參訪秩父三社之一，感受莊嚴氛圍</p><span class="timeline-tag">⛩️ 景點</span>
-                    </div>
-                </div>
-                <div class="timeline-item visible">
-                    <div class="timeline-time">16:18</div>
-                    <div class="timeline-content">
-                        <h4>清雲寺</h4>
-                        <p>欣賞寺廟建築與庭園美景，3月底枝垂櫻賞櫻名所</p><span class="timeline-tag">🌸 賞櫻</span>
-                    </div>
-                </div>
-                <div class="timeline-item visible">
-                    <div class="timeline-time">17:58</div>
-                    <div class="timeline-content">
-                        <h4>Hotel Route-Inn Grand Chichibu</h4>
-                        <p>入住飯店、晚餐</p><span class="timeline-tag">🏨 住宿</span>
-                    </div>
-                </div>
-            </div>
-            <div class="tips-box">
-                <h4>💡 旅遊重點</h4>
-                <ul>
-                    <li>✅ <strong>秩父漫遊車票</strong>：07:30從池袋搭特急出發</li>
-                    <li>✅ <strong>長瀞岩疊</strong>：國家指定名勝天然紀念物</li>
-                    <li>✅ <strong>彈性安排</strong>：手搖船需視天氣和體力調整</li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- Day 5 -->
-        <section id="day5" class="section day-section">
-            <div class="day-header">
-                <div class="day-number">5</div>
-                <div class="day-info"><span class="day-date">03/31（二）</span>
-                    <h2>三峯神社朝聖與秩父酒藏體驗 ⛩️</h2>
-                </div>
-            </div>
-            <div class="timeline">
-                <div class="timeline-item visible">
-                    <div class="timeline-time">08:00</div>
-                    <div class="timeline-content">
-                        <h4>飯店出發</h4>
-                        <p>享用早餐後出發</p>
-                    </div>
-                </div>
-                <div class="timeline-item highlight visible">
-                    <div class="timeline-time">10:04</div>
-                    <div class="timeline-content">
-                        <h4>三峯神社參拜</h4>
-                        <p>位於海拔1100公尺深山中，以「狼」為守護神，是祈求開運與除厄的聖地。境內古木參天，筑圍莊嚴、擁有極強的靈氣。</p><span class="timeline-tag">🏔️ 關東最強能量</span>
-                    </div>
-                </div>
-                <div class="timeline-item visible">
-                    <div class="timeline-time">15:05</div>
-                    <div class="timeline-content">
-                        <h4>秩父神社</h4>
-                        <p>參訪擁有2000年歷史的秩父神社，體驗日本傳統信仰</p><span class="timeline-tag">⛩️ 在地文化</span>
-                    </div>
-                </div>
-                <div class="timeline-item visible">
-                    <div class="timeline-time">15:42</div>
-                    <div class="timeline-content">
-                        <h4>Buko Shuzo Brewery 酒藏</h4>
-                        <p>前往在地酒藏品嚐秩父清酒，感受傳統釀造工藝</p><span class="timeline-tag">🍶 酒藏體驗</span>
-                    </div>
-                </div>
-                <div class="timeline-item visible">
-                    <div class="timeline-time">16:20</div>
-                    <div class="timeline-content">
-                        <h4>西武秩父站</h4>
-                        <p>搭16:24特急返回池袋</p><span class="timeline-tag">🚄 返回池袋</span>
-                    </div>
-                </div>
-                <div class="timeline-item visible">
-                    <div class="timeline-time">17:50</div>
-                    <div class="timeline-content">
-                        <h4>hotel hisoca ikebukuro</h4>
-                        <p>入住飯店</p><span class="timeline-tag">🏨 住宿</span>
-                    </div>
-                </div>
-                <div class="timeline-item highlight visible">
-                    <div class="timeline-time">18:10</div>
-                    <div class="timeline-content">
-                        <h4>池袋燒肉晚餐</h4>
-                        <p>享用日本燒肉，結束秩父兩天的精彩旅程</p><span class="timeline-tag">🥩 美食</span>
-                    </div>
-                </div>
-            </div>
-            <div class="tips-box">
-                <h4>💡 旅遊重點</h4>
-                <ul>
-                    <li>✅ <strong>三峯神社</strong>：關東最強能量景點，海拔1100公尺深山、狼守護神、境內筑圍莊嚴</li>
-                    <li>✅ <strong>秩父神社</strong>：2000年歷史，體驗日本傳統信仰與建築</li>
-                    <li>✅ <strong>Buko Shuzo Brewery</strong>：品嚐秩父清酒，感受傳統釀造工藝</li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- Day 6 -->
-        <section id="day6" class="section day-section">
-            <div class="day-header">
-                <div class="day-number">6</div>
-                <div class="day-info"><span class="day-date">04/01（三）</span>
-                    <h2>明治神宮參拜與返程 🛬</h2>
-                </div>
-            </div>
-            <div class="timeline">
-                <div class="timeline-item visible">
-                    <div class="timeline-time">07:30</div>
-                    <div class="timeline-content">
-                        <h4>飯店出發</h4>
-                        <p>早晨出發前往明治神宮</p>
-                    </div>
-                </div>
-                <div class="timeline-item highlight visible">
-                    <div class="timeline-time">08:00</div>
-                    <div class="timeline-content">
-                        <h4>明治神宮參拜</h4>
-                        <p>漫步於廣闊的森林參道，感受都市中的寧靜與莊嚴。祭祀明治天皇與昭憲皇太后，是體驗日本神道文化與建築之美的最佳場所。</p><span class="timeline-tag">⛩️ 東京文化巡禮</span>
-                    </div>
-                </div>
-                <div class="timeline-item highlight visible">
-                    <div class="timeline-time">09:10</div>
-                    <div class="timeline-content">
-                        <h4>池袋西口（搭09:15巴士）</h4>
-                        <p>搭乘巴士前往成田國際機場</p><span class="timeline-tag">🚌 高速巴士</span>
-                    </div>
-                </div>
-                <div class="timeline-item visible">
-                    <div class="timeline-time">11:05</div>
-                    <div class="timeline-content">
-                        <h4>成田國際機場</h4>
-                        <p>抵達成田機場，辦理登機、免稅店最後採購</p>
-                    </div>
-                </div>
-                <div class="timeline-item highlight visible">
-                    <div class="timeline-time">17:05</div>
-                    <div class="timeline-content">
-                        <h4>桃園國際機場</h4>
-                        <p>抵達桃園，結束六天五夜的美好旅程 🌸</p><span class="timeline-tag">✈️ 返程</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Budget Section -->
         <section id="budget" class="section">
             <div class="section-header">
                 <h2>💰 預算總覽（每人）</h2>
                 <p>詳細費用估算</p>
             </div>
-            <div class="budget-grid">
-                <div class="budget-card">
-                    <div class="budget-icon">🚄</div>
-                    <h3>交通費用</h3>
-                    <div class="budget-items">
-                        <div class="budget-item"><span>成田→東京 (巴士) + 多場單程車票</span><span>¥12,000</span></div>
-                        <div class="budget-item"><span>西武秩父套票 (2日)</span><span>¥2,230</span></div>
-                        <div class="budget-item"><span>池袋→成田 (高速巴士)</span><span>¥1,900</span></div>
-                        <div class="budget-item"><span>當地巴士/計程車</span><span>¥3,000</span></div>
-                    </div>
-                    <div class="budget-subtotal"><span>小計</span><span>¥19,130</span></div>
-                </div>
-                <div class="budget-card">
-                    <div class="budget-icon">🏨</div>
-                    <h3>住宿費用（5晚）</h3>
-                    <div class="budget-items">
-                        <div class="budget-item"><span>Resorpia Atami（1晚）</span><span>¥15,000</span></div>
-                        <div class="budget-item"><span>Hotel Yoshino（一泊二食）</span><span>¥30,000-40,000</span></div>
-                        <div class="budget-item"><span>東京飯店（Day 3）</span><span>¥10,000</span></div>
-                        <div class="budget-item"><span>Hotel Route-Inn Chichibu（Day 4-5，2晚）</span><span>¥20,000</span></div>
-                    </div>
-                    <div class="budget-subtotal"><span>小計</span><span>¥75,000-85,000</span></div>
-                </div>
-                <div class="budget-card">
-                    <div class="budget-icon">🍽️</div>
-                    <h3>餐飲+門票</h3>
-                    <div class="budget-items">
-                        <div class="budget-item"><span>午餐、晚餐（5天）</span><span>¥20,000</span></div>
-                        <div class="budget-item"><span>景點門票</span><span>¥5,000</span></div>
-                    </div>
-                    <div class="budget-subtotal"><span>小計</span><span>¥25,000</span></div>
-                </div>
-            </div>
-            <div class="budget-total">
-                <div class="total-label">總預算</div>
-                <div class="total-amount">¥125,000 - 135,000</div>
-                <div class="total-twd">約 NT$ 26,000 - 28,000 /人</div>
-            </div>
+            <div id="budget-root"></div>
         </section>
 
-        <!-- Seasonal Events -->
         <section class="section">
             <div class="section-header">
                 <h2>🌸 3月底特色活動</h2>
@@ -604,7 +114,6 @@
             </div>
         </section>
 
-        <!-- Weather Section -->
         <section id="weather" class="section">
             <div class="section-header">
                 <h2>🌤️ 關東春季氣候與穿著建議</h2>
@@ -632,27 +141,20 @@
             </div>
         </section>
 
-        <!-- Apps Section -->
         <section class="section">
             <div class="section-header">
                 <h2>📱 實用APP推薦</h2>
             </div>
             <div class="apps-grid">
-                <div class="app-item"><span class="app-icon">🗺️</span><span class="app-name">Google Maps</span><span
-                        class="app-desc">導航必備</span></div>
-                <div class="app-item"><span class="app-icon">🚃</span><span class="app-name">換乘案內</span><span
-                        class="app-desc">查詢電車時刻</span></div>
-                <div class="app-item"><span class="app-icon">🍜</span><span class="app-name">Tabelog</span><span
-                        class="app-desc">餐廳評價</span></div>
-                <div class="app-item"><span class="app-icon">🌐</span><span class="app-name">Google翻譯</span><span
-                        class="app-desc">即時翻譯</span></div>
-                <div class="app-item"><span class="app-icon">🌤️</span><span class="app-name">tenki.jp</span><span
-                        class="app-desc">天氣預報</span></div>
+                <div class="app-item"><span class="app-icon">🗺️</span><span class="app-name">Google Maps</span><span class="app-desc">導航必備</span></div>
+                <div class="app-item"><span class="app-icon">🚃</span><span class="app-name">換乘案內</span><span class="app-desc">查詢電車時刻</span></div>
+                <div class="app-item"><span class="app-icon">🍜</span><span class="app-name">Tabelog</span><span class="app-desc">餐廳評價</span></div>
+                <div class="app-item"><span class="app-icon">🌐</span><span class="app-name">Google翻譯</span><span class="app-desc">即時翻譯</span></div>
+                <div class="app-item"><span class="app-icon">🌤️</span><span class="app-name">tenki.jp</span><span class="app-desc">天氣預報</span></div>
             </div>
         </section>
     </main>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="footer-content">
             <p class="footer-wish">🎌 祝您2026年3月的熱海長瀞之旅順利！✨</p>
@@ -660,64 +162,6 @@
         </div>
     </footer>
 
-    <script>
-        document.querySelectorAll('.nav-link').forEach(link => {
-            link.addEventListener('click', function (e) {
-                const href = this.getAttribute('href');
-                if (href && href.startsWith('#')) {
-                    e.preventDefault();
-                    const target = document.querySelector(href);
-                    if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                }
-            });
-        });
-        const sections = document.querySelectorAll('.section');
-        const navLinks = document.querySelectorAll('.nav-link');
-        window.addEventListener('scroll', () => {
-            let current = '';
-            sections.forEach(section => {
-                if (scrollY >= section.offsetTop - 200) current = section.getAttribute('id');
-            });
-            navLinks.forEach(link => {
-                link.classList.remove('active');
-                if (link.getAttribute('href') === '#' + current) link.classList.add('active');
-            });
-        });
-    </script>
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const map = L.map('leaflet-map').setView([35.5, 139.5], 8);
-            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-                maxZoom: 18,
-            }).addTo(map);
-
-            const locations = [
-                { name: "1. 成田機場 (Day 1起點 / Day 6終點)", coords: [35.771986, 140.392850] },
-                { name: "2. 熱海 (Day 1)", coords: [35.095710, 139.076041] },
-                { name: "3. 伊東 (Day 2)", coords: [34.972986, 139.100913] },
-                { name: "4. 東京池袋 (Day 3中轉)", coords: [35.729503, 139.710900] },
-                { name: "5. 秩父長瀞 (Day 4-5)", coords: [36.096752, 139.117188] }
-            ];
-
-            const latlngs = locations.map(loc => loc.coords);
-
-            locations.forEach((loc) => {
-                L.marker(loc.coords).addTo(map)
-                    .bindPopup(`<b>${loc.name}</b>`);
-            });
-
-            const polyline = L.polyline(latlngs, {
-                color: '#e63946',
-                weight: 4,
-                opacity: 0.7,
-                dashArray: '10, 10'
-            }).addTo(map);
-            
-            map.fitBounds(polyline.getBounds(), { padding: [50, 50] });
-        });
-    </script>
 </body>
 
 </html>
