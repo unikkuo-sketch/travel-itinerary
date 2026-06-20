@@ -1,4 +1,4 @@
-import{g as jo,a as Ko}from"./load-trip-BSJqSYCQ.js";import{m as Yo,i as Xo}from"./nav-CCEql4cl.js";function P(c){const m=document.createElement("span");return m.textContent=c,m.innerHTML}function Jo(c){return c.map(m=>`
+import{g as jo,a as Ko}from"./load-trip-DwSVSJHl.js";import{m as Yo,i as Xo}from"./nav-DxWXrIis.js";function P(c){const m=document.createElement("span");return m.textContent=c,m.innerHTML}function Jo(c){return c.map(m=>`
     <div class="ticket-card ${m.variant}">
       <div class="ticket-header">
         <h3>${P(m.title)}</h3><span class="ticket-badge">${P(m.badge)}</span>
