@@ -18,31 +18,32 @@
         <div class="hero-content">
             <span class="hero-badge">Shopping List</span>
             <h1 id="shopping-trip-title">🛍️ 購物採購清單</h1>
-            <p class="hero-subtitle">自動儲存，不怕遺忘的採購筆記</p>
+            <p class="hero-subtitle">參考推薦、建立自己的採購清單</p>
         </div>
     </header>
 
     <main class="main-content">
-        <section class="section">
+        <section id="shopping-zone-mine" class="section shopping-zone shopping-zone--mine">
             <div class="section-header">
-                <h2>🛍️ 必買清單</h2>
-                <p>點擊快速標籤或自行輸入</p>
+                <h2>📝 我的待買清單</h2>
+                <p>自行輸入或從下方伴手禮推薦點擊加入 · 自動儲存於此裝置</p>
             </div>
             <div class="shopping-container">
                 <div class="input-group">
                     <input type="text" id="itemInput" class="shopping-input" placeholder="輸入想買的東西...">
                     <button id="addBtn" class="btn-add">加入</button>
                 </div>
-                <div class="category-tags" id="quickAddTags"></div>
                 <ul id="shoppingList" class="shopping-list"></ul>
             </div>
         </section>
 
-        <section class="section">
+        <section class="section shopping-zone shopping-zone--trip">
             <div class="section-header">
-                <h2>📍 行程相關購物推薦</h2>
+                <h2>📍 行程伴手禮推薦</h2>
+                <p>依本趟景點整理的在地特產</p>
+                <p class="shopping-price-disclaimer">價格為出發前網路／藥妝店常見參考，非即時報價</p>
             </div>
-            <div id="shopping-rec-root" class="events-grid"></div>
+            <div id="shopping-rec-root" class="shopping-trip-root"></div>
         </section>
     </main>
 

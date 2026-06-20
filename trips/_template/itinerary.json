@@ -11,9 +11,33 @@
     "footerDate": "行程規劃 · 日期區間"
   },
   "shopping": {
-    "suggestions": ["範例商品"],
+    "suggestions": [
+      {
+        "name": "範例商品",
+        "price": "約 ¥500",
+        "priceNote": "含稅參考價・實際以店面為準",
+        "imageUrl": "https://atami-sakurai.com/wp-content/uploads/2025/08/cha1.jpg"
+      }
+    ],
     "recommendations": [
-      { "title": "Day 1: 地點", "desc": "說明", "items": ["商品A", "商品B"] }
+      {
+        "title": "Day 1: 地點",
+        "desc": "說明",
+        "items": [
+          {
+            "name": "商品A",
+            "price": "約 ¥300",
+            "priceNote": "含稅參考價・實際以店面為準",
+            "imageUrl": "https://www.atami-purin.com/images/20241101_Caramel-purin.jpg"
+          },
+          {
+            "name": "商品B",
+            "price": "約 ¥600",
+            "priceNote": "含稅參考價・實際以店面為準",
+            "imageUrl": "https://img06.shop-pro.jp/PA01310/556/product/89391994.jpg"
+          }
+        ]
+      }
     ]
   },
   "events": [
