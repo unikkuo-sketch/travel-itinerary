@@ -1,4 +1,4 @@
-import{t as Tn,g as is,a as ns}from"./load-trip-BWbivutX.js";import{m as os,i as ss}from"./nav-B1O7s3M6.js";import{p as ge,f as rs,l as as}from"./recap-storage-D_cQpjbH.js";function S(l){const d=document.createElement("span");return d.textContent=l,d.innerHTML}function hs(l){return l.map(d=>`
+import{t as Tn,g as is,a as ns}from"./load-trip-5zJlFARa.js";import{m as os,i as ss}from"./nav-BB3_Jegf.js";import{p as ge,f as rs,l as as}from"./recap-storage-CJgOGzEA.js";function S(l){const d=document.createElement("span");return d.textContent=l,d.innerHTML}function hs(l){return l.map(d=>`
     <div class="ticket-card ${d.variant}">
       <div class="ticket-header">
         <h3>${S(d.title)}</h3><span class="ticket-badge">${S(d.badge)}</span>
@@ -198,5 +198,5 @@ import{t as Tn,g as is,a as ns}from"./load-trip-BWbivutX.js";import{m as os,i as
     <main class="main-content" style="padding:4rem 1rem;text-align:center">
       <h1>找不到行程</h1>
       <p>${l}</p>
-      <p><a href="/travel-itinerary-2026/">返回行程總覽</a></p>
-    </main>`}async function Es(){const l=is();if(!l){window.location.replace("/travel-itinerary-2026/");return}try{const d=await ns(l),{meta:a}=d;document.title=`${a.title} | ${a.badge||""}`;const f=document.querySelector('meta[name="description"]');f&&(f.content=a.subtitle||a.title),os("trip",l,d.days),ps(d),ws(d.map),ss(),Ss();const p=document.getElementById("recap-root");if(p)try{const v=await as(l);await bn(p,{tripId:l,tripData:d,displayData:v})}catch(v){console.warn("recap section failed:",v),await bn(p,{tripId:l,tripData:d,displayData:null})}}catch(d){Cs(d.message)}}Es();
+      <p><a href="/travel-itinerary/">返回行程總覽</a></p>
+    </main>`}async function Es(){const l=is();if(!l){window.location.replace("/travel-itinerary/");return}try{const d=await ns(l),{meta:a}=d;document.title=`${a.title} | ${a.badge||""}`;const f=document.querySelector('meta[name="description"]');f&&(f.content=a.subtitle||a.title),os("trip",l,d.days),ps(d),ws(d.map),ss(),Ss();const p=document.getElementById("recap-root");if(p)try{const v=await as(l);await bn(p,{tripId:l,tripData:d,displayData:v})}catch(v){console.warn("recap section failed:",v),await bn(p,{tripId:l,tripData:d,displayData:null})}}catch(d){Cs(d.message)}}Es();
