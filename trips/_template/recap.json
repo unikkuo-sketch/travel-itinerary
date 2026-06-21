@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "updatedAt": "",
+  "photos": [],
+  "expenses": {
+    "items": [],
+    "totalActual": { "amount": "", "twd": "" },
+    "notes": ""
+  }
+}
