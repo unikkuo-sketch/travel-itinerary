@@ -1228,6 +1228,30 @@ h3 { font-size: var(--text-lg); }
     margin: 0;
 }
 
+.shopping-product-link {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+}
+
+.shopping-product-name .shopping-product-link {
+    display: inline;
+}
+
+.shopping-product-link:hover {
+    color: var(--accent);
+}
+
+.shopping-product-link:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+    border-radius: 2px;
+}
+
+.shopping-product-link:hover .shopping-product-img {
+    opacity: 0.92;
+}
+
 .shopping-product-price {
     font-size: var(--text-base);
     font-weight: 600;

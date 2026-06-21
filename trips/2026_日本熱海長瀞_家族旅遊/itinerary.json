@@ -50,25 +50,29 @@
         "name": "熱海布丁",
         "price": "約 ¥400",
         "priceNote": "含稅參考價・實際以店面為準",
-        "imageUrl": "https://www.atami-purin.com/images/20241101_Caramel-purin.jpg"
+        "imageUrl": "https://www.atami-purin.com/images/20241101_Caramel-purin.jpg",
+        "url": "https://www.atami-purin.com/"
       },
       {
         "name": "溫泉饅頭",
         "price": "約 ¥500",
         "priceNote": "含稅參考價・實際以店面為準",
-        "imageUrl": "https://atami-sakurai.com/wp-content/uploads/2025/08/cha1.jpg"
+        "imageUrl": "https://atami-sakurai.com/wp-content/uploads/2025/08/cha1.jpg",
+        "url": "https://atami-sakurai.com/"
       },
       {
         "name": "秩父味噌",
         "price": "約 ¥600",
         "priceNote": "含稅參考價・實際以店面為準",
-        "imageUrl": "https://img06.shop-pro.jp/PA01310/556/product/89391994.jpg"
+        "imageUrl": "https://img06.shop-pro.jp/PA01310/556/product/89391994.jpg",
+        "url": "https://www.chichibu-miso.jp/?pid=89391994"
       },
       {
         "name": "秩父錦日本酒",
         "price": "約 ¥1,500",
         "priceNote": "含稅參考價・實際以店面為準",
-        "imageUrl": "https://chichibunishiki.com/wp-content/uploads/2020/05/cd5cc2952e33324bf84cd9347487e604.jpg"
+        "imageUrl": "https://chichibunishiki.com/wp-content/uploads/2020/05/cd5cc2952e33324bf84cd9347487e604.jpg",
+        "url": "https://chichibunishiki.com/"
       }
     ],
     "recommendations": [
@@ -80,13 +84,15 @@
             "name": "溫泉饅頭",
             "price": "約 ¥500",
             "priceNote": "含稅參考價・實際以店面為準",
-            "imageUrl": "https://atami-sakurai.com/wp-content/uploads/2025/08/cha1.jpg"
+            "imageUrl": "https://atami-sakurai.com/wp-content/uploads/2025/08/cha1.jpg",
+            "url": "https://atami-sakurai.com/"
           },
           {
             "name": "熱海布丁",
             "price": "約 ¥400",
             "priceNote": "含稅參考價・實際以店面為準",
-            "imageUrl": "https://www.atami-purin.com/images/20241101_Caramel-purin.jpg"
+            "imageUrl": "https://www.atami-purin.com/images/20241101_Caramel-purin.jpg",
+            "url": "https://www.atami-purin.com/"
           }
         ]
       },
@@ -98,13 +104,15 @@
             "name": "伊勢龍蝦乾貨",
             "price": "約 ¥2,000",
             "priceNote": "含稅參考價・實際以店面為準",
-            "imageUrl": "https://image.raku-uru.jp/01/21685/1062/main_01_1656379486882.jpg"
+            "imageUrl": "https://image.raku-uru.jp/01/21685/1062/main_01_1656379486882.jpg",
+            "url": "https://hirataya-himono.jp/?pid=1062"
           },
           {
             "name": "在地海產拌手禮",
             "price": "約 ¥800",
             "priceNote": "含稅參考價・實際以店面為準",
-            "imageUrl": "https://image.raku-uru.jp/01/21685/2027/%E3%83%88%E3%83%83%E3%83%97%E3%83%9A%E3%83%BC%E3%82%B8_%E3%81%93%E3%81%A0%E3%82%8F%E3%82%8A_1_%E5%B7%AE_1777768544261.jpg"
+            "imageUrl": "https://image.raku-uru.jp/01/21685/2027/%E3%83%88%E3%83%83%E3%83%97%E3%83%9A%E3%83%BC%E3%82%B8_%E3%81%93%E3%81%A0%E3%82%8F%E3%82%8A_1_%E5%B7%AE_1777768544261.jpg",
+            "url": "https://hirataya-himono.jp/?pid=2027"
           }
         ]
       },
@@ -116,13 +124,15 @@
             "name": "秩父錦日本酒",
             "price": "約 ¥1,500",
             "priceNote": "含稅參考價・實際以店面為準",
-            "imageUrl": "https://chichibunishiki.com/wp-content/uploads/2020/05/cd5cc2952e33324bf84cd9347487e604.jpg"
+            "imageUrl": "https://chichibunishiki.com/wp-content/uploads/2020/05/cd5cc2952e33324bf84cd9347487e604.jpg",
+            "url": "https://chichibunishiki.com/"
           },
           {
             "name": "秩父味噌",
             "price": "約 ¥600",
             "priceNote": "含稅參考價・實際以店面為準",
-            "imageUrl": "https://img06.shop-pro.jp/PA01310/556/product/89391994.jpg"
+            "imageUrl": "https://img06.shop-pro.jp/PA01310/556/product/89391994.jpg",
+            "url": "https://www.chichibu-miso.jp/?pid=89391994"
           }
         ]
       }

@@ -28,7 +28,8 @@
             "name": "商品A",
             "price": "約 ¥300",
             "priceNote": "含稅參考價・實際以店面為準",
-            "imageUrl": "https://www.atami-purin.com/images/20241101_Caramel-purin.jpg"
+            "imageUrl": "https://www.atami-purin.com/images/20241101_Caramel-purin.jpg",
+            "url": "https://example.com/product-a"
           },
           {
             "name": "商品B",

@@ -25,7 +25,7 @@ Copy-Item -Recurse trips\_template trips\2027_義大利托斯卡尼_蜜月
 - `meta.slug` 必須等於資料夾名
 - 依序填寫 `tickets`、`overview`、`days`、`budget`、`map`
 - 選填 `shopping`、`events`、`weather`
-- `shopping.recommendations` → 購物頁「行程伴手禮推薦」（依 Day／地點分組）
+- `shopping.recommendations` → 購物頁「在地特產推薦」（依 Day／地點分組）
 - `shopping.suggestions` 可保留於 JSON 但購物頁不顯示（請改寫入 `recommendations`）
 
 購物商品以**物件**填寫（也接受純字串，但無圖片與價格）。`imageUrl` 以網路連結為主，**優先使用品牌官網、產地官方商店或觀光協會商品圖**：
@@ -35,7 +35,8 @@ Copy-Item -Recurse trips\_template trips\2027_義大利托斯卡尼_蜜月
   "name": "溫泉饅頭",
   "price": "約 ¥500",
   "priceNote": "含稅參考價・實際以店面為準",
-  "imageUrl": "https://atami-sakurai.com/wp-content/uploads/2025/08/cha1.jpg"
+  "imageUrl": "https://atami-sakurai.com/wp-content/uploads/2025/08/cha1.jpg",
+  "url": "https://atami-sakurai.com/"
 }
 ```
 
@@ -45,6 +46,7 @@ Copy-Item -Recurse trips\_template trips\2027_義大利托斯卡尼_蜜月
 | `price` | 選填，日常參考價（如 `約 ¥880`） |
 | `priceNote` | 選填，價格備註 |
 | `imageUrl` | 建議填，官網商品圖 URL；失效時頁面顯示 placeholder |
+| `url` | 選填，商品或品牌官網；有填時品名與圖片可點擊另開新分頁 |
 
 圖片來源優先順序：品牌／製造商官網 > 產地官方商店 > 觀光協會商品頁。連結失效時只需改 JSON 中的 `imageUrl`。
 

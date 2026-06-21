@@ -14,14 +14,27 @@ let storageKey = '';
 
 function normalizeProduct(item) {
   if (typeof item === 'string') {
-    return { name: item.trim(), price: '', priceNote: '', imageUrl: '' };
+    return { name: item.trim(), price: '', priceNote: '', imageUrl: '', url: '' };
   }
   return {
     name: (item?.name || '').trim(),
     price: item?.price || '',
     priceNote: item?.priceNote || '',
     imageUrl: item?.imageUrl || '',
+    url: (item?.url || '').trim(),
   };
+}
+
+function createExternalLink(url, content, { ariaLabel } = {}) {
+  const link = document.createElement('a');
+  link.href = url;
+  link.target = '_blank';
+  link.rel = 'noopener noreferrer';
+  link.className = 'shopping-product-link';
+  if (ariaLabel) link.setAttribute('aria-label', ariaLabel);
+  if (typeof content === 'string') link.textContent = content;
+  else link.appendChild(content);
+  return link;
 }
 
 function productInitials(name) {
@@ -49,7 +62,11 @@ function createMedia(product) {
     wrap.textContent = productInitials(product.name);
   }
 
-  return wrap;
+  return product.url
+    ? createExternalLink(product.url, wrap, {
+        ariaLabel: `${product.name}（另開新分頁）`,
+      })
+    : wrap;
 }
 
 function createThumb(imageUrl, name) {
@@ -75,7 +92,11 @@ function createProductCard(product, { onAdd }) {
 
   const title = document.createElement('h3');
   title.className = 'shopping-product-name';
-  title.textContent = product.name;
+  if (product.url) {
+    title.appendChild(createExternalLink(product.url, product.name));
+  } else {
+    title.textContent = product.name;
+  }
   body.appendChild(title);
 
   if (product.price) {
