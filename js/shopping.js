@@ -1,5 +1,6 @@
 import { getTripId, loadTrip } from './load-trip.js';
 import { mountNav } from './nav.js';
+import { icon } from './icons.js';
 
 const listEl = document.getElementById('shoppingList');
 const inputEl = document.getElementById('itemInput');
@@ -117,7 +118,7 @@ function flashMineZone() {
 function renderList() {
   listEl.innerHTML = '';
   if (items.length === 0) {
-    listEl.innerHTML = '<div class="empty-state">還沒加入任何項目，可從下方伴手禮推薦點擊加入 🛒</div>';
+    listEl.innerHTML = '<div class="empty-state">還沒加入任何項目，可從下方伴手禮推薦點擊加入</div>';
     return;
   }
 
@@ -153,7 +154,7 @@ function renderList() {
     delBtn.className = 'btn-delete';
     delBtn.title = '刪除項目';
     delBtn.setAttribute('aria-label', '刪除項目');
-    delBtn.textContent = '🗑️';
+    delBtn.innerHTML = icon('trash');
     delBtn.addEventListener('click', (e) => deleteItem(e, index));
 
     li.append(checkbox, info, delBtn);
@@ -244,8 +245,8 @@ async function init() {
 
   try {
     const data = await loadTrip(tripId);
-    document.title = `🛍️ 購物清單 | ${data.meta?.title || tripId}`;
-    if (heroTitle) heroTitle.textContent = `🛍️ ${data.meta?.title || '購物清單'}`;
+    document.title = `購物清單 | ${data.meta?.title || tripId}`;
+    if (heroTitle) heroTitle.textContent = data.meta?.title || '購物清單';
     mountNav('shopping', tripId, data.days);
     renderRecommendations(data.shopping?.recommendations);
   } catch {

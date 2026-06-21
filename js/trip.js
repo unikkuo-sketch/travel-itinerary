@@ -4,6 +4,14 @@ import { mountNav, initNavScroll } from './nav.js';
 import { initMap } from './map.js';
 import { loadRecapForDisplay } from './recap-storage.js';
 import { renderRecapSection } from './render-recap.js';
+import { icon } from './icons.js';
+
+function initAppIcons() {
+  document.querySelectorAll('.app-item[data-icon]').forEach((el) => {
+    const slot = el.querySelector('.app-icon');
+    if (slot) slot.innerHTML = icon(el.dataset.icon);
+  });
+}
 
 function initTimelineAnimation() {
   const items = document.querySelectorAll('.timeline-item');
@@ -50,6 +58,7 @@ async function init() {
     initMap(data.map);
     initNavScroll();
     initTimelineAnimation();
+    initAppIcons();
 
     const recapRoot = document.getElementById('recap-root');
     if (recapRoot) {

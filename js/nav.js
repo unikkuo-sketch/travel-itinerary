@@ -8,10 +8,10 @@ function hubUrl() {
 
 function buildTripNavLinks(tripId, days) {
   const links = [
-    { href: hubUrl(), label: '🏠 總覽' },
-    { href: `${tripUrl(tripId)}#tickets`, label: '🎫 票券' },
-    { href: `${tripUrl(tripId)}#overview`, label: '📋 總覽' },
-    { href: `${tripUrl(tripId)}#route-map`, label: '🗺️ 路線' },
+    { href: hubUrl(), label: '總覽' },
+    { href: `${tripUrl(tripId)}#tickets`, label: '票券' },
+    { href: `${tripUrl(tripId)}#overview`, label: '行程' },
+    { href: `${tripUrl(tripId)}#route-map`, label: '路線' },
   ];
 
   (days || []).forEach((day) => {
@@ -22,9 +22,9 @@ function buildTripNavLinks(tripId, days) {
   });
 
   links.push(
-    { href: `${tripUrl(tripId)}#budget`, label: '💰 預算' },
-    { href: `${tripUrl(tripId)}#recap`, label: '📸 旅後' },
-    { href: tripUrl(tripId, 'shopping'), label: '🛍️ 購物' }
+    { href: `${tripUrl(tripId)}#budget`, label: '預算' },
+    { href: `${tripUrl(tripId)}#recap`, label: '旅後' },
+    { href: tripUrl(tripId, 'shopping'), label: '購物' }
   );
 
   return links;
@@ -32,9 +32,9 @@ function buildTripNavLinks(tripId, days) {
 
 function buildShoppingNavLinks(tripId, days) {
   const links = [
-    { href: hubUrl(), label: '🏠 總覽' },
-    { href: `${tripUrl(tripId)}#tickets`, label: '🎫 票券' },
-    { href: `${tripUrl(tripId)}#overview`, label: '📋 總覽' },
+    { href: hubUrl(), label: '總覽' },
+    { href: `${tripUrl(tripId)}#tickets`, label: '票券' },
+    { href: `${tripUrl(tripId)}#overview`, label: '行程' },
   ];
 
   (days || []).forEach((day) => {
@@ -44,14 +44,14 @@ function buildShoppingNavLinks(tripId, days) {
     });
   });
 
-  links.push({ active: true, label: '🛍️ 購物' });
+  links.push({ active: true, label: '購物' });
   return links;
 }
 
 function buildRecapNavLinks(tripId, days) {
   const links = [
-    { href: hubUrl(), label: '🏠 總覽' },
-    { href: `${tripUrl(tripId)}#overview`, label: '📋 總覽' },
+    { href: hubUrl(), label: '總覽' },
+    { href: `${tripUrl(tripId)}#overview`, label: '行程' },
   ];
 
   (days || []).forEach((day) => {
@@ -62,9 +62,9 @@ function buildRecapNavLinks(tripId, days) {
   });
 
   links.push(
-    { href: `${tripUrl(tripId)}#budget`, label: '💰 預算' },
-    { href: `${tripUrl(tripId)}#recap`, label: '📸 旅後' },
-    { active: true, label: '✏️ 編輯' }
+    { href: `${tripUrl(tripId)}#budget`, label: '預算' },
+    { href: `${tripUrl(tripId)}#recap`, label: '旅後' },
+    { active: true, label: '編輯' }
   );
   return links;
 }

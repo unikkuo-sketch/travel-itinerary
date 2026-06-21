@@ -1,3 +1,5 @@
+import { icon, iconFromEmoji } from './icons.js';
+
 function esc(text) {
   const el = document.createElement('span');
   el.textContent = text;
@@ -50,7 +52,7 @@ function renderTimelineItem(item) {
 function renderDay(day) {
   const tipsHtml = day.tips?.length
     ? `<div class="tips-box">
-        <h4>💡 旅遊重點</h4>
+        <h4>${icon('lightbulb')} 旅遊重點</h4>
         <ul>${day.tips.map((t) => `<li>${t}</li>`).join('')}</ul>
       </div>`
     : '';
@@ -74,7 +76,7 @@ function renderDay(day) {
 function renderBudgetHtml(budget) {
   const cards = budget.categories.map((cat) => `
     <div class="budget-card">
-      <div class="budget-icon">${cat.icon}</div>
+      <div class="budget-icon">${iconFromEmoji(cat.icon, 'icon icon--lg')}</div>
       <h3>${esc(cat.title)}</h3>
       <div class="budget-items">
         ${cat.items.map((i) => `
@@ -98,7 +100,7 @@ export function renderHero(meta) {
   if (!root || !meta) return;
 
   const highlights = (meta.highlights || [])
-    .map((h) => `<div class="info-item"><span class="info-icon">✨</span><span>${esc(h)}</span></div>`)
+    .map((h) => `<div class="info-item"><span class="info-icon">${icon('sparkle')}</span><span>${esc(h)}</span></div>`)
     .join('');
 
   root.innerHTML = `
@@ -107,8 +109,8 @@ export function renderHero(meta) {
       <h1>${esc(meta.title || '')}</h1>
       <p class="hero-subtitle">${esc(meta.subtitle || '')}</p>
       <div class="hero-info">
-        <div class="info-item"><span class="info-icon">📅</span><span>${esc(meta.dateRange || '')}</span></div>
-        <div class="info-item"><span class="info-icon">🎫</span><span>${esc(meta.ticketSummary || '')}</span></div>
+        <div class="info-item"><span class="info-icon">${icon('calendar')}</span><span>${esc(meta.dateRange || '')}</span></div>
+        <div class="info-item"><span class="info-icon">${icon('ticket')}</span><span>${esc(meta.ticketSummary || '')}</span></div>
         ${highlights}
       </div>
     </div>
@@ -124,7 +126,7 @@ export function renderExtras(data) {
     eventsEl.innerHTML = data.events.map((e) => `
       <div class="event-card">
         <h3>${esc(e.region)}</h3>
-        <ul>${e.items.map((item) => `<li>🌸 ${esc(item)}</li>`).join('')}</ul>
+        <ul>${e.items.map((item) => `<li>${esc(item)}</li>`).join('')}</ul>
       </div>
     `).join('');
   }
@@ -133,27 +135,25 @@ export function renderExtras(data) {
     const w = data.weather;
     weatherEl.innerHTML = `
       <div class="weather-card">
-        <div class="weather-icon">🌸</div>
+        <div class="weather-icon">${icon('flower', 'icon icon--lg')}</div>
         <h3>氣溫概況</h3>
         <div class="weather-info">
-          <div class="temp-row"><span>☀️ 白天高溫</span><span class="temp high">${esc(w.temps?.high || '')}</span></div>
-          <div class="temp-row"><span>🌙 夜晚低溫</span><span class="temp low">${esc(w.temps?.low || '')}</span></div>
+          <div class="temp-row"><span>${icon('sun')} 白天高溫</span><span class="temp high">${esc(w.temps?.high || '')}</span></div>
+          <div class="temp-row"><span>${icon('moon')} 夜晚低溫</span><span class="temp low">${esc(w.temps?.low || '')}</span></div>
         </div>
         <p class="weather-note">${esc(w.note || '')}</p>
       </div>
       <div class="weather-card">
-        <div class="weather-icon">🧥</div>
+        <div class="weather-icon">${icon('coat', 'icon icon--lg')}</div>
         <h3>穿著建議</h3>
         <ul class="weather-tips">
-          ${(w.tips || []).map((t) => `<li>✅ ${esc(t)}</li>`).join('')}
+          ${(w.tips || []).map((t) => `<li>${icon('check')}<span>${esc(t)}</span></li>`).join('')}
         </ul>
       </div>`;
   }
 
-  if (footerEl && data.meta) {
-    footerEl.innerHTML = `
-      <p class="footer-wish">🎌 ${esc(data.meta.footerWish || '祝您旅途順利！')} ✨</p>
-      <p class="footer-date">${esc(data.meta.footerDate || '')}</p>`;
+  if (footerEl && data.meta?.footerDate) {
+    footerEl.innerHTML = `<p class="footer-date">${esc(data.meta.footerDate)}</p>`;
   }
 }
 
