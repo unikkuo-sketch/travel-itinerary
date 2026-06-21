@@ -5,7 +5,8 @@ export function getTripId() {
 }
 
 export function tripUrl(id, page = 'trip', hash = '') {
-  const file = page === 'shopping' ? 'shopping.html' : 'trip.html';
+  const files = { trip: 'trip.html', shopping: 'shopping.html', recap: 'recap.html' };
+  const file = files[page] || 'trip.html';
   return `${base}${file}?trip=${encodeURIComponent(id)}${hash}`;
 }
 

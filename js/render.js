@@ -22,7 +22,7 @@ function renderTickets(tickets) {
 function renderOverview(rows) {
   return rows.map((r) => `
     <tr>
-      <td><span class="day-badge">Day ${r.day}</span></td>
+      <td><span class="day-badge">${r.day}</span></td>
       <td>${esc(r.date)}</td>
       <td>${esc(r.places)}</td>
       <td>${esc(r.hotel)}</td>

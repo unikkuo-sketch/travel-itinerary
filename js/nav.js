@@ -23,6 +23,7 @@ function buildTripNavLinks(tripId, days) {
 
   links.push(
     { href: `${tripUrl(tripId)}#budget`, label: '💰 預算' },
+    { href: `${tripUrl(tripId)}#recap`, label: '📸 旅後' },
     { href: tripUrl(tripId, 'shopping'), label: '🛍️ 購物' }
   );
 
@@ -47,13 +48,36 @@ function buildShoppingNavLinks(tripId, days) {
   return links;
 }
 
+function buildRecapNavLinks(tripId, days) {
+  const links = [
+    { href: hubUrl(), label: '🏠 總覽' },
+    { href: `${tripUrl(tripId)}#overview`, label: '📋 總覽' },
+  ];
+
+  (days || []).forEach((day) => {
+    links.push({
+      href: `${tripUrl(tripId)}#${day.id}`,
+      label: `Day ${day.number}`,
+    });
+  });
+
+  links.push(
+    { href: `${tripUrl(tripId)}#budget`, label: '💰 預算' },
+    { href: `${tripUrl(tripId)}#recap`, label: '📸 旅後' },
+    { active: true, label: '✏️ 編輯' }
+  );
+  return links;
+}
+
 export function mountNav(page, tripId, days = []) {
   const container = document.getElementById('nav-container');
   if (!container) return;
 
   const links = page === 'shopping'
     ? buildShoppingNavLinks(tripId, days)
-    : buildTripNavLinks(tripId, days);
+    : page === 'recap'
+      ? buildRecapNavLinks(tripId, days)
+      : buildTripNavLinks(tripId, days);
 
   container.innerHTML = links.map((l) => {
     if (l.active) return `<span class="nav-link active">${l.label}</span>`;

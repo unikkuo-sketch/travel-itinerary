@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>旅後回顧</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body class="recap-page">
+    <nav class="nav-sticky">
+        <div id="nav-container" class="nav-container"></div>
+    </nav>
+
+    <header class="hero hero-recap">
+        <div class="hero-content">
+            <span class="hero-badge">After the Trip</span>
+            <h1 id="recap-trip-title">旅後回顧</h1>
+            <p class="hero-subtitle">記錄真實旅程 · 自動儲存於此裝置</p>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="section recap-zone recap-zone--photos">
+            <div class="section-header">
+                <h2>旅後相片</h2>
+                <p>依 Day 分類，點選上傳</p>
+            </div>
+            <div class="recap-upload-form">
+                <div class="recap-form-row">
+                    <label class="recap-label" for="photo-day">Day</label>
+                    <select id="photo-day" class="recap-select"></select>
+                </div>
+                <div class="recap-form-row recap-form-row--split">
+                    <div>
+                        <label class="recap-label" for="photo-caption">說明</label>
+                        <input type="text" id="photo-caption" class="recap-input" placeholder="選填，如：熱海站黃昏">
+                    </div>
+                    <div>
+                        <label class="recap-label" for="photo-place">地點</label>
+                        <input type="text" id="photo-place" class="recap-input" placeholder="選填">
+                    </div>
+                </div>
+                <div class="recap-form-row">
+                    <label class="recap-label recap-upload-btn">
+                        選擇照片
+                        <input type="file" id="photo-input" accept="image/*" multiple hidden>
+                    </label>
+                    <span id="upload-status" class="recap-status" aria-live="polite"></span>
+                </div>
+            </div>
+            <div id="photo-grid" class="recap-edit-photo-grid"></div>
+        </section>
+
+        <section class="section recap-zone recap-zone--expenses">
+            <div class="section-header">
+                <h2>實際花費</h2>
+                <p>對照規劃預算，填寫實際金額</p>
+            </div>
+            <div id="expense-table-wrap" class="recap-expense-edit-wrap"></div>
+            <div class="recap-form-row recap-form-row--split recap-total-fields">
+                <div>
+                    <label class="recap-label" for="total-amount">實際總計（日圓）</label>
+                    <input type="text" id="total-amount" class="recap-input" placeholder="例：¥98,000">
+                </div>
+                <div>
+                    <label class="recap-label" for="total-twd">台幣換算</label>
+                    <input type="text" id="total-twd" class="recap-input" placeholder="例：約 NT$ 21,000 /人">
+                </div>
+            </div>
+            <div class="recap-form-row">
+                <label class="recap-label" for="expense-notes">備註</label>
+                <textarea id="expense-notes" class="recap-textarea" rows="2" placeholder="選填，如：住宿找到早鳥優惠"></textarea>
+            </div>
+        </section>
+
+        <section class="section recap-zone recap-zone--data">
+            <div class="section-header">
+                <h2>資料管理</h2>
+                <p>匯出後放入 trips 資料夾 commit，即可公開分享</p>
+            </div>
+            <div class="recap-actions">
+                <button type="button" id="btn-save" class="btn-recap">已自動儲存</button>
+                <button type="button" id="btn-import" class="btn-recap btn-recap--ghost">從已發佈版載入</button>
+                <button type="button" id="btn-export" class="btn-recap btn-recap--ghost">匯出發佈包</button>
+                <button type="button" id="btn-clear" class="btn-recap btn-recap--danger">清除本機草稿</button>
+            </div>
+            <p class="recap-export-hint">匯出會下載 recap.json 與各張 .jpg。請將 json 放入 <code>trips/{id}/</code>，照片放入 <code>trips/{id}/photos/</code> 後 commit。</p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="footer-wish">旅後的回憶，是最溫暖的 souvenir</p>
+        </div>
+    </footer>
+
+    <script type="module" src="/js/recap.js"></script>
+</body>
+</html>
