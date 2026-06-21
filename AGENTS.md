@@ -30,6 +30,7 @@ trips/_template/        新行程範本
 
 ## 慣例
 
+- 全站 UI token 在 `styles.css` `:root`（Palette 1：`#D0B8AC` → `#FBFEFB` 蜜桃奶油系；字級 `--text-*`、行距 `--leading-*`）
 - 改行程內容：只編輯 `trips/{id}/itinerary.json`
 - 新增行程：複製 `_template`、更新 `manifest.json`（見 docs/add-trip.md）
 - 購物清單 localStorage：`travelShoppingList:{tripId}`
