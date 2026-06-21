@@ -1,4 +1,4 @@
-import{t as Mn,g as ns,a as os}from"./load-trip-DnsRvTu4.js";import{i as lt,a as ss}from"./icons-BLkUqgzZ.js";import{m as rs,i as as}from"./nav-BQWgjhkq.js";import{p as ye,f as hs,l as us}from"./recap-storage-CJgOGzEA.js";function S(l){const d=document.createElement("span");return d.textContent=l,d.innerHTML}function ls(l){return l.map(d=>`
+import{t as Mn,g as ns,a as os}from"./load-trip-CBGHvy5k.js";import{i as lt,a as ss}from"./icons-BLkUqgzZ.js";import{m as rs,i as as}from"./nav-DCx1d7yb.js";import{p as ye,f as hs,l as us}from"./recap-storage-CJgOGzEA.js";function S(l){const d=document.createElement("span");return d.textContent=l,d.innerHTML}function ls(l){return l.map(d=>`
     <div class="ticket-card ${d.variant}">
       <div class="ticket-header">
         <h3>${S(d.title)}</h3><span class="ticket-badge">${S(d.badge)}</span>
