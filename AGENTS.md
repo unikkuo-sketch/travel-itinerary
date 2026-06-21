@@ -49,5 +49,5 @@ npm run preview
 
 ## 部署
 
-- base path：`/travel-itinerary-2026/`
+- base path：`/travel-itinerary/`
 - CI：`.github/workflows/deploy.yml` → `gh-pages`

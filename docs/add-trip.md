@@ -80,8 +80,8 @@ Copy-Item -Recurse trips\_template trips\2027_義大利托斯卡尼_蜜月
 npm run dev
 ```
 
-- Hub：`http://localhost:5173/travel-itinerary-2026/`
-- 行程：`http://localhost:5173/travel-itinerary-2026/trip.html?trip=2027_義大利托斯卡尼_蜜月`
+- Hub：`http://localhost:5173/travel-itinerary/`
+- 行程：`http://localhost:5173/travel-itinerary/trip.html?trip=2027_義大利托斯卡尼_蜜月`
 
 ### 6. 上線
 

@@ -2,7 +2,7 @@
 
 所有旅程規劃集中於一個網站。每趟旅行一個資料夾，共用同一套 UI。
 
-**線上版：** https://unikkuo-sketch.github.io/travel-itinerary-2026/
+**線上版：** https://unikkuo-sketch.github.io/travel-itinerary/
 
 ## 快速開始
 
@@ -14,8 +14,8 @@ npm run dev
 
 | 頁面 | URL |
 |------|-----|
-| 行程總覽 Hub | `http://localhost:5173/travel-itinerary-2026/` |
-| 單一行程 | `http://localhost:5173/travel-itinerary-2026/trip.html?trip=2026_日本熱海長瀞_家族旅遊` |
+| 行程總覽 Hub | `http://localhost:5173/travel-itinerary/` |
+| 單一行程 | `http://localhost:5173/travel-itinerary/trip.html?trip=2026_日本熱海長瀞_家族旅遊` |
 | 購物清單 | `.../shopping.html?trip=2026_日本熱海長瀞_家族旅遊` |
 | 旅後回顧（編輯） | `.../recap.html?trip=2026_日本熱海長瀞_家族旅遊` |
 | 旅後展示 | `.../trip.html?trip=2026_日本熱海長瀞_家族旅遊#recap` |

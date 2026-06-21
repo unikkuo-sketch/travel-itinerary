@@ -45,7 +45,7 @@ function tripsStatic() {
 }
 
 export default defineConfig({
-  base: '/travel-itinerary-2026/',
+  base: '/travel-itinerary/',
   plugins: [tripsStatic()],
   build: {
     rollupOptions: {
