@@ -6,7 +6,17 @@
       "subtitle": "熱海 × 伊東 × 長瀞 × 秩父",
       "dateRange": "2026/03/27 - 04/01",
       "status": "upcoming",
-      "emoji": "🌸"
+      "emoji": "🌸",
+      "coords": [35.1, 139.07]
+    },
+    {
+      "id": "2026_日本青森仙台秋田_家族旅遊",
+      "title": "2026 日本東北祭典 8日遊",
+      "subtitle": "仙台 × 盛岡 × 青森 × 弘前 × 秋田",
+      "dateRange": "2026/07/31 - 08/07",
+      "status": "upcoming",
+      "emoji": "🎆",
+      "coords": [39.7, 140.7]
     }
   ]
 }

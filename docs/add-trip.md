@@ -61,11 +61,14 @@ Copy-Item -Recurse trips\_template trips\2027_義大利托斯卡尼_蜜月
   "subtitle": "副標",
   "dateRange": "2027/05/01 - 05/10",
   "status": "upcoming",
-  "emoji": "🇮🇹"
+  "emoji": "🇮🇹",
+  "coords": [43.77, 11.25]
 }
 ```
 
 `status`：`upcoming`（即將出發）或 `past`（已結束）
+
+`coords`：`[緯度, 經度]`，Hub 首頁「精選旅程」世界地圖用來標出目的地釘點；未填則不顯示於地圖。
 
 ### 4. 選填檔案
 
