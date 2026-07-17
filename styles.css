@@ -155,6 +155,76 @@ h3 { font-size: var(--text-lg); }
     pointer-events: none;
 }
 
+/* Hub hero — atmosphere pattern + entrance motion */
+.hero-hub::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(circle, rgba(255, 255, 255, 0.55) 1px, transparent 1.6px);
+    background-size: 26px 26px;
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.hero-hub .hero-badge,
+.hero-hub h1,
+.hero-hub .hero-subtitle,
+.hero-hub .hero-cta-group {
+    opacity: 0;
+    animation: heroFadeUp 0.7s ease-out forwards;
+}
+
+.hero-hub .hero-badge { animation-delay: 0.05s; }
+.hero-hub h1 { animation-delay: 0.16s; }
+.hero-hub .hero-subtitle { animation-delay: 0.28s; }
+.hero-hub .hero-cta-group { animation-delay: 0.4s; }
+
+@keyframes heroFadeUp {
+    from { opacity: 0; transform: translateY(16px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.hero-cta-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.85rem;
+    margin-top: 0.5rem;
+}
+
+.btn-hero {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.7rem 1.5rem;
+    background: var(--accent);
+    color: var(--white);
+    border: 1px solid var(--accent);
+    border-radius: 999px;
+    font-family: var(--font-sans);
+    font-size: var(--text-sm);
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    transition: background var(--transition-fast), border-color var(--transition-fast), transform var(--transition-fast);
+    cursor: pointer;
+}
+
+.btn-hero:hover {
+    background: var(--accent-dark);
+    border-color: var(--accent-dark);
+    transform: translateY(-1px);
+}
+
+.btn-hero--ghost {
+    background: rgba(255, 255, 255, 0.75);
+    color: var(--text-primary);
+    border-color: var(--border-soft);
+}
+
+.btn-hero--ghost:hover {
+    background: rgba(255, 255, 255, 0.95);
+    border-color: var(--accent-light);
+}
+
 .hero-content {
     position: relative;
     z-index: 2;
@@ -1006,8 +1076,71 @@ h3 { font-size: var(--text-lg); }
 }
 
 .hero-hub {
-    min-height: 38vh;
+    min-height: 44vh;
     background: var(--gradient-hero);
+}
+
+/* Scroll reveal (shared by non-hero sections) */
+.reveal {
+    opacity: 0;
+    transform: translateY(18px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: none;
+}
+
+/* Welcome blurb */
+.section-welcome {
+    max-width: 42rem;
+}
+
+.welcome-blurb {
+    color: var(--text-secondary);
+    font-size: var(--text-lg);
+    line-height: var(--leading-normal);
+}
+
+/* Featured Destinations (world map) */
+.featured-map {
+    height: 420px;
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border-soft);
+    overflow: hidden;
+    z-index: 1;
+}
+
+.featured-popup {
+    font-family: var(--font-sans);
+}
+
+.featured-popup h3 {
+    font-family: var(--font-serif);
+    font-size: var(--text-lg);
+    color: var(--text-primary);
+    margin: 0.35rem 0 0.35rem;
+}
+
+.featured-popup .trip-card-sub {
+    color: var(--text-secondary);
+    margin: 0 0 0.25rem;
+}
+
+.featured-popup .trip-card-date {
+    color: var(--text-muted);
+    font-size: var(--text-sm);
+    margin: 0 0 0.5rem;
+}
+
+.featured-popup-cta {
+    display: inline-flex;
+    align-items: center;
+    color: var(--accent);
+    font-size: var(--text-sm);
+    font-weight: 500;
+    text-decoration: none;
 }
 
 .hub-grid {
@@ -1111,6 +1244,10 @@ h3 { font-size: var(--text-lg); }
 
     .hero h1 {
         font-size: var(--text-2xl);
+    }
+
+    .hero-cta-group {
+        justify-content: center;
     }
 
     .nav-container {
@@ -2188,6 +2325,20 @@ h3 { font-size: var(--text-lg); }
         opacity: 1;
         transform: none;
         transition: none;
+    }
+
+    .reveal {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+
+    .hero-hub .hero-badge,
+    .hero-hub h1,
+    .hero-hub .hero-subtitle,
+    .hero-hub .hero-cta-group {
+        opacity: 1;
+        animation: none;
     }
 
     .shopping-item {

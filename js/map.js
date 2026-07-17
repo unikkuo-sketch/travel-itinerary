@@ -1,5 +1,6 @@
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
+import './leaflet-icons.js';
 
 export function initMap(mapData) {
   const el = document.getElementById('leaflet-map');

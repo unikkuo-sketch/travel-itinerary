@@ -15,16 +15,37 @@
         <div class="hero-content">
             <span class="hero-badge">Travel Hub</span>
             <h1>宇宙碎片集散地</h1>
-            <p class="hero-subtitle">所有旅程規劃，一站瀏覽</p>
+            <p class="hero-subtitle">收集每一次啟程的碎片，拼成屬於我們的旅行地圖</p>
+            <div class="hero-cta-group">
+                <a href="#hub-grid" class="btn-hero">探索所有行程</a>
+                <a href="#featured" class="btn-hero btn-hero--ghost">即將啟程</a>
+            </div>
         </div>
     </header>
 
     <main class="main-content">
-        <section class="section">
+        <section class="section section-welcome reveal">
+            <div class="section-header section-header--editorial">
+                <span class="section-eyebrow">About</span>
+                <h2>關於這個集散地</h2>
+            </div>
+            <p class="welcome-blurb">收藏每一塊旅行碎片——航班、住宿、路線、預算與當地特產清單。</p>
+        </section>
+
+        <section class="section reveal" id="featured">
+            <div class="section-header section-header--editorial">
+                <span class="section-eyebrow">Featured</span>
+                <h2>精選旅程</h2>
+                <p>在地圖上點選目的地</p>
+            </div>
+            <div id="featured-map" class="featured-map"></div>
+        </section>
+
+        <section class="section reveal">
             <div class="section-header section-header--editorial">
                 <span class="section-eyebrow">Itineraries</span>
-                <h2>行程列表</h2>
-                <p>選擇一趟旅程查看完整規劃</p>
+                <h2>所有行程</h2>
+                <p>依時間排序，規劃與回顧都在這裡</p>
             </div>
             <div id="hub-grid" class="hub-grid"></div>
         </section>
