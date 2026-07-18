@@ -24,6 +24,14 @@
 
 ## 決策
 
+### 2026-07-18 — Hub 地圖維持 Leaflet，否決 3D／SVG 實驗
+
+- 問題：評估「碎片漂泊地」是否改成 3D 地球（Globe.gl）或 2D SVG 世界投影
+- 曾考慮：A `experiment/hub-globe-3d`；B `experiment/hub-svg-map-2d`（worktree 對照，皆無航班弧線）
+- 放棄原因：實機比較後仍以現行 Leaflet featured-map 最合適（體感／品牌／維護成本）
+- 現行方案：Hub `#featured-map` 繼續用 Leaflet + CARTO Positron；不引入 globe.gl／d3 世界圖
+- 驗證：`npm run dev` → `#featured` 為既有 Leaflet 標記與 popup
+
 ### 2026-07-18 — 行程地圖底圖對齊 Hub
 
 - 問題：行程內頁用預設 OSM 街景，與蜜桃奶油站台／Hub Positron 風格衝突
