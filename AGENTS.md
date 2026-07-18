@@ -51,3 +51,11 @@ npm run preview
 
 - base path：`/travel-itinerary/`
 - CI：`.github/workflows/deploy.yml` → `gh-pages`
+
+## Cursor Cloud specific instructions
+
+- Static frontend only (Vite + vanilla JS). No backend, database, env vars, or secrets required.
+- Package manager is npm (`package-lock.json`). Commands are in `package.json` / README.
+- No lint or test scripts exist; verification = `npm run dev` (or `npm run build`) plus manual browser check.
+- Dev server serves at `http://localhost:5173/travel-itinerary/` — the `/travel-itinerary/` base path is required; a bare `http://localhost:5173/` will not resolve pages.
+- `trips/*.json` and photos are served in dev/build by the `tripsStatic` vite plugin in `vite.config.js` (not by importing them), so trip data loads via `fetch` at those `/travel-itinerary/trips/...` paths.
