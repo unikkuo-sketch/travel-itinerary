@@ -18,8 +18,7 @@ npm run dev
 | 行程總覽 Hub | `http://localhost:5173/travel-itinerary/` |
 | 單一行程 | `http://localhost:5173/travel-itinerary/trip.html?trip=2026_日本熱海長瀞_家族旅遊` |
 | 購物清單 | `.../shopping.html?trip=2026_日本熱海長瀞_家族旅遊` |
-| 旅後回顧（編輯） | `.../recap.html?trip=2026_日本熱海長瀞_家族旅遊` |
-| 旅後展示 | `.../trip.html?trip=2026_日本熱海長瀞_家族旅遊#recap` |
+| 風土碎片 | `.../stories.html?trip=2026_日本熱海長瀞_家族旅遊` |
 
 ```powershell
 npm run build
@@ -33,7 +32,7 @@ traveling/                 # 根目錄：共用程式、Hub、建置設定
 ├── index.html             # Hub 首頁
 ├── trip.html              # 通用行程頁
 ├── shopping.html          # 通用購物頁
-├── recap.html             # 旅後回顧編輯
+├── stories.html           # 風土碎片（滿版章節）
 ├── js/                    # 共用邏輯
 ├── styles.css
 └── trips/
@@ -48,8 +47,6 @@ traveling/                 # 根目錄：共用程式、Hub、建置設定
 見 [docs/add-trip.md](docs/add-trip.md)。
 
 命名：`{西元年}_{地區}_{性質}`，例如 `2027_泰國曼谷清邁_朋友旅遊`。
-
-旅後回顧見 [docs/add-trip.md#旅後回顧發佈](docs/add-trip.md#旅後回顧發佈)。
 
 ## 部署
 

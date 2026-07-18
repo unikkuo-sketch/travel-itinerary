@@ -166,6 +166,68 @@
       "準備輕便雨具，應對午後雷陣雨或颱風外圍環流。"
     ]
   },
+  "stories": [
+    {
+      "theme": "place",
+      "title": "松島",
+      "kicker": "宮城",
+      "body": "日本三景之一，島嶼與松林交錯於灣內。伊達家信仰與古寺遺韻並陳，是這趟東北旅程裡最廣為流傳的風景碎片。",
+      "source": { "label": "日本三景松島－松島観光協会", "url": "https://www.matsushima-kanko.com/" },
+      "photo": {
+        "src": "photos/day7.webp",
+        "alt": "松島灣",
+        "credit": "Chensiyuan / CC BY-SA 4.0"
+      }
+    },
+    {
+      "theme": "place",
+      "title": "秋田竿燈祭",
+      "kicker": "秋田",
+      "body": "夜空搖曳如黃金稻穗，萬點燈火承載五穀豐收的祈願。東北三大夏祭之一，把盛夏的熱與光，收成可帶走的記憶。",
+      "source": { "label": "秋田竿燈まつり（公式）", "url": "https://www.kantou.gr.jp/" },
+      "photo": {
+        "src": "photos/story-kanto-1200.jpg",
+        "alt": "秋田竿燈祭夜景",
+        "credit": "8-Forest / CC BY-SA 4.0"
+      }
+    },
+    {
+      "theme": "place",
+      "title": "青森睡魔祭",
+      "kicker": "青森",
+      "body": "以武者繪巨燈巡行街巷的夏祭；最後一夜的海上運行與花火，把一整年的力氣推向最高潮。本趟封面所記，正是這道光。",
+      "source": { "label": "青森ねぶた祭（公式）", "url": "https://www.nebuta.jp/" },
+      "photo": {
+        "src": "photos/cover.webp",
+        "alt": "青森睡魔祭的燈籠山車",
+        "credit": "Marie-Sophie Mejan / CC BY 4.0"
+      }
+    },
+    {
+      "theme": "place",
+      "title": "角館武家屋敷",
+      "kicker": "秋田・仙北",
+      "body": "江戶初期城下町遺韻猶存，黒板塀與武家屋敷並稱「みちのくの小京都」。慢步石道，像翻開東北小城的一頁靜史。",
+      "source": { "label": "田沢湖・角館観光協会", "url": "https://tazawako-kakunodate.com/" },
+      "photo": {
+        "src": "photos/day6.webp",
+        "alt": "角館武家屋敷通",
+        "credit": "掬茶 / CC BY-SA 4.0"
+      }
+    },
+    {
+      "theme": "food",
+      "title": "仙台牛タン",
+      "kicker": "宮城・仙台",
+      "body": "昭和二十三年起自仙台的炭火牛舌文化；定食常配麥飯與尾湯，各店部位與調味各有堅持。啟程東北前，先收下這口在地味道。",
+      "source": { "label": "せんだい旅日和（仙台観光情報）", "url": "https://www.sentabi.jp/features/42" },
+      "photo": {
+        "src": "photos/story-gyutan.jpg",
+        "alt": "仙台牛タン定食",
+        "credit": "Captain76 / Public domain"
+      }
+    }
+  ],
   "tickets": [
     {
       "variant": "primary",

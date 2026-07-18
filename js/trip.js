@@ -1,9 +1,7 @@
-import { getTripId, loadTrip, tripUrl } from './load-trip.js';
+import { getTripId, loadTrip } from './load-trip.js';
 import { renderItinerary } from './render.js';
 import { mountNav, initNavScroll } from './nav.js';
 import { initMap } from './map.js';
-import { loadRecapForDisplay } from './recap-storage.js';
-import { renderRecapSection } from './render-recap.js';
 import { icon } from './icons.js';
 
 function initAppIcons() {
@@ -60,17 +58,6 @@ async function init() {
     initNavScroll();
     initTimelineAnimation();
     initAppIcons();
-
-    const recapRoot = document.getElementById('recap-root');
-    if (recapRoot) {
-      try {
-        const displayData = await loadRecapForDisplay(tripId);
-        await renderRecapSection(recapRoot, { tripId, tripData: data, displayData });
-      } catch (recapErr) {
-        console.warn('recap section failed:', recapErr);
-        await renderRecapSection(recapRoot, { tripId, tripData: data, displayData: null });
-      }
-    }
   } catch (err) {
     showError(err.message);
   }

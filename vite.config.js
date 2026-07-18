@@ -53,7 +53,7 @@ export default defineConfig({
         hub: resolve(__dirname, 'index.html'),
         trip: resolve(__dirname, 'trip.html'),
         shopping: resolve(__dirname, 'shopping.html'),
-        recap: resolve(__dirname, 'recap.html'),
+        stories: resolve(__dirname, 'stories.html'),
       },
     },
   },

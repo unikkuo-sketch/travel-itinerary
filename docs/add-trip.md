@@ -119,9 +119,10 @@ Copy-Item -Recurse trips\_template trips\2027_義大利托斯卡尼_蜜月
 | 檔案 | 用途 |
 |------|------|
 | `notes.md` | 文字摘要，給自己或 AI 閱讀 |
-| `recap.json` | 旅後公開資料（照片路徑、實際花費） |
-| `photos/` | 旅後照片（與 recap.json 的 `file` 欄對應） |
+| `photos/` | 行程封面與每日代表照（見下方照片慣例） |
 | `assets/` | PDF、圖片等原始檔 |
+
+`itinerary.json` 可含 `stories[]`（風土碎片）：每則 `theme`（`place`｜`food`）、`title`、`kicker`、`body`、`source`（`label` + `url`，優先日文官方站）、`photo`（同 day photo：`src`／`alt`／`credit`）。獨立頁 `stories.html?trip={id}` 以滿版章節呈現；未填或空陣列顯示空狀態。建議每趟約 5 則，兼顧景點與飲食；可重用 `photos/` 既有封面／每日照，新圖須補 `ATTRIBUTIONS.md`。
 
 ### 6. 預覽
 
@@ -141,14 +142,3 @@ git push origin main
 ```
 
 GitHub Actions 會自動部署到 GitHub Pages。
-
-## 旅後回顧發佈
-
-旅後可在 `recap.html?trip={id}` 上傳照片、填寫實際花費（本機自動儲存）。若要公開分享：
-
-1. 在 recap 頁按「匯出發佈包」
-2. 將下載的 `recap.json` 放入 `trips/{id}/`
-3. 將各張 `.jpg` 放入 `trips/{id}/photos/`（路徑須與 json 內 `photos[].file` 一致，如 `photos/p1abc.jpg`）
-4. commit 並 push
-
-行程頁 `#recap` 會顯示規劃 vs 實際對照。範本見 `trips/_template/recap.json`。

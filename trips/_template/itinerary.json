@@ -55,6 +55,20 @@
     "note": "氣候備註",
     "tips": ["穿著建議一"]
   },
+  "stories": [
+    {
+      "theme": "place",
+      "title": "亮點名稱",
+      "kicker": "地區・地名",
+      "body": "兩至四句精短中文，說明歷史或風土重點。",
+      "source": { "label": "官方來源名稱", "url": "https://example.com/" },
+      "photo": {
+        "src": "photos/cover.webp",
+        "alt": "照片說明",
+        "credit": "作者 / 授權"
+      }
+    }
+  ],
   "tickets": [
     {
       "variant": "primary",

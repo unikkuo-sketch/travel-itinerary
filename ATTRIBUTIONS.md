@@ -36,6 +36,8 @@ CC BY / CC BY-SA 圖片依授權條款標示作者、來源與授權；CC BY-SA 
 | `day6.webp` | 角館武家屋敷通 | 掬茶 | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Bukeyashiki_Street_in_Kakunodate_20180428b.jpg) |
 | `day7.webp` | 松島灣 | Chensiyuan | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Matsushima_miyagi_z.JPG) |
 | `day8.webp` | 瑞鳳殿 | 663highland | [CC BY 2.5](https://creativecommons.org/licenses/by/2.5/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Zuiho-den02s3200.jpg) |
+| `story-gyutan.jpg` | 仙台牛タン定食 | Captain76 | [Public domain](https://creativecommons.org/publicdomain/mark/1.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Gyutan_teishoku.JPG) |
+| `story-kanto-1200.jpg` | 秋田竿燈祭夜景 | 8-Forest | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Akita_Kanto_Festival_2015_at_night.JPG) |
 
 ## 新增圖片時的紀錄格式
 

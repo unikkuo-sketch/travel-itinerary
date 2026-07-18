@@ -179,6 +179,68 @@
       "山區準備：前往大室山、寶登山時風勢較強，建議準備防風外套與帽子。"
     ]
   },
+  "stories": [
+    {
+      "theme": "place",
+      "title": "明治神宮",
+      "kicker": "東京・代代木",
+      "body": "供奉明治天皇與昭憲皇太后的神社，境內是以人工造林長成的代代木之森。返程日走進參道，像把都會喧囂暫時收進一片靜謐。",
+      "source": { "label": "明治神宮（公式）", "url": "https://www.meijijingu.or.jp/" },
+      "photo": {
+        "src": "photos/day6.webp",
+        "alt": "明治神宮南參道鳥居",
+        "credit": "Asanagi / CC0"
+      }
+    },
+    {
+      "theme": "place",
+      "title": "三峯神社",
+      "kicker": "埼玉・秩父",
+      "body": "相傳日本武尊東征時於此祀神；山犬（狼）為神使，守護深山信仰。海拔約一千公尺，是這趟旅程裡最沉靜的一塊碎片。",
+      "source": { "label": "秩父 三峯神社（公式）", "url": "https://www.mitsuminejinja.or.jp/" },
+      "photo": {
+        "src": "photos/day5.webp",
+        "alt": "三峯神社隨身門",
+        "credit": "Zengame / CC BY 2.0"
+      }
+    },
+    {
+      "theme": "place",
+      "title": "長瀞岩疊",
+      "kicker": "埼玉・長瀞",
+      "body": "荒川河岸層層岩床，屬國指定名勝・天然紀念物；長瀞町大半劃入県立自然公園。站在岩面上，能讀到地質與河川共同刻下的時間。",
+      "source": { "label": "長瀞町観光協会", "url": "https://www.nagatoro.gr.jp/" },
+      "photo": {
+        "src": "photos/day4.webp",
+        "alt": "長瀞岩疊溪谷與荒川",
+        "credit": "Suikotei / CC BY-SA 4.0"
+      }
+    },
+    {
+      "theme": "place",
+      "title": "來宮神社",
+      "kicker": "靜岡・熱海",
+      "body": "境內大楠樹齡約二千百年，繞樹一圈的祈願傳說，讓這座神社成為熱海的守護象徵。傍晚參道亮起燈火時，更像把溫泉街的熱鬧輕輕放下。",
+      "source": { "label": "熱海市観光協会（來宮神社）", "url": "https://www.igaitoatami.com/spot/%E4%BE%86%E5%AE%AE%E7%A5%9E%E7%A4%BE-2/" },
+      "photo": {
+        "src": "photos/day1.webp",
+        "alt": "熱海サンビーチ的沙灘與海岸線",
+        "credit": "Izu navi / CC BY 2.0"
+      }
+    },
+    {
+      "theme": "food",
+      "title": "熱海布丁",
+      "kicker": "靜岡・熱海",
+      "body": "溫泉街第一家布丁專門店，以單純素材與手工蒸製追求細緻口感。帶回一盒，是把熱海的溫度收進行李裡的最小單位。",
+      "source": { "label": "熱海プリン（公式）", "url": "https://www.atami-purin.com/" },
+      "photo": {
+        "src": "photos/cover.webp",
+        "alt": "熱海サンビーチ與市街全景",
+        "credit": "m-louis .® / CC BY-SA 2.0"
+      }
+    }
+  ],
   "tickets": [
     {
       "variant": "primary",

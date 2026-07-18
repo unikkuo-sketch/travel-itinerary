@@ -12,6 +12,8 @@
 
 ## 近期
 
+- 風土碎片改獨立頁 `stories.html`：滿版章節＋下緣疊文（對齊購物進入方式）
+- 旅後回顧已移除，改「風土碎片」（`stories[]`）
 - 行程路線圖底圖改 CARTO Positron + 蜜桃奶油 filter，與 Hub featured-map 對齊
 - Hub 文案：Welcome blurb 置中；「每日行程一覽」；「碎片寶箱」／「碎片漂泊地」
 - 票券狀態可在行程頁點擊切換（本機 localStorage），JSON 仍為預設來源
@@ -23,6 +25,22 @@
 - 部署：push `main` → GH Actions → Pages；線上 https://unikkuo-sketch.github.io/travel-itinerary/
 
 ## 決策
+
+### 2026-07-18 — 風土碎片獨立頁＋滿版章節
+
+- 問題：風土內容若嵌在行程頁易被物流區塊淹沒；使用者希望與購物相同「點擊進入獨立頁」
+- 曾考慮：左右圖文卡；或維持 trip `#stories` 文字列表
+- 放棄原因：卡片語彙像購物目錄；內嵌區精緻感不足
+- 現行方案：`stories.html`＋`js/stories.js`；nav「風土」連獨立頁；每則接近一屏 full-bleed＋下緣漸層疊文；`stories[].photo` 優先重用行程照，缺圖再補（竿燈／牛タン已補）
+- 驗證：`npm run build`；`npm run dev` → `stories.html?trip=…` 五則滿版章節
+
+### 2026-07-18 — 風土碎片取代旅後回顧
+
+- 問題：旅後編輯／本機草稿／發佈包過重，且與「介紹旅程亮點歷史與風土」需求不符
+- 曾考慮：保留 recap 並另加文化區塊；或獨立 stories 頁
+- 放棄原因：旅後功能無已發佈資料、維護面大；使用者要的是精短風土故事而非旅後對照
+- 現行方案：刪除 recap 全套；風土改獨立頁（細節見上一則「獨立頁＋滿版章節」）
+- 驗證：見上一則
 
 ### 2026-07-18 — Hub 地圖維持 Leaflet，否決 3D／SVG 實驗
 

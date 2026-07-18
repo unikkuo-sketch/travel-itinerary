@@ -6,83 +6,66 @@ function hubUrl() {
   return base;
 }
 
+function dayLinks(tripId, days) {
+  return (days || []).map((day) => ({
+    href: `${tripUrl(tripId)}#${day.id}`,
+    label: `Day ${day.number}`,
+  }));
+}
+
 function buildTripNavLinks(tripId, days) {
   const links = [
     { href: hubUrl(), label: '總覽' },
     { href: `${tripUrl(tripId)}#tickets`, label: '票券' },
     { href: `${tripUrl(tripId)}#overview`, label: '行程' },
     { href: `${tripUrl(tripId)}#route-map`, label: '路線' },
-  ];
-
-  (days || []).forEach((day) => {
-    links.push({
-      href: `${tripUrl(tripId)}#${day.id}`,
-      label: `Day ${day.number}`,
-    });
-  });
-
-  links.push(
+    ...dayLinks(tripId, days),
     { href: `${tripUrl(tripId)}#budget`, label: '預算' },
-    { href: `${tripUrl(tripId)}#recap`, label: '旅後' },
-    { href: tripUrl(tripId, 'shopping'), label: '購物' }
-  );
-
+    { href: tripUrl(tripId, 'stories'), label: '風土' },
+    { href: tripUrl(tripId, 'shopping'), label: '購物' },
+  ];
   return links;
 }
 
 function buildShoppingNavLinks(tripId, days) {
-  const links = [
+  return [
     { href: hubUrl(), label: '總覽' },
     { href: `${tripUrl(tripId)}#tickets`, label: '票券' },
     { href: `${tripUrl(tripId)}#overview`, label: '行程' },
+    ...dayLinks(tripId, days),
+    { href: tripUrl(tripId, 'stories'), label: '風土' },
+    { active: true, label: '購物' },
   ];
-
-  (days || []).forEach((day) => {
-    links.push({
-      href: `${tripUrl(tripId)}#${day.id}`,
-      label: `Day ${day.number}`,
-    });
-  });
-
-  links.push({ active: true, label: '購物' });
-  return links;
 }
 
-function buildRecapNavLinks(tripId, days) {
-  const links = [
+function buildStoriesNavLinks(tripId, days) {
+  return [
     { href: hubUrl(), label: '總覽' },
+    { href: `${tripUrl(tripId)}#tickets`, label: '票券' },
     { href: `${tripUrl(tripId)}#overview`, label: '行程' },
+    ...dayLinks(tripId, days),
+    { active: true, label: '風土' },
+    { href: tripUrl(tripId, 'shopping'), label: '購物' },
   ];
-
-  (days || []).forEach((day) => {
-    links.push({
-      href: `${tripUrl(tripId)}#${day.id}`,
-      label: `Day ${day.number}`,
-    });
-  });
-
-  links.push(
-    { href: `${tripUrl(tripId)}#budget`, label: '預算' },
-    { href: `${tripUrl(tripId)}#recap`, label: '旅後' },
-    { active: true, label: '編輯' }
-  );
-  return links;
 }
 
 export function mountNav(page, tripId, days = []) {
   const container = document.getElementById('nav-container');
   if (!container) return;
 
-  const links = page === 'shopping'
-    ? buildShoppingNavLinks(tripId, days)
-    : page === 'recap'
-      ? buildRecapNavLinks(tripId, days)
-      : buildTripNavLinks(tripId, days);
+  const links =
+    page === 'shopping'
+      ? buildShoppingNavLinks(tripId, days)
+      : page === 'stories'
+        ? buildStoriesNavLinks(tripId, days)
+        : buildTripNavLinks(tripId, days);
 
-  container.innerHTML = links.map((l) => {
-    if (l.active) return `<span class="nav-link active">${l.label}</span>`;
-    return `<a href="${l.href}" class="nav-link">${l.label}</a>`;
-  }).join('');
+  container.innerHTML = links
+    .map((l) => {
+      if (l.active) return `<span class="nav-link active">${l.label}</span>`;
+      return `<a href="${l.href}" class="nav-link">${l.label}</a>`;
+    })
+    .join('');
 }
 
 export function initNavScroll() {
