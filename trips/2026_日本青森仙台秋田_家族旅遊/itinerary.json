@@ -292,7 +292,7 @@
       "date": "07/31",
       "places": "桃園→仙台",
       "hotel": "Vista 飯店 仙台",
-      "transport": "長榮航空 BR118",
+      "transport": "BR118 · 10:05",
       "transportClass": ""
     },
     {
@@ -300,7 +300,7 @@
       "date": "08/01",
       "places": "仙台→盛岡（小岩井農場）",
       "hotel": "盛岡新城市飯店",
-      "transport": "東日本周遊券（Hayabusa 1）",
+      "transport": "Hayabusa 1 · 08:05",
       "transportClass": ""
     },
     {
@@ -308,7 +308,7 @@
       "date": "08/02",
       "places": "盛岡→新青森（廣田神社・A-FACTORY・Moya Hills）",
       "hotel": "盛岡大都會飯店 新翼",
-      "transport": "東日本周遊券（Hayabusa 95 / Hayate 98）",
+      "transport": "Hayabusa 95 · 07:59／Hayate 98 · 21:47",
       "transportClass": ""
     },
     {
@@ -316,7 +316,7 @@
       "date": "08/03",
       "places": "盛岡→八戶→新青森→弘前",
       "hotel": "弘前超級飯店",
-      "transport": "東日本周遊券（Hayabusa 95・9 / Super-Tsugaru 2）",
+      "transport": "Hayabusa 95 · 07:59／Hayabusa 9 · 12:02／Super-Tsugaru 2 · 12:47",
       "transportClass": ""
     },
     {
@@ -324,7 +324,7 @@
       "date": "08/04",
       "places": "弘前→秋田（大仙市）",
       "hotel": "Green Hotel Omagari",
-      "transport": "東日本周遊券（Resort 白神號 2）",
+      "transport": "Resort 白神號 2 · 08:48",
       "transportClass": ""
     },
     {
@@ -332,7 +332,7 @@
       "date": "08/05",
       "places": "大曲→角館→田澤湖→仙台→松島",
       "hotel": "日本三景松島溫泉 壯觀飯店",
-      "transport": "東日本周遊券（Komachi 14・24）",
+      "transport": "Komachi 14 · 09:50／Komachi 24 · 14:09",
       "transportClass": ""
     },
     {
@@ -348,7 +348,7 @@
       "date": "08/07",
       "places": "仙台→桃園",
       "hotel": "-",
-      "transport": "長榮航空 BR117",
+      "transport": "BR117 · 16:05",
       "transportClass": ""
     }
   ],

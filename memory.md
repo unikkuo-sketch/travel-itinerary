@@ -12,6 +12,7 @@
 
 ## 近期
 
+- 行程總覽「交通重點」欄補已訂班次時間（`車次 · HH:MM`，多段用 `／`）
 - 風土碎片改獨立頁 `stories.html`：滿版章節＋下緣疊文（對齊購物進入方式）
 - 旅後回顧已移除，改「風土碎片」（`stories[]`）
 - 行程路線圖底圖改 CARTO Positron + 蜜桃奶油 filter，與 Hub featured-map 對齊
@@ -25,6 +26,14 @@
 - 部署：push `main` → GH Actions → Pages；線上 https://unikkuo-sketch.github.io/travel-itinerary/
 
 ## 決策
+
+### 2026-07-18 — 班次時間放行程總覽交通欄
+
+- 問題：已訂車班／航班時間埋在每日 timeline，總覽一眼看不到
+- 曾考慮：塞進票券卡 features；或總覽另開 section
+- 放棄原因：周遊券一卡多段，票券卡是購票核對不是時間軸；獨立 section 多餘
+- 現行方案：改 `overview[].transport`（例 `Hayabusa 1 · 08:05`）；多段用全形 `／`，`render.js` 拆成多行 tag
+- 驗證：`npm run build`；dev 開 trip `#overview` 看交通重點欄
 
 ### 2026-07-18 — 風土碎片獨立頁＋滿版章節
 

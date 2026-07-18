@@ -277,7 +277,7 @@
       "date": "03/27",
       "places": "桃園→成田→熱海",
       "hotel": "Resorpia Atami",
-      "transport": "單程購票 (巴士+新幹線)",
+      "transport": "起飛 06:40／巴士 11:10／新幹線 12:27",
       "transportClass": ""
     },
     {
@@ -293,7 +293,7 @@
       "date": "03/29",
       "places": "小室山公園賞櫻→池袋",
       "hotel": "Super Hotel JR Ikebukuro West Exit",
-      "transport": "單程購票 (藍寶石踴子號)",
+      "transport": "藍寶石踴子號 · 15:10",
       "transportClass": ""
     },
     {
@@ -301,7 +301,7 @@
       "date": "03/30",
       "places": "池袋→長瀞→秩父",
       "hotel": "Route-Inn Grand Chichibu",
-      "transport": "秩父漫遊車票",
+      "transport": "西武特急 · 07:30",
       "transportClass": "seibu"
     },
     {
@@ -309,7 +309,7 @@
       "date": "03/31",
       "places": "三峯神社→秩父神社→池袋",
       "hotel": "hotel hisoca ikebukuro",
-      "transport": "西武鐵道特急",
+      "transport": "西武特急 · 16:24",
       "transportClass": "seibu"
     },
     {
@@ -317,7 +317,7 @@
       "date": "04/01",
       "places": "明治神宮→成田→桃園",
       "hotel": "-",
-      "transport": "高速巴士",
+      "transport": "高速巴士 · 09:15／起飛 17:05",
       "transportClass": ""
     }
   ],

@@ -42,6 +42,7 @@ ATTRIBUTIONS.md         照片素材授權紀錄（新增圖片必須補列）
 - 票券狀態：`tickets[].status` = `purchased`｜`pending`｜`reservation`；JSON 為預設，本機可點狀態 pill 切換（`travelTicketStatus:{tripId}`）
 - 預算：`budget.partySize` + `total` 的每人／家庭（字串，作者手填）
 - 地圖點：`map.locations[]` 需 `name`、`number`、`day`、`coords`；標記與路線依 day 上色；不綁 timeline 編號
+- 行程總覽 `overview[].transport`：已訂班次寫 `車次 · HH:MM`；當日多段用全形 `／` 分隔（渲染成多行 tag）
 - 風土碎片：獨立頁 `stories.html`；`stories[]`（`theme`=`place`｜`food`、`title`、`kicker`、`body`、`source`、`photo`）；滿版章節＋下緣疊文；空陣列顯示空狀態
 - OG：四頁共用 `images/hub-hero.webp` 絕對 URL（靜態站無法給 crawler 動態 trip cover）
 

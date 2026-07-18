@@ -96,6 +96,16 @@ function mountTicketStatusControls(root, tripId) {
   });
 }
 
+function renderTransportCell(r) {
+  const raw = r.transport || '';
+  const parts = String(raw).split('／').map((s) => s.trim()).filter(Boolean);
+  const cls = `transport-tag${r.transportClass ? ` ${r.transportClass}` : ''}`;
+  if (parts.length <= 1) {
+    return `<span class="${cls}">${esc(raw)}</span>`;
+  }
+  return `<span class="transport-stack">${parts.map((p) => `<span class="${cls}">${esc(p)}</span>`).join('')}</span>`;
+}
+
 function renderOverview(rows) {
   return rows.map((r) => `
     <tr>
@@ -103,7 +113,7 @@ function renderOverview(rows) {
       <td data-label="日期">${esc(r.date)}</td>
       <td data-label="主要地點">${esc(r.places)}</td>
       <td data-label="住宿">${esc(r.hotel)}</td>
-      <td data-label="交通重點"><span class="transport-tag${r.transportClass ? ` ${r.transportClass}` : ''}">${esc(r.transport)}</span></td>
+      <td data-label="交通重點">${renderTransportCell(r)}</td>
     </tr>
   `).join('');
 }

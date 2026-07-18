@@ -34,6 +34,12 @@ Copy-Item -Recurse trips\_template trips\2027_義大利托斯卡尼_蜜月
 |------|------|
 | `status` | `purchased`（已購）／`pending`（待購）／`reservation`（免費但需預約）；JSON 為發佈預設；行程頁可點狀態 pill 本機切換（`travelTicketStatus:{tripId}`） |
 
+#### 行程總覽 `overview[]`
+
+| 欄位 | 說明 |
+|------|------|
+| `transport` | 交通重點；已訂班次寫 `車次 · HH:MM`（例 `Hayabusa 1 · 08:05`）；當日多段用全形 `／` 分隔，會渲染成多行 tag |
+
 #### 預算 `budget`
 
 | 欄位 | 說明 |

@@ -803,6 +803,13 @@ h3 { font-size: var(--text-lg); }
     white-space: nowrap;
 }
 
+.transport-stack {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+}
+
 .transport-tag {
     display: inline-block;
     padding: 0.25rem 0.5rem;
@@ -810,6 +817,8 @@ h3 { font-size: var(--text-lg); }
     font-size: var(--text-xs);
     font-weight: 500;
     background: var(--bg-muted);
+    line-height: var(--leading-snug);
+    white-space: normal;
 }
 
 .transport-tag.jrpass {
@@ -875,6 +884,10 @@ h3 { font-size: var(--text-lg); }
     .overview-table td:first-child {
         width: 100%;
         white-space: normal;
+    }
+
+    .overview-table .transport-stack {
+        align-items: flex-end;
     }
 }
 
