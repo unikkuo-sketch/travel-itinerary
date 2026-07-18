@@ -279,7 +279,7 @@ h3 { font-size: var(--text-lg); }
     inset: 0;
     z-index: 1;
     background:
-        linear-gradient(to top, rgba(30, 24, 20, 0.78) 0%, rgba(30, 24, 20, 0.32) 45%, rgba(30, 24, 20, 0.12) 70%, rgba(30, 24, 20, 0.25) 100%);
+        linear-gradient(to top, rgba(30, 24, 20, 0.84) 0%, rgba(30, 24, 20, 0.46) 45%, rgba(30, 24, 20, 0.14) 72%, rgba(30, 24, 20, 0.28) 100%);
     pointer-events: none;
 }
 
