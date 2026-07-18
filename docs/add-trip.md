@@ -32,7 +32,7 @@ Copy-Item -Recurse trips\_template trips\2027_義大利托斯卡尼_蜜月
 
 | 欄位 | 說明 |
 |------|------|
-| `status` | `purchased`（已購）／`pending`（待購）／`reservation`（免費但需預約）；寫在 JSON，發佈後全家看到同一狀態 |
+| `status` | `purchased`（已購）／`pending`（待購）／`reservation`（免費但需預約）；JSON 為發佈預設；行程頁可點狀態 pill 本機切換（`travelTicketStatus:{tripId}`） |
 
 #### 預算 `budget`
 
@@ -42,7 +42,6 @@ Copy-Item -Recurse trips\_template trips\2027_義大利托斯卡尼_蜜月
 | `categories` | 每人明細分類（不變） |
 | `total.amount` / `twd` | 每人總額（字串） |
 | `total.family` / `familyTwd` | 家庭總額（字串，作者手填） |
-| `total.paid` / `pending` | 已付／待付（字串，作者手填） |
 
 金額維持字串，不做自動換算。
 

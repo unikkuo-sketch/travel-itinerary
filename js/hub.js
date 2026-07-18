@@ -66,10 +66,44 @@ function sortTrips(trips) {
   });
 }
 
+function tripMonthTag(dateRange) {
+  const start = parseTripStart(dateRange);
+  if (!start) return '';
+  const y = start.getFullYear();
+  const m = String(start.getMonth() + 1).padStart(2, '0');
+  return `${y}.${m}`;
+}
+
+function tripPlaceTag(t) {
+  if (/日本/.test(t.title || '') || /日本/.test(t.id || '')) return '日本';
+  if (!t.location) return '';
+  return t.location.split(/[・·,，]/)[0].trim();
+}
+
+function fragmentMarkerIcon() {
+  return L.divIcon({
+    className: 'hub-map-marker',
+    html: `<span class="hub-map-marker-dot" aria-hidden="true">
+      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" stroke="none">
+        <path d="m12 3-1.9 5.8L4 12l6.1 3.2L12 21l1.9-5.8L20 12l-6.1-3.2Z"/>
+      </svg>
+    </span>`,
+    iconSize: [28, 28],
+    iconAnchor: [14, 14],
+    popupAnchor: [0, -16],
+  });
+}
+
 function featuredPopupHtml(t) {
   const past = tripIsPast(t);
+  const thumb = t.cover
+    ? `<div class="featured-popup-thumb">
+        <img src="${esc(tripAssetUrl(t.id, t.cover))}" alt="" loading="lazy" decoding="async">
+      </div>`
+    : '';
   return `
     <div class="featured-popup">
+      ${thumb}
       <span class="section-eyebrow">${past ? '旅程回顧' : '即將啟程'}</span>
       <h3>${esc(t.title)}</h3>
       <p class="trip-card-sub">${esc(t.subtitle || '')}</p>
@@ -89,22 +123,50 @@ function renderFeaturedMap(sorted) {
     return;
   }
 
-  const map = L.map(el, { scrollWheelZoom: false }).setView([20, 20], 2);
-  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-    maxZoom: 18,
+  const map = L.map(el, {
+    scrollWheelZoom: false,
+    minZoom: 1,
+    maxZoom: 4,
+  }).setView([20, 10], 2);
+
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+    attribution:
+      '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>',
+    subdomains: 'abcd',
+    maxZoom: 4,
   }).addTo(map);
 
-  const markers = pinned.map((t) =>
-    L.marker(t.coords).addTo(map).bindPopup(featuredPopupHtml(t))
-  );
+  const pinIcon = fragmentMarkerIcon();
+  pinned.forEach((t) => {
+    L.marker(t.coords, { icon: pinIcon }).addTo(map).bindPopup(featuredPopupHtml(t), {
+      className: 'featured-popup-wrap',
+      maxWidth: 280,
+    });
+  });
+}
 
-  if (markers.length === 1) {
-    map.setView(pinned[0].coords, 5);
-  } else {
-    const group = L.featureGroup(markers);
-    map.fitBounds(group.getBounds(), { padding: [60, 60], maxZoom: 6 });
-  }
+function renderWelcomeGrid() {
+  const root = document.getElementById('welcome-grid');
+  if (!root) return;
+
+  const items = [
+    { name: 'ticket', title: '航班與住宿', desc: '票券與飯店資訊' },
+    { name: 'map', title: '路線與日程', desc: '每日行程一覽' },
+    { name: 'budget', title: '預算', desc: '費用總覽' },
+    { name: 'shopping', title: '特產清單', desc: '購物與伴手禮' },
+  ];
+
+  root.innerHTML = items
+    .map(
+      (item) => `
+      <div class="welcome-card">
+        <span class="welcome-card-icon">${icon(item.name, 'icon welcome-card-svg')}</span>
+        <h3 class="welcome-card-title">${esc(item.title)}</h3>
+        <p class="welcome-card-desc">${esc(item.desc)}</p>
+      </div>
+    `
+    )
+    .join('');
 }
 
 function renderHubGrid(sorted) {
@@ -116,20 +178,27 @@ function renderHubGrid(sorted) {
     return;
   }
 
-  root.innerHTML = sorted.map((t) => {
-    const status = tripStatusLabel(t);
-    const cover = t.cover
-      ? photoHtml(
-          { src: tripAssetUrl(t.id, t.cover), alt: t.coverAlt || t.title, credit: t.coverCredit },
-          { className: 'ph--card' }
-        )
-      : `<div class="ph ph--card ph--fallback"><span class="ph-fallback-emoji">${esc(t.emoji || '🌏')}</span></div>`;
-    const metaBits = [
-      `<span class="trip-card-meta-item">${icon('calendar')}<time>${esc(t.dateRange || '')}</time></span>`,
-      t.days ? `<span class="trip-card-meta-item">${esc(String(t.days))} 天</span>` : '',
-      t.location ? `<span class="trip-card-meta-item">${icon('pin')}${esc(t.location)}</span>` : '',
-    ].filter(Boolean).join('');
-    return `
+  root.innerHTML = sorted
+    .map((t) => {
+      const status = tripStatusLabel(t);
+      const cover = t.cover
+        ? photoHtml(
+            { src: tripAssetUrl(t.id, t.cover), alt: t.coverAlt || t.title, credit: t.coverCredit },
+            { className: 'ph--card' }
+          )
+        : `<div class="ph ph--card ph--fallback"><span class="ph-fallback-emoji">${esc(t.emoji || '🌏')}</span></div>`;
+
+      const tags = [
+        tripMonthTag(t.dateRange),
+        tripPlaceTag(t),
+        t.days ? `${t.days}天` : '',
+      ].filter(Boolean);
+
+      const tagHtml = tags
+        .map((tag) => `<span class="trip-card-tag">${esc(tag)}</span>`)
+        .join('');
+
+      return `
       <a class="trip-card" href="${tripUrl(t.id)}">
         <div class="trip-card-media">
           ${cover}
@@ -138,11 +207,12 @@ function renderHubGrid(sorted) {
         <div class="trip-card-body">
           <h2>${esc(t.title)}</h2>
           <p class="trip-card-sub">${esc(t.subtitle || '')}</p>
-          <p class="trip-card-meta">${metaBits}</p>
+          <div class="trip-card-tags">${tagHtml}</div>
         </div>
       </a>
     `;
-  }).join('');
+    })
+    .join('');
 }
 
 function initReveal() {
@@ -168,6 +238,7 @@ function initReveal() {
 
 async function init() {
   initReveal();
+  renderWelcomeGrid();
 
   const featuredRoot = document.getElementById('featured-map');
   const hubRoot = document.getElementById('hub-grid');

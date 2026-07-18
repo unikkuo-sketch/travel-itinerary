@@ -13,19 +13,54 @@ const TICKET_STATUS = {
   reservation: { label: '免費但需預約', cls: 'ticket-status--reservation' },
 };
 
-function renderTickets(tickets) {
-  return tickets.map((t) => {
-    const st = TICKET_STATUS[t.status];
-    const statusHtml = st
-      ? `<span class="ticket-status ${st.cls}">${st.label}</span>`
-      : '';
+const TICKET_STATUS_ORDER = ['purchased', 'pending', 'reservation'];
+
+function ticketStatusKey(tripId) {
+  return `travelTicketStatus:${tripId}`;
+}
+
+function loadTicketStatusOverrides(tripId) {
+  if (!tripId) return {};
+  try {
+    return JSON.parse(localStorage.getItem(ticketStatusKey(tripId)) || '{}');
+  } catch {
+    return {};
+  }
+}
+
+function saveTicketStatus(tripId, index, status) {
+  const all = loadTicketStatusOverrides(tripId);
+  all[String(index)] = status;
+  localStorage.setItem(ticketStatusKey(tripId), JSON.stringify(all));
+}
+
+function nextTicketStatus(current) {
+  const i = TICKET_STATUS_ORDER.indexOf(current);
+  return TICKET_STATUS_ORDER[(i + 1) % TICKET_STATUS_ORDER.length];
+}
+
+function resolveTicketStatus(ticket, index, overrides) {
+  const override = overrides[String(index)];
+  if (override && TICKET_STATUS[override]) return override;
+  return ticket.status;
+}
+
+function renderTicketStatus(status, index) {
+  const st = TICKET_STATUS[status];
+  if (!st) return '';
+  return `<button type="button" class="ticket-status ${st.cls}" data-ticket-index="${index}" data-ticket-status="${status}" title="點擊切換狀態" aria-label="票券狀態：${st.label}，點擊切換">${st.label}</button>`;
+}
+
+function renderTickets(tickets, overrides = {}) {
+  return tickets.map((t, i) => {
+    const status = resolveTicketStatus(t, i, overrides);
     return `
     <div class="ticket-card ${t.variant || ''}">
       <div class="ticket-header">
         <h3>${esc(t.title)}</h3>
         <div class="ticket-pills">
           <span class="ticket-badge">${esc(t.badge)}</span>
-          ${statusHtml}
+          ${renderTicketStatus(status, i)}
         </div>
       </div>
       <div class="ticket-price">${esc(t.price)}<span>${esc(t.priceSuffix)}</span></div>
@@ -35,6 +70,30 @@ function renderTickets(tickets) {
       </ul>
     </div>`;
   }).join('');
+}
+
+function mountTicketStatusControls(root, tripId) {
+  if (!root || !tripId || root.dataset.ticketStatusBound === '1') return;
+  root.dataset.ticketStatusBound = '1';
+  root.addEventListener('click', (e) => {
+    const btn = e.target.closest('[data-ticket-status]');
+    if (!btn || !root.contains(btn)) return;
+
+    const index = Number(btn.dataset.ticketIndex);
+    const current = btn.dataset.ticketStatus;
+    const next = nextTicketStatus(current);
+    const st = TICKET_STATUS[next];
+    if (!st) return;
+
+    saveTicketStatus(tripId, index, next);
+    btn.dataset.ticketStatus = next;
+    btn.className = `ticket-status ${st.cls}`;
+    btn.textContent = st.label;
+    btn.setAttribute('aria-label', `票券狀態：${st.label}，點擊切換`);
+    btn.classList.remove('ticket-status--pop');
+    void btn.offsetWidth;
+    btn.classList.add('ticket-status--pop');
+  });
 }
 
 function renderOverview(rows) {
@@ -63,6 +122,17 @@ function renderTimelineItem(item) {
       </div>
     </div>
   `;
+}
+
+/** Parse yen display strings; ranges like ¥75,000-85,000 use midpoint. */
+function parseYenAmount(str) {
+  if (!str) return 0;
+  const nums = [...String(str).matchAll(/[\d,]+/g)]
+    .map((m) => parseInt(m[0].replace(/,/g, ''), 10))
+    .filter((n) => !Number.isNaN(n) && n > 0);
+  if (!nums.length) return 0;
+  if (nums.length === 1) return nums[0];
+  return Math.round((nums[0] + nums[nums.length - 1]) / 2);
 }
 
 function renderDay(day, tripId) {
@@ -99,18 +169,37 @@ function renderDay(day, tripId) {
 }
 
 function renderBudgetHtml(budget) {
-  const cards = (budget.categories || []).map((cat) => `
-    <div class="budget-card">
+  const categories = budget.categories || [];
+  const amounts = categories.map((cat) => parseYenAmount(cat.subtotal));
+  const total = amounts.reduce((sum, n) => sum + n, 0);
+
+  const cards = categories
+    .map((cat, i) => {
+      const share = total > 0 ? Math.round((amounts[i] / total) * 100) : 0;
+      return `
+    <div class="budget-card" style="--budget-share: ${share}%">
       <div class="budget-icon">${iconFromEmoji(cat.icon, 'icon icon--lg')}</div>
       <h3>${esc(cat.title)}</h3>
+      <div class="budget-share-row">
+        <div class="budget-bar" role="presentation" aria-hidden="true">
+          <span class="budget-bar-fill"></span>
+        </div>
+        <span class="budget-share-label">${share}%</span>
+      </div>
       <div class="budget-items">
-        ${(cat.items || []).map((i) => `
-          <div class="budget-item"><span>${esc(i.label)}</span><span>${esc(i.amount)}</span></div>
-        `).join('')}
+        ${(cat.items || [])
+          .map(
+            (item) => `
+          <div class="budget-item"><span>${esc(item.label)}</span><span>${esc(item.amount)}</span></div>
+        `
+          )
+          .join('')}
       </div>
       <div class="budget-subtotal"><span>小計</span><span>${esc(cat.subtotal)}</span></div>
     </div>
-  `).join('');
+  `;
+    })
+    .join('');
 
   const t = budget.total || {};
   const party = budget.partySize ? ` × ${budget.partySize}` : '';
@@ -126,17 +215,30 @@ function renderBudgetHtml(budget) {
         <div class="total-amount">${esc(t.family || '')}</div>
         <div class="total-twd">${esc(t.familyTwd || '')}</div>
       </div>
-      <div class="budget-summary-card budget-summary-card--paid">
-        <div class="total-label">已付</div>
-        <div class="total-amount">${esc(t.paid || '—')}</div>
-      </div>
-      <div class="budget-summary-card budget-summary-card--pending">
-        <div class="total-label">待付</div>
-        <div class="total-amount">${esc(t.pending || '—')}</div>
-      </div>
     </div>`;
 
+  const stack =
+    total > 0
+      ? `<div class="budget-stack" role="img" aria-label="預算類別比例">
+      ${categories
+        .map((cat, i) => {
+          const share = Math.round((amounts[i] / total) * 100);
+          return `<span class="budget-stack-seg" style="flex-grow: ${amounts[i]}" title="${esc(cat.title)} ${share}%"></span>`;
+        })
+        .join('')}
+    </div>
+    <ul class="budget-stack-legend">
+      ${categories
+        .map((cat, i) => {
+          const share = Math.round((amounts[i] / total) * 100);
+          return `<li><span class="budget-stack-swatch"></span>${esc(cat.title)} ${share}%</li>`;
+        })
+        .join('')}
+    </ul>`
+      : '';
+
   return `
+    ${stack}
     <div class="budget-grid">${cards}</div>
     ${summary}`;
 }
@@ -146,10 +248,15 @@ export function renderHero(meta, days = []) {
   if (!root || !meta) return;
 
   const tripId = meta.slug || '';
-  const highlights = (meta.highlights || [])
-    .map((h) => `<div class="info-item"><span class="info-icon">${icon('sparkle')}</span><span>${esc(h)}</span></div>`)
-    .join('');
-  const dayCount = days.length ? `<div class="info-item"><span class="info-icon">${icon('sun')}</span><span>${days.length} 天</span></div>` : '';
+  const dayCount = days.length
+    ? `<div class="info-item"><span class="info-icon">${icon('sun')}</span><span>${days.length} 天</span></div>`
+    : '';
+  const ticket = meta.ticketSummary
+    ? `<div class="info-item"><span class="info-icon">${icon('ticket')}</span><span>${esc(meta.ticketSummary)}</span></div>`
+    : '';
+  const highlightLine = (meta.highlights || []).filter(Boolean).length
+    ? `<p class="hero-highlights">${(meta.highlights || []).map((h) => esc(h)).join(' · ')}</p>`
+    : '';
 
   const cover = meta.cover?.src
     ? photoHtml(
@@ -172,9 +279,9 @@ export function renderHero(meta, days = []) {
       <div class="hero-info">
         <div class="info-item"><span class="info-icon">${icon('calendar')}</span><span>${esc(meta.dateRange || '')}</span></div>
         ${dayCount}
-        <div class="info-item"><span class="info-icon">${icon('ticket')}</span><span>${esc(meta.ticketSummary || '')}</span></div>
-        ${highlights}
+        ${ticket}
       </div>
+      ${highlightLine}
     </div>`;
 }
 
@@ -227,7 +334,12 @@ export function renderItinerary(data) {
   const daysEl = document.getElementById('days-root');
   const budgetEl = document.getElementById('budget-root');
 
-  if (ticketsEl) ticketsEl.innerHTML = renderTickets(data.tickets || []);
+  if (ticketsEl) {
+    const tickets = data.tickets || [];
+    const overrides = loadTicketStatusOverrides(tripId);
+    ticketsEl.innerHTML = renderTickets(tickets, overrides);
+    mountTicketStatusControls(ticketsEl, tripId);
+  }
   if (overviewEl) overviewEl.innerHTML = renderOverview(data.overview || []);
   if (daysEl) daysEl.innerHTML = (data.days || []).map((d) => renderDay(d, tripId)).join('');
   if (budgetEl && data.budget) budgetEl.innerHTML = renderBudgetHtml(data.budget);

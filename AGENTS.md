@@ -43,8 +43,8 @@ ATTRIBUTIONS.md         照片素材授權紀錄（新增圖片必須補列）
 - `trips/` 由 vite 插件在 dev/build 時提供靜態 JSON
 - 行程照片：`meta.cover` 與 `days[].photo`（`src` 相對 `trips/{id}/`、`alt`、`credit`）；不 hotlink，WebP 自架，授權記於 `ATTRIBUTIONS.md`
 - 旅程色：`meta.theme`（`sakura` / `ocean`），未填用預設蜜桃色
-- 票券狀態：`tickets[].status` = `purchased`｜`pending`｜`reservation`（靜態 JSON，非 localStorage）
-- 預算：`budget.partySize` + `total` 的每人／家庭／已付／待付（字串，作者手填）
+- 票券狀態：`tickets[].status` = `purchased`｜`pending`｜`reservation`；JSON 為預設，本機可點狀態 pill 切換（`travelTicketStatus:{tripId}`）
+- 預算：`budget.partySize` + `total` 的每人／家庭（字串，作者手填）
 - 地圖點：`map.locations[]` 需 `name`、`number`、`day`、`coords`；標記與路線依 day 上色；不綁 timeline 編號
 - OG：四頁共用 `images/hub-hero.webp` 絕對 URL（靜態站無法給 crawler 動態 trip cover）
 
