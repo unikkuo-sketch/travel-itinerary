@@ -71,12 +71,16 @@
           {
             "name": "鯛吉薄皮鯛魚燒",
             "price": "約 ¥250",
-            "priceNote": "含稅參考價・實際以店面為準"
+            "priceNote": "含稅參考價・實際以店面為準",
+            "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Taiyaki.jpg",
+            "url": "https://taiankichijitsu.com/"
           },
           {
             "name": "萩の月",
             "price": "約 ¥1,200",
-            "priceNote": "含稅參考價・實際以店面為準"
+            "priceNote": "含稅參考價・實際以店面為準",
+            "imageUrl": "https://www.sanzen.co.jp/product/haginotsuki/img/img01.jpg",
+            "url": "https://www.shop.sanzen.co.jp/shop/c/c3000/"
           }
         ]
       },
@@ -87,12 +91,16 @@
           {
             "name": "青森蘋果氣泡酒",
             "price": "約 ¥700",
-            "priceNote": "含稅參考價・實際以店面為準"
+            "priceNote": "含稅參考價・實際以店面為準",
+            "imageUrl": "https://shopping.c.yimg.jp/lib/abc-afactory/1000top-cidre-kan.jpg",
+            "url": "https://afactory-abc.com/cidre/"
           },
           {
             "name": "蘋果果汁",
             "price": "約 ¥500",
-            "priceNote": "含稅參考價・實際以店面為準"
+            "priceNote": "含稅參考價・實際以店面為準",
+            "imageUrl": "https://shopping.c.yimg.jp/lib/abc-afactory/1000top-afac-kan.jpg",
+            "url": "https://afactory-abc.com/"
           }
         ]
       },
@@ -103,12 +111,16 @@
           {
             "name": "稻庭烏龍麵",
             "price": "約 ¥800",
-            "priceNote": "含稅參考價・實際以店面為準"
+            "priceNote": "含稅參考價・實際以店面為準",
+            "imageUrl": "https://www.img.inaniwa-udon.co.jp/member/07153601/u07153601i264n01s02.png",
+            "url": "https://www.inaniwa-udon.co.jp/"
           },
           {
             "name": "秋田日本酒",
             "price": "約 ¥2,000",
-            "priceNote": "含稅參考價・實際以店面為準"
+            "priceNote": "含稅參考價・實際以店面為準",
+            "imageUrl": "https://www.takashimizu-shop.com/wp/wp-content/uploads/e903fe2561f6fa826880a12640e73562.jpg",
+            "url": "https://www.takashimizu-shop.com/"
           }
         ]
       }
@@ -159,6 +171,7 @@
       "variant": "primary",
       "title": "東日本周遊券（JR EAST PASS 東北地區）",
       "badge": "5日券",
+      "status": "pending",
       "price": "¥35,000",
       "priceSuffix": "/人",
       "meta": "📆 使用日期：Day 2-6（08/01-08/05）",
@@ -174,6 +187,7 @@
       "variant": "secondary",
       "title": "仙台まるごとパス",
       "badge": "1日券",
+      "status": "pending",
       "price": "¥2,930",
       "priceSuffix": "/人",
       "meta": "📆 使用日期：Day 1（07/31）",
@@ -187,6 +201,7 @@
       "variant": "primary",
       "title": "長榮航空 BR118（去程）",
       "badge": "07/31 出發",
+      "status": "purchased",
       "price": "10:05",
       "priceSuffix": "TPE 起飛",
       "meta": "✈️ 14:35 抵達仙台機場（SDJ）",
@@ -199,6 +214,7 @@
       "variant": "secondary",
       "title": "長榮航空 BR117（回程）",
       "badge": "08/07 出發",
+      "status": "purchased",
       "price": "16:05",
       "priceSuffix": "SDJ 起飛",
       "meta": "✈️ 18:55 抵達桃園機場（TPE）",
@@ -821,6 +837,7 @@
     }
   ],
   "budget": {
+    "partySize": 4,
     "categories": [
       {
         "icon": "🚄",
@@ -898,7 +915,11 @@
     ],
     "total": {
       "amount": "¥164,930",
-      "twd": "約 NT$ 34,000 - 36,000 /人"
+      "twd": "約 NT$ 34,000 - 36,000 /人",
+      "family": "約 ¥659,720",
+      "familyTwd": "約 NT$ 136,000 - 144,000",
+      "paid": "約 ¥72,000（來回機票×4）",
+      "pending": "約 ¥587,720（周遊券＋住宿＋餐飲＋門票）"
     }
   },
   "map": {
@@ -909,70 +930,90 @@
     "zoom": 7,
     "locations": [
       {
-        "name": "1. 仙台 (Day 1 / Day 6-8)",
+        "name": "仙台",
+        "number": 1,
+        "day": 1,
         "coords": [
           38.2682,
           140.8694
         ]
       },
       {
-        "name": "2. 盛岡 (Day 2-3)",
+        "name": "盛岡",
+        "number": 2,
+        "day": 2,
         "coords": [
           39.7036,
           141.1527
         ]
       },
       {
-        "name": "3. 青森 (Day 3)",
+        "name": "青森",
+        "number": 3,
+        "day": 3,
         "coords": [
           40.8244,
           140.7406
         ]
       },
       {
-        "name": "4. 八戶 (Day 4)",
+        "name": "八戶",
+        "number": 4,
+        "day": 4,
         "coords": [
           40.5122,
           141.4886
         ]
       },
       {
-        "name": "5. 弘前 (Day 4-5)",
+        "name": "弘前",
+        "number": 5,
+        "day": 4,
         "coords": [
           40.6031,
           140.4642
         ]
       },
       {
-        "name": "6. 秋田 (Day 5)",
+        "name": "秋田",
+        "number": 6,
+        "day": 5,
         "coords": [
           39.7186,
           140.1024
         ]
       },
       {
-        "name": "7. 大仙市 (Day 5-6)",
+        "name": "大仙市",
+        "number": 7,
+        "day": 5,
         "coords": [
           39.4531,
           140.4728
         ]
       },
       {
-        "name": "8. 角館 (Day 6)",
+        "name": "角館",
+        "number": 8,
+        "day": 6,
         "coords": [
           39.5986,
           140.5636
         ]
       },
       {
-        "name": "9. 田澤湖 (Day 6)",
+        "name": "田澤湖",
+        "number": 9,
+        "day": 6,
         "coords": [
           39.6825,
           140.6803
         ]
       },
       {
-        "name": "10. 松島 (Day 6-7)",
+        "name": "松島",
+        "number": 10,
+        "day": 6,
         "coords": [
           38.369,
           141.0708

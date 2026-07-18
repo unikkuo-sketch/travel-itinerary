@@ -15,6 +15,7 @@ js/recap-storage.js     本機 recap 儲存、匯出、讀取發佈版
 js/render-recap.js      旅後展示渲染（trip 頁 #recap）
 js/load-trip.js         fetch trips/{id}/itinerary.json
 js/render.js            渲染 hero、票券、每日、預算等
+js/map.js               行程路線圖（分日配色、編號標記、圖例）
 js/nav.js               動態導覽（依 days 長度）
 trips/manifest.json     行程索引（Hub 卡片）
 trips/{id}/itinerary.json   單趟行程資料（source of truth）
@@ -42,6 +43,10 @@ ATTRIBUTIONS.md         照片素材授權紀錄（新增圖片必須補列）
 - `trips/` 由 vite 插件在 dev/build 時提供靜態 JSON
 - 行程照片：`meta.cover` 與 `days[].photo`（`src` 相對 `trips/{id}/`、`alt`、`credit`）；不 hotlink，WebP 自架，授權記於 `ATTRIBUTIONS.md`
 - 旅程色：`meta.theme`（`sakura` / `ocean`），未填用預設蜜桃色
+- 票券狀態：`tickets[].status` = `purchased`｜`pending`｜`reservation`（靜態 JSON，非 localStorage）
+- 預算：`budget.partySize` + `total` 的每人／家庭／已付／待付（字串，作者手填）
+- 地圖點：`map.locations[]` 需 `name`、`number`、`day`、`coords`；標記與路線依 day 上色；不綁 timeline 編號
+- OG：四頁共用 `images/hub-hero.webp` 絕對 URL（靜態站無法給 crawler 動態 trip cover）
 
 ## 常用指令
 

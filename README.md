@@ -6,8 +6,9 @@
 
 ## 快速開始
 
+在 repo 根目錄執行：
+
 ```powershell
-cd c:\Users\unikkuo\Desktop\App\traveling
 npm install
 npm run dev
 ```
@@ -38,12 +39,8 @@ traveling/                 # 根目錄：共用程式、Hub、建置設定
 └── trips/
     ├── manifest.json      # 行程索引
     ├── _template/         # 新行程範本
-    └── 2026_日本熱海長瀞_家族旅遊/   # 單一趟行程
-        ├── itinerary.json # 必填
-        ├── recap.json     # 選填，旅後公開
-        ├── photos/        # 選填，旅後照片
-        ├── notes.md       # 選填
-        └── assets/        # 選填
+    ├── 2026_日本熱海長瀞_家族旅遊/       # itinerary.json、photos/、assets/ …
+    └── 2026_日本青森仙台秋田_家族旅遊/   # 同上（結構見 docs/add-trip.md）
 ```
 
 ## 新增行程

@@ -274,6 +274,27 @@ h3 { font-size: var(--text-lg); }
     z-index: 0;
 }
 
+/* Hero photo via shared .ph skeleton */
+.ph--hero {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    margin: 0;
+    border-radius: 0;
+}
+
+.ph--hero .ph-img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ph--hero .ph-credit {
+    z-index: 3;
+}
+
 .hero-photo-overlay {
     position: absolute;
     inset: 0;
@@ -329,53 +350,6 @@ h3 { font-size: var(--text-lg); }
 .ph-credit--hero {
     right: 0.85rem;
     bottom: 0.75rem;
-}
-
-/* Hero quick links (trip page) */
-.hero-quick {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.6rem;
-    margin-top: 1.4rem;
-}
-
-.hero-quick-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.45rem;
-    padding: 0.55rem 1.1rem;
-    background: rgba(255, 255, 255, 0.92);
-    border: 1px solid transparent;
-    border-radius: 999px;
-    color: var(--text-primary);
-    font-family: var(--font-sans);
-    font-size: var(--text-sm);
-    font-weight: 500;
-    text-decoration: none;
-    transition: transform var(--transition-fast), background var(--transition-fast);
-}
-
-.hero-quick-link .icon {
-    width: 1rem;
-    height: 1rem;
-}
-
-.hero-quick-link:hover {
-    transform: translateY(-1px);
-    background: #FFFFFF;
-}
-
-.hero-quick-link--primary {
-    background: var(--accent);
-    color: #FFFFFF;
-}
-
-.hero-quick-link--primary .icon {
-    color: #FFFFFF;
-}
-
-.hero-quick-link--primary:hover {
-    background: var(--accent-dark);
 }
 
 .hero-hub .hero-badge,
@@ -634,7 +608,8 @@ h3 { font-size: var(--text-lg); }
 .ticket-header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
+    gap: 0.75rem;
     margin-bottom: 1rem;
 }
 
@@ -643,12 +618,49 @@ h3 { font-size: var(--text-lg); }
     color: var(--text-primary);
 }
 
+.ticket-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+    justify-content: flex-end;
+    flex-shrink: 0;
+}
+
 .ticket-badge {
     background: var(--gradient-spring);
     padding: 0.25rem 0.75rem;
     border-radius: 50px;
     font-size: var(--text-xs);
     font-weight: 500;
+}
+
+.ticket-status {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 50px;
+    font-size: var(--text-xs);
+    font-weight: 500;
+    animation: statusPop 0.35s ease-out;
+}
+
+.ticket-status--purchased {
+    background: var(--success-bg);
+    color: var(--success);
+}
+
+.ticket-status--pending {
+    background: var(--bg-accent-soft);
+    color: var(--accent-dark);
+}
+
+.ticket-status--reservation {
+    background: #E8F0F5;
+    color: #4A6F85;
+}
+
+@keyframes statusPop {
+    from { opacity: 0; transform: scale(0.85); }
+    to { opacity: 1; transform: none; }
 }
 
 .ticket-price {
@@ -855,8 +867,9 @@ h3 { font-size: var(--text-lg); }
 }
 
 .ph--day {
+    width: 100%;
+    display: block;
     aspect-ratio: 21 / 9;
-    max-height: 340px;
 }
 
 @media (max-width: 768px) {
@@ -1080,6 +1093,42 @@ h3 { font-size: var(--text-lg); }
     padding: 2rem;
     text-align: center;
     color: var(--text-primary);
+}
+
+.budget-summary {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.budget-summary-card {
+    background: var(--bg-surface);
+    border: 1px solid var(--border-soft);
+    border-radius: var(--radius-lg);
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.budget-summary-card .total-amount {
+    font-size: var(--text-xl);
+}
+
+.budget-summary-card--paid {
+    border-color: var(--success);
+    background: var(--success-bg);
+}
+
+.budget-summary-card--paid .total-amount {
+    color: var(--success);
+}
+
+.budget-summary-card--pending {
+    border-color: var(--accent-light);
+    background: var(--bg-accent-soft);
+}
+
+.budget-summary-card--pending .total-amount {
+    color: var(--accent-dark);
 }
 
 .total-label {
@@ -1372,6 +1421,58 @@ h3 { font-size: var(--text-lg); }
     z-index: 1;
 }
 
+.map-legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem 1.25rem;
+    margin-top: 1rem;
+    padding: 0.75rem 0;
+}
+
+.map-legend-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-family: var(--font-sans);
+    font-size: var(--text-sm);
+    color: var(--text-muted);
+}
+
+.map-legend-dot {
+    width: 0.7rem;
+    height: 0.7rem;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.map-marker-wrap {
+    background: none !important;
+    border: none !important;
+}
+
+.map-marker {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: var(--marker-color, #C4786A);
+    color: #fff;
+    font-family: var(--font-sans);
+    font-size: 0.75rem;
+    font-weight: 600;
+    line-height: 1;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.28);
+    border: 2px solid #fff;
+    animation: markerPop 0.4s ease-out;
+}
+
+@keyframes markerPop {
+    from { opacity: 0; transform: scale(0.5); }
+    to { opacity: 1; transform: none; }
+}
+
 .hero-shopping {
     min-height: 38vh;
     background: var(--gradient-spring);
@@ -1394,15 +1495,12 @@ h3 { font-size: var(--text-lg); }
     transform: none;
 }
 
-/* Welcome blurb */
-.section-welcome {
-    max-width: 42rem;
-}
-
-.welcome-blurb {
+/* Welcome blurb — same full width as other Hub sections */
+.section-welcome .welcome-blurb {
     color: var(--text-secondary);
     font-size: var(--text-lg);
     line-height: var(--leading-normal);
+    max-width: 40rem;
 }
 
 /* Featured Destinations (world map) */
@@ -1619,7 +1717,8 @@ h3 { font-size: var(--text-lg); }
         padding-left: 1.5rem;
     }
     
-    .budget-total {
+    .budget-total,
+    .budget-summary-card {
         padding: 1.5rem;
     }
     
@@ -2710,6 +2809,11 @@ h3 { font-size: var(--text-lg); }
         opacity: 1;
         transition: none;
         transform: none !important;
+    }
+
+    .ticket-status,
+    .map-marker {
+        animation: none;
     }
 
     .trip-card:hover {

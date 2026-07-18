@@ -19,11 +19,12 @@ export function tripAssetUrl(tripId, rel) {
  *
  * photo: { src, alt, credit } — src must already be a full URL.
  */
-export function photoHtml(photo, { className = '', eager = false, creditPosition = 'br' } = {}) {
+export function photoHtml(photo, { className = '', eager = false, creditPosition = 'br', fetchPriority } = {}) {
   if (!photo?.src) return '';
   const credit = photo.credit
     ? `<span class="ph-credit ph-credit--${creditPosition}">${esc(photo.credit)}</span>`
     : '';
+  const fp = fetchPriority ? ` fetchpriority="${esc(fetchPriority)}"` : '';
   return `
     <figure class="ph ${className}">
       <img
@@ -31,7 +32,7 @@ export function photoHtml(photo, { className = '', eager = false, creditPosition
         src="${esc(photo.src)}"
         alt="${esc(photo.alt || '')}"
         loading="${eager ? 'eager' : 'lazy'}"
-        decoding="async"
+        decoding="async"${fp}
         onload="this.closest('.ph').classList.add('ph--loaded')"
         onerror="this.closest('.ph').classList.add('ph--error')"
       >

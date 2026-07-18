@@ -55,16 +55,42 @@
     "note": "氣候備註",
     "tips": ["穿著建議一"]
   },
-  "tickets": [],
+  "tickets": [
+    {
+      "variant": "primary",
+      "title": "票券名稱",
+      "badge": "標籤",
+      "status": "pending",
+      "price": "¥0",
+      "priceSuffix": "/人",
+      "meta": "使用說明",
+      "features": ["特色一"]
+    }
+  ],
   "overview": [],
   "days": [],
   "budget": {
+    "partySize": 4,
     "categories": [],
-    "total": { "amount": "¥0", "twd": "約 NT$ 0 /人" }
+    "total": {
+      "amount": "¥0",
+      "twd": "約 NT$ 0 /人",
+      "family": "約 ¥0",
+      "familyTwd": "約 NT$ 0",
+      "paid": "—",
+      "pending": "—"
+    }
   },
   "map": {
     "center": [35.5, 139.5],
     "zoom": 8,
-    "locations": []
+    "locations": [
+      {
+        "name": "景點名",
+        "number": 1,
+        "day": 1,
+        "coords": [35.5, 139.5]
+      }
+    ]
   }
 }

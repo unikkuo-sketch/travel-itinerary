@@ -184,6 +184,7 @@
       "variant": "primary",
       "title": "單程購票 / IC卡",
       "badge": "彈性購票",
+      "status": "pending",
       "price": "¥12,000",
       "priceSuffix": "/人 (預估)",
       "meta": "📆 使用日期：Day 1-3（03/27-03/29）",
@@ -197,6 +198,7 @@
       "variant": "secondary",
       "title": "西武鐵道秩父慢遊車票",
       "badge": "2日券",
+      "status": "pending",
       "price": "¥2,230",
       "priceSuffix": "/人",
       "meta": "📆 使用日期：Day 4-5（03/30-03/31）",
@@ -586,6 +588,7 @@
     }
   ],
   "budget": {
+    "partySize": 4,
     "categories": [
       {
         "icon": "🚄",
@@ -655,7 +658,11 @@
     ],
     "total": {
       "amount": "¥125,000 - 135,000",
-      "twd": "約 NT$ 26,000 - 28,000 /人"
+      "twd": "約 NT$ 26,000 - 28,000 /人",
+      "family": "約 ¥500,000 - 540,000",
+      "familyTwd": "約 NT$ 104,000 - 112,000",
+      "paid": "約 ¥240,000（住宿預付×家庭）",
+      "pending": "約 ¥260,000 - 300,000（交通＋餐飲＋門票）"
     }
   },
   "map": {
@@ -666,35 +673,45 @@
     "zoom": 8,
     "locations": [
       {
-        "name": "1. 成田機場 (Day 1起點 / Day 6終點)",
+        "name": "成田機場",
+        "number": 1,
+        "day": 1,
         "coords": [
           35.771986,
           140.39285
         ]
       },
       {
-        "name": "2. 熱海 (Day 1)",
+        "name": "熱海",
+        "number": 2,
+        "day": 1,
         "coords": [
           35.09571,
           139.076041
         ]
       },
       {
-        "name": "3. 伊東 (Day 2)",
+        "name": "伊東",
+        "number": 3,
+        "day": 2,
         "coords": [
           34.972986,
           139.100913
         ]
       },
       {
-        "name": "4. 東京池袋 (Day 3中轉)",
+        "name": "東京池袋",
+        "number": 4,
+        "day": 3,
         "coords": [
           35.729503,
           139.7109
         ]
       },
       {
-        "name": "5. 秩父長瀞 (Day 4-5)",
+        "name": "秩父長瀞",
+        "number": 5,
+        "day": 4,
         "coords": [
           36.096752,
           139.117188

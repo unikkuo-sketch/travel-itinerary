@@ -28,6 +28,35 @@ Copy-Item -Recurse trips\_template trips\2027_義大利托斯卡尼_蜜月
 - `shopping.recommendations` → 購物頁「在地特產推薦」（依 Day／地點分組）
 - `shopping.suggestions` 可保留於 JSON 但購物頁不顯示（請改寫入 `recommendations`）
 
+#### 票券 `tickets[]`
+
+| 欄位 | 說明 |
+|------|------|
+| `status` | `purchased`（已購）／`pending`（待購）／`reservation`（免費但需預約）；寫在 JSON，發佈後全家看到同一狀態 |
+
+#### 預算 `budget`
+
+| 欄位 | 說明 |
+|------|------|
+| `partySize` | 家庭人數（顯示「家庭 × N」） |
+| `categories` | 每人明細分類（不變） |
+| `total.amount` / `twd` | 每人總額（字串） |
+| `total.family` / `familyTwd` | 家庭總額（字串，作者手填） |
+| `total.paid` / `pending` | 已付／待付（字串，作者手填） |
+
+金額維持字串，不做自動換算。
+
+#### 地圖 `map.locations[]`
+
+| 欄位 | 說明 |
+|------|------|
+| `name` | 景點／城市名（不含編號前綴） |
+| `number` | 地圖標記編號（與圖例同步） |
+| `day` | 主要所屬日（決定標記與路線段顏色） |
+| `coords` | `[緯度, 經度]` |
+
+地圖為城市級 waypoint；**不**替每日 timeline 逐項加編號。
+
 購物商品以**物件**填寫（也接受純字串，但無圖片與價格）。`imageUrl` 以網路連結為主，**優先使用品牌官網、產地官方商店或觀光協會商品圖**：
 
 ```json

@@ -7,49 +7,34 @@ function esc(text) {
   return el.innerHTML;
 }
 
-function parseMonthDay(dateStr) {
-  const m = dateStr?.match(/(\d{1,2})\/(\d{1,2})/);
-  if (!m) return null;
-  return { mo: parseInt(m[1], 10), d: parseInt(m[2], 10) };
-}
-
-/** Find the day whose date matches today (for the 「今天」 quick link). */
-function findTodayDay(days, badge) {
-  const yearMatch = badge?.match(/(\d{4})/);
-  const year = yearMatch ? parseInt(yearMatch[1], 10) : new Date().getFullYear();
-  const now = new Date();
-  for (const day of days || []) {
-    const md = parseMonthDay(day.date);
-    if (!md) continue;
-    let y = year;
-    // handle trips crossing new year (e.g. 12/30 - 01/02)
-    if (days[0]) {
-      const first = parseMonthDay(days[0].date);
-      if (first && md.mo < first.mo) y = year + 1;
-    }
-    const d = new Date(y, md.mo - 1, md.d);
-    if (
-      d.getFullYear() === now.getFullYear() &&
-      d.getMonth() === now.getMonth() &&
-      d.getDate() === now.getDate()
-    ) return day;
-  }
-  return null;
-}
+const TICKET_STATUS = {
+  purchased: { label: '已購', cls: 'ticket-status--purchased' },
+  pending: { label: '待購', cls: 'ticket-status--pending' },
+  reservation: { label: '免費但需預約', cls: 'ticket-status--reservation' },
+};
 
 function renderTickets(tickets) {
-  return tickets.map((t) => `
-    <div class="ticket-card ${t.variant}">
+  return tickets.map((t) => {
+    const st = TICKET_STATUS[t.status];
+    const statusHtml = st
+      ? `<span class="ticket-status ${st.cls}">${st.label}</span>`
+      : '';
+    return `
+    <div class="ticket-card ${t.variant || ''}">
       <div class="ticket-header">
-        <h3>${esc(t.title)}</h3><span class="ticket-badge">${esc(t.badge)}</span>
+        <h3>${esc(t.title)}</h3>
+        <div class="ticket-pills">
+          <span class="ticket-badge">${esc(t.badge)}</span>
+          ${statusHtml}
+        </div>
       </div>
       <div class="ticket-price">${esc(t.price)}<span>${esc(t.priceSuffix)}</span></div>
       <div class="ticket-meta"><span>${esc(t.meta)}</span></div>
       <ul class="ticket-features">
-        ${t.features.map((f) => `<li>${esc(f)}</li>`).join('')}
+        ${(t.features || []).map((f) => `<li>${esc(f)}</li>`).join('')}
       </ul>
-    </div>
-  `).join('');
+    </div>`;
+  }).join('');
 }
 
 function renderOverview(rows) {
@@ -114,25 +99,46 @@ function renderDay(day, tripId) {
 }
 
 function renderBudgetHtml(budget) {
-  const cards = budget.categories.map((cat) => `
+  const cards = (budget.categories || []).map((cat) => `
     <div class="budget-card">
       <div class="budget-icon">${iconFromEmoji(cat.icon, 'icon icon--lg')}</div>
       <h3>${esc(cat.title)}</h3>
       <div class="budget-items">
-        ${cat.items.map((i) => `
+        ${(cat.items || []).map((i) => `
           <div class="budget-item"><span>${esc(i.label)}</span><span>${esc(i.amount)}</span></div>
         `).join('')}
       </div>
       <div class="budget-subtotal"><span>小計</span><span>${esc(cat.subtotal)}</span></div>
     </div>
   `).join('');
+
+  const t = budget.total || {};
+  const party = budget.partySize ? ` × ${budget.partySize}` : '';
+  const summary = `
+    <div class="budget-summary">
+      <div class="budget-summary-card">
+        <div class="total-label">每人</div>
+        <div class="total-amount">${esc(t.amount || '')}</div>
+        <div class="total-twd">${esc(t.twd || '')}</div>
+      </div>
+      <div class="budget-summary-card">
+        <div class="total-label">家庭${party}</div>
+        <div class="total-amount">${esc(t.family || '')}</div>
+        <div class="total-twd">${esc(t.familyTwd || '')}</div>
+      </div>
+      <div class="budget-summary-card budget-summary-card--paid">
+        <div class="total-label">已付</div>
+        <div class="total-amount">${esc(t.paid || '—')}</div>
+      </div>
+      <div class="budget-summary-card budget-summary-card--pending">
+        <div class="total-label">待付</div>
+        <div class="total-amount">${esc(t.pending || '—')}</div>
+      </div>
+    </div>`;
+
   return `
     <div class="budget-grid">${cards}</div>
-    <div class="budget-total">
-      <div class="total-label">總預算</div>
-      <div class="total-amount">${esc(budget.total.amount)}</div>
-      <div class="total-twd">${esc(budget.total.twd)}</div>
-    </div>`;
+    ${summary}`;
 }
 
 export function renderHero(meta, days = []) {
@@ -146,30 +152,19 @@ export function renderHero(meta, days = []) {
   const dayCount = days.length ? `<div class="info-item"><span class="info-icon">${icon('sun')}</span><span>${days.length} 天</span></div>` : '';
 
   const cover = meta.cover?.src
-    ? {
-        img: `
-          <img class="hero-photo-img" src="${esc(tripAssetUrl(tripId, meta.cover.src))}" alt="${esc(meta.cover.alt || meta.title || '')}" fetchpriority="high" decoding="async">
-          <div class="hero-photo-overlay"></div>`,
-        credit: meta.cover.credit
-          ? `<span class="ph-credit ph-credit--hero">${esc(meta.cover.credit)}</span>`
-          : '',
-      }
-    : null;
+    ? photoHtml(
+        {
+          src: tripAssetUrl(tripId, meta.cover.src),
+          alt: meta.cover.alt || meta.title || '',
+          credit: meta.cover.credit,
+        },
+        { className: 'ph--hero', eager: true, creditPosition: 'hero', fetchPriority: 'high' }
+      )
+    : '';
   root.classList.toggle('hero-photo', Boolean(cover));
 
-  const today = findTodayDay(days, meta.badge);
-  const quickLinks = [
-    today ? { href: `#${today.id}`, label: `今天 · Day ${today.number}`, icon: 'sparkle', primary: true } : null,
-    { href: '#overview', label: '行程', icon: 'list' },
-    { href: '#tickets', label: '票券', icon: 'ticket' },
-    { href: '#budget', label: '預算', icon: 'budget' },
-  ].filter(Boolean);
-  const quickHtml = quickLinks
-    .map((l) => `<a class="hero-quick-link${l.primary ? ' hero-quick-link--primary' : ''}" href="${l.href}">${icon(l.icon)}<span>${esc(l.label)}</span></a>`)
-    .join('');
-
   root.innerHTML = `
-    ${cover ? cover.img : ''}
+    ${cover ? `${cover}<div class="hero-photo-overlay"></div>` : ''}
     <div class="hero-content">
       <span class="hero-badge">${esc(meta.badge || '')}</span>
       <h1>${esc(meta.title || '')}</h1>
@@ -180,9 +175,7 @@ export function renderHero(meta, days = []) {
         <div class="info-item"><span class="info-icon">${icon('ticket')}</span><span>${esc(meta.ticketSummary || '')}</span></div>
         ${highlights}
       </div>
-      <div class="hero-quick">${quickHtml}</div>
-    </div>
-    ${cover ? cover.credit : ''}`;
+    </div>`;
 }
 
 export function renderExtras(data) {

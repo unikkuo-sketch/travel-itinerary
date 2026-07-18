@@ -8,8 +8,15 @@
     <meta property="og:title" content="宇宙碎片集散地">
     <meta property="og:description" content="收集每一次啟程的碎片，拼成屬於我們的旅行地圖">
     <meta property="og:type" content="website">
+    <meta property="og:url" content="https://unikkuo-sketch.github.io/travel-itinerary/">
     <meta property="og:image" content="https://unikkuo-sketch.github.io/travel-itinerary/images/hub-hero.webp">
+    <meta property="og:site_name" content="宇宙碎片集散地">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="宇宙碎片集散地">
+    <meta name="twitter:description" content="收集每一次啟程的碎片，拼成屬於我們的旅行地圖">
+    <meta name="twitter:image" content="https://unikkuo-sketch.github.io/travel-itinerary/images/hub-hero.webp">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;600&family=Noto+Serif+TC:wght@400;500;600&display=swap" rel="stylesheet">
@@ -17,7 +24,10 @@
 </head>
 <body>
     <header class="hero hero-hub hero-photo">
-        <img class="hero-photo-img" src="/images/hub-hero.webp" alt="河津川沿岸盛開的河津櫻與駛過的列車" fetchpriority="high" decoding="async">
+        <figure class="ph ph--hero">
+            <img class="ph-img" src="/images/hub-hero.webp" alt="河津川沿岸盛開的河津櫻與駛過的列車" fetchpriority="high" loading="eager" decoding="async" onload="this.closest('.ph').classList.add('ph--loaded')" onerror="this.closest('.ph').classList.add('ph--error')">
+            <span class="ph-credit ph-credit--hero">9689tatsuya / CC BY 4.0</span>
+        </figure>
         <div class="hero-photo-overlay"></div>
         <div class="hero-content">
             <span class="hero-badge">Travel Hub</span>
@@ -28,7 +38,6 @@
                 <a href="#featured" class="btn-hero btn-hero--ghost">目的地地圖</a>
             </div>
         </div>
-        <span class="ph-credit ph-credit--hero">9689tatsuya / CC BY 4.0</span>
     </header>
 
     <main class="main-content">
