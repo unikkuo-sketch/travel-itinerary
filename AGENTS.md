@@ -8,6 +8,7 @@ trip.html               單一行程頁（?trip=資料夾名）
 shopping.html           購物清單（?trip=資料夾名）
 recap.html              旅後回顧編輯（?trip=資料夾名）
 js/hub.js               Hub 渲染
+js/photo.js             共用圖片元件（lazy、skeleton、fallback、署名）
 js/trip.js              行程頁入口
 js/recap.js             旅後編輯頁入口
 js/recap-storage.js     本機 recap 儲存、匯出、讀取發佈版
@@ -18,8 +19,10 @@ js/nav.js               動態導覽（依 days 長度）
 trips/manifest.json     行程索引（Hub 卡片）
 trips/{id}/itinerary.json   單趟行程資料（source of truth）
 trips/{id}/recap.json       選填，旅後公開資料（commit 後所有人可見）
-trips/{id}/photos/          選填，recap 照片
+trips/{id}/photos/          選填，行程封面／每日代表照／recap 照片
 trips/_template/        新行程範本
+public/                 站台共用靜態檔（favicon、hub hero 圖）
+ATTRIBUTIONS.md         照片素材授權紀錄（新增圖片必須補列）
 ```
 
 ## 行程資料夾命名
@@ -37,6 +40,8 @@ trips/_template/        新行程範本
 - 旅後回顧 localStorage：`travelRecap:{tripId}`；照片 blob：IndexedDB `travelRecapPhotos`
 - 公開旅後資料：匯出後將 `recap.json` + `photos/` 放入 `trips/{id}/` 再 commit
 - `trips/` 由 vite 插件在 dev/build 時提供靜態 JSON
+- 行程照片：`meta.cover` 與 `days[].photo`（`src` 相對 `trips/{id}/`、`alt`、`credit`）；不 hotlink，WebP 自架，授權記於 `ATTRIBUTIONS.md`
+- 旅程色：`meta.theme`（`sakura` / `ocean`），未填用預設蜜桃色
 
 ## 常用指令
 

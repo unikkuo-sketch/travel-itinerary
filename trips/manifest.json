@@ -7,7 +7,15 @@
       "dateRange": "2026/03/27 - 04/01",
       "status": "upcoming",
       "emoji": "🌸",
-      "coords": [35.1, 139.07]
+      "coords": [
+        35.1,
+        139.07
+      ],
+      "days": 6,
+      "location": "靜岡・埼玉・東京",
+      "cover": "photos/cover.webp",
+      "coverAlt": "熱海サンビーチ與市街全景",
+      "coverCredit": "m-louis .® / CC BY-SA 2.0"
     },
     {
       "id": "2026_日本青森仙台秋田_家族旅遊",
@@ -16,7 +24,15 @@
       "dateRange": "2026/07/31 - 08/07",
       "status": "upcoming",
       "emoji": "🎆",
-      "coords": [39.7, 140.7]
+      "coords": [
+        39.7,
+        140.7
+      ],
+      "days": 8,
+      "location": "宮城・岩手・青森・秋田",
+      "cover": "photos/cover.webp",
+      "coverAlt": "青森睡魔祭的燈籠山車",
+      "coverCredit": "Marie-Sophie Mejan / CC BY 4.0"
     }
   ]
 }

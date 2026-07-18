@@ -1,9 +1,40 @@
 import { icon, iconFromEmoji } from './icons.js';
+import { photoHtml, tripAssetUrl } from './photo.js';
 
 function esc(text) {
   const el = document.createElement('span');
   el.textContent = text;
   return el.innerHTML;
+}
+
+function parseMonthDay(dateStr) {
+  const m = dateStr?.match(/(\d{1,2})\/(\d{1,2})/);
+  if (!m) return null;
+  return { mo: parseInt(m[1], 10), d: parseInt(m[2], 10) };
+}
+
+/** Find the day whose date matches today (for the 「今天」 quick link). */
+function findTodayDay(days, badge) {
+  const yearMatch = badge?.match(/(\d{4})/);
+  const year = yearMatch ? parseInt(yearMatch[1], 10) : new Date().getFullYear();
+  const now = new Date();
+  for (const day of days || []) {
+    const md = parseMonthDay(day.date);
+    if (!md) continue;
+    let y = year;
+    // handle trips crossing new year (e.g. 12/30 - 01/02)
+    if (days[0]) {
+      const first = parseMonthDay(days[0].date);
+      if (first && md.mo < first.mo) y = year + 1;
+    }
+    const d = new Date(y, md.mo - 1, md.d);
+    if (
+      d.getFullYear() === now.getFullYear() &&
+      d.getMonth() === now.getMonth() &&
+      d.getDate() === now.getDate()
+    ) return day;
+  }
+  return null;
 }
 
 function renderTickets(tickets) {
@@ -24,11 +55,11 @@ function renderTickets(tickets) {
 function renderOverview(rows) {
   return rows.map((r) => `
     <tr>
-      <td><span class="day-badge">${r.day}</span></td>
-      <td>${esc(r.date)}</td>
-      <td>${esc(r.places)}</td>
-      <td>${esc(r.hotel)}</td>
-      <td><span class="transport-tag${r.transportClass ? ` ${r.transportClass}` : ''}">${esc(r.transport)}</span></td>
+      <td data-label="天數"><span class="day-badge">${r.day}</span></td>
+      <td data-label="日期">${esc(r.date)}</td>
+      <td data-label="主要地點">${esc(r.places)}</td>
+      <td data-label="住宿">${esc(r.hotel)}</td>
+      <td data-label="交通重點"><span class="transport-tag${r.transportClass ? ` ${r.transportClass}` : ''}">${esc(r.transport)}</span></td>
     </tr>
   `).join('');
 }
@@ -49,26 +80,35 @@ function renderTimelineItem(item) {
   `;
 }
 
-function renderDay(day) {
+function renderDay(day, tripId) {
   const tipsHtml = day.tips?.length
     ? `<div class="tips-box">
         <h4>${icon('lightbulb')} 旅遊重點</h4>
         <ul>${day.tips.map((t) => `<li>${t}</li>`).join('')}</ul>
       </div>`
     : '';
+  const photo = day.photo?.src
+    ? photoHtml(
+        { ...day.photo, src: tripAssetUrl(tripId, day.photo.src) },
+        { className: 'ph--day' }
+      )
+    : '';
   return `
-    <section id="${day.id}" class="section day-section">
-      <div class="day-header">
-        <div class="day-number">${day.number}</div>
-        <div class="day-info">
-          <span class="day-date">${esc(day.date)}</span>
-          <h2>${esc(day.title)}</h2>
+    <section id="${day.id}" class="section day-section${photo ? ' day-section--photo' : ''}">
+      ${photo}
+      <div class="day-body">
+        <div class="day-header">
+          <div class="day-number">${day.number}</div>
+          <div class="day-info">
+            <span class="day-date">${esc(day.date)}</span>
+            <h2>${esc(day.title)}</h2>
+          </div>
         </div>
+        <div class="timeline">
+          ${day.timeline.map(renderTimelineItem).join('')}
+        </div>
+        ${tipsHtml}
       </div>
-      <div class="timeline">
-        ${day.timeline.map(renderTimelineItem).join('')}
-      </div>
-      ${tipsHtml}
     </section>
   `;
 }
@@ -95,26 +135,54 @@ function renderBudgetHtml(budget) {
     </div>`;
 }
 
-export function renderHero(meta) {
+export function renderHero(meta, days = []) {
   const root = document.getElementById('hero-root');
   if (!root || !meta) return;
 
+  const tripId = meta.slug || '';
   const highlights = (meta.highlights || [])
     .map((h) => `<div class="info-item"><span class="info-icon">${icon('sparkle')}</span><span>${esc(h)}</span></div>`)
     .join('');
+  const dayCount = days.length ? `<div class="info-item"><span class="info-icon">${icon('sun')}</span><span>${days.length} 天</span></div>` : '';
+
+  const cover = meta.cover?.src
+    ? {
+        img: `
+          <img class="hero-photo-img" src="${esc(tripAssetUrl(tripId, meta.cover.src))}" alt="${esc(meta.cover.alt || meta.title || '')}" fetchpriority="high" decoding="async">
+          <div class="hero-photo-overlay"></div>`,
+        credit: meta.cover.credit
+          ? `<span class="ph-credit ph-credit--hero">${esc(meta.cover.credit)}</span>`
+          : '',
+      }
+    : null;
+  root.classList.toggle('hero-photo', Boolean(cover));
+
+  const today = findTodayDay(days, meta.badge);
+  const quickLinks = [
+    today ? { href: `#${today.id}`, label: `今天 · Day ${today.number}`, icon: 'sparkle', primary: true } : null,
+    { href: '#overview', label: '行程', icon: 'list' },
+    { href: '#tickets', label: '票券', icon: 'ticket' },
+    { href: '#budget', label: '預算', icon: 'budget' },
+  ].filter(Boolean);
+  const quickHtml = quickLinks
+    .map((l) => `<a class="hero-quick-link${l.primary ? ' hero-quick-link--primary' : ''}" href="${l.href}">${icon(l.icon)}<span>${esc(l.label)}</span></a>`)
+    .join('');
 
   root.innerHTML = `
+    ${cover ? cover.img : ''}
     <div class="hero-content">
       <span class="hero-badge">${esc(meta.badge || '')}</span>
       <h1>${esc(meta.title || '')}</h1>
       <p class="hero-subtitle">${esc(meta.subtitle || '')}</p>
       <div class="hero-info">
         <div class="info-item"><span class="info-icon">${icon('calendar')}</span><span>${esc(meta.dateRange || '')}</span></div>
+        ${dayCount}
         <div class="info-item"><span class="info-icon">${icon('ticket')}</span><span>${esc(meta.ticketSummary || '')}</span></div>
         ${highlights}
       </div>
+      <div class="hero-quick">${quickHtml}</div>
     </div>
-    <div class="scroll-indicator"><span>向下滑動</span><div class="scroll-arrow"></div></div>`;
+    ${cover ? cover.credit : ''}`;
 }
 
 export function renderExtras(data) {
@@ -158,8 +226,9 @@ export function renderExtras(data) {
 }
 
 export function renderItinerary(data) {
-  renderHero(data.meta);
+  renderHero(data.meta, data.days || []);
 
+  const tripId = data.meta?.slug || '';
   const ticketsEl = document.getElementById('ticket-grid');
   const overviewEl = document.getElementById('overview-body');
   const daysEl = document.getElementById('days-root');
@@ -167,7 +236,7 @@ export function renderItinerary(data) {
 
   if (ticketsEl) ticketsEl.innerHTML = renderTickets(data.tickets || []);
   if (overviewEl) overviewEl.innerHTML = renderOverview(data.overview || []);
-  if (daysEl) daysEl.innerHTML = (data.days || []).map(renderDay).join('');
+  if (daysEl) daysEl.innerHTML = (data.days || []).map((d) => renderDay(d, tripId)).join('');
   if (budgetEl && data.budget) budgetEl.innerHTML = renderBudgetHtml(data.budget);
 
   renderExtras(data);

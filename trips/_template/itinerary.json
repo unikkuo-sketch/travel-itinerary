@@ -7,6 +7,12 @@
     "dateRange": "MM/DD - MM/DD",
     "ticketSummary": "交通票券摘要",
     "highlights": ["亮點一", "亮點二"],
+    "theme": "sakura",
+    "cover": {
+      "src": "photos/cover.webp",
+      "alt": "封面照片說明",
+      "credit": "作者 / 授權（例：CC BY 4.0）"
+    },
     "footerWish": "祝您旅途順利！",
     "footerDate": "行程規劃 · 日期區間"
   },
