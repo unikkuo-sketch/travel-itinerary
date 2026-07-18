@@ -3,6 +3,7 @@ import 'leaflet/dist/leaflet.css';
 import './leaflet-icons.js';
 import { loadManifest, tripUrl } from './load-trip.js';
 import { icon } from './icons.js';
+import { photoHtml, tripAssetUrl } from './photo.js';
 
 function esc(text) {
   const el = document.createElement('span');
@@ -10,21 +11,49 @@ function esc(text) {
   return el.innerHTML;
 }
 
+function parseRangeDate(dateStr, fallbackYear) {
+  if (!dateStr) return null;
+  const full = /^\d{4}\//.test(dateStr) ? dateStr : `${fallbackYear}/${dateStr.replace(/^\//, '')}`;
+  const [y, mo, d] = full.split('/').map((n) => parseInt(n, 10));
+  if (!y || !mo || !d) return null;
+  return { y, mo, d };
+}
+
+function parseTripStart(dateRange) {
+  if (!dateRange) return null;
+  const [start] = dateRange.split(/\s*-\s*/);
+  const p = parseRangeDate(start, String(new Date().getFullYear()));
+  return p ? new Date(p.y, p.mo - 1, p.d) : null;
+}
+
 function parseTripEnd(dateRange) {
   if (!dateRange) return null;
   const [start, end] = dateRange.split(/\s*-\s*/);
   if (!start || !end) return null;
   const year = start.match(/^(\d{4})\//)?.[1] || String(new Date().getFullYear());
-  const endFull = /^\d{4}\//.test(end) ? end : `${year}/${end.replace(/^\//, '')}`;
-  const [y, mo, d] = endFull.split('/').map((n) => parseInt(n, 10));
-  if (!y || !mo || !d) return null;
-  return new Date(y, mo - 1, d, 23, 59, 59, 999);
+  const p = parseRangeDate(end, year);
+  return p ? new Date(p.y, p.mo - 1, p.d, 23, 59, 59, 999) : null;
 }
 
 function tripIsPast(trip) {
   const end = parseTripEnd(trip.dateRange);
   if (end) return Date.now() > end.getTime();
   return trip.status === 'past';
+}
+
+function tripStatusLabel(trip) {
+  if (tripIsPast(trip)) return { text: '旅程結束', cls: 'past' };
+  const start = parseTripStart(trip.dateRange);
+  const end = parseTripEnd(trip.dateRange);
+  const now = Date.now();
+  if (start && end && now >= start.getTime() && now <= end.getTime()) {
+    return { text: '旅行中', cls: 'active' };
+  }
+  if (start) {
+    const daysLeft = Math.ceil((start.getTime() - now) / 86400000);
+    if (daysLeft <= 60) return { text: `${daysLeft} 天後出發`, cls: '' };
+  }
+  return { text: '即將出發', cls: '' };
 }
 
 function sortTrips(trips) {
@@ -87,14 +116,33 @@ function renderHubGrid(sorted) {
     return;
   }
 
-  root.innerHTML = sorted.map((t) => `
-    <a class="trip-card" href="${tripUrl(t.id)}">
-      <h2>${esc(t.title)}</h2>
-      <p class="trip-card-sub">${esc(t.subtitle || '')}</p>
-      <p class="trip-card-date">${icon('calendar')}<time>${esc(t.dateRange || '')}</time></p>
-      ${tripIsPast(t) ? '<span class="trip-card-badge past">旅程結束</span>' : '<span class="trip-card-badge">即將出發</span>'}
-    </a>
-  `).join('');
+  root.innerHTML = sorted.map((t) => {
+    const status = tripStatusLabel(t);
+    const cover = t.cover
+      ? photoHtml(
+          { src: tripAssetUrl(t.id, t.cover), alt: t.coverAlt || t.title, credit: t.coverCredit },
+          { className: 'ph--card' }
+        )
+      : `<div class="ph ph--card ph--fallback"><span class="ph-fallback-emoji">${esc(t.emoji || '🌏')}</span></div>`;
+    const metaBits = [
+      `<span class="trip-card-meta-item">${icon('calendar')}<time>${esc(t.dateRange || '')}</time></span>`,
+      t.days ? `<span class="trip-card-meta-item">${esc(String(t.days))} 天</span>` : '',
+      t.location ? `<span class="trip-card-meta-item">${icon('pin')}${esc(t.location)}</span>` : '',
+    ].filter(Boolean).join('');
+    return `
+      <a class="trip-card" href="${tripUrl(t.id)}">
+        <div class="trip-card-media">
+          ${cover}
+          <span class="trip-card-badge ${status.cls}">${status.text}</span>
+        </div>
+        <div class="trip-card-body">
+          <h2>${esc(t.title)}</h2>
+          <p class="trip-card-sub">${esc(t.subtitle || '')}</p>
+          <p class="trip-card-meta">${metaBits}</p>
+        </div>
+      </a>
+    `;
+  }).join('');
 }
 
 function initReveal() {

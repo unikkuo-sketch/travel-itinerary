@@ -50,7 +50,16 @@ Copy-Item -Recurse trips\_template trips\2027_義大利托斯卡尼_蜜月
 
 圖片來源優先順序：品牌／製造商官網 > 產地官方商店 > 觀光協會商品頁。連結失效時只需改 JSON 中的 `imageUrl`。
 
-### 3. 更新 manifest.json
+### 3. 加入照片（封面與每日代表照）
+
+照片流程與授權紀錄格式見 `ATTRIBUTIONS.md`。重點：
+
+- 不 hotlink；從 Wikimedia Commons 等免費來源下載後轉 WebP 放入 `trips/{id}/photos/`（封面寬 1600px、每日照片寬 1200px）
+- `meta.cover` 填封面（`src`、`alt`、`credit`）；`days[].photo` 填每日代表照（同欄位）
+- `meta.theme` 選填旅程色：`sakura`（櫻花粉）或 `ocean`（海洋藍），未填用預設蜜桃色
+- 每張照片都要在 `ATTRIBUTIONS.md` 補一列（作者、授權、來源連結）
+
+### 4. 更新 manifest.json
 
 在 `trips/manifest.json` 的 `trips` 陣列新增：
 
@@ -62,15 +71,22 @@ Copy-Item -Recurse trips\_template trips\2027_義大利托斯卡尼_蜜月
   "dateRange": "2027/05/01 - 05/10",
   "status": "upcoming",
   "emoji": "🇮🇹",
-  "coords": [43.77, 11.25]
+  "coords": [43.77, 11.25],
+  "days": 10,
+  "location": "托斯卡尼",
+  "cover": "photos/cover.webp",
+  "coverAlt": "封面照片說明",
+  "coverCredit": "作者 / 授權"
 }
 ```
 
 `status`：`upcoming`（即將出發）或 `past`（已結束）
 
-`coords`：`[緯度, 經度]`，Hub 首頁「精選旅程」世界地圖用來標出目的地釘點；未填則不顯示於地圖。
+`coords`：`[緯度, 經度]`，Hub 首頁「目的地地圖」用來標出目的地釘點；未填則不顯示於地圖。
 
-### 4. 選填檔案
+`days`／`location`／`cover*`：Hub 行程卡顯示天數、地點與封面圖；`cover` 未填時卡片顯示 emoji 底圖。
+
+### 5. 選填檔案
 
 | 檔案 | 用途 |
 |------|------|
@@ -79,7 +95,7 @@ Copy-Item -Recurse trips\_template trips\2027_義大利托斯卡尼_蜜月
 | `photos/` | 旅後照片（與 recap.json 的 `file` 欄對應） |
 | `assets/` | PDF、圖片等原始檔 |
 
-### 5. 預覽
+### 6. 預覽
 
 ```powershell
 npm run dev
@@ -88,7 +104,7 @@ npm run dev
 - Hub：`http://localhost:5173/travel-itinerary/`
 - 行程：`http://localhost:5173/travel-itinerary/trip.html?trip=2027_義大利托斯卡尼_蜜月`
 
-### 6. 上線
+### 7. 上線
 
 ```powershell
 git add trips/

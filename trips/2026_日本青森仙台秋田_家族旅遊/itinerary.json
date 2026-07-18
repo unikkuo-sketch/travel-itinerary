@@ -12,7 +12,13 @@
       "角館武家屋敷與田澤湖東北小京都風光"
     ],
     "footerWish": "祝您2026年7-8月的東北祭典之旅順利！",
-    "footerDate": "行程規劃 · 2026年7月31日 - 8月7日"
+    "footerDate": "行程規劃 · 2026年7月31日 - 8月7日",
+    "cover": {
+      "src": "photos/cover.webp",
+      "alt": "青森睡魔祭的燈籠山車",
+      "credit": "Marie-Sophie Mejan / CC BY 4.0"
+    },
+    "theme": "ocean"
   },
   "shopping": {
     "suggestions": [
@@ -310,7 +316,12 @@
         "✅ <strong>東日本周遊券／仙台まるごとパス</strong>：抵達仙台車站後即可領取，記得攜帶護照",
         "✅ <strong>鯛吉薄皮鯛魚燒</strong>：仙台人氣排隊小吃，建議傍晚前往避開排隊高峰",
         "✅ <strong>提早休息</strong>：長途飛行後調整時差，為明日盛岡行程做準備"
-      ]
+      ],
+      "photo": {
+        "src": "photos/day1.webp",
+        "alt": "仙台七夕祭的吹流し裝飾",
+        "credit": "掬茶 / CC BY-SA 4.0"
+      }
     },
     {
       "id": "day2",
@@ -371,7 +382,12 @@
         "✅ <strong>Hayabusa 1 號</strong>：08:05仙台出發，08:44抵達盛岡（2號車）",
         "✅ <strong>小岩井農場巴士</strong>：盛岡站10號站牌搭乘，去程09:05、回程12:00，請留意末班車時間",
         "✅ <strong>岩手銀行赤煉瓦館</strong>：紅磚洋樓外觀適合拍照，鄰近盛岡八幡宮"
-      ]
+      ],
+      "photo": {
+        "src": "photos/day2.webp",
+        "alt": "小岩井農場的羊群與草原",
+        "credit": "掬茶 / CC BY-SA 4.0"
+      }
     },
     {
       "id": "day3",
@@ -448,7 +464,12 @@
         "✅ <strong>青森魚菜センター</strong>：買飯券自選食材製作專屬海鮮丼，早市限定體驗",
         "✅ <strong>Moya Hills</strong>：搭乘巴士上山，天氣晴朗時可遠眺陸奧灣與津輕平原",
         "✅ <strong>Hayate 98 號夜間新幹線</strong>：21:47新青森出發，22:48抵達盛岡，注意末班車銜接"
-      ]
+      ],
+      "photo": {
+        "src": "photos/day3.webp",
+        "alt": "青森睡魔祭燈籠山車",
+        "credit": "Marie-Sophie Mejan / CC BY 4.0"
+      }
     },
     {
       "id": "day4",
@@ -525,7 +546,12 @@
         "✅ <strong>八食中心</strong>：東北最大海鮮市場，建議早上前往選購新鮮海鮮現場料理",
         "✅ <strong>三段新幹線接駁</strong>：八戶→新青森→弘前需轉乘2次，留意換車時間",
         "✅ <strong>弘前公園</strong>：弘前城與護城河，是津輕地區歷史文化象徵"
-      ]
+      ],
+      "photo": {
+        "src": "photos/day4.webp",
+        "alt": "弘前城天守與石垣",
+        "credit": "掬茶 / CC BY-SA 4.0"
+      }
     },
     {
       "id": "day5",
@@ -579,7 +605,12 @@
         "✅ <strong>Resort 白神號</strong>：沿日本海絕景行駛近5小時，建議坐靠海側座位",
         "✅ <strong>秋田市民俗藝能傳承館</strong>：可近距離了解竿燈祭文化與道具",
         "✅ <strong>秋田長屋酒場</strong>：晚餐已預約17:45，請準時前往"
-      ]
+      ],
+      "photo": {
+        "src": "photos/day5.webp",
+        "alt": "Resort 白神號停靠千疊敷站",
+        "credit": "Calistemon / CC BY-SA 4.0"
+      }
     },
     {
       "id": "day6",
@@ -660,7 +691,12 @@
         "✅ <strong>角館武家屋敷</strong>：東北小京都代表景點，黑板圍牆與古樹並存",
         "✅ <strong>田澤湖</strong>：日本最深湖泊，湖水湛藍清澈",
         "✅ <strong>Komachi 號秋田新幹線</strong>：全程多次轉乘，請留意各站轉乘時間"
-      ]
+      ],
+      "photo": {
+        "src": "photos/day6.webp",
+        "alt": "角館武家屋敷通的枝垂櫻",
+        "credit": "掬茶 / CC BY-SA 4.0"
+      }
     },
     {
       "id": "day7",
@@ -715,7 +751,12 @@
         "✅ <strong>松島三景</strong>：福浦島、五大堂、瑞巖寺半日可走完，建議穿舒適走路鞋",
         "✅ <strong>瑞巖寺</strong>：伊達政宗家族菩提寺，國寶級建築不可錯過",
         "✅ <strong>三井OUTLET仙台港</strong>：可安排2-3小時採購行程尾聲伴手禮"
-      ]
+      ],
+      "photo": {
+        "src": "photos/day7.webp",
+        "alt": "松島灣的島嶼景色",
+        "credit": "Chensiyuan / CC BY-SA 4.0"
+      }
     },
     {
       "id": "day8",
@@ -771,7 +812,12 @@
         "✅ <strong>仙台朝市</strong>：早晨營業，建議把握時間享用新鮮早餐",
         "✅ <strong>瑞鳳殿與大崎八幡宮</strong>：伊達政宗相關必訪國寶級景點，安排在機場前順遊",
         "✅ <strong>BR117回程</strong>：16:05仙台起飛，18:55抵達桃園，提前2小時抵達機場辦理登機"
-      ]
+      ],
+      "photo": {
+        "src": "photos/day8.webp",
+        "alt": "瑞鳳殿本殿",
+        "credit": "663highland / CC BY 2.5"
+      }
     }
   ],
   "budget": {
@@ -856,48 +902,81 @@
     }
   },
   "map": {
-    "center": [39.7, 140.7],
+    "center": [
+      39.7,
+      140.7
+    ],
     "zoom": 7,
     "locations": [
       {
         "name": "1. 仙台 (Day 1 / Day 6-8)",
-        "coords": [38.2682, 140.8694]
+        "coords": [
+          38.2682,
+          140.8694
+        ]
       },
       {
         "name": "2. 盛岡 (Day 2-3)",
-        "coords": [39.7036, 141.1527]
+        "coords": [
+          39.7036,
+          141.1527
+        ]
       },
       {
         "name": "3. 青森 (Day 3)",
-        "coords": [40.8244, 140.7406]
+        "coords": [
+          40.8244,
+          140.7406
+        ]
       },
       {
         "name": "4. 八戶 (Day 4)",
-        "coords": [40.5122, 141.4886]
+        "coords": [
+          40.5122,
+          141.4886
+        ]
       },
       {
         "name": "5. 弘前 (Day 4-5)",
-        "coords": [40.6031, 140.4642]
+        "coords": [
+          40.6031,
+          140.4642
+        ]
       },
       {
         "name": "6. 秋田 (Day 5)",
-        "coords": [39.7186, 140.1024]
+        "coords": [
+          39.7186,
+          140.1024
+        ]
       },
       {
         "name": "7. 大仙市 (Day 5-6)",
-        "coords": [39.4531, 140.4728]
+        "coords": [
+          39.4531,
+          140.4728
+        ]
       },
       {
         "name": "8. 角館 (Day 6)",
-        "coords": [39.5986, 140.5636]
+        "coords": [
+          39.5986,
+          140.5636
+        ]
       },
       {
         "name": "9. 田澤湖 (Day 6)",
-        "coords": [39.6825, 140.6803]
+        "coords": [
+          39.6825,
+          140.6803
+        ]
       },
       {
         "name": "10. 松島 (Day 6-7)",
-        "coords": [38.3690, 141.0708]
+        "coords": [
+          38.369,
+          141.0708
+        ]
       }
     ]
   }

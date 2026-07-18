@@ -10,7 +10,13 @@
       "含溫泉飯店一泊二食"
     ],
     "footerWish": "祝您2026年3月的熱海長瀞之旅順利！",
-    "footerDate": "行程規劃 · 2026年3月27日 - 4月1日"
+    "footerDate": "行程規劃 · 2026年3月27日 - 4月1日",
+    "cover": {
+      "src": "photos/cover.webp",
+      "alt": "熱海サンビーチ與市街全景",
+      "credit": "m-louis .® / CC BY-SA 2.0"
+    },
+    "theme": "sakura"
   },
   "shopping": {
     "suggestions": [
@@ -307,7 +313,12 @@
         "✅ <strong>成田→東京→熱海</strong>：搭11:10巴士至東京，再搭12:27新幹線直達熱海",
         "✅ <strong>來宮神社</strong>：能量景點，傍晚參訪氛圍絕佳",
         "✅ <strong>早點入住</strong>：充分享受Resorpia Atami溫泉設施"
-      ]
+      ],
+      "photo": {
+        "src": "photos/day1.webp",
+        "alt": "熱海サンビーチ的沙灘與海岸線",
+        "credit": "Izu navi / CC BY 2.0"
+      }
     },
     {
       "id": "day2",
@@ -350,7 +361,12 @@
         "✅ <strong>大室山</strong>：伊豆半島代表性火山，可沿火山口步道散步，享受無遮蔽絕佳視野",
         "✅ <strong>城崎海岸</strong>：壯觀海蝕地形，門脇吊橋體驗",
         "✅ <strong>Hotel Yoshino一泊二食</strong>：主要溫泉體驗日"
-      ]
+      ],
+      "photo": {
+        "src": "photos/day2.webp",
+        "alt": "城ヶ崎海岸門脇吊橋",
+        "credit": "Takuya ASADA / CC BY 2.0"
+      }
     },
     {
       "id": "day3",
@@ -400,7 +416,12 @@
         "✅ <strong>小室山公園</strong>：從伊東的自然粉紅花海渡過至東京的繁華都會",
         "✅ <strong>藍寶石踴子號</strong>：全車指定席，建議提前在 JR 官網或車站購買購票。",
         "✅ <strong>池袋入住</strong>：Super Hotel JR Ikebukuro West Exit，隔天出發秩父超方便"
-      ]
+      ],
+      "photo": {
+        "src": "photos/day3.webp",
+        "alt": "小室山公園的山丘步道",
+        "credit": "hiroaki / CC BY 2.0"
+      }
     },
     {
       "id": "day4",
@@ -450,7 +471,12 @@
         "✅ <strong>秩父漫遊車票</strong>：07:30從池袋搭特急出發",
         "✅ <strong>長瀞岩疊</strong>：國家指定名勝天然紀念物",
         "✅ <strong>彈性安排</strong>：手搖船需視天氣和體力調整"
-      ]
+      ],
+      "photo": {
+        "src": "photos/day4.webp",
+        "alt": "長瀞岩疊溪谷與荒川",
+        "credit": "Suikotei / CC BY-SA 4.0"
+      }
     },
     {
       "id": "day5",
@@ -506,7 +532,12 @@
         "✅ <strong>三峯神社</strong>：關東最強能量景點，海拔1100公尺深山、狼守護神、境內筑圍莊嚴",
         "✅ <strong>秩父神社</strong>：2000年歷史，體驗日本傳統信仰與建築",
         "✅ <strong>Buko Shuzo Brewery</strong>：品嚐秩父清酒，感受傳統釀造工藝"
-      ]
+      ],
+      "photo": {
+        "src": "photos/day5.webp",
+        "alt": "三峯神社隨身門",
+        "credit": "Zengame / CC BY 2.0"
+      }
     },
     {
       "id": "day6",
@@ -546,7 +577,12 @@
           "highlight": true
         }
       ],
-      "tips": []
+      "tips": [],
+      "photo": {
+        "src": "photos/day6.webp",
+        "alt": "明治神宮南參道鳥居",
+        "credit": "Asanagi / CC0"
+      }
     }
   ],
   "budget": {

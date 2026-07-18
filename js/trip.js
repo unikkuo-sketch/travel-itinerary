@@ -52,6 +52,7 @@ async function init() {
     document.title = `${meta.title} | ${meta.badge || ''}`;
     const desc = document.querySelector('meta[name="description"]');
     if (desc) desc.content = meta.subtitle || meta.title;
+    if (meta.theme) document.body.classList.add(`theme-${meta.theme}`);
 
     mountNav('trip', tripId, data.days);
     renderItinerary(data);
