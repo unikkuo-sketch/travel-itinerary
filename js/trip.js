@@ -52,7 +52,7 @@ async function init() {
     if (desc) desc.content = meta.subtitle || meta.title;
     if (meta.theme) document.body.classList.add(`theme-${meta.theme}`);
 
-    mountNav('trip', tripId, data.days);
+    mountNav(tripId, data.days);
     renderItinerary(data);
     initMap(data.map);
     initNavScroll();

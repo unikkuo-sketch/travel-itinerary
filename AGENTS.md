@@ -32,7 +32,7 @@ ATTRIBUTIONS.md         照片素材授權紀錄（新增圖片必須補列）
 
 ## 慣例
 
-- 動態導覽：`js/nav.js`；行程頁 hero 左上「返回總覽」；sticky 雙列（`nav-shell` 包內容置中；上：行程→亮點→票券→住宿→路線→預算→風土→購物；下：Day chips＋捲動高亮／橫滑跟蹤）；購物／風土 sticky 左端返回 Hub
+- 動態導覽：`js/nav.js`（僅行程頁）；hero 左上「返回總覽」；sticky 雙列（`nav-shell` 對齊 `.main-content` `max-width: 1200px`；上：行程→亮點→票券→住宿→路線→預算→風土→購物；下：Day chips＋捲動高亮／橫滑跟蹤）；購物／風土無 sticky，hero 左上「返回行程」連回本趟 `trip.html`
 - 全站 UI token 在 `styles.css` `:root`（Palette 1：`#D0B8AC` → `#FBFEFB` 蜜桃奶油系；字級 `--text-*`、行距 `--leading-*`）
 - 改行程內容：只編輯 `trips/{id}/itinerary.json`
 - 新增行程：複製 `_template`、更新 `manifest.json`（見 docs/add-trip.md）

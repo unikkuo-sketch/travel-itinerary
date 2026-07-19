@@ -1,11 +1,22 @@
 import { getTripId, loadTrip, tripUrl } from './load-trip.js';
-import { mountNav } from './nav.js';
+import { icon } from './icons.js';
 import { photoHtml, tripAssetUrl } from './photo.js';
 
 const root = document.getElementById('stories-root');
 const heroTitle = document.getElementById('stories-trip-title');
+const heroEl = document.querySelector('.hero-stories');
 
 const THEME_LABEL = { place: '景點', food: '飲食' };
+
+function mountHeroBack(tripId) {
+  if (!heroEl || heroEl.querySelector('.hero-back')) return;
+  const back = document.createElement('a');
+  back.className = 'hero-back';
+  back.href = tripUrl(tripId);
+  back.setAttribute('aria-label', '返回行程');
+  back.innerHTML = `${icon('arrowLeft', 'icon icon--sm')}<span>返回行程</span>`;
+  heroEl.prepend(back);
+}
 
 function esc(text) {
   const el = document.createElement('span');
@@ -109,7 +120,7 @@ async function init() {
         : '風土碎片';
     }
 
-    mountNav('stories', tripId, data.days || []);
+    mountHeroBack(tripId);
 
     const stories = data.stories || [];
     if (!stories.length) {

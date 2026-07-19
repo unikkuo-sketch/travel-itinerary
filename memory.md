@@ -12,8 +12,9 @@
 
 ## 近期
 
-- sticky nav：`nav-shell` 包內容置中；Day chips scroll-spy＋橫滑跟蹤當日（不收合）
+- sticky nav（僅行程頁）：`nav-shell` 對齊主內容 1200px；Day chips scroll-spy＋橫滑跟蹤當日（不收合）
 - 行程頁導覽：hero「返回總覽」＋ sticky 雙列（章節／Day chips）；閱讀優先 section 序（行程→亮點→票券→住宿→路線→每日…）
+- 購物／風土：無 sticky；hero 左上「返回行程」連回本趟行程頁
 - P0/P1 行程頁清晰度：亮點卡、路線動線 strip、住宿總覽、時間軸 icon／detail、桌機每日左右編排（對齊 Flipsnack 手冊資訊架構，保留蜜桃奶油色系）
 - 行程總覽「交通重點」欄補已訂班次時間（`車次 · HH:MM`，多段用 `／`）
 - 風土碎片改獨立頁 `stories.html`：滿版章節＋下緣疊文（對齊購物進入方式）
@@ -30,20 +31,28 @@
 
 ## 決策
 
-### 2026-07-19 — sticky nav：shell 包內容置中＋Day scroll-spy
+### 2026-07-19 — nav-shell 對齊主內容寬度；購物／風土無 sticky
+
+- 問題：fit-content shell 與主內容對不齊；Day 列視覺不對稱；獨立頁不應帶行程雙列導覽
+- 曾考慮：shell 仍 fit-content 只求等寬兩列；購物／風土留極簡 sticky
+- 放棄原因：使用者要與 `.main-content` 同寬；獨立頁明確不要 sticky
+- 現行方案：`nav-shell` `width: 100%; max-width: 1200px`；≤768px 不再強制 nav-row `flex-start`；購物／風土 hero「返回行程」→ `trip.html?trip=`
+- 驗證：`npm run build`；dev 開 trip／shopping／stories
+
+### 2026-07-19 — sticky nav：shell 包內容置中＋Day scroll-spy（已修正）
 
 - 問題：nav-shell 拉滿寬，章節列右側（購物後）大片空白；捲到每日時 Day chip 不會跟著高亮／捲入
-- 曾考慮：整排 Day 收合為「目前 Day N ▾」下拉
-- 放棄原因：多一步點開；常跳日比少佔位更重要（已選定常駐橫列）
-- 現行方案：`nav-shell` `width: fit-content` 置中；Day 列 scroll-spy＋active chip `scrollIntoView(inline: center)`
-- 驗證：`npm run build`；dev 開 trip 頁，寬螢幕確認 shell 不拉滿；捲 Day 區看 chip 高亮並橫滑置中
+- 曾考慮：整排 Day 收合為「目前 Day N ▾」下拉；`width: fit-content` 置中
+- 放棄原因：下拉多一步；fit-content 後來被判定與版面寬度不合（見同日新決策）
+- 現行方案：見「nav-shell 對齊主內容寬度」；Day 列 scroll-spy＋active chip `scrollIntoView(inline: center)` 仍保留
+- 驗證：`npm run build`；dev 開 trip 頁
 
 ### 2026-07-19 — 行程導覽：hero 返回＋雙列 Day
 
 - 問題：sticky 把 Hub「總覽」與頁內錨點混列；Day 1…N 隨天數膨脹難掃
-- 曾考慮：Day 下拉／只靠總覽表跳日／真 tab 切換日內容
-- 放棄原因：下拉多一步；拿掉 Day 不利當日跳轉；tab 會拆現有長頁 hash
-- 現行方案：hero 左上返回 Hub；sticky 上列章節（閱讀優先序）、下列 Day chips；購物／風土 sticky 左端返回
+- 曾考慮：Day 下拉／只靠總覽表跳日／真 tab 切換日內容；購物／風土 sticky 左端返回 Hub
+- 放棄原因：下拉多一步；拿掉 Day 不利當日跳轉；tab 會拆現有長頁 hash；獨立頁 sticky 已否決
+- 現行方案：行程頁 hero 左上返回 Hub；sticky 上列章節、下列 Day chips；購物／風土 hero「返回行程」
 - 驗證：`npm run build`；dev 開 trip／shopping／stories 查 nav 與 hero-back
 
 ### 2026-07-19 — 總覽表不再顯示每日一句

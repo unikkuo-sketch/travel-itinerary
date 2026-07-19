@@ -1,5 +1,4 @@
-import { getTripId, loadTrip } from './load-trip.js';
-import { mountNav } from './nav.js';
+import { getTripId, loadTrip, tripUrl } from './load-trip.js';
 import { icon } from './icons.js';
 
 const listEl = document.getElementById('shoppingList');
@@ -7,7 +6,18 @@ const inputEl = document.getElementById('itemInput');
 const addBtn = document.getElementById('addBtn');
 const recRoot = document.getElementById('shopping-rec-root');
 const heroTitle = document.getElementById('shopping-trip-title');
+const heroEl = document.querySelector('.hero-shopping');
 const mineZone = document.getElementById('shopping-zone-mine');
+
+function mountHeroBack(tripId) {
+  if (!heroEl || heroEl.querySelector('.hero-back')) return;
+  const back = document.createElement('a');
+  back.className = 'hero-back';
+  back.href = tripUrl(tripId);
+  back.setAttribute('aria-label', '返回行程');
+  back.innerHTML = `${icon('arrowLeft', 'icon icon--sm')}<span>返回行程</span>`;
+  heroEl.prepend(back);
+}
 
 let items = [];
 let storageKey = '';
@@ -264,14 +274,15 @@ async function init() {
   storageKey = `travelShoppingList:${tripId}`;
   items = JSON.parse(localStorage.getItem(storageKey) || '[]');
 
+  mountHeroBack(tripId);
+
   try {
     const data = await loadTrip(tripId);
     document.title = `購物清單 | ${data.meta?.title || tripId}`;
     if (heroTitle) heroTitle.textContent = data.meta?.title || '購物清單';
-    mountNav('shopping', tripId, data.days);
     renderRecommendations(data.shopping?.recommendations);
   } catch {
-    mountNav('shopping', tripId, []);
+    /* trip meta optional for local shopping list */
   }
 
   addBtn.addEventListener('click', () => addItem());

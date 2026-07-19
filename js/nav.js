@@ -1,11 +1,4 @@
 import { tripUrl } from './load-trip.js';
-import { icon } from './icons.js';
-
-const base = import.meta.env.BASE_URL;
-
-function hubUrl() {
-  return base;
-}
 
 function linkHtml(l) {
   if (l.active) return `<span class="nav-link active">${l.label}</span>`;
@@ -33,28 +26,6 @@ function buildTripSectionLinks(tripId) {
   ];
 }
 
-function buildShoppingSectionLinks(tripId) {
-  return [
-    { href: `${tripUrl(tripId)}#tickets`, label: '票券' },
-    { href: `${tripUrl(tripId)}#overview`, label: '行程' },
-    { href: tripUrl(tripId, 'stories'), label: '風土' },
-    { active: true, label: '購物' },
-  ];
-}
-
-function buildStoriesSectionLinks(tripId) {
-  return [
-    { href: `${tripUrl(tripId)}#tickets`, label: '票券' },
-    { href: `${tripUrl(tripId)}#overview`, label: '行程' },
-    { active: true, label: '風土' },
-    { href: tripUrl(tripId, 'shopping'), label: '購物' },
-  ];
-}
-
-function backHtml() {
-  return `<a href="${hubUrl()}" class="nav-back" aria-label="返回行程總覽">${icon('arrowLeft', 'icon icon--sm')}<span>返回總覽</span></a>`;
-}
-
 function ensureNavShell(container) {
   const nav = container.closest('.nav-sticky');
   if (!nav) return { sectionsEl: container, daysEl: null };
@@ -80,22 +51,13 @@ function ensureNavShell(container) {
   return { sectionsEl, daysEl, shell };
 }
 
-export function mountNav(page, tripId, days = []) {
+export function mountNav(tripId, days = []) {
   const container = document.getElementById('nav-container');
   if (!container) return;
 
   const { sectionsEl, daysEl } = ensureNavShell(container);
 
-  const sectionLinks =
-    page === 'shopping'
-      ? buildShoppingSectionLinks(tripId)
-      : page === 'stories'
-        ? buildStoriesSectionLinks(tripId)
-        : buildTripSectionLinks(tripId);
-
-  const showBack = page === 'shopping' || page === 'stories';
-  sectionsEl.innerHTML =
-    (showBack ? backHtml() : '') + sectionLinks.map(linkHtml).join('');
+  sectionsEl.innerHTML = buildTripSectionLinks(tripId).map(linkHtml).join('');
 
   if (daysEl) {
     const links = dayLinks(tripId, days);
