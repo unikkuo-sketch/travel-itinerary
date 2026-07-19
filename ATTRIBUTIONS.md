@@ -39,6 +39,23 @@ CC BY / CC BY-SA 圖片依授權條款標示作者、來源與授權；CC BY-SA 
 | `story-gyutan.jpg` | 仙台牛タン定食 | Captain76 | [Public domain](https://creativecommons.org/publicdomain/mark/1.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Gyutan_teishoku.JPG) |
 | `story-kanto-1200.jpg` | 秋田竿燈祭夜景 | 8-Forest | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Akita_Kanto_Festival_2015_at_night.JPG) |
 
+## trips/2018_日本中部北陸_自助旅遊/photos/
+
+| 檔案 | 內容 | 作者 | 授權 | 來源 |
+|---|---|---|---|---|
+| `cover.webp` | 白川鄉合掌造聚落 | Gilles Desjardins | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Shirakawa-go_01.jpg) |
+| `day1.webp` | 名古屋城天守 | Noodle snacks | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Nagoya_Castle(Edit2).jpg) |
+| `day2.webp` | 名古屋市科學館外觀與天文館球體 | 名古屋太郎 | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Nagoya_City_Science_Museum-March_2012.jpg) |
+| `day3.webp` | 高山上三之町老街 | DimiTalen | [CC0](https://creativecommons.org/publicdomain/zero/1.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Looking_down_Kamisannomachi,_Takayama,_2016.jpg) |
+| `day4.webp` | 白川鄉合掌造聚落 | Gilles Desjardins | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Shirakawa-go_01.jpg) |
+| `day5.webp` | 兼六園徽軫燈籠 | Fg2 | [Public domain](https://creativecommons.org/publicdomain/mark/1.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Kenroku-en_Kotoji_Lantern_5.jpg) |
+| `day6.webp` | 立山黑部雪之大谷與阿爾卑斯路線巴士 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
+| `day7.webp` | 富山車站站舍 | くろふね | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Toyama_Station_Building_2022-04-09.jpg) |
+| `food-hitsumabushi.webp` | しら河鰻魚飯三吃定食 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
+| `food-gero-dinner.webp` | 下呂溫泉旅館會席晚餐 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
+| `food-omicho-kaisendon.webp` | 近江町市場海鮮丼 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
+| `food-higashi-chaya.webp` | 金澤東茶屋街格子造茶屋街道 | Zairon | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Kanazawa_Teeviertel_Higashiyama_Chaya_24.jpg) |
+
 ## 新增圖片時的紀錄格式
 
 1. 優先從 [Wikimedia Commons](https://commons.wikimedia.org/) 挑選，逐張確認授權（CC0 / CC BY / CC BY-SA / Public domain 可用；避免 NC / ND）。

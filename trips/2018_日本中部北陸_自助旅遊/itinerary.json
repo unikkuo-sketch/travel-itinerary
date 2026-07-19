@@ -1,0 +1,1033 @@
+{
+  "meta": {
+    "slug": "2018_日本中部北陸_自助旅遊",
+    "title": "2018 中部北陸 7日自助",
+    "subtitle": "自由行實錄 · 名古屋 × 下呂 × 高山 × 白川鄉 × 金澤 × 富山",
+    "badge": "2018年6月",
+    "dateRange": "06/02 - 06/08",
+    "ticketSummary": "華航來回 + 高山阿爾卑斯周遊券 + 昇龍道地鐵週遊 + 金澤周遊券",
+    "highlights": [
+      "昇龍道黃金路線：名古屋、下呂溫泉、高山老街一路北上",
+      "白川鄉合掌：濃飛巴士銜接金澤，一日走訪世界遺產聚落",
+      "立山黑部全日：富山出發，把北阿爾卑斯的縱斷走完"
+    ],
+    "footerDate": "行程實錄 · 2018年6月2日 - 6月8日",
+    "cover": {
+      "src": "photos/cover.webp",
+      "alt": "白川鄉合掌造聚落與山景",
+      "credit": "Gilles Desjardins / CC BY-SA 4.0"
+    },
+    "routeRegions": "愛知・岐阜・石川・富山",
+    "highlightCards": [
+      {
+        "icon": "train",
+        "title": "昇龍道黃金線",
+        "desc": "名古屋經下呂到高山，特急與周遊券把移動排進行程"
+      },
+      {
+        "icon": "shrine",
+        "title": "合掌與金澤",
+        "desc": "白川鄉世界遺產後轉金澤，兼六園與茶屋街收尾城下町"
+      },
+      {
+        "icon": "hotel",
+        "title": "下呂與高山溫泉宿",
+        "desc": "下呂睦館與本鎮平野屋別館，溫泉稅與一泊節奏清楚"
+      },
+      {
+        "icon": "sparkle",
+        "title": "立山黑部全日",
+        "desc": "富山出發預計往返約九小時，北阿爾卑斯風景主菜"
+      }
+    ]
+  },
+  "shopping": {
+    "suggestions": [],
+    "recommendations": [
+      {
+        "title": "Day 1: 榮・大須",
+        "desc": "藥妝與車站附近補給",
+        "items": [
+          {
+            "name": "藥妝常見組（保濕／眼罩等）",
+            "price": "依品牌",
+            "priceNote": "實際以店面為準・本趟曾於榮採購",
+            "url": "https://www.matsukiyo.co.jp/"
+          },
+          {
+            "name": "名古屋伴手禮（えびせんべい等）",
+            "price": "約 ¥500–",
+            "priceNote": "含稅參考價・實際以店面為準"
+          }
+        ]
+      },
+      {
+        "title": "Day 2–3: 下呂・高山",
+        "desc": "溫泉街與飛驒老街伴手禮",
+        "items": [
+          {
+            "name": "飛驒牛相關伴手／乾貨",
+            "price": "約 ¥1,000–",
+            "priceNote": "含稅參考價・實際以店面為準",
+            "url": "https://www.hida.jp/"
+          },
+          {
+            "name": "高山朝市小農產／漬物",
+            "price": "約 ¥300–",
+            "priceNote": "含稅參考價・現場現金為主"
+          }
+        ]
+      },
+      {
+        "title": "Day 4–5: 白川鄉・金澤",
+        "desc": "合掌村與近江町／東茶屋街",
+        "items": [
+          {
+            "name": "白川鄉手作／蒟蒻等在地商品",
+            "price": "約 ¥500–",
+            "priceNote": "含稅參考價・實際以店面為準",
+            "url": "https://shirakawa-go.gr.jp/"
+          },
+          {
+            "name": "金澤金箔／和菓子",
+            "price": "約 ¥800–",
+            "priceNote": "含稅參考價・實際以店面為準",
+            "url": "https://www.kanazawa-kankoukyoukai.or.jp/"
+          }
+        ]
+      },
+      {
+        "title": "Day 5–6: 富山",
+        "desc": "車站藥妝與立山前補給",
+        "items": [
+          {
+            "name": "富山藥妝／站內伴手",
+            "price": "依品牌",
+            "priceNote": "本趟曾於富山站周邊採購",
+            "url": "https://www.visit-toyama.jp/"
+          }
+        ]
+      }
+    ]
+  },
+  "events": [
+    {
+      "region": "中部・北陸",
+      "items": [
+        "六月為梅雨季前後，高山與立山山區氣溫仍低，請備雨具與薄層外套",
+        "白川鄉浓飛巴士旺季建議事前預約（本趟合掌→金澤段曾註明需預約）"
+      ]
+    }
+  ],
+  "weather": {
+    "temps": {
+      "high": "20°C - 26°C",
+      "low": "12°C - 18°C"
+    },
+    "note": "平原城市偏溫暖潮濕；立山黑部山上日照強、風力大，氣溫可能僅個位數至十餘度。",
+    "tips": [
+      "洋蔥式穿法：山下短袖＋薄外套，上山再加防風層",
+      "攜帶輕便雨衣／傘，合掌與高山老街石板路潮濕易滑",
+      "立山全日日照長，務必防曬、補水與舒適健行鞋"
+    ]
+  },
+  "stories": [
+    {
+      "theme": "place",
+      "title": "名古屋城",
+      "kicker": "愛知・名古屋",
+      "body": "德川家康下令建造的名城，金鯱象徵城下町繁榮。本趟於市役所站步行抵達；注意天守閣與關園時間，傍晚請提早離場。",
+      "source": {
+        "label": "名古屋城公式サイト",
+        "url": "https://www.nagoyajo.city.nagoya.jp/"
+      },
+      "photo": {
+        "src": "photos/day1.webp",
+        "alt": "名古屋城天守",
+        "credit": "Noodle snacks / CC BY-SA 3.0"
+      }
+    },
+    {
+      "theme": "place",
+      "title": "高山老街",
+      "kicker": "岐阜・高山",
+      "body": "江戶期商家町保存良好，三町傳統建造物群像一段放慢的時光。本鎮平野屋別館就在本町一帶，放行李後即可步行逛街與朝市。",
+      "source": {
+        "label": "飛驒高山観光公式サイト",
+        "url": "https://www.hida.jp/"
+      },
+      "photo": {
+        "src": "photos/day3.webp",
+        "alt": "高山上三之町老街",
+        "credit": "DimiTalen / CC0"
+      }
+    },
+    {
+      "theme": "culture",
+      "title": "白川鄉合掌造",
+      "kicker": "岐阜・白川村",
+      "body": "以茅葺合掌屋頂對抗豪雪的聚落景觀，登錄世界文化遺產。荻町散策後可轉往鱒園文助用午餐，再接濃飛巴士前往金澤。",
+      "source": {
+        "label": "白川鄉観光協会",
+        "url": "https://shirakawa-go.gr.jp/"
+      },
+      "photo": {
+        "src": "photos/cover.webp",
+        "alt": "白川鄉合掌造聚落",
+        "credit": "Gilles Desjardins / CC BY-SA 4.0"
+      }
+    },
+    {
+      "theme": "place",
+      "title": "兼六園",
+      "kicker": "石川・金澤",
+      "body": "日本三大名園之一，兼具宏大與細膩的迴遊式庭園。金澤周遊券加上門票，與金澤城公園可串成半日悠遊。",
+      "source": {
+        "label": "兼六園（石川県）",
+        "url": "https://www.pref.ishikawa.lg.jp/kouen/1_3kensyoku/kenrokuen/"
+      },
+      "photo": {
+        "src": "photos/day5.webp",
+        "alt": "兼六園徽軫燈籠",
+        "credit": "Fg2 / Public domain"
+      }
+    },
+    {
+      "theme": "history",
+      "title": "立山黑部阿爾卑斯",
+      "kicker": "富山・立山",
+      "body": "連結富山與長野的山岳縱斷路線，以室堂、黑部湖與雪之大谷聞名。本趟自富山站一早出發，預留全日約九小時往返。",
+      "source": {
+        "label": "立山黒部アルペンルート公式",
+        "url": "https://www.alpen-route.com/"
+      },
+      "photo": {
+        "src": "photos/day6.webp",
+        "alt": "立山黑部雪之大谷與阿爾卑斯路線巴士",
+        "credit": "宇宙碎片拍攝"
+      }
+    }
+  ],
+  "foods": [
+    {
+      "theme": "food",
+      "title": "しら河鰻魚飯",
+      "kicker": "名古屋・榮",
+      "body": "名古屋風格鰻魚飯的代表店之一，本趟於榮瓦斯大樓店品嚐三吃。搭配商店街藥妝採購，是 Day1 都會夜的經典收尾。",
+      "source": {
+        "label": "しら河（公式）",
+        "url": "https://www.shirakawa.co.jp/"
+      },
+      "photo": {
+        "src": "photos/food-hitsumabushi.webp",
+        "alt": "しら河鰻魚飯三吃定食",
+        "credit": "宇宙碎片拍攝"
+      }
+    },
+    {
+      "theme": "food",
+      "title": "下呂溫泉宿膳",
+      "kicker": "岐阜・下呂",
+      "body": "下呂睦館位於車站出口步行約五分鐘；溫泉街節奏適合泡湯後慢用晚餐，並為隔日特急轉往高山蓄力。",
+      "source": {
+        "label": "下呂温泉観光協会",
+        "url": "https://www.gero-spa.or.jp/"
+      },
+      "photo": {
+        "src": "photos/food-gero-dinner.webp",
+        "alt": "下呂溫泉旅館會席晚餐",
+        "credit": "宇宙碎片拍攝"
+      }
+    },
+    {
+      "theme": "food",
+      "title": "鱒園 文助",
+      "kicker": "岐阜・白川村",
+      "body": "合掌村周邊以淡水魚料理聞名；本趟於荻町一帶文助用午餐，是巴士間隔中踏實的一頓。",
+      "source": {
+        "label": "白川鄉観光協会",
+        "url": "https://shirakawa-go.gr.jp/"
+      },
+      "photo": {
+        "src": "photos/day4.webp",
+        "alt": "白川鄉合掌造與山村景觀",
+        "credit": "Gilles Desjardins / CC BY-SA 4.0"
+      }
+    },
+    {
+      "theme": "food",
+      "title": "近江町市場海鮮丼",
+      "kicker": "石川・金澤",
+      "body": "金澤的廚房：新鮮海產、壽司與丼物攤位密集。本趟於市場用餐後再走東茶屋街，順路完成城下町食景雙線。",
+      "source": {
+        "label": "近江町市場公式",
+        "url": "https://www.ohmicho-ichiba.com/"
+      },
+      "photo": {
+        "src": "photos/food-omicho-kaisendon.webp",
+        "alt": "近江町市場海鮮丼",
+        "credit": "宇宙碎片拍攝"
+      }
+    },
+    {
+      "theme": "food",
+      "title": "東茶屋街",
+      "kicker": "石川・金澤",
+      "body": "金澤殘留的茶屋町，格子造茶屋與金箔甜點同場。本趟於近江町用餐後沿路走東茶屋街，適合慢逛點心與伴手。",
+      "source": {
+        "label": "金沢市公式観光サイト",
+        "url": "https://www.kanazawa-kankoukyoukai.or.jp/"
+      },
+      "photo": {
+        "src": "photos/food-higashi-chaya.webp",
+        "alt": "金澤東茶屋街格子造茶屋街道",
+        "credit": "Zairon / CC BY-SA 4.0"
+      }
+    }
+  ],
+  "tickets": [
+    {
+      "variant": "primary",
+      "title": "華航來回機票",
+      "badge": "CI154 / CI171",
+      "status": "purchased",
+      "price": "NT$9,590",
+      "priceSuffix": "/人",
+      "meta": "📆 去程 06/02 桃園→中部／回程 06/08 富山→桃園",
+      "features": [
+        "✅ 去程 CI154 約 07:30 起飛，11:15 抵中部國際機場",
+        "✅ 回程 CI171 約 12:40 起飛，15:40 抵台",
+        "✅ 三人來回合計約 NT$28,770"
+      ]
+    },
+    {
+      "variant": "secondary",
+      "title": "高山・阿爾卑斯周遊券",
+      "badge": "昇龍道",
+      "status": "purchased",
+      "price": "約 NT$4,400",
+      "priceSuffix": "/人",
+      "meta": "📆 於中部機場 Central Japan Travel Center 兌換",
+      "features": [
+        "✅ 銜接名古屋—高山沿線特急等區間（依券種規定）",
+        "✅ 與昇龍道地鐵週遊一併在機場辦理"
+      ]
+    },
+    {
+      "variant": "secondary",
+      "title": "昇龍道地鐵週遊",
+      "badge": "2日券×2",
+      "status": "purchased",
+      "price": "¥600",
+      "priceSuffix": "×2（紀錄）",
+      "meta": "📆 名古屋市區地鐵／巴士彈性移動",
+      "features": [
+        "✅ 本趟購入兩張 2 日券（¥600×2）",
+        "✅ 適配 Day1–2 名古屋城、科學館、商店街移動"
+      ]
+    },
+    {
+      "variant": "secondary",
+      "title": "金澤周遊券",
+      "badge": "巴士",
+      "status": "purchased",
+      "price": "¥500",
+      "priceSuffix": "/人",
+      "meta": "📆 Day5 兼六園・市場・茶屋街",
+      "features": [
+        "✅ 搭配兼六園門票（¥400）使用",
+        "✅ 適合城下町景點跳點"
+      ]
+    }
+  ],
+  "overview": [
+    {
+      "day": 1,
+      "date": "06/02",
+      "places": "桃園→中部→名古屋",
+      "hotel": "Airbnb（名古屋）",
+      "hotelNote": "市區Airbnb，榮／大須逛完即歇",
+      "routeLabel": "名古屋",
+      "transport": "CI154 · 07:30／特急 · 12:47",
+      "transportClass": "",
+      "summary": "飛抵中部，兌換周遊券後逛大須與名古屋城"
+    },
+    {
+      "day": 2,
+      "date": "06/03",
+      "places": "名古屋→下呂",
+      "hotel": "下呂睦館",
+      "hotelNote": "下呂車站出口約5分鐘，溫泉一泊",
+      "routeLabel": "下呂",
+      "transport": "特急 · 14:48–16:29",
+      "transportClass": "",
+      "summary": "科學館與午餐後，特急轉往下呂溫泉"
+    },
+    {
+      "day": 3,
+      "date": "06/04",
+      "places": "下呂→高山",
+      "hotel": "本鎮平野屋別館",
+      "hotelNote": "本町一帶，步行可至高山老街",
+      "routeLabel": "高山",
+      "transport": "特急 · 11:33–12:23",
+      "transportClass": "",
+      "summary": "轉往高山，午後老街與藥妝慢逛"
+    },
+    {
+      "day": 4,
+      "date": "06/05",
+      "places": "高山→白川鄉→金澤",
+      "hotel": "金澤城堡飯店",
+      "hotelNote": "金沢駅東口徒歩約3分",
+      "routeLabel": "金澤",
+      "transport": "濃飛巴士 · 10:50／16:25",
+      "transportClass": "",
+      "summary": "朝市後巴士進合掌村，傍晚抵達金澤"
+    },
+    {
+      "day": 5,
+      "date": "06/06",
+      "places": "金澤→富山",
+      "hotel": "富山蔓藤飯店",
+      "hotelNote": "JR富山駅南口徒歩約10分／桜橋電停前",
+      "routeLabel": "富山",
+      "transport": "巴士 · 16:50–17:50",
+      "transportClass": "",
+      "summary": "兼六園、近江町、東茶屋街後轉富山"
+    },
+    {
+      "day": 6,
+      "date": "06/07",
+      "places": "立山黑部全日",
+      "hotel": "富山蔓藤飯店",
+      "hotelNote": "續住富山，清晨出發",
+      "routeLabel": "立山",
+      "transport": "電車 · 07:57→立山",
+      "transportClass": "",
+      "summary": "立山黑部阿爾卑斯，預計往返約九小時"
+    },
+    {
+      "day": 7,
+      "date": "06/08",
+      "places": "富山→桃園",
+      "hotel": "-",
+      "routeLabel": "返台",
+      "transport": "CI171 · 12:40",
+      "transportClass": "",
+      "summary": "富山機場起飛返台"
+    }
+  ],
+  "days": [
+    {
+      "id": "day1",
+      "number": 1,
+      "date": "06/02（六）",
+      "title": "飛抵中部與名古屋城下町",
+      "timeline": [
+        {
+          "time": "05:30",
+          "place": "桃園機場",
+          "desc": "登機準備",
+          "detail": "華航 CI154，約 07:30 起飛",
+          "icon": "plane",
+          "tag": "✈️ 起飛"
+        },
+        {
+          "time": "11:15",
+          "place": "中部國際機場",
+          "desc": "逛街、兌換票券",
+          "detail": "Central Japan Travel Center：高山阿爾卑斯周遊券、昇龍道地鐵週遊",
+          "icon": "ticket",
+          "tag": "🎫 票券"
+        },
+        {
+          "time": "12:47",
+          "place": "前往名古屋",
+          "desc": "特急前往名古屋（備選約 12:17／12:47 班次）",
+          "icon": "train",
+          "tag": "電車"
+        },
+        {
+          "time": "13:17",
+          "place": "大須商店街",
+          "desc": "用餐、放置行李",
+          "detail": "地鐵大須觀音；行李置物",
+          "icon": "food",
+          "tag": "🛍️ 商店街"
+        },
+        {
+          "time": "14:30",
+          "place": "名古屋城",
+          "desc": "參觀名古屋城",
+          "detail": "地鐵市役所站步行約5分鐘；天守閣約16:00關、園區約16:30關",
+          "icon": "shrine",
+          "tag": "🏯 必訪",
+          "highlight": true
+        },
+        {
+          "time": "16:45",
+          "place": "榮商店街",
+          "desc": "しら河榮瓦斯大樓店吃鰻魚飯、買藥妝",
+          "detail": "地址：名古屋市中区栄三丁目15-33；另可逛サカエチカ",
+          "icon": "food",
+          "tag": "🍽️ 美食"
+        },
+        {
+          "time": "21:00",
+          "place": "Airbnb",
+          "desc": "入住休息",
+          "icon": "hotel",
+          "tag": "🏨 住宿"
+        }
+      ],
+      "tips": [
+        "✅ <strong>票券先辦</strong>：中部機場 Travel Center 一次兌換周遊券與地鐵券",
+        "✅ <strong>名古屋城關門早</strong>：天守約16:00、關園約16:30，請卡時間",
+        "✅ <strong>しら河</strong>：榮瓦斯大樓店，預約／候位視尖峰而定"
+      ],
+      "photo": {
+        "src": "photos/day1.webp",
+        "alt": "名古屋城天守",
+        "credit": "Noodle snacks / CC BY-SA 3.0"
+      }
+    },
+    {
+      "id": "day2",
+      "number": 2,
+      "date": "06/03（日）",
+      "title": "名古屋科學館後轉下呂溫泉",
+      "timeline": [
+        {
+          "time": "08:30",
+          "place": "コメダ珈琲店 栄鉄砲町店",
+          "desc": "早餐（備選シャポーブラン大須本店）",
+          "icon": "food",
+          "tag": "☕ 早餐"
+        },
+        {
+          "time": "09:30",
+          "place": "名古屋科學館",
+          "desc": "參觀科學館",
+          "detail": "白川公園內；門票約 ¥400",
+          "icon": "sparkle",
+          "tag": "🔬 景點",
+          "highlight": true
+        },
+        {
+          "time": "11:30",
+          "place": "モクモク風の葡萄（LACHIC 7F）",
+          "desc": "鯛魚定食午餐",
+          "detail": "名古屋市中区栄3丁目6番1号",
+          "icon": "food",
+          "tag": "🍽️ 午餐"
+        },
+        {
+          "time": "14:48",
+          "place": "名古屋→下呂",
+          "desc": "搭特急前往下呂",
+          "detail": "約 14:48–16:29",
+          "icon": "train",
+          "tag": "特急"
+        },
+        {
+          "time": "16:50",
+          "place": "下呂",
+          "desc": "逛街、買伴手禮",
+          "tag": "🛍️ 溫泉街"
+        },
+        {
+          "time": "17:30",
+          "place": "下呂睦館",
+          "desc": "入住、晚餐、泡湯",
+          "detail": "岐阜県下呂市幸田 1167-1；車站出口約5分鐘",
+          "icon": "hotel",
+          "tag": "♨️ 溫泉",
+          "highlight": true
+        }
+      ],
+      "tips": [
+        "✅ <strong>特急班次</strong>：預留名古屋市區移動時間，準時趕 14:48 特急",
+        "✅ <strong>下呂睦館</strong>：車站近，適合傍晚抵達即安頓"
+      ],
+      "photo": {
+        "src": "photos/day2.webp",
+        "alt": "名古屋市科學館外觀與天文館球體",
+        "credit": "名古屋太郎 / CC BY-SA 3.0"
+      }
+    },
+    {
+      "id": "day3",
+      "number": 3,
+      "date": "06/04（一）",
+      "title": "下呂轉高山，老街慢節奏",
+      "timeline": [
+        {
+          "time": "09:00",
+          "place": "下呂睦館",
+          "desc": "早餐、退房",
+          "detail": "可能含溫泉稅與伴手禮購買",
+          "icon": "hotel",
+          "tag": "🏨 退房"
+        },
+        {
+          "time": "11:33",
+          "place": "下呂→高山",
+          "desc": "特急前往高山",
+          "detail": "約 11:33–12:23",
+          "icon": "train",
+          "tag": "特急"
+        },
+        {
+          "time": "12:30",
+          "place": "本鎮平野屋別館",
+          "desc": "放置行李／入住辦理",
+          "detail": "岐阜県高山市本町 1-5",
+          "icon": "hotel",
+          "tag": "🏨 住宿"
+        },
+        {
+          "time": "12:35",
+          "place": "高山老街",
+          "desc": "逛街、吃中餐、藥妝補給",
+          "icon": "food",
+          "tag": "🛍️ 老街",
+          "highlight": true
+        },
+        {
+          "time": "18:00",
+          "place": "本鎮平野屋別館",
+          "desc": "晚餐、休息",
+          "icon": "hotel",
+          "tag": "🍽️ 晚餐"
+        }
+      ],
+      "tips": [
+        "✅ <strong>本町位置</strong>：旅館步行可達三町老街，適合放行李後空手逛",
+        "✅ <strong>節奏</strong>：轉運日以慢逛為主，為隔日合掌巴士蓄力"
+      ],
+      "photo": {
+        "src": "photos/day3.webp",
+        "alt": "高山上三之町老街",
+        "credit": "DimiTalen / CC0"
+      }
+    },
+    {
+      "id": "day4",
+      "number": 4,
+      "date": "06/05（二）",
+      "title": "高山朝市、白川鄉合掌再到金澤",
+      "timeline": [
+        {
+          "time": "08:30",
+          "place": "本鎮平野屋別館",
+          "desc": "早餐、朝市、退房",
+          "detail": "溫泉稅等結帳",
+          "icon": "hotel",
+          "tag": "🏨 退房"
+        },
+        {
+          "time": "10:50",
+          "place": "高山濃飛巴士站",
+          "desc": "巴士前往白川鄉合掌村",
+          "detail": "約 11:40 抵達；車票約 ¥2,470",
+          "icon": "train",
+          "tag": "🚌 巴士",
+          "highlight": true
+        },
+        {
+          "time": "12:00",
+          "place": "鱒園 文助",
+          "desc": "午餐",
+          "detail": "岐阜縣白川村荻町 1915",
+          "icon": "food",
+          "tag": "🍽️ 午餐"
+        },
+        {
+          "time": "12:30",
+          "place": "白川鄉合掌村",
+          "desc": "散策世界遺產聚落",
+          "icon": "shrine",
+          "tag": "🏠 合掌",
+          "highlight": true
+        },
+        {
+          "time": "16:25",
+          "place": "合掌屋巴士站",
+          "desc": "巴士前往金澤（需先預約）",
+          "detail": "約 17:50 抵金澤；車票約 ¥1,850",
+          "icon": "train",
+          "tag": "🚌 預約"
+        },
+        {
+          "time": "18:00",
+          "place": "金澤城堡飯店",
+          "desc": "放行李入住",
+          "detail": "石川県金沢市此花町 10-17；金沢駅東口徒歩約3分",
+          "icon": "hotel",
+          "tag": "🏨 住宿"
+        },
+        {
+          "time": "18:10",
+          "place": "金澤 FORUS 百貨",
+          "desc": "漢堡排晚餐",
+          "icon": "food",
+          "tag": "🍽️ 晚餐"
+        },
+        {
+          "time": "19:00",
+          "place": "金澤車站周邊",
+          "desc": "逛街補給",
+          "tag": "🛍️ 購物"
+        }
+      ],
+      "tips": [
+        "✅ <strong>合掌→金澤巴士</strong>：旺季務必事前預約",
+        "✅ <strong>行李</strong>：合掌一日輕裝，大件可寄放高山或善用車站 locker"
+      ],
+      "photo": {
+        "src": "photos/day4.webp",
+        "alt": "白川鄉合掌造聚落",
+        "credit": "Gilles Desjardins / CC BY-SA 4.0"
+      }
+    },
+    {
+      "id": "day5",
+      "number": 5,
+      "date": "06/06（三）",
+      "title": "金澤名園茶屋後轉富山",
+      "timeline": [
+        {
+          "time": "08:30",
+          "place": "金澤車站",
+          "desc": "早餐、退房與行李寄放",
+          "icon": "hotel",
+          "tag": "🏨 退房"
+        },
+        {
+          "time": "09:30",
+          "place": "兼六園",
+          "desc": "參觀兼六園",
+          "detail": "金澤周遊券 ¥500 + 門票 ¥400",
+          "icon": "flower",
+          "tag": "🌳 名園",
+          "highlight": true
+        },
+        {
+          "time": "11:30",
+          "place": "近江町市場",
+          "desc": "逛街、海鮮丼",
+          "icon": "food",
+          "tag": "🍣 市場",
+          "highlight": true
+        },
+        {
+          "time": "13:30",
+          "place": "東茶屋街",
+          "desc": "散策茶屋街",
+          "icon": "shrine",
+          "tag": "🏘️ 茶屋"
+        },
+        {
+          "time": "16:00",
+          "place": "金澤車站",
+          "desc": "取行李、車站逛街",
+          "tag": "🛍️ 站前"
+        },
+        {
+          "time": "16:50",
+          "place": "金澤東口巴士站",
+          "desc": "巴士前往富山",
+          "detail": "約 17:50 抵富山",
+          "icon": "train",
+          "tag": "🚌 巴士"
+        },
+        {
+          "time": "18:00",
+          "place": "富山蔓藤飯店",
+          "desc": "入住",
+          "detail": "富山県富山市本町 2-17",
+          "icon": "hotel",
+          "tag": "🏨 住宿"
+        },
+        {
+          "time": "18:10",
+          "place": "和食飲樂（Marié 富山 6F）",
+          "desc": "晚餐",
+          "icon": "food",
+          "tag": "🍽️ 晚餐"
+        },
+        {
+          "time": "19:10",
+          "place": "富山車站",
+          "desc": "藥妝與市電移動",
+          "tag": "🛍️ 購物"
+        }
+      ],
+      "tips": [
+        "✅ <strong>周遊券+門票</strong>：兼六園組合在入口一次買齊較省事",
+        "✅ <strong>蔓藤飯店</strong>：靠近市電桜橋，隔日立山出發前可前一晚確認首班銜接"
+      ],
+      "photo": {
+        "src": "photos/day5.webp",
+        "alt": "兼六園徽軫燈籠",
+        "credit": "Fg2 / Public domain"
+      }
+    },
+    {
+      "id": "day6",
+      "number": 6,
+      "date": "06/07（四）",
+      "title": "立山黑部阿爾卑斯全日",
+      "timeline": [
+        {
+          "time": "06:30",
+          "place": "富山蔓藤飯店",
+          "desc": "起床準備",
+          "tag": "⏰ 早起"
+        },
+        {
+          "time": "07:30",
+          "place": "富山車站",
+          "desc": "早餐後登車",
+          "icon": "food",
+          "tag": "☕ 早餐"
+        },
+        {
+          "time": "07:57",
+          "place": "富山→立山",
+          "desc": "搭車前往立山站",
+          "detail": "約 08:47 抵立山站",
+          "icon": "train",
+          "tag": "電車"
+        },
+        {
+          "time": "09:20",
+          "place": "立山黑部",
+          "desc": "阿爾卑斯路線登山／縱走觀光",
+          "detail": "預計來回約9小時；山上午餐另計",
+          "icon": "sparkle",
+          "tag": "🏔️ 主軸",
+          "highlight": true
+        },
+        {
+          "time": "17:30",
+          "place": "返回富山",
+          "desc": "電車下山返回",
+          "icon": "train",
+          "tag": "返程"
+        },
+        {
+          "time": "18:50",
+          "place": "超市／站前",
+          "desc": "簡易晚餐補給",
+          "icon": "food",
+          "tag": "🍽️ 晚餐"
+        }
+      ],
+      "tips": [
+        "✅ <strong>全日行程</strong>：天候與動線等待會影響節奏，預留彈性",
+        "✅ <strong>裝備</strong>：防風、防曬、水與輕食；山上氣溫明顯較低"
+      ],
+      "photo": {
+        "src": "photos/day6.webp",
+        "alt": "立山黑部雪之大谷與阿爾卑斯路線巴士",
+        "credit": "宇宙碎片拍攝"
+      }
+    },
+    {
+      "id": "day7",
+      "number": 7,
+      "date": "06/08（五）",
+      "title": "富山起飛返台",
+      "timeline": [
+        {
+          "time": "08:00",
+          "place": "富山蔓藤飯店",
+          "desc": "早餐、退房",
+          "icon": "hotel",
+          "tag": "🏨 退房"
+        },
+        {
+          "time": "10:40",
+          "place": "富山機場",
+          "desc": "報到登機、伴手禮最後補給",
+          "detail": "市區→機場交通約 ¥410；華航 CI171 約 12:40 起飛",
+          "icon": "plane",
+          "tag": "✈️ 起飛",
+          "highlight": true
+        },
+        {
+          "time": "15:40",
+          "place": "桃園機場",
+          "desc": "抵达台灣",
+          "detail": "機場接送、中華漫遊等後勤結束旅程",
+          "icon": "plane",
+          "tag": "🏠 返台"
+        }
+      ],
+      "tips": [
+        "✅ <strong>富山機場</strong>：預留市區→機場時間與報到安檢",
+        "✅ <strong>行李秤重</strong>：北陸伴手禮＋藥妝容易超重，出發前再確認"
+      ],
+      "photo": {
+        "src": "photos/day7.webp",
+        "alt": "富山車站站舍",
+        "credit": "くろふね / CC BY 4.0"
+      }
+    }
+  ],
+  "budget": {
+    "partySize": 3,
+    "categories": [
+      {
+        "icon": "✈️",
+        "title": "機票",
+        "items": [
+          {
+            "label": "華航來回（三人合計）",
+            "amount": "NT$28,770"
+          }
+        ],
+        "subtotal": "NT$28,770"
+      },
+      {
+        "icon": "🚄",
+        "title": "交通",
+        "items": [
+          {
+            "label": "特急／巴士／地鐵／周遊券等",
+            "amount": "NT$19,837"
+          }
+        ],
+        "subtotal": "NT$19,837"
+      },
+      {
+        "icon": "🏨",
+        "title": "住宿",
+        "items": [
+          {
+            "label": "Airbnb、下呂、高山、金澤、富山（合計）",
+            "amount": "NT$34,822"
+          }
+        ],
+        "subtotal": "NT$34,822"
+      },
+      {
+        "icon": "🎫",
+        "title": "門票",
+        "items": [
+          {
+            "label": "名古屋城、科學館、兼六園等",
+            "amount": "NT$504"
+          }
+        ],
+        "subtotal": "NT$504"
+      },
+      {
+        "icon": "🛍️",
+        "title": "雜費（餐飲等，已扣藥妝衣物伴手）",
+        "items": [
+          {
+            "label": "雜費淨額（34556−6664）",
+            "amount": "NT$27,892"
+          }
+        ],
+        "subtotal": "NT$27,892"
+      },
+      {
+        "icon": "📶",
+        "title": "網路・保險",
+        "items": [
+          {
+            "label": "中華漫遊等",
+            "amount": "NT$447"
+          },
+          {
+            "label": "旅遊保險",
+            "amount": "NT$1,374"
+          }
+        ],
+        "subtotal": "NT$1,821"
+      }
+    ],
+    "total": {
+      "amount": "約 NT$37,882",
+      "twd": "約 NT$ 37,882 /人",
+      "family": "約 NT$113,646",
+      "familyTwd": "約 NT$ 113,646"
+    }
+  },
+  "map": {
+    "center": [
+      36.2,
+      137.0
+    ],
+    "zoom": 8,
+    "locations": [
+      {
+        "name": "名古屋",
+        "number": 1,
+        "day": 1,
+        "coords": [
+          35.1815,
+          136.9066
+        ]
+      },
+      {
+        "name": "下呂",
+        "number": 2,
+        "day": 2,
+        "coords": [
+          35.8059,
+          137.2444
+        ]
+      },
+      {
+        "name": "高山",
+        "number": 3,
+        "day": 3,
+        "coords": [
+          36.1461,
+          137.2522
+        ]
+      },
+      {
+        "name": "白川鄉",
+        "number": 4,
+        "day": 4,
+        "coords": [
+          36.2575,
+          136.9062
+        ]
+      },
+      {
+        "name": "金澤",
+        "number": 5,
+        "day": 5,
+        "coords": [
+          36.5613,
+          136.6562
+        ]
+      },
+      {
+        "name": "富山",
+        "number": 6,
+        "day": 5,
+        "coords": [
+          36.6959,
+          137.2137
+        ]
+      },
+      {
+        "name": "立山",
+        "number": 7,
+        "day": 6,
+        "coords": [
+          36.5714,
+          137.5915
+        ]
+      }
+    ]
+  }
+}

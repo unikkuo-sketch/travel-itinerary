@@ -1,6 +1,20 @@
 {
   "trips": [
     {
+      "id": "2018_日本中部北陸_自助旅遊",
+      "title": "2018 中部北陸 7日自助",
+      "subtitle": "名古屋 × 下呂 × 高山 × 白川鄉 × 金澤 × 富山",
+      "dateRange": "2018/06/02 - 06/08",
+      "status": "past",
+      "emoji": "🏔️",
+      "coords": [36.56, 136.65],
+      "days": 7,
+      "location": "愛知・岐阜・石川・富山",
+      "cover": "photos/cover.webp",
+      "coverAlt": "白川鄉合掌造聚落與山景",
+      "coverCredit": "Gilles Desjardins / CC BY-SA 4.0"
+    },
+    {
       "id": "2026_日本熱海長瀞_家族旅遊",
       "title": "2026關東賞櫻6日遊",
       "subtitle": "熱海 × 伊東 × 長瀞 × 秩父",
