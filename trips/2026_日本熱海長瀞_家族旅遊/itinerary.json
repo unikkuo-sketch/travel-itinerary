@@ -7,7 +7,9 @@
     "dateRange": "03/27 - 04/01",
     "ticketSummary": "單程購票 / IC卡 + 西武秩父套票",
     "highlights": [
-      "含溫泉飯店一泊二食"
+      "溫泉一泊二食：熱海與伊東溫泉住宿，泡湯與晚餐一次安頓",
+      "關東賞櫻節奏：小室山與沿線春色，配合溫泉與秩父神社行",
+      "特急與西武銜接：踊子號與西武秩父套票，把移動排進行程"
     ],
     "footerWish": "祝您2026年3月的熱海長瀞之旅順利！",
     "footerDate": "行程規劃 · 2026年3月27日 - 4月1日",
@@ -16,7 +18,30 @@
       "alt": "熱海サンビーチ與市街全景",
       "credit": "m-louis .® / CC BY-SA 2.0"
     },
-    "theme": "sakura"
+    "theme": "sakura",
+    "routeRegions": "靜岡・東京・埼玉",
+    "highlightCards": [
+      {
+        "icon": "hotel",
+        "title": "溫泉一泊二食",
+        "desc": "熱海與伊東溫泉住宿，泡湯與晚餐一次安頓"
+      },
+      {
+        "icon": "flower",
+        "title": "關東賞櫻節奏",
+        "desc": "小室山與沿線春色，配合溫泉與秩父神社行"
+      },
+      {
+        "icon": "train",
+        "title": "特急與西武銜接",
+        "desc": "踊子號與西武秩父套票，把移動排進行程"
+      },
+      {
+        "icon": "shrine",
+        "title": "三峯與秩父",
+        "desc": "山中神社與城市神社，對比不同信仰風景"
+      }
+    ]
   },
   "shopping": {
     "suggestions": [
@@ -185,7 +210,10 @@
       "title": "明治神宮",
       "kicker": "東京・代代木",
       "body": "供奉明治天皇與昭憲皇太后的神社，境內是以人工造林長成的代代木之森。返程日走進參道，像把都會喧囂暫時收進一片靜謐。",
-      "source": { "label": "明治神宮（公式）", "url": "https://www.meijijingu.or.jp/" },
+      "source": {
+        "label": "明治神宮（公式）",
+        "url": "https://www.meijijingu.or.jp/"
+      },
       "photo": {
         "src": "photos/day6.webp",
         "alt": "明治神宮南參道鳥居",
@@ -197,7 +225,10 @@
       "title": "三峯神社",
       "kicker": "埼玉・秩父",
       "body": "相傳日本武尊東征時於此祀神；山犬（狼）為神使，守護深山信仰。海拔約一千公尺，是這趟旅程裡最沉靜的一塊碎片。",
-      "source": { "label": "秩父 三峯神社（公式）", "url": "https://www.mitsuminejinja.or.jp/" },
+      "source": {
+        "label": "秩父 三峯神社（公式）",
+        "url": "https://www.mitsuminejinja.or.jp/"
+      },
       "photo": {
         "src": "photos/day5.webp",
         "alt": "三峯神社隨身門",
@@ -209,7 +240,10 @@
       "title": "長瀞岩疊",
       "kicker": "埼玉・長瀞",
       "body": "荒川河岸層層岩床，屬國指定名勝・天然紀念物；長瀞町大半劃入県立自然公園。站在岩面上，能讀到地質與河川共同刻下的時間。",
-      "source": { "label": "長瀞町観光協会", "url": "https://www.nagatoro.gr.jp/" },
+      "source": {
+        "label": "長瀞町観光協会",
+        "url": "https://www.nagatoro.gr.jp/"
+      },
       "photo": {
         "src": "photos/day4.webp",
         "alt": "長瀞岩疊溪谷與荒川",
@@ -221,7 +255,10 @@
       "title": "來宮神社",
       "kicker": "靜岡・熱海",
       "body": "境內大楠樹齡約二千百年，繞樹一圈的祈願傳說，讓這座神社成為熱海的守護象徵。傍晚參道亮起燈火時，更像把溫泉街的熱鬧輕輕放下。",
-      "source": { "label": "熱海市観光協会（來宮神社）", "url": "https://www.igaitoatami.com/spot/%E4%BE%86%E5%AE%AE%E7%A5%9E%E7%A4%BE-2/" },
+      "source": {
+        "label": "熱海市観光協会（來宮神社）",
+        "url": "https://www.igaitoatami.com/spot/%E4%BE%86%E5%AE%AE%E7%A5%9E%E7%A4%BE-2/"
+      },
       "photo": {
         "src": "photos/day1.webp",
         "alt": "熱海サンビーチ的沙灘與海岸線",
@@ -233,7 +270,10 @@
       "title": "熱海布丁",
       "kicker": "靜岡・熱海",
       "body": "溫泉街第一家布丁專門店，以單純素材與手工蒸製追求細緻口感。帶回一盒，是把熱海的溫度收進行李裡的最小單位。",
-      "source": { "label": "熱海プリン（公式）", "url": "https://www.atami-purin.com/" },
+      "source": {
+        "label": "熱海プリン（公式）",
+        "url": "https://www.atami-purin.com/"
+      },
       "photo": {
         "src": "photos/cover.webp",
         "alt": "熱海サンビーチ與市街全景",
@@ -278,7 +318,10 @@
       "places": "桃園→成田→熱海",
       "hotel": "Resorpia Atami",
       "transport": "起飛 06:40／巴士 11:10／新幹線 12:27",
-      "transportClass": ""
+      "transportClass": "",
+      "summary": "飛抵成田，轉往熱海溫泉初體驗",
+      "hotelNote": "熱海溫泉區，海風與湯浴展開旅程",
+      "routeLabel": "熱海"
     },
     {
       "day": 2,
@@ -286,7 +329,10 @@
       "places": "伊東深度遊",
       "hotel": "Hotel Yoshino",
       "transport": "IC卡 (伊東線)",
-      "transportClass": ""
+      "transportClass": "",
+      "summary": "伊東深度遊，溫泉與海岸節奏",
+      "hotelNote": "伊東溫泉街，步行可達主要景點",
+      "routeLabel": "伊東"
     },
     {
       "day": 3,
@@ -294,7 +340,10 @@
       "places": "小室山公園賞櫻→池袋",
       "hotel": "Super Hotel JR Ikebukuro West Exit",
       "transport": "藍寶石踴子號 · 15:10",
-      "transportClass": ""
+      "transportClass": "",
+      "summary": "小室山賞櫻後北上池袋",
+      "hotelNote": "池袋西口，隔日西武線出發便利",
+      "routeLabel": "池袋"
     },
     {
       "day": 4,
@@ -302,7 +351,10 @@
       "places": "池袋→長瀞→秩父",
       "hotel": "Route-Inn Grand Chichibu",
       "transport": "西武特急 · 07:30",
-      "transportClass": "seibu"
+      "transportClass": "seibu",
+      "summary": "長瀞溪谷與秩父山城夜宿",
+      "hotelNote": "秩父市區，銜接三峯與神社巡禮",
+      "routeLabel": "秩父"
     },
     {
       "day": 5,
@@ -310,7 +362,10 @@
       "places": "三峯神社→秩父神社→池袋",
       "hotel": "hotel hisoca ikebukuro",
       "transport": "西武特急 · 16:24",
-      "transportClass": "seibu"
+      "transportClass": "seibu",
+      "summary": "三峯神社與秩父神社，夜返池袋",
+      "hotelNote": "池袋再宿，返程前日補給與休息",
+      "routeLabel": "池袋"
     },
     {
       "day": 6,
@@ -318,7 +373,9 @@
       "places": "明治神宮→成田→桃園",
       "hotel": "-",
       "transport": "高速巴士 · 09:15／起飛 17:05",
-      "transportClass": ""
+      "transportClass": "",
+      "summary": "明治神宮後前往成田返台",
+      "routeLabel": "返台"
     }
   ],
   "days": [
@@ -342,7 +399,8 @@
           "time": "12:18",
           "place": "東京車站",
           "desc": "轉乘新幹線前往熱海（搭12:27 新幹線）",
-          "tag": "🎫 現場購票"
+          "tag": "🎫 現場購票",
+          "icon": "ticket"
         },
         {
           "time": "13:12",
@@ -353,7 +411,8 @@
           "time": "13:54",
           "place": "Resorpia Atami",
           "desc": "辦理入住",
-          "tag": "🏨 住宿"
+          "tag": "🏨 住宿",
+          "icon": "hotel"
         },
         {
           "time": "14:19",
@@ -365,7 +424,8 @@
           "place": "來宮神社",
           "desc": "參訪以祈求健康長壽聞名的來宮神社，繞大楠樹一圈可延壽一年",
           "tag": "⛩️ 能量景點",
-          "highlight": true
+          "highlight": true,
+          "icon": "shrine"
         },
         {
           "place": "Resorpia Atami",
@@ -406,7 +466,8 @@
           "time": "12:36",
           "place": "本家鮪屋",
           "desc": "享用新鮮海鮮午餐",
-          "tag": "🍣 美食"
+          "tag": "🍣 美食",
+          "icon": "food"
         },
         {
           "time": "14:43",
@@ -461,7 +522,8 @@
           "place": "前往東京",
           "desc": "搭乘15:10藍寶石踴子號 (Saphir Odoriko)，返回東京都會區",
           "tag": "🎫 指定席購票",
-          "highlight": true
+          "highlight": true,
+          "icon": "ticket"
         },
         {
           "time": "17:14",
@@ -473,7 +535,8 @@
           "time": "17:37",
           "place": "Super Hotel JR Ikebukuro West Exit",
           "desc": "入住飯店",
-          "tag": "🏨 住宿"
+          "tag": "🏨 住宿",
+          "icon": "hotel"
         }
       ],
       "tips": [
@@ -497,7 +560,8 @@
           "time": "07:30",
           "place": "池袋站出發",
           "desc": "搭7:30特急，使用秩父漫遊車票前往西武秩父站",
-          "tag": "🎫 秩父漫遊車票"
+          "tag": "🎫 秩父漫遊車票",
+          "icon": "ticket"
         },
         {
           "time": "08:50",
@@ -516,7 +580,8 @@
           "place": "寶登山神社",
           "desc": "參訪秩父三社之一，感受莊嚴氛圍",
           "tag": "⛩️ 景點",
-          "highlight": true
+          "highlight": true,
+          "icon": "shrine"
         },
         {
           "time": "16:18",
@@ -528,7 +593,8 @@
           "time": "17:58",
           "place": "Hotel Route-Inn Grand Chichibu",
           "desc": "入住飯店、晚餐",
-          "tag": "🏨 住宿"
+          "tag": "🏨 住宿",
+          "icon": "hotel"
         }
       ],
       "tips": [
@@ -564,25 +630,29 @@
           "time": "15:05",
           "place": "秩父神社",
           "desc": "參訪擁有2000年歷史的秩父神社，體驗日本傳統信仰",
-          "tag": "⛩️ 在地文化"
+          "tag": "⛩️ 在地文化",
+          "icon": "shrine"
         },
         {
           "time": "15:42",
           "place": "Buko Shuzo Brewery 酒藏",
           "desc": "前往在地酒藏品嚐秩父清酒，感受傳統釀造工藝",
-          "tag": "🍶 酒藏體驗"
+          "tag": "🍶 酒藏體驗",
+          "icon": "food"
         },
         {
           "time": "16:20",
           "place": "西武秩父站",
           "desc": "搭16:24特急返回池袋",
-          "tag": "🚄 返回池袋"
+          "tag": "🚄 返回池袋",
+          "icon": "train"
         },
         {
           "time": "17:50",
           "place": "hotel hisoca ikebukuro",
           "desc": "入住飯店",
-          "tag": "🏨 住宿"
+          "tag": "🏨 住宿",
+          "icon": "hotel"
         },
         {
           "time": "18:10",
@@ -619,7 +689,8 @@
           "place": "明治神宮參拜",
           "desc": "漫步於廣闊的森林參道，感受都市中的寧靜與莊嚴。祭祀明治天皇與昭憲皇太后，是體驗日本神道文化與建築之美的最佳場所。",
           "tag": "⛩️ 東京文化巡禮",
-          "highlight": true
+          "highlight": true,
+          "icon": "shrine"
         },
         {
           "time": "09:10",
@@ -638,7 +709,8 @@
           "place": "桃園國際機場",
           "desc": "抵達桃園，結束六天五夜的美好旅程 🌸",
           "tag": "✈️ 返程",
-          "highlight": true
+          "highlight": true,
+          "icon": "plane"
         }
       ],
       "tips": [],

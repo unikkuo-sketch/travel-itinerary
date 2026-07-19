@@ -24,13 +24,32 @@ const PATHS = {
   flower: '<path d="M12 7.5a4.5 4.5 0 1 1 4.5 4.5"/><path d="M12 7.5V3"/><path d="M12 7.5 9 4"/><path d="M12 7.5 15 4"/><path d="M12 12v9"/><path d="M8 17h8"/>',
   chevronDown: '<polyline points="6 9 12 15 18 9"/>',
   trash: '<polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/>',
+  plane: '<path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/>',
+  shrine: '<path d="M4 21h16"/><path d="M9 8v13"/><path d="M15 8v13"/><path d="M4 8h16"/><path d="m12 3 8 5H4l8-5Z"/>',
+  landmark: '<path d="m12 2 3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z"/>',
+  festival: '<path d="M8 2v4"/><path d="M16 2v4"/><path d="M3 10h18"/><path d="M5 10v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V10"/><path d="M10 14h4"/>',
+  walk: '<circle cx="12" cy="5" r="2"/><path d="m10 22 2-5 2 5"/><path d="m7 10 5 2 5-2"/><path d="M12 12v5"/>',
 };
 
 const EMOJI_MAP = {
   '🚄': 'train',
+  '🚃': 'train',
   '🏨': 'hotel',
   '🍽️': 'food',
   '🍜': 'food',
+  '🍥': 'food',
+  '🍣': 'food',
+  '✈️': 'plane',
+  '🛫': 'plane',
+  '🛬': 'plane',
+  '🎫': 'ticket',
+  '⛩️': 'shrine',
+  '🏛️': 'landmark',
+  '🍶': 'food',
+  '🐄': 'pin',
+  '🍎': 'food',
+  '🏘️': 'landmark',
+  '🛒': 'shopping',
 };
 
 export function icon(name, className = 'icon') {
@@ -40,4 +59,21 @@ export function icon(name, className = 'icon') {
 
 export function iconFromEmoji(emoji, className = 'icon') {
   return icon(EMOJI_MAP[emoji] || 'sparkle', className);
+}
+
+/** Resolve timeline icon from explicit key or first emoji in tag. */
+export function resolveTimelineIcon(item) {
+  if (item?.icon && PATHS[item.icon]) return item.icon;
+  const tag = String(item?.tag || '');
+  for (const [emo, name] of Object.entries(EMOJI_MAP)) {
+    if (tag.includes(emo)) return name;
+  }
+  return null;
+}
+
+/** Strip leading emoji + spaces from a timeline tag label. */
+export function stripTagEmoji(tag) {
+  return String(tag || '')
+    .replace(/^[\p{Extended_Pictographic}\uFE0F\u200D\s]+/u, '')
+    .trim();
 }

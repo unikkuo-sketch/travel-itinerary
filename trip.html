@@ -30,6 +30,15 @@
     </nav>
 
     <main class="main-content">
+        <section id="highlights" class="section" hidden>
+            <div class="section-header section-header--editorial">
+                <span class="section-eyebrow">Highlights</span>
+                <h2>行程亮點</h2>
+                <p>這趟旅程最值得記住的幾件事</p>
+            </div>
+            <div id="highlights-root" class="highlight-grid"></div>
+        </section>
+
         <section id="tickets" class="section">
             <div class="section-header section-header--editorial">
                 <span class="section-eyebrow">Tickets</span>
@@ -52,6 +61,7 @@
                             <th>天數</th>
                             <th>日期</th>
                             <th>主要地點</th>
+                            <th>當日一句</th>
                             <th>住宿</th>
                             <th>交通重點</th>
                         </tr>
@@ -65,10 +75,20 @@
             <div class="section-header section-header--editorial">
                 <span class="section-eyebrow">Route</span>
                 <h2>本次旅程路線</h2>
-                <p>路線圖</p>
+                <p>動線摘要與路線圖</p>
             </div>
+            <div id="route-strip" class="route-strip" aria-label="八日動線摘要"></div>
             <div id="leaflet-map" class="leaflet-map"></div>
             <div id="map-legend" class="map-legend" aria-label="分日路線圖例"></div>
+        </section>
+
+        <section id="lodging" class="section" hidden>
+            <div class="section-header section-header--editorial">
+                <span class="section-eyebrow">Stay</span>
+                <h2>精選住宿</h2>
+                <p>依日排序的夜宿節奏</p>
+            </div>
+            <div id="lodging-root" class="lodging-grid"></div>
         </section>
 
         <div id="days-root"></div>
@@ -112,6 +132,10 @@
                 <div class="app-item" data-icon="translate"><span class="app-icon"></span><span class="app-name">Google 翻譯</span><span class="app-desc">即時翻譯</span></div>
                 <div class="app-item" data-icon="weather"><span class="app-icon"></span><span class="app-name">tenki.jp</span><span class="app-desc">天氣預報</span></div>
             </div>
+        </section>
+
+        <section id="closing" class="section closing-section" hidden>
+            <div id="closing-root"></div>
         </section>
     </main>
 
