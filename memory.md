@@ -12,6 +12,7 @@
 
 ## 近期
 
+- P0/P1 行程頁清晰度：亮點卡、總覽當日一句、路線動線 strip、住宿總覽、時間軸 icon／detail、桌機每日左右編排、結語區塊（對齊 Flipsnack 手冊資訊架構，保留蜜桃奶油色系）
 - 行程總覽「交通重點」欄補已訂班次時間（`車次 · HH:MM`，多段用 `／`）
 - 風土碎片改獨立頁 `stories.html`：滿版章節＋下緣疊文（對齊購物進入方式）
 - 旅後回顧已移除，改「風土碎片」（`stories[]`）
@@ -26,6 +27,14 @@
 - 部署：push `main` → GH Actions → Pages；線上 https://unikkuo-sketch.github.io/travel-itinerary/
 
 ## 決策
+
+### 2026-07-19 — 向 Flipsnack 手冊學 IA，不抄橘紅主題
+
+- 問題：手冊雜誌敘事／掃描清晰度優於網站；網站作業區塊（票券／預算／地圖）手冊沒有
+- 曾考慮：整站改橘紅祭典色；或只補文案不改版面
+- 放棄原因：色系會衝既有 Palette 1；只改文案無法解決「亮點／住宿／結語」節奏缺口
+- 現行方案：P0 亮點卡＋時間軸層次＋總覽當日一句；P1 動線 strip＋住宿總覽＋桌機日頁左右編排＋結語；schema 擴充 `highlightCards`／`summary`／`hotelNote`／`routeLabel`／`detail`
+- 驗證：`npm run build`；dev 開東北／熱海 trip 頁看 `#highlights` `#lodging` `#closing` 與 Day 左右編排
 
 ### 2026-07-18 — 班次時間放行程總覽交通欄
 
