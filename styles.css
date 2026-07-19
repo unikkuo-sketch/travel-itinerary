@@ -1201,47 +1201,7 @@ h3 { font-size: var(--text-lg); }
     object-position: center 45%;
 }
 
-/* Desktop: magazine-style split — timeline + full-height photo */
-@media (min-width: 900px) {
-    .day-section--photo {
-        display: grid;
-        grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
-        align-items: stretch;
-    }
-
-    .day-section--photo .day-body {
-        order: 1;
-        padding: 2rem 1.75rem 2.25rem 2rem;
-        min-width: 0;
-    }
-
-    .day-section--photo .ph--day {
-        order: 2;
-        aspect-ratio: auto;
-        height: 100%;
-        min-height: 28rem;
-        margin: 0;
-        border-radius: 0;
-    }
-
-    .day-section--photo .ph--day .ph-img {
-        height: 100%;
-        object-fit: cover;
-    }
-
-    .day-section--photo:nth-child(even) {
-        grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
-    }
-
-    .day-section--photo:nth-child(even) .ph--day {
-        order: 1;
-    }
-
-    .day-section--photo:nth-child(even) .day-body {
-        order: 2;
-        padding: 2rem 2rem 2.25rem 1.75rem;
-    }
-}
+/* ponytail: stack photo above timeline at all widths — side-by-side stretched cover looked soft */
 
 @media (max-width: 768px) {
     .ph--day,

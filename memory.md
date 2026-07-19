@@ -16,7 +16,7 @@
 - sticky nav（僅行程頁）：`nav-shell` 對齊主內容 1200px；Day chips scroll-spy＋橫滑跟蹤當日（不收合）
 - 行程頁導覽：hero「返回總覽」＋ sticky 雙列（章節／Day chips）；閱讀優先 section 序（行程→亮點→票券→住宿→路線→每日…）
 - 購物／風土／飲食：無 sticky；hero 左上「返回行程」連回本趟行程頁
-- P0/P1 行程頁清晰度：亮點卡、路線動線 strip、住宿總覽、時間軸 icon／detail、桌機每日左右編排（對齊 Flipsnack 手冊資訊架構，保留蜜桃奶油色系）
+- P0/P1 行程頁清晰度：亮點卡、路線動線 strip、住宿總覽、時間軸 icon／detail；每日照片改上下堆疊（不用桌機左右分欄）
 - 行程總覽「交通重點」欄補已訂班次時間（`車次 · HH:MM`，多段用 `／`）
 - 風土改獨立頁 `stories.html`：滿版章節＋下緣疊文；飲食同構頁 `food.html`
 - 旅後回顧已移除，改「風土」（`stories[]`）＋「飲食」（`foods[]`）
@@ -80,13 +80,21 @@
 - 現行方案：刪 `trip.html` closing section、`renderClosing`、相關 CSS；schema 不再使用 `meta.footerWish`
 - 驗證：`npm run build`；dev 開 trip 頁確認無 `#closing`
 
+### 2026-07-19 — 每日照片改上下堆疊（放棄桌機左右分欄）
+
+- 問題：≥900px 雜誌式左右欄把圖拉成全高 cover，顯得模糊；上下排更清晰
+- 曾考慮：維持左右但提高圖解析度／限高
+- 放棄原因：使用者明確要上下；左右分欄非必要
+- 現行方案：移除 `.day-section--photo` desktop grid；全寬度圖上、timeline 下（固定 aspect-ratio）
+- 驗證：`npm run build`；寬視窗開 trip Day 區塊應為上下、非左右
+
 ### 2026-07-19 — 向 Flipsnack 手冊學 IA，不抄橘紅主題
 
 - 問題：手冊雜誌敘事／掃描清晰度優於網站；網站作業區塊（票券／預算／地圖）手冊沒有
 - 曾考慮：整站改橘紅祭典色；或只補文案不改版面
 - 放棄原因：色系會衝既有 Palette 1；只改文案無法解決「亮點／住宿／結語」節奏缺口
-- 現行方案：P0 亮點卡＋時間軸層次；P1 動線 strip＋住宿總覽＋桌機日頁左右編排；schema 擴充 `highlightCards`／`hotelNote`／`routeLabel`／`detail`
-- 驗證：`npm run build`；dev 開東北／熱海 trip 頁看 `#highlights` `#lodging` 與 Day 左右編排
+- 現行方案：P0 亮點卡＋時間軸層次；P1 動線 strip＋住宿總覽；schema 擴充 `highlightCards`／`hotelNote`／`routeLabel`／`detail`（日頁左右編排已改回上下，見同日決策）
+- 驗證：`npm run build`；dev 開東北／熱海 trip 頁看 `#highlights` `#lodging`
 
 ### 2026-07-18 — 班次時間放行程總覽交通欄
 
