@@ -215,6 +215,21 @@
       }
     },
     {
+      "theme": "culture",
+      "title": "仙台七夕祭",
+      "kicker": "宮城・仙台",
+      "body": "東北三大祭之一，傳自伊達政宗時代的七夕風物；青竹與吹流し把整座城下町織成和紙之幕。行程尾聲走進街上，正是節慶前最輕的那一陣騷動。",
+      "source": {
+        "label": "せんだい旅日和（仙台七夕まつり）",
+        "url": "https://www.sentabi.jp/features/35"
+      },
+      "photo": {
+        "src": "photos/day1.webp",
+        "alt": "仙台七夕祭的吹流し裝飾",
+        "credit": "掬茶 / CC BY-SA 4.0"
+      }
+    },
+    {
       "theme": "place",
       "title": "秋田竿燈祭",
       "kicker": "秋田",
@@ -258,7 +273,9 @@
         "alt": "角館武家屋敷通",
         "credit": "掬茶 / CC BY-SA 4.0"
       }
-    },
+    }
+  ],
+  "foods": [
     {
       "theme": "food",
       "title": "仙台牛タン",
@@ -272,6 +289,66 @@
         "src": "photos/story-gyutan.jpg",
         "alt": "仙台牛タン定食",
         "credit": "Captain76 / Public domain"
+      }
+    },
+    {
+      "theme": "food",
+      "title": "萩の月",
+      "kicker": "宮城・仙台",
+      "body": "菓匠三全的仙台銘菓：柔軟卡斯提拉包住特製卡士達，靈感來自宮城野開滿萩花的夜空與一輪明月。常溫好帶，是這趟東北的甜點行李。",
+      "source": {
+        "label": "菓匠三全（萩の月）",
+        "url": "https://www.sanzen.co.jp/product/haginotsuki/"
+      },
+      "photo": {
+        "src": "photos/day8.webp",
+        "alt": "仙台瑞鳳殿",
+        "credit": "663highland / CC BY 2.5"
+      }
+    },
+    {
+      "theme": "food",
+      "title": "きりたんぽ鍋",
+      "kicker": "秋田・大館鹿角",
+      "body": "把飯糰壓在杉棒上炭烤、切段入湯，與比内地雞、芹與牛蒡同鍋。山裡人把剩餘飯變成圍爐的溫度，至今仍是秋田北部的鄉土味。",
+      "source": {
+        "label": "農林水産省・うちの郷土料理（きりたんぽ鍋）",
+        "url": "https://www.maff.go.jp/j/keikaku/syokubunka/k_ryouri/search_menu/menu/29_6_akita.html"
+      },
+      "photo": {
+        "src": "photos/day6.webp",
+        "alt": "角館武家屋敷通（秋田行程代表照）",
+        "credit": "掬茶 / CC BY-SA 4.0"
+      }
+    },
+    {
+      "theme": "food",
+      "title": "稲庭うどん",
+      "kicker": "秋田・湯沢",
+      "body": "湯澤稻庭一帶手延乾麵，江戶時代曾為佐竹藩獻上品；小麥、鹽與清水反復揉延，口感細緻有筋。日本三銘烏龍之一，也是秋田可帶回家的日常奢侈。",
+      "source": {
+        "label": "秋田県稲庭うどん協同組合",
+        "url": "http://inaniwa-udon.jp/about/"
+      },
+      "photo": {
+        "src": "photos/day5.webp",
+        "alt": "Resort 白神號於千疊敷站",
+        "credit": "Calistemon / CC BY-SA 4.0"
+      }
+    },
+    {
+      "theme": "sake",
+      "title": "アオモリシードル",
+      "kicker": "青森・A-FACTORY",
+      "body": "以青森縣產蘋果發酵的氣泡酒；青森站前 A-FACTORY 設有可觀釀造過程的工房與試飲。比起沉重日本酒，這是把蘋果王國收進行李的輕盈一杯。",
+      "source": {
+        "label": "Amazing AOMORI（A-FACTORY）",
+        "url": "https://aomori-tourism.com/spot/detail_3697.html"
+      },
+      "photo": {
+        "src": "photos/day4.webp",
+        "alt": "弘前城天守",
+        "credit": "掬茶 / CC BY-SA 4.0"
       }
     }
   ],

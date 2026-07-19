@@ -54,6 +54,7 @@ export default defineConfig({
         trip: resolve(__dirname, 'trip.html'),
         shopping: resolve(__dirname, 'shopping.html'),
         stories: resolve(__dirname, 'stories.html'),
+        food: resolve(__dirname, 'food.html'),
       },
     },
   },

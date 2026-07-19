@@ -147,7 +147,14 @@ Copy-Item -Recurse trips\_template trips\2027_義大利托斯卡尼_蜜月
 | `photos/` | 行程封面與每日代表照（見下方照片慣例） |
 | `assets/` | PDF、圖片等原始檔 |
 
-`itinerary.json` 可含 `stories[]`（風土碎片）：每則 `theme`（`place`｜`food`）、`title`、`kicker`、`body`、`source`（`label` + `url`，優先日文官方站）、`photo`（同 day photo：`src`／`alt`／`credit`）。獨立頁 `stories.html?trip={id}` 以滿版章節呈現；未填或空陣列顯示空狀態。建議每趟約 5 則，兼顧景點與飲食；可重用 `photos/` 既有封面／每日照，新圖須補 `ATTRIBUTIONS.md`。
+`itinerary.json` 可含兩組獨立章節陣列（欄位相同：`theme`、`title`、`kicker`、`body`、`source`（`label` + `url`，優先日文官方站）、`photo`（同 day photo：`src`／`alt`／`credit`））：
+
+| 陣列 | 頁面 | `theme` | 定位 |
+|------|------|---------|------|
+| `stories[]` | `stories.html?trip={id}` | `place`｜`history`｜`culture` | 景點、歷史與文化 |
+| `foods[]` | `food.html?trip={id}` | `food`｜`sake` | 食物與酒（含酒藏／地酒；`sake`＝酒） |
+
+兩頁皆以滿版章節＋下緣疊文呈現；未填或空陣列顯示空狀態。建議各至少約 5 則；可重用 `photos/` 既有封面／每日照，新圖須補 `ATTRIBUTIONS.md`。
 
 ### 6. 預覽
 

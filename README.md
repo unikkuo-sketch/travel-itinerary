@@ -18,7 +18,8 @@ npm run dev
 | 行程總覽 Hub | `http://localhost:5173/travel-itinerary/` |
 | 單一行程 | `http://localhost:5173/travel-itinerary/trip.html?trip=2026_日本熱海長瀞_家族旅遊` |
 | 購物清單 | `.../shopping.html?trip=2026_日本熱海長瀞_家族旅遊` |
-| 風土碎片 | `.../stories.html?trip=2026_日本熱海長瀞_家族旅遊` |
+| 風土 | `.../stories.html?trip=2026_日本熱海長瀞_家族旅遊` |
+| 飲食 | `.../food.html?trip=2026_日本熱海長瀞_家族旅遊` |
 
 ```powershell
 npm run build
@@ -32,7 +33,8 @@ traveling/                 # 根目錄：共用程式、Hub、建置設定
 ├── index.html             # Hub 首頁
 ├── trip.html              # 通用行程頁
 ├── shopping.html          # 通用購物頁
-├── stories.html           # 風土碎片（滿版章節）
+├── stories.html           # 風土（景點／歷史／文化，滿版章節）
+├── food.html              # 飲食（食物與酒，滿版章節）
 ├── js/                    # 共用邏輯
 ├── styles.css
 └── trips/

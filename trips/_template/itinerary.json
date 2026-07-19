@@ -67,7 +67,33 @@
       "theme": "place",
       "title": "亮點名稱",
       "kicker": "地區・地名",
-      "body": "兩至四句精短中文，說明歷史或風土重點。",
+      "body": "兩至四句精短中文，說明景點、歷史或文化重點。",
+      "source": { "label": "官方來源名稱", "url": "https://example.com/" },
+      "photo": {
+        "src": "photos/cover.webp",
+        "alt": "照片說明",
+        "credit": "作者 / 授權"
+      }
+    }
+  ],
+  "foods": [
+    {
+      "theme": "food",
+      "title": "在地料理或甜點",
+      "kicker": "地區・品名",
+      "body": "兩至四句精短中文，說明食物由來或品嚐重點。",
+      "source": { "label": "官方來源名稱", "url": "https://example.com/" },
+      "photo": {
+        "src": "photos/cover.webp",
+        "alt": "照片說明",
+        "credit": "作者 / 授權"
+      }
+    },
+    {
+      "theme": "sake",
+      "title": "地酒或酒藏",
+      "kicker": "地區・酒造名",
+      "body": "兩至四句精短中文，說明酒藏或日本酒／地酒特色。",
       "source": { "label": "官方來源名稱", "url": "https://example.com/" },
       "photo": {
         "src": "photos/cover.webp",

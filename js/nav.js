@@ -22,6 +22,7 @@ function buildTripSectionLinks(tripId) {
     { href: `${tripUrl(tripId)}#route-map`, label: '路線' },
     { href: `${tripUrl(tripId)}#budget`, label: '預算' },
     { href: tripUrl(tripId, 'stories'), label: '風土' },
+    { href: tripUrl(tripId, 'food'), label: '飲食' },
     { href: tripUrl(tripId, 'shopping'), label: '購物' },
   ];
 }

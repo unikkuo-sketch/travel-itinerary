@@ -12,13 +12,14 @@
 
 ## 近期
 
+- 風土／飲食分頁：`stories[]`＝景點歷史文化；`foods[]`＝食物與酒；nav 風土→飲食→購物；東北行程兩陣列各 ≥5 則
 - sticky nav（僅行程頁）：`nav-shell` 對齊主內容 1200px；Day chips scroll-spy＋橫滑跟蹤當日（不收合）
 - 行程頁導覽：hero「返回總覽」＋ sticky 雙列（章節／Day chips）；閱讀優先 section 序（行程→亮點→票券→住宿→路線→每日…）
-- 購物／風土：無 sticky；hero 左上「返回行程」連回本趟行程頁
+- 購物／風土／飲食：無 sticky；hero 左上「返回行程」連回本趟行程頁
 - P0/P1 行程頁清晰度：亮點卡、路線動線 strip、住宿總覽、時間軸 icon／detail、桌機每日左右編排（對齊 Flipsnack 手冊資訊架構，保留蜜桃奶油色系）
 - 行程總覽「交通重點」欄補已訂班次時間（`車次 · HH:MM`，多段用 `／`）
-- 風土碎片改獨立頁 `stories.html`：滿版章節＋下緣疊文（對齊購物進入方式）
-- 旅後回顧已移除，改「風土碎片」（`stories[]`）
+- 風土改獨立頁 `stories.html`：滿版章節＋下緣疊文；飲食同構頁 `food.html`
+- 旅後回顧已移除，改「風土」（`stories[]`）＋「飲食」（`foods[]`）
 - 行程路線圖底圖改 CARTO Positron + 蜜桃奶油 filter，與 Hub featured-map 對齊
 - Hub 文案：Welcome blurb 置中；「每日行程一覽」；「碎片寶箱」／「碎片漂泊地」
 - 票券狀態可在行程頁點擊切換（本機 localStorage），JSON 仍為預設來源
@@ -31,13 +32,21 @@
 
 ## 決策
 
+### 2026-07-19 — 風土／飲食分頁；飲食含酒
+
+- 問題：風土頁混了景點文化與飲食，定位不清；使用者要分開，且飲食須含酒／酒藏
+- 曾考慮：同頁依 `theme` 過濾兩入口；或飲食只放食物、酒另頁
+- 放棄原因：分開頁面與購物一致、導覽清楚；飲食本來就涵蓋吃與喝
+- 現行方案：`stories[]`→`stories.html`（place｜history｜culture）；`foods[]`→`food.html`（food｜sake）；nav 風土→飲食→購物；既有 food 條目已遷移
+- 驗證：`npm run build`；dev 開 trip／stories／food／shopping
+
 ### 2026-07-19 — nav-shell 對齊主內容寬度；購物／風土無 sticky
 
 - 問題：fit-content shell 與主內容對不齊；Day 列視覺不對稱；獨立頁不應帶行程雙列導覽
 - 曾考慮：shell 仍 fit-content 只求等寬兩列；購物／風土留極簡 sticky
 - 放棄原因：使用者要與 `.main-content` 同寬；獨立頁明確不要 sticky
-- 現行方案：`nav-shell` `width: 100%; max-width: 1200px`；≤768px 不再強制 nav-row `flex-start`；購物／風土 hero「返回行程」→ `trip.html?trip=`
-- 驗證：`npm run build`；dev 開 trip／shopping／stories
+- 現行方案：`nav-shell` `width: 100%; max-width: 1200px`；≤768px 不再強制 nav-row `flex-start`；購物／風土／飲食 hero「返回行程」→ `trip.html?trip=`
+- 驗證：`npm run build`；dev 開 trip／shopping／stories／food
 
 ### 2026-07-19 — sticky nav：shell 包內容置中＋Day scroll-spy（已修正）
 

@@ -2,11 +2,11 @@ import { getTripId, loadTrip, tripUrl } from './load-trip.js';
 import { icon } from './icons.js';
 import { photoHtml, tripAssetUrl } from './photo.js';
 
-const root = document.getElementById('stories-root');
-const heroTitle = document.getElementById('stories-trip-title');
+const root = document.getElementById('food-root');
+const heroTitle = document.getElementById('food-trip-title');
 const heroEl = document.querySelector('.hero-stories');
 
-const THEME_LABEL = { place: '景點', history: '歷史', culture: '文化' };
+const THEME_LABEL = { food: '食物', sake: '酒' };
 
 function mountHeroBack(tripId) {
   if (!heroEl || heroEl.querySelector('.hero-back')) return;
@@ -36,20 +36,20 @@ function showError(message) {
 function renderEmpty(tripId) {
   root.innerHTML = `
     <div class="stories-empty">
-      <p class="stories-empty-title">這趟旅程尚未收藏風土筆記</p>
-      <p class="stories-empty-desc">歷史與風土，會在啟程之後慢慢補上。</p>
+      <p class="stories-empty-title">這趟旅程尚未收藏飲食筆記</p>
+      <p class="stories-empty-desc">當地的食物與酒，會在啟程之後慢慢補上。</p>
       <a class="btn-hero" href="${tripUrl(tripId)}">返回行程</a>
     </div>`;
 }
 
-function renderChapter(story, index, tripId) {
+function renderChapter(item, index, tripId) {
   const n = String(index + 1).padStart(2, '0');
-  const theme = THEME_LABEL[story.theme] || '';
-  const photo = story.photo
+  const theme = THEME_LABEL[item.theme] || '';
+  const photo = item.photo
     ? {
-        src: tripAssetUrl(tripId, story.photo.src),
-        alt: story.photo.alt || story.title || '',
-        credit: story.photo.credit || '',
+        src: tripAssetUrl(tripId, item.photo.src),
+        alt: item.photo.alt || item.title || '',
+        credit: item.photo.credit || '',
       }
     : null;
   const media = photo
@@ -61,8 +61,8 @@ function renderChapter(story, index, tripId) {
       })
     : '<div class="story-chapter-fallback" aria-hidden="true"></div>';
   const source =
-    story.source?.url && story.source?.label
-      ? `<a class="story-chapter-source" href="${esc(story.source.url)}" target="_blank" rel="noopener noreferrer">${esc(story.source.label)}</a>`
+    item.source?.url && item.source?.label
+      ? `<a class="story-chapter-source" href="${esc(item.source.url)}" target="_blank" rel="noopener noreferrer">${esc(item.source.label)}</a>`
       : '';
 
   return `
@@ -73,10 +73,10 @@ function renderChapter(story, index, tripId) {
         <div class="story-chapter-meta">
           <span class="story-chapter-index" aria-hidden="true">${n}</span>
           ${theme ? `<span class="story-chapter-theme">${esc(theme)}</span>` : ''}
-          ${story.kicker ? `<span class="story-chapter-kicker">${esc(story.kicker)}</span>` : ''}
+          ${item.kicker ? `<span class="story-chapter-kicker">${esc(item.kicker)}</span>` : ''}
         </div>
-        <h2 class="story-chapter-title">${esc(story.title || '')}</h2>
-        <p class="story-chapter-body">${esc(story.body || '')}</p>
+        <h2 class="story-chapter-title">${esc(item.title || '')}</h2>
+        <p class="story-chapter-body">${esc(item.body || '')}</p>
         ${source}
       </div>
     </section>`;
@@ -113,22 +113,22 @@ async function init() {
   try {
     const data = await loadTrip(tripId);
     if (data.meta?.theme) document.body.classList.add(`theme-${data.meta.theme}`);
-    document.title = `風土 | ${data.meta?.title || ''}`;
+    document.title = `飲食 | ${data.meta?.title || ''}`;
     if (heroTitle) {
       heroTitle.textContent = data.meta?.title
-        ? `${data.meta.title} · 風土`
-        : '風土';
+        ? `${data.meta.title} · 飲食`
+        : '飲食';
     }
 
     mountHeroBack(tripId);
 
-    const stories = data.stories || [];
-    if (!stories.length) {
+    const foods = data.foods || [];
+    if (!foods.length) {
       renderEmpty(tripId);
       return;
     }
 
-    root.innerHTML = stories.map((s, i) => renderChapter(s, i, tripId)).join('');
+    root.innerHTML = foods.map((s, i) => renderChapter(s, i, tripId)).join('');
     initReveal();
   } catch (err) {
     showError(err.message);
