@@ -23,6 +23,7 @@ const PATHS = {
   weather: '<path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/>',
   flower: '<path d="M12 7.5a4.5 4.5 0 1 1 4.5 4.5"/><path d="M12 7.5V3"/><path d="M12 7.5 9 4"/><path d="M12 7.5 15 4"/><path d="M12 12v9"/><path d="M8 17h8"/>',
   chevronDown: '<polyline points="6 9 12 15 18 9"/>',
+  arrowLeft: '<line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/>',
   trash: '<polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/>',
   plane: '<path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/>',
   shrine: '<path d="M4 21h16"/><path d="M9 8v13"/><path d="M15 8v13"/><path d="M4 8h16"/><path d="m12 3 8 5H4l8-5Z"/>',

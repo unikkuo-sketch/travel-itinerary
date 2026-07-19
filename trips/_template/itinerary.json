@@ -21,7 +21,6 @@
       "alt": "封面照片說明",
       "credit": "作者 / 授權（例：CC BY 4.0）"
     },
-    "footerWish": "祝您旅途順利！",
     "footerDate": "行程規劃 · 日期區間"
   },
   "shopping": {
@@ -94,7 +93,6 @@
       "day": 1,
       "date": "MM/DD",
       "places": "出發地→目的地",
-      "summary": "當日一句摘要",
       "hotel": "飯店名稱",
       "hotelNote": "住宿賣點（站距／溫泉／方便處）",
       "routeLabel": "目的地簡稱",

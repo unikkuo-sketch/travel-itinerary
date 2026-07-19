@@ -26,10 +26,35 @@
     <header id="hero-root" class="hero"></header>
 
     <nav class="nav-sticky">
-        <div id="nav-container" class="nav-container"></div>
+        <div class="nav-shell">
+            <div id="nav-container" class="nav-row nav-row--sections"></div>
+            <div id="nav-days" class="nav-row nav-row--days" hidden></div>
+        </div>
     </nav>
 
     <main class="main-content">
+        <section id="overview" class="section">
+            <div class="section-header section-header--editorial">
+                <span class="section-eyebrow">Overview</span>
+                <h2>行程總覽</h2>
+                <p>完整規劃一覽表</p>
+            </div>
+            <div class="overview-table-wrapper">
+                <table class="overview-table">
+                    <thead>
+                        <tr>
+                            <th>天數</th>
+                            <th>日期</th>
+                            <th>主要地點</th>
+                            <th>住宿</th>
+                            <th>交通重點</th>
+                        </tr>
+                    </thead>
+                    <tbody id="overview-body"></tbody>
+                </table>
+            </div>
+        </section>
+
         <section id="highlights" class="section" hidden>
             <div class="section-header section-header--editorial">
                 <span class="section-eyebrow">Highlights</span>
@@ -48,27 +73,13 @@
             <div id="ticket-grid" class="ticket-grid"></div>
         </section>
 
-        <section id="overview" class="section">
+        <section id="lodging" class="section" hidden>
             <div class="section-header section-header--editorial">
-                <span class="section-eyebrow">Overview</span>
-                <h2>行程總覽</h2>
-                <p>完整規劃一覽表</p>
+                <span class="section-eyebrow">Stay</span>
+                <h2>精選住宿</h2>
+                <p>依日排序的夜宿節奏</p>
             </div>
-            <div class="overview-table-wrapper">
-                <table class="overview-table">
-                    <thead>
-                        <tr>
-                            <th>天數</th>
-                            <th>日期</th>
-                            <th>主要地點</th>
-                            <th>當日一句</th>
-                            <th>住宿</th>
-                            <th>交通重點</th>
-                        </tr>
-                    </thead>
-                    <tbody id="overview-body"></tbody>
-                </table>
-            </div>
+            <div id="lodging-root" class="lodging-grid"></div>
         </section>
 
         <section id="route-map" class="section">
@@ -80,15 +91,6 @@
             <div id="route-strip" class="route-strip" aria-label="八日動線摘要"></div>
             <div id="leaflet-map" class="leaflet-map"></div>
             <div id="map-legend" class="map-legend" aria-label="分日路線圖例"></div>
-        </section>
-
-        <section id="lodging" class="section" hidden>
-            <div class="section-header section-header--editorial">
-                <span class="section-eyebrow">Stay</span>
-                <h2>精選住宿</h2>
-                <p>依日排序的夜宿節奏</p>
-            </div>
-            <div id="lodging-root" class="lodging-grid"></div>
         </section>
 
         <div id="days-root"></div>
@@ -134,9 +136,6 @@
             </div>
         </section>
 
-        <section id="closing" class="section closing-section" hidden>
-            <div id="closing-root"></div>
-        </section>
     </main>
 
     <footer class="footer">

@@ -106,26 +106,15 @@ function renderTransportCell(r) {
   return `<span class="transport-stack">${parts.map((p) => `<span class="${cls}">${esc(p)}</span>`).join('')}</span>`;
 }
 
-function dayTitleFallback(dayNumber, days) {
-  const day = (days || []).find((d) => Number(d.number) === Number(dayNumber));
-  if (!day?.title) return '';
-  return String(day.title)
-    .replace(/[\p{Extended_Pictographic}\uFE0F\u200D]/gu, '')
-    .replace(/\s+/g, ' ')
-    .trim();
-}
-
-function renderOverview(rows, days = []) {
-  const hasSummary = rows.some((r) => r.summary) || (days || []).length > 0;
+function renderOverview(rows) {
   return rows
-    .map((r) => {
-      const summary = r.summary || dayTitleFallback(r.day, days);
+    .map((r, i) => {
+      const tone = i % 2 === 0 ? 'overview-day--a' : 'overview-day--b';
       return `
-    <tr>
+    <tr class="overview-meta ${tone}">
       <td data-label="天數"><span class="day-badge">${r.day}</span></td>
       <td data-label="日期">${esc(r.date)}</td>
       <td data-label="主要地點">${esc(r.places)}</td>
-      ${hasSummary ? `<td data-label="當日一句" class="overview-summary">${esc(summary)}</td>` : ''}
       <td data-label="住宿">${esc(r.hotel)}</td>
       <td data-label="交通重點">${renderTransportCell(r)}</td>
     </tr>`;
@@ -133,15 +122,13 @@ function renderOverview(rows, days = []) {
     .join('');
 }
 
-function mountOverviewHeader(rows, days = []) {
+function mountOverviewHeader() {
   const thead = document.querySelector('#overview .overview-table thead tr');
   if (!thead) return;
-  const hasSummary = (rows || []).some((r) => r.summary) || (days || []).length > 0;
   thead.innerHTML = `
     <th>天數</th>
     <th>日期</th>
     <th>主要地點</th>
-    ${hasSummary ? '<th>當日一句</th>' : ''}
     <th>住宿</th>
     <th>交通重點</th>`;
 }
@@ -232,40 +219,6 @@ function renderLodging(overview) {
     </article>`;
     })
     .join('');
-}
-
-function renderClosing(meta) {
-  if (!meta) return '';
-  const wish = meta.footerWish || '';
-  const cards = highlightCardsFromMeta(meta).slice(0, 6);
-  if (!wish && !cards.length) return '';
-
-  const list = cards.length
-    ? `<ul class="closing-highlights">
-        ${cards
-          .map(
-            (c) => `
-          <li>
-            <span class="closing-hi-icon">${icon(c.icon || 'sparkle', 'icon')}</span>
-            <span>
-              <strong>${esc(c.title || '')}</strong>
-              ${c.desc ? `<span class="closing-hi-desc">${esc(c.desc)}</span>` : ''}
-            </span>
-          </li>`
-          )
-          .join('')}
-      </ul>`
-    : '';
-
-  return `
-    <div class="closing-panel">
-      <div class="closing-copy">
-        <span class="closing-eyebrow">Closing</span>
-        <h2>結語</h2>
-        ${wish ? `<p class="closing-wish">${esc(wish)}</p>` : ''}
-      </div>
-      ${list}
-    </div>`;
 }
 
 function renderTimelineItem(item) {
@@ -442,8 +395,12 @@ export function renderHero(meta, days = []) {
     : '';
   root.classList.toggle('hero-photo', Boolean(cover));
 
+  const hub = import.meta.env.BASE_URL;
+  const back = `<a class="hero-back" href="${hub}" aria-label="返回行程總覽">${icon('arrowLeft', 'icon icon--sm')}<span>返回總覽</span></a>`;
+
   root.innerHTML = `
     ${cover ? `${cover}<div class="hero-photo-overlay"></div>` : ''}
+    ${back}
     <div class="hero-content">
       <span class="hero-badge">${esc(meta.badge || '')}</span>
       <h1>${esc(meta.title || '')}</h1>
@@ -524,7 +481,6 @@ export function renderItinerary(data) {
   const highlightsEl = document.getElementById('highlights-root');
   const routeStripEl = document.getElementById('route-strip');
   const lodgingEl = document.getElementById('lodging-root');
-  const closingEl = document.getElementById('closing-root');
 
   const highlightHtml = renderHighlights(data.meta);
   if (highlightsEl) highlightsEl.innerHTML = highlightHtml;
@@ -537,8 +493,8 @@ export function renderItinerary(data) {
     mountTicketStatusControls(ticketsEl, tripId);
   }
 
-  mountOverviewHeader(data.overview || [], data.days || []);
-  if (overviewEl) overviewEl.innerHTML = renderOverview(data.overview || [], data.days || []);
+  mountOverviewHeader();
+  if (overviewEl) overviewEl.innerHTML = renderOverview(data.overview || []);
 
   const stripHtml = renderRouteStrip(data.overview || [], data.meta);
   if (routeStripEl) routeStripEl.innerHTML = stripHtml;
@@ -549,10 +505,6 @@ export function renderItinerary(data) {
 
   if (daysEl) daysEl.innerHTML = (data.days || []).map((d) => renderDay(d, tripId)).join('');
   if (budgetEl && data.budget) budgetEl.innerHTML = renderBudgetHtml(data.budget);
-
-  const closingHtml = renderClosing(data.meta);
-  if (closingEl) closingEl.innerHTML = closingHtml;
-  showSection('closing', Boolean(closingHtml));
 
   renderExtras(data);
 }

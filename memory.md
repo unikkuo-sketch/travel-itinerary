@@ -1,6 +1,6 @@
 # memory — Travel Hub
 
-最後更新：2026-07-18
+最後更新：2026-07-19
 
 ## 待辦
 
@@ -12,7 +12,9 @@
 
 ## 近期
 
-- P0/P1 行程頁清晰度：亮點卡、總覽當日一句、路線動線 strip、住宿總覽、時間軸 icon／detail、桌機每日左右編排、結語區塊（對齊 Flipsnack 手冊資訊架構，保留蜜桃奶油色系）
+- sticky nav：`nav-shell` 包內容置中；Day chips scroll-spy＋橫滑跟蹤當日（不收合）
+- 行程頁導覽：hero「返回總覽」＋ sticky 雙列（章節／Day chips）；閱讀優先 section 序（行程→亮點→票券→住宿→路線→每日…）
+- P0/P1 行程頁清晰度：亮點卡、路線動線 strip、住宿總覽、時間軸 icon／detail、桌機每日左右編排（對齊 Flipsnack 手冊資訊架構，保留蜜桃奶油色系）
 - 行程總覽「交通重點」欄補已訂班次時間（`車次 · HH:MM`，多段用 `／`）
 - 風土碎片改獨立頁 `stories.html`：滿版章節＋下緣疊文（對齊購物進入方式）
 - 旅後回顧已移除，改「風土碎片」（`stories[]`）
@@ -28,13 +30,45 @@
 
 ## 決策
 
+### 2026-07-19 — sticky nav：shell 包內容置中＋Day scroll-spy
+
+- 問題：nav-shell 拉滿寬，章節列右側（購物後）大片空白；捲到每日時 Day chip 不會跟著高亮／捲入
+- 曾考慮：整排 Day 收合為「目前 Day N ▾」下拉
+- 放棄原因：多一步點開；常跳日比少佔位更重要（已選定常駐橫列）
+- 現行方案：`nav-shell` `width: fit-content` 置中；Day 列 scroll-spy＋active chip `scrollIntoView(inline: center)`
+- 驗證：`npm run build`；dev 開 trip 頁，寬螢幕確認 shell 不拉滿；捲 Day 區看 chip 高亮並橫滑置中
+
+### 2026-07-19 — 行程導覽：hero 返回＋雙列 Day
+
+- 問題：sticky 把 Hub「總覽」與頁內錨點混列；Day 1…N 隨天數膨脹難掃
+- 曾考慮：Day 下拉／只靠總覽表跳日／真 tab 切換日內容
+- 放棄原因：下拉多一步；拿掉 Day 不利當日跳轉；tab 會拆現有長頁 hash
+- 現行方案：hero 左上返回 Hub；sticky 上列章節（閱讀優先序）、下列 Day chips；購物／風土 sticky 左端返回
+- 驗證：`npm run build`；dev 開 trip／shopping／stories 查 nav 與 hero-back
+
+### 2026-07-19 — 總覽表不再顯示每日一句
+
+- 問題：`overview[].summary` 列排版難與五欄表對齊，體驗一直不理想
+- 曾考慮：獨立欄、附行列、併入主要地點
+- 放棄原因：使用者決定直接拿掉
+- 現行方案：`renderOverview` 只渲染五欄（天數／日期／地點／住宿／交通）；JSON 若仍有 `summary` 會被忽略
+- 驗證：dev 開 trip `#overview`，tbody 無 `overview-summary-row`
+
+### 2026-07-19 — 移除行程頁結語區塊
+
+- 問題：`#closing` 結語／footerWish 在頁尾顯得多餘
+- 曾考慮：保留但縮成 footer 一行
+- 放棄原因：使用者明確不要結語；footer 已有 `footerDate`
+- 現行方案：刪 `trip.html` closing section、`renderClosing`、相關 CSS；schema 不再使用 `meta.footerWish`
+- 驗證：`npm run build`；dev 開 trip 頁確認無 `#closing`
+
 ### 2026-07-19 — 向 Flipsnack 手冊學 IA，不抄橘紅主題
 
 - 問題：手冊雜誌敘事／掃描清晰度優於網站；網站作業區塊（票券／預算／地圖）手冊沒有
 - 曾考慮：整站改橘紅祭典色；或只補文案不改版面
 - 放棄原因：色系會衝既有 Palette 1；只改文案無法解決「亮點／住宿／結語」節奏缺口
-- 現行方案：P0 亮點卡＋時間軸層次＋總覽當日一句；P1 動線 strip＋住宿總覽＋桌機日頁左右編排＋結語；schema 擴充 `highlightCards`／`summary`／`hotelNote`／`routeLabel`／`detail`
-- 驗證：`npm run build`；dev 開東北／熱海 trip 頁看 `#highlights` `#lodging` `#closing` 與 Day 左右編排
+- 現行方案：P0 亮點卡＋時間軸層次；P1 動線 strip＋住宿總覽＋桌機日頁左右編排；schema 擴充 `highlightCards`／`hotelNote`／`routeLabel`／`detail`
+- 驗證：`npm run build`；dev 開東北／熱海 trip 頁看 `#highlights` `#lodging` 與 Day 左右編排
 
 ### 2026-07-18 — 班次時間放行程總覽交通欄
 
