@@ -1,4 +1,4 @@
-import { icon, iconFromEmoji } from './icons.js';
+import { icon, iconFromEmoji, resolveTimelineIcon, stripTagEmoji } from './icons.js';
 import { photoHtml, tripAssetUrl } from './photo.js';
 
 function esc(text) {
@@ -106,29 +106,191 @@ function renderTransportCell(r) {
   return `<span class="transport-stack">${parts.map((p) => `<span class="${cls}">${esc(p)}</span>`).join('')}</span>`;
 }
 
-function renderOverview(rows) {
-  return rows.map((r) => `
+function dayTitleFallback(dayNumber, days) {
+  const day = (days || []).find((d) => Number(d.number) === Number(dayNumber));
+  if (!day?.title) return '';
+  return String(day.title)
+    .replace(/[\p{Extended_Pictographic}\uFE0F\u200D]/gu, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+function renderOverview(rows, days = []) {
+  const hasSummary = rows.some((r) => r.summary) || (days || []).length > 0;
+  return rows
+    .map((r) => {
+      const summary = r.summary || dayTitleFallback(r.day, days);
+      return `
     <tr>
       <td data-label="天數"><span class="day-badge">${r.day}</span></td>
       <td data-label="日期">${esc(r.date)}</td>
       <td data-label="主要地點">${esc(r.places)}</td>
+      ${hasSummary ? `<td data-label="當日一句" class="overview-summary">${esc(summary)}</td>` : ''}
       <td data-label="住宿">${esc(r.hotel)}</td>
       <td data-label="交通重點">${renderTransportCell(r)}</td>
-    </tr>
-  `).join('');
+    </tr>`;
+    })
+    .join('');
+}
+
+function mountOverviewHeader(rows, days = []) {
+  const thead = document.querySelector('#overview .overview-table thead tr');
+  if (!thead) return;
+  const hasSummary = (rows || []).some((r) => r.summary) || (days || []).length > 0;
+  thead.innerHTML = `
+    <th>天數</th>
+    <th>日期</th>
+    <th>主要地點</th>
+    ${hasSummary ? '<th>當日一句</th>' : ''}
+    <th>住宿</th>
+    <th>交通重點</th>`;
+}
+
+function highlightCardsFromMeta(meta) {
+  if (meta?.highlightCards?.length) return meta.highlightCards;
+  return (meta?.highlights || [])
+    .filter(Boolean)
+    .map((h) => {
+      const text = String(h);
+      const parts = text.split(/[：:]/);
+      if (parts.length > 1) {
+        return { icon: 'sparkle', title: parts[0].trim(), desc: parts.slice(1).join('：').trim() };
+      }
+      return { icon: 'sparkle', title: text, desc: '' };
+    });
+}
+
+function renderHighlights(meta) {
+  const cards = highlightCardsFromMeta(meta);
+  if (!cards.length) return '';
+  return cards
+    .map((card, i) => {
+      const n = String(i + 1).padStart(2, '0');
+      return `
+    <article class="highlight-card">
+      <div class="highlight-card-top">
+        <span class="highlight-num" aria-hidden="true">${n}</span>
+        <span class="highlight-icon">${icon(card.icon || 'sparkle', 'icon')}</span>
+      </div>
+      <h3>${esc(card.title || '')}</h3>
+      ${card.desc ? `<p>${esc(card.desc)}</p>` : ''}
+    </article>`;
+    })
+    .join('');
+}
+
+function routeLabelForRow(row) {
+  if (row.routeLabel) return row.routeLabel;
+  const base = String(row.places || '').split('（')[0];
+  const parts = base
+    .split('→')
+    .map((s) => s.trim())
+    .filter(Boolean);
+  return parts[parts.length - 1] || base || `Day ${row.day}`;
+}
+
+function renderRouteStrip(overview, meta) {
+  const rows = overview || [];
+  if (!rows.length) return '';
+  const regions = meta?.routeRegions
+    ? `<p class="route-strip-regions">${esc(meta.routeRegions)}</p>`
+    : '';
+  const chips = rows
+    .map((r, i) => {
+      const label = routeLabelForRow(r);
+      const arrow =
+        i < rows.length - 1 ? '<span class="route-strip-arrow" aria-hidden="true">→</span>' : '';
+      return `
+      <a class="route-chip" href="#day${r.day}">
+        <span class="route-chip-day">D${r.day}</span>
+        <span class="route-chip-label">${esc(label)}</span>
+      </a>${arrow}`;
+    })
+    .join('');
+  return `${regions}<div class="route-strip-track" role="list">${chips}</div>`;
+}
+
+function renderLodging(overview) {
+  const stays = (overview || []).filter((r) => r.hotel && r.hotel !== '-');
+  if (!stays.length) return '';
+  return stays
+    .map((r) => {
+      const note = r.hotelNote
+        ? `<p class="lodging-note">${esc(r.hotelNote)}</p>`
+        : '';
+      return `
+    <article class="lodging-card">
+      <div class="lodging-icon">${icon('hotel', 'icon')}</div>
+      <div class="lodging-body">
+        <div class="lodging-meta">
+          <span class="lodging-day">D${r.day}</span>
+          <span class="lodging-date">${esc(r.date || '')}</span>
+        </div>
+        <h3>${esc(r.hotel)}</h3>
+        ${note}
+      </div>
+    </article>`;
+    })
+    .join('');
+}
+
+function renderClosing(meta) {
+  if (!meta) return '';
+  const wish = meta.footerWish || '';
+  const cards = highlightCardsFromMeta(meta).slice(0, 6);
+  if (!wish && !cards.length) return '';
+
+  const list = cards.length
+    ? `<ul class="closing-highlights">
+        ${cards
+          .map(
+            (c) => `
+          <li>
+            <span class="closing-hi-icon">${icon(c.icon || 'sparkle', 'icon')}</span>
+            <span>
+              <strong>${esc(c.title || '')}</strong>
+              ${c.desc ? `<span class="closing-hi-desc">${esc(c.desc)}</span>` : ''}
+            </span>
+          </li>`
+          )
+          .join('')}
+      </ul>`
+    : '';
+
+  return `
+    <div class="closing-panel">
+      <div class="closing-copy">
+        <span class="closing-eyebrow">Closing</span>
+        <h2>結語</h2>
+        ${wish ? `<p class="closing-wish">${esc(wish)}</p>` : ''}
+      </div>
+      ${list}
+    </div>`;
 }
 
 function renderTimelineItem(item) {
   const classes = ['timeline-item'];
   if (item.highlight) classes.push('highlight');
+  const iconName = resolveTimelineIcon(item);
+  if (iconName) classes.push('timeline-item--icon');
+
   const timeHtml = item.time ? `<div class="timeline-time">${esc(item.time)}</div>` : '';
-  const tagHtml = item.tag ? `<span class="timeline-tag">${esc(item.tag)}</span>` : '';
+  const iconHtml = iconName
+    ? `<span class="timeline-icon" aria-hidden="true">${icon(iconName, 'icon')}</span>`
+    : '';
+  const detailHtml = item.detail ? `<p class="timeline-detail">${esc(item.detail)}</p>` : '';
+  const tagLabel = stripTagEmoji(item.tag);
+  const tagHtml = tagLabel ? `<span class="timeline-tag">${esc(tagLabel)}</span>` : '';
+
   return `
     <div class="${classes.join(' ')}">
+      ${iconHtml}
       ${timeHtml}
       <div class="timeline-content">
         <h4>${esc(item.place)}</h4>
-        <p>${esc(item.desc)}</p>${tagHtml}
+        <p>${esc(item.desc)}</p>
+        ${detailHtml}
+        ${tagHtml}
       </div>
     </div>
   `;
@@ -264,9 +426,9 @@ export function renderHero(meta, days = []) {
   const ticket = meta.ticketSummary
     ? `<div class="info-item"><span class="info-icon">${icon('ticket')}</span><span>${esc(meta.ticketSummary)}</span></div>`
     : '';
-  const highlightLine = (meta.highlights || []).filter(Boolean).length
-    ? `<p class="hero-highlights">${(meta.highlights || []).map((h) => esc(h)).join(' · ')}</p>`
-    : '';
+
+  // Dedicated #highlights section replaces the hero · line when cards/highlights exist.
+  const hasHighlightSection = highlightCardsFromMeta(meta).length > 0;
 
   const cover = meta.cover?.src
     ? photoHtml(
@@ -291,8 +453,20 @@ export function renderHero(meta, days = []) {
         ${dayCount}
         ${ticket}
       </div>
-      ${highlightLine}
+      ${
+        hasHighlightSection
+          ? ''
+          : (meta.highlights || []).filter(Boolean).length
+            ? `<p class="hero-highlights">${(meta.highlights || []).map((h) => esc(h)).join(' · ')}</p>`
+            : ''
+      }
     </div>`;
+}
+
+function showSection(id, visible) {
+  const el = document.getElementById(id);
+  if (!el) return;
+  el.hidden = !visible;
 }
 
 export function renderExtras(data) {
@@ -301,12 +475,16 @@ export function renderExtras(data) {
   const footerEl = document.getElementById('footer-root');
 
   if (eventsEl && data.events?.length) {
-    eventsEl.innerHTML = data.events.map((e) => `
+    eventsEl.innerHTML = data.events
+      .map(
+        (e) => `
       <div class="event-card">
         <h3>${esc(e.region)}</h3>
         <ul>${e.items.map((item) => `<li>${esc(item)}</li>`).join('')}</ul>
       </div>
-    `).join('');
+    `
+      )
+      .join('');
   }
 
   if (weatherEl && data.weather) {
@@ -343,6 +521,14 @@ export function renderItinerary(data) {
   const overviewEl = document.getElementById('overview-body');
   const daysEl = document.getElementById('days-root');
   const budgetEl = document.getElementById('budget-root');
+  const highlightsEl = document.getElementById('highlights-root');
+  const routeStripEl = document.getElementById('route-strip');
+  const lodgingEl = document.getElementById('lodging-root');
+  const closingEl = document.getElementById('closing-root');
+
+  const highlightHtml = renderHighlights(data.meta);
+  if (highlightsEl) highlightsEl.innerHTML = highlightHtml;
+  showSection('highlights', Boolean(highlightHtml));
 
   if (ticketsEl) {
     const tickets = data.tickets || [];
@@ -350,9 +536,23 @@ export function renderItinerary(data) {
     ticketsEl.innerHTML = renderTickets(tickets, overrides);
     mountTicketStatusControls(ticketsEl, tripId);
   }
-  if (overviewEl) overviewEl.innerHTML = renderOverview(data.overview || []);
+
+  mountOverviewHeader(data.overview || [], data.days || []);
+  if (overviewEl) overviewEl.innerHTML = renderOverview(data.overview || [], data.days || []);
+
+  const stripHtml = renderRouteStrip(data.overview || [], data.meta);
+  if (routeStripEl) routeStripEl.innerHTML = stripHtml;
+
+  const lodgingHtml = renderLodging(data.overview || []);
+  if (lodgingEl) lodgingEl.innerHTML = lodgingHtml;
+  showSection('lodging', Boolean(lodgingHtml));
+
   if (daysEl) daysEl.innerHTML = (data.days || []).map((d) => renderDay(d, tripId)).join('');
   if (budgetEl && data.budget) budgetEl.innerHTML = renderBudgetHtml(data.budget);
+
+  const closingHtml = renderClosing(data.meta);
+  if (closingEl) closingEl.innerHTML = closingHtml;
+  showSection('closing', Boolean(closingHtml));
 
   renderExtras(data);
 }

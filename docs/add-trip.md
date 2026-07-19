@@ -34,11 +34,32 @@ Copy-Item -Recurse trips\_template trips\2027_義大利托斯卡尼_蜜月
 |------|------|
 | `status` | `purchased`（已購）／`pending`（待購）／`reservation`（免費但需預約）；JSON 為發佈預設；行程頁可點狀態 pill 本機切換（`travelTicketStatus:{tripId}`） |
 
+#### Meta 亮點與動線
+
+| 欄位 | 說明 |
+|------|------|
+| `meta.highlightCards[]` | 選填；`{ icon, title, desc }`。有則渲染行程頁「行程亮點」；無則回退 `meta.highlights` 字串 |
+| `meta.routeRegions` | 選填；路線區上方縣／地區標籤（例 `宮城・岩手・青森・秋田`） |
+| `meta.footerWish` | 結語文案（與亮點回顧組成 `#closing`） |
+
+`highlightCards[].icon` 對應 `js/icons.js`（如 `train`、`food`、`hotel`、`festival`、`shrine`、`plane`）。
+
 #### 行程總覽 `overview[]`
 
 | 欄位 | 說明 |
 |------|------|
+| `summary` | 選填；總覽表「當日一句」。缺省時回退該日 `days[].title`（去 emoji） |
+| `hotelNote` | 選填；住宿總覽卡片說明（站距／賣點） |
+| `routeLabel` | 選填；路線動線 chip 短名（缺省取 `places` 最後一段） |
 | `transport` | 交通重點；已訂班次寫 `車次 · HH:MM`（例 `Hayabusa 1 · 08:05`）；當日多段用全形 `／` 分隔，會渲染成多行 tag |
+
+#### 每日時間軸 `days[].timeline[]`
+
+| 欄位 | 說明 |
+|------|------|
+| `icon` | 選填；時間軸圓標 icon key。缺省時從 `tag` 開頭 emoji 推斷 |
+| `detail` | 選填；主說明 `desc` 下方的後勤細字（班次、步行分鐘等） |
+| `tag` | 選填；類別標籤（可含 emoji；有 icon 時顯示會去掉開頭 emoji） |
 
 #### 預算 `budget`
 

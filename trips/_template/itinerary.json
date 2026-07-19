@@ -7,6 +7,14 @@
     "dateRange": "MM/DD - MM/DD",
     "ticketSummary": "交通票券摘要",
     "highlights": ["亮點一", "亮點二"],
+    "highlightCards": [
+      {
+        "icon": "sparkle",
+        "title": "亮點標題",
+        "desc": "兩行以內說明這趟旅程的賣點"
+      }
+    ],
+    "routeRegions": "地區A・地區B",
     "theme": "sakura",
     "cover": {
       "src": "photos/cover.webp",
@@ -81,8 +89,43 @@
       "features": ["特色一"]
     }
   ],
-  "overview": [],
-  "days": [],
+  "overview": [
+    {
+      "day": 1,
+      "date": "MM/DD",
+      "places": "出發地→目的地",
+      "summary": "當日一句摘要",
+      "hotel": "飯店名稱",
+      "hotelNote": "住宿賣點（站距／溫泉／方便處）",
+      "routeLabel": "目的地簡稱",
+      "transport": "車次 · HH:MM",
+      "transportClass": ""
+    }
+  ],
+  "days": [
+    {
+      "id": "day1",
+      "number": 1,
+      "date": "MM/DD（週）",
+      "title": "當日標題",
+      "timeline": [
+        {
+          "time": "HH:MM",
+          "place": "地點",
+          "desc": "主要活動",
+          "detail": "後勤細節（可選）",
+          "icon": "train",
+          "tag": "高鐵"
+        }
+      ],
+      "tips": ["旅遊重點"],
+      "photo": {
+        "src": "photos/day1.webp",
+        "alt": "照片說明",
+        "credit": "作者 / 授權"
+      }
+    }
+  ],
   "budget": {
     "partySize": 4,
     "categories": [],

@@ -2,14 +2,14 @@
   "meta": {
     "slug": "2026_日本青森仙台秋田_家族旅遊",
     "title": "2026 日本東北祭典 8日遊",
-    "subtitle": "家庭夏日祭典之旅 · 仙台 × 盛岡 × 青森 × 弘前 × 秋田",
+    "subtitle": "陸奧三大祭典 × 五能線秘境 × 海鮮溫泉",
     "badge": "2026年7–8月",
     "dateRange": "07/31 - 08/07",
     "ticketSummary": "東日本周遊券 + 仙台まるごとパス",
     "highlights": [
-      "東北三大夏日祭典氛圍（睡魔祭・竿燈祭・七夕祭）",
-      "白神號、秋田新幹線多段絕景鐵道體驗",
-      "角館武家屋敷與田澤湖東北小京都風光"
+      "三大夏日祭典：睡魔祭・竿燈祭・七夕祭氛圍，一次串連東北盛夏高潮",
+      "絕景鐵道體驗：白神號與秋田新幹線多段，把移動本身變成風景",
+      "東北小京都：角館武家屋敷與田澤湖，慢步みちのく的歷史街廓"
     ],
     "footerWish": "祝您2026年7-8月的東北祭典之旅順利！",
     "footerDate": "行程規劃 · 2026年7月31日 - 8月7日",
@@ -18,7 +18,40 @@
       "alt": "青森睡魔祭的燈籠山車",
       "credit": "Marie-Sophie Mejan / CC BY 4.0"
     },
-    "theme": "ocean"
+    "theme": "ocean",
+    "routeRegions": "宮城・岩手・青森・秋田",
+    "highlightCards": [
+      {
+        "icon": "festival",
+        "title": "三大夏日祭典",
+        "desc": "睡魔祭・竿燈祭・七夕祭氛圍，一次串連東北盛夏高潮"
+      },
+      {
+        "icon": "train",
+        "title": "絕景鐵道體驗",
+        "desc": "白神號與秋田新幹線多段，把移動本身變成風景"
+      },
+      {
+        "icon": "pin",
+        "title": "東北小京都",
+        "desc": "角館武家屋敷與田澤湖，慢步みちのく的歷史街廓"
+      },
+      {
+        "icon": "food",
+        "title": "海鮮與鄉土味",
+        "desc": "八戶炭烤、仙台牛タン、秋田稻庭與地酒"
+      },
+      {
+        "icon": "hotel",
+        "title": "溫泉與夜宿節奏",
+        "desc": "松島溫泉與城下町住宿，對應祭典與鐵道節奏"
+      },
+      {
+        "icon": "map",
+        "title": "四縣黃金動線",
+        "desc": "宮城・岩手・青森・秋田，八日一圈不走回頭路"
+      }
+    ]
   },
   "shopping": {
     "suggestions": [
@@ -172,7 +205,10 @@
       "title": "松島",
       "kicker": "宮城",
       "body": "日本三景之一，島嶼與松林交錯於灣內。伊達家信仰與古寺遺韻並陳，是這趟東北旅程裡最廣為流傳的風景碎片。",
-      "source": { "label": "日本三景松島－松島観光協会", "url": "https://www.matsushima-kanko.com/" },
+      "source": {
+        "label": "日本三景松島－松島観光協会",
+        "url": "https://www.matsushima-kanko.com/"
+      },
       "photo": {
         "src": "photos/day7.webp",
         "alt": "松島灣",
@@ -184,7 +220,10 @@
       "title": "秋田竿燈祭",
       "kicker": "秋田",
       "body": "夜空搖曳如黃金稻穗，萬點燈火承載五穀豐收的祈願。東北三大夏祭之一，把盛夏的熱與光，收成可帶走的記憶。",
-      "source": { "label": "秋田竿燈まつり（公式）", "url": "https://www.kantou.gr.jp/" },
+      "source": {
+        "label": "秋田竿燈まつり（公式）",
+        "url": "https://www.kantou.gr.jp/"
+      },
       "photo": {
         "src": "photos/story-kanto-1200.jpg",
         "alt": "秋田竿燈祭夜景",
@@ -196,7 +235,10 @@
       "title": "青森睡魔祭",
       "kicker": "青森",
       "body": "以武者繪巨燈巡行街巷的夏祭；最後一夜的海上運行與花火，把一整年的力氣推向最高潮。本趟封面所記，正是這道光。",
-      "source": { "label": "青森ねぶた祭（公式）", "url": "https://www.nebuta.jp/" },
+      "source": {
+        "label": "青森ねぶた祭（公式）",
+        "url": "https://www.nebuta.jp/"
+      },
       "photo": {
         "src": "photos/cover.webp",
         "alt": "青森睡魔祭的燈籠山車",
@@ -208,7 +250,10 @@
       "title": "角館武家屋敷",
       "kicker": "秋田・仙北",
       "body": "江戶初期城下町遺韻猶存，黒板塀與武家屋敷並稱「みちのくの小京都」。慢步石道，像翻開東北小城的一頁靜史。",
-      "source": { "label": "田沢湖・角館観光協会", "url": "https://tazawako-kakunodate.com/" },
+      "source": {
+        "label": "田沢湖・角館観光協会",
+        "url": "https://tazawako-kakunodate.com/"
+      },
       "photo": {
         "src": "photos/day6.webp",
         "alt": "角館武家屋敷通",
@@ -220,7 +265,10 @@
       "title": "仙台牛タン",
       "kicker": "宮城・仙台",
       "body": "昭和二十三年起自仙台的炭火牛舌文化；定食常配麥飯與尾湯，各店部位與調味各有堅持。啟程東北前，先收下這口在地味道。",
-      "source": { "label": "せんだい旅日和（仙台観光情報）", "url": "https://www.sentabi.jp/features/42" },
+      "source": {
+        "label": "せんだい旅日和（仙台観光情報）",
+        "url": "https://www.sentabi.jp/features/42"
+      },
       "photo": {
         "src": "photos/story-gyutan.jpg",
         "alt": "仙台牛タン定食",
@@ -293,7 +341,10 @@
       "places": "桃園→仙台",
       "hotel": "Vista 飯店 仙台",
       "transport": "BR118 · 10:05",
-      "transportClass": ""
+      "transportClass": "",
+      "summary": "飛抵仙台、領券入住，薄皮鯛魚燒開胃",
+      "hotelNote": "仙台站步行可達，初夜安頓與領券方便",
+      "routeLabel": "仙台"
     },
     {
       "day": 2,
@@ -301,7 +352,10 @@
       "places": "仙台→盛岡（小岩井農場）",
       "hotel": "盛岡新城市飯店",
       "transport": "Hayabusa 1 · 08:05",
-      "transportClass": ""
+      "transportClass": "",
+      "summary": "小岩井牧場親子時光，盛岡歷史散策",
+      "hotelNote": "盛岡站周邊，方便銜接牧場與市區",
+      "routeLabel": "盛岡"
     },
     {
       "day": 3,
@@ -309,7 +363,10 @@
       "places": "盛岡→新青森（廣田神社・A-FACTORY・Moya Hills）",
       "hotel": "盛岡大都會飯店 新翼",
       "transport": "Hayabusa 95 · 07:59／Hayate 98 · 21:47",
-      "transportClass": ""
+      "transportClass": "",
+      "summary": "新幹線往返青森：神社、市場與展望台",
+      "hotelNote": "盛岡大都會新翼，隔日再出發的中繼基地",
+      "routeLabel": "青森"
     },
     {
       "day": 4,
@@ -317,7 +374,10 @@
       "places": "盛岡→八戶→新青森→弘前",
       "hotel": "弘前超級飯店",
       "transport": "Hayabusa 95 · 07:59／Hayabusa 9 · 12:02／Super-Tsugaru 2 · 12:47",
-      "transportClass": ""
+      "transportClass": "",
+      "summary": "八戶海鮮炭烤，午後轉往弘前城下町",
+      "hotelNote": "弘前站近距，城下町散策後好休息",
+      "routeLabel": "弘前"
     },
     {
       "day": 5,
@@ -325,7 +385,10 @@
       "places": "弘前→秋田（大仙市）",
       "hotel": "Green Hotel Omagari",
       "transport": "Resort 白神號 2 · 08:48",
-      "transportClass": ""
+      "transportClass": "",
+      "summary": "白神號絕景鐵道，秋田文化與大仙夜宿",
+      "hotelNote": "大仙／大曲交通節點，銜接翌日角館",
+      "routeLabel": "秋田"
     },
     {
       "day": 6,
@@ -333,7 +396,10 @@
       "places": "大曲→角館→田澤湖→仙台→松島",
       "hotel": "日本三景松島溫泉 壯觀飯店",
       "transport": "Komachi 14 · 09:50／Komachi 24 · 14:09",
-      "transportClass": ""
+      "transportClass": "",
+      "summary": "角館武家屋敷、田澤湖，夜宿松島溫泉",
+      "hotelNote": "日本三景松島溫泉，灣景與湯浴收束長移動",
+      "routeLabel": "松島"
     },
     {
       "day": 7,
@@ -341,7 +407,10 @@
       "places": "松島（福浦島・五大堂・瑞巖寺）→仙台港Outlet",
       "hotel": "仙台華盛頓飯店",
       "transport": "仙石線／市區交通",
-      "transportClass": ""
+      "transportClass": "",
+      "summary": "松島三景巡禮，仙台港 Outlet 補貨",
+      "hotelNote": "仙台華盛頓飯店，返程前日市區便利",
+      "routeLabel": "松島"
     },
     {
       "day": 8,
@@ -349,7 +418,9 @@
       "places": "仙台→桃園",
       "hotel": "-",
       "transport": "BR117 · 16:05",
-      "transportClass": ""
+      "transportClass": "",
+      "summary": "朝市與瑞鳳殿告別，直飛返台",
+      "routeLabel": "返台"
     }
   ],
   "days": [
@@ -362,8 +433,10 @@
         {
           "time": "10:05",
           "place": "桃園國際機場",
-          "desc": "搭乘長榮航空 BR118 出發",
-          "tag": "✈️ 出發"
+          "desc": "長榮航空 BR118 出發",
+          "tag": "✈️ 出發",
+          "icon": "plane",
+          "detail": "桃園 TPE → 仙台 SDJ"
         },
         {
           "time": "14:35",
@@ -373,21 +446,27 @@
         {
           "time": "15:55",
           "place": "仙台車站",
-          "desc": "領取東日本周遊券（¥35,000）與仙台まるごとパス（¥2,930）",
+          "desc": "領取東日本周遊券與仙台まるごとパス",
           "tag": "🎫 領取票券",
-          "highlight": true
+          "highlight": true,
+          "icon": "ticket",
+          "detail": "周遊券 ¥35,000／まるごとパス ¥2,930"
         },
         {
           "time": "16:19",
           "place": "Vista 飯店 仙台",
           "desc": "辦理入住",
-          "tag": "🏨 住宿"
+          "tag": "🏨 住宿",
+          "icon": "hotel",
+          "detail": "仙台站步行可達"
         },
         {
           "time": "17:31",
           "place": "鯛吉 名掛丁本店",
-          "desc": "品嚐薄皮鯛魚燒，仙台在地排隊人氣小吃",
-          "tag": "🍥 美食"
+          "desc": "品嚐薄皮鯛魚燒",
+          "tag": "🍥 美食",
+          "icon": "food",
+          "detail": "仙台在地排隊人氣小吃"
         }
       ],
       "tips": [
@@ -410,50 +489,60 @@
         {
           "time": "08:05",
           "place": "仙台車站",
-          "desc": "搭乘東北新幹線 Hayabusa 1 號（2號車）前往盛岡",
-          "tag": "🚄 新幹線"
+          "desc": "東北新幹線 Hayabusa 1 號前往盛岡",
+          "tag": "🚄 新幹線",
+          "icon": "train",
+          "detail": "2號車・08:05→08:44"
         },
         {
           "time": "08:44",
           "place": "盛岡駅",
-          "desc": "抵達盛岡，轉搭10號站牌巴士前往小岩井農場（09:05→09:35）"
+          "desc": "轉巴士前往小岩井農場",
+          "detail": "10號站牌 09:05→09:35"
         },
         {
           "time": "09:40",
           "place": "小岩井農場",
-          "desc": "遼闊牧場風光，親子同遊餵牛羊、品嚐冰淇淋（返程巴士12:00→12:30）",
+          "desc": "遼闊牧場風光，親子同遊餵牛羊、品嚐冰淇淋",
           "tag": "🐄 親子景點",
-          "highlight": true
+          "highlight": true,
+          "icon": "pin",
+          "detail": "返程巴士 12:00→12:30"
         },
         {
           "time": "13:13",
           "place": "盛岡八幡宮",
           "desc": "參拜盛岡總鎮守，祈求旅途平安",
-          "tag": "⛩️ 景點"
+          "tag": "⛩️ 景點",
+          "icon": "shrine"
         },
         {
           "time": "14:21",
           "place": "朝開酒藏",
           "desc": "參訪在地酒藏，品嚐岩手清酒",
-          "tag": "🍶 酒藏體驗"
+          "tag": "🍶 酒藏體驗",
+          "icon": "food"
         },
         {
           "time": "15:39",
           "place": "岩手銀行赤煉瓦館",
           "desc": "明治時期紅磚建築，盛岡代表性歷史建築",
-          "tag": "🏛️ 歷史建築"
+          "tag": "🏛️ 歷史建築",
+          "icon": "landmark"
         },
         {
           "time": "16:33",
           "place": "盛岡新城市飯店",
           "desc": "辦理入住",
-          "tag": "🏨 住宿"
+          "tag": "🏨 住宿",
+          "icon": "hotel"
         },
         {
           "time": "17:35",
           "place": "Momodori Ekimae Shokudo",
           "desc": "在地食堂晚餐",
-          "tag": "🍽️ 美食"
+          "tag": "🍽️ 美食",
+          "icon": "food"
         }
       ],
       "tips": [
@@ -477,7 +566,8 @@
           "time": "07:59",
           "place": "盛岡駅",
           "desc": "搭乘東北新幹線 Hayabusa 95 號（2號車）前往新青森",
-          "tag": "🚄 新幹線"
+          "tag": "🚄 新幹線",
+          "icon": "train"
         },
         {
           "time": "09:02",
@@ -493,7 +583,8 @@
           "time": "09:36",
           "place": "廣田神社",
           "desc": "參拜在地信仰中心",
-          "tag": "⛩️ 景點"
+          "tag": "⛩️ 景點",
+          "icon": "shrine"
         },
         {
           "time": "10:19",
@@ -506,7 +597,8 @@
           "time": "11:28",
           "place": "A-FACTORY",
           "desc": "品嚐青森蘋果氣泡酒與伴手禮選購",
-          "tag": "🍎 購物"
+          "tag": "🍎 購物",
+          "icon": "food"
         },
         {
           "time": "13:31",
@@ -529,13 +621,15 @@
           "time": "21:47",
           "place": "新青森駅",
           "desc": "搭乘 Hayate 98 號（5號車）返回盛岡",
-          "tag": "🚄 新幹線"
+          "tag": "🚄 新幹線",
+          "icon": "train"
         },
         {
           "time": "22:48",
           "place": "盛岡大都會飯店 新翼",
           "desc": "抵達盛岡並辦理入住",
-          "tag": "🏨 住宿"
+          "tag": "🏨 住宿",
+          "icon": "hotel"
         }
       ],
       "tips": [
@@ -559,7 +653,8 @@
           "time": "07:59",
           "place": "盛岡駅",
           "desc": "搭乘 Hayabusa 95 號（2號車）前往八戶",
-          "tag": "🚄 新幹線"
+          "tag": "🚄 新幹線",
+          "icon": "train"
         },
         {
           "time": "08:34",
@@ -582,7 +677,8 @@
           "time": "12:02",
           "place": "八戶車站",
           "desc": "搭乘 Hayabusa 9 號（4號車）前往新青森",
-          "tag": "🚄 新幹線"
+          "tag": "🚄 新幹線",
+          "icon": "train"
         },
         {
           "time": "12:29",
@@ -593,7 +689,8 @@
           "time": "12:47",
           "place": "新青森駅",
           "desc": "搭乘 Super-Tsugaru 2 號（2號車）前往弘前",
-          "tag": "🚄 特急列車"
+          "tag": "🚄 特急列車",
+          "icon": "train"
         },
         {
           "time": "13:13",
@@ -604,7 +701,8 @@
           "time": "14:54",
           "place": "弘前超級飯店",
           "desc": "辦理入住、寄放行李",
-          "tag": "🏨 住宿"
+          "tag": "🏨 住宿",
+          "icon": "hotel"
         },
         {
           "time": "16:22",
@@ -642,7 +740,8 @@
           "place": "弘前車站",
           "desc": "搭乘 Resort 白神號 2 號（2號車），沿日本海岸絕景鐵道前往秋田",
           "tag": "🚃 絕景列車",
-          "highlight": true
+          "highlight": true,
+          "icon": "train"
         },
         {
           "time": "13:29",
@@ -665,7 +764,8 @@
           "time": "16:06",
           "place": "秋田長屋酒場",
           "desc": "在地居酒屋，享用秋田鄉土料理晚餐（預約17:45）",
-          "tag": "🍶 美食"
+          "tag": "🍶 美食",
+          "icon": "food"
         },
         {
           "time": "17:46",
@@ -676,7 +776,8 @@
           "time": "18:06",
           "place": "Green Hotel Omagari",
           "desc": "辦理入住",
-          "tag": "🏨 住宿"
+          "tag": "🏨 住宿",
+          "icon": "hotel"
         }
       ],
       "tips": [
@@ -711,7 +812,8 @@
           "time": "09:50",
           "place": "Ōmagari Station",
           "desc": "搭乘秋田新幹線 Komachi 14 號（16號車）前往角館",
-          "tag": "🚄 新幹線"
+          "tag": "🚄 新幹線",
+          "icon": "train"
         },
         {
           "time": "10:00",
@@ -723,7 +825,8 @@
           "place": "角館武家屋敷",
           "desc": "「東北小京都」武家屋敷街道，黑板牆與古老枝垂櫻並木",
           "tag": "🏘️ 必訪",
-          "highlight": true
+          "highlight": true,
+          "icon": "landmark"
         },
         {
           "time": "11:34",
@@ -746,7 +849,8 @@
           "time": "14:09",
           "place": "田澤湖車站",
           "desc": "搭乘 Komachi 24 號（14號車）前往仙台",
-          "tag": "🚄 新幹線"
+          "tag": "🚄 新幹線",
+          "icon": "train"
         },
         {
           "time": "15:29",
@@ -798,14 +902,16 @@
           "time": "10:43",
           "place": "五大堂",
           "desc": "松島代表性小島佛堂，透浮橋別具意境",
-          "tag": "⛩️ 景點"
+          "tag": "⛩️ 景點",
+          "icon": "shrine"
         },
         {
           "time": "11:11",
           "place": "瑞巖寺",
           "desc": "伊達政宗家族菩提寺，國寶級桃山建築",
           "tag": "🏛️ 必訪",
-          "highlight": true
+          "highlight": true,
+          "icon": "landmark"
         },
         {
           "time": "12:54",
@@ -822,7 +928,8 @@
           "time": "17:55",
           "place": "仙台華盛頓飯店",
           "desc": "辦理入住",
-          "tag": "🏨 住宿"
+          "tag": "🏨 住宿",
+          "icon": "hotel"
         }
       ],
       "tips": [
@@ -859,13 +966,15 @@
           "place": "瑞鳳殿",
           "desc": "伊達政宗靈廟，絢爛桃山風格建築",
           "tag": "🏛️ 必訪",
-          "highlight": true
+          "highlight": true,
+          "icon": "landmark"
         },
         {
           "time": "12:39",
           "place": "大崎八幡宮",
           "desc": "國寶級社殿建築，仙台總鎮守",
-          "tag": "⛩️ 景點"
+          "tag": "⛩️ 景點",
+          "icon": "shrine"
         },
         {
           "time": "14:15",
@@ -876,14 +985,16 @@
           "time": "16:05",
           "place": "仙台機場",
           "desc": "搭乘長榮航空 BR117 出發",
-          "tag": "✈️ 返程"
+          "tag": "✈️ 返程",
+          "icon": "plane"
         },
         {
           "time": "18:55",
           "place": "桃園國際機場",
           "desc": "抵達桃園，結束八天七夜的東北祭典之旅 🎆",
           "tag": "✈️ 返程",
-          "highlight": true
+          "highlight": true,
+          "icon": "plane"
         }
       ],
       "tips": [

@@ -16,9 +16,11 @@ function dayLinks(tripId, days) {
 function buildTripNavLinks(tripId, days) {
   const links = [
     { href: hubUrl(), label: '總覽' },
+    { href: `${tripUrl(tripId)}#highlights`, label: '亮點' },
     { href: `${tripUrl(tripId)}#tickets`, label: '票券' },
     { href: `${tripUrl(tripId)}#overview`, label: '行程' },
     { href: `${tripUrl(tripId)}#route-map`, label: '路線' },
+    { href: `${tripUrl(tripId)}#lodging`, label: '住宿' },
     ...dayLinks(tripId, days),
     { href: `${tripUrl(tripId)}#budget`, label: '預算' },
     { href: tripUrl(tripId, 'stories'), label: '風土' },
