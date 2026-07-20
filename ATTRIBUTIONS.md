@@ -42,6 +42,10 @@ CC BY / CC BY-SA 圖片依授權條款標示作者、來源與授權；CC BY-SA 
 | `day8.webp` | 瑞鳳殿 | 663highland | [CC BY 2.5](https://creativecommons.org/licenses/by/2.5/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Zuiho-den02s3200.jpg) |
 | `story-gyutan.jpg` | 仙台牛タン定食 | Captain76 | [Public domain](https://creativecommons.org/publicdomain/mark/1.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Gyutan_teishoku.JPG) |
 | `story-kanto-1200.jpg` | 秋田竿燈祭夜景 | 8-Forest | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Akita_Kanto_Festival_2015_at_night.JPG) |
+| `food-haginotsuki.webp` | 菓匠三全的仙台銘菓萩の月 | RuinDig/Yuki Uchida | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Hagi-No-Tsuki---2024-08-04_01.jpg) |
+| `food-kiritanpo.webp` | 秋田きりたんぽ鍋 | Chensiyuan | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Kiritanpo_nabe_z.JPG) |
+| `food-inaniwa-udon.webp` | 溫食稲庭うどん | Cal3135 | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:%E7%A8%B2%E5%BA%AD%E3%81%86%E3%81%A9%E3%82%93.jpg) |
+| `food-aomori-cidre.webp` | 青森弘前的富士蘋果（シードル原料） | あおもりくま | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Malus_domestica_Fuji_Apple_Hirosaki_Aomori_Japan_20161016b.jpg) |
 
 ## trips/2018_日本中部北陸_自助旅遊/photos/
 
