@@ -259,9 +259,9 @@
         "url": "https://www.igaitoatami.com/spot/%E4%BE%86%E5%AE%AE%E7%A5%9E%E7%A4%BE-2/"
       },
       "photo": {
-        "src": "photos/day1.webp",
-        "alt": "熱海サンビーチ的沙灘與海岸線",
-        "credit": "Izu navi / CC BY 2.0"
+        "src": "photos/story-kinomiya.webp",
+        "alt": "來宮神社拜殿",
+        "credit": "Batholith / Public domain"
       }
     }
   ],
@@ -276,9 +276,39 @@
         "url": "https://www.atami-purin.com/"
       },
       "photo": {
-        "src": "photos/cover.webp",
-        "alt": "熱海サンビーチ與市街全景",
-        "credit": "m-louis .® / CC BY-SA 2.0"
+        "src": "photos/food-atami-purin.webp",
+        "alt": "日式焦糖布丁",
+        "credit": "Clairenguyen23 / CC BY-SA 4.0"
+      }
+    },
+    {
+      "theme": "food",
+      "title": "熱海青葉舍",
+      "kicker": "靜岡・熱海・抹茶",
+      "body": "京都「八十八良葉舎」在渚町開的抹茶專門店。用靜岡茶葉調成的「富士抹茶」現點現打，鹽抹茶拿鐵把抹茶當海、鹽奶油當雲。海風裡喝一杯，熱海甜點線的綠色段落。",
+      "source": {
+        "label": "熱海青葉舎（公式）",
+        "url": "https://atamiseiyousha.com/"
+      },
+      "photo": {
+        "src": "photos/food-aobasha.webp",
+        "alt": "熱海青葉舍抹茶拿鐵與富士布丁",
+        "credit": "宇宙碎片拍攝"
+      }
+    },
+    {
+      "theme": "sake",
+      "title": "武甲酒造",
+      "kicker": "埼玉・秩父・日本酒",
+      "body": "寶曆三年創業的秩父老舖，以「平成の名水百選」武甲山伏流水釀造「武甲正宗」。柳田總本店為國登錄有形文化財，站前短短一拐就能帶回一瓶秩父地酒。",
+      "source": {
+        "label": "武甲酒造（公式）",
+        "url": "https://www.bukou.co.jp/"
+      },
+      "photo": {
+        "src": "photos/food-bukou.webp",
+        "alt": "武甲酒造柳田總本店外觀",
+        "credit": "宇宙碎片拍攝"
       }
     }
   ],
