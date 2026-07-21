@@ -273,6 +273,21 @@
         "alt": "角館武家屋敷通",
         "credit": "掬茶 / CC BY-SA 4.0"
       }
+    },
+    {
+      "theme": "place",
+      "title": "田澤湖",
+      "kicker": "秋田・仙北",
+      "body": "日本最深的湖泊，火山口積水成湛藍一鏡；湖畔有辰子傳說與御座石神社。新幹線與內陸線交會的停靠點，把秋田的靜與深，收進這趟東北的視野。",
+      "source": {
+        "label": "田沢湖・角館観光協会",
+        "url": "https://tazawako-kakunodate.com/"
+      },
+      "photo": {
+        "src": "photos/story-tazawako.webp",
+        "alt": "田澤湖湖面與周邊山景",
+        "credit": "掬茶 / CC BY-SA 4.0"
+      }
     }
   ],
   "foods": [
@@ -293,32 +308,32 @@
     },
     {
       "theme": "food",
-      "title": "萩の月",
-      "kicker": "宮城・仙台",
-      "body": "菓匠三全的仙台銘菓：柔軟卡斯提拉包住特製卡士達，靈感來自宮城野開滿萩花的夜空與一輪明月。常溫好帶，是這趟東北的甜點行李。",
+      "title": "八食中心",
+      "kicker": "青森・八戶",
+      "body": "八戶港岸邊的大型室內市場，約六十家攤位賣當日鮮魚、蔬果與鄉土點心；可現場點海鮮丼，或把選好的魚貝帶去七輪村炭烤。東北最大級的海鮮主題公園，把太平洋的鮮，收進胃袋。",
       "source": {
-        "label": "菓匠三全（萩の月）",
-        "url": "https://www.sanzen.co.jp/product/haginotsuki/"
+        "label": "八食センター（公式）",
+        "url": "https://www.849net.com/"
       },
       "photo": {
-        "src": "photos/food-haginotsuki.webp",
-        "alt": "菓匠三全的仙台銘菓萩の月",
-        "credit": "RuinDig/Yuki Uchida / CC BY 4.0"
+        "src": "photos/food-hasshoku.webp",
+        "alt": "八食中心市場內的海鮮攤位",
+        "credit": "Amazing AOMORI（青森県）"
       }
     },
     {
       "theme": "food",
-      "title": "きりたんぽ鍋",
-      "kicker": "秋田・大館鹿角",
-      "body": "把飯糰壓在杉棒上炭烤、切段入湯，與比内地雞、芹與牛蒡同鍋。山裡人把剩餘飯變成圍爐的溫度，至今仍是秋田北部的鄉土味。",
+      "title": "盛岡三大麵",
+      "kicker": "岩手・盛岡",
+      "body": "冷麵、蕎麥麵（わんこそば）、炸醬麵（じゃじゃ麺）——韓系涼麵的彈牙、一口蕎麥的無限續碗、肉味噌拌麵的家常味。盛岡把日韓中三條麵線收成一口城下町的日常，走在站前就能挑一碗開吃。",
       "source": {
-        "label": "農林水産省・うちの郷土料理（きりたんぽ鍋）",
-        "url": "https://www.maff.go.jp/j/keikaku/syokubunka/k_ryouri/search_menu/menu/29_6_akita.html"
+        "label": "盛岡三大麺（Wikipedia）",
+        "url": "https://ja.wikipedia.org/wiki/%E7%9B%9B%E5%B2%A1%E4%B8%89%E5%A4%A7%E9%BA%BA"
       },
       "photo": {
-        "src": "photos/food-kiritanpo.webp",
-        "alt": "秋田きりたんぽ鍋",
-        "credit": "Chensiyuan / CC BY-SA 4.0"
+        "src": "photos/food-morioka-noodles.webp",
+        "alt": "盛岡冷麺（盛岡三大麵之一）",
+        "credit": "Koltonsmith / CC BY-SA 4.0"
       }
     },
     {
