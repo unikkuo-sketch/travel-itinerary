@@ -15,6 +15,20 @@
       "coverCredit": "Gilles Desjardins / CC BY-SA 4.0"
     },
     {
+      "id": "2025_日本四國_自駕觀光列車",
+      "title": "2025 四國自駕・觀光列車 chill",
+      "subtitle": "高松 × 小豆島 × 松山 × 宇和島 × 高知 × 祖谷",
+      "dateRange": "2025/05/12 - 05/19",
+      "status": "past",
+      "emoji": "🌊",
+      "coords": [33.75, 133.55],
+      "days": 8,
+      "location": "香川・愛媛・高知",
+      "cover": "photos/cover.webp",
+      "coverAlt": "栗林公園池畔松林與日本庭園景觀",
+      "coverCredit": "KimonBerlin / CC BY-SA 2.0"
+    },
+    {
       "id": "2026_日本熱海長瀞_家族旅遊",
       "title": "2026關東賞櫻6日遊",
       "subtitle": "熱海 × 伊東 × 長瀞 × 秩父",
