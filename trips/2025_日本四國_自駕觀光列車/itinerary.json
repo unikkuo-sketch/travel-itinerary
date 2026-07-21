@@ -5,7 +5,7 @@
     "subtitle": "慢島節奏 · 高松 × 小豆島 × 松山 × 宇和島 × 高知 × 祖谷",
     "badge": "2025年5月",
     "dateRange": "05/12 - 05/19",
-    "ticketSummary": "機票 + 租車自駕 + 小豆島渡輪 + 景點／遊船門票",
+    "ticketSummary": "租車 ¥54,464 + 小豆島／加油／ETC + 景點門票 + 台幣住宿／列車",
     "highlights": [
       "自駕串島：高松起步，愛媛沿岸到高知山間，把移動變成風景",
       "小豆島一日：寒霞溪纜車與天使之路，瀬戸内的藍色午后",
@@ -329,43 +329,43 @@
   "tickets": [
     {
       "variant": "primary",
-      "title": "來回機票",
-      "badge": "航空",
-      "status": "purchased",
-      "price": "—",
-      "priceSuffix": "",
-      "meta": "桃園 ⇄ 高松機場",
-      "features": ["抵達高松機場後取車", "返程同機場出發"]
-    },
-    {
-      "variant": "secondary",
       "title": "租車自駕",
       "badge": "交通",
       "status": "purchased",
-      "price": "—",
+      "price": "¥54,464",
       "priceSuffix": "",
       "meta": "四國島內主要移動方式",
-      "features": ["金比羅→松山→宇和島→高知→祖谷", "ETC／ナビ建議事先設定"]
+      "features": ["金比羅→松山→宇和島→高知→祖谷", "另計加油 ¥8,110、ETC ¥4,870"]
     },
     {
       "variant": "secondary",
-      "title": "小豆島渡輪",
+      "title": "小豆島渡輪等",
       "badge": "船票",
       "status": "purchased",
-      "price": "—",
+      "price": "¥10,890",
       "priceSuffix": "",
-      "meta": "高松港 ⇄ 土庄港",
-      "features": ["Day 2 日帰り", "留意班次與風浪"]
+      "meta": "高松港 ⇄ 土庄港（帳務：小豆島）",
+      "features": ["Day 2 日帰り"]
     },
     {
       "variant": "secondary",
-      "title": "寒霞溪纜車・景點門票",
+      "title": "觀光列車",
+      "badge": "鐵道",
+      "status": "purchased",
+      "price": "NT$5,980",
+      "priceSuffix": "",
+      "meta": "高知→窪川／岩本寺",
+      "features": ["Day 6 慢車節奏"]
+    },
+    {
+      "variant": "secondary",
+      "title": "景點門票",
       "badge": "門票",
       "status": "purchased",
-      "price": "—",
+      "price": "¥15,480",
       "priceSuffix": "",
-      "meta": "現場或官網購票",
-      "features": ["寒霞溪纜車", "龍河洞／大步危遊船等"]
+      "meta": "纜車・鐘乳洞・遊船",
+      "features": ["寒霞溪纜車 ¥4,680", "龍河洞 ¥7,800", "大步危觀光船 ¥3,000"]
     }
   ],
   "overview": [
@@ -498,8 +498,8 @@
         },
         {
           "time": "17:28",
-          "place": "焼肉ホルモンしんみょう精肉店",
-          "desc": "燒肉／ホルモン晚餐",
+          "place": "焼肉ホルモンしんみょう精肉店／田中屋食堂",
+          "desc": "燒肉／食堂晚餐（帳務：田中屋食堂）",
           "icon": "food",
           "tag": "🥩 晚餐"
         },
@@ -581,9 +581,22 @@
         {
           "time": "17:24",
           "place": "永旺夢樂城高松",
-          "desc": "大型商場補給、晚餐或伴手",
+          "desc": "大型商場補給",
           "icon": "shopping",
           "tag": "🛍️ 購物"
+        },
+        {
+          "place": "La Clarte neutral cafe FINE",
+          "desc": "咖啡短憩",
+          "icon": "food",
+          "tag": "☕ Cafe"
+        },
+        {
+          "place": "Yotteya 骨付鶏居酒屋 よって屋",
+          "desc": "高松名物骨付鶏晚餐",
+          "icon": "food",
+          "tag": "🍗 晚餐",
+          "highlight": true
         }
       ],
       "tips": [
@@ -629,7 +642,7 @@
         {
           "time": "14:24",
           "place": "Blue Star",
-          "desc": "途中午餐／休息",
+          "desc": "途中午餐（帳務 ¥2,700）",
           "icon": "food",
           "tag": "🍽️ 午餐"
         },
@@ -696,14 +709,14 @@
         },
         {
           "time": "11:59",
-          "place": "大洲らばた あぶらや（Ozurobata Aburaya）",
-          "desc": "大洲河邊烤肉／居酒屋風格午餐",
+          "place": "大洲爐端 油屋",
+          "desc": "大洲河邊爐端燒午餐",
           "icon": "food",
           "tag": "🍽️ 午餐"
         },
         {
           "time": "13:34",
-          "place": "日出水産 きさや広場店",
+          "place": "秀長水產 きさや広場店",
           "desc": "宇和島海鮮短憩／點心",
           "icon": "food",
           "tag": "🍣 海鮮"
@@ -717,9 +730,15 @@
           "highlight": true
         },
         {
+          "place": "居酒屋かど家",
+          "desc": "宇和島／高知方向晚餐",
+          "icon": "food",
+          "tag": "🍽️ 晚餐"
+        },
+        {
           "time": "18:10",
           "place": "Hotel Gakuya Sakurakan",
-          "desc": "ホテル楽屋 桜館辦理入住（高知）",
+          "desc": "ホテル楽屋 桜館辦理入住（高知；D4–6 住宿 ¥37,000）",
           "icon": "hotel",
           "tag": "🏨 住宿",
           "detail": "自駕約 2.5 小時緩衝已含於行程"
@@ -752,16 +771,22 @@
         {
           "time": "10:09",
           "place": "笑淵",
-          "desc": "行程據點停留（午餐前短訪）",
-          "tag": "休憩"
+          "desc": "超市午餐補給",
+          "icon": "food",
+          "tag": "🛒 午餐"
         },
         {
           "time": "12:13",
           "place": "とさのさと AGRI COLLETTO",
-          "desc": "高知農業體驗型園區／午餐與在地物產",
-          "icon": "food",
+          "desc": "高知農業體驗型園區／在地物產",
           "tag": "🌾 農園",
           "highlight": true
+        },
+        {
+          "place": "Cafe de LA PAIX",
+          "desc": "咖啡短憩",
+          "icon": "food",
+          "tag": "☕ Cafe"
         },
         {
           "time": "13:47",
@@ -769,15 +794,21 @@
           "desc": "鐘乳石洞探訪，高知代表性自然景點",
           "tag": "🕳️ 必訪",
           "highlight": true,
-          "detail": "停留約 2 小時"
+          "detail": "停留約 2 小時・門票約 ¥7,800"
         },
         {
           "time": "16:31",
           "place": "弘人市場",
-          "desc": "高知夜間食堂集合體，鰹魚たたき與地酒",
+          "desc": "高知夜間食堂集合體；本趟於鳥ボーン用餐",
           "icon": "food",
           "tag": "🍣 晚餐",
           "highlight": true
+        },
+        {
+          "place": "鳥ボーン",
+          "desc": "雞肉料理晚餐",
+          "icon": "food",
+          "tag": "🍽️ 晚餐"
         }
       ],
       "tips": [
@@ -830,6 +861,19 @@
           "tag": "🏯 必訪",
           "highlight": true,
           "detail": "停留約 2 小時"
+        },
+        {
+          "place": "麥當勞",
+          "desc": "簡易補給",
+          "icon": "food",
+          "tag": "餐"
+        },
+        {
+          "place": "土佐ノ國 二十四万石",
+          "desc": "高知晚餐",
+          "icon": "food",
+          "tag": "🍽️ 晚餐",
+          "highlight": true
         }
       ],
       "tips": [
@@ -875,10 +919,16 @@
         {
           "time": "14:48",
           "place": "youme Town 高松",
-          "desc": "返回高松後商場休息、晚餐與最後補給",
+          "desc": "返回高松後商場休息與最後補給",
           "icon": "shopping",
           "tag": "🛍️ 購物",
           "detail": "停留約 3 小時"
+        },
+        {
+          "place": "Kitchen MAMA キッチン MAMA",
+          "desc": "高松晚餐",
+          "icon": "food",
+          "tag": "🍽️ 晚餐"
         },
         {
           "time": "18:04",
@@ -912,6 +962,12 @@
           "icon": "plane",
           "tag": "✈️ 返程",
           "highlight": true
+        },
+        {
+          "place": "HOLIDAY GOOD MORNING",
+          "desc": "出發前早餐",
+          "icon": "food",
+          "tag": "朝食"
         }
       ],
       "tips": [
@@ -926,13 +982,148 @@
     }
   ],
   "budget": {
-    "partySize": 1,
-    "categories": [],
+    "partySize": 2,
+    "categories": [
+      {
+        "icon": "🏨",
+        "title": "住宿（日圓）",
+        "items": [
+          {
+            "label": "Hotel Gakuya Sakurakan（D4–6）",
+            "amount": "¥37,000"
+          }
+        ],
+        "subtotal": "¥37,000"
+      },
+      {
+        "icon": "💳",
+        "title": "台幣支付（住宿／列車）",
+        "items": [
+          {
+            "label": "Hostel JAQ takamatsu（D1–2）",
+            "amount": "NT$3,507"
+          },
+          {
+            "label": "松山巢酒店（D3）",
+            "amount": "NT$2,483"
+          },
+          {
+            "label": "觀光列車（高知→窪川／岩本寺）",
+            "amount": "NT$5,980"
+          },
+          {
+            "label": "HOTEL LiVEMAX 高松駅前（D7）",
+            "amount": "NT$2,164"
+          }
+        ],
+        "subtotal": "NT$14,134"
+      },
+      {
+        "icon": "🚗",
+        "title": "交通（租車・渡輪・油資・ETC）",
+        "items": [
+          {
+            "label": "租車",
+            "amount": "¥54,464"
+          },
+          {
+            "label": "小豆島（渡輪等）",
+            "amount": "¥10,890"
+          },
+          {
+            "label": "加油（D5＋D8）",
+            "amount": "¥8,110"
+          },
+          {
+            "label": "ETC（含丸亀510／回高松950）",
+            "amount": "¥4,870"
+          }
+        ],
+        "subtotal": "¥78,334"
+      },
+      {
+        "icon": "🅿️",
+        "title": "停車費",
+        "items": [
+          {
+            "label": "高松／小豆島／金比羅／道後／松山巢",
+            "amount": "¥3,800"
+          },
+          {
+            "label": "宇和島城／高知住宿（D5–6）／弘人市場",
+            "amount": "¥2,600"
+          },
+          {
+            "label": "祖谷／LiVEMAX／D8住宿停車",
+            "amount": "¥1,900"
+          }
+        ],
+        "subtotal": "¥8,300"
+      },
+      {
+        "icon": "🎫",
+        "title": "門票・纜車・遊船",
+        "items": [
+          {
+            "label": "寒霞溪纜車",
+            "amount": "¥4,680"
+          },
+          {
+            "label": "龍河洞",
+            "amount": "¥7,800"
+          },
+          {
+            "label": "大步危觀光船",
+            "amount": "¥3,000"
+          }
+        ],
+        "subtotal": "¥15,480"
+      },
+      {
+        "icon": "🍽️",
+        "title": "餐飲・超市",
+        "items": [
+          {
+            "label": "D1 田中屋食堂／超市／和果子",
+            "amount": "¥8,719"
+          },
+          {
+            "label": "D2 La Clarte／骨付鶏 よって屋",
+            "amount": "¥8,260"
+          },
+          {
+            "label": "D3 Blue Star／富久重",
+            "amount": "¥10,180"
+          },
+          {
+            "label": "D4 大洲爐端油屋／秀長水產／かど家",
+            "amount": "¥7,550"
+          },
+          {
+            "label": "D5 Cafe de LA PAIX／鳥ボーン／超市午餐",
+            "amount": "¥7,954"
+          },
+          {
+            "label": "D6 麥當勞／土佐ノ國 二十四万石",
+            "amount": "¥5,250"
+          },
+          {
+            "label": "D7 車站便當／Kitchen MAMA",
+            "amount": "¥6,950"
+          },
+          {
+            "label": "D8 HOLIDAY GOOD MORNING",
+            "amount": "¥2,200"
+          }
+        ],
+        "subtotal": "¥57,063"
+      }
+    ],
     "total": {
-      "amount": "—",
-      "twd": "金額待補",
-      "family": "—",
-      "familyTwd": "—"
+      "amount": "約 ¥98,089",
+      "twd": "＋約 NT$7,067 /人",
+      "family": "¥196,177",
+      "familyTwd": "NT$14,134"
     }
   },
   "map": {
