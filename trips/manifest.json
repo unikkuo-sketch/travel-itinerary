@@ -1,6 +1,20 @@
 {
   "trips": [
     {
+      "id": "2023_日本北海道_自由行",
+      "title": "2023 北海道 8日自由行",
+      "subtitle": "登別 × 札幌 × 小樽 × 富良野 × 美瑛 × 定山溪",
+      "dateRange": "2023/08/27 - 09/03",
+      "status": "past",
+      "emoji": "🦌",
+      "coords": [43.06, 141.35],
+      "days": 8,
+      "location": "北海道",
+      "cover": "photos/cover.webp",
+      "coverAlt": "中富良野日之出公園薰衣草花田",
+      "coverCredit": "Totti / CC BY-SA 4.0"
+    },
+    {
       "id": "2018_日本中部北陸_自助旅遊",
       "title": "2018 中部北陸 7日自助",
       "subtitle": "名古屋 × 下呂 × 高山 × 白川鄉 × 金澤 × 富山",
