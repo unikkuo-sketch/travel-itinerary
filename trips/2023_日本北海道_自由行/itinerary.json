@@ -1,0 +1,1241 @@
+{
+  "meta": {
+    "slug": "2023_日本北海道_自由行",
+    "title": "2023 北海道 8日自由行",
+    "subtitle": "自由行實錄 · 登別 × 札幌 × 小樽 × 富良野 × 美瑛 × 定山溪",
+    "badge": "2023年8–9月",
+    "dateRange": "08/27 - 09/03",
+    "ticketSummary": "星宇來回 + 札幌登別4日周遊券 + 札幌富良野4日周遊券",
+    "highlights": [
+      "溫泉開場：登別瀧乃家一泊二食，再轉札幌市區巡禮",
+      "小樽午後到天狗山夜景，北廣島 Outlet 與開陽亭螃蟹收尾",
+      "富良野・美瑛單車與定山溪溫泉，把道央風景一次走完"
+    ],
+    "footerDate": "行程實錄 · 2023年8月27日 - 9月3日",
+    "cover": {
+      "src": "photos/cover.webp",
+      "alt": "中富良野日之出公園薰衣草花田",
+      "credit": "Totti / CC BY-SA 4.0"
+    },
+    "theme": "ocean",
+    "routeRegions": "北海道・登別・札幌・小樽・旭川・富良野・美瑛・定山溪",
+    "highlightCards": [
+      {
+        "icon": "hotel",
+        "title": "登別與定山溪",
+        "desc": "瀧乃家開場、定山溪豪景收尾，溫泉一泊把旅途節奏放慢"
+      },
+      {
+        "icon": "train",
+        "title": "周遊券串道央",
+        "desc": "札幌登別與札幌富良野周遊券，把登別、小樽、富良野、美瑛連成一氣"
+      },
+      {
+        "icon": "sun",
+        "title": "富良野・美瑛單車",
+        "desc": "起司工廠、葡萄酒工房與丘陵車道，把風景騎進午後"
+      },
+      {
+        "icon": "food",
+        "title": "蟹・湯咖哩・成吉思汗",
+        "desc": "開陽亭螃蟹、札幌湯咖哩與旭川烤羊肉，道產餐桌一次到位"
+      }
+    ]
+  },
+  "shopping": {
+    "suggestions": [],
+    "recommendations": [
+      {
+        "title": "Day 2–3: 狸小路・小樽",
+        "desc": "藥妝、甜點與服飾",
+        "items": [
+          {
+            "name": "MEGA 唐吉訶德（狸小路本店）藥妝／日用品",
+            "price": "依品牌",
+            "priceNote": "實際以店面為準・本趟曾於狸小路採購",
+            "url": "https://www.donki.com/"
+          },
+          {
+            "name": "LeTAO 起司蛋糕伴手",
+            "price": "約 ¥1,000–",
+            "priceNote": "含稅參考價・小樽本店／機場亦有",
+            "url": "https://www.letao.jp/"
+          },
+          {
+            "name": "UNIQLO 服飾",
+            "price": "依商品",
+            "priceNote": "本趟小樽店曾購西裝約 ¥8,812"
+          }
+        ]
+      },
+      {
+        "title": "Day 4: 北廣島 Outlet・札幌站前",
+        "desc": "Outlet 與家電",
+        "items": [
+          {
+            "name": "三井 Outlet Park 北廣島鞋款／服飾",
+            "price": "依品牌",
+            "priceNote": "本趟曾購鞋子約 ¥6,299",
+            "url": "https://mitsui-shopping-park.com/mop/kitahiroshima/"
+          },
+          {
+            "name": "Yodobashi 家電（電動牙刷等）",
+            "price": "依機種",
+            "priceNote": "本趟曾購電動牙刷約 ¥15,000、替換刷頭約 ¥2,712",
+            "url": "https://www.yodobashi.com/"
+          }
+        ]
+      },
+      {
+        "title": "Day 5–7: 富良野・旭川・札幌",
+        "desc": "起司、葡萄酒與伴手禮",
+        "items": [
+          {
+            "name": "富良野起司工廠乳製品／伴手",
+            "price": "約 ¥500–",
+            "priceNote": "含稅參考價・實際以店面為準",
+            "url": "https://www.furano-cheese.jp/"
+          },
+          {
+            "name": "富良野葡萄酒工房葡萄酒",
+            "price": "約 ¥1,000–",
+            "priceNote": "含稅參考價・可試飲參觀",
+            "url": "https://www.furanowine.jp/"
+          },
+          {
+            "name": "AEON／札幌站伴手禮",
+            "price": "約 ¥1,000–",
+            "priceNote": "本趟旭川 AEON 與札幌站曾採購伴手"
+          }
+        ]
+      }
+    ]
+  },
+  "events": [
+    {
+      "region": "道央・夏末",
+      "items": [
+        "8 月底至 9 月初富良野薰衣草盛期已過，花田風景轉為綠意與丘陵色塊",
+        "登別・定山溪溫泉宿請留意入住／退房與溫泉稅"
+      ]
+    },
+    {
+      "region": "札幌・小樽",
+      "items": [
+        "天狗山纜車與山頂遊具營業至傍晚前，夜景請預留移動時間",
+        "北廣島 Outlet 回程尖峰可能塞車，晚餐訂位請預留緩衝"
+      ]
+    }
+  ],
+  "weather": {
+    "temps": {
+      "high": "22°C - 27°C",
+      "low": "14°C - 18°C"
+    },
+    "note": "夏末北海道日間舒適、早晚偏涼；富良野・美瑛丘陵風大，定山溪夜間更涼。",
+    "tips": [
+      "洋蔥式穿法：短袖＋薄外套，溫泉區再加長袖",
+      "單車日備防曬、手套與水壺",
+      "雨具輕便即可，路面潮濕時減速騎行"
+    ]
+  },
+  "stories": [
+    {
+      "theme": "place",
+      "title": "登別地獄谷",
+      "kicker": "登別・溫泉鄉",
+      "body": "火山活動留下的硫氣谷地，是登別溫泉最直觀的地熱風景。本趟傍晚入住瀧乃家玉之湯，把地獄谷的熱氣換成溫泉宿的一泊二食。",
+      "source": {
+        "label": "登別観光協会",
+        "url": "https://noboribetsu-spa.jp/"
+      },
+      "photo": {
+        "src": "photos/day1.webp",
+        "alt": "登別地獄谷",
+        "credit": "Calistemon / CC BY-SA 4.0"
+      }
+    },
+    {
+      "theme": "place",
+      "title": "北海道大學",
+      "kicker": "札幌・北區",
+      "body": "從札幌農學校走來的校園，銀杏大道與中央草坪是夏季散步首選。本趟於北十二條駅進出，搭配中餐與下午茶，把抵達日換成大學城節奏。",
+      "source": {
+        "label": "北海道大学",
+        "url": "https://www.hokudai.ac.jp/"
+      },
+      "photo": {
+        "src": "photos/story-hokudai.webp",
+        "alt": "北海道大學札幌農學校演武場（時計台）",
+        "credit": "十字軍ちゃん / CC0"
+      }
+    },
+    {
+      "theme": "history",
+      "title": "北海道神宮",
+      "kicker": "札幌・円山",
+      "body": "開拓使時代創建的神社，鎮守北海道開拓之神。從円山公園駅步行進入參道，樹林與鳥居把市區噪音隔在外頭。",
+      "source": {
+        "label": "北海道神宮（公式）",
+        "url": "https://www.hokkaidojingu.or.jp/"
+      },
+      "photo": {
+        "src": "photos/day2.webp",
+        "alt": "北海道神宮境內",
+        "credit": "Immanuelle / CC BY 4.0"
+      }
+    },
+    {
+      "theme": "place",
+      "title": "小樽運河與天狗山",
+      "kicker": "小樽",
+      "body": "石造倉庫與運河燈影是小樽的名片；午後轉往天狗山，纜車上看石狩灣夜景。本趟以中央巴士套票串起纜車與巴士，把海港與山脊收在同一天。",
+      "source": {
+        "label": "小樽市総合博物館・観光情報",
+        "url": "https://otaru.gr.jp/"
+      },
+      "photo": {
+        "src": "photos/story-tenguyama.webp",
+        "alt": "小樽天狗山展望",
+        "credit": "皓月旗 / CC BY-SA 4.0"
+      }
+    },
+    {
+      "theme": "place",
+      "title": "富良野與美瑛丘陵",
+      "kicker": "上川・富良野・美瑛",
+      "body": "花田、起司工廠與葡萄酒工房串起富良野午後；美瑛則以單車爬坡看丘陵色塊與田園線條。夏末花季已過，風景改成綠意與風的層次。",
+      "source": {
+        "label": "富良野・美瑛広域観光推進協議会",
+        "url": "https://www.furanobieijp/"
+      },
+      "photo": {
+        "src": "photos/day6.webp",
+        "alt": "美瑛白金青池",
+        "credit": "AndyLeungHK / CC0"
+      }
+    },
+    {
+      "theme": "culture",
+      "title": "定山溪溫泉",
+      "kicker": "札幌・南區",
+      "body": "藏在豐平川上游的溫泉鄉，是札幌人的後花園。本趟入住定山溪豪景飯店本館，以懷石晚餐與自助早餐收束道央八日。",
+      "source": {
+        "label": "定山渓観光協会",
+        "url": "https://jozankei.jp/"
+      },
+      "photo": {
+        "src": "photos/day7.webp",
+        "alt": "定山溪大橋",
+        "credit": "t-konno / CC BY-SA 3.0"
+      }
+    }
+  ],
+  "foods": [
+    {
+      "theme": "food",
+      "title": "開陽亭螃蟹料理",
+      "kicker": "札幌・蟹宴",
+      "body": "北海道蟹料理的代表店之一。本趟於北廣島 Outlet 返札後用餐，實際結帳約 ¥20,782，是這趟最奢侈的一頓海鮮主菜。",
+      "source": {
+        "label": "開陽亭（公式）",
+        "url": "https://www.kaiyoutei.co.jp/"
+      },
+      "photo": {
+        "src": "photos/food-kani.webp",
+        "alt": "北海道蟹飯丼",
+        "credit": "woinary / CC BY-SA 2.0"
+      }
+    },
+    {
+      "theme": "food",
+      "title": "LeTAO 起司蛋糕",
+      "kicker": "小樽・甜點",
+      "body": "小樽本店的雙層起司蛋糕是經典伴手也是現場下午茶。本趟於運河區午後點餐，甜點節奏剛好銜接天狗山夜景。",
+      "source": {
+        "label": "LeTAO（公式）",
+        "url": "https://www.letao.jp/"
+      },
+      "photo": {
+        "src": "photos/food-letao.webp",
+        "alt": "LeTAO 小樽本店",
+        "credit": "663highland / CC BY-SA 4.0"
+      }
+    },
+    {
+      "theme": "food",
+      "title": "成吉思汗烤羊肉",
+      "kicker": "旭川・燒肉",
+      "body": "北海道代表性的羊肉烤肉，鐵鍋與羊脂香氣是道產夜的標配。本趟原訂大黑屋，現場人潮改往ひつじ家，結帳約 ¥1,995。",
+      "source": {
+        "label": "旭川観光",
+        "url": "https://www.asahikawa-kankou.or.jp/"
+      },
+      "photo": {
+        "src": "photos/food-jingisukan.webp",
+        "alt": "成吉思汗烤羊肉",
+        "credit": "Raita Futo / CC BY 2.0"
+      }
+    },
+    {
+      "theme": "food",
+      "title": "湯咖哩",
+      "kicker": "札幌・在地味",
+      "body": "蔬菜高湯與香料並存的札幌靈魂料理。回程日原訂奥芝商店，後改於機場用餐，把最後一碗湯咖哩留給離境前。",
+      "source": {
+        "label": "奥芝商店",
+        "url": "https://okushiba.jp/"
+      },
+      "photo": {
+        "src": "photos/food-soup-curry.webp",
+        "alt": "札幌湯咖哩",
+        "credit": "Koichi Oda / CC BY-SA 2.0"
+      }
+    },
+    {
+      "theme": "food",
+      "title": "富良野起司工廠",
+      "kicker": "富良野・乳製品",
+      "body": "披薩、冰淇淋與起司伴手是單車日的補給站。本趟租電動車後在此午餐，再轉葡萄酒工房與農夫市集。",
+      "source": {
+        "label": "富良野チーズ工房",
+        "url": "https://www.furano-cheese.jp/"
+      },
+      "photo": {
+        "src": "photos/food-furano-cheese.webp",
+        "alt": "富良野起司工廠起司",
+        "credit": "Adam Jones / CC BY-SA 2.0"
+      }
+    },
+    {
+      "theme": "sake",
+      "title": "富良野葡萄酒工房",
+      "kicker": "富良野・葡萄酒",
+      "body": "以在地葡萄釀造的富良野葡萄酒，工房可參觀與試飲。單車午後轉進這裡，把丘陵風景換成杯中的果香。",
+      "source": {
+        "label": "富良野市ぶどう果樹研究所",
+        "url": "https://www.furanowine.jp/"
+      },
+      "photo": {
+        "src": "photos/story-furano-wine.webp",
+        "alt": "富良野葡萄酒工房",
+        "credit": "Douglas Perkins / CC BY 4.0"
+      }
+    }
+  ],
+  "tickets": [
+    {
+      "variant": "primary",
+      "title": "星宇航空來回",
+      "badge": "JX850 / JX851",
+      "status": "purchased",
+      "price": "NT$7,814",
+      "priceSuffix": "/人（約）",
+      "meta": "📆 去程 08/27 桃園→新千歲／回程 09/03 新千歲→桃園",
+      "features": [
+        "✅ 去程 JX850 約 10:05 起飛，15:00 抵新千歲",
+        "✅ 回程 JX851 約 16:00 起飛返台",
+        "✅ 四人來回合計約 NT$31,257"
+      ]
+    },
+    {
+      "variant": "secondary",
+      "title": "札幌登別 4日周遊券",
+      "badge": "JR",
+      "status": "purchased",
+      "price": "NT$7,184",
+      "priceSuffix": "（合計）",
+      "meta": "📆 涵蓋新千歲—登別—札幌—小樽等區間（依券種）",
+      "features": [
+        "✅ 台灣預購，Day1 起用",
+        "✅ 搭配登別站前巴士銜接溫泉區"
+      ]
+    },
+    {
+      "variant": "secondary",
+      "title": "札幌富良野 4日周遊券",
+      "badge": "JR",
+      "status": "purchased",
+      "price": "NT$8,056",
+      "priceSuffix": "（合計）",
+      "meta": "📆 涵蓋札幌—旭川—富良野—美瑛等區間（依券種）",
+      "features": [
+        "✅ 台灣預購，Day5 起用",
+        "✅ 串起富良野單車日與美瑛丘陵"
+      ]
+    },
+    {
+      "variant": "secondary",
+      "title": "札幌地鐵一日券",
+      "badge": "地鐵",
+      "status": "purchased",
+      "price": "¥830",
+      "priceSuffix": "",
+      "meta": "📆 Day2 北海道大學・神宮・狸小路",
+      "features": [
+        "✅ 北十二條／円山公園／薄野跳點",
+        "✅ 適合札幌市區一日巡禮"
+      ]
+    }
+  ],
+  "overview": [
+    {
+      "day": 1,
+      "date": "08/27",
+      "places": "桃園→新千歲→登別",
+      "hotel": "瀧乃家 玉之湯",
+      "hotelNote": "杜鵑橋走路約8分；含早晚餐・1房",
+      "routeLabel": "登別",
+      "transport": "JX850 · 10:05／JR · 15:54",
+      "transportClass": "",
+      "summary": "飛抵新千歲，JR＋巴士入住登別溫泉"
+    },
+    {
+      "day": 2,
+      "date": "08/28",
+      "places": "登別→札幌",
+      "hotel": "札幌站前APA酒店TKP",
+      "hotelNote": "台幣含稅・2房・無早餐",
+      "routeLabel": "札幌",
+      "transport": "巴士 · 11:15／JR · 11:34",
+      "transportClass": "",
+      "summary": "轉往札幌：北大、神宮、狸小路"
+    },
+    {
+      "day": 3,
+      "date": "08/29",
+      "places": "札幌→小樽",
+      "hotel": "托麗芙特飯店",
+      "hotelNote": "小樽站走路約8分・1房・無早餐",
+      "routeLabel": "小樽",
+      "transport": "JR · 10:00–11:25",
+      "transportClass": "",
+      "summary": "二條市場後往小樽，天狗山夜景"
+    },
+    {
+      "day": 4,
+      "date": "08/30",
+      "places": "小樽→北廣島→札幌",
+      "hotel": "札幌京急EX",
+      "hotelNote": "札幌站約1分・2房・無早餐",
+      "routeLabel": "札幌",
+      "transport": "JR · 09:35／Outlet 返程 · 17:00",
+      "transportClass": "",
+      "summary": "北廣島 Outlet 購物，開陽亭螃蟹晚餐"
+    },
+    {
+      "day": 5,
+      "date": "08/31",
+      "places": "札幌→旭川→富良野→旭川",
+      "hotel": "Hotel Amanek Asahikawa",
+      "hotelNote": "含稅・2房・無早餐；洗衣 ¥400",
+      "routeLabel": "富良野",
+      "transport": "JR · 10:00／11:33／16:56",
+      "transportClass": "",
+      "summary": "富良野租車單車，起司工廠與葡萄酒工房"
+    },
+    {
+      "day": 6,
+      "date": "09/01",
+      "places": "旭川→美瑛→旭川",
+      "hotel": "Hotel Amanek Asahikawa",
+      "hotelNote": "含稅含早餐・2房",
+      "routeLabel": "美瑛",
+      "transport": "JR · 10:00／17:39",
+      "transportClass": "",
+      "summary": "午前旭川、午後美瑛單車，燒鳥收尾"
+    },
+    {
+      "day": 7,
+      "date": "09/02",
+      "places": "旭川→札幌→定山溪",
+      "hotel": "定山溪豪景飯店",
+      "hotelNote": "本館一泊二食・懷石晚餐＋自助早餐",
+      "routeLabel": "定山溪",
+      "transport": "JR · 10:00／巴士 · 13:00",
+      "transportClass": "",
+      "summary": "轉往定山溪溫泉，放慢收尾"
+    },
+    {
+      "day": 8,
+      "date": "09/03",
+      "places": "定山溪→札幌→新千歲→桃園",
+      "hotel": "-",
+      "hotelNote": "",
+      "routeLabel": "返台",
+      "transport": "巴士 · 10:00／JR · 13:11／JX851 · 16:00",
+      "transportClass": "",
+      "summary": "返札幌轉機場，星宇飛返桃園"
+    }
+  ],
+  "days": [
+    {
+      "id": "day1",
+      "number": 1,
+      "date": "08/27（日）",
+      "title": "飛抵北海道，入住登別溫泉",
+      "timeline": [
+        {
+          "time": "10:05",
+          "place": "桃園機場",
+          "desc": "搭機 JX850",
+          "detail": "接駁車 NT$837",
+          "icon": "plane",
+          "tag": "✈️ 起飛"
+        },
+        {
+          "time": "15:00",
+          "place": "新千歲機場",
+          "desc": "抵達，啟用札幌登別4日周遊券",
+          "detail": "周遊券合計約 NT$7,184",
+          "icon": "ticket",
+          "tag": "🎫 票券"
+        },
+        {
+          "time": "15:54",
+          "place": "新千歲空港 → 登別站",
+          "desc": "JR 移動",
+          "detail": "15:54→16:47（備選 16:30→17:20）",
+          "icon": "train",
+          "tag": "JR"
+        },
+        {
+          "time": "16:58",
+          "place": "登別站前 → 杜鵑橋",
+          "desc": "巴士前往溫泉區",
+          "detail": "16:58→17:15・車資 ¥350（備選 17:45→18:02）",
+          "icon": "walk",
+          "tag": "巴士"
+        },
+        {
+          "time": "17:30",
+          "place": "瀧乃家 玉之湯",
+          "desc": "晚餐／住宿",
+          "detail": "杜鵑橋走路約8分；台幣含稅附早晚餐・1房・NT$12,076",
+          "icon": "hotel",
+          "tag": "🏨 溫泉宿"
+        }
+      ],
+      "tips": [
+        "周遊券建議在台灣預購，抵機場即可啟用",
+        "登別站前巴士班次有限，對好時刻再出站"
+      ],
+      "photo": {
+        "src": "photos/day1.webp",
+        "alt": "登別地獄谷",
+        "credit": "Calistemon / CC BY-SA 4.0"
+      }
+    },
+    {
+      "id": "day2",
+      "number": 2,
+      "date": "08/28（一）",
+      "title": "登別轉札幌：北大・神宮・狸小路",
+      "timeline": [
+        {
+          "time": "08:00",
+          "place": "瀧乃家 玉之湯",
+          "desc": "早餐",
+          "detail": "入浴料 ¥450",
+          "icon": "hotel",
+          "tag": "早餐"
+        },
+        {
+          "time": "11:15",
+          "place": "登別溫泉 → 登別站前",
+          "desc": "巴士下山",
+          "detail": "11:15→11:27・車資 ¥350",
+          "icon": "walk",
+          "tag": "巴士"
+        },
+        {
+          "time": "11:34",
+          "place": "登別站 → 札幌",
+          "desc": "JR 北上",
+          "detail": "11:34→12:49",
+          "icon": "train",
+          "tag": "JR"
+        },
+        {
+          "time": "13:00",
+          "place": "北海道大學",
+          "desc": "中餐／校園散步",
+          "detail": "地鐵一日券 ¥830；中餐 ¥891・下午茶 ¥1,130；北十二條駅",
+          "icon": "landmark",
+          "tag": "校園"
+        },
+        {
+          "time": "16:00",
+          "place": "北海道神宮",
+          "desc": "參拜",
+          "detail": "円山公園駅；籤 ¥105",
+          "icon": "shrine",
+          "tag": "神社"
+        },
+        {
+          "time": "17:00",
+          "place": "トリトン（Triton）",
+          "desc": "壽司晚餐",
+          "detail": "西二十八町目駅・¥4,017",
+          "icon": "food",
+          "tag": "🍣 晚餐"
+        },
+        {
+          "time": "18:30",
+          "place": "狸小路商店街",
+          "desc": "逛街",
+          "detail": "牛奶 ¥192；原訂抹茶カフェ リキュウ未成行",
+          "icon": "shopping",
+          "tag": "商店街"
+        },
+        {
+          "time": "21:00",
+          "place": "MEGA 唐吉訶德",
+          "desc": "札幌狸小路本店",
+          "detail": "回飯店走路約13分",
+          "icon": "shopping",
+          "tag": "藥妝"
+        },
+        {
+          "time": "22:00",
+          "place": "札幌站前APA酒店TKP",
+          "desc": "住宿",
+          "detail": "台幣含稅・2房・無早餐・NT$3,065",
+          "icon": "hotel",
+          "tag": "🏨 住宿"
+        }
+      ],
+      "tips": [
+        "地鐵一日券適合北大—円山—薄野跳點",
+        "狸小路夜晚人潮多，預留走回飯店時間"
+      ],
+      "photo": {
+        "src": "photos/day2.webp",
+        "alt": "北海道神宮境內",
+        "credit": "Immanuelle / CC BY 4.0"
+      }
+    },
+    {
+      "id": "day3",
+      "number": 3,
+      "date": "08/29（二）",
+      "title": "小樽巡禮與天狗山夜景",
+      "timeline": [
+        {
+          "time": "08:00",
+          "place": "二條市場",
+          "desc": "早餐",
+          "detail": "飯店走路約14分・¥1,960",
+          "icon": "food",
+          "tag": "早餐"
+        },
+        {
+          "time": "09:00",
+          "place": "大通公園",
+          "desc": "散步／點心",
+          "detail": "烤玉米 ¥500",
+          "icon": "walk",
+          "tag": "公園"
+        },
+        {
+          "time": "10:00",
+          "place": "札幌 → 小樽",
+          "desc": "JR 西行",
+          "detail": "10:00→11:25",
+          "icon": "train",
+          "tag": "JR"
+        },
+        {
+          "time": "12:30",
+          "place": "若雞時代なると",
+          "desc": "半雞中餐",
+          "detail": "天婦羅 ¥360・中餐 ¥1,635",
+          "icon": "food",
+          "tag": "午餐"
+        },
+        {
+          "time": "13:30",
+          "place": "LeTAO",
+          "desc": "蛋糕下午茶",
+          "detail": "¥1,980",
+          "icon": "food",
+          "tag": "甜點"
+        },
+        {
+          "time": "15:30",
+          "place": "UNIQLO",
+          "desc": "購物",
+          "detail": "西裝 ¥8,812",
+          "icon": "shopping",
+          "tag": "購物"
+        },
+        {
+          "time": "16:30",
+          "place": "天狗山",
+          "desc": "賞夜景",
+          "detail": "小樽站約17分；中央巴士套票（纜車來回＋巴士）¥2,050；山頂滑索 ¥1,200、滑車 ¥600（至17:00）・合計約 ¥3,075",
+          "icon": "sun",
+          "tag": "夜景"
+        },
+        {
+          "time": "20:00",
+          "place": "AEON",
+          "desc": "超市晚餐",
+          "detail": "晚餐 ¥2,607・回飯店計程車 ¥417",
+          "icon": "food",
+          "tag": "晚餐"
+        },
+        {
+          "time": "--:--",
+          "place": "托麗芙特飯店",
+          "desc": "住宿",
+          "detail": "小樽站走路約8分；台幣含稅・1房・無早餐・NT$6,096",
+          "icon": "hotel",
+          "tag": "🏨 住宿"
+        }
+      ],
+      "tips": [
+        "天狗山山頂遊具營業至17:00，夜景請提早上山",
+        "中央巴士套票可一次含纜車與接駁"
+      ],
+      "photo": {
+        "src": "photos/day3.webp",
+        "alt": "小樽運河",
+        "credit": "Suicasmo / CC BY-SA 4.0"
+      }
+    },
+    {
+      "id": "day4",
+      "number": 4,
+      "date": "08/30（三）",
+      "title": "北廣島 Outlet 與札幌蟹宴",
+      "timeline": [
+        {
+          "time": "09:00",
+          "place": "Komeda coffee",
+          "desc": "咖啡廳早餐",
+          "detail": "原訂色內食堂，改往 Komeda・¥680",
+          "icon": "food",
+          "tag": "早餐"
+        },
+        {
+          "time": "09:35",
+          "place": "小樽 → 札幌",
+          "desc": "JR 返回",
+          "detail": "09:35→10:35",
+          "icon": "train",
+          "tag": "JR"
+        },
+        {
+          "time": "11:00",
+          "place": "札幌 → 北廣島 Outlet",
+          "desc": "公車／JR",
+          "detail": "車資 ¥320",
+          "icon": "train",
+          "tag": "移動"
+        },
+        {
+          "time": "12:00",
+          "place": "北廣島 Outlet",
+          "desc": "中餐／散步／購物",
+          "detail": "中餐 ¥1,500・鞋子 ¥6,299・下午茶 ¥930",
+          "icon": "shopping",
+          "tag": "Outlet"
+        },
+        {
+          "time": "17:00",
+          "place": "北廣島 Outlet → 札幌",
+          "desc": "返程",
+          "detail": "17:00→18:00・¥620；到餐廳公車 ¥210",
+          "icon": "train",
+          "tag": "移動"
+        },
+        {
+          "time": "18:30",
+          "place": "開陽亭",
+          "desc": "螃蟹晚餐",
+          "detail": "預算參考 ¥54,200・實際 ¥20,782",
+          "icon": "food",
+          "tag": "🦀 蟹宴"
+        },
+        {
+          "time": "20:00",
+          "place": "唐吉軻德",
+          "desc": "購物",
+          "detail": "皮夾 ¥4,900",
+          "icon": "shopping",
+          "tag": "購物"
+        },
+        {
+          "time": "21:00",
+          "place": "ヨドバシカメラ",
+          "desc": "家電購物",
+          "detail": "電動牙刷 ¥15,000",
+          "icon": "shopping",
+          "tag": "家電"
+        },
+        {
+          "time": "--:--",
+          "place": "札幌京急EX",
+          "desc": "住宿",
+          "detail": "札幌站約1分；台幣含稅・2房・無早餐・NT$5,105",
+          "icon": "hotel",
+          "tag": "🏨 住宿"
+        }
+      ],
+      "tips": [
+        "Outlet 回程請預留塞車緩衝，以免耽誤晚餐訂位",
+        "開陽亭實際點餐可依人數調整，不必硬追預算上限"
+      ],
+      "photo": {
+        "src": "photos/day4.webp",
+        "alt": "札幌大通公園",
+        "credit": "redlegsfan21 / CC BY-SA 2.0"
+      }
+    },
+    {
+      "id": "day5",
+      "number": 5,
+      "date": "08/31（四）",
+      "title": "富良野單車：起司工廠與葡萄酒",
+      "timeline": [
+        {
+          "time": "08:00",
+          "place": "世紀皇家飯店",
+          "desc": "早餐",
+          "detail": "飯店走路約5分；預算 ¥3,000/人・實際 ¥4,500",
+          "icon": "food",
+          "tag": "早餐"
+        },
+        {
+          "time": "09:30",
+          "place": "ヨドバシカメラ",
+          "desc": "補購耗材",
+          "detail": "替換刷頭 ¥2,712",
+          "icon": "shopping",
+          "tag": "購物"
+        },
+        {
+          "time": "10:00",
+          "place": "札幌 → 旭川",
+          "desc": "JR，啟用札幌富良野4日周遊券",
+          "detail": "10:00→11:25；周遊券合計約 NT$8,056",
+          "icon": "train",
+          "tag": "JR"
+        },
+        {
+          "time": "11:33",
+          "place": "旭川 → 富良野",
+          "desc": "JR 轉乘",
+          "detail": "11:33→12:42",
+          "icon": "train",
+          "tag": "JR"
+        },
+        {
+          "time": "13:00",
+          "place": "長江セトモノ店",
+          "desc": "租電動自行車",
+          "detail": "富良野市日の出町2-3；電動車 ¥1,800（當日實際）",
+          "icon": "walk",
+          "tag": "單車"
+        },
+        {
+          "time": "13:30",
+          "place": "起司工廠",
+          "desc": "Pizza 中餐",
+          "detail": "中餐 ¥1,350・冰淇淋 ¥400",
+          "icon": "food",
+          "tag": "午餐"
+        },
+        {
+          "time": "15:00",
+          "place": "葡萄酒工廠",
+          "desc": "參觀",
+          "icon": "sparkle",
+          "tag": "酒莊"
+        },
+        {
+          "time": "16:00",
+          "place": "富良野農夫市集",
+          "desc": "逛街",
+          "icon": "shopping",
+          "tag": "市集"
+        },
+        {
+          "time": "16:56",
+          "place": "富良野 → 旭川",
+          "desc": "JR 返回",
+          "detail": "16:56→18:19",
+          "icon": "train",
+          "tag": "JR"
+        },
+        {
+          "time": "19:00",
+          "place": "ひつじ家",
+          "desc": "成吉思汗烤羊肉晚餐",
+          "detail": "原訂大黑屋人太多改此・¥1,995；居酒屋未成行",
+          "icon": "food",
+          "tag": "🍖 晚餐"
+        },
+        {
+          "time": "--:--",
+          "place": "Hotel Amanek Asahikawa",
+          "desc": "住宿",
+          "detail": "台幣含稅・2房・無早餐・NT$3,774；洗衣 ¥400",
+          "icon": "hotel",
+          "tag": "🏨 住宿"
+        }
+      ],
+      "tips": [
+        "電動車半日足夠串起司工廠與葡萄酒工房",
+        "富良野末班回旭川請預留還車與步行時間"
+      ],
+      "photo": {
+        "src": "photos/day5.webp",
+        "alt": "富田農場花田",
+        "credit": "Douglas Perkins / CC BY 4.0"
+      }
+    },
+    {
+      "id": "day6",
+      "number": 6,
+      "date": "09/01（五）",
+      "title": "美瑛單車漫遊與旭川燒鳥",
+      "timeline": [
+        {
+          "time": "08:45",
+          "place": "JR Wing 內咖啡廳",
+          "desc": "早餐",
+          "detail": "原訂珈琲亭ちろる，改往站內・¥990",
+          "icon": "food",
+          "tag": "早餐"
+        },
+        {
+          "time": "10:00",
+          "place": "旭川市區",
+          "desc": "午前調整行程",
+          "detail": "原訂往薰衣草花田／富田農場，改訪旭川科學館（門票 ¥410）；中餐改於旭川車站",
+          "icon": "landmark",
+          "tag": "調整"
+        },
+        {
+          "time": "14:30",
+          "place": "松浦商店（美瑛）",
+          "desc": "租電動自行車巡禮",
+          "detail": "美瑛町本町；電動車 ¥1,800（當日實際）",
+          "icon": "walk",
+          "tag": "單車"
+        },
+        {
+          "time": "17:39",
+          "place": "美瑛 → 旭川",
+          "desc": "JR 返回",
+          "detail": "17:39→18:19",
+          "icon": "train",
+          "tag": "JR"
+        },
+        {
+          "time": "18:30",
+          "place": "焼鳥専門 ぎんねこ",
+          "desc": "居酒屋燒鳥",
+          "detail": "¥3,176",
+          "icon": "food",
+          "tag": "焼き鳥"
+        },
+        {
+          "time": "20:00",
+          "place": "AEON",
+          "desc": "超市伴手禮",
+          "detail": "¥1,800",
+          "icon": "shopping",
+          "tag": "伴手"
+        },
+        {
+          "time": "--:--",
+          "place": "Hotel Amanek Asahikawa",
+          "desc": "住宿",
+          "detail": "台幣含稅含早餐・2房・NT$4,731",
+          "icon": "hotel",
+          "tag": "🏨 住宿"
+        }
+      ],
+      "tips": [
+        "美瑛丘陵坡度不小，電動車較輕鬆",
+        "天候不佳可像本趟改走旭川室內景點再出發"
+      ],
+      "photo": {
+        "src": "photos/day6.webp",
+        "alt": "美瑛白金青池",
+        "credit": "AndyLeungHK / CC0"
+      }
+    },
+    {
+      "id": "day7",
+      "number": 7,
+      "date": "09/02（六）",
+      "title": "轉往定山溪溫泉",
+      "timeline": [
+        {
+          "time": "08:00",
+          "place": "飯店",
+          "desc": "早餐（含宿）",
+          "icon": "hotel",
+          "tag": "早餐"
+        },
+        {
+          "time": "10:00",
+          "place": "旭川 → 札幌",
+          "desc": "JR 南下",
+          "detail": "10:00→11:25",
+          "icon": "train",
+          "tag": "JR"
+        },
+        {
+          "time": "11:40",
+          "place": "札幌車站",
+          "desc": "車站中餐／伴手",
+          "detail": "伴手禮 ¥1,350",
+          "icon": "shopping",
+          "tag": "伴手"
+        },
+        {
+          "time": "13:00",
+          "place": "札幌 → 定山溪",
+          "desc": "巴士上山",
+          "detail": "13:00→14:00",
+          "icon": "walk",
+          "tag": "巴士"
+        },
+        {
+          "time": "18:30",
+          "place": "定山溪豪景飯店",
+          "desc": "住宿／懷石晚餐",
+          "detail": "本館一泊二食；台幣含稅・1房・NT$14,478；自助早餐",
+          "icon": "hotel",
+          "tag": "♨️ 溫泉宿"
+        }
+      ],
+      "tips": [
+        "札幌往定山溪巴士約一小時，行李多可先寄放",
+        "本館懷石請依飯店通知時間入席"
+      ],
+      "photo": {
+        "src": "photos/day7.webp",
+        "alt": "定山溪大橋",
+        "credit": "t-konno / CC BY-SA 3.0"
+      }
+    },
+    {
+      "id": "day8",
+      "number": 8,
+      "date": "09/03（日）",
+      "title": "定山溪返札幌，飛回桃園",
+      "timeline": [
+        {
+          "time": "08:00",
+          "place": "飯店",
+          "desc": "早餐",
+          "detail": "溫泉稅 ¥600",
+          "icon": "hotel",
+          "tag": "早餐"
+        },
+        {
+          "time": "10:00",
+          "place": "定山溪 → 札幌",
+          "desc": "巴士下山",
+          "detail": "10:00→11:00",
+          "icon": "walk",
+          "tag": "巴士"
+        },
+        {
+          "time": "11:30",
+          "place": "新千歲機場／站區",
+          "desc": "午餐",
+          "detail": "原訂湯咖喱 奥芝商店，改於機場用餐",
+          "icon": "food",
+          "tag": "午餐"
+        },
+        {
+          "time": "13:11",
+          "place": "札幌 → 新千歲機場",
+          "desc": "JR 空港快速",
+          "detail": "13:11→13:50",
+          "icon": "train",
+          "tag": "JR"
+        },
+        {
+          "time": "16:00",
+          "place": "新千歲機場",
+          "desc": "搭機 JX851 返台",
+          "icon": "plane",
+          "tag": "✈️ 返程"
+        }
+      ],
+      "tips": [
+        "定山溪退房後先確認巴士班次，再對機場報到時間",
+        "機場用餐選擇多，不必執著市區店"
+      ],
+      "photo": {
+        "src": "photos/day8.webp",
+        "alt": "新千歲機場航廈",
+        "credit": "663highland / CC BY 2.5"
+      }
+    }
+  ],
+  "budget": {
+    "partySize": 4,
+    "categories": [
+      {
+        "icon": "✈️",
+        "title": "機票",
+        "items": [
+          {
+            "label": "星宇來回 JX850／JX851（四人合計）",
+            "amount": "NT$31,257"
+          }
+        ],
+        "subtotal": "NT$31,257"
+      },
+      {
+        "icon": "🏨",
+        "title": "住宿",
+        "items": [
+          {
+            "label": "登別・札幌・小樽・旭川・定山溪（結算）",
+            "amount": "NT$18,496"
+          }
+        ],
+        "subtotal": "NT$18,496"
+      },
+      {
+        "icon": "🚄",
+        "title": "交通",
+        "items": [
+          {
+            "label": "台灣預購周遊券等（結算）",
+            "amount": "NT$5,715"
+          },
+          {
+            "label": "日本當地交通（巴士／地鐵／計程車等）",
+            "amount": "¥6,697"
+          }
+        ],
+        "subtotal": "NT$5,715 + ¥6,697"
+      },
+      {
+        "icon": "🎫",
+        "title": "門票／溫泉",
+        "items": [
+          {
+            "label": "入浴料、天狗山、科學館、溫泉稅等",
+            "amount": "¥4,125"
+          }
+        ],
+        "subtotal": "¥4,125"
+      },
+      {
+        "icon": "🍽️",
+        "title": "飲食",
+        "items": [
+          {
+            "label": "日本當地餐飲合計",
+            "amount": "¥53,275"
+          }
+        ],
+        "subtotal": "¥53,275"
+      },
+      {
+        "icon": "🛍️",
+        "title": "雜費／購物",
+        "items": [
+          {
+            "label": "服飾、家電、伴手與雜支",
+            "amount": "¥40,648"
+          }
+        ],
+        "subtotal": "¥40,648"
+      },
+      {
+        "icon": "🛡️",
+        "title": "保險・接送",
+        "items": [
+          {
+            "label": "旅遊保險",
+            "amount": "NT$875"
+          },
+          {
+            "label": "接送機",
+            "amount": "NT$419"
+          }
+        ],
+        "subtotal": "NT$1,294"
+      }
+    ],
+    "total": {
+      "amount": "約 NT$19,951",
+      "twd": "約 NT$ 19,951 /人",
+      "family": "約 NT$79,804",
+      "familyTwd": "約 NT$ 79,804"
+    }
+  },
+  "map": {
+    "center": [43.25, 141.7],
+    "zoom": 7,
+    "locations": [
+      {
+        "name": "新千歲機場",
+        "number": 1,
+        "day": 1,
+        "coords": [42.7752, 141.6925]
+      },
+      {
+        "name": "登別溫泉",
+        "number": 2,
+        "day": 1,
+        "coords": [42.4937, 141.1522]
+      },
+      {
+        "name": "札幌",
+        "number": 3,
+        "day": 2,
+        "coords": [43.0618, 141.3545]
+      },
+      {
+        "name": "小樽",
+        "number": 4,
+        "day": 3,
+        "coords": [43.1907, 141.0015]
+      },
+      {
+        "name": "北廣島 Outlet",
+        "number": 5,
+        "day": 4,
+        "coords": [42.9857, 141.561]
+      },
+      {
+        "name": "旭川",
+        "number": 6,
+        "day": 5,
+        "coords": [43.7707, 142.3649]
+      },
+      {
+        "name": "富良野",
+        "number": 7,
+        "day": 5,
+        "coords": [43.342, 142.3832]
+      },
+      {
+        "name": "美瑛",
+        "number": 8,
+        "day": 6,
+        "coords": [43.5883, 142.467]
+      },
+      {
+        "name": "定山溪",
+        "number": 9,
+        "day": 7,
+        "coords": [42.963, 141.165]
+      }
+    ]
+  }
+}
