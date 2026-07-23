@@ -46,66 +46,35 @@
     "suggestions": [],
     "recommendations": [
       {
-        "title": "Day 2–3: 狸小路・小樽",
-        "desc": "藥妝、甜點與服飾",
+        "title": "Day 2–3: 小樽",
+        "desc": "小樽甜點伴手",
         "items": [
-          {
-            "name": "MEGA 唐吉訶德（狸小路本店）藥妝／日用品",
-            "price": "依品牌",
-            "priceNote": "實際以店面為準・本趟曾於狸小路採購",
-            "url": "https://www.donki.com/"
-          },
           {
             "name": "LeTAO 起司蛋糕伴手",
             "price": "約 ¥1,000–",
             "priceNote": "含稅參考價・小樽本店／機場亦有",
+            "imageUrl": "https://item-shopping.c.yimg.jp/i/l/letao_f011",
             "url": "https://www.letao.jp/"
-          },
-          {
-            "name": "UNIQLO 服飾",
-            "price": "依商品",
-            "priceNote": "本趟小樽店曾購西裝約 ¥8,812"
           }
         ]
       },
       {
-        "title": "Day 4: 北廣島 Outlet・札幌站前",
-        "desc": "Outlet 與家電",
-        "items": [
-          {
-            "name": "三井 Outlet Park 北廣島鞋款／服飾",
-            "price": "依品牌",
-            "priceNote": "本趟曾購鞋子約 ¥6,299",
-            "url": "https://mitsui-shopping-park.com/mop/kitahiroshima/"
-          },
-          {
-            "name": "Yodobashi 家電（電動牙刷等）",
-            "price": "依機種",
-            "priceNote": "本趟曾購電動牙刷約 ¥15,000、替換刷頭約 ¥2,712",
-            "url": "https://www.yodobashi.com/"
-          }
-        ]
-      },
-      {
-        "title": "Day 5–7: 富良野・旭川・札幌",
-        "desc": "起司、葡萄酒與伴手禮",
+        "title": "Day 5–7: 富良野",
+        "desc": "起司與葡萄酒伴手",
         "items": [
           {
             "name": "富良野起司工廠乳製品／伴手",
             "price": "約 ¥500–",
             "priceNote": "含稅參考價・實際以店面為準",
+            "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/52/Wine_Cheddar_Brand_of_Furano_Cheese_-_Cheese_Factory_-_Furano_-_Hokkaido_-_Japan_%2848012225498%29.jpg",
             "url": "https://www.furano-cheese.jp/"
           },
           {
             "name": "富良野葡萄酒工房葡萄酒",
             "price": "約 ¥1,000–",
             "priceNote": "含稅參考價・可試飲參觀",
+            "imageUrl": "https://www.furanowine.jp/img/index_hero_img_01.png",
             "url": "https://www.furanowine.jp/"
-          },
-          {
-            "name": "AEON／札幌站伴手禮",
-            "price": "約 ¥1,000–",
-            "priceNote": "本趟旭川 AEON 與札幌站曾採購伴手"
           }
         ]
       }
@@ -151,8 +120,8 @@
       },
       "photo": {
         "src": "photos/day1.webp",
-        "alt": "登別地獄谷",
-        "credit": "Calistemon / CC BY-SA 4.0"
+        "alt": "登別地獄谷夜景",
+        "credit": "宇宙碎片拍攝"
       }
     },
     {
@@ -181,8 +150,8 @@
       },
       "photo": {
         "src": "photos/day2.webp",
-        "alt": "北海道神宮境內",
-        "credit": "Immanuelle / CC BY 4.0"
+        "alt": "北海道神宮本殿",
+        "credit": "宇宙碎片拍攝"
       }
     },
     {
@@ -196,8 +165,8 @@
       },
       "photo": {
         "src": "photos/story-tenguyama.webp",
-        "alt": "小樽天狗山展望",
-        "credit": "皓月旗 / CC BY-SA 4.0"
+        "alt": "小樽天狗山夜景展望",
+        "credit": "宇宙碎片拍攝"
       }
     },
     {
@@ -318,8 +287,8 @@
       },
       "photo": {
         "src": "photos/story-furano-wine.webp",
-        "alt": "富良野葡萄酒工房",
-        "credit": "Douglas Perkins / CC BY 4.0"
+        "alt": "富良野葡萄酒工房酒窖",
+        "credit": "宇宙碎片拍攝"
       }
     }
   ],
@@ -522,8 +491,8 @@
       ],
       "photo": {
         "src": "photos/day1.webp",
-        "alt": "登別地獄谷",
-        "credit": "Calistemon / CC BY-SA 4.0"
+        "alt": "登別地獄谷夜景",
+        "credit": "宇宙碎片拍攝"
       }
     },
     {
@@ -611,8 +580,8 @@
       ],
       "photo": {
         "src": "photos/day2.webp",
-        "alt": "北海道神宮境內",
-        "credit": "Immanuelle / CC BY 4.0"
+        "alt": "北海道神宮本殿",
+        "credit": "宇宙碎片拍攝"
       }
     },
     {
@@ -701,7 +670,7 @@
       "photo": {
         "src": "photos/day3.webp",
         "alt": "小樽運河",
-        "credit": "Suicasmo / CC BY-SA 4.0"
+        "credit": "宇宙碎片拍攝"
       }
     },
     {

@@ -53,12 +53,14 @@
             "name": "讚岐烏龍乾麵／沾醬組",
             "price": "約 ¥600–",
             "priceNote": "含稅參考價・實際以店面為準",
+            "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/22/Udon.jpg",
             "url": "https://www.my-kagawa.jp/"
           },
           {
             "name": "小豆島橄欖相關伴手",
             "price": "約 ¥800–",
             "priceNote": "含稅參考價・土庄／寒霞溪周邊",
+            "imageUrl": "https://img21.shop-pro.jp/PA01478/560/product/165873846.jpg",
             "url": "https://shodoshima.or.jp/"
           }
         ]
@@ -70,12 +72,14 @@
           {
             "name": "霧の森菓子／愛媛柑橘點心",
             "price": "約 ¥500–",
-            "priceNote": "含稅參考價・實際以店面為準"
+            "priceNote": "含稅參考價・實際以店面為準",
+            "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Yuzu.jpg"
           },
           {
             "name": "道後溫泉周邊伴手",
             "price": "約 ¥700–",
             "priceNote": "含稅參考價・道後haikara通",
+            "imageUrl": "https://dogo.jp/wp-content/uploads/2017/01/slide_01.jpg",
             "url": "https://dogo.jp/"
           }
         ]
@@ -88,12 +92,14 @@
             "name": "鰹魚相關伴手／土佐茶",
             "price": "約 ¥600–",
             "priceNote": "含稅參考價・弘人市場／日曜市",
+            "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/19/Katsuobushi.jpg",
             "url": "https://visithighlandkochi.jp/"
           },
           {
             "name": "祖谷そば／山菜乾貨",
             "price": "約 ¥500–",
-            "priceNote": "含稅參考價・祖谷周邊"
+            "priceNote": "含稅參考價・祖谷周邊",
+            "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Soba.jpg"
           }
         ]
       }

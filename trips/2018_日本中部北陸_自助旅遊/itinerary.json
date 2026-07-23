@@ -46,18 +46,13 @@
     "recommendations": [
       {
         "title": "Day 1: 榮・大須",
-        "desc": "藥妝與車站附近補給",
+        "desc": "車站附近伴手與補給",
         "items": [
-          {
-            "name": "藥妝常見組（保濕／眼罩等）",
-            "price": "依品牌",
-            "priceNote": "實際以店面為準・本趟曾於榮採購",
-            "url": "https://www.matsukiyo.co.jp/"
-          },
           {
             "name": "名古屋伴手禮（えびせんべい等）",
             "price": "約 ¥500–",
-            "priceNote": "含稅參考價・實際以店面為準"
+            "priceNote": "含稅參考價・實際以店面為準",
+            "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Shrimp_senbei.jpg"
           }
         ]
       },
@@ -69,12 +64,14 @@
             "name": "飛驒牛相關伴手／乾貨",
             "price": "約 ¥1,000–",
             "priceNote": "含稅參考價・實際以店面為準",
+            "imageUrl": "https://img17.shop-pro.jp/PA01167/534/product/146898905.jpg",
             "url": "https://www.hida.jp/"
           },
           {
             "name": "高山朝市小農產／漬物",
             "price": "約 ¥300–",
-            "priceNote": "含稅參考價・現場現金為主"
+            "priceNote": "含稅參考價・現場現金為主",
+            "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/84/Tsukemono.jpg"
           }
         ]
       },
@@ -86,25 +83,15 @@
             "name": "白川鄉手作／蒟蒻等在地商品",
             "price": "約 ¥500–",
             "priceNote": "含稅參考價・實際以店面為準",
+            "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Konjac.jpg",
             "url": "https://shirakawa-go.gr.jp/"
           },
           {
             "name": "金澤金箔／和菓子",
             "price": "約 ¥800–",
             "priceNote": "含稅參考價・實際以店面為準",
+            "imageUrl": "https://hakuza.itembox.cloud/product/010/000000001008/000000001008-01.jpg?size=l&w=ODAw&t=20240417100254",
             "url": "https://www.kanazawa-kankoukyoukai.or.jp/"
-          }
-        ]
-      },
-      {
-        "title": "Day 5–6: 富山",
-        "desc": "車站藥妝與立山前補給",
-        "items": [
-          {
-            "name": "富山藥妝／站內伴手",
-            "price": "依品牌",
-            "priceNote": "本趟曾於富山站周邊採購",
-            "url": "https://www.visit-toyama.jp/"
           }
         ]
       }
@@ -115,7 +102,7 @@
       "region": "中部・北陸",
       "items": [
         "六月為梅雨季前後，高山與立山山區氣溫仍低，請備雨具與薄層外套",
-        "白川鄉浓飛巴士旺季建議事前預約（本趟合掌→金澤段曾註明需預約）"
+        "白川鄉濃飛巴士旺季建議事前預約"
       ]
     }
   ],
@@ -346,7 +333,7 @@
       "date": "06/02",
       "places": "桃園→中部→名古屋",
       "hotel": "Airbnb（名古屋）",
-      "hotelNote": "市區Airbnb，榮／大須逛完即歇",
+      "hotelNote": "離榮／大須商圈近",
       "routeLabel": "名古屋",
       "transport": "CI154 · 07:30／特急 · 12:47",
       "transportClass": "",
@@ -820,7 +807,7 @@
         {
           "time": "18:50",
           "place": "超市／站前",
-          "desc": "簡易晚餐補給",
+          "desc": "日本生活超市晚餐",
           "icon": "food",
           "tag": "🍽️ 晚餐"
         }
@@ -860,8 +847,7 @@
         {
           "time": "15:40",
           "place": "桃園機場",
-          "desc": "抵达台灣",
-          "detail": "機場接送、中華漫遊等後勤結束旅程",
+          "desc": "抵達台灣",
           "icon": "plane",
           "tag": "🏠 返台"
         }
@@ -925,11 +911,11 @@
         "subtotal": "NT$504"
       },
       {
-        "icon": "🛍️",
-        "title": "雜費（餐飲等，已扣藥妝衣物伴手）",
+        "icon": "🍽️",
+        "title": "餐飲點心",
         "items": [
           {
-            "label": "雜費淨額（34556−6664）",
+            "label": "餐飲點心淨額",
             "amount": "NT$27,892"
           }
         ],

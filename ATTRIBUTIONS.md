@@ -73,17 +73,17 @@ CC BY / CC BY-SA 圖片依授權條款標示作者、來源與授權；CC BY-SA 
 | 檔案 | 內容 | 作者 | 授權 | 來源 |
 |---|---|---|---|---|
 | `cover.webp` | 中富良野日之出公園薰衣草花田 | Totti | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Hinode_park_lavender_2.jpg) |
-| `day1.webp` | 登別地獄谷 | Calistemon | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Jigokudani_(Hell_Valley),_Noboribetsu_Onsen,_Hokkaido,_April_2023_01.jpg) |
-| `day2.webp` | 北海道神宮境內 | Immanuelle | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Hokkaido_Jingu_courtyard.jpg) |
-| `day3.webp` | 小樽運河 | Suicasmo | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Otaru_Canal_20140817.jpg) |
+| `day1.webp` | 登別地獄谷夜景 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
+| `day2.webp` | 北海道神宮本殿 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
+| `day3.webp` | 小樽運河 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
 | `day4.webp` | 札幌大通公園 | redlegsfan21 | [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Odori_Park_(15982613668).jpg) |
 | `day5.webp` | 富田農場花田 | Douglas Perkins | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Farm_Tomita_1.jpg) |
 | `day6.webp` | 美瑛白金青池 | AndyLeungHK | [CC0](https://creativecommons.org/publicdomain/zero/1.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Shirogane_Blue_Pond,_Biei,_Hokkaido_Japan.jpg) |
 | `day7.webp` | 定山溪大橋 | t-konno | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:%E5%AE%9A%E5%B1%B1%E6%B8%93%E5%A4%A7%E6%A9%8B%EF%BC%88Jozankei_Ohashi%EF%BC%89_-_panoramio.jpg) |
 | `day8.webp` | 新千歲機場航廈 | 663highland | [CC BY 2.5](https://creativecommons.org/licenses/by/2.5/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Hokkaido_New_Chitose_Airport13n4272.jpg) |
 | `story-hokudai.webp` | 北海道大學札幌農學校演武場（時計台） | 十字軍ちゃん | [CC0](https://creativecommons.org/publicdomain/zero/1.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Hokkaido_University_clocktower.jpg) |
-| `story-tenguyama.webp` | 小樽天狗山展望 | 皓月旗 | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Otaru-Tenguyama_20220625.jpg) |
-| `story-furano-wine.webp` | 富良野葡萄酒工房 | Douglas Perkins | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Furano_Wine_House.jpg) |
+| `story-tenguyama.webp` | 小樽天狗山夜景展望 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
+| `story-furano-wine.webp` | 富良野葡萄酒工房酒窖 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
 | `food-letao.webp` | LeTAO 小樽本店 | 663highland | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:220721_LeTAO_Otaru_Hokkaido_Japan02s3.jpg) |
 | `food-kani.webp` | 北海道蟹飯丼 | woinary | [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Kani_meshi_don_by_woinary_in_New_Chitose_Airport,_Hokkaido.jpg) |
 | `food-soup-curry.webp` | 札幌湯咖哩 | Koichi Oda | [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:A_soup_curry_dish_in_Sapporo_-_Flickr_-_odako1.jpg) |
