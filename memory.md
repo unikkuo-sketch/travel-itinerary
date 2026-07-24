@@ -152,6 +152,22 @@
 - 現行方案：狀態寫在 `itinerary.json` 為預設（本機覆寫見上一則）；地圖 `day`+`number` + 圖例；預算字串手填每人／家庭；OG 共用 hub-hero
 - 驗證：`npm run build`；`npm run preview` 開 trip 頁看地圖／票券／預算
 
+### 2026-07-24 — 勿整段覆寫 days 照片 metadata
+
+- 問題：預算換匯時用 `git show HEAD` 整段替換 `days[]`，把未提交的自拍 credit／alt／`objectPosition`（高知城）蓋回 Wikimedia 舊值
+- 曾考慮：整檔還原再重跑換匯
+- 放棄原因：會再弄丟工作區照片修正
+- 現行方案：改金額只動 `detail`／`tips`／`budget`；照片欄位以 `ATTRIBUTIONS.md` 為準，絕不從舊 commit 覆蓋 `photo.credit`／`alt`／`objectPosition`
+- 驗證：四國 Day2–7 credit 為「宇宙碎片拍攝」；Day6 有 `objectPosition: center 58%`
+
+### 2026-07-24 — 預算與每日花費改為每人新台幣
+
+- 問題：預算同時顯示每人／家庭，且日圓與台幣混列；每日 timeline 金額幣別不一致
+- 曾考慮：runtime 依匯率自動換算；保留家庭總額卡
+- 放棄原因：靜態手填已夠用；家庭卡與「只看每人」需求重複
+- 現行方案：預算摘要只留每人卡；`categories`／`total.amount`／`days` timeline・tips 金額一律每人 `NT$`；`budget.fx` 記台銀即期賣出月平均（2018-06／2023-08 官網無日表，以央行月均交叉匯率＋相對台銀即期賣出溢價 0.0021 推估）；未完月（東北用 2026-06）標 `provisional`
+- 驗證：行程頁 `#budget` 僅每人卡；`days` 區無 `¥`；票券／購物可仍含 `¥`
+
 ### 2026-07-18 — 移除預算已付／待付卡
 
 - 問題：摘要卡看起來像自動計算，實際是 JSON 手填字串，且與票券狀態無關

@@ -52,21 +52,26 @@ CC BY / CC BY-SA 圖片依授權條款標示作者、來源與授權；CC BY-SA 
 
 | 檔案 | 內容 | 作者 | 授權 | 來源 |
 |---|---|---|---|---|
-| `cover.webp` | 栗林公園池畔庭園 | KimonBerlin | [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Ritsurin_Garden,_Takamatsu_3-27_(26295171020).jpg) |
+| `cover.webp` | 小豆島天使之路沙洲與前島 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（來源 `天使之路.jpg`） |
 | `day1.webp` | 栗林公園池畔松林 | KimonBerlin | [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Ritsurin_Garden,_Takamatsu_3-27_(26501902471).jpg) |
-| `day2.webp` | 寒霞溪展望的小豆島全景 | Photos of Japan | [CC0](https://creativecommons.org/publicdomain/zero/1.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Shodoushima_pano_from_Kankakei_222.jpg) |
-| `day3.webp` | 金刀比羅宮境內 | baggio4ever | [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:%E9%87%91%E5%88%80%E6%AF%94%E7%BE%85%E5%AE%AE5_-_panoramio.jpg) |
-| `day4.webp` | 松山城天守 | Jyo81 | [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:MEIN%26SMALL_CASTLE_TOWER_,MATSUYAMA_CASTLE(IYO).JPG) |
-| `day5.webp` | 龍河洞東口入口 | 京浜にけ | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Kami_Kochi_Ryugado_East_Entrance_1.jpg) |
-| `day6.webp` | 高知城天守 | 663highland | [CC BY 2.5](https://creativecommons.org/licenses/by/2.5/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Kochi_Castle08s3872.jpg) |
-| `day7.webp` | 祖谷藤蔓橋 | ume-y | [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Iya_Kazurabashi-3.jpg) |
+| `day2.webp` | 小豆島天使之路沙洲 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（來源 `天使之路.jpg`） |
+| `day3.webp` | 金刀比羅宮本宮建築 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（來源 `金刀比羅宮.jpg`） |
+| `day4.webp` | 下灘駅月台與瀬戸内海 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（來源 `下灘.jpg`） |
+| `day5.webp` | 笑淵瀑布與碧綠水潭 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（來源 `笑淵.jpg`） |
+| `day6.webp` | 高知城天守 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（來源 `高知城.jpg`） |
+| `day7.webp` | 祖谷藤蔓橋 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（來源 `祖谷.jpg`） |
 | `day8.webp` | 瀬戸大橋（南備讃瀬戸大橋） | Kanchi1979 | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:JP-Kagawa-Great-Seto-Bridge-Minami_Bisan-Seto-Bridge.jpg) |
-| `story-dogo.webp` | 道後溫泉本館 | Suicasmo | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:D%C5%8Dgo_Onsen_main_building_20170123.jpg) |
-| `story-shimonada.webp` | 下灘駅與瀬戸内海 | Sunport1216 | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Shimonada_Station_201507(1).JPG) |
-| `story-oboke.webp` | 大步危峽谷遊覽船 | さかおり | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Oboke_gorge_pleasure_boat_2106_August_13.B.jpg) |
-| `story-uwajima.webp` | 宇和島城本丸 | Saigen Jiro | [CC0](https://creativecommons.org/publicdomain/zero/1.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Uwajima_Castle,_honmaru-1.jpg) |
+| `story-dogo.webp` | 道後溫泉本館暮色外觀 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（來源 `道後溫泉.jpg`） |
+| `story-shimonada.webp` | 下灘駅月台與瀬戸内海 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（來源 `下灘.jpg`） |
+| `story-oboke.webp` | 祖谷藤蔓橋與溪谷 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（來源 `祖谷.jpg`） |
+| `story-uwajima.webp` | 宇和島城天守與石垣 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
+| `story-train-ryoma.webp` | 志国土佐時代の夜明けのものがたり觀光列車 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
+| `food-udon.webp` | 讚岐烏龍麵天婦羅定食 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（來源 `烏龍麵.jpg`） |
+| `food-ozu-aburaya.webp` | 大洲爐端油屋的栗子甜點 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（來源 `大洲爐端 油屋_栗子.jpg`） |
+| `food-katsuo.webp` | 居酒屋かど家夜定食與鰹魚たたき | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（來源 `居酒屋かど家.jpg`） |
 | `food-hirome.webp` | 弘人市場入口 | Maarten Heerlien | [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Entrance_to_Hirome_Ichiba_(6453684561).jpg) |
-| `food-katsuo.webp` | 弘人市場鰹魚たたき | Maarten Heerlien | [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Bonito_tataki_at_Hirome_Market_(6453600279).jpg) |
+| `food-kirinomori.webp` | 霧の森大福 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（來源 `霧之森.jpg`） |
+| `food-sake.webp` | 金陵酒造酒藏外觀 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（來源 `金陵酒造.jpg`） |
 
 ## trips/2023_日本北海道_自由行/photos/
 

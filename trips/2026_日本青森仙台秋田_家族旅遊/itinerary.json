@@ -541,7 +541,7 @@
           "tag": "🎫 領取票券",
           "highlight": true,
           "icon": "ticket",
-          "detail": "周遊券 ¥35,000／まるごとパス ¥2,930"
+          "detail": "周遊券 NT$6,962／まるごとパス NT$583"
         },
         {
           "time": "16:19",
@@ -1109,22 +1109,22 @@
         "items": [
           {
             "label": "東日本周遊券（5日）",
-            "amount": "¥35,000"
+            "amount": "NT$6,962"
           },
           {
             "label": "仙台まるごとパス（1日）",
-            "amount": "¥2,930"
+            "amount": "NT$583"
           },
           {
             "label": "桃園⇄仙台 來回機票（每人參考）",
-            "amount": "¥18,000"
+            "amount": "NT$3,580"
           },
           {
             "label": "當地巴士/計程車",
-            "amount": "¥3,000"
+            "amount": "NT$597"
           }
         ],
-        "subtotal": "¥58,930"
+        "subtotal": "NT$11,721"
       },
       {
         "icon": "🏨",
@@ -1132,34 +1132,34 @@
         "items": [
           {
             "label": "Vista 飯店 仙台（Day 1，1晚）",
-            "amount": "¥9,000"
+            "amount": "NT$1,790"
           },
           {
             "label": "盛岡新城市飯店（Day 2，1晚）",
-            "amount": "¥8,500"
+            "amount": "NT$1,691"
           },
           {
             "label": "盛岡大都會飯店 新翼（Day 3，1晚）",
-            "amount": "¥9,000"
+            "amount": "NT$1,790"
           },
           {
             "label": "弘前超級飯店（Day 4，1晚）",
-            "amount": "¥7,000"
+            "amount": "NT$1,392"
           },
           {
             "label": "Green Hotel Omagari（Day 5，1晚）",
-            "amount": "¥7,500"
+            "amount": "NT$1,492"
           },
           {
             "label": "日本三景松島溫泉 壯觀飯店（Day 6，一泊二食）",
-            "amount": "¥18,000"
+            "amount": "NT$3,580"
           },
           {
             "label": "仙台華盛頓飯店（Day 7，1晚）",
-            "amount": "¥9,000"
+            "amount": "NT$1,790"
           }
         ],
-        "subtotal": "¥68,000"
+        "subtotal": "NT$13,525"
       },
       {
         "icon": "🍽️",
@@ -1167,21 +1167,24 @@
         "items": [
           {
             "label": "三餐（8天）",
-            "amount": "¥32,000"
+            "amount": "NT$6,365"
           },
           {
             "label": "景點門票／體驗（酒藏、纜車、傳承館等）",
-            "amount": "¥6,000"
+            "amount": "NT$1,193"
           }
         ],
-        "subtotal": "¥38,000"
+        "subtotal": "NT$7,558"
       }
     ],
     "total": {
-      "amount": "¥164,930",
-      "twd": "約 NT$ 34,000 - 36,000 /人",
-      "family": "約 ¥659,720",
-      "familyTwd": "約 NT$ 136,000 - 144,000"
+      "amount": "約 NT$32,805"
+    },
+    "fx": {
+      "month": "2026-06",
+      "jpyToTwd": 0.1989,
+      "basis": "台銀即期賣出月平均",
+      "provisional": true
     }
   },
   "map": {

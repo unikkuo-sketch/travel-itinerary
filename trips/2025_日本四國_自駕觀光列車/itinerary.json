@@ -14,8 +14,9 @@
     "footerDate": "行程實錄 · 2025年5月12日 - 5月19日",
     "cover": {
       "src": "photos/cover.webp",
-      "alt": "栗林公園池畔松林與日本庭園景觀",
-      "credit": "KimonBerlin / CC BY-SA 2.0"
+      "alt": "小豆島天使之路沙洲與前島",
+      "credit": "宇宙碎片拍攝",
+      "objectPosition": "center 42%"
     },
     "theme": "ocean",
     "routeRegions": "香川・愛媛・高知",
@@ -107,6 +108,13 @@
   },
   "events": [
     {
+      "region": "觀光列車",
+      "items": [
+        "本趟重點：高知→窪川／岩本寺慢車，予土・土讚沿線放空看山",
+        "Day 6 專留鐵道節奏，車程約 2.5 小時，適合 chill 看風景"
+      ]
+    },
+    {
       "region": "香川・瀬戸内",
       "items": [
         "五月瀬戸内氣候舒適，小豆島渡輪請留意風浪與班次",
@@ -160,8 +168,9 @@
       },
       "photo": {
         "src": "photos/day2.webp",
-        "alt": "寒霞溪展望的小豆島全景",
-        "credit": "Photos of Japan / CC0"
+        "alt": "小豆島天使之路沙洲與前島",
+        "credit": "宇宙碎片拍攝",
+        "objectPosition": "center 42%"
       }
     },
     {
@@ -175,8 +184,9 @@
       },
       "photo": {
         "src": "photos/day3.webp",
-        "alt": "金刀比羅宮境內建築",
-        "credit": "baggio4ever / CC BY 3.0"
+        "alt": "金刀比羅宮本宮建築",
+        "credit": "宇宙碎片拍攝",
+        "objectPosition": "center 28%"
       }
     },
     {
@@ -190,8 +200,9 @@
       },
       "photo": {
         "src": "photos/story-dogo.webp",
-        "alt": "道後溫泉本館外觀",
-        "credit": "Suicasmo / CC BY-SA 4.0"
+        "alt": "道後溫泉本館暮色外觀",
+        "credit": "宇宙碎片拍攝",
+        "objectPosition": "center 40%"
       }
     },
     {
@@ -206,7 +217,8 @@
       "photo": {
         "src": "photos/story-shimonada.webp",
         "alt": "下灘駅月台與瀬戸内海",
-        "credit": "Sunport1216 / CC BY-SA 4.0"
+        "credit": "宇宙碎片拍攝",
+        "objectPosition": "35% 45%"
       }
     },
     {
@@ -220,8 +232,25 @@
       },
       "photo": {
         "src": "photos/story-uwajima.webp",
-        "alt": "宇和島城本丸石垣與天守",
-        "credit": "Saigen Jiro / CC0"
+        "alt": "宇和島城天守與石垣",
+        "credit": "宇宙碎片拍攝",
+        "objectPosition": "center 40%"
+      }
+    },
+    {
+      "theme": "culture",
+      "title": "四國觀光列車",
+      "kicker": "JR四国・ものがたり",
+      "body": "JR四国把島內風景編成三則「ものがたり」：愛媛沿岸的伊予灘ものがたり、穿山過谷的四国まんなか千年ものがたり，以及高知的志国土佐・時代の夜明けのものがたり。這趟搭的是後者——俗稱龍馬號——走土讚線高知→窪川（立志の抄），車窗對上龍馬脫藩路徑的田園、山間與太平洋緣，車內是土佐流餐飲與全車綠車指定席的慢節奏。",
+      "source": {
+        "label": "志国土佐 時代の夜明けのものがたり（JR四国）",
+        "url": "https://www.jr-shikoku.co.jp/yoakenomonogatari/"
+      },
+      "photo": {
+        "src": "photos/story-train-ryoma.webp",
+        "alt": "志国土佐時代の夜明けのものがたり觀光列車",
+        "credit": "宇宙碎片拍攝",
+        "objectPosition": "center 45%"
       }
     },
     {
@@ -235,8 +264,9 @@
       },
       "photo": {
         "src": "photos/story-oboke.webp",
-        "alt": "大步危峽谷觀光遊覽船",
-        "credit": "さかおり / CC BY-SA 4.0"
+        "alt": "祖谷藤蔓橋與溪谷",
+        "credit": "宇宙碎片拍攝",
+        "objectPosition": "center 55%"
       }
     }
   ],
@@ -251,39 +281,54 @@
         "url": "https://www.my-kagawa.jp/"
       },
       "photo": {
-        "src": "photos/cover.webp",
-        "alt": "高松栗林公園氛圍（讚岐之旅開場）",
-        "credit": "KimonBerlin / CC BY-SA 2.0"
+        "src": "photos/food-udon.webp",
+        "alt": "讚岐烏龍麵天婦羅定食",
+        "credit": "宇宙碎片拍攝",
+        "objectPosition": "center center"
       }
     },
     {
       "theme": "food",
-      "title": "小豆島海鮮小屋",
-      "kicker": "香川・小豆島",
-      "body": "漁師小屋うまげなもん位於小豆島飯店內，以島嶼鮮魚與定食節奏著名。寒霞溪下來後的午餐，正好補足纜車後的胃口。",
+      "title": "霧の森菓子",
+      "kicker": "愛媛・松山",
+      "body": "愛媛知名休閒點心品牌，松山店方便自駕補給。松山城之後帶一份上路，南下下灘與宇和島的車程就不那麼長。",
       "source": {
-        "label": "小豆島観光協会",
-        "url": "https://shodoshima.or.jp/"
+        "label": "霧の森（公式）",
+        "url": "https://www.kirinomori.co.jp/"
       },
       "photo": {
-        "src": "photos/day2.webp",
-        "alt": "小豆島寒霞溪景觀",
-        "credit": "Photos of Japan / CC0"
+        "src": "photos/food-kirinomori.webp",
+        "alt": "霧の森大福",
+        "credit": "宇宙碎片拍攝",
+        "objectPosition": "center center"
       }
     },
     {
       "theme": "food",
-      "title": "鰹魚たたき",
-      "kicker": "高知・弘人市場",
-      "body": "土佐名物：表面炙燒、內心柔嫩的鰹魚刺身。弘人市場的共食長桌氛圍，讓晚餐變成和地方人一起坐下來的儀式。",
+      "title": "大洲爐端 油屋",
+      "kicker": "愛媛・大洲",
+      "body": "伊予小京都大洲的河邊爐端：午間定食節奏，夜間爐端燒。幕末旅館改建的店內吃一頓，再收一份季節甜點（栗子），把肱川畔的停靠寫進味覺。",
       "source": {
-        "label": "ひろめ市場",
-        "url": "https://hirome.co.jp/"
+        "label": "大洲炉端 油屋（公式）",
+        "url": "https://www.roundtable-tky.com/aburaya/"
       },
+      "photo": {
+        "src": "photos/food-ozu-aburaya.webp",
+        "alt": "大洲爐端油屋的栗子甜點",
+        "credit": "宇宙碎片拍攝",
+        "objectPosition": "center 45%"
+      }
+    },
+    {
+      "theme": "food",
+      "title": "居酒屋かど家",
+      "kicker": "高知・北本町",
+      "body": "高知駅南側的小居酒屋，看板是夜定食：鰹魚たたき搭配飯、湯與小鉢一次到位。不是弘人市場的共食長桌，而是店家家常節奏——抵達高知後補一頓土佐味的好選擇。",
       "photo": {
         "src": "photos/food-katsuo.webp",
-        "alt": "弘人市場的鰹魚たたき",
-        "credit": "Maarten Heerlien / CC BY 2.0"
+        "alt": "居酒屋かど家的夜定食與鰹魚たたき",
+        "credit": "宇宙碎片拍攝",
+        "objectPosition": "center 60%"
       }
     },
     {
@@ -302,33 +347,19 @@
       }
     },
     {
-      "theme": "food",
-      "title": "霧の森菓子",
-      "kicker": "愛媛・松山",
-      "body": "愛媛知名休閒點心品牌，松山店方便自駕補給。松山城之後帶一份上路，南下下灘與宇和島的車程就不那麼長。",
-      "source": {
-        "label": "霧の森（公式）",
-        "url": "https://www.kirinomori.co.jp/"
-      },
-      "photo": {
-        "src": "photos/day4.webp",
-        "alt": "松山城天守",
-        "credit": "Jyo81 / CC BY 3.0"
-      }
-    },
-    {
       "theme": "sake",
-      "title": "土佐地酒",
-      "kicker": "高知・日曜市周邊",
-      "body": "高知酒造以辛口、乾淨收口聞名，搭配鰹魚與山菜特別合拍。日曜市或弘人市場順手帶回一兩瓶，是這趟最輕便的山海記憶。",
+      "title": "金陵酒造",
+      "kicker": "香川・金刀比羅",
+      "body": "金刀比羅宮參道口的御神酒釀造元，一七八九年創業。參拜前後走進酒藏門面，把「金刀比羅宮御神酒」與金陵的瓶子帶下山，是這趟最貼近信仰地的一杯。",
       "source": {
-        "label": "高知県酒造組合",
-        "url": "https://www.kochi-sake.com/"
+        "label": "金陵酒造（公式）",
+        "url": "https://www.kinryo.co.jp/"
       },
       "photo": {
-        "src": "photos/day6.webp",
-        "alt": "高知城天守",
-        "credit": "663highland / CC BY 2.5"
+        "src": "photos/food-sake.webp",
+        "alt": "金陵酒造酒藏外觀",
+        "credit": "宇宙碎片拍攝",
+        "objectPosition": "center 35%"
       }
     }
   ],
@@ -341,7 +372,10 @@
       "price": "¥54,464",
       "priceSuffix": "",
       "meta": "四國島內主要移動方式",
-      "features": ["金比羅→松山→宇和島→高知→祖谷", "另計加油 ¥8,110、ETC ¥4,870"]
+      "features": [
+        "金比羅→松山→宇和島→高知→祖谷",
+        "另計加油 ¥8,110、ETC ¥4,870"
+      ]
     },
     {
       "variant": "secondary",
@@ -351,7 +385,9 @@
       "price": "¥10,890",
       "priceSuffix": "",
       "meta": "高松港 ⇄ 土庄港（帳務：小豆島）",
-      "features": ["Day 2 日帰り"]
+      "features": [
+        "Day 2 日帰り"
+      ]
     },
     {
       "variant": "secondary",
@@ -361,7 +397,9 @@
       "price": "NT$5,980",
       "priceSuffix": "",
       "meta": "高知→窪川／岩本寺",
-      "features": ["Day 6 慢車節奏"]
+      "features": [
+        "Day 6 慢車節奏"
+      ]
     },
     {
       "variant": "secondary",
@@ -371,7 +409,11 @@
       "price": "¥15,480",
       "priceSuffix": "",
       "meta": "纜車・鐘乳洞・遊船",
-      "features": ["寒霞溪纜車 ¥4,680", "龍河洞 ¥7,800", "大步危觀光船 ¥3,000"]
+      "features": [
+        "寒霞溪纜車 ¥4,680",
+        "龍河洞 ¥7,800",
+        "大步危觀光船 ¥3,000"
+      ]
     }
   ],
   "overview": [
@@ -612,8 +654,8 @@
       ],
       "photo": {
         "src": "photos/day2.webp",
-        "alt": "寒霞溪展望的小豆島全景",
-        "credit": "Photos of Japan / CC0"
+        "alt": "小豆島天使之路沙洲",
+        "credit": "宇宙碎片拍攝"
       }
     },
     {
@@ -648,7 +690,7 @@
         {
           "time": "14:24",
           "place": "Blue Star",
-          "desc": "途中午餐（帳務 ¥2,700）",
+          "desc": "途中午餐（帳務 NT$569）",
           "icon": "food",
           "tag": "🍽️ 午餐"
         },
@@ -681,8 +723,8 @@
       ],
       "photo": {
         "src": "photos/day3.webp",
-        "alt": "金刀比羅宮境內",
-        "credit": "baggio4ever / CC BY 3.0"
+        "alt": "金刀比羅宮本宮建築",
+        "credit": "宇宙碎片拍攝"
       }
     },
     {
@@ -744,7 +786,7 @@
         {
           "time": "18:10",
           "place": "Hotel Gakuya Sakurakan",
-          "desc": "ホテル楽屋 桜館辦理入住（高知；D4–6 住宿 ¥37,000）",
+          "desc": "ホテル楽屋 桜館辦理入住（高知；D4–6 住宿每人 NT$3,896）",
           "icon": "hotel",
           "tag": "🏨 住宿",
           "detail": "自駕約 2.5 小時緩衝已含於行程"
@@ -757,8 +799,8 @@
       ],
       "photo": {
         "src": "photos/day4.webp",
-        "alt": "松山城天守",
-        "credit": "Jyo81 / CC BY 3.0"
+        "alt": "下灘駅月台與瀬戸内海",
+        "credit": "宇宙碎片拍攝"
       }
     },
     {
@@ -800,7 +842,7 @@
           "desc": "鐘乳石洞探訪，高知代表性自然景點",
           "tag": "🕳️ 必訪",
           "highlight": true,
-          "detail": "停留約 2 小時・門票約 ¥7,800"
+          "detail": "停留約 2 小時・門票約 NT$1,643"
         },
         {
           "time": "16:31",
@@ -824,8 +866,8 @@
       ],
       "photo": {
         "src": "photos/day5.webp",
-        "alt": "龍河洞東口入口",
-        "credit": "京浜にけ / CC BY-SA 3.0"
+        "alt": "笑淵瀑布與碧綠水潭",
+        "credit": "宇宙碎片拍攝"
       }
     },
     {
@@ -890,7 +932,8 @@
       "photo": {
         "src": "photos/day6.webp",
         "alt": "高知城天守",
-        "credit": "663highland / CC BY 2.5"
+        "credit": "宇宙碎片拍攝",
+        "objectPosition": "center 58%"
       }
     },
     {
@@ -952,7 +995,7 @@
       "photo": {
         "src": "photos/day7.webp",
         "alt": "祖谷藤蔓橋",
-        "credit": "ume-y / CC BY 2.0"
+        "credit": "宇宙碎片拍攝"
       }
     },
     {
@@ -992,37 +1035,37 @@
     "categories": [
       {
         "icon": "🏨",
-        "title": "住宿（日圓）",
+        "title": "住宿",
         "items": [
           {
             "label": "Hotel Gakuya Sakurakan（D4–6）",
-            "amount": "¥37,000"
+            "amount": "NT$3,896"
           }
         ],
-        "subtotal": "¥37,000"
+        "subtotal": "NT$3,896"
       },
       {
         "icon": "💳",
-        "title": "台幣支付（住宿／列車）",
+        "title": "預付（住宿／列車）",
         "items": [
           {
             "label": "Hostel JAQ takamatsu（D1–2）",
-            "amount": "NT$3,507"
+            "amount": "NT$1,754"
           },
           {
             "label": "松山巢酒店（D3）",
-            "amount": "NT$2,483"
+            "amount": "NT$1,242"
           },
           {
             "label": "觀光列車（高知→窪川／岩本寺）",
-            "amount": "NT$5,980"
+            "amount": "NT$2,990"
           },
           {
             "label": "HOTEL LiVEMAX 高松駅前（D7）",
-            "amount": "NT$2,164"
+            "amount": "NT$1,082"
           }
         ],
-        "subtotal": "NT$14,134"
+        "subtotal": "NT$7,068"
       },
       {
         "icon": "🚗",
@@ -1030,22 +1073,22 @@
         "items": [
           {
             "label": "租車",
-            "amount": "¥54,464"
+            "amount": "NT$5,735"
           },
           {
             "label": "小豆島（渡輪等）",
-            "amount": "¥10,890"
+            "amount": "NT$1,147"
           },
           {
             "label": "加油（D5＋D8）",
-            "amount": "¥8,110"
+            "amount": "NT$854"
           },
           {
             "label": "ETC（含丸亀510／回高松950）",
-            "amount": "¥4,870"
+            "amount": "NT$513"
           }
         ],
-        "subtotal": "¥78,334"
+        "subtotal": "NT$8,249"
       },
       {
         "icon": "🅿️",
@@ -1053,18 +1096,18 @@
         "items": [
           {
             "label": "高松／小豆島／金比羅／道後／松山巢",
-            "amount": "¥3,800"
+            "amount": "NT$400"
           },
           {
             "label": "宇和島城／高知住宿（D5–6）／弘人市場",
-            "amount": "¥2,600"
+            "amount": "NT$274"
           },
           {
             "label": "祖谷／LiVEMAX／D8住宿停車",
-            "amount": "¥1,900"
+            "amount": "NT$200"
           }
         ],
-        "subtotal": "¥8,300"
+        "subtotal": "NT$874"
       },
       {
         "icon": "🎫",
@@ -1072,18 +1115,18 @@
         "items": [
           {
             "label": "寒霞溪纜車",
-            "amount": "¥4,680"
+            "amount": "NT$493"
           },
           {
             "label": "龍河洞",
-            "amount": "¥7,800"
+            "amount": "NT$821"
           },
           {
             "label": "大步危觀光船",
-            "amount": "¥3,000"
+            "amount": "NT$316"
           }
         ],
-        "subtotal": "¥15,480"
+        "subtotal": "NT$1,630"
       },
       {
         "icon": "🍽️",
@@ -1091,104 +1134,136 @@
         "items": [
           {
             "label": "D1 田中屋食堂／超市／和果子",
-            "amount": "¥8,719"
+            "amount": "NT$918"
           },
           {
             "label": "D2 La Clarte／骨付鶏 よって屋",
-            "amount": "¥8,260"
+            "amount": "NT$870"
           },
           {
             "label": "D3 Blue Star／富久重",
-            "amount": "¥10,180"
+            "amount": "NT$1,072"
           },
           {
             "label": "D4 大洲爐端油屋／秀長水產／かど家",
-            "amount": "¥7,550"
+            "amount": "NT$795"
           },
           {
             "label": "D5 Cafe de LA PAIX／鳥ボーン／超市午餐",
-            "amount": "¥7,954"
+            "amount": "NT$838"
           },
           {
             "label": "D6 麥當勞／土佐ノ國 二十四万石",
-            "amount": "¥5,250"
+            "amount": "NT$553"
           },
           {
             "label": "D7 車站便當／Kitchen MAMA",
-            "amount": "¥6,950"
+            "amount": "NT$732"
           },
           {
             "label": "D8 HOLIDAY GOOD MORNING",
-            "amount": "¥2,200"
+            "amount": "NT$232"
           }
         ],
-        "subtotal": "¥57,063"
+        "subtotal": "NT$6,010"
       }
     ],
     "total": {
-      "amount": "約 ¥98,089",
-      "twd": "＋約 NT$7,067 /人",
-      "family": "¥196,177",
-      "familyTwd": "NT$14,134"
+      "amount": "約 NT$27,727"
+    },
+    "fx": {
+      "month": "2025-05",
+      "jpyToTwd": 0.2106,
+      "basis": "台銀即期賣出月平均"
     }
   },
   "map": {
-    "center": [33.75, 133.55],
+    "center": [
+      33.75,
+      133.55
+    ],
     "zoom": 8,
     "locations": [
       {
         "name": "高松",
         "number": 1,
         "day": 1,
-        "coords": [34.3402, 134.0434]
+        "coords": [
+          34.3402,
+          134.0434
+        ]
       },
       {
         "name": "小豆島",
         "number": 2,
         "day": 2,
-        "coords": [34.4833, 134.2333]
+        "coords": [
+          34.4833,
+          134.2333
+        ]
       },
       {
         "name": "金刀比羅",
         "number": 3,
         "day": 3,
-        "coords": [34.1911, 133.8072]
+        "coords": [
+          34.1911,
+          133.8072
+        ]
       },
       {
         "name": "松山",
         "number": 4,
         "day": 3,
-        "coords": [33.8392, 132.7657]
+        "coords": [
+          33.8392,
+          132.7657
+        ]
       },
       {
         "name": "下灘",
         "number": 5,
         "day": 4,
-        "coords": [33.6514, 132.5897]
+        "coords": [
+          33.6514,
+          132.5897
+        ]
       },
       {
         "name": "宇和島",
         "number": 6,
         "day": 4,
-        "coords": [33.2234, 132.5606]
+        "coords": [
+          33.2234,
+          132.5606
+        ]
       },
       {
         "name": "高知",
         "number": 7,
         "day": 5,
-        "coords": [33.5597, 133.5311]
+        "coords": [
+          33.5597,
+          133.5311
+        ]
       },
       {
         "name": "窪川・岩本寺",
         "number": 8,
         "day": 6,
-        "coords": [33.2086, 133.1389]
+        "coords": [
+          33.2086,
+          133.1389
+        ]
       },
       {
         "name": "祖谷・大步危",
         "number": 9,
         "day": 7,
-        "coords": [33.875, 133.836]
+        "coords": [
+          33.875,
+          133.836
+        ]
       }
     ]
   }

@@ -249,8 +249,8 @@ function renderTimelineItem(item) {
   `;
 }
 
-/** Parse yen display strings; ranges like ¥75,000-85,000 use midpoint. */
-function parseYenAmount(str) {
+/** Parse NT$/¥ display strings; ranges use midpoint. */
+function parseMoneyAmount(str) {
   if (!str) return 0;
   const nums = [...String(str).matchAll(/[\d,]+/g)]
     .map((m) => parseInt(m[0].replace(/,/g, ''), 10))
@@ -295,7 +295,7 @@ function renderDay(day, tripId) {
 
 function renderBudgetHtml(budget) {
   const categories = budget.categories || [];
-  const amounts = categories.map((cat) => parseYenAmount(cat.subtotal));
+  const amounts = categories.map((cat) => parseMoneyAmount(cat.subtotal));
   const total = amounts.reduce((sum, n) => sum + n, 0);
 
   const cards = categories
@@ -327,20 +327,19 @@ function renderBudgetHtml(budget) {
     .join('');
 
   const t = budget.total || {};
-  const party = budget.partySize ? ` × ${budget.partySize}` : '';
+  const fx = budget.fx;
+  const fxNote =
+    fx?.month && fx?.jpyToTwd != null
+      ? `<p class="budget-fx-note">匯率：${esc(fx.month)} ${esc(fx.basis || '台銀即期賣出月平均')} 1 日圓 = NT$${esc(String(fx.jpyToTwd))}${fx.provisional ? '（暫代）' : ''}</p>`
+      : '';
   const summary = `
     <div class="budget-summary">
       <div class="budget-summary-card">
         <div class="total-label">每人</div>
         <div class="total-amount">${esc(t.amount || '')}</div>
-        <div class="total-twd">${esc(t.twd || '')}</div>
       </div>
-      <div class="budget-summary-card">
-        <div class="total-label">家庭${party}</div>
-        <div class="total-amount">${esc(t.family || '')}</div>
-        <div class="total-twd">${esc(t.familyTwd || '')}</div>
-      </div>
-    </div>`;
+    </div>
+    ${fxNote}`;
 
   const stack =
     total > 0
@@ -389,6 +388,7 @@ export function renderHero(meta, days = []) {
           src: tripAssetUrl(tripId, meta.cover.src),
           alt: meta.cover.alt || meta.title || '',
           credit: meta.cover.credit,
+          objectPosition: meta.cover.objectPosition,
         },
         { className: 'ph--hero', eager: true, creditPosition: 'hero', fetchPriority: 'high' }
       )

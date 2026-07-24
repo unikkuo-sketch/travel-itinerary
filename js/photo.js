@@ -17,7 +17,7 @@ export function tripAssetUrl(tripId, rel) {
  * Shared photo block: lazy loading, skeleton shimmer, fade-in,
  * graceful fallback and photographer credit overlay.
  *
- * photo: { src, alt, credit } — src must already be a full URL.
+ * photo: { src, alt, credit, objectPosition? } — src must already be a full URL.
  */
 export function photoHtml(photo, { className = '', eager = false, creditPosition = 'br', fetchPriority } = {}) {
   if (!photo?.src) return '';
@@ -25,6 +25,9 @@ export function photoHtml(photo, { className = '', eager = false, creditPosition
     ? `<span class="ph-credit ph-credit--${creditPosition}">${esc(photo.credit)}</span>`
     : '';
   const fp = fetchPriority ? ` fetchpriority="${esc(fetchPriority)}"` : '';
+  const pos = photo.objectPosition
+    ? ` style="object-position: ${esc(photo.objectPosition)}"`
+    : '';
   return `
     <figure class="ph ${className}">
       <img
@@ -32,7 +35,7 @@ export function photoHtml(photo, { className = '', eager = false, creditPosition
         src="${esc(photo.src)}"
         alt="${esc(photo.alt || '')}"
         loading="${eager ? 'eager' : 'lazy'}"
-        decoding="async"${fp}
+        decoding="async"${fp}${pos}
         onload="this.closest('.ph').classList.add('ph--loaded')"
         onerror="this.closest('.ph').classList.add('ph--error')"
       >

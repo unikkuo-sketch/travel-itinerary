@@ -152,12 +152,14 @@
   ],
   "budget": {
     "partySize": 4,
+    "fx": {
+      "month": "2026-01",
+      "jpyToTwd": 0.2,
+      "basis": "台銀即期賣出月平均"
+    },
     "categories": [],
     "total": {
-      "amount": "¥0",
-      "twd": "約 NT$ 0 /人",
-      "family": "約 ¥0",
-      "familyTwd": "約 NT$ 0"
+      "amount": "約 NT$0"
     }
   },
   "map": {

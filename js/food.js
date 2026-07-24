@@ -50,6 +50,7 @@ function renderChapter(item, index, tripId) {
         src: tripAssetUrl(tripId, item.photo.src),
         alt: item.photo.alt || item.title || '',
         credit: item.photo.credit || '',
+        objectPosition: item.photo.objectPosition,
       }
     : null;
   const media = photo

@@ -761,22 +761,22 @@
         "items": [
           {
             "label": "成田→東京 (巴士) + 多場單程車票",
-            "amount": "¥12,000"
+            "amount": "NT$2,435"
           },
           {
             "label": "西武秩父套票 (2日)",
-            "amount": "¥2,230"
+            "amount": "NT$452"
           },
           {
             "label": "池袋→成田 (高速巴士)",
-            "amount": "¥1,900"
+            "amount": "NT$386"
           },
           {
             "label": "當地巴士/計程車",
-            "amount": "¥3,000"
+            "amount": "NT$609"
           }
         ],
-        "subtotal": "¥19,130"
+        "subtotal": "NT$3,881"
       },
       {
         "icon": "🏨",
@@ -784,26 +784,26 @@
         "items": [
           {
             "label": "Resorpia Atami（Day 1，1晚）",
-            "amount": "¥15,000"
+            "amount": "NT$3,044"
           },
           {
             "label": "Hotel Yoshino（Day 2，一泊二食）",
-            "amount": "¥30,000-40,000"
+            "amount": "NT$6,087–8,116"
           },
           {
             "label": "Super Hotel JR Ikebukuro West Exit（Day 3，1晚）",
-            "amount": "¥10,000"
+            "amount": "NT$2,029"
           },
           {
             "label": "Hotel Route-Inn Grand Chichibu（Day 4，1晚）",
-            "amount": "¥10,000"
+            "amount": "NT$2,029"
           },
           {
             "label": "hotel hisoca ikebukuro（Day 5，1晚）",
-            "amount": "¥10,000"
+            "amount": "NT$2,029"
           }
         ],
-        "subtotal": "¥75,000-85,000"
+        "subtotal": "NT$15,218–17,247"
       },
       {
         "icon": "🍽️",
@@ -811,21 +811,23 @@
         "items": [
           {
             "label": "午餐、晚餐（5天）",
-            "amount": "¥20,000"
+            "amount": "NT$4,058"
           },
           {
             "label": "景點門票",
-            "amount": "¥5,000"
+            "amount": "NT$1,015"
           }
         ],
-        "subtotal": "¥25,000"
+        "subtotal": "NT$5,073"
       }
     ],
     "total": {
-      "amount": "¥125,000 - 135,000",
-      "twd": "約 NT$ 26,000 - 28,000 /人",
-      "family": "約 ¥500,000 - 540,000",
-      "familyTwd": "約 NT$ 104,000 - 112,000"
+      "amount": "約 NT$25,363–27,392"
+    },
+    "fx": {
+      "month": "2026-03",
+      "jpyToTwd": 0.2029,
+      "basis": "台銀即期賣出月平均"
     }
   },
   "map": {

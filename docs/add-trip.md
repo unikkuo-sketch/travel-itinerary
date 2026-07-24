@@ -63,12 +63,12 @@ Copy-Item -Recurse trips\_template trips\2027_義大利托斯卡尼_蜜月
 
 | 欄位 | 說明 |
 |------|------|
-| `partySize` | 家庭人數（顯示「家庭 × N」） |
-| `categories` | 每人明細分類（不變） |
-| `total.amount` / `twd` | 每人總額（字串） |
-| `total.family` / `familyTwd` | 家庭總額（字串，作者手填） |
+| `partySize` | 人數（僅供作者換算每人；頁面不顯示） |
+| `fx` | 匯率：`month`、`jpyToTwd`、`basis`（台銀即期賣出月平均）；行程月未結束時加 `provisional: true` |
+| `categories` | 每人明細（金額皆為 `NT$…`） |
+| `total.amount` | 每人總額（字串，如 `約 NT$33,137`） |
 
-金額維持字串，不做自動換算。
+金額維持字串；日圓先依 `fx` 換算成每人新台幣再填入。不做 runtime 自動換算。票券／購物價格可維持當地幣別。
 
 #### 地圖 `map.locations[]`
 

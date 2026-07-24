@@ -496,7 +496,7 @@
           "time": "09:30",
           "place": "名古屋科學館",
           "desc": "參觀科學館",
-          "detail": "白川公園內；門票約 ¥400",
+          "detail": "白川公園內；門票約 NT$110",
           "icon": "sparkle",
           "tag": "🔬 景點",
           "highlight": true
@@ -617,7 +617,7 @@
           "time": "10:50",
           "place": "高山濃飛巴士站",
           "desc": "巴士前往白川鄉合掌村",
-          "detail": "約 11:40 抵達；車票約 ¥2,470",
+          "detail": "約 11:40 抵達；車票約 NT$680",
           "icon": "train",
           "tag": "🚌 巴士",
           "highlight": true
@@ -642,7 +642,7 @@
           "time": "16:25",
           "place": "合掌屋巴士站",
           "desc": "巴士前往金澤（需先預約）",
-          "detail": "約 17:50 抵金澤；車票約 ¥1,850",
+          "detail": "約 17:50 抵金澤；車票約 NT$510",
           "icon": "train",
           "tag": "🚌 預約"
         },
@@ -695,7 +695,7 @@
           "time": "09:30",
           "place": "兼六園",
           "desc": "參觀兼六園",
-          "detail": "金澤周遊券 ¥500 + 門票 ¥400",
+          "detail": "金澤周遊券 NT$138 + 門票 NT$110",
           "icon": "flower",
           "tag": "🌳 名園",
           "highlight": true
@@ -839,7 +839,7 @@
           "time": "10:40",
           "place": "富山機場",
           "desc": "報到登機、伴手禮最後補給",
-          "detail": "市區→機場交通約 ¥410；華航 CI171 約 12:40 起飛",
+          "detail": "市區→機場交通約 NT$113；華航 CI171 約 12:40 起飛",
           "icon": "plane",
           "tag": "✈️ 起飛",
           "highlight": true
@@ -871,11 +871,11 @@
         "title": "機票",
         "items": [
           {
-            "label": "華航來回（三人合計）",
-            "amount": "NT$28,770"
+            "label": "華航來回（每人）",
+            "amount": "NT$9,590"
           }
         ],
-        "subtotal": "NT$28,770"
+        "subtotal": "NT$9,590"
       },
       {
         "icon": "🚄",
@@ -883,21 +883,21 @@
         "items": [
           {
             "label": "特急／巴士／地鐵／周遊券等",
-            "amount": "NT$19,837"
+            "amount": "NT$6,612"
           }
         ],
-        "subtotal": "NT$19,837"
+        "subtotal": "NT$6,612"
       },
       {
         "icon": "🏨",
         "title": "住宿",
         "items": [
           {
-            "label": "Airbnb、下呂、高山、金澤、富山（合計）",
-            "amount": "NT$34,822"
+            "label": "Airbnb、下呂、高山、金澤、富山（每人）",
+            "amount": "NT$11,607"
           }
         ],
-        "subtotal": "NT$34,822"
+        "subtotal": "NT$11,607"
       },
       {
         "icon": "🎫",
@@ -905,10 +905,10 @@
         "items": [
           {
             "label": "名古屋城、科學館、兼六園等",
-            "amount": "NT$504"
+            "amount": "NT$168"
           }
         ],
-        "subtotal": "NT$504"
+        "subtotal": "NT$168"
       },
       {
         "icon": "🍽️",
@@ -916,10 +916,10 @@
         "items": [
           {
             "label": "餐飲點心淨額",
-            "amount": "NT$27,892"
+            "amount": "NT$9,297"
           }
         ],
-        "subtotal": "NT$27,892"
+        "subtotal": "NT$9,297"
       },
       {
         "icon": "📶",
@@ -927,27 +927,29 @@
         "items": [
           {
             "label": "中華漫遊等",
-            "amount": "NT$447"
+            "amount": "NT$149"
           },
           {
             "label": "旅遊保險",
-            "amount": "NT$1,374"
+            "amount": "NT$458"
           }
         ],
-        "subtotal": "NT$1,821"
+        "subtotal": "NT$607"
       }
     ],
     "total": {
-      "amount": "約 NT$37,882",
-      "twd": "約 NT$ 37,882 /人",
-      "family": "約 NT$113,646",
-      "familyTwd": "約 NT$ 113,646"
+      "amount": "約 NT$37,882"
+    },
+    "fx": {
+      "month": "2018-06",
+      "jpyToTwd": 0.2755,
+      "basis": "台銀即期賣出月平均"
     }
   },
   "map": {
     "center": [
       36.2,
-      137.0
+      137
     ],
     "zoom": 8,
     "locations": [

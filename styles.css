@@ -1574,6 +1574,13 @@ h3 { font-size: var(--text-lg); }
     gap: 1rem;
 }
 
+.budget-fx-note {
+    margin: 0.75rem 0 0;
+    font-size: var(--text-sm);
+    color: var(--text-muted);
+    text-align: center;
+}
+
 .budget-summary-card {
     background: var(--bg-surface);
     border: 1px solid var(--border-soft);
