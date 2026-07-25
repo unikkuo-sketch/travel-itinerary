@@ -43,7 +43,7 @@ ATTRIBUTIONS.md         照片素材授權紀錄（新增圖片必須補列）
 - 行程照片：`meta.cover` 與 `days[].photo`（`src` 相對 `trips/{id}/`、`alt`、`credit`）；不 hotlink，WebP 自架，授權記於 `ATTRIBUTIONS.md`
 - 旅程色：`meta.theme`（`sakura` / `ocean`），未填用預設蜜桃色
 - 票券狀態：`tickets[].status` = `purchased`｜`pending`｜`reservation`；JSON 為預設，本機可點狀態 pill 切換（`travelTicketStatus:{tripId}`）；UI 標「作者端參考／僅存本機」
-- 正式站文案：對外參考站口徑；footer 免責；OG／sitemap 用 `js/site.js` `SITE_ORIGIN`
+- 正式站文案：對外參考站口徑；OG／sitemap 用 `js/site.js` `SITE_ORIGIN`
 - 預算：`budget.partySize`（換算用、不顯示）+ `budget.fx`（台銀即期賣出月平均）+ `categories`／`total.amount` 一律每人 `NT$` 字串
 - 地圖點：`map.locations[]` 需 `name`、`number`、`day`、`coords`；標記與路線依 day 上色；不綁 timeline 編號
 - 行程總覽 `overview[].transport`：已訂班次寫 `車次 · HH:MM`；當日多段用全形 `／` 分隔（渲染成多行 tag）

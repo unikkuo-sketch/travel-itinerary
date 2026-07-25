@@ -152,8 +152,8 @@ function renderWelcomeGrid() {
   const items = [
     { name: 'map', title: '路線與日程', desc: '總覽與每日動線，方便對照自己的排程' },
     { name: 'landmark', title: '風土與飲食', desc: '景點、歷史、文化與在地吃喝筆記' },
-    { name: 'budget', title: '預算參考', desc: '當時每人費用概估，非正式報價' },
-    { name: 'shopping', title: '購物建議', desc: '在地清單可瀏覽；勾選僅存你的本機' },
+    { name: 'budget', title: '預算參考', desc: '每人費用概估' },
+    { name: 'shopping', title: '購物建議', desc: '特產調查；建立你的購物清單' },
   ];
 
   root.innerHTML = items
