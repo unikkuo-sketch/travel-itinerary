@@ -12,8 +12,8 @@
 
 ## 近期
 
-- 公開站：Vercel 根路徑、對外文案／免責、票券本機標示、sitemap／robots／404；舊 github.io 非正式
-- 決策全文：`docs/decisions/2026-07-25-public-vercel.md`
+- 公開站：Vercel `https://travel-itinerary-zeta-two.vercel.app/`（`base: '/'`）；舊 Pages 僅搬家頁
+- 決策全文：`docs/decisions/2026-07-25-public-vercel.md`；內容審稿：`docs/content-audit-2026-07-25.md`
 
 ## 決策
 

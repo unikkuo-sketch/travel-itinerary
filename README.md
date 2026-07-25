@@ -2,7 +2,7 @@
 
 真實走過的日本行程與風土筆記——給同樣在排行程的人當參考。
 
-**正式站：** https://travel-itinerary.vercel.app/  
+**正式站：** https://travel-itinerary-zeta-two.vercel.app/  
 （舊 GitHub Pages 網址已改為搬家提示，不再更新內容。）
 
 ## 快速開始
