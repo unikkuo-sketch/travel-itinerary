@@ -48,7 +48,7 @@ function resolveTicketStatus(ticket, index, overrides) {
 function renderTicketStatus(status, index) {
   const st = TICKET_STATUS[status];
   if (!st) return '';
-  return `<button type="button" class="ticket-status ${st.cls}" data-ticket-index="${index}" data-ticket-status="${status}" title="點擊切換狀態" aria-label="票券狀態：${st.label}，點擊切換">${st.label}</button>`;
+  return `<button type="button" class="ticket-status ${st.cls}" data-ticket-index="${index}" data-ticket-status="${status}" title="作者端參考狀態；點擊切換僅存本機" aria-label="票券狀態：${st.label}（本機可切換）">${st.label}</button>`;
 }
 
 function renderTickets(tickets, overrides = {}) {

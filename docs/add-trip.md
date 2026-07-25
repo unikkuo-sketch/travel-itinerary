@@ -162,8 +162,8 @@ Copy-Item -Recurse trips\_template trips\2027_義大利托斯卡尼_蜜月
 npm run dev
 ```
 
-- Hub：`http://localhost:5173/travel-itinerary/`
-- 行程：`http://localhost:5173/travel-itinerary/trip.html?trip=2027_義大利托斯卡尼_蜜月`
+- Hub：`http://localhost:5173/`
+- 行程：`http://localhost:5173/trip.html?trip=2027_義大利托斯卡尼_蜜月`
 
 ### 7. 上線
 
@@ -173,4 +173,5 @@ git commit -m "Add trip: 2027_義大利托斯卡尼_蜜月"
 git push origin main
 ```
 
-GitHub Actions 會自動部署到 GitHub Pages。
+Vercel 會從 `main` 自動建置部署。若新增行程，記得更新 `public/sitemap.xml`（或執行 `node scripts/gen-sitemap.mjs`）。
+舊 GitHub Pages 僅顯示搬家頁，非正式站。

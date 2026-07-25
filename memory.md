@@ -1,6 +1,6 @@
 # memory — Travel Hub
 
-最後更新：2026-07-19
+最後更新：2026-07-25
 
 ## 待辦
 
@@ -12,25 +12,15 @@
 
 ## 近期
 
-- 風土／飲食分頁：`stories[]`＝景點歷史文化；`foods[]`＝食物與酒；nav 風土→飲食→購物；東北行程兩陣列各 ≥5 則
-- sticky nav（僅行程頁）：`nav-shell` 對齊主內容 1200px；Day chips scroll-spy＋橫滑跟蹤當日（不收合）
-- 行程頁導覽：hero「返回總覽」＋ sticky 雙列（章節／Day chips）；閱讀優先 section 序（行程→亮點→票券→住宿→路線→每日…）
-- 購物／風土／飲食：無 sticky；hero 左上「返回行程」連回本趟行程頁
-- P0/P1 行程頁清晰度：亮點卡、路線動線 strip、住宿總覽、時間軸 icon／detail；每日照片改上下堆疊（不用桌機左右分欄）
-- 行程總覽「交通重點」欄補已訂班次時間（`車次 · HH:MM`，多段用 `／`）
-- 風土改獨立頁 `stories.html`：滿版章節＋下緣疊文；飲食同構頁 `food.html`
-- 旅後回顧已移除，改「風土」（`stories[]`）＋「飲食」（`foods[]`）
-- 行程路線圖底圖改 CARTO Positron + 蜜桃奶油 filter，與 Hub featured-map 對齊
-- Hub 文案：Welcome blurb 置中；「每日行程一覽」；「碎片寶箱」／「碎片漂泊地」
-- 票券狀態可在行程頁點擊切換（本機 localStorage），JSON 仍為預設來源
-- 第三階段精緻化已落地：分日地圖配色／編號、票券狀態、預算家庭總額、OG／hero 骨架
-- 預算「已付／待付」摘要卡已移除（手填字串、無連動，易誤導）
-- 東北行程 `2026_日本青森仙台秋田_家族旅遊` 已進 `trips/` + `manifest`；票務以 xlsx 為準
-- Hub：Hero → Welcome → Featured 世界地圖 → `#hub-grid`
-- Leaflet Vite marker icon 已修（`js/leaflet-icons.js`）
-- 部署：push `main` → GH Actions → Pages；線上 https://unikkuo-sketch.github.io/travel-itinerary/
+- 公開站：Vercel 根路徑、對外文案／免責、票券本機標示、sitemap／robots／404；舊 github.io 非正式
+- 決策全文：`docs/decisions/2026-07-25-public-vercel.md`
 
 ## 決策
+
+### 2026-07-25 — 公開站改 Vercel（摘要）
+
+- Vercel + `base: '/'`；品牌「宇宙碎片集散地」；票券／購物本機保留；五趟全開
+- 放棄以 `github.io/travel-itinerary/` 當正式媒體網址（詳見 docs/decisions）
 
 ### 2026-07-19 — 風土／飲食分頁；飲食含酒
 

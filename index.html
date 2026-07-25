@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>宇宙碎片集散地</title>
-    <meta name="description" content="個人旅遊行程總覽">
+    <meta name="description" content="真實走過的日本行程與風土筆記——給同樣在排行程的人當參考。">
     <meta property="og:title" content="宇宙碎片集散地">
-    <meta property="og:description" content="收集每一次啟程的碎片，拼成屬於我們的旅行地圖">
+    <meta property="og:description" content="真實走過的日本行程與風土筆記——給同樣在排行程的人當參考。">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://unikkuo-sketch.github.io/travel-itinerary/">
-    <meta property="og:image" content="https://unikkuo-sketch.github.io/travel-itinerary/images/hub-hero.webp">
+    <meta property="og:url" content="https://travel-itinerary.vercel.app/">
+    <meta property="og:image" content="https://travel-itinerary.vercel.app/images/hub-hero.webp">
     <meta property="og:site_name" content="宇宙碎片集散地">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="宇宙碎片集散地">
-    <meta name="twitter:description" content="收集每一次啟程的碎片，拼成屬於我們的旅行地圖">
-    <meta name="twitter:image" content="https://unikkuo-sketch.github.io/travel-itinerary/images/hub-hero.webp">
+    <meta name="twitter:description" content="真實走過的日本行程與風土筆記——給同樣在排行程的人當參考。">
+    <meta name="twitter:image" content="https://travel-itinerary.vercel.app/images/hub-hero.webp">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="/favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,9 +32,9 @@
         <div class="hero-content">
             <span class="hero-badge">Travel Hub</span>
             <h1>宇宙碎片集散地</h1>
-            <p class="hero-subtitle">收集每一次啟程的碎片，拼成屬於我們的旅行地圖</p>
+            <p class="hero-subtitle">真實走過的日本行程與風土筆記——給同樣在排行程的人當參考。</p>
             <div class="hero-cta-group">
-                <a href="#hub-grid" class="btn-hero">探索所有行程</a>
+                <a href="#hub-grid" class="btn-hero">探索行程</a>
                 <a href="#featured" class="btn-hero btn-hero--ghost">目的地地圖</a>
             </div>
         </div>
@@ -46,24 +46,33 @@
                 <span class="section-eyebrow">About</span>
                 <h2>關於這個集散地</h2>
             </div>
-            <p class="welcome-blurb">收藏每一塊旅行碎片——航班、住宿、路線、預算與當地特產清單。</p>
-            <div id="welcome-grid" class="welcome-grid" aria-label="集散地功能"></div>
+            <p class="welcome-blurb">這裡不是訂房比價網站，而是可瀏覽的旅程誌：節奏、動線、風土與飲食筆記，供你排自己的行程時參考。</p>
+            <p class="welcome-how">使用方式：先掃總覽與每日行程，再讀風土／飲食篇章；票券與預算是當時參考，購物清單可在本機勾選自用。</p>
+            <div id="welcome-grid" class="welcome-grid" aria-label="集散地內容"></div>
         </section>
 
-        <section class="section reveal">
+        <section class="section reveal" id="hub-grid">
             <div class="section-header section-header--editorial">
                 <span class="section-eyebrow">Itineraries</span>
                 <h2>碎片寶箱</h2>
-                <p>依時間排序，規劃與回顧都在這裡</p>
+                <p>即將出發與旅程回顧</p>
             </div>
-            <div id="hub-grid" class="hub-grid"></div>
+            <div id="hub-upcoming-wrap" class="hub-group" hidden>
+                <h3 class="hub-group-title">即將出發</h3>
+                <div id="hub-upcoming" class="hub-grid"></div>
+            </div>
+            <div id="hub-past-wrap" class="hub-group" hidden>
+                <h3 class="hub-group-title">旅程回顧</h3>
+                <div id="hub-past" class="hub-grid"></div>
+            </div>
+            <p id="hub-empty" class="hub-empty" hidden>尚無行程。</p>
         </section>
 
         <section class="section reveal" id="featured">
             <div class="section-header section-header--editorial">
                 <span class="section-eyebrow">Map</span>
                 <h2>碎片漂泊地</h2>
-                <p>在地圖上點選目的地</p>
+                <p>在地圖上點選目的地，進入該趟行程</p>
             </div>
             <div id="featured-map" class="featured-map"></div>
         </section>
@@ -72,6 +81,7 @@
     <footer class="footer">
         <div class="footer-content">
             <p class="footer-wish">Every journey, a fragment of the infinite.</p>
+            <p class="footer-disclaimer">內容為個人旅程參考，非正式報價或旅遊業廣告；班次、營業與票價請出發前再自行確認。</p>
             <p class="footer-date">照片授權見 <a class="footer-link" href="https://github.com/unikkuo-sketch/travel-itinerary/blob/main/ATTRIBUTIONS.md">素材與授權</a></p>
         </div>
     </footer>

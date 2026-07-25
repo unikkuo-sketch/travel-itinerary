@@ -1,28 +1,27 @@
-name: Deploy to GitHub Pages
+# Deploy relocating stub to GitHub Pages (old URL)
+
+# After Vercel is the canonical host, push to main publishes only a
+# "site moved" page to gh-pages — not the full Vite dist.
+# Do not re-enable full-site Pages deploy (avoids dual canonical).
+
+name: Relocate GitHub Pages
 
 on:
   push:
     branches: [main]
+  workflow_dispatch:
 
 permissions:
   contents: write
 
 jobs:
-  deploy:
+  relocate:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
 
-      - uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-          cache: npm
-
-      - run: npm ci --no-audit --no-fund
-
-      - run: npm run build
-
       - uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
+          publish_dir: ./relocating
+          force_orphan: true

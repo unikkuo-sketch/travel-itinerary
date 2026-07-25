@@ -150,10 +150,10 @@ function renderWelcomeGrid() {
   if (!root) return;
 
   const items = [
-    { name: 'ticket', title: '航班與住宿', desc: '票券與飯店資訊' },
-    { name: 'map', title: '路線與日程', desc: '每日行程一覽' },
-    { name: 'budget', title: '預算', desc: '費用總覽' },
-    { name: 'shopping', title: '特產清單', desc: '購物與伴手禮' },
+    { name: 'map', title: '路線與日程', desc: '總覽與每日動線，方便對照自己的排程' },
+    { name: 'landmark', title: '風土與飲食', desc: '景點、歷史、文化與在地吃喝筆記' },
+    { name: 'budget', title: '預算參考', desc: '當時每人費用概估，非正式報價' },
+    { name: 'shopping', title: '購物建議', desc: '在地清單可瀏覽；勾選僅存你的本機' },
   ];
 
   root.innerHTML = items
@@ -169,36 +169,26 @@ function renderWelcomeGrid() {
     .join('');
 }
 
-function renderHubGrid(sorted) {
-  const root = document.getElementById('hub-grid');
-  if (!root) return;
+function tripCardHtml(t) {
+  const status = tripStatusLabel(t);
+  const cover = t.cover
+    ? photoHtml(
+        { src: tripAssetUrl(t.id, t.cover), alt: t.coverAlt || t.title, credit: t.coverCredit },
+        { className: 'ph--card' }
+      )
+    : `<div class="ph ph--card ph--fallback"><span class="ph-fallback-emoji">${esc(t.emoji || '🌏')}</span></div>`;
 
-  if (!sorted.length) {
-    root.innerHTML = '<p class="hub-empty">尚無行程，請參考 docs/add-trip.md 新增。</p>';
-    return;
-  }
+  const tags = [
+    tripMonthTag(t.dateRange),
+    tripPlaceTag(t),
+    t.days ? `${t.days}天` : '',
+  ].filter(Boolean);
 
-  root.innerHTML = sorted
-    .map((t) => {
-      const status = tripStatusLabel(t);
-      const cover = t.cover
-        ? photoHtml(
-            { src: tripAssetUrl(t.id, t.cover), alt: t.coverAlt || t.title, credit: t.coverCredit },
-            { className: 'ph--card' }
-          )
-        : `<div class="ph ph--card ph--fallback"><span class="ph-fallback-emoji">${esc(t.emoji || '🌏')}</span></div>`;
+  const tagHtml = tags
+    .map((tag) => `<span class="trip-card-tag">${esc(tag)}</span>`)
+    .join('');
 
-      const tags = [
-        tripMonthTag(t.dateRange),
-        tripPlaceTag(t),
-        t.days ? `${t.days}天` : '',
-      ].filter(Boolean);
-
-      const tagHtml = tags
-        .map((tag) => `<span class="trip-card-tag">${esc(tag)}</span>`)
-        .join('');
-
-      return `
+  return `
       <a class="trip-card" href="${tripUrl(t.id)}">
         <div class="trip-card-media">
           ${cover}
@@ -211,8 +201,42 @@ function renderHubGrid(sorted) {
         </div>
       </a>
     `;
-    })
-    .join('');
+}
+
+function renderHubGrid(sorted) {
+  const upcomingRoot = document.getElementById('hub-upcoming');
+  const pastRoot = document.getElementById('hub-past');
+  const upcomingWrap = document.getElementById('hub-upcoming-wrap');
+  const pastWrap = document.getElementById('hub-past-wrap');
+  const emptyEl = document.getElementById('hub-empty');
+  if (!upcomingRoot && !pastRoot) return;
+
+  const upcoming = sorted.filter((t) => !tripIsPast(t));
+  const past = sorted.filter((t) => tripIsPast(t));
+
+  if (upcomingRoot && upcomingWrap) {
+    if (upcoming.length) {
+      upcomingWrap.hidden = false;
+      upcomingRoot.innerHTML = upcoming.map(tripCardHtml).join('');
+    } else {
+      upcomingWrap.hidden = true;
+      upcomingRoot.innerHTML = '';
+    }
+  }
+
+  if (pastRoot && pastWrap) {
+    if (past.length) {
+      pastWrap.hidden = false;
+      pastRoot.innerHTML = past.map(tripCardHtml).join('');
+    } else {
+      pastWrap.hidden = true;
+      pastRoot.innerHTML = '';
+    }
+  }
+
+  if (emptyEl) {
+    emptyEl.hidden = Boolean(upcoming.length || past.length);
+  }
 }
 
 function initReveal() {
@@ -241,7 +265,7 @@ async function init() {
   renderWelcomeGrid();
 
   const featuredRoot = document.getElementById('featured-map');
-  const hubRoot = document.getElementById('hub-grid');
+  const hubRoot = document.getElementById('hub-upcoming') || document.getElementById('hub-past');
   if (!featuredRoot && !hubRoot) return;
 
   try {
@@ -250,7 +274,11 @@ async function init() {
     renderFeaturedMap(sorted);
     renderHubGrid(sorted);
   } catch (err) {
-    if (hubRoot) hubRoot.innerHTML = `<p class="hub-empty">無法載入行程列表：${esc(err.message)}</p>`;
+    const emptyEl = document.getElementById('hub-empty');
+    if (emptyEl) {
+      emptyEl.hidden = false;
+      emptyEl.textContent = `無法載入行程列表：${err.message}`;
+    }
     if (featuredRoot) featuredRoot.innerHTML = '';
   }
 }
