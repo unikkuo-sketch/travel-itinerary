@@ -1,6 +1,6 @@
 import { writeFileSync, readFileSync } from 'node:fs';
 
-const origin = 'https://travel-itinerary.vercel.app';
+const origin = 'https://travel-itinerary-zeta-two.vercel.app';
 const trips = JSON.parse(readFileSync('trips/manifest.json', 'utf8')).trips.map((t) => t.id);
 const pages = ['trip.html', 'stories.html', 'food.html', 'shopping.html'];
 const urls = [`${origin}/`];
