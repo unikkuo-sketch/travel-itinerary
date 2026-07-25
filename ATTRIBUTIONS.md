@@ -24,8 +24,8 @@ CC BY / CC BY-SA 圖片依授權條款標示作者、來源與授權；CC BY-SA 
 | `day6.webp` | 明治神宮南參道鳥居 | Asanagi | [CC0](https://creativecommons.org/publicdomain/zero/1.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Meiji_Shrine_Minami-sando-torii_2023-01-26.jpg) |
 | `story-kinomiya.webp` | 來宮神社拜殿 | Batholith | [Public domain](https://creativecommons.org/publicdomain/mark/1.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Kinomiya_Jinja_(Kinomiya_Shrine)_20100612.jpg) |
 | `food-atami-purin.webp` | 日式焦糖布丁（プリン） | Clairenguyen23 | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Japanese_Caramel_Custard_Pudding,_Purin,_Flan.jpg) |
-| `food-aobasha.webp` | 熱海青葉舍抹茶飲品與富士布丁 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（來源 `青葉舍.jpg`） |
-| `food-bukou.webp` | 武甲酒造柳田總本店外觀 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（來源 `武甲酒藏.jpg`） |
+| `food-aobasha.webp` | 熱海青葉舍抹茶飲品與富士布丁 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
+| `food-bukou.webp` | 武甲酒造柳田總本店外觀 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
 
 ## trips/2026_日本青森仙台秋田_家族旅遊/photos/
 

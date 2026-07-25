@@ -64,7 +64,7 @@ npm run preview
 
 - base path：`/`
 - 正式站：Vercel（`dist`）；canonical 見 `js/site.js` `SITE_ORIGIN`
-- CI：`.github/workflows/deploy.yml` → Pages 已關閉（workflow 停用）
+- 舊 GitHub Pages 已關閉（無 Pages workflow）
 
 ## Cursor Cloud specific instructions
 

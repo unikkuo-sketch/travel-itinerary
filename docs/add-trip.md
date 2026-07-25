@@ -143,9 +143,9 @@ Copy-Item -Recurse trips\_template trips\2027_義大利托斯卡尼_蜜月
 
 | 檔案 | 用途 |
 |------|------|
-| `notes.md` | 文字摘要，給自己或 AI 閱讀 |
 | `photos/` | 行程封面與每日代表照（見下方照片慣例） |
-| `assets/` | PDF、圖片等原始檔 |
+
+規劃用 PDF／xlsx／筆記留在本機即可，勿放進 `trips/`（會被打進 `dist`）。
 
 `itinerary.json` 可含兩組獨立章節陣列（欄位相同：`theme`、`title`、`kicker`、`body`、`source`（`label` + `url`，優先日文官方站）、`photo`（同 day photo：`src`／`alt`／`credit`））：
 
@@ -174,4 +174,4 @@ git push origin main
 ```
 
 Vercel 會從 `main` 自動建置部署。若新增行程，記得更新 `public/sitemap.xml`（或執行 `node scripts/gen-sitemap.mjs`）。
-舊 GitHub Pages 僅顯示搬家頁，非正式站。
+舊 GitHub Pages 已關閉（非正式站）。

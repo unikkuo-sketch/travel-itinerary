@@ -8,6 +8,6 @@
   - 切網域時一次改 `SITE_ORIGIN`／OG／sitemap／robots
   - 品牌「宇宙碎片集散地」；對外「真實走過的日本行程與風土筆記——給同樣在排行程的人當參考」
   - 票券／購物 localStorage 保留給訪客自用，補本機／參考標示
-  - 五趟全開；切流後停 Pages 雙發或改搬家頁
+  - 五趟全開；Pages 已關閉；搬家 stub／Pages workflow 已自 repo 移除（2026-07-25）
   - 搬遷保護：BASE_URL 路徑、grep 清舊 host、`dist/trips`、preview 中文行程煙霧、先 Preview 再 prod 再停 Pages；不加 SPA catch-all
 - 驗證：`npm run build`；`npm run preview` 根路徑煙霧；Vercel preview／prod

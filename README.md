@@ -54,5 +54,5 @@ traveling/                 # 根目錄：共用程式、Hub、建置設定
 ## 部署
 
 - **正式：** Vercel（Git 連線 `main` → build `npm run build` → output `dist`）；`base: '/'`
-- **舊 Pages：** 已關閉；workflow 停用
+- **舊 Pages：** 已關閉
 - Canonical／OG 主機見 `js/site.js` 的 `SITE_ORIGIN`（換網域後同步 HTML meta、`robots.txt`，再 `node scripts/gen-sitemap.mjs`）

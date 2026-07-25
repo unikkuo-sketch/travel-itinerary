@@ -14,8 +14,17 @@
 
 - 公開站：Vercel `https://universum-sliver.vercel.app/`（`base: '/'`）；舊 GitHub Pages 已關閉
 - 決策全文：`docs/decisions/2026-07-25-public-vercel.md`；內容審稿：`docs/content-audit-2026-07-25.md`
+- 清理：刪 `relocating/`、Pages `deploy.yml`、熱海孤兒 JPG、`trips/*/assets/`、`trips/*/notes.md`（規劃檔不進 repo）
 
 ## 決策
+
+### 2026-07-25 — 刪除 Pages stub 與行程規劃檔
+
+- 問題：repo／`dist` 仍帶搬家 stub、停用 workflow、PDF／xlsx／notes 與未引用 JPG
+- 曾考慮：保留 `assets/`／`notes.md` 作作者存檔；僅 exclude-from-build
+- 放棄原因：使用者確認不需；`tripsStatic` 會把 assets 打進部署體積
+- 現行方案：站台只留 `itinerary.json`＋引用中的 `photos/`；規劃 PDF／筆記留本機
+- 驗證：確認路徑不存在；`npm run build`
 
 ### 2026-07-25 — 公開站改 Vercel（摘要）
 
