@@ -1,14 +1,13 @@
-# Deploy relocating stub to GitHub Pages (old URL)
+# GitHub Pages relocating stub — DISABLED
+#
+# Old github.io site is closed. Do not re-enable full-site or stub Pages
+# deploys (avoids dual canonical / failed Pages builds).
+#
+# Kept for history; trigger only via workflow_dispatch if ever needed.
 
-# After Vercel is the canonical host, push to main publishes only a
-# "site moved" page to gh-pages — not the full Vite dist.
-# Do not re-enable full-site Pages deploy (avoids dual canonical).
-
-name: Relocate GitHub Pages
+name: Relocate GitHub Pages (disabled)
 
 on:
-  push:
-    branches: [main]
   workflow_dispatch:
 
 permissions:
@@ -16,10 +15,10 @@ permissions:
 
 jobs:
   relocate:
+    if: false
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-
       - uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}

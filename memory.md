@@ -12,7 +12,7 @@
 
 ## 近期
 
-- 公開站：Vercel `https://travel-itinerary-zeta-two.vercel.app/`（`base: '/'`）；舊 Pages 僅搬家頁
+- 公開站：Vercel `https://universum-sliver.vercel.app/`（`base: '/'`）；舊 GitHub Pages 已關閉
 - 決策全文：`docs/decisions/2026-07-25-public-vercel.md`；內容審稿：`docs/content-audit-2026-07-25.md`
 
 ## 決策

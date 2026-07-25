@@ -2,8 +2,8 @@
 
 真實走過的日本行程與風土筆記——給同樣在排行程的人當參考。
 
-**正式站：** https://travel-itinerary-zeta-two.vercel.app/  
-（舊 GitHub Pages 網址已改為搬家提示，不再更新內容。）
+**正式站：** https://universum-sliver.vercel.app/  
+（舊 GitHub Pages 網址已關閉。）
 
 ## 快速開始
 
@@ -54,5 +54,5 @@ traveling/                 # 根目錄：共用程式、Hub、建置設定
 ## 部署
 
 - **正式：** Vercel（Git 連線 `main` → build `npm run build` → output `dist`）；`base: '/'`
-- **舊 Pages：** `.github/workflows/deploy.yml` 只發佈 `relocating/` 搬家頁，避免與 Vercel 雙正式網址
-- Canonical／OG 主機見 `js/site.js` 的 `SITE_ORIGIN`（自訂網域就緒後一次更新 HTML meta、`robots.txt`、`sitemap.xml`）
+- **舊 Pages：** 已關閉；workflow 停用
+- Canonical／OG 主機見 `js/site.js` 的 `SITE_ORIGIN`（換網域後同步 HTML meta、`robots.txt`，再 `node scripts/gen-sitemap.mjs`）

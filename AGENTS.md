@@ -64,7 +64,7 @@ npm run preview
 
 - base path：`/`
 - 正式站：Vercel（`dist`）；canonical 見 `js/site.js` `SITE_ORIGIN`
-- CI：`.github/workflows/deploy.yml` → 僅發佈 `relocating/` 搬家頁到舊 GitHub Pages（非正式）
+- CI：`.github/workflows/deploy.yml` → Pages 已關閉（workflow 停用）
 
 ## Cursor Cloud specific instructions
 

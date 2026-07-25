@@ -4,7 +4,8 @@
 - 曾考慮：維持 GH Pages + 自訂網域；或暫留 github.io
 - 放棄原因：公開正式網址不建議用 github.io 子路徑；Pages 預覽／後端弱於 Vercel
 - 現行方案：
-  - 託管 Vercel（正式：`https://travel-itinerary-zeta-two.vercel.app/`）、`base: '/'`；自訂域之後一次改 `SITE_ORIGIN`／OG／sitemap
+  - 託管 Vercel（正式：`https://universum-sliver.vercel.app/`）、`base: '/'`；舊 GitHub Pages 已關閉
+  - 切網域時一次改 `SITE_ORIGIN`／OG／sitemap／robots
   - 品牌「宇宙碎片集散地」；對外「真實走過的日本行程與風土筆記——給同樣在排行程的人當參考」
   - 票券／購物 localStorage 保留給訪客自用，補本機／參考標示
   - 五趟全開；切流後停 Pages 雙發或改搬家頁

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://travel-itinerary-zeta-two.vercel.app/sitemap.xml
+Sitemap: https://universum-sliver.vercel.app/sitemap.xml
