@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://universum-sliver.vercel.app/</loc></url>
+  <url><loc>https://universum-sliver.vercel.app/trip.html?trip=2019_%E6%97%A5%E6%9C%AC%E6%B2%96%E7%B9%A9%E8%87%AA%E9%A7%95%E5%84%AA%E6%B8%B8_%E5%AE%B6%E5%BA%AD%E6%97%85%E9%81%8A</loc></url>
+  <url><loc>https://universum-sliver.vercel.app/stories.html?trip=2019_%E6%97%A5%E6%9C%AC%E6%B2%96%E7%B9%A9%E8%87%AA%E9%A7%95%E5%84%AA%E6%B8%B8_%E5%AE%B6%E5%BA%AD%E6%97%85%E9%81%8A</loc></url>
+  <url><loc>https://universum-sliver.vercel.app/food.html?trip=2019_%E6%97%A5%E6%9C%AC%E6%B2%96%E7%B9%A9%E8%87%AA%E9%A7%95%E5%84%AA%E6%B8%B8_%E5%AE%B6%E5%BA%AD%E6%97%85%E9%81%8A</loc></url>
+  <url><loc>https://universum-sliver.vercel.app/shopping.html?trip=2019_%E6%97%A5%E6%9C%AC%E6%B2%96%E7%B9%A9%E8%87%AA%E9%A7%95%E5%84%AA%E6%B8%B8_%E5%AE%B6%E5%BA%AD%E6%97%85%E9%81%8A</loc></url>
   <url><loc>https://universum-sliver.vercel.app/trip.html?trip=2023_%E6%97%A5%E6%9C%AC%E5%8C%97%E6%B5%B7%E9%81%93_%E8%87%AA%E7%94%B1%E8%A1%8C</loc></url>
   <url><loc>https://universum-sliver.vercel.app/stories.html?trip=2023_%E6%97%A5%E6%9C%AC%E5%8C%97%E6%B5%B7%E9%81%93_%E8%87%AA%E7%94%B1%E8%A1%8C</loc></url>
   <url><loc>https://universum-sliver.vercel.app/food.html?trip=2023_%E6%97%A5%E6%9C%AC%E5%8C%97%E6%B5%B7%E9%81%93_%E8%87%AA%E7%94%B1%E8%A1%8C</loc></url>

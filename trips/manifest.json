@@ -1,6 +1,20 @@
 {
   "trips": [
     {
+      "id": "2019_日本沖繩自駕優游_家庭旅遊",
+      "title": "2019 沖繩自駕優游 6日",
+      "subtitle": "那霸 × 恩納 × 古宇利 × 本部 × 北谷 × 南城",
+      "dateRange": "2019/09/01 - 09/06",
+      "status": "past",
+      "emoji": "🏝️",
+      "coords": [26.4, 127.85],
+      "days": 6,
+      "location": "沖繩本島",
+      "cover": "photos/cover.webp",
+      "coverAlt": "古宇利大橋與湛藍海面",
+      "coverCredit": "CEphoto, Uwe Aranas / CC BY-SA 3.0"
+    },
+    {
       "id": "2023_日本北海道_自由行",
       "title": "2023 北海道 8日自由行",
       "subtitle": "登別 × 札幌 × 小樽 × 富良野 × 美瑛 × 定山溪",

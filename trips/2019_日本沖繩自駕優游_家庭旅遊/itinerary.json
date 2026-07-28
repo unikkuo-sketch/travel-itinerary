@@ -1,0 +1,1036 @@
+{
+  "meta": {
+    "slug": "2019_日本沖繩自駕優游_家庭旅遊",
+    "title": "2019 沖繩自駕優游 6日",
+    "subtitle": "家庭旅遊 · 那霸 × 恩納 × 古宇利 × 本部 × 北谷 × 南城",
+    "badge": "2019年9月",
+    "dateRange": "09/01 - 09/06",
+    "ticketSummary": "Peach MM924 + Times 租車 5日 + 藍洞／水族館／獨木舟／洞窟",
+    "highlights": [
+      "真榮田岬藍洞浮潛，把沖繩藍一次潛進身體",
+      "古宇利大橋串島後走進美麗海水族館鯨鯊缸",
+      "Orion 啤酒廠與紅樹林獨木舟，北谷美國村收尾"
+    ],
+    "footerDate": "行程實錄 · 2019年9月1日 - 9月6日",
+    "cover": {
+      "src": "photos/cover.webp",
+      "alt": "古宇利大橋與湛藍海面",
+      "credit": "CEphoto, Uwe Aranas / CC BY-SA 3.0",
+      "objectPosition": "center 45%"
+    },
+    "theme": "ocean",
+    "routeRegions": "那霸・恩納・名護・本部・北谷・南城",
+    "highlightCards": [
+      {
+        "icon": "sun",
+        "title": "藍洞浮潛",
+        "desc": "真榮田岬潛進藍洞，恩納海岸把移動排進風景"
+      },
+      {
+        "icon": "sparkle",
+        "title": "古宇利 × 水族館",
+        "desc": "跨海大橋上島後，走進美麗海的鯨鯊主缸"
+      },
+      {
+        "icon": "food",
+        "title": "Orion × 紅樹林",
+        "desc": "啤酒廠參觀後划獨木舟，北谷夜壽司收尾"
+      },
+      {
+        "icon": "shrine",
+        "title": "玉泉洞 × 齋場御嶽",
+        "desc": "南島洞窟探險後，走進琉球聖地齋場御嶽"
+      }
+    ]
+  },
+  "shopping": {
+    "suggestions": [],
+    "recommendations": [
+      {
+        "title": "Day 1: 那霸・國際通",
+        "desc": "市區伴手與泡盛茶體驗後補給",
+        "items": [
+          {
+            "name": "紅芋塔／沖繩菓子",
+            "price": "約 ¥500–",
+            "priceNote": "含稅參考價・國際通／縣廳前",
+            "imageUrl": "https://www.okicake.co.jp/wp/wp-content/themes/okicake/images/top/item_beniimo.jpg",
+            "url": "https://www.okicake.co.jp/"
+          },
+          {
+            "name": "泡盛小瓶／黑糖菓子",
+            "price": "約 ¥800–",
+            "priceNote": "含稅參考價・實際以店面為準",
+            "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Kikunotsuyu_Awamori.jpg/640px-Kikunotsuyu_Awamori.jpg"
+          }
+        ]
+      },
+      {
+        "title": "Day 3–4: 本部・名護・北谷",
+        "desc": "水族館周邊與美國村伴手",
+        "items": [
+          {
+            "name": "Orion 啤酒相關伴手",
+            "price": "約 ¥600–",
+            "priceNote": "啤酒廠／超市可購",
+            "imageUrl": "https://www.orionbeer.co.jp/assets/img/common/ogp.png",
+            "url": "https://www.orionbeer.co.jp/"
+          },
+          {
+            "name": "美ら海水族館周邊伴手",
+            "price": "約 ¥700–",
+            "priceNote": "海洋博公園商店",
+            "imageUrl": "https://churaumi.okinawa/assets/img/ogp.jpg",
+            "url": "https://churaumi.okinawa/"
+          }
+        ]
+      },
+      {
+        "title": "Day 5: ashibinaa Outlet",
+        "desc": "豐崎 Outlet 逛街與回程伴手",
+        "items": [
+          {
+            "name": "Outlet 服飾／家居折扣品",
+            "price": "依品牌",
+            "priceNote": "實際以店面為準",
+            "imageUrl": "https://ashibinaa.com/wp-content/themes/ashibinaa/assets/img/ogp.jpg",
+            "url": "https://ashibinaa.com/"
+          },
+          {
+            "name": "沖繩鹽／海葡萄相關乾貨",
+            "price": "約 ¥500–",
+            "priceNote": "含稅參考價・Outlet 食品區",
+            "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Goya_Champuru_1.jpg/640px-Goya_Champuru_1.jpg"
+          }
+        ]
+      }
+    ]
+  },
+  "events": [
+    {
+      "region": "自駕節奏",
+      "items": [
+        "Times 租車安里取還；行程以本島中北部海岸線為主軸",
+        "藍洞、獨木舟、洞窟皆為預約／現場活動，留意潮汐與天候"
+      ]
+    },
+    {
+      "region": "九月氣候",
+      "items": [
+        "初秋仍偏熱，浮潛與戶外請備防曬、防水手機套",
+        "偶有秋颱尾端影響，彈性預留室內水族館／洞穴行程"
+      ]
+    }
+  ],
+  "weather": {
+    "temps": { "high": "31°C", "low": "26°C" },
+    "note": "九月沖繩仍屬夏末，濕熱、午後偶有驟雨",
+    "tips": [
+      "透氣排汗衣＋遮陽帽",
+      "浮潛後備一套乾衣與防曬乳",
+      "自駕備足飲水與停車幣"
+    ]
+  },
+  "stories": [
+    {
+      "theme": "history",
+      "title": "首里城",
+      "kicker": "那霸・首里",
+      "body": "琉球王國的政治與信仰中心，正殿與石階串起城下町的記憶。抵達首日以單軌走進首里，把王國都城的尺度先走一遍。",
+      "source": {
+        "label": "首里城公園（公式）",
+        "url": "https://oki-park.jp/shurijo/"
+      },
+      "photo": {
+        "src": "photos/story-shuri.webp",
+        "alt": "首里城正殿",
+        "credit": "663highland / CC BY 2.5",
+        "objectPosition": "center 40%"
+      }
+    },
+    {
+      "theme": "place",
+      "title": "波上宮",
+      "kicker": "那霸・若狹",
+      "body": "懸在斷崖上的琉球八社總本社，下方就是波之上海岸。取車後第一站參拜，把海風與神社石階一起收進自駕起點。",
+      "source": {
+        "label": "波上宮（公式）",
+        "url": "https://naminoue.or.jp/"
+      },
+      "photo": {
+        "src": "photos/story-naminoue.webp",
+        "alt": "波上宮與波之上海岸",
+        "credit": "Zairon / CC BY 4.0",
+        "objectPosition": "center 45%"
+      }
+    },
+    {
+      "theme": "place",
+      "title": "古宇利島與大橋",
+      "kicker": "今帰仁・古宇利",
+      "body": "跨海大橋把本部半島與古宇利島連成一條藍色直線。上島走海洋塔與海灘，是本島最經典的「開車就到離島」體驗。",
+      "source": {
+        "label": "今帰仁村観光協会",
+        "url": "https://www.nakijin.jp/"
+      },
+      "photo": {
+        "src": "photos/story-kouri.webp",
+        "alt": "古宇利大橋",
+        "credit": "CEphoto, Uwe Aranas / CC BY-SA 3.0",
+        "objectPosition": "center 50%"
+      }
+    },
+    {
+      "theme": "place",
+      "title": "美麗海水族館",
+      "kicker": "本部・海洋博公園",
+      "body": "黒潮大水槽的鯨鯊與曼波魚是沖繩觀光的門面。自駕北上後把半天留給海洋博公園，室內空調剛好對上九月熱氣。",
+      "source": {
+        "label": "沖縄美ら海水族館",
+        "url": "https://churaumi.okinawa/"
+      },
+      "photo": {
+        "src": "photos/story-churaumi.webp",
+        "alt": "美麗海水族館鯨鯊缸",
+        "credit": "Bernie Ongewe / CC BY-SA 4.0",
+        "objectPosition": "center 40%"
+      }
+    },
+    {
+      "theme": "culture",
+      "title": "齋場御嶽",
+      "kicker": "南城・知念",
+      "body": "琉球王國最高聖地之一，巨岩縫隙間的參道通向海的方向。回程前走進聖地，把自然信仰與王國記憶收進行程尾聲。",
+      "source": {
+        "label": "南城市観光協会",
+        "url": "https://www.nanjo-tourism.jp/"
+      },
+      "photo": {
+        "src": "photos/story-sefa.webp",
+        "alt": "齋場御嶽參道",
+        "credit": "Hyppolyte de Saint-Rambert / CC BY 4.0",
+        "objectPosition": "center 45%"
+      }
+    },
+    {
+      "theme": "culture",
+      "title": "Orion Happy Park",
+      "kicker": "名護・東江",
+      "body": "沖繩人餐桌上的 Orion，在名護設有參觀動線與試飲。自駕北谷前先停啤酒廠，把島酒文化從釀造端看一遍。",
+      "source": {
+        "label": "オリオンビール（公式）",
+        "url": "https://www.orionbeer.co.jp/"
+      },
+      "photo": {
+        "src": "photos/story-orion.webp",
+        "alt": "Orion Happy Park 啤酒廠",
+        "credit": "othree / CC BY 2.0",
+        "objectPosition": "center 40%"
+      }
+    },
+    {
+      "theme": "place",
+      "title": "北谷美國村",
+      "kicker": "北谷・美浜",
+      "body": "美軍文化與海濱商店街混成的夜間節點。迴轉壽司、日落海灘與 La'gent 住宿連在一起，是本島中部的放鬆一晚。",
+      "source": {
+        "label": "北谷町観光協会",
+        "url": "https://www.chatan.jp/"
+      },
+      "photo": {
+        "src": "photos/story-american.webp",
+        "alt": "北谷美國村",
+        "credit": "Toshihiro Matsui / CC BY-SA 3.0",
+        "objectPosition": "center 45%"
+      }
+    }
+  ],
+  "foods": [
+    {
+      "theme": "food",
+      "title": "豬肉蛋飯糰",
+      "kicker": "那霸・國際通",
+      "body": "煎蛋與午餐肉夾進熱飯糰，是沖繩早餐的招牌節奏。取車前在國際通先補一顆，開啟藍洞日的自駕。",
+      "source": {
+        "label": "ポークたまごオンライス公式",
+        "url": "https://www.porkegg.jp/"
+      },
+      "photo": {
+        "src": "photos/food-pork-egg.webp",
+        "alt": "豬肉蛋飯糰",
+        "credit": "Ocdp / CC0",
+        "objectPosition": "center center"
+      }
+    },
+    {
+      "theme": "food",
+      "title": "苦瓜炒肉",
+      "kicker": "沖繩・ゴーヤーチャンプルー",
+      "body": "ゴーヤー的苦、豆腐的軟與豬肉香氣拌在一起，是島上最日常的家常味。旅途中可在食堂或酒店早餐遇見它。",
+      "source": {
+        "label": "おきなわ物語",
+        "url": "https://www.okinawastory.jp/"
+      },
+      "photo": {
+        "src": "photos/food-goya.webp",
+        "alt": "苦瓜炒肉（ゴーヤーチャンプルー）",
+        "credit": "Jpatokal / CC BY-SA 3.0",
+        "objectPosition": "center center"
+      }
+    },
+    {
+      "theme": "food",
+      "title": "塔可飯",
+      "kicker": "沖繩・タコライス",
+      "body": "美軍文化留下的在地化快餐：醬汁絞肉蓋在白飯上，再加生菜起司。北谷美國村一帶最容易遇見它。",
+      "source": {
+        "label": "おきなわ物語",
+        "url": "https://www.okinawastory.jp/"
+      },
+      "photo": {
+        "src": "photos/food-taco.webp",
+        "alt": "沖繩塔可飯",
+        "credit": "Nelo Hotsuma / CC BY 2.0",
+        "objectPosition": "center center"
+      }
+    },
+    {
+      "theme": "food",
+      "title": "鮮魚唐揚げ與海鮮定食",
+      "kicker": "宜野灣・糸滿",
+      "body": "本島海鮮餐廳常以當日漁獲唐揚或定食出場。宜野灣午餐與糸滿魚市場晚餐，把海岸線的鮮味串進自駕節奏。",
+      "source": {
+        "label": "糸満漁業協同組合",
+        "url": "https://www.itoman-gyokyo.or.jp/"
+      },
+      "photo": {
+        "src": "photos/day3.webp",
+        "alt": "美麗海水族館（海洋主題）",
+        "credit": "Jordy Meow / CC BY-SA 3.0",
+        "objectPosition": "center 40%"
+      }
+    },
+    {
+      "theme": "sake",
+      "title": "泡盛與 Orion",
+      "kicker": "沖繩・島酒",
+      "body": "泡盛是以泰國米與黑麴釀成的蒸留酒；Orion 則是餐桌上最常見的島產啤酒。嘉例山房的泡盛茶與名護啤酒廠，把兩條酒脈一次摸到。",
+      "source": {
+        "label": "沖縄県酒造組合",
+        "url": "https://www.okinawaso.jp/"
+      },
+      "photo": {
+        "src": "photos/food-awamori.webp",
+        "alt": "沖繩泡盛酒瓶",
+        "credit": "ayustety / CC BY-SA 2.0",
+        "objectPosition": "center center"
+      }
+    }
+  ],
+  "tickets": [
+    {
+      "variant": "primary",
+      "title": "Peach MM924",
+      "badge": "機票",
+      "status": "purchased",
+      "price": "NT$7,040",
+      "priceSuffix": "/人",
+      "meta": "桃園 → 那霸（2019/9/1）",
+      "features": ["家庭四人同行", "抵達後單軌進市區"]
+    },
+    {
+      "variant": "primary",
+      "title": "Times 租車",
+      "badge": "交通",
+      "status": "purchased",
+      "price": "¥32,486",
+      "priceSuffix": "/5日",
+      "meta": "那霸市安里 CARGOES 取還",
+      "features": ["實付約 NT$9,584（四人分攤）", "另計加油約 ¥8,387"]
+    },
+    {
+      "variant": "secondary",
+      "title": "單軌一日券",
+      "badge": "那霸",
+      "status": "purchased",
+      "price": "¥800",
+      "priceSuffix": "/人",
+      "meta": "Day 1 機場⇄首里⇄國際通",
+      "features": ["抵達首日市區移動"]
+    },
+    {
+      "variant": "secondary",
+      "title": "藍洞浮潛",
+      "badge": "活動",
+      "status": "purchased",
+      "price": "NT$3,684",
+      "priceSuffix": "/4人",
+      "meta": "真榮田岬",
+      "features": ["另計停車 ¥500、淋浴 ¥200"]
+    },
+    {
+      "variant": "secondary",
+      "title": "美麗海水族館",
+      "badge": "門票",
+      "status": "purchased",
+      "price": "NT$1,896",
+      "priceSuffix": "/人",
+      "meta": "海洋博公園",
+      "features": ["Day 3 主景點"]
+    },
+    {
+      "variant": "secondary",
+      "title": "紅樹林獨木舟",
+      "badge": "活動",
+      "status": "purchased",
+      "price": "NT$4,667",
+      "priceSuffix": "/4人",
+      "meta": "KAYAKCLUB GOODLIFE・恩納",
+      "features": ["Day 4 午後"]
+    },
+    {
+      "variant": "secondary",
+      "title": "南島洞窟探險",
+      "badge": "活動",
+      "status": "purchased",
+      "price": "NT$4,545",
+      "priceSuffix": "/4人",
+      "meta": "南城・玉城（玉泉洞周邊）",
+      "features": ["Day 5 主活動"]
+    }
+  ],
+  "overview": [
+    {
+      "day": 1,
+      "date": "09/01",
+      "places": "桃園→那霸→首里→國際通",
+      "hotel": "海洋飯店",
+      "hotelNote": "安里／單軌可達・市區首晚",
+      "routeLabel": "那霸市區",
+      "transport": "Peach MM924 · 09:30／單軌一日券",
+      "transportClass": ""
+    },
+    {
+      "day": 2,
+      "date": "09/02",
+      "places": "那霸→波上宮→真榮田岬→恩納→名護",
+      "hotel": "Yugaf inn",
+      "hotelNote": "名護宮里・北上據點",
+      "routeLabel": "藍洞・恩納",
+      "transport": "Times 租車取車 · 09:30",
+      "transportClass": ""
+    },
+    {
+      "day": 3,
+      "date": "09/03",
+      "places": "古宇利島→本部→海洋博公園→名護",
+      "hotel": "Yugaf inn",
+      "hotelNote": "連住第二晚",
+      "routeLabel": "古宇利・水族館",
+      "transport": "自駕",
+      "transportClass": ""
+    },
+    {
+      "day": 4,
+      "date": "09/04",
+      "places": "名護→Orion→恩納獨木舟→北谷",
+      "hotel": "La'gent Hotel 北谷",
+      "hotelNote": "美國村美浜・海濱夜生活",
+      "routeLabel": "啤酒廠・北谷",
+      "transport": "自駕",
+      "transportClass": ""
+    },
+    {
+      "day": 5,
+      "date": "09/05",
+      "places": "北谷→玉泉洞→小祿→Outlet→糸滿→南城",
+      "hotel": "南城 yunchi 飯店",
+      "hotelNote": "南城佐敷・回程前一晚",
+      "routeLabel": "洞窟・南部",
+      "transport": "自駕",
+      "transportClass": ""
+    },
+    {
+      "day": 6,
+      "date": "09/06",
+      "places": "齋場御嶽→瀨長島→還車→那霸機場",
+      "hotel": "—",
+      "hotelNote": "當日返台",
+      "routeLabel": "聖地・返程",
+      "transport": "Times 還車 · 14:30／機場晚餐",
+      "transportClass": ""
+    }
+  ],
+  "days": [
+    {
+      "id": "day1",
+      "number": 1,
+      "date": "09/01（日）",
+      "title": "那霸市區・首里與國際通",
+      "timeline": [
+        {
+          "time": "09:30",
+          "place": "桃園機場",
+          "desc": "搭乘 Peach MM924 飛往那霸",
+          "detail": "機票 NT$7,040/人",
+          "icon": "plane",
+          "tag": "✈️ 班機"
+        },
+        {
+          "time": "12:10",
+          "place": "那霸機場",
+          "desc": "抵達後購買單軌一日券進市區",
+          "detail": "¥800/人",
+          "icon": "train",
+          "tag": "單軌"
+        },
+        {
+          "time": "13:30",
+          "place": "機場周邊",
+          "desc": "午餐補給",
+          "detail": "約 ¥1,800/人",
+          "icon": "food",
+          "tag": "🍽️ 午餐"
+        },
+        {
+          "time": "14:30",
+          "place": "嘉例山房",
+          "desc": "體驗泡盛茶（ぶくぶく茶）",
+          "detail": "那霸市首里池端町9 · ¥400/人",
+          "icon": "food",
+          "tag": "體驗"
+        },
+        {
+          "time": "15:30",
+          "place": "首里城",
+          "desc": "參觀琉球王國都城",
+          "detail": "首里金城町1-2 · 門票 ¥660/人",
+          "icon": "landmark",
+          "tag": "🏛️ 景點"
+        },
+        {
+          "time": "18:00",
+          "place": "國際通",
+          "desc": "晚餐吃拉麵",
+          "detail": "約 ¥1,312/人",
+          "icon": "food",
+          "tag": "🍽️ 晚餐"
+        },
+        {
+          "time": "21:00",
+          "place": "海洋飯店",
+          "desc": "入住安里市區旅館",
+          "detail": "那霸市安里2-4-8 · NT$4,699（四人分攤）",
+          "icon": "hotel",
+          "tag": "🏨 住宿"
+        }
+      ],
+      "tips": [
+        "首日以單軌串機場、首里、國際通，隔日再取車",
+        "首里城門票現場購票；留意開放時間"
+      ],
+      "photo": {
+        "src": "photos/day1.webp",
+        "alt": "首里城正殿與石階",
+        "credit": "CEphoto, Uwe Aranas / CC BY-SA 3.0",
+        "objectPosition": "center 40%"
+      }
+    },
+    {
+      "id": "day2",
+      "number": 2,
+      "date": "09/02（一）",
+      "title": "藍洞浮潛・恩納海岸北上",
+      "timeline": [
+        {
+          "time": "08:30",
+          "place": "國際通豬肉蛋飯糰",
+          "desc": "早餐補給",
+          "detail": "松尾2-8-35 · ¥285/人",
+          "icon": "food",
+          "tag": "🍽️ 早餐"
+        },
+        {
+          "time": "09:30",
+          "place": "Times 租車",
+          "desc": "安里 CARGOES 取車，展開五日自駕",
+          "detail": "¥32,486/5日 · 實付約 NT$9,584；油資另計",
+          "icon": "pin",
+          "tag": "🚗 租車"
+        },
+        {
+          "time": "10:00",
+          "place": "波上宮",
+          "desc": "參拜懸崖上的琉球神社",
+          "detail": "若狹1-25-11 · Mapcode 33 185 023",
+          "icon": "shrine",
+          "tag": "⛩️ 參拜"
+        },
+        {
+          "time": "11:00",
+          "place": "鮮魚と魚の唐揚げ 琉",
+          "desc": "宜野灣海鮮午餐",
+          "detail": "大山7-1350-81 · 約 ¥1,400/人",
+          "icon": "food",
+          "tag": "🍽️ 午餐"
+        },
+        {
+          "time": "13:30",
+          "place": "真榮田岬・藍洞",
+          "desc": "藍洞浮潛",
+          "detail": "NT$3,684/4人；停車 ¥500、淋浴 ¥200",
+          "icon": "sun",
+          "tag": "浮潛"
+        },
+        {
+          "time": "16:30",
+          "place": "おんなの駅（恩納休息站）",
+          "desc": "吃冰休息",
+          "detail": "仲泊1656-9 · 約 ¥600/人",
+          "icon": "food",
+          "tag": "冰品"
+        },
+        {
+          "time": "19:00",
+          "place": "燒肉五苑",
+          "desc": "名護燒肉晚餐",
+          "detail": "為又479-5 · 約 ¥2,700/人",
+          "icon": "food",
+          "tag": "🍽️ 晚餐"
+        },
+        {
+          "time": "21:00",
+          "place": "Yugaf inn",
+          "desc": "入住名護",
+          "detail": "宮里453-1 · NT$5,536（四人分攤）",
+          "icon": "hotel",
+          "tag": "🏨 住宿"
+        }
+      ],
+      "tips": [
+        "藍洞注意潮汐與裝備；現場另有保管箱／淋浴收費",
+        "取車後先波上宮再北上，避開市區尖峰"
+      ],
+      "photo": {
+        "src": "photos/day2.webp",
+        "alt": "恩納海岸斷崖與海（萬座毛）",
+        "credit": "CEphoto, Uwe Aranas / CC BY-SA 3.0",
+        "objectPosition": "center 45%"
+      }
+    },
+    {
+      "id": "day3",
+      "number": 3,
+      "date": "09/03（二）",
+      "title": "古宇利島＋美麗海水族館",
+      "timeline": [
+        {
+          "time": "10:00",
+          "place": "古宇利島",
+          "desc": "跨古宇利大橋上島",
+          "detail": "今帰仁村古宇利 · Mapcode 485 662 804*11",
+          "icon": "sun",
+          "tag": "🏝️ 離島"
+        },
+        {
+          "time": "10:20",
+          "place": "古宇利海洋塔",
+          "desc": "登上展望塔看多色海",
+          "detail": "古宇利538 · NT$838/人",
+          "icon": "landmark",
+          "tag": "展望"
+        },
+        {
+          "time": "12:00",
+          "place": "沖繩石納格",
+          "desc": "本部渡久地午餐",
+          "detail": "渡久地778-2 · 約 ¥1,800/人",
+          "icon": "food",
+          "tag": "🍽️ 午餐"
+        },
+        {
+          "time": "14:00",
+          "place": "海洋博公園・美麗海水族館",
+          "desc": "參觀鯨鯊大水槽",
+          "detail": "本部町石川424 · NT$1,896/人",
+          "icon": "sparkle",
+          "tag": "水族館"
+        },
+        {
+          "time": "19:30",
+          "place": "MaxValu 超市",
+          "desc": "超市簡單晚餐",
+          "detail": "名護市宮里1592 · 約 ¥456/人",
+          "icon": "shopping",
+          "tag": "🛒 超市"
+        },
+        {
+          "time": "21:00",
+          "place": "Yugaf inn",
+          "desc": "名護連住第二晚",
+          "detail": "NT$5,536（四人分攤）",
+          "icon": "hotel",
+          "tag": "🏨 住宿"
+        }
+      ],
+      "tips": [
+        "古宇利大橋景色佳，預留停車與步行拍照時間",
+        "水族館門票可事先線上購買較省排隊"
+      ],
+      "photo": {
+        "src": "photos/day3.webp",
+        "alt": "美麗海水族館外觀",
+        "credit": "Jordy Meow / CC BY-SA 3.0",
+        "objectPosition": "center 40%"
+      }
+    },
+    {
+      "id": "day4",
+      "number": 4,
+      "date": "09/04（三）",
+      "title": "Orion 啤酒廠＋紅樹林獨木舟",
+      "timeline": [
+        {
+          "time": "09:20",
+          "place": "Orion Happy Park",
+          "desc": "參觀 Orion 啤酒廠",
+          "detail": "名護市東江2-2-1 · 預約 No.143591",
+          "icon": "landmark",
+          "tag": "啤酒廠"
+        },
+        {
+          "time": "11:30",
+          "place": "しまぶた屋",
+          "desc": "沖繩とんかつ食堂午餐",
+          "detail": "恩納村前兼久96-1 · 約 ¥2,138/人",
+          "icon": "food",
+          "tag": "🍽️ 午餐"
+        },
+        {
+          "time": "12:50",
+          "place": "KAYAKCLUB GOODLIFE",
+          "desc": "紅樹林／無人島獨木舟",
+          "detail": "恩納村瀬良垣1288 · NT$4,667/4人",
+          "icon": "sun",
+          "tag": "獨木舟"
+        },
+        {
+          "time": "17:30",
+          "place": "美國村グルメ迴轉壽司市場",
+          "desc": "北谷美浜迴轉壽司晚餐",
+          "detail": "美浜2-4-5 · 約 ¥1,958/人",
+          "icon": "food",
+          "tag": "🍽️ 晚餐"
+        },
+        {
+          "time": "19:30",
+          "place": "La'gent Hotel 北谷",
+          "desc": "入住美國村海濱飯店",
+          "detail": "美浜25-3 · NT$8,120（四人分攤）",
+          "icon": "hotel",
+          "tag": "🏨 住宿"
+        }
+      ],
+      "tips": [
+        "啤酒廠需預約；保留預約編號與密碼",
+        "獨木舟請依業者指示穿著可濕衣物"
+      ],
+      "photo": {
+        "src": "photos/day4.webp",
+        "alt": "沖繩紅樹林河道",
+        "credit": "Yes Yes NoNoNo / CC BY-SA 4.0",
+        "objectPosition": "center 45%"
+      }
+    },
+    {
+      "id": "day5",
+      "number": 5,
+      "date": "09/05（四）",
+      "title": "玉泉洞探險・Outlet・糸滿",
+      "timeline": [
+        {
+          "time": "08:00",
+          "place": "the calif kitchen",
+          "desc": "北谷美浜早餐",
+          "detail": "美浜9-21 · 約 ¥842/人",
+          "icon": "food",
+          "tag": "🍽️ 早餐"
+        },
+        {
+          "time": "10:00",
+          "place": "南島洞窟探險",
+          "desc": "玉泉洞周邊洞窟探險活動",
+          "detail": "南城市玉城前川1336 · NT$4,545/4人",
+          "icon": "sparkle",
+          "tag": "洞窟"
+        },
+        {
+          "time": "13:30",
+          "place": "大根之花 小祿店",
+          "desc": "沖繩料理午餐",
+          "detail": "那霸市高良3-11-1 · 約 ¥1,684/人",
+          "icon": "food",
+          "tag": "🍽️ 午餐"
+        },
+        {
+          "time": "15:00",
+          "place": "ashibinaa Outlet",
+          "desc": "豐崎 Outlet 逛街",
+          "detail": "豐見城市豐崎1-188",
+          "icon": "shopping",
+          "tag": "🛒 Outlet"
+        },
+        {
+          "time": "18:00",
+          "place": "糸滿魚市場",
+          "desc": "海鮮晚餐",
+          "detail": "糸滿市西崎町4-19",
+          "icon": "food",
+          "tag": "🍽️ 晚餐"
+        },
+        {
+          "time": "19:30",
+          "place": "南城 yunchi 飯店",
+          "desc": "入住南城",
+          "detail": "佐敷字新里1688 · NT$5,984（四人分攤）",
+          "icon": "hotel",
+          "tag": "🏨 住宿"
+        }
+      ],
+      "tips": [
+        "洞窟活動穿防滑鞋；洞穴內偏涼可備薄外套",
+        "糸滿魚市場晚餐金額未記入總帳，現場依漁獲點餐"
+      ],
+      "photo": {
+        "src": "photos/day5.webp",
+        "alt": "玉泉洞鐘乳石洞穴",
+        "credit": "Suicasmo / CC BY-SA 4.0",
+        "objectPosition": "center 50%"
+      }
+    },
+    {
+      "id": "day6",
+      "number": 6,
+      "date": "09/06（五）",
+      "title": "齋場御嶽・還車返台",
+      "timeline": [
+        {
+          "time": "10:00",
+          "place": "齋場御嶽",
+          "desc": "參觀琉球聖地",
+          "detail": "南城市知念久手堅 · ¥300/人",
+          "icon": "shrine",
+          "tag": "⛩️ 聖地"
+        },
+        {
+          "time": "12:15",
+          "place": "臨海餐廳 風庭",
+          "desc": "瀨長島午餐",
+          "detail": "豐見城市瀬長174-5 · 約 ¥2,300/人",
+          "icon": "food",
+          "tag": "🍽️ 午餐"
+        },
+        {
+          "time": "14:30",
+          "place": "Times 租車",
+          "desc": "安里還車並加油",
+          "detail": "加油 ¥4,195",
+          "icon": "pin",
+          "tag": "🚗 還車"
+        },
+        {
+          "time": "18:00",
+          "place": "那霸機場",
+          "desc": "機場晚餐後返台",
+          "detail": "機場餐費未記入總帳",
+          "icon": "plane",
+          "tag": "✈️ 返程"
+        }
+      ],
+      "tips": [
+        "齋場御嶽為神聖場所，請安靜步行、遵守標示",
+        "還車前加滿油；預留安里→機場移動時間"
+      ],
+      "photo": {
+        "src": "photos/day6.webp",
+        "alt": "齋場御嶽御イリキチ",
+        "credit": "Hyppolyte de Saint-Rambert / CC BY 4.0",
+        "objectPosition": "center 45%"
+      }
+    }
+  ],
+  "budget": {
+    "partySize": 4,
+    "fx": {
+      "month": "2019-09",
+      "jpyToTwd": 0.295,
+      "basis": "台銀即期賣出月平均（對照租車結算 ¥32,486≈NT$9,584）"
+    },
+    "categories": [
+      {
+        "icon": "✈️",
+        "title": "機票",
+        "items": [
+          {
+            "label": "Peach MM924（每人）",
+            "amount": "NT$7,040"
+          }
+        ],
+        "subtotal": "NT$7,040"
+      },
+      {
+        "icon": "🏨",
+        "title": "住宿",
+        "items": [
+          {
+            "label": "海洋飯店（D1）",
+            "amount": "NT$1,175"
+          },
+          {
+            "label": "Yugaf inn（D2–3）",
+            "amount": "NT$2,768"
+          },
+          {
+            "label": "La'gent 北谷（D4）",
+            "amount": "NT$2,030"
+          },
+          {
+            "label": "南城 yunchi（D5）",
+            "amount": "NT$1,496"
+          }
+        ],
+        "subtotal": "NT$7,469"
+      },
+      {
+        "icon": "🚗",
+        "title": "交通（租車・油資・單軌）",
+        "items": [
+          {
+            "label": "Times 租車 5日",
+            "amount": "NT$2,396"
+          },
+          {
+            "label": "加油（D2＋D6）",
+            "amount": "NT$619"
+          },
+          {
+            "label": "單軌一日券",
+            "amount": "NT$236"
+          }
+        ],
+        "subtotal": "NT$3,251"
+      },
+      {
+        "icon": "🎫",
+        "title": "活動／門票",
+        "items": [
+          {
+            "label": "藍洞浮潛",
+            "amount": "NT$921"
+          },
+          {
+            "label": "古宇利海洋塔",
+            "amount": "NT$838"
+          },
+          {
+            "label": "美麗海水族館",
+            "amount": "NT$1,896"
+          },
+          {
+            "label": "紅樹林獨木舟",
+            "amount": "NT$1,167"
+          },
+          {
+            "label": "南島洞窟探險",
+            "amount": "NT$1,136"
+          },
+          {
+            "label": "嘉例山房／首里城／齋場御嶽／藍洞停車淋浴",
+            "amount": "NT$453"
+          }
+        ],
+        "subtotal": "NT$6,411"
+      },
+      {
+        "icon": "🍽️",
+        "title": "餐飲點心",
+        "items": [
+          {
+            "label": "行程表已登記餐費（每人）",
+            "amount": "NT$5,686"
+          }
+        ],
+        "subtotal": "NT$5,686"
+      }
+    ],
+    "total": {
+      "amount": "約 NT$29,857"
+    }
+  },
+  "map": {
+    "center": [26.4, 127.85],
+    "zoom": 9,
+    "locations": [
+      {
+        "name": "那霸",
+        "number": 1,
+        "day": 1,
+        "coords": [26.2124, 127.6809]
+      },
+      {
+        "name": "首里城",
+        "number": 2,
+        "day": 1,
+        "coords": [26.2170, 127.7192]
+      },
+      {
+        "name": "真榮田岬",
+        "number": 3,
+        "day": 2,
+        "coords": [26.4445, 127.7725]
+      },
+      {
+        "name": "名護",
+        "number": 4,
+        "day": 2,
+        "coords": [26.5916, 127.9773]
+      },
+      {
+        "name": "古宇利島",
+        "number": 5,
+        "day": 3,
+        "coords": [26.7045, 128.0185]
+      },
+      {
+        "name": "美麗海水族館",
+        "number": 6,
+        "day": 3,
+        "coords": [26.6942, 127.8779]
+      },
+      {
+        "name": "Orion 啤酒廠",
+        "number": 7,
+        "day": 4,
+        "coords": [26.5965, 127.9865]
+      },
+      {
+        "name": "北谷美國村",
+        "number": 8,
+        "day": 4,
+        "coords": [26.3167, 127.7567]
+      },
+      {
+        "name": "玉泉洞",
+        "number": 9,
+        "day": 5,
+        "coords": [26.1395, 127.7545]
+      },
+      {
+        "name": "齋場御嶽",
+        "number": 10,
+        "day": 6,
+        "coords": [26.1731, 127.8267]
+      }
+    ]
+  }
+}

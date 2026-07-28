@@ -112,6 +112,29 @@ CC BY / CC BY-SA 圖片依授權條款標示作者、來源與授權；CC BY-SA 
 | `food-omicho-kaisendon.webp` | 近江町市場海鮮丼 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
 | `food-higashi-chaya.webp` | 金澤東茶屋街格子造茶屋街道 | Zairon | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Kanazawa_Teeviertel_Higashiyama_Chaya_24.jpg) |
 
+## trips/2019_日本沖繩自駕優游_家庭旅遊/photos/
+
+| 檔案 | 內容 | 作者 | 授權 | 來源 |
+|---|---|---|---|---|
+| `cover.webp` | 古宇利大橋與湛藍海面 | CEphoto, Uwe Aranas | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Nago_Okinawa_Kouri-Bridge-01.jpg) |
+| `day1.webp` | 首里城正殿與石階 | CEphoto, Uwe Aranas | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Naha_Okinawa_Japan_Shuri-Castle-01.jpg) |
+| `day2.webp` | 恩納萬座毛斷崖與海 | CEphoto, Uwe Aranas | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Onna_Okinawa_Japan_Cape-Manzamo-01.jpg) |
+| `day3.webp` | 美麗海水族館外觀 | Jordy Meow | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Okinawa_Aquarium.jpg) |
+| `day4.webp` | 沖繩紅樹林河道 | Yes Yes NoNoNo | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Kesaji_River_and_Mangrove_forest_in_Higashi_Town_Okinawa_November_2025.jpg) |
+| `day5.webp` | 玉泉洞鐘乳石洞穴 | Suicasmo | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Gyokusendo_20221228-1.jpg) |
+| `day6.webp` | 齋場御嶽御イリキチ | Hyppolyte de Saint-Rambert | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Okinawa_Nanjo_Sefa-utaki_Gusuku_site_Yuinchi_01.jpg) |
+| `story-shuri.webp` | 首里城正殿 | 663highland | [CC BY 2.5](https://creativecommons.org/licenses/by/2.5/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Naha_Shuri_Castle16s5s3200.jpg) |
+| `story-naminoue.webp` | 波上宮與波之上海岸 | Zairon | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Naha_Naminoue_Beach_%26_Naminoue-gu_12.jpg) |
+| `story-kouri.webp` | 古宇利大橋 | CEphoto, Uwe Aranas | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Nago_Okinawa_Kouri-Bridge-02.jpg) |
+| `story-churaumi.webp` | 美麗海水族館鯨鯊缸 | Bernie Ongewe | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Okinawa_Churaumi_Aquarium_3.jpg) |
+| `story-sefa.webp` | 齋場御嶽參道 | Hyppolyte de Saint-Rambert | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Okinawa_Nanjo_Sefa-utaki_Gusuku_site_Yuinchi_02.jpg) |
+| `story-orion.webp` | Orion Happy Park 啤酒廠 | othree | [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Orion_Happy_Park_(33884547091).jpg) |
+| `story-american.webp` | 北谷美國村 | Toshihiro Matsui | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:American_Village_-_panoramio.jpg) |
+| `food-pork-egg.webp` | 豬肉蛋飯糰 | Ocdp | [CC0](https://creativecommons.org/publicdomain/zero/1.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Pork_and_tamago_onigiri_001.jpg) |
+| `food-goya.webp` | 苦瓜炒肉（ゴーヤーチャンプルー） | Jpatokal | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Goya_Champuru_at_Yumenoya.jpg) |
+| `food-taco.webp` | 沖繩塔可飯 | Nelo Hotsuma | [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Taco_Rice.jpg) |
+| `food-awamori.webp` | 沖繩泡盛酒瓶 | ayustety | [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Kikunotsuyu_Awamori.jpg) |
+
 ## 新增圖片時的紀錄格式
 
 1. 優先從 [Wikimedia Commons](https://commons.wikimedia.org/) 挑選，逐張確認授權（CC0 / CC BY / CC BY-SA / Public domain 可用；避免 NC / ND）。
