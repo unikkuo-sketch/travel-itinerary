@@ -50,6 +50,7 @@ ATTRIBUTIONS.md         照片素材授權紀錄（新增圖片必須補列）
 - 風土：獨立頁 `stories.html`；`stories[]`（`theme`=`place`｜`history`｜`culture`、`title`、`kicker`、`body`、`source`、`photo`）；景點／歷史／文化介紹；滿版章節＋下緣疊文；空陣列顯示空狀態
 - 飲食：獨立頁 `food.html`；`foods[]`（`theme`=`food`｜`sake`、其餘欄位同 stories）；食物與酒（含酒藏／地酒）；呈現同構風土；空陣列顯示空狀態
 - OG：各頁共用 `images/hub-hero.webp` 絕對 URL（靜態站無法給 crawler 動態 trip cover）
+- SEO／Agent 評估：`docs/seo-assessment-2026-07-30.md`（CSR 空殼、llms.txt、預渲染分階段）；機器入口：`/trips/manifest.json`、`/trips/{id}/itinerary.json`
 
 ## 常用指令
 

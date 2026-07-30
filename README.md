@@ -56,3 +56,9 @@ traveling/                 # 根目錄：共用程式、Hub、建置設定
 - **正式：** Vercel（Git 連線 `main` → build `npm run build` → output `dist`）；`base: '/'`
 - **舊 Pages：** 已關閉
 - Canonical／OG 主機見 `js/site.js` 的 `SITE_ORIGIN`（換網域後同步 HTML meta、`robots.txt`，再 `node scripts/gen-sitemap.mjs`）
+
+## SEO／Agent 易取性
+
+評估與分階段方案見 [docs/seo-assessment-2026-07-30.md](docs/seo-assessment-2026-07-30.md)。
+
+機器可讀入口（現況）：`/trips/manifest.json`、`/trips/{id}/itinerary.json`。
