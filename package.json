@@ -5,8 +5,9 @@
   "private": true,
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "build": "node scripts/gen-seo.mjs && vite build && node scripts/prerender-trips.mjs",
+    "preview": "vite preview",
+    "gen-seo": "node scripts/gen-seo.mjs"
   },
   "devDependencies": {
     "vite": "^7.3.0"

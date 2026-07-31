@@ -1,0 +1,22 @@
+{
+  "redirects": [
+    {
+      "source": "/trip.html",
+      "has": [{ "type": "query", "key": "trip", "value": "(?<trip>.+)" }],
+      "destination": "/trips/:trip/",
+      "permanent": true
+    },
+    {
+      "source": "/stories.html",
+      "has": [{ "type": "query", "key": "trip", "value": "(?<trip>.+)" }],
+      "destination": "/trips/:trip/stories.html",
+      "permanent": true
+    },
+    {
+      "source": "/food.html",
+      "has": [{ "type": "query", "key": "trip", "value": "(?<trip>.+)" }],
+      "destination": "/trips/:trip/food.html",
+      "permanent": true
+    }
+  ]
+}

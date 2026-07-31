@@ -1,0 +1,60 @@
+# 宇宙碎片集散地 — 行程一覽
+> 產生自 trips/manifest.json；細節以各趟 itinerary.json 為準
+
+Hub: https://universum-sliver.vercel.app/
+Manifest: https://universum-sliver.vercel.app/trips/manifest.json
+
+## 2019 沖繩自駕優游 6日
+那霸 × 恩納 × 古宇利 × 本部 × 北谷 × 南城
+日期: 2019/09/01 - 09/06
+地區: 沖繩本島
+- JSON: https://universum-sliver.vercel.app/trips/2019_%E6%97%A5%E6%9C%AC%E6%B2%96%E7%B9%A9%E8%87%AA%E9%A7%95%E5%84%AA%E6%B8%B8_%E5%AE%B6%E5%BA%AD%E6%97%85%E9%81%8A/itinerary.json
+- 行程: https://universum-sliver.vercel.app/trips/2019_%E6%97%A5%E6%9C%AC%E6%B2%96%E7%B9%A9%E8%87%AA%E9%A7%95%E5%84%AA%E6%B8%B8_%E5%AE%B6%E5%BA%AD%E6%97%85%E9%81%8A/
+- 風土: https://universum-sliver.vercel.app/trips/2019_%E6%97%A5%E6%9C%AC%E6%B2%96%E7%B9%A9%E8%87%AA%E9%A7%95%E5%84%AA%E6%B8%B8_%E5%AE%B6%E5%BA%AD%E6%97%85%E9%81%8A/stories.html
+- 飲食: https://universum-sliver.vercel.app/trips/2019_%E6%97%A5%E6%9C%AC%E6%B2%96%E7%B9%A9%E8%87%AA%E9%A7%95%E5%84%AA%E6%B8%B8_%E5%AE%B6%E5%BA%AD%E6%97%85%E9%81%8A/food.html
+
+## 2023 北海道 8日自由行
+登別 × 札幌 × 小樽 × 富良野 × 美瑛 × 定山溪
+日期: 2023/08/27 - 09/03
+地區: 北海道
+- JSON: https://universum-sliver.vercel.app/trips/2023_%E6%97%A5%E6%9C%AC%E5%8C%97%E6%B5%B7%E9%81%93_%E8%87%AA%E7%94%B1%E8%A1%8C/itinerary.json
+- 行程: https://universum-sliver.vercel.app/trips/2023_%E6%97%A5%E6%9C%AC%E5%8C%97%E6%B5%B7%E9%81%93_%E8%87%AA%E7%94%B1%E8%A1%8C/
+- 風土: https://universum-sliver.vercel.app/trips/2023_%E6%97%A5%E6%9C%AC%E5%8C%97%E6%B5%B7%E9%81%93_%E8%87%AA%E7%94%B1%E8%A1%8C/stories.html
+- 飲食: https://universum-sliver.vercel.app/trips/2023_%E6%97%A5%E6%9C%AC%E5%8C%97%E6%B5%B7%E9%81%93_%E8%87%AA%E7%94%B1%E8%A1%8C/food.html
+
+## 2018 中部北陸 7日自助
+名古屋 × 下呂 × 高山 × 白川鄉 × 金澤 × 富山
+日期: 2018/06/02 - 06/08
+地區: 愛知・岐阜・石川・富山
+- JSON: https://universum-sliver.vercel.app/trips/2018_%E6%97%A5%E6%9C%AC%E4%B8%AD%E9%83%A8%E5%8C%97%E9%99%B8_%E8%87%AA%E5%8A%A9%E6%97%85%E9%81%8A/itinerary.json
+- 行程: https://universum-sliver.vercel.app/trips/2018_%E6%97%A5%E6%9C%AC%E4%B8%AD%E9%83%A8%E5%8C%97%E9%99%B8_%E8%87%AA%E5%8A%A9%E6%97%85%E9%81%8A/
+- 風土: https://universum-sliver.vercel.app/trips/2018_%E6%97%A5%E6%9C%AC%E4%B8%AD%E9%83%A8%E5%8C%97%E9%99%B8_%E8%87%AA%E5%8A%A9%E6%97%85%E9%81%8A/stories.html
+- 飲食: https://universum-sliver.vercel.app/trips/2018_%E6%97%A5%E6%9C%AC%E4%B8%AD%E9%83%A8%E5%8C%97%E9%99%B8_%E8%87%AA%E5%8A%A9%E6%97%85%E9%81%8A/food.html
+
+## 2025 四國自駕・觀光列車 chill
+高松 × 小豆島 × 松山 × 宇和島 × 高知 × 祖谷
+日期: 2025/05/12 - 05/19
+地區: 香川・愛媛・高知
+- JSON: https://universum-sliver.vercel.app/trips/2025_%E6%97%A5%E6%9C%AC%E5%9B%9B%E5%9C%8B_%E8%87%AA%E9%A7%95%E8%A7%80%E5%85%89%E5%88%97%E8%BB%8A/itinerary.json
+- 行程: https://universum-sliver.vercel.app/trips/2025_%E6%97%A5%E6%9C%AC%E5%9B%9B%E5%9C%8B_%E8%87%AA%E9%A7%95%E8%A7%80%E5%85%89%E5%88%97%E8%BB%8A/
+- 風土: https://universum-sliver.vercel.app/trips/2025_%E6%97%A5%E6%9C%AC%E5%9B%9B%E5%9C%8B_%E8%87%AA%E9%A7%95%E8%A7%80%E5%85%89%E5%88%97%E8%BB%8A/stories.html
+- 飲食: https://universum-sliver.vercel.app/trips/2025_%E6%97%A5%E6%9C%AC%E5%9B%9B%E5%9C%8B_%E8%87%AA%E9%A7%95%E8%A7%80%E5%85%89%E5%88%97%E8%BB%8A/food.html
+
+## 2026關東賞櫻6日遊
+熱海 × 伊東 × 長瀞 × 秩父
+日期: 2026/03/27 - 04/01
+地區: 靜岡・埼玉・東京
+- JSON: https://universum-sliver.vercel.app/trips/2026_%E6%97%A5%E6%9C%AC%E7%86%B1%E6%B5%B7%E9%95%B7%E7%80%9E_%E5%AE%B6%E6%97%8F%E6%97%85%E9%81%8A/itinerary.json
+- 行程: https://universum-sliver.vercel.app/trips/2026_%E6%97%A5%E6%9C%AC%E7%86%B1%E6%B5%B7%E9%95%B7%E7%80%9E_%E5%AE%B6%E6%97%8F%E6%97%85%E9%81%8A/
+- 風土: https://universum-sliver.vercel.app/trips/2026_%E6%97%A5%E6%9C%AC%E7%86%B1%E6%B5%B7%E9%95%B7%E7%80%9E_%E5%AE%B6%E6%97%8F%E6%97%85%E9%81%8A/stories.html
+- 飲食: https://universum-sliver.vercel.app/trips/2026_%E6%97%A5%E6%9C%AC%E7%86%B1%E6%B5%B7%E9%95%B7%E7%80%9E_%E5%AE%B6%E6%97%8F%E6%97%85%E9%81%8A/food.html
+
+## 2026 日本東北祭典 8日遊
+仙台 × 盛岡 × 青森 × 弘前 × 秋田
+日期: 2026/07/31 - 08/07
+地區: 宮城・岩手・青森・秋田
+- JSON: https://universum-sliver.vercel.app/trips/2026_%E6%97%A5%E6%9C%AC%E9%9D%92%E6%A3%AE%E4%BB%99%E5%8F%B0%E7%A7%8B%E7%94%B0_%E5%AE%B6%E6%97%8F%E6%97%85%E9%81%8A/itinerary.json
+- 行程: https://universum-sliver.vercel.app/trips/2026_%E6%97%A5%E6%9C%AC%E9%9D%92%E6%A3%AE%E4%BB%99%E5%8F%B0%E7%A7%8B%E7%94%B0_%E5%AE%B6%E6%97%8F%E6%97%85%E9%81%8A/
+- 風土: https://universum-sliver.vercel.app/trips/2026_%E6%97%A5%E6%9C%AC%E9%9D%92%E6%A3%AE%E4%BB%99%E5%8F%B0%E7%A7%8B%E7%94%B0_%E5%AE%B6%E6%97%8F%E6%97%85%E9%81%8A/stories.html
+- 飲食: https://universum-sliver.vercel.app/trips/2026_%E6%97%A5%E6%9C%AC%E9%9D%92%E6%A3%AE%E4%BB%99%E5%8F%B0%E7%A7%8B%E7%94%B0_%E5%AE%B6%E6%97%8F%E6%97%85%E9%81%8A/food.html
+

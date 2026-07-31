@@ -3,6 +3,7 @@ import { renderItinerary } from './render.js';
 import { mountNav, initNavScroll } from './nav.js';
 import { initMap } from './map.js';
 import { icon } from './icons.js';
+import { applyPageMeta, tripCanonicalUrl, tripOgImage } from './seo.js';
 
 function initAppIcons() {
   document.querySelectorAll('.app-item[data-icon]').forEach((el) => {
@@ -32,7 +33,7 @@ function showError(message) {
     <main class="main-content" style="padding:4rem 1rem;text-align:center">
       <h1>找不到這趟行程</h1>
       <p>${message}</p>
-      <p>連結可能已失效，或行程代碼（?trip=）有誤。</p>
+      <p>連結可能已失效，或行程代碼有誤。</p>
       <p><a href="${import.meta.env.BASE_URL}">返回行程總覽</a></p>
     </main>`;
 }
@@ -48,9 +49,12 @@ async function init() {
     const data = await loadTrip(tripId);
     const { meta } = data;
 
-    document.title = `${meta.title} | ${meta.badge || ''}`;
-    const desc = document.querySelector('meta[name="description"]');
-    if (desc) desc.content = meta.subtitle || meta.title;
+    applyPageMeta({
+      title: `${meta.title} | ${meta.badge || '宇宙碎片集散地'}`,
+      description: meta.subtitle || meta.title,
+      url: tripCanonicalUrl(tripId, 'trip'),
+      image: tripOgImage(tripId, meta.cover?.src),
+    });
     if (meta.theme) document.body.classList.add(`theme-${meta.theme}`);
 
     mountNav(tripId, data.days);

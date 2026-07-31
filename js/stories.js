@@ -1,6 +1,7 @@
 import { getTripId, loadTrip, tripUrl } from './load-trip.js';
 import { icon } from './icons.js';
 import { photoHtml, tripAssetUrl } from './photo.js';
+import { applyPageMeta, tripCanonicalUrl, tripOgImage } from './seo.js';
 
 const root = document.getElementById('stories-root');
 const heroTitle = document.getElementById('stories-trip-title');
@@ -114,7 +115,14 @@ async function init() {
   try {
     const data = await loadTrip(tripId);
     if (data.meta?.theme) document.body.classList.add(`theme-${data.meta.theme}`);
-    document.title = `風土 | ${data.meta?.title || ''}`;
+    applyPageMeta({
+      title: `風土 | ${data.meta?.title || ''}`,
+      description: data.meta?.subtitle
+        ? `${data.meta.subtitle}——風土筆記`
+        : `這趟旅程裡，值得收下的景點、歷史與文化——${data.meta?.title || ''}`,
+      url: tripCanonicalUrl(tripId, 'stories'),
+      image: tripOgImage(tripId, data.meta?.cover?.src),
+    });
     if (heroTitle) {
       heroTitle.textContent = data.meta?.title
         ? `${data.meta.title} · 風土`

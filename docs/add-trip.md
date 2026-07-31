@@ -151,8 +151,8 @@ Copy-Item -Recurse trips\_template trips\2027_義大利托斯卡尼_蜜月
 
 | 陣列 | 頁面 | `theme` | 定位 |
 |------|------|---------|------|
-| `stories[]` | `stories.html?trip={id}` | `place`｜`history`｜`culture` | 景點、歷史與文化 |
-| `foods[]` | `food.html?trip={id}` | `food`｜`sake` | 食物與酒（含酒藏／地酒；`sake`＝酒） |
+| `stories[]` | `/trips/{id}/stories.html` | `place`｜`history`｜`culture` | 景點、歷史與文化 |
+| `foods[]` | `/trips/{id}/food.html` | `food`｜`sake` | 食物與酒（含酒藏／地酒；`sake`＝酒） |
 
 兩頁皆以滿版章節＋下緣疊文呈現；未填或空陣列顯示空狀態。建議各至少約 5 則；可重用 `photos/` 既有封面／每日照，新圖須補 `ATTRIBUTIONS.md`。
 
@@ -163,7 +163,7 @@ npm run dev
 ```
 
 - Hub：`http://localhost:5173/`
-- 行程：`http://localhost:5173/trip.html?trip=2027_義大利托斯卡尼_蜜月`
+- 行程：`http://localhost:5173/trips/2027_義大利托斯卡尼_蜜月/`
 
 ### 7. 上線
 
@@ -173,5 +173,5 @@ git commit -m "Add trip: 2027_義大利托斯卡尼_蜜月"
 git push origin main
 ```
 
-Vercel 會從 `main` 自動建置部署。若新增行程，記得更新 `public/sitemap.xml`（或執行 `node scripts/gen-sitemap.mjs`）。
+Vercel 會從 `main` 自動建置部署（`npm run build`＝gen-seo → Vite → 預渲染）。新增行程不必手改 sitemap／llms；build 會重產。換網域時改 `SITE_ORIGIN` 後執行 `npm run gen-seo`。
 舊 GitHub Pages 已關閉（非正式站）。

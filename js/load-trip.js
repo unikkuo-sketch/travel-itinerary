@@ -1,18 +1,31 @@
 const base = import.meta.env.BASE_URL;
 
+/** Trip id from ?trip= (legacy) or /trips/{id}/… path pages. */
 export function getTripId() {
-  return new URLSearchParams(location.search).get('trip');
+  const q = new URLSearchParams(location.search).get('trip');
+  if (q) return q;
+
+  const parts = location.pathname.split('/').filter(Boolean);
+  const i = parts.indexOf('trips');
+  if (i === -1 || !parts[i + 1]) return null;
+
+  const id = decodeURIComponent(parts[i + 1]);
+  if (!id || id === 'manifest.json' || id.startsWith('_')) return null;
+  return id;
 }
 
+/**
+ * Canonical trip page URLs (path-based). Shopping stays query-string (tool / noindex).
+ * Legacy `*.html?trip=` shells still resolve via getTripId().
+ */
 export function tripUrl(id, page = 'trip', hash = '') {
-  const files = {
-    trip: 'trip.html',
-    shopping: 'shopping.html',
-    stories: 'stories.html',
-    food: 'food.html',
-  };
-  const file = files[page] || 'trip.html';
-  return `${base}${file}?trip=${encodeURIComponent(id)}${hash}`;
+  const enc = encodeURIComponent(id);
+  if (page === 'shopping') {
+    return `${base}shopping.html?trip=${enc}${hash}`;
+  }
+  if (page === 'stories') return `${base}trips/${enc}/stories.html${hash}`;
+  if (page === 'food') return `${base}trips/${enc}/food.html${hash}`;
+  return `${base}trips/${enc}/${hash}`;
 }
 
 export async function loadManifest() {
