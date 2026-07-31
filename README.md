@@ -17,33 +17,38 @@ npm run dev
 | 頁面 | URL |
 |------|-----|
 | 行程總覽 Hub | `http://localhost:5173/` |
-| 單一行程 | `http://localhost:5173/trip.html?trip=2026_日本熱海長瀞_家族旅遊` |
+| 單一行程 | `http://localhost:5173/trips/2026_日本熱海長瀞_家族旅遊/` |
 | 購物建議 | `.../shopping.html?trip=2026_日本熱海長瀞_家族旅遊` |
-| 風土 | `.../stories.html?trip=2026_日本熱海長瀞_家族旅遊` |
-| 飲食 | `.../food.html?trip=2026_日本熱海長瀞_家族旅遊` |
+| 風土 | `.../trips/2026_日本熱海長瀞_家族旅遊/stories.html` |
+| 飲食 | `.../trips/2026_日本熱海長瀞_家族旅遊/food.html` |
 
 ```powershell
 npm run build
 npm run preview
 ```
 
+`npm run build` 會依序：`gen-seo`（sitemap／llms）→ Vite → 各趟 HTML 預渲染。
+
 ## 目錄結構
 
 ```
 traveling/                 # 根目錄：共用程式、Hub、建置設定
 ├── index.html             # Hub 首頁
-├── trip.html              # 通用行程頁
-├── shopping.html          # 購物建議（本機清單）
-├── stories.html           # 風土（景點／歷史／文化，滿版章節）
-├── food.html              # 飲食（食物與酒，滿版章節）
+├── trip.html              # 行程頁殼（legacy；正式路徑見下）
+├── shopping.html          # 購物建議（本機清單，noindex）
+├── stories.html / food.html
 ├── js/                    # 共用邏輯
 ├── styles.css
-├── public/                # favicon、hub hero、robots、sitemap、404
+├── public/                # favicon、hub hero、robots、sitemap、llms、404
+├── scripts/gen-seo.mjs    # sitemap + llms.txt / llms-full.txt
+├── scripts/prerender-trips.mjs  # build 後寫入 dist/trips/{id}/*.html
 └── trips/
     ├── manifest.json      # 行程索引
     ├── _template/         # 新行程範本
     └── {西元年}_{地區}_{性質}/
 ```
+
+正式行程 URL：`/trips/{id}/`、`/stories.html`、`/food.html`（build 預渲染 meta＋正文）。舊 `*.html?trip=` 會 301 到新路徑（`vercel.json`）。
 
 ## 新增行程
 
@@ -55,10 +60,14 @@ traveling/                 # 根目錄：共用程式、Hub、建置設定
 
 - **正式：** Vercel（Git 連線 `main` → build `npm run build` → output `dist`）；`base: '/'`
 - **舊 Pages：** 已關閉
-- Canonical／OG 主機見 `js/site.js` 的 `SITE_ORIGIN`（換網域後同步 HTML meta、`robots.txt`，再 `node scripts/gen-sitemap.mjs`）
+- Canonical／OG 主機見 `js/site.js` 的 `SITE_ORIGIN`（換網域後同步 HTML meta、`robots.txt`，再 `npm run gen-seo`）
 
 ## SEO／Agent 易取性
 
-評估與分階段方案見 [docs/seo-assessment-2026-07-30.md](docs/seo-assessment-2026-07-30.md)。
+評估見 [docs/seo-assessment-2026-07-30.md](docs/seo-assessment-2026-07-30.md)。
 
-機器可讀入口（現況）：`/trips/manifest.json`、`/trips/{id}/itinerary.json`。
+機器入口：
+
+- https://universum-sliver.vercel.app/llms.txt
+- https://universum-sliver.vercel.app/llms-full.txt
+- `/trips/manifest.json`、`/trips/{id}/itinerary.json`

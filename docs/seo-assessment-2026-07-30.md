@@ -1,8 +1,9 @@
 # SEO 評估報告 — 宇宙碎片集散地（2026-07-30）
 
 正式站：https://universum-sliver.vercel.app/  
-範圍：搜尋引擎檢索（Google／Bing 等）＋其他 agent／LLM 查找資料的易取得性。  
-性質：評估與方案規劃；本文件不實作改碼。
+範圍：搜尋引擎檢索（Google／Bing 等）＋其他 agent／LLM 查找資料的易取得性。
+
+> **實作狀態（2026-07-31）：** Phase 1＋2 已落地（見 `docs/decisions/2026-07-31-seo-phase-1-2.md`）。正式 URL 為 `/trips/{id}/`；build 預渲染 meta／正文；`llms.txt` 已提供。Phase 0（GSC）仍為站長手操。
 
 ---
 

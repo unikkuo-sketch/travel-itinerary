@@ -1,0 +1,23 @@
+# 宇宙碎片集散地
+> 真實走過的日本行程與風土筆記——給同樣在排行程的人當參考（非訂票／非導購站）
+
+## 機器可讀入口
+- https://universum-sliver.vercel.app/trips/manifest.json — 行程索引
+- https://universum-sliver.vercel.app/trips/{id}/itinerary.json — 單趟全文（source of truth）
+- https://universum-sliver.vercel.app/llms-full.txt — 各趟標題與 JSON／頁面連結表
+- https://universum-sliver.vercel.app/llms.txt — 本文件
+
+## 主要人類頁面
+- https://universum-sliver.vercel.app/ — Hub 總覽
+- https://universum-sliver.vercel.app/trips/{id}/ — 單趟行程
+- https://universum-sliver.vercel.app/trips/{id}/stories.html — 風土
+- https://universum-sliver.vercel.app/trips/{id}/food.html — 飲食
+- https://universum-sliver.vercel.app/shopping.html?trip={id} — 購物工具（noindex；勾選僅存本機）
+
+## 注意
+- 票券 status 與購物勾選為訪客本機狀態，勿當權威資料
+- 照片授權見 https://github.com/unikkuo-sketch/travel-itinerary/blob/main/ATTRIBUTIONS.md；請保留 credit
+- 舊網址 `*.html?trip=` 仍可用；正式 canonical 為 `/trips/{id}/` 路徑
+
+## 可選
+- Sitemap: https://universum-sliver.vercel.app/sitemap.xml
