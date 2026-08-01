@@ -377,11 +377,11 @@
       "priceSuffix": "/人",
       "meta": "📆 使用日期：Day 2-6（08/01-08/05）",
       "features": [
-        "✅ Day2 仙台→盛岡（Hayabusa 1）",
-        "✅ Day3 盛岡↔新青森（Hayabusa 95 / Hayate 98）",
-        "✅ Day4 盛岡→八戶→新青森→弘前（Hayabusa 95・9 / Super-Tsugaru 2）",
-        "✅ Day5 弘前→秋田（Resort 白神號 2）",
-        "✅ Day6 大曲→角館→田澤湖→仙台（Komachi 14・24）"
+        "✅ Day2 仙台→盛岡（Hayabusa 1 · 08:05）",
+        "✅ Day3 盛岡↔新青森（Hayabusa 95 · 07:59／Hayate 98 · 21:47）",
+        "✅ Day4 盛岡→八戶→新青森→弘前（Hayabusa 95 · 07:59／Hayabusa 9 · 12:02／Super-Tsugaru 2 · 12:47）",
+        "✅ Day5 弘前→秋田（Resort 白神號 2 · 08:48）",
+        "✅ Day6 大曲→角館→田澤湖→仙台（Komachi 14 · 09:50／Komachi 24 · 14:09）"
       ]
     },
     {
@@ -588,8 +588,8 @@
         {
           "time": "08:44",
           "place": "盛岡駅",
-          "desc": "轉巴士前往小岩井農場",
-          "detail": "10號站牌 09:05→09:35"
+          "desc": "轉巴士前往小岩井農場（東口1樓10號站牌，非西口）",
+          "detail": "09:05→09:35"
         },
         {
           "time": "09:40",
@@ -638,7 +638,7 @@
       ],
       "tips": [
         "✅ <strong>Hayabusa 1 號</strong>：08:05仙台出發，08:44抵達盛岡（2號車）",
-        "✅ <strong>小岩井農場巴士</strong>：盛岡站10號站牌搭乘，去程09:05、回程12:00，請留意末班車時間",
+        "✅ <strong>小岩井農場巴士</strong>：10號站牌在東口1樓（勿跟站內指示去西口），去09:05／回12:00",
         "✅ <strong>岩手銀行赤煉瓦館</strong>：紅磚洋樓外觀適合拍照，鄰近盛岡八幡宮"
       ],
       "photo": {
@@ -658,7 +658,8 @@
           "place": "盛岡駅",
           "desc": "搭乘東北新幹線 Hayabusa 95 號（2號車）前往新青森",
           "tag": "🚄 新幹線",
-          "icon": "train"
+          "icon": "train",
+          "detail": "07:59→09:02"
         },
         {
           "time": "09:02",
@@ -713,7 +714,8 @@
           "place": "新青森駅",
           "desc": "搭乘 Hayate 98 號（5號車）返回盛岡",
           "tag": "🚄 新幹線",
-          "icon": "train"
+          "icon": "train",
+          "detail": "21:47→22:48"
         },
         {
           "time": "22:48",
@@ -745,7 +747,8 @@
           "place": "盛岡駅",
           "desc": "搭乘 Hayabusa 95 號（2號車）前往八戶",
           "tag": "🚄 新幹線",
-          "icon": "train"
+          "icon": "train",
+          "detail": "07:59→08:34"
         },
         {
           "time": "08:34",
@@ -769,7 +772,8 @@
           "place": "八戶車站",
           "desc": "搭乘 Hayabusa 9 號（4號車）前往新青森",
           "tag": "🚄 新幹線",
-          "icon": "train"
+          "icon": "train",
+          "detail": "12:02→12:29"
         },
         {
           "time": "12:29",
@@ -781,7 +785,8 @@
           "place": "新青森駅",
           "desc": "搭乘 Super-Tsugaru 2 號（2號車）前往弘前",
           "tag": "🚄 特急列車",
-          "icon": "train"
+          "icon": "train",
+          "detail": "12:47→13:13"
         },
         {
           "time": "13:13",
@@ -811,7 +816,7 @@
       ],
       "tips": [
         "✅ <strong>八食中心</strong>：東北最大海鮮市場，建議早上前往選購新鮮海鮮現場料理",
-        "✅ <strong>三段新幹線接駁</strong>：八戶→新青森→弘前需轉乘2次，留意換車時間",
+        "✅ <strong>三段新幹線接駁</strong>：八戶12:02→新青森12:29→弘前12:47／13:13，留意換車",
         "✅ <strong>弘前公園</strong>：弘前城與護城河，是津輕地區歷史文化象徵"
       ],
       "photo": {
@@ -832,7 +837,8 @@
           "desc": "搭乘 Resort 白神號 2 號（2號車），沿日本海岸絕景鐵道前往秋田",
           "tag": "🚃 絕景列車",
           "highlight": true,
-          "icon": "train"
+          "icon": "train",
+          "detail": "08:48→13:29"
         },
         {
           "time": "13:29",
@@ -872,7 +878,7 @@
         }
       ],
       "tips": [
-        "✅ <strong>Resort 白神號</strong>：沿日本海絕景行駛近5小時，建議坐靠海側座位",
+        "✅ <strong>Resort 白神號</strong>：08:48弘前出發、13:29抵秋田；靠海側座位看日本海絕景",
         "✅ <strong>秋田市民俗藝能傳承館</strong>：可近距離了解竿燈祭文化與道具",
         "✅ <strong>秋田長屋酒場</strong>：晚餐已預約17:45，請準時前往"
       ],
@@ -904,7 +910,8 @@
           "place": "Ōmagari Station",
           "desc": "搭乘秋田新幹線 Komachi 14 號（16號車）前往角館",
           "tag": "🚄 新幹線",
-          "icon": "train"
+          "icon": "train",
+          "detail": "09:50→10:00"
         },
         {
           "time": "10:00",
@@ -927,7 +934,8 @@
         {
           "time": "11:58",
           "place": "角館車站",
-          "desc": "轉乘秋田內陸線前往田澤湖"
+          "desc": "轉乘秋田內陸線前往田澤湖",
+          "detail": "11:58→12:13"
         },
         {
           "time": "12:13",
@@ -941,7 +949,8 @@
           "place": "田澤湖車站",
           "desc": "搭乘 Komachi 24 號（14號車）前往仙台",
           "tag": "🚄 新幹線",
-          "icon": "train"
+          "icon": "train",
+          "detail": "14:09→15:29"
         },
         {
           "time": "15:29",
@@ -963,7 +972,7 @@
       "tips": [
         "✅ <strong>角館武家屋敷</strong>：東北小京都代表景點，黑板圍牆與古樹並存",
         "✅ <strong>田澤湖</strong>：日本最深湖泊，湖水湛藍清澈",
-        "✅ <strong>Komachi 號秋田新幹線</strong>：全程多次轉乘，請留意各站轉乘時間"
+        "✅ <strong>Komachi 號秋田新幹線</strong>：Komachi 14 · 09:50（大曲→角館）、Komachi 24 · 14:09（田澤湖→仙台）"
       ],
       "photo": {
         "src": "photos/day6.webp",
