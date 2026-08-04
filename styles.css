@@ -1753,6 +1753,69 @@ h3 { font-size: var(--text-lg); }
     font-size: var(--text-sm);
 }
 
+/* Japan-only manhole sister aside (page bottom, quiet) */
+.section--manhole-aside {
+    margin-top: 1rem;
+    padding-top: 2.5rem;
+    border-top: 1px dashed color-mix(in srgb, var(--border) 55%, transparent);
+    opacity: 0.88;
+}
+
+.section--manhole-aside .section-header h2 {
+    font-size: var(--text-2xl);
+    font-weight: 500;
+    letter-spacing: 0.02em;
+}
+
+.section--manhole-aside .section-header p {
+    max-width: 36rem;
+    color: var(--text-muted);
+    font-size: var(--text-sm);
+}
+
+.manhole-aside-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.65rem 1.25rem;
+}
+
+.manhole-aside-link {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 0.45rem;
+    color: var(--text-secondary);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: color var(--transition-fast), border-color var(--transition-fast);
+}
+
+.manhole-aside-link:hover {
+    color: var(--accent-dark);
+    border-bottom-color: color-mix(in srgb, var(--accent) 50%, transparent);
+}
+
+.manhole-aside-pref {
+    font-family: var(--font-serif);
+    font-size: var(--text-lg);
+    font-weight: 500;
+}
+
+.manhole-aside-hint {
+    font-size: var(--text-xs);
+    color: var(--text-muted);
+    letter-spacing: 0.04em;
+}
+
+.manhole-aside-note {
+    margin: 1.25rem 0 0;
+    font-size: var(--text-xs);
+    color: var(--text-muted);
+    letter-spacing: 0.03em;
+}
+
 /* Footer */
 .footer {
     background: var(--bg-page);
@@ -1788,6 +1851,11 @@ h3 { font-size: var(--text-lg); }
 
 .footer-content--site {
     margin-top: 0.75rem;
+}
+
+.footer-sister {
+    margin-top: 0.35rem;
+    opacity: 0.85;
 }
 
 .hub-group {
