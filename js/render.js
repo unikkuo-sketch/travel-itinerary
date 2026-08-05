@@ -1,5 +1,6 @@
 import { icon, iconFromEmoji, resolveTimelineIcon, stripTagEmoji } from './icons.js';
 import { photoHtml, tripAssetUrl } from './photo.js';
+import { isJapanTrip, manholeMapUrl, resolvePrefectures } from './manhole.js';
 
 function esc(text) {
   const el = document.createElement('span');
@@ -470,6 +471,46 @@ export function renderExtras(data) {
   }
 }
 
+function renderManholeAside(meta, tripId) {
+  const section = document.getElementById('manhole-aside');
+  const root = document.getElementById('manhole-aside-root');
+  const footerSister = document.getElementById('footer-manhole');
+  if (!section || !root) return;
+
+  const japan = isJapanTrip(meta, tripId);
+  if (footerSister) footerSister.hidden = !japan;
+
+  if (!japan) {
+    section.hidden = true;
+    root.innerHTML = '';
+    return;
+  }
+
+  const prefs = resolvePrefectures(meta);
+  if (!prefs.length) {
+    section.hidden = true;
+    root.innerHTML = '';
+    return;
+  }
+
+  section.hidden = false;
+  root.innerHTML = `
+    <ul class="manhole-aside-list">
+      ${prefs
+        .map(
+          (p) => `
+        <li>
+          <a class="manhole-aside-link" href="${manholeMapUrl(p.code)}" target="_blank" rel="noopener noreferrer">
+            <span class="manhole-aside-pref">${esc(p.label)}</span>
+            <span class="manhole-aside-hint">配布地圖</span>
+          </a>
+        </li>`
+        )
+        .join('')}
+    </ul>
+    <p class="manhole-aside-note">姊妹站 · マンホールカード收集 · 另開分頁</p>`;
+}
+
 export function renderItinerary(data) {
   renderHero(data.meta, data.days || []);
 
@@ -507,4 +548,5 @@ export function renderItinerary(data) {
   if (budgetEl && data.budget) budgetEl.innerHTML = renderBudgetHtml(data.budget);
 
   renderExtras(data);
+  renderManholeAside(data.meta || {}, tripId);
 }
