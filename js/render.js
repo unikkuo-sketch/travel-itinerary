@@ -507,8 +507,7 @@ function renderManholeAside(meta, tripId) {
         </li>`
         )
         .join('')}
-    </ul>
-    <p class="manhole-aside-note">姊妹站 · マンホールカード收集 · 另開分頁</p>`;
+    </ul>`;
 }
 
 export function renderItinerary(data) {
