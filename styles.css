@@ -1188,6 +1188,10 @@ h3 { font-size: var(--text-lg); }
     aspect-ratio: 21 / 9;
 }
 
+.ph--day.ph--contain {
+    background: #1c1612;
+}
+
 /* Photo rhythm: alternate crop / ratio between consecutive days */
 .day-section--photo:nth-child(even) .ph--day {
     aspect-ratio: 2 / 1;
