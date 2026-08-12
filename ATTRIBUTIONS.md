@@ -36,17 +36,19 @@ CC BY / CC BY-SA 圖片依授權條款標示作者、來源與授權；CC BY-SA 
 | `day2.webp` | 小岩井農場羊群 | 掬茶 | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Sheep_pusture_in_Koiwai_Farm.jpg) |
 | `day3.webp` | 青森睡魔祭 | Marie-Sophie Mejan | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Aomori,_Nebuta-matsuri_34.jpg) |
 | `day4.webp` | 弘前城天守 | 掬茶 | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Hirosaki_Castle_Keep_Tower_20220508.jpg) |
-| `day5.webp` | Resort 白神號（千疊敷站） | Calistemon | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:HB-E300_Resort_Shirakami_Aoike_at_Senj%C5%8Djiki_Station,_April_2023_03.jpg) |
+| `day5.webp` | Resort 白神號（橅編成）車頭 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（來源 Google Photos 分享相簿） |
 | `day6.webp` | 角館武家屋敷通 | 掬茶 | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Bukeyashiki_Street_in_Kakunodate_20180428b.jpg) |
 | `day7.webp` | 松島灣 | Chensiyuan | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Matsushima_miyagi_z.JPG) |
 | `day8.webp` | 瑞鳳殿 | 663highland | [CC BY 2.5](https://creativecommons.org/licenses/by/2.5/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Zuiho-den02s3200.jpg) |
-| `story-gyutan.jpg` | 仙台牛タン定食 | Captain76 | [Public domain](https://creativecommons.org/publicdomain/mark/1.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Gyutan_teishoku.JPG) |
 | `story-kanto-1200.jpg` | 秋田竿燈祭夜景 | 8-Forest | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Akita_Kanto_Festival_2015_at_night.JPG) |
 | `story-tazawako.webp` | 田澤湖湖面與周邊山景 | 掬茶 | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Lake_Tazawa_20170709.jpg) |
-| `food-hasshoku.webp` | 八食中心市場內的海鮮攤位 | 青森県／Amazing AOMORI | 青森県観光写真利用規約（旅遊推廣可使用；無需標註） | [Amazing AOMORI（八食センター：内観）](https://aomori-tourism.com/photos/detail_5065.html) |
-| `food-morioka-noodles.webp` | 盛岡冷麺（盛岡三大麵之一） | Koltonsmith | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Morioka_Reimen2.jpg) |
-| `food-inaniwa-udon.webp` | 溫食稲庭うどん | Cal3135 | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:%E7%A8%B2%E5%BA%AD%E3%81%86%E3%81%A9%E3%82%93.jpg) |
-| `food-aomori-cidre.webp` | 青森弘前的富士蘋果（シードル原料） | あおもりくま | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Malus_domestica_Fuji_Apple_Hirosaki_Aomori_Japan_20161016b.jpg) |
+| `food-gyutan.webp` | 善治郎炭烤厚切牛舌 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（來源 Google Photos 分享相簿） |
+| `food-koiwai-dairy.webp` | 小岩井農場優格、牛乳與冰淇淋 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（來源 Google Photos 分享相簿） |
+| `food-hasshoku.webp` | 八食中心冰台海鮮（生蠔・帆立・海膽） | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（來源 Google Photos 分享相簿） |
+| `food-morioka-noodles.webp` | ぴょんぴょん舎盛岡冷麺 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（來源 Google Photos 分享相簿） |
+| `food-shiny-apple.webp` | Shiny 青森蘋果氣泡果汁 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（來源 Google Photos 分享相簿） |
+| `food-hassen.webp` | 八戶酒造陸奥八仙特別純米 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（來源 Google Photos 分享相簿） |
+| `food-inaniwa-udon.webp` | 角館ふきや比內地雞丼與稻庭烏龍 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（來源 Google Photos 分享相簿） |
 
 ## trips/2025_日本四國_自駕觀光列車/photos/
 

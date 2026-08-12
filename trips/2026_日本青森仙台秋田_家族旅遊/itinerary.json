@@ -75,8 +75,13 @@
         "priceNote": "含稅參考價・實際以店面為準"
       },
       {
-        "name": "青森蘋果氣泡酒",
+        "name": "Shiny 蘋果氣泡果汁",
         "price": "約 ¥700",
+        "priceNote": "含稅參考價・實際以店面為準"
+      },
+      {
+        "name": "陸奥八仙（八戶酒造）",
+        "price": "約 ¥2,000",
         "priceNote": "含稅參考價・實際以店面為準"
       },
       {
@@ -121,11 +126,11 @@
         "desc": "蘋果製品專賣",
         "items": [
           {
-            "name": "青森蘋果氣泡酒",
+            "name": "Shiny 蘋果氣泡果汁",
             "price": "約 ¥700",
             "priceNote": "含稅參考價・實際以店面為準",
-            "imageUrl": "https://shopping.c.yimg.jp/lib/abc-afactory/1000top-cidre-kan.jpg",
-            "url": "https://afactory-abc.com/cidre/"
+            "imageUrl": "",
+            "url": "https://www.shiny.co.jp/"
           },
           {
             "name": "蘋果果汁",
@@ -281,30 +286,30 @@
       "theme": "food",
       "title": "仙台牛タン",
       "kicker": "宮城・仙台",
-      "body": "昭和二十三年起自仙台的炭火牛舌文化；定食常配麥飯與尾湯，各店部位與調味各有堅持。啟程東北前，先收下這口在地味道。",
+      "body": "昭和二十三年起自仙台的炭火牛舌文化；定食常配麥飯與尾湯，各店部位與調味各有堅持。本趟於善治郎收下這口厚切炭香。",
       "source": {
         "label": "せんだい旅日和（仙台観光情報）",
         "url": "https://www.sentabi.jp/features/42"
       },
       "photo": {
-        "src": "photos/story-gyutan.jpg",
-        "alt": "仙台牛タン定食",
-        "credit": "Captain76 / Public domain"
+        "src": "photos/food-gyutan.webp",
+        "alt": "善治郎炭烤厚切牛舌與配菜",
+        "credit": "宇宙碎片拍攝"
       }
     },
     {
       "theme": "food",
-      "title": "八食中心",
-      "kicker": "青森・八戶",
-      "body": "八戶港岸邊的大型室內市場，約六十家攤位賣當日鮮魚、蔬果與鄉土點心；可現場點海鮮丼，或把選好的魚貝帶去七輪村炭烤。東北最大級的海鮮主題公園，把太平洋的鮮，收進胃袋。",
+      "title": "小岩井牧場乳製品",
+      "kicker": "岩手・雫石",
+      "body": "開業自明治的小岩井農場，把鮮乳做成飲用優格、瓶裝牛乳與牧場冰淇淋。遼闊草原走一圈後，坐下來收一口「農場育ち」的濃厚，是 Day 2 親子行程最甜的休息。",
       "source": {
-        "label": "八食センター（公式）",
-        "url": "https://www.849net.com/"
+        "label": "小岩井農場（公式）",
+        "url": "https://www.makiba.or.jp/"
       },
       "photo": {
-        "src": "photos/food-hasshoku.webp",
-        "alt": "八食中心市場內的海鮮攤位",
-        "credit": "Amazing AOMORI（青森県）"
+        "src": "photos/food-koiwai-dairy.webp",
+        "alt": "小岩井農場飲用優格、瓶裝牛乳與冰淇淋",
+        "credit": "宇宙碎片拍攝"
       }
     },
     {
@@ -318,38 +323,71 @@
       },
       "photo": {
         "src": "photos/food-morioka-noodles.webp",
-        "alt": "盛岡冷麺（盛岡三大麵之一）",
-        "credit": "Koltonsmith / CC BY-SA 4.0"
+        "alt": "ぴょんぴょん舎盛岡冷麺（西瓜、半熟蛋與泡菜）",
+        "credit": "宇宙碎片拍攝"
+      }
+    },
+    {
+      "theme": "food",
+      "title": "八食中心",
+      "kicker": "青森・八戶",
+      "body": "八戶港岸邊的大型室內市場，約六十家攤位賣當日鮮魚、蔬果與鄉土點心；可現場點海鮮丼，或把選好的魚貝帶去七輪村炭烤。東北最大級的海鮮主題公園，把太平洋的鮮，收進胃袋。",
+      "source": {
+        "label": "八食センター（公式）",
+        "url": "https://www.849net.com/"
+      },
+      "photo": {
+        "src": "photos/food-hasshoku.webp",
+        "alt": "八食中心冰台上的生蠔、帆立與海膽",
+        "credit": "宇宙碎片拍攝",
+        "objectPosition": "center 40%"
+      }
+    },
+    {
+      "theme": "food",
+      "title": "シャイニー スパークリングアップル",
+      "kicker": "青森",
+      "body": "以青森蘋果做成的氣泡果汁（ノンアル），路上或鐵道上冰鎮一口，酸甜帶氣、不醉人。本趟收進行李的蘋果王國伴手禮，比沉重酒類更好帶上飛機。",
+      "source": {
+        "label": "SHINY（公式）",
+        "url": "https://www.shiny.co.jp/"
+      },
+      "photo": {
+        "src": "photos/food-shiny-apple.webp",
+        "alt": "Shiny 青森蘋果氣泡果汁兩瓶（車窗景色）",
+        "credit": "宇宙碎片拍攝",
+        "objectPosition": "center 30%"
+      }
+    },
+    {
+      "theme": "sake",
+      "title": "陸奥八仙",
+      "kicker": "青森・八戶酒造",
+      "body": "八戶酒造的招牌銘柄；特別純米以青森縣產米釀造，酒標「八仙」二字醒目。八戶海鮮行程旁，收一瓶能帶回台灣的津輕氣口。",
+      "source": {
+        "label": "八戸酒造（公式）",
+        "url": "https://www.hachinohe-shuzou.co.jp/"
+      },
+      "photo": {
+        "src": "photos/food-hassen.webp",
+        "alt": "八戶酒造陸奥八仙特別純米酒瓶",
+        "credit": "宇宙碎片拍攝",
+        "objectPosition": "center 35%"
       }
     },
     {
       "theme": "food",
       "title": "稲庭うどん",
       "kicker": "秋田・湯沢",
-      "body": "湯澤稻庭一帶手延乾麵，江戶時代曾為佐竹藩獻上品；小麥、鹽與清水反復揉延，口感細緻有筋。日本三銘烏龍之一；Day 6 角館午餐於ふきや可堂食佐藤養助麵，也是秋田可帶回家的日常奢侈。",
+      "body": "湯澤稻庭一帶手延乾麵，江戶時代曾為佐竹藩獻上品；小麥、鹽與清水反復揉延，口感細緻有筋。Day 6 角館ふきや以佐藤養助麵搭配比內地雞親子丼，把秋田鄉土味一次收進托盤。",
       "source": {
         "label": "秋田県稲庭うどん協同組合",
         "url": "http://inaniwa-udon.jp/about/"
       },
       "photo": {
         "src": "photos/food-inaniwa-udon.webp",
-        "alt": "溫食稲庭うどん",
-        "credit": "Cal3135 / CC BY-SA 4.0"
-      }
-    },
-    {
-      "theme": "sake",
-      "title": "アオモリシードル",
-      "kicker": "青森・A-FACTORY",
-      "body": "以青森縣產蘋果發酵的氣泡酒；青森站前 A-FACTORY 設有可觀釀造過程的工房與試飲。比起沉重日本酒，這是把蘋果王國收進行李的輕盈一杯。",
-      "source": {
-        "label": "Amazing AOMORI（A-FACTORY）",
-        "url": "https://aomori-tourism.com/spot/detail_3697.html"
-      },
-      "photo": {
-        "src": "photos/food-aomori-cidre.webp",
-        "alt": "青森弘前的富士蘋果（シードル原料）",
-        "credit": "あおもりくま / CC BY-SA 4.0"
+        "alt": "角館ふきや比內地雞親子丼與稻庭烏龍定食",
+        "credit": "宇宙碎片拍攝"
       }
     }
   ],
@@ -684,7 +722,7 @@
         {
           "time": "11:28",
           "place": "A-FACTORY",
-          "desc": "品嚐青森蘋果氣泡酒與伴手禮選購",
+          "desc": "選購 Shiny 蘋果氣泡果汁等青森蘋果伴手禮",
           "tag": "🍎 購物",
           "icon": "food"
         },
@@ -918,8 +956,9 @@
       ],
       "photo": {
         "src": "photos/day5.webp",
-        "alt": "Resort 白神號停靠千疊敷站",
-        "credit": "Calistemon / CC BY-SA 4.0"
+        "alt": "Resort 白神號（橅編成）車頭停靠月台",
+        "credit": "宇宙碎片拍攝",
+        "objectPosition": "center 35%"
       }
     },
     {
