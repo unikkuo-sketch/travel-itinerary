@@ -31,7 +31,7 @@ CC BY / CC BY-SA 圖片依授權條款標示作者、來源與授權；CC BY-SA 
 
 | 檔案 | 內容 | 作者 | 授權 | 來源 |
 |---|---|---|---|---|
-| `cover.webp` | 青森睡魔祭燈籠山車 | Marie-Sophie Mejan | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Aomori,_Nebuta-matsuri_43.jpg) |
+| `cover.webp` | 青森睡魔祭燈籠山車（風神雷神） | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（來源 Google Photos 分享相簿，2026-08-02） |
 | `day1.webp` | 仙台七夕祭 | 掬茶 | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Sendai_Tanabata_2023.jpg) |
 | `day2.webp` | 小岩井農場羊群 | 掬茶 | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Sheep_pusture_in_Koiwai_Farm.jpg) |
 | `day3.webp` | 青森睡魔祭 | Marie-Sophie Mejan | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Aomori,_Nebuta-matsuri_34.jpg) |
