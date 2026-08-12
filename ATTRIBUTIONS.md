@@ -32,15 +32,15 @@ CC BY / CC BY-SA 圖片依授權條款標示作者、來源與授權；CC BY-SA 
 | 檔案 | 內容 | 作者 | 授權 | 來源 |
 |---|---|---|---|---|
 | `cover.webp` | 青森睡魔祭燈籠山車 | Marie-Sophie Mejan | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Aomori,_Nebuta-matsuri_43.jpg) |
-| `day1.webp` | 仙台七夕祭 | 掬茶 | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Sendai_Tanabata_2023.jpg) |
+| `day1.webp` | 仙台七夕祭名掛丁吹流し | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（來源 Google Photos 分享相簿） |
 | `day2.webp` | 小岩井農場羊群 | 掬茶 | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Sheep_pusture_in_Koiwai_Farm.jpg) |
-| `day3.webp` | 青森睡魔祭 | Marie-Sophie Mejan | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Aomori,_Nebuta-matsuri_34.jpg) |
-| `day4.webp` | 弘前城天守 | 掬茶 | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Hirosaki_Castle_Keep_Tower_20220508.jpg) |
+| `day3.webp` | 青森睡魔祭燈籠山車 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（來源 Google Photos 分享相簿） |
+| `day4.webp` | 弘前ねぷた祭扇形燈籠山車 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（來源 Google Photos 分享相簿） |
 | `day5.webp` | Resort 白神號（橅編成）車頭 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（來源 Google Photos 分享相簿） |
 | `day6.webp` | 角館武家屋敷通 | 掬茶 | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Bukeyashiki_Street_in_Kakunodate_20180428b.jpg) |
 | `day7.webp` | 松島灣 | Chensiyuan | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Matsushima_miyagi_z.JPG) |
 | `day8.webp` | 瑞鳳殿 | 663highland | [CC BY 2.5](https://creativecommons.org/licenses/by/2.5/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Zuiho-den02s3200.jpg) |
-| `story-kanto-1200.jpg` | 秋田竿燈祭夜景 | 8-Forest | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Akita_Kanto_Festival_2015_at_night.JPG) |
+| `story-kanto.webp` | 秋田竿燈祭夜空燈籠竿 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（來源 Google Photos 分享相簿） |
 | `story-tazawako.webp` | 田澤湖湖面與周邊山景 | 掬茶 | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Lake_Tazawa_20170709.jpg) |
 | `food-gyutan.webp` | 善治郎炭烤厚切牛舌 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（來源 Google Photos 分享相簿） |
 | `food-koiwai-dairy.webp` | 小岩井農場優格、牛乳與冰淇淋 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（來源 Google Photos 分享相簿） |

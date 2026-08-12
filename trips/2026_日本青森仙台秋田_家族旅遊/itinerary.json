@@ -231,8 +231,10 @@
       },
       "photo": {
         "src": "photos/day1.webp",
-        "alt": "仙台七夕祭的吹流し裝飾",
-        "credit": "掬茶 / CC BY-SA 4.0"
+        "alt": "仙台七夕祭名掛丁拱廊的吹流し裝飾",
+        "credit": "宇宙碎片拍攝",
+        "objectPosition": "center 20%",
+        "objectFit": "contain"
       }
     },
     {
@@ -245,9 +247,11 @@
         "url": "https://www.kantou.gr.jp/"
       },
       "photo": {
-        "src": "photos/story-kanto-1200.jpg",
-        "alt": "秋田竿燈祭夜景",
-        "credit": "8-Forest / CC BY-SA 4.0"
+        "src": "photos/story-kanto.webp",
+        "alt": "秋田竿燈祭夜空中彎曲的燈籠竿",
+        "credit": "宇宙碎片拍攝",
+        "objectPosition": "center 30%",
+        "objectFit": "contain"
       }
     },
     {
@@ -260,9 +264,9 @@
         "url": "https://www.nebuta.jp/"
       },
       "photo": {
-        "src": "photos/cover.webp",
-        "alt": "青森睡魔祭的燈籠山車",
-        "credit": "Marie-Sophie Mejan / CC BY 4.0"
+        "src": "photos/day3.webp",
+        "alt": "青森睡魔祭燈籠山車夜景",
+        "credit": "宇宙碎片拍攝"
       }
     },
     {
@@ -593,8 +597,9 @@
       ],
       "photo": {
         "src": "photos/day1.webp",
-        "alt": "仙台七夕祭的吹流し裝飾",
-        "credit": "掬茶 / CC BY-SA 4.0"
+        "alt": "仙台七夕祭名掛丁拱廊的吹流し裝飾",
+        "credit": "宇宙碎片拍攝",
+        "objectPosition": "center 20%"
       }
     },
     {
@@ -778,8 +783,8 @@
       ],
       "photo": {
         "src": "photos/day3.webp",
-        "alt": "青森睡魔祭燈籠山車",
-        "credit": "Marie-Sophie Mejan / CC BY 4.0"
+        "alt": "青森睡魔祭燈籠山車夜景",
+        "credit": "宇宙碎片拍攝"
       }
     },
     {
@@ -877,8 +882,9 @@
       ],
       "photo": {
         "src": "photos/day4.webp",
-        "alt": "弘前城天守與石垣",
-        "credit": "掬茶 / CC BY-SA 4.0"
+        "alt": "弘前ねぷた祭扇形燈籠山車",
+        "credit": "宇宙碎片拍攝",
+        "objectPosition": "center 40%"
       }
     },
     {
