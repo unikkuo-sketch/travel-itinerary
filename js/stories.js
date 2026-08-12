@@ -52,6 +52,7 @@ function renderChapter(story, index, tripId) {
         alt: story.photo.alt || story.title || '',
         credit: story.photo.credit || '',
         objectPosition: story.photo.objectPosition,
+        objectFit: story.photo.objectFit,
       }
     : null;
   const media = photo

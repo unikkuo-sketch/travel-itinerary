@@ -356,7 +356,8 @@
         "src": "photos/food-shiny-apple.webp",
         "alt": "Shiny 青森蘋果氣泡果汁兩瓶（車窗景色）",
         "credit": "宇宙碎片拍攝",
-        "objectPosition": "center 30%"
+        "objectPosition": "center center",
+        "objectFit": "contain"
       }
     },
     {
@@ -372,7 +373,8 @@
         "src": "photos/food-hassen.webp",
         "alt": "八戶酒造陸奥八仙特別純米酒瓶",
         "credit": "宇宙碎片拍攝",
-        "objectPosition": "center 35%"
+        "objectPosition": "center center",
+        "objectFit": "contain"
       }
     },
     {
