@@ -2865,6 +2865,15 @@ h3 { font-size: var(--text-lg); }
     object-fit: cover;
 }
 
+/* 直式特寫（酒瓶等）：整圖縮小入鏡，左右／上下留深色邊 */
+.story-chapter .ph--story.ph--contain {
+    background: #1c1612;
+}
+
+.story-chapter .ph--story.ph--contain .ph-img {
+    object-fit: contain;
+}
+
 .story-chapter .ph-credit {
     z-index: 3;
 }

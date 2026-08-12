@@ -17,7 +17,8 @@ export function tripAssetUrl(tripId, rel) {
  * Shared photo block: lazy loading, skeleton shimmer, fade-in,
  * graceful fallback and photographer credit overlay.
  *
- * photo: { src, alt, credit, objectPosition? } — src must already be a full URL.
+ * photo: { src, alt, credit, objectPosition?, objectFit? } — src must already be a full URL.
+ * objectFit: omit／cover 維持裁切；contain 縮小整圖入鏡（酒瓶等直式特寫）。
  */
 export function photoHtml(photo, { className = '', eager = false, creditPosition = 'br', fetchPriority } = {}) {
   if (!photo?.src) return '';
@@ -25,17 +26,20 @@ export function photoHtml(photo, { className = '', eager = false, creditPosition
     ? `<span class="ph-credit ph-credit--${creditPosition}">${esc(photo.credit)}</span>`
     : '';
   const fp = fetchPriority ? ` fetchpriority="${esc(fetchPriority)}"` : '';
-  const pos = photo.objectPosition
-    ? ` style="object-position: ${esc(photo.objectPosition)}"`
-    : '';
+  const fitContain = photo.objectFit === 'contain';
+  const styles = [];
+  if (photo.objectPosition) styles.push(`object-position: ${esc(photo.objectPosition)}`);
+  if (fitContain) styles.push('object-fit: contain');
+  const styleAttr = styles.length ? ` style="${styles.join('; ')}"` : '';
+  const containClass = fitContain ? ' ph--contain' : '';
   return `
-    <figure class="ph ${className}">
+    <figure class="ph ${className}${containClass}">
       <img
         class="ph-img"
         src="${esc(photo.src)}"
         alt="${esc(photo.alt || '')}"
         loading="${eager ? 'eager' : 'lazy'}"
-        decoding="async"${fp}${pos}
+        decoding="async"${fp}${styleAttr}
         onload="this.closest('.ph').classList.add('ph--loaded')"
         onerror="this.closest('.ph').classList.add('ph--error')"
       >
