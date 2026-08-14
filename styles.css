@@ -1192,24 +1192,25 @@ h3 { font-size: var(--text-lg); }
     background: #1c1612;
 }
 
-/* Photo rhythm: alternate crop / ratio between consecutive days */
-.day-section--photo:nth-child(even) .ph--day {
+/* Photo rhythm: alternate crop / ratio between consecutive days.
+   `.ph--custom-ratio` (from photo.aspectRatio) keeps portrait subjects fully in frame. */
+.day-section--photo:nth-child(even) .ph--day:not(.ph--custom-ratio) {
     aspect-ratio: 2 / 1;
 }
 
-.day-section--photo:nth-child(even) .ph--day .ph-img {
+.day-section--photo:nth-child(even) .ph--day:not(.ph--custom-ratio) .ph-img {
     object-position: center 35%;
 }
 
-.day-section--photo:nth-child(odd) .ph--day .ph-img {
+.day-section--photo:nth-child(odd) .ph--day:not(.ph--custom-ratio) .ph-img {
     object-position: center 45%;
 }
 
 /* ponytail: stack photo above timeline at all widths — side-by-side stretched cover looked soft */
 
 @media (max-width: 768px) {
-    .ph--day,
-    .day-section--photo:nth-child(even) .ph--day {
+    .ph--day:not(.ph--custom-ratio),
+    .day-section--photo:nth-child(even) .ph--day:not(.ph--custom-ratio) {
         aspect-ratio: 16 / 9;
     }
 
