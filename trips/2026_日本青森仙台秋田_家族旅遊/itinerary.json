@@ -218,8 +218,7 @@
         "src": "photos/day7.webp",
         "alt": "松島瑞巖寺國寶庫裏與藍天",
         "credit": "宇宙碎片拍攝",
-        "objectPosition": "center center",
-        "objectFit": "contain"
+        "objectPosition": "center 50%"
       }
     },
     {
@@ -1120,8 +1119,7 @@
         "src": "photos/day7.webp",
         "alt": "松島瑞巖寺國寶庫裏與藍天",
         "credit": "宇宙碎片拍攝",
-        "objectPosition": "center center",
-        "aspectRatio": "3 / 4"
+        "objectPosition": "center 50%"
       }
     },
     {
