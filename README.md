@@ -62,6 +62,10 @@ traveling/                 # 根目錄：共用程式、Hub、建置設定
 - **舊 Pages：** 已關閉
 - Canonical／OG 主機見 `js/site.js` 的 `SITE_ORIGIN`（換網域後同步 HTML meta、`robots.txt`，再 `npm run gen-seo`）
 
+## Analytics
+
+正式站使用 GA4（`G-S3N7T50JZN`）。gtag 片段緊接在各頁 `<head>` 後方，每頁一組；build 預渲染行程頁會沿用頁殼，不會再插一次。
+
 ## SEO／Agent 易取性
 
 評估見 [docs/seo-assessment-2026-07-30.md](docs/seo-assessment-2026-07-30.md)。
