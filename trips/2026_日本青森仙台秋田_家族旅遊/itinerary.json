@@ -886,7 +886,8 @@
         "src": "photos/day4.webp",
         "alt": "弘前ねぷた祭扇形燈籠山車",
         "credit": "宇宙碎片拍攝",
-        "objectPosition": "center 40%"
+        "objectPosition": "center center",
+        "aspectRatio": "3 / 4"
       }
     },
     {
@@ -968,7 +969,8 @@
         "src": "photos/day5.webp",
         "alt": "Resort 白神號（橅編成）車頭停靠月台",
         "credit": "宇宙碎片拍攝",
-        "objectPosition": "center 35%"
+        "objectPosition": "center center",
+        "aspectRatio": "3 / 4"
       }
     },
     {
@@ -1118,7 +1120,8 @@
         "src": "photos/day7.webp",
         "alt": "松島瑞巖寺國寶庫裏與藍天",
         "credit": "宇宙碎片拍攝",
-        "objectPosition": "center 40%"
+        "objectPosition": "center center",
+        "aspectRatio": "3 / 4"
       }
     },
     {
