@@ -122,7 +122,10 @@ const feedItems = shareItems
   })
   .join('\n');
 
-const now = new Date().toUTCString();
+const newest = shareItems.reduce(
+  (max, item) => (item.updated > max ? item.updated : max),
+  shareItems[0]?.updated || '2026-01-01T00:00:00.000Z'
+);
 writeFileSync(
   'public/feed.xml',
   `<?xml version="1.0" encoding="UTF-8"?>
@@ -132,7 +135,7 @@ writeFileSync(
     <link>${origin}/</link>
     <description>真實走過的日本行程與風土筆記——給同樣在排行程的人當參考。</description>
     <language>zh-TW</language>
-    <lastBuildDate>${now}</lastBuildDate>
+    <lastBuildDate>${rfc822(newest)}</lastBuildDate>
     <atom:link href="${origin}/feed.xml" rel="self" type="application/rss+xml" />
 ${feedItems}
   </channel>
