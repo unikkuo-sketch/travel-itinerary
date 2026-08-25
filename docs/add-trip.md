@@ -173,5 +173,5 @@ git commit -m "Add trip: 2027_義大利托斯卡尼_蜜月"
 git push origin main
 ```
 
-Vercel 會從 `main` 自動建置部署（`npm run build`＝gen-seo → Vite → 預渲染）。新增行程不必手改 sitemap／llms；build 會重產。換網域時改 `SITE_ORIGIN` 後執行 `npm run gen-seo`。
+Vercel 會從 `main` 自動建置部署（`npm run build`＝gen-seo → Vite → 預渲染）。新增行程不必手改 sitemap／llms／RSS；build 會重產。換網域時改 `SITE_ORIGIN`（`js/site.js` 與 `scripts/share-items.mjs`）後執行 `npm run gen-seo`。作者分享草稿：`npm run gen-share-pack`（見 `docs/automated-sharing-2026-08-25.md`）。
 舊 GitHub Pages 已關閉（非正式站）。

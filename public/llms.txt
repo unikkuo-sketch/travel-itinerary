@@ -6,6 +6,7 @@
 - https://universum-sliver.vercel.app/trips/{id}/itinerary.json — 單趟全文（source of truth）
 - https://universum-sliver.vercel.app/llms-full.txt — 各趟標題與 JSON／頁面連結表
 - https://universum-sliver.vercel.app/llms.txt — 本文件
+- https://universum-sliver.vercel.app/feed.xml — 行程／風土／飲食 RSS（分享與訂閱）
 
 ## 主要人類頁面
 - https://universum-sliver.vercel.app/ — Hub 總覽

@@ -74,4 +74,7 @@ traveling/                 # 根目錄：共用程式、Hub、建置設定
 
 - https://universum-sliver.vercel.app/llms.txt
 - https://universum-sliver.vercel.app/llms-full.txt
+- https://universum-sliver.vercel.app/feed.xml
 - `/trips/manifest.json`、`/trips/{id}/itinerary.json`
+
+分享草稿（不進 git）：`npm run gen-share-pack`。規劃見 [docs/automated-sharing-2026-08-25.md](docs/automated-sharing-2026-08-25.md)。

@@ -3,6 +3,7 @@
 
 Hub: https://universum-sliver.vercel.app/
 Manifest: https://universum-sliver.vercel.app/trips/manifest.json
+RSS: https://universum-sliver.vercel.app/feed.xml
 
 ## 2019 沖繩自駕優游 6日
 那霸 × 恩納 × 古宇利 × 本部 × 北谷 × 南城

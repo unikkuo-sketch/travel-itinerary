@@ -25,6 +25,15 @@ function esc(text) {
   return el.innerHTML;
 }
 
+function scrollToHash() {
+  const id = decodeURIComponent((location.hash || '').replace(/^#/, ''));
+  if (!id) return;
+  const el = document.getElementById(id);
+  if (!el) return;
+  el.classList.add('story-chapter--visible');
+  el.scrollIntoView({ block: 'start' });
+}
+
 function showError(message) {
   document.body.innerHTML = `
     <main class="main-content" style="padding:4rem 1rem;text-align:center">
@@ -70,7 +79,7 @@ function renderChapter(item, index, tripId) {
       : '';
 
   return `
-    <section class="story-chapter">
+    <section class="story-chapter" id="food-${index + 1}">
       ${media}
       <div class="story-chapter-scrim" aria-hidden="true"></div>
       <div class="story-chapter-copy">
@@ -141,9 +150,11 @@ async function init() {
 
     root.innerHTML = foods.map((s, i) => renderChapter(s, i, tripId)).join('');
     initReveal();
+    scrollToHash();
   } catch (err) {
     showError(err.message);
   }
 }
 
 init();
+window.addEventListener('hashchange', scrollToHash);
