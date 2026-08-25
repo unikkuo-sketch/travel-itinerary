@@ -1,20 +1,24 @@
-import { writeFileSync, readFileSync, statSync, existsSync } from 'node:fs';
+import { writeFileSync } from 'node:fs';
 import { join } from 'node:path';
+import {
+  SITE_ORIGIN,
+  collectShareItems,
+  gitIsoDay,
+  loadManifest,
+  tripPageUrl,
+  xmlEscape,
+} from './share-items.mjs';
 
-const origin = 'https://universum-sliver.vercel.app';
-const manifest = JSON.parse(readFileSync('trips/manifest.json', 'utf8'));
+const origin = SITE_ORIGIN;
+const manifest = loadManifest();
 const trips = manifest.trips.map((t) => t.id);
 
 function isoDay(filePath) {
-  if (!existsSync(filePath)) return new Date().toISOString().slice(0, 10);
-  return new Date(statSync(filePath).mtimeMs).toISOString().slice(0, 10);
+  return gitIsoDay(filePath);
 }
 
 function tripPath(id, page = 'trip') {
-  const enc = encodeURIComponent(id);
-  if (page === 'stories') return `${origin}/trips/${enc}/stories.html`;
-  if (page === 'food') return `${origin}/trips/${enc}/food.html`;
-  return `${origin}/trips/${enc}/`;
+  return tripPageUrl(id, page);
 }
 
 /** Sitemap: Hub + trip / stories / food (no shopping). */
@@ -47,6 +51,7 @@ const llms = `# 宇宙碎片集散地
 - ${origin}/trips/{id}/itinerary.json — 單趟全文（source of truth）
 - ${origin}/llms-full.txt — 各趟標題與 JSON／頁面連結表
 - ${origin}/llms.txt — 本文件
+- ${origin}/feed.xml — 行程／風土／飲食 RSS（分享與訂閱）
 
 ## 主要人類頁面
 - ${origin}/ — Hub 總覽
@@ -72,6 +77,7 @@ const fullLines = [
   '',
   `Hub: ${origin}/`,
   `Manifest: ${origin}/trips/manifest.json`,
+  `RSS: ${origin}/feed.xml`,
   '',
 ];
 
@@ -91,4 +97,52 @@ for (const t of manifest.trips) {
 
 writeFileSync('public/llms-full.txt', `${fullLines.join('\n')}\n`);
 
-console.log('seo: sitemap urls', urls.length, '+ llms.txt + llms-full.txt');
+function rfc822(iso) {
+  return new Date(iso).toUTCString();
+}
+
+const shareItems = collectShareItems();
+const feedItems = shareItems
+  .map((item) => {
+    const title = xmlEscape(
+      item.kind === 'trip' ? item.title : `${item.title} · ${item.tripTitle}`
+    );
+    const desc = xmlEscape(item.body || item.kicker || '');
+    const enclosure = item.image
+      ? `\n      <enclosure url="${xmlEscape(item.image)}" type="image/webp" />`
+      : '';
+    return `    <item>
+      <title>${title}</title>
+      <link>${xmlEscape(item.url)}</link>
+      <guid isPermaLink="true">${xmlEscape(item.guid)}</guid>
+      <pubDate>${rfc822(item.updated)}</pubDate>
+      <category>${xmlEscape(item.kind)}</category>
+      <description>${desc}</description>${enclosure}
+    </item>`;
+  })
+  .join('\n');
+
+const now = new Date().toUTCString();
+writeFileSync(
+  'public/feed.xml',
+  `<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>宇宙碎片集散地</title>
+    <link>${origin}/</link>
+    <description>真實走過的日本行程與風土筆記——給同樣在排行程的人當參考。</description>
+    <language>zh-TW</language>
+    <lastBuildDate>${now}</lastBuildDate>
+    <atom:link href="${origin}/feed.xml" rel="self" type="application/rss+xml" />
+${feedItems}
+  </channel>
+</rss>
+`
+);
+
+console.log(
+  'seo: sitemap urls',
+  urls.length,
+  '+ llms.txt + llms-full.txt + feed.xml items',
+  shareItems.length
+);

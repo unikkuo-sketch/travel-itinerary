@@ -142,7 +142,7 @@ function heroHtml(meta, days, tripId) {
 const THEME_STORY = { place: '景點', history: '歷史', culture: '文化' };
 const THEME_FOOD = { food: '食物', sake: '酒' };
 
-function chaptersHtml(items, tripId, themeMap) {
+function chaptersHtml(items, tripId, themeMap, idPrefix = 'story') {
   if (!items?.length) {
     return `<div class="stories-empty"><p class="stories-empty-title">尚無章節</p></div>`;
   }
@@ -158,7 +158,7 @@ function chaptersHtml(items, tripId, themeMap) {
           ? `<a class="story-chapter-source" href="${esc(story.source.url)}" target="_blank" rel="noopener noreferrer">${esc(story.source.label)}</a>`
           : '';
       return `
-    <section class="story-chapter story-chapter--visible">
+    <section class="story-chapter story-chapter--visible" id="${idPrefix}-${index + 1}">
       ${media}
       <div class="story-chapter-scrim" aria-hidden="true"></div>
       <div class="story-chapter-copy">
@@ -250,7 +250,7 @@ function writeTripPages(tripId, data, templates) {
     );
     html = html.replace(
       /<main id="food-root" class="stories-chapters" aria-label="飲食"><\/main>/,
-      `<main id="food-root" class="stories-chapters" aria-label="飲食">${chaptersHtml(data.foods, tripId, THEME_FOOD)}</main>`
+      `<main id="food-root" class="stories-chapters" aria-label="飲食">${chaptersHtml(data.foods, tripId, THEME_FOOD, 'food')}</main>`
     );
     writeFileSync(join(dir, 'food.html'), html);
   }

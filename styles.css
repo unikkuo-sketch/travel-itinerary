@@ -2848,6 +2848,7 @@ h3 { font-size: var(--text-lg); }
     opacity: 0;
     transform: translateY(16px);
     transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+    scroll-margin-top: 0.5rem;
 }
 
 .story-chapter--visible {

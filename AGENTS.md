@@ -17,13 +17,15 @@ js/seo.js               title／OG／canonical 同步
 js/render.js            渲染 hero、票券、每日、預算等
 js/map.js               行程路線圖（分日配色、編號標記、圖例）
 js/nav.js               動態導覽（依 days 長度）
-scripts/gen-seo.mjs     sitemap + llms.txt / llms-full.txt
+scripts/gen-seo.mjs     sitemap + llms.txt / llms-full.txt + feed.xml
+scripts/share-items.mjs 行程／風土／飲食分享單元（RSS 與文案包共用）
+scripts/gen-share-pack.mjs  Threads／LINE／IG 草稿＋輪播表（寫入 share-pack/，不進 git）
 scripts/prerender-trips.mjs  build 後寫 dist/trips/{id}/*.html
 trips/manifest.json     行程索引（Hub 卡片）
 trips/{id}/itinerary.json   單趟行程資料（source of truth）
 trips/{id}/photos/          選填，行程封面／每日代表照／風土・飲食章節照
 trips/_template/        新行程範本
-public/                 favicon、hub hero、robots、sitemap、llms、404
+public/                 favicon、hub hero、robots、sitemap、llms、feed、404
 ATTRIBUTIONS.md         照片素材授權紀錄（新增圖片必須補列）
 ```
 
@@ -52,7 +54,8 @@ ATTRIBUTIONS.md         照片素材授權紀錄（新增圖片必須補列）
 - 行程總覽 `overview[].transport`：已訂班次寫 `車次 · HH:MM`；當日多段用全形 `／` 分隔（渲染成多行 tag）
 - 風土：`stories[]` → `/trips/{id}/stories.html`（`theme`=`place`｜`history`｜`culture`）；滿版章節＋下緣疊文；空陣列顯示空狀態
 - 飲食：`foods[]` → `/trips/{id}/food.html`（`theme`=`food`｜`sake`）；呈現同構風土；空陣列顯示空狀態
-- SEO：build 預渲染每趟 meta（含 cover OG）＋行程／風土／飲食正文；shopping `noindex`；機器入口 `/llms.txt`、`/llms-full.txt`、`/trips/manifest.json`、`/trips/{id}/itinerary.json`；評估見 `docs/seo-assessment-2026-07-30.md`
+- SEO：build 預渲染每趟 meta（含 cover OG）＋行程／風土／飲食正文；shopping `noindex`；機器入口 `/llms.txt`、`/llms-full.txt`、`/feed.xml`、`/trips/manifest.json`、`/trips/{id}/itinerary.json`；評估見 `docs/seo-assessment-2026-07-30.md`；分享自動化見 `docs/automated-sharing-2026-08-25.md`
+- 分享文案：`npm run gen-share-pack`（不發文、無 API 密鑰）；換網域時 `js/site.js` 與 `scripts/share-items.mjs` 的 `SITE_ORIGIN` 一併改
 
 ## 常用指令
 
@@ -62,6 +65,7 @@ npm run dev
 npm run build
 npm run preview
 npm run gen-seo
+npm run gen-share-pack
 ```
 
 ## 部署
