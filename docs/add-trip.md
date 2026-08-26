@@ -173,5 +173,5 @@ git commit -m "Add trip: 2027_義大利托斯卡尼_蜜月"
 git push origin main
 ```
 
-Vercel 會從 `main` 自動建置部署（`npm run build`＝gen-seo → Vite → 預渲染）。新增行程不必手改 sitemap／llms；build 會重產。換網域時改 `SITE_ORIGIN` 後執行 `npm run gen-seo`。
+Vercel 會從 `main` 自動建置部署（`npm run build`＝gen-seo → Vite → 預渲染）。新增行程不必手改 sitemap／llms；build 會重產。換網域時改 `SITE_ORIGIN` 後執行 `npm run gen-seo`，並依 `docs/gsc-setup.md` 在 Search Console 提交新 sitemap。
 舊 GitHub Pages 已關閉（非正式站）。

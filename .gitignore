@@ -23,3 +23,6 @@ yarn-debug.log*
 yarn-error.log*
 .vercel
 .env*
+
+# Do not ignore public/google*.html — Search Console HTML-file verification must deploy to site root.
+

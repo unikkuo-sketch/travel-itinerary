@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "node scripts/gen-seo.mjs && vite build && node scripts/prerender-trips.mjs",
     "preview": "vite preview",
-    "gen-seo": "node scripts/gen-seo.mjs"
+    "gen-seo": "node scripts/gen-seo.mjs",
+    "check-gsc": "node scripts/check-gsc-ready.mjs"
   },
   "devDependencies": {
     "vite": "^7.3.0"

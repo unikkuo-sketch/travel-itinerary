@@ -18,6 +18,7 @@ js/render.js            渲染 hero、票券、每日、預算等
 js/map.js               行程路線圖（分日配色、編號標記、圖例）
 js/nav.js               動態導覽（依 days 長度）
 scripts/gen-seo.mjs     sitemap + llms.txt / llms-full.txt
+scripts/check-gsc-ready.mjs  正式站 GSC 就緒檢查（robots／sitemap／gtag）
 scripts/prerender-trips.mjs  build 後寫 dist/trips/{id}/*.html
 trips/manifest.json     行程索引（Hub 卡片）
 trips/{id}/itinerary.json   單趟行程資料（source of truth）
@@ -46,13 +47,13 @@ ATTRIBUTIONS.md         照片素材授權紀錄（新增圖片必須補列）
 - 旅程色：`meta.theme`（`sakura` / `ocean`），未填用預設蜜桃色
 - 票券狀態：`tickets[].status` = `purchased`｜`pending`｜`reservation`；JSON 為預設，本機可點狀態 pill 切換（`travelTicketStatus:{tripId}`）；UI 標「作者端參考／僅存本機」
 - 正式站文案：對外參考站口徑；OG／sitemap 用 `js/site.js` `SITE_ORIGIN`
-- GA4：gtag `G-S3N7T50JZN` 緊接各頁 `<head>` 後方，每頁一組（含 `public/404.html`）；預渲染沿用頁殼、勿再插一次
+- GA4：gtag `G-S3N7T50JZN` 緊接各頁 `<head>` 後方，每頁一組（含 `public/404.html`）；預渲染沿用頁殼、勿再插一次；同一 ID 亦用於 GSC「Google Analytics」驗證（見 `docs/gsc-setup.md`）
 - 預算：`budget.partySize`（換算用、不顯示）+ `budget.fx`（台銀即期賣出月平均）+ `categories`／`total.amount` 一律每人 `NT$` 字串
 - 地圖點：`map.locations[]` 需 `name`、`number`、`day`、`coords`；標記與路線依 day 上色；不綁 timeline 編號
 - 行程總覽 `overview[].transport`：已訂班次寫 `車次 · HH:MM`；當日多段用全形 `／` 分隔（渲染成多行 tag）
 - 風土：`stories[]` → `/trips/{id}/stories.html`（`theme`=`place`｜`history`｜`culture`）；滿版章節＋下緣疊文；空陣列顯示空狀態
 - 飲食：`foods[]` → `/trips/{id}/food.html`（`theme`=`food`｜`sake`）；呈現同構風土；空陣列顯示空狀態
-- SEO：build 預渲染每趟 meta（含 cover OG）＋行程／風土／飲食正文；shopping `noindex`；機器入口 `/llms.txt`、`/llms-full.txt`、`/trips/manifest.json`、`/trips/{id}/itinerary.json`；評估見 `docs/seo-assessment-2026-07-30.md`
+- SEO：build 預渲染每趟 meta（含 cover OG）＋行程／風土／飲食正文；shopping `noindex`；機器入口 `/llms.txt`、`/llms-full.txt`、`/trips/manifest.json`、`/trips/{id}/itinerary.json`；評估見 `docs/seo-assessment-2026-07-30.md`；Search Console 見 `docs/gsc-setup.md`（`npm run check-gsc`）
 
 ## 常用指令
 
@@ -62,6 +63,7 @@ npm run dev
 npm run build
 npm run preview
 npm run gen-seo
+npm run check-gsc
 ```
 
 ## 部署
@@ -74,6 +76,6 @@ npm run gen-seo
 
 - Static frontend only (Vite + vanilla JS). No backend, database, env vars, or secrets required.
 - Package manager is npm (`package-lock.json`). Commands are in `package.json` / README.
-- No lint or test scripts exist; verification = `npm run dev` (or `npm run build`) plus manual browser check.
+- No lint script. Search Console crawl check: `npm run check-gsc` (production). UI: `npm run dev` or `npm run build` plus manual browser check.
 - Dev server serves at `http://localhost:5173/` — root base; do not use `/travel-itinerary/`.
 - `trips/*.json` and photos are served in dev/build by the `tripsStatic` vite plugin in `vite.config.js` (not by importing them), so trip data loads via `fetch` at `/trips/...` paths. Dev also serves trip/stories/food shells for `/trips/{id}/` paths; production HTML is written by `scripts/prerender-trips.mjs` after Vite build.
