@@ -64,7 +64,7 @@ traveling/                 # 根目錄：共用程式、Hub、建置設定
 
 ## Analytics
 
-正式站使用 GA4（`G-S3N7T50JZN`）。gtag 片段緊接在各頁 `<head>` 後方，每頁一組；build 預渲染行程頁會沿用頁殼，不會再插一次。
+正式站使用 GA4（`G-S3N7T50JZN`）。gtag 片段緊接在各頁 `<head>` 後方，每頁一組；build 預渲染行程頁會沿用頁殼，不會再插一次。同一 Measurement ID 可用來在 Google Search Console 做「Google Analytics」驗證（見 [docs/gsc-setup.md](docs/gsc-setup.md)；預檢 `npm run check-gsc`）。
 
 ## SEO／Agent 易取性
 
