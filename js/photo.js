@@ -1,9 +1,12 @@
-const base = import.meta.env.BASE_URL;
+// ponytail: Vite inlines BASE_URL; Node `npm run check` sees import.meta.env as undefined
+const base = typeof import.meta.env === 'undefined' ? '/' : import.meta.env.BASE_URL;
 
-function esc(text) {
-  const el = document.createElement('span');
-  el.textContent = text ?? '';
-  return el.innerHTML;
+export function esc(text) {
+  return String(text ?? '')
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;');
 }
 
 /** Resolve a path relative to trips/{tripId}/ into a fetchable URL. */

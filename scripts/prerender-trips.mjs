@@ -4,8 +4,7 @@
  */
 import { readFileSync, writeFileSync, existsSync, mkdirSync } from 'node:fs';
 import { join } from 'node:path';
-
-const ORIGIN = 'https://universum-sliver.vercel.app';
+import { SITE_ORIGIN as ORIGIN } from '../js/site.js';
 const DIST = 'dist';
 
 function esc(text) {

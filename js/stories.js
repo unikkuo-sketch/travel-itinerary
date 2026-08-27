@@ -1,6 +1,6 @@
 import { getTripId, loadTrip, tripUrl } from './load-trip.js';
 import { icon } from './icons.js';
-import { photoHtml, tripAssetUrl } from './photo.js';
+import { esc, photoHtml, tripAssetUrl } from './photo.js';
 import { applyPageMeta, tripCanonicalUrl, tripOgImage } from './seo.js';
 
 const root = document.getElementById('stories-root');
@@ -17,12 +17,6 @@ function mountHeroBack(tripId) {
   back.setAttribute('aria-label', '返回行程');
   back.innerHTML = `${icon('arrowLeft', 'icon icon--sm')}<span>返回行程</span>`;
   heroEl.prepend(back);
-}
-
-function esc(text) {
-  const el = document.createElement('span');
-  el.textContent = text ?? '';
-  return el.innerHTML;
 }
 
 function showError(message) {

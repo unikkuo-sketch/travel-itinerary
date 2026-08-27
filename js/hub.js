@@ -3,13 +3,7 @@ import 'leaflet/dist/leaflet.css';
 import './leaflet-icons.js';
 import { loadManifest, tripUrl } from './load-trip.js';
 import { icon } from './icons.js';
-import { photoHtml, tripAssetUrl } from './photo.js';
-
-function esc(text) {
-  const el = document.createElement('span');
-  el.textContent = text;
-  return el.innerHTML;
-}
+import { esc, photoHtml, tripAssetUrl } from './photo.js';
 
 function parseRangeDate(dateStr, fallbackYear) {
   if (!dateStr) return null;

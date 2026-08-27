@@ -116,9 +116,3 @@ export function manholeMapUrl(prefectureCode) {
   if (prefectureCode) url.searchParams.set('prefecture', prefectureCode);
   return url.href;
 }
-
-export function manholeCardsUrl(prefectureCode) {
-  const url = new URL('/cards', MANHOLE_ORIGIN);
-  if (prefectureCode) url.searchParams.set('prefecture', prefectureCode);
-  return url.href;
-}

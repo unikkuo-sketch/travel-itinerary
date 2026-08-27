@@ -272,7 +272,12 @@ async function init() {
   }
 
   storageKey = `travelShoppingList:${tripId}`;
-  items = JSON.parse(localStorage.getItem(storageKey) || '[]');
+  try {
+    const raw = JSON.parse(localStorage.getItem(storageKey) || '[]');
+    items = Array.isArray(raw) ? raw : [];
+  } catch {
+    items = [];
+  }
 
   mountHeroBack(tripId);
 

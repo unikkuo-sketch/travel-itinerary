@@ -1,13 +1,15 @@
 {
   "name": "travel-itinerary",
   "version": "1.0.0",
-  "description": "Travel itinerary for Atami and Nagatoro",
+  "description": "Travel Hub — Japanese itineraries and place notes",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "node scripts/gen-seo.mjs && vite build && node scripts/prerender-trips.mjs",
     "preview": "vite preview",
-    "gen-seo": "node scripts/gen-seo.mjs"
+    "gen-seo": "node scripts/gen-seo.mjs",
+    "check": "node scripts/check.mjs"
   },
   "devDependencies": {
     "vite": "^7.3.0"

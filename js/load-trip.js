@@ -1,17 +1,23 @@
-const base = import.meta.env.BASE_URL;
+// ponytail: Vite inlines BASE_URL; Node `npm run check` sees import.meta.env as undefined
+const base = typeof import.meta.env === 'undefined' ? '/' : import.meta.env.BASE_URL;
 
-/** Trip id from ?trip= (legacy) or /trips/{id}/… path pages. */
-export function getTripId() {
-  const q = new URLSearchParams(location.search).get('trip');
+/** Trip id from ?trip= (legacy) or /trips/{id}/… path (pure; used by getTripId + check). */
+export function tripIdFromPath(pathname, search = '') {
+  const q = new URLSearchParams(search).get('trip');
   if (q) return q;
 
-  const parts = location.pathname.split('/').filter(Boolean);
+  const parts = pathname.split('/').filter(Boolean);
   const i = parts.indexOf('trips');
   if (i === -1 || !parts[i + 1]) return null;
 
   const id = decodeURIComponent(parts[i + 1]);
   if (!id || id === 'manifest.json' || id.startsWith('_')) return null;
   return id;
+}
+
+/** Trip id from ?trip= (legacy) or /trips/{id}/… path pages. */
+export function getTripId() {
+  return tripIdFromPath(location.pathname, location.search);
 }
 
 /**

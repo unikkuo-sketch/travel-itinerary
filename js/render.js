@@ -1,12 +1,6 @@
 import { icon, iconFromEmoji, resolveTimelineIcon, stripTagEmoji } from './icons.js';
-import { photoHtml, tripAssetUrl } from './photo.js';
+import { esc, photoHtml, tripAssetUrl } from './photo.js';
 import { isJapanTrip, manholeMapUrl, resolvePrefectures } from './manhole.js';
-
-function esc(text) {
-  const el = document.createElement('span');
-  el.textContent = text;
-  return el.innerHTML;
-}
 
 const TICKET_STATUS = {
   purchased: { label: '已購', cls: 'ticket-status--purchased' },
@@ -262,6 +256,7 @@ function parseMoneyAmount(str) {
 }
 
 function renderDay(day, tripId) {
+  // ponytail: tips are author HTML in itinerary.json (trusted); not visitor input
   const tipsHtml = day.tips?.length
     ? `<div class="tips-box">
         <h4>${icon('lightbulb')} 旅遊重點</h4>
@@ -368,11 +363,9 @@ function renderBudgetHtml(budget) {
     ${summary}`;
 }
 
-export function renderHero(meta, days = []) {
+export function renderHero(meta, days = [], tripId = meta?.slug || '') {
   const root = document.getElementById('hero-root');
   if (!root || !meta) return;
-
-  const tripId = meta.slug || '';
   const dayCount = days.length
     ? `<div class="info-item"><span class="info-icon">${icon('sun')}</span><span>${days.length} 天</span></div>`
     : '';
@@ -510,10 +503,8 @@ function renderManholeAside(meta, tripId) {
     </ul>`;
 }
 
-export function renderItinerary(data) {
-  renderHero(data.meta, data.days || []);
-
-  const tripId = data.meta?.slug || '';
+export function renderItinerary(data, tripId = data.meta?.slug || '') {
+  renderHero(data.meta, data.days || [], tripId);
   const ticketsEl = document.getElementById('ticket-grid');
   const overviewEl = document.getElementById('overview-body');
   const daysEl = document.getElementById('days-root');

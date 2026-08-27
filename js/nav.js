@@ -24,7 +24,12 @@ function buildTripSectionLinks(tripId) {
     { href: tripUrl(tripId, 'stories'), label: '風土' },
     { href: tripUrl(tripId, 'food'), label: '飲食' },
     { href: tripUrl(tripId, 'shopping'), label: '購物' },
-  ];
+  ].filter((l) => {
+    const hash = l.href.includes('#') ? l.href.slice(l.href.indexOf('#') + 1) : '';
+    if (!hash) return true;
+    const el = document.getElementById(hash);
+    return el && !el.hidden;
+  });
 }
 
 function ensureNavShell(container) {
@@ -97,7 +102,9 @@ export function initNavScroll() {
   const dayLinkEls = [...document.querySelectorAll('.nav-link--day')];
   const daysRow = document.getElementById('nav-days');
   // only non-day sections for top-row spy (day-* also have .section)
-  const sections = document.querySelectorAll('.section[id]:not(.day-section)');
+  const sections = [...document.querySelectorAll('.section[id]:not(.day-section)')].filter(
+    (el) => !el.hidden
+  );
   const daySections = document.querySelectorAll('.day-section[id]');
   const offset = 220;
   let activeDay = '';

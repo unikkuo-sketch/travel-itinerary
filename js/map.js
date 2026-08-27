@@ -19,20 +19,22 @@ function dayColor(day) {
   return DAY_COLORS[i % DAY_COLORS.length];
 }
 
+function esc(text) {
+  return String(text ?? '')
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;');
+}
+
 function numberedIcon(number, color) {
   return L.divIcon({
     className: 'map-marker-wrap',
-    html: `<span class="map-marker" style="--marker-color:${color}">${number}</span>`,
+    html: `<span class="map-marker" style="--marker-color:${esc(color)}">${esc(number)}</span>`,
     iconSize: [28, 28],
     iconAnchor: [14, 14],
     popupAnchor: [0, -14],
   });
-}
-
-function esc(text) {
-  const el = document.createElement('span');
-  el.textContent = text ?? '';
-  return el.innerHTML;
 }
 
 export function initMap(mapData) {

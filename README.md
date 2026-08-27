@@ -9,8 +9,11 @@
 
 在 repo 根目錄執行：
 
+無需 `.env`（靜態站、無 secrets）。
+
 ```powershell
 npm install
+npm run check
 npm run dev
 ```
 
@@ -23,6 +26,7 @@ npm run dev
 | 飲食 | `.../trips/2026_日本熱海長瀞_家族旅遊/food.html` |
 
 ```powershell
+npm run check
 npm run build
 npm run preview
 ```
@@ -42,6 +46,7 @@ traveling/                 # 根目錄：共用程式、Hub、建置設定
 ├── public/                # favicon、hub hero、robots、sitemap、llms、404
 ├── scripts/gen-seo.mjs    # sitemap + llms.txt / llms-full.txt
 ├── scripts/prerender-trips.mjs  # build 後寫入 dist/trips/{id}/*.html
+├── scripts/check.mjs      # 路徑／縣市解析的單一 assert 檢查
 └── trips/
     ├── manifest.json      # 行程索引
     ├── _template/         # 新行程範本

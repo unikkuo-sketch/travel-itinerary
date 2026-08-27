@@ -1,7 +1,8 @@
 import { writeFileSync, readFileSync, statSync, existsSync } from 'node:fs';
 import { join } from 'node:path';
+import { SITE_ORIGIN } from '../js/site.js';
 
-const origin = 'https://universum-sliver.vercel.app';
+const origin = SITE_ORIGIN;
 const manifest = JSON.parse(readFileSync('trips/manifest.json', 'utf8'));
 const trips = manifest.trips.map((t) => t.id);
 

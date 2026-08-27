@@ -28,11 +28,10 @@ function initTimelineAnimation() {
   items.forEach((item) => observer.observe(item));
 }
 
-function showError(message) {
+function showError() {
   document.body.innerHTML = `
     <main class="main-content" style="padding:4rem 1rem;text-align:center">
       <h1>找不到這趟行程</h1>
-      <p>${message}</p>
       <p>連結可能已失效，或行程代碼有誤。</p>
       <p><a href="${import.meta.env.BASE_URL}">返回行程總覽</a></p>
     </main>`;
@@ -57,14 +56,14 @@ async function init() {
     });
     if (meta.theme) document.body.classList.add(`theme-${meta.theme}`);
 
+    renderItinerary(data, tripId);
     mountNav(tripId, data.days);
-    renderItinerary(data);
     initMap(data.map);
     initNavScroll();
     initTimelineAnimation();
     initAppIcons();
-  } catch (err) {
-    showError(err.message);
+  } catch {
+    showError();
   }
 }
 

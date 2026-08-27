@@ -1,9 +1,10 @@
 import { cpSync, createReadStream, existsSync, readFileSync } from 'node:fs';
-import { extname, resolve } from 'node:path';
+import { extname, resolve, sep } from 'node:path';
+import { fileURLToPath } from 'node:url';
 import { defineConfig } from 'vite';
 
-const tripsDir = resolve(__dirname, 'trips');
-const rootDir = __dirname;
+const rootDir = fileURLToPath(new URL('.', import.meta.url));
+const tripsDir = resolve(rootDir, 'trips');
 
 const MIME = {
   '.json': 'application/json; charset=utf-8',
@@ -22,6 +23,11 @@ function decodePath(raw) {
   } catch {
     return raw;
   }
+}
+
+function isInsideTrips(file) {
+  const root = tripsDir.endsWith(sep) ? tripsDir : tripsDir + sep;
+  return file === tripsDir || file.startsWith(root);
 }
 
 /** Map /trips/{id}/… to shell HTML when no static file exists (dev). */
@@ -49,12 +55,7 @@ function tripsStatic() {
         const file = resolve(tripsDir, rel);
 
         // Real trip assets (json / photos / …)
-        if (
-          rel &&
-          file.startsWith(tripsDir) &&
-          existsSync(file) &&
-          extname(file)
-        ) {
+        if (rel && isInsideTrips(file) && existsSync(file) && extname(file)) {
           const ext = extname(file).toLowerCase();
           res.setHeader('Content-Type', MIME[ext] || 'application/octet-stream');
           createReadStream(file).pipe(res);
@@ -82,7 +83,7 @@ function tripsStatic() {
       });
     },
     closeBundle() {
-      cpSync(tripsDir, resolve(__dirname, 'dist/trips'), { recursive: true });
+      cpSync(tripsDir, resolve(rootDir, 'dist/trips'), { recursive: true });
     },
   };
 }
@@ -93,11 +94,11 @@ export default defineConfig({
   build: {
     rollupOptions: {
       input: {
-        hub: resolve(__dirname, 'index.html'),
-        trip: resolve(__dirname, 'trip.html'),
-        shopping: resolve(__dirname, 'shopping.html'),
-        stories: resolve(__dirname, 'stories.html'),
-        food: resolve(__dirname, 'food.html'),
+        hub: resolve(rootDir, 'index.html'),
+        trip: resolve(rootDir, 'trip.html'),
+        shopping: resolve(rootDir, 'shopping.html'),
+        stories: resolve(rootDir, 'stories.html'),
+        food: resolve(rootDir, 'food.html'),
       },
     },
   },

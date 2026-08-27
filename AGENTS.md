@@ -17,8 +17,9 @@ js/seo.js               title／OG／canonical 同步
 js/render.js            渲染 hero、票券、每日、預算等
 js/map.js               行程路線圖（分日配色、編號標記、圖例）
 js/nav.js               動態導覽（依 days 長度）
-scripts/gen-seo.mjs     sitemap + llms.txt / llms-full.txt
+scripts/gen-seo.mjs     sitemap + llms.txt / llms-full.txt（讀 js/site.js SITE_ORIGIN）
 scripts/prerender-trips.mjs  build 後寫 dist/trips/{id}/*.html
+scripts/check.mjs       路徑／縣市解析的單一 assert 檢查
 trips/manifest.json     行程索引（Hub 卡片）
 trips/{id}/itinerary.json   單趟行程資料（source of truth）
 trips/{id}/photos/          選填，行程封面／每日代表照／風土・飲食章節照
@@ -62,6 +63,7 @@ npm run dev
 npm run build
 npm run preview
 npm run gen-seo
+npm run check
 ```
 
 ## 部署
@@ -72,8 +74,8 @@ npm run gen-seo
 
 ## Cursor Cloud specific instructions
 
-- Static frontend only (Vite + vanilla JS). No backend, database, env vars, or secrets required.
+- Static frontend only (Vite + vanilla JS). No backend, database, env vars, or secrets required (no `.env`).
 - Package manager is npm (`package-lock.json`). Commands are in `package.json` / README.
-- No lint or test scripts exist; verification = `npm run dev` (or `npm run build`) plus manual browser check.
+- Verification: `npm run check` then `npm run dev` (or `npm run build`) plus manual browser check.
 - Dev server serves at `http://localhost:5173/` — root base; do not use `/travel-itinerary/`.
 - `trips/*.json` and photos are served in dev/build by the `tripsStatic` vite plugin in `vite.config.js` (not by importing them), so trip data loads via `fetch` at `/trips/...` paths. Dev also serves trip/stories/food shells for `/trips/{id}/` paths; production HTML is written by `scripts/prerender-trips.mjs` after Vite build.

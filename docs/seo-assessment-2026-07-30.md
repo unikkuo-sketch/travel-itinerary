@@ -31,7 +31,7 @@
 | Origin | `js/site.js` `SITE_ORIGIN`；HTML OG／robots／sitemap 已對齊 |
 | HTTPS | 有；`strict-transport-security` 已設 |
 | `robots.txt` | `User-agent: *` / `Allow: /` + Sitemap 指向 |
-| `sitemap.xml` | Hub 1 + 6 趟 ×（trip／stories／food／shopping）= **25** URL；由 `scripts/gen-sitemap.mjs` 自 manifest 產生 |
+| `sitemap.xml` | Hub 1 + 各趟 ×（trip／stories／food）（無 shopping）；由 `scripts/gen-seo.mjs` 自 manifest 產生 |
 | 404 | `public/404.html` 含 `noindex` |
 | `lang` | `zh-TW` |
 | 驗證檔／GSC | repo 內**無** Search Console／Bing 驗證 meta 或 HTML 檔 |
@@ -121,10 +121,10 @@
 | 1.2 | Canonical | 各殼層 + JS 在已知 `trip` 時寫入完整 URL | 搜尋 |
 | 1.3 | 客戶端同步 OG／Twitter | `trip.js`／stories／food 載入後改 `og:title` 等（補強部分爬蟲；**不解**純靜態社群爬蟲） | 部分 |
 | 1.4 | Shopping `noindex` | meta robots；自 sitemap 排除 | 搜尋衛生 |
-| 1.5 | Sitemap `lastmod` | `gen-sitemap.mjs` 寫入檔案 mtime 或 manifest 日期 | 搜尋 |
+| 1.5 | Sitemap `lastmod` | `gen-seo.mjs` 寫入檔案 mtime 或 manifest 日期 | 搜尋 |
 | 1.6 | README／AGENTS 加「機器入口」一節 | 指向 llms.txt + JSON 路徑慣例 | Agent／維護 |
 
-預估改動面：`public/`、`scripts/gen-sitemap.mjs`、少數 `js/*`、HTML head；**不需**換框架。
+預估改動面：`public/`、`scripts/gen-seo.mjs`、少數 `js/*`、HTML head；**不需**換框架。
 
 ### Phase 2 — 解 CSR（核心 SEO／OG）
 
@@ -225,7 +225,7 @@
 - [ ] 無 JS（curl）查看任一 trip URL：title／description／og 含該趟名稱；最好有可見文字摘要
 - [ ] 分享預覽（Facebook Sharing Debugger／LINE）顯示該趟 title＋cover
 - [ ] `curl /llms.txt` 200，且所列 JSON URL 皆 200
-- [ ] `node scripts/gen-sitemap.mjs` 與新增行程文件步驟一致（`docs/add-trip.md`）
+- [ ] `node scripts/gen-seo.mjs` 與新增行程文件步驟一致（`docs/add-trip.md`）
 - [ ] shopping 不在 sitemap 或標 `noindex`
 - [ ] 換網域時 checklist：`SITE_ORIGIN`、HTML OG、robots、sitemap、llms.txt
 
@@ -245,7 +245,7 @@
 |------|------|
 | `public/robots.txt` | 爬蟲政策 |
 | `public/sitemap.xml` | URL 清單 |
-| `scripts/gen-sitemap.mjs` | sitemap 產生 |
+| `scripts/gen-seo.mjs` | sitemap + llms 產生 |
 | `js/site.js` | `SITE_ORIGIN` |
 | `js/trip.js` 等 | 客戶端 title／description |
 | `trips/manifest.json` | Hub／sitemap／agent 索引 |
