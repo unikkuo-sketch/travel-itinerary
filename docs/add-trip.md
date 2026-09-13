@@ -40,6 +40,7 @@ Copy-Item -Recurse trips\_template trips\2027_義大利托斯卡尼_蜜月
 |------|------|
 | `meta.highlightCards[]` | 選填；`{ icon, title, desc }`。有則渲染行程頁「行程亮點」；無則回退 `meta.highlights` 字串 |
 | `meta.routeRegions` | 選填；路線區上方縣／地區標籤（例 `宮城・岩手・青森・秋田`） |
+| `meta.seo` | 選填；覆寫頁面 `<title>`／meta description（不改 H1）。`title`／`description` 給行程首頁；`stories`／`food` 各為 `{ title, description }`。缺省仍由 `meta.title`／`subtitle` 產生 |
 
 `highlightCards[].icon` 對應 `js/icons.js`（如 `train`、`food`、`hotel`、`festival`、`shrine`、`plane`）。
 

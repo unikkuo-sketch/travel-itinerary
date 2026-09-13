@@ -5,6 +5,7 @@
 import { readFileSync, writeFileSync, existsSync, mkdirSync } from 'node:fs';
 import { join } from 'node:path';
 import { SITE_ORIGIN as ORIGIN } from '../js/site.js';
+import { tripPageMeta } from '../js/seo.js';
 const DIST = 'dist';
 
 function esc(text) {
@@ -192,13 +193,12 @@ function writeTripPages(tripId, data, templates) {
   if (!existsSync(dir)) mkdirSync(dir, { recursive: true });
 
   const image = coverUrl(tripId, meta.cover?.src);
-  const desc = meta.subtitle || meta.title || '';
 
   // trip index
   {
     const url = `${ORIGIN}/trips/${enc}/`;
-    const title = `${meta.title || tripId} | ${meta.badge || '宇宙碎片集散地'}`;
-    let html = injectHead(templates.trip, { title, description: desc, url, image });
+    const { title, description } = tripPageMeta(meta, 'trip');
+    let html = injectHead(templates.trip, { title, description, url, image });
     html = setBodyTheme(html, meta.theme);
     const hero = heroHtml(meta, data.days, tripId);
     html = html.replace(
@@ -219,9 +219,8 @@ function writeTripPages(tripId, data, templates) {
   // stories
   {
     const url = `${ORIGIN}/trips/${enc}/stories.html`;
-    const title = `風土 | ${meta.title || tripId}`;
-    const sdesc = `這趟旅程裡，值得收下的景點、歷史與文化——${meta.title || ''}`;
-    let html = injectHead(templates.stories, { title, description: sdesc, url, image });
+    const { title, description } = tripPageMeta(meta, 'stories');
+    let html = injectHead(templates.stories, { title, description, url, image });
     html = setBodyTheme(html, meta.theme);
     const h1 = meta.title ? `${esc(meta.title)} · 風土` : '風土';
     html = html.replace(
@@ -238,9 +237,8 @@ function writeTripPages(tripId, data, templates) {
   // food
   {
     const url = `${ORIGIN}/trips/${enc}/food.html`;
-    const title = `飲食 | ${meta.title || tripId}`;
-    const fdesc = `這趟旅程裡，值得嚐一口的食物與酒——${meta.title || ''}`;
-    let html = injectHead(templates.food, { title, description: fdesc, url, image });
+    const { title, description } = tripPageMeta(meta, 'food');
+    let html = injectHead(templates.food, { title, description, url, image });
     html = setBodyTheme(html, meta.theme);
     const h1 = meta.title ? `${esc(meta.title)} · 飲食` : '飲食';
     html = html.replace(

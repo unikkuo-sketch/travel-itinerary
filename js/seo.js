@@ -1,5 +1,44 @@
 import { SITE_ORIGIN } from './site.js';
 
+/**
+ * Resolve document title + meta description for a trip shell page.
+ * Optional overrides live on `meta.seo` (trip index) / `meta.seo.stories` / `meta.seo.food`.
+ * Falls back to the historical generated strings so trips without seo stay unchanged.
+ */
+export function tripPageMeta(meta = {}, page = 'trip') {
+  const seo = meta.seo || {};
+  const title = meta.title || '';
+
+  if (page === 'stories') {
+    const pageSeo = seo.stories || {};
+    return {
+      title: pageSeo.title || `風土 | ${title}`,
+      description:
+        pageSeo.description ||
+        (meta.subtitle
+          ? `${meta.subtitle}——風土筆記`
+          : `這趟旅程裡，值得收下的景點、歷史與文化——${title}`),
+    };
+  }
+
+  if (page === 'food') {
+    const pageSeo = seo.food || {};
+    return {
+      title: pageSeo.title || `飲食 | ${title}`,
+      description:
+        pageSeo.description ||
+        (meta.subtitle
+          ? `${meta.subtitle}——飲食筆記`
+          : `這趟旅程裡，值得嚐一口的食物與酒——${title}`),
+    };
+  }
+
+  return {
+    title: seo.title || `${title} | ${meta.badge || '宇宙碎片集散地'}`,
+    description: seo.description || meta.subtitle || title || '',
+  };
+}
+
 function ensureMeta(attr, key, content) {
   if (!content) return;
   const sel = attr === 'property' ? `meta[property="${key}"]` : `meta[name="${key}"]`;

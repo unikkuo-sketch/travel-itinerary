@@ -5,6 +5,7 @@
 import assert from 'node:assert/strict';
 import { tripIdFromPath, tripUrl } from '../js/load-trip.js';
 import { isJapanTrip, manholeMapUrl, resolvePrefectures } from '../js/manhole.js';
+import { tripPageMeta } from '../js/seo.js';
 import { SITE_ORIGIN } from '../js/site.js';
 
 assert.equal(tripIdFromPath('/trips/foo_bar/', ''), 'foo_bar');
@@ -33,5 +34,39 @@ assert.deepEqual(
 assert.match(manholeMapUrl('04'), /prefecture=04/);
 
 assert.equal(SITE_ORIGIN, 'https://universum-sliver.vercel.app');
+
+const fallback = tripPageMeta(
+  { title: '範例行程', subtitle: 'A × B', badge: '2023年' },
+  'trip'
+);
+assert.equal(fallback.title, '範例行程 | 2023年');
+assert.equal(fallback.description, 'A × B');
+assert.equal(
+  tripPageMeta({ title: '範例行程', subtitle: 'A × B' }, 'stories').title,
+  '風土 | 範例行程'
+);
+const seoMeta = {
+  title: '顯示用標題',
+  subtitle: '副標',
+  badge: '2023年',
+  seo: {
+    title: 'SEO 行程標題',
+    description: 'SEO 行程描述',
+    stories: { title: 'SEO 風土標題', description: 'SEO 風土描述' },
+    food: { title: 'SEO 飲食標題', description: 'SEO 飲食描述' },
+  },
+};
+assert.deepEqual(tripPageMeta(seoMeta, 'trip'), {
+  title: 'SEO 行程標題',
+  description: 'SEO 行程描述',
+});
+assert.deepEqual(tripPageMeta(seoMeta, 'stories'), {
+  title: 'SEO 風土標題',
+  description: 'SEO 風土描述',
+});
+assert.deepEqual(tripPageMeta(seoMeta, 'food'), {
+  title: 'SEO 飲食標題',
+  description: 'SEO 飲食描述',
+});
 
 console.log('check: ok');
