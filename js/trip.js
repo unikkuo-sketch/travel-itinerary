@@ -3,7 +3,7 @@ import { renderItinerary } from './render.js';
 import { mountNav, initNavScroll } from './nav.js';
 import { initMap } from './map.js';
 import { icon } from './icons.js';
-import { applyPageMeta, tripCanonicalUrl, tripOgImage } from './seo.js';
+import { applyPageMeta, tripCanonicalUrl, tripOgImage, tripPageMeta } from './seo.js';
 
 function initAppIcons() {
   document.querySelectorAll('.app-item[data-icon]').forEach((el) => {
@@ -48,9 +48,10 @@ async function init() {
     const data = await loadTrip(tripId);
     const { meta } = data;
 
+    const pageMeta = tripPageMeta(meta, 'trip');
     applyPageMeta({
-      title: `${meta.title} | ${meta.badge || '宇宙碎片集散地'}`,
-      description: meta.subtitle || meta.title,
+      title: pageMeta.title,
+      description: pageMeta.description,
       url: tripCanonicalUrl(tripId, 'trip'),
       image: tripOgImage(tripId, meta.cover?.src),
     });

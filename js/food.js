@@ -1,7 +1,7 @@
 import { getTripId, loadTrip, tripUrl } from './load-trip.js';
 import { icon } from './icons.js';
 import { esc, photoHtml, tripAssetUrl } from './photo.js';
-import { applyPageMeta, tripCanonicalUrl, tripOgImage } from './seo.js';
+import { applyPageMeta, tripCanonicalUrl, tripOgImage, tripPageMeta } from './seo.js';
 
 const root = document.getElementById('food-root');
 const heroTitle = document.getElementById('food-trip-title');
@@ -111,11 +111,10 @@ async function init() {
   try {
     const data = await loadTrip(tripId);
     if (data.meta?.theme) document.body.classList.add(`theme-${data.meta.theme}`);
+    const pageMeta = tripPageMeta(data.meta, 'food');
     applyPageMeta({
-      title: `飲食 | ${data.meta?.title || ''}`,
-      description: data.meta?.subtitle
-        ? `${data.meta.subtitle}——飲食筆記`
-        : `這趟旅程裡，值得嚐一口的食物與酒——${data.meta?.title || ''}`,
+      title: pageMeta.title,
+      description: pageMeta.description,
       url: tripCanonicalUrl(tripId, 'food'),
       image: tripOgImage(tripId, data.meta?.cover?.src),
     });
