@@ -195,10 +195,18 @@ function renderRouteStrip(overview, meta) {
 function renderLodging(overview) {
   const stays = (overview || []).filter((r) => r.hotel && r.hotel !== '-');
   if (!stays.length) return '';
-  return stays
+  // ponytail: pilot only — disclosure is section-level text; upgrade to per-network disclosure / consent UI if more affiliates land.
+  const hasAffiliate = stays.some((r) => r.hotelUrl);
+  const disclosure = hasAffiliate
+    ? `<p class="lodging-affiliate-note">本頁精選住宿含 Agoda 聯盟連結；經連結訂房本站可能獲得佣金，讀者無需額外付費。</p>`
+    : '';
+  const cards = stays
     .map((r) => {
       const note = r.hotelNote
         ? `<p class="lodging-note">${esc(r.hotelNote)}</p>`
+        : '';
+      const bookLink = r.hotelUrl
+        ? `<p class="lodging-book"><a class="lodging-affiliate-link" href="${esc(r.hotelUrl)}" target="_blank" rel="sponsored noopener noreferrer">Agoda 訂房</a></p>`
         : '';
       return `
     <article class="lodging-card">
@@ -210,10 +218,12 @@ function renderLodging(overview) {
         </div>
         <h3>${esc(r.hotel)}</h3>
         ${note}
+        ${bookLink}
       </div>
     </article>`;
     })
     .join('');
+  return disclosure + cards;
 }
 
 function renderTimelineItem(item) {
