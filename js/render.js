@@ -206,7 +206,7 @@ function renderLodging(overview) {
         ? `<p class="lodging-note">${esc(r.hotelNote)}</p>`
         : '';
       const bookLink = r.hotelUrl
-        ? `<p class="lodging-book"><a class="lodging-affiliate-link" href="${esc(r.hotelUrl)}" target="_blank" rel="sponsored noopener noreferrer">在 Agoda 查看／訂房</a></p>`
+        ? `<p class="lodging-book"><a class="lodging-affiliate-link" href="${esc(r.hotelUrl)}" target="_blank" rel="sponsored noopener noreferrer">Agoda 訂房</a></p>`
         : '';
       return `
     <article class="lodging-card">
