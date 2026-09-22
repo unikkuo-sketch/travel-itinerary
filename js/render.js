@@ -205,11 +205,18 @@ function renderLodging(overview) {
       const note = r.hotelNote
         ? `<p class="lodging-note">${esc(r.hotelNote)}</p>`
         : '';
-      // Affiliate CTA / blurb only when hotelUrl is present (pilot disclosure stays section-level).
-      const blurb =
-        r.hotelUrl && r.hotelBlurb
-          ? `<p class="lodging-blurb">${esc(r.hotelBlurb)}</p>`
-          : '';
+      // Phase 1 expandable narrative: teaser collapsed by default; full hotelBlurb on click/tap.
+      let narrative = '';
+      if (r.hotelBlurb) {
+        const teaser = r.hotelBlurbTeaser || '了解更多';
+        narrative = `<details class="lodging-expand">
+        <summary class="lodging-teaser">${esc(teaser)}</summary>
+        <p class="lodging-blurb">${esc(r.hotelBlurb)}</p>
+      </details>`;
+      } else if (r.hotelBlurbTeaser) {
+        narrative = `<p class="lodging-teaser lodging-teaser--static">${esc(r.hotelBlurbTeaser)}</p>`;
+      }
+      // Affiliate CTA only when hotelUrl is present (disclosure is section-level above).
       const bookLink = r.hotelUrl
         ? `<p class="lodging-book"><a class="lodging-affiliate-link" href="${esc(r.hotelUrl)}" target="_blank" rel="sponsored noopener noreferrer">Agoda 訂房</a></p>`
         : '';
@@ -223,7 +230,7 @@ function renderLodging(overview) {
         </div>
         <h3>${esc(r.hotel)}</h3>
         ${note}
-        ${blurb}
+        ${narrative}
         ${bookLink}
       </div>
     </article>`;

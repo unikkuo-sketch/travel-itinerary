@@ -707,12 +707,50 @@ h3 { font-size: var(--text-lg); }
     margin: 0;
 }
 
+.lodging-expand {
+    margin: 0.45rem 0 0;
+}
+
+.lodging-teaser {
+    font-family: var(--font-sans);
+    font-size: var(--text-sm);
+    font-weight: 500;
+    color: var(--text-secondary);
+    line-height: var(--leading-normal);
+    cursor: pointer;
+    list-style: none;
+}
+
+.lodging-teaser::-webkit-details-marker {
+    display: none;
+}
+
+.lodging-teaser::after {
+    content: ' · 展開';
+    font-weight: 400;
+    font-size: var(--text-xs);
+    color: var(--text-muted);
+}
+
+.lodging-expand[open] > .lodging-teaser::after {
+    content: ' · 收合';
+}
+
+.lodging-teaser--static {
+    margin: 0.45rem 0 0;
+    cursor: default;
+}
+
+.lodging-teaser--static::after {
+    content: none;
+}
+
 .lodging-blurb {
     font-family: var(--font-sans);
     font-size: var(--text-sm);
     color: var(--text-secondary);
     line-height: var(--leading-normal);
-    margin: 0.45rem 0 0;
+    margin: 0.4rem 0 0;
 }
 
 .lodging-affiliate-note {
