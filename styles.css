@@ -707,6 +707,14 @@ h3 { font-size: var(--text-lg); }
     margin: 0;
 }
 
+.lodging-blurb {
+    font-family: var(--font-sans);
+    font-size: var(--text-sm);
+    color: var(--text-secondary);
+    line-height: var(--leading-normal);
+    margin: 0.45rem 0 0;
+}
+
 .lodging-affiliate-note {
     grid-column: 1 / -1;
     font-family: var(--font-sans);

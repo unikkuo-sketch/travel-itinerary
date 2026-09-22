@@ -205,6 +205,11 @@ function renderLodging(overview) {
       const note = r.hotelNote
         ? `<p class="lodging-note">${esc(r.hotelNote)}</p>`
         : '';
+      // Affiliate CTA / blurb only when hotelUrl is present (pilot disclosure stays section-level).
+      const blurb =
+        r.hotelUrl && r.hotelBlurb
+          ? `<p class="lodging-blurb">${esc(r.hotelBlurb)}</p>`
+          : '';
       const bookLink = r.hotelUrl
         ? `<p class="lodging-book"><a class="lodging-affiliate-link" href="${esc(r.hotelUrl)}" target="_blank" rel="sponsored noopener noreferrer">Agoda 訂房</a></p>`
         : '';
@@ -218,6 +223,7 @@ function renderLodging(overview) {
         </div>
         <h3>${esc(r.hotel)}</h3>
         ${note}
+        ${blurb}
         ${bookLink}
       </div>
     </article>`;
