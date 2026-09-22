@@ -193,7 +193,11 @@ function renderRouteStrip(overview, meta) {
 }
 
 function renderLodging(overview) {
-  const stays = (overview || []).filter((r) => r.hotel && r.hotel !== '-');
+  const named = (overview || []).filter((r) => r.hotel && r.hotel !== '-');
+  const hasNarrative = (r) => Boolean(r.hotelBlurbTeaser || r.hotelBlurb);
+  // Phase 1: if any night has teaser/blurb, STAY shows only those narrative cards
+  // (overview table still lists every hotel). Legacy trips without narrative keep all stays.
+  const stays = named.some(hasNarrative) ? named.filter(hasNarrative) : named;
   if (!stays.length) return '';
   // ponytail: pilot only — disclosure is section-level text; upgrade to per-network disclosure / consent UI if more affiliates land.
   const hasAffiliate = stays.some((r) => r.hotelUrl);
