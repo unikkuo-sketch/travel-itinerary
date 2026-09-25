@@ -193,11 +193,9 @@ function renderRouteStrip(overview, meta) {
 }
 
 function renderLodging(overview) {
-  const named = (overview || []).filter((r) => r.hotel && r.hotel !== '-');
-  const hasNarrative = (r) => Boolean(r.hotelBlurbTeaser || r.hotelBlurb);
-  // Phase 1: if any night has teaser/blurb, STAY shows only those narrative cards
-  // (overview table still lists every hotel). Legacy trips without narrative keep all stays.
-  const stays = named.some(hasNarrative) ? named.filter(hasNarrative) : named;
+  // Every overview night with a real hotel name stays in 精選住宿 (logistics row).
+  // Expand + Agoda are additive only when hotelBlurbTeaser/hotelBlurb and/or hotelUrl exist.
+  const stays = (overview || []).filter((r) => r.hotel && r.hotel !== '-');
   if (!stays.length) return '';
   // ponytail: pilot only — disclosure is section-level text; upgrade to per-network disclosure / consent UI if more affiliates land.
   const hasAffiliate = stays.some((r) => r.hotelUrl);
@@ -210,6 +208,7 @@ function renderLodging(overview) {
         ? `<p class="lodging-note">${esc(r.hotelNote)}</p>`
         : '';
       // Phase 1 expandable narrative: teaser collapsed by default; full hotelBlurb on click/tap.
+      // Nights without blurb stay plain rows (no empty details).
       let narrative = '';
       if (r.hotelBlurb) {
         const teaser = r.hotelBlurbTeaser || '了解更多';
