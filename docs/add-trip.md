@@ -49,6 +49,10 @@ Copy-Item -Recurse trips\_template trips\2027_義大利托斯卡尼_蜜月
 | 欄位 | 說明 |
 |------|------|
 | `hotelNote` | 選填；住宿總覽卡片說明（站距／賣點） |
+| `hotelBlurbTeaser` / `hotelBlurb` | 選填；精選住宿展開短評（`<details>`） |
+| `hotelUrl` | 選填；Agoda 等聯盟訂房連結（有才顯示 CTA） |
+| `hotelPhoto` | 選填；`{ src, alt, credit }` 住宿主圖（側圖卡；無則維持純文字列） |
+| `hotelPhotos` | 選填；展開內 1–2 張細節圖（無陣列則不渲染細節列） |
 | `routeLabel` | 選填；路線動線 chip 短名（缺省取 `places` 最後一段） |
 | `transport` | 交通重點；已訂班次寫 `車次 · HH:MM`（例 `Hayabusa 1 · 08:05`）；當日多段用全形 `／` 分隔，會渲染成多行 tag |
 
@@ -59,6 +63,14 @@ Copy-Item -Recurse trips\_template trips\2027_義大利托斯卡尼_蜜月
 | `icon` | 選填；時間軸圓標 icon key。缺省時從 `tag` 開頭 emoji 推斷 |
 | `detail` | 選填；主說明 `desc` 下方的後勤細字（班次、步行分鐘等） |
 | `tag` | 選填；類別標籤（可含 emoji；有 icon 時顯示會去掉開頭 emoji） |
+| `photo` | 選填；關鍵站 56×56 縮圖 `{ src, alt, credit }`；無則不留空位 |
+
+#### 每日代表照與條圖
+
+| 欄位 | 說明 |
+|------|------|
+| `days[].photo` | 選填；當日英雄圖 `{ src, alt, credit }` |
+| `days[].photos` | 選填；標題下橫向可滑條 2–3 張（勿重複英雄圖 `src`；缺則整條不渲染） |
 
 #### 預算 `budget`
 
