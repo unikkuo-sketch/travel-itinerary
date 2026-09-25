@@ -660,6 +660,47 @@ h3 { font-size: var(--text-lg); }
     border-bottom: 1px solid var(--border-soft);
 }
 
+.lodging-card--photo {
+    gap: 1.15rem;
+}
+
+.lodging-card--photo .ph--lodging-thumb {
+    flex-shrink: 0;
+    width: 128px;
+    aspect-ratio: 3 / 4;
+    border-radius: 8px;
+}
+
+.lodging-card--photo .ph--lodging-thumb .ph-credit {
+    font-size: 0.55rem;
+    padding: 0.1rem 0.35rem;
+    right: 0.35rem;
+    bottom: 0.3rem;
+}
+
+.lodging-detail-strip {
+    display: flex;
+    gap: 0.55rem;
+    margin-top: 0.65rem;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+}
+
+.lodging-detail-strip .ph--lodging-detail {
+    flex: 0 0 auto;
+    width: min(148px, 42vw);
+    aspect-ratio: 4 / 3;
+    border-radius: 6px;
+}
+
+.lodging-detail-strip .ph--lodging-detail .ph-credit {
+    font-size: 0.55rem;
+    padding: 0.1rem 0.35rem;
+    right: 0.3rem;
+    bottom: 0.25rem;
+}
+
 .lodging-icon {
     flex-shrink: 0;
     width: 2.25rem;
@@ -792,6 +833,16 @@ h3 { font-size: var(--text-lg); }
 @media (max-width: 700px) {
     .lodging-grid {
         grid-template-columns: 1fr;
+    }
+
+    .lodging-card--photo {
+        flex-direction: column;
+        gap: 0.85rem;
+    }
+
+    .lodging-card--photo .ph--lodging-thumb {
+        width: 100%;
+        aspect-ratio: 16 / 9;
     }
 }
 
@@ -1310,6 +1361,29 @@ h3 { font-size: var(--text-lg); }
     border-bottom: 1px solid var(--border-soft);
 }
 
+.day-photo-strip {
+    display: flex;
+    gap: 0.75rem;
+    margin: -0.75rem 0 1.75rem;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+    padding-bottom: 0.15rem;
+}
+
+.day-photo-strip .ph--day-strip {
+    flex: 0 0 auto;
+    width: min(220px, 68vw);
+    aspect-ratio: 4 / 3;
+    border-radius: 10px;
+}
+
+.day-photo-strip .ph--day-strip .ph-credit {
+    font-size: 0.6rem;
+    right: 0.4rem;
+    bottom: 0.35rem;
+}
+
 .day-number {
     width: 56px;
     height: 56px;
@@ -1439,6 +1513,37 @@ h3 { font-size: var(--text-lg); }
     color: var(--text-primary);
     margin-bottom: 0.2rem;
     font-weight: 600;
+}
+
+.timeline-heading--thumb {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.65rem;
+    margin-bottom: 0.2rem;
+}
+
+.timeline-heading--thumb h4 {
+    margin-bottom: 0;
+    padding-top: 0.15rem;
+}
+
+.ph--tl-thumb {
+    flex-shrink: 0;
+    width: 56px;
+    height: 56px;
+    border-radius: 6px;
+}
+
+.ph--tl-thumb .ph-credit {
+    font-size: 0.45rem;
+    letter-spacing: 0.01em;
+    padding: 0.05rem 0.25rem;
+    right: 0.15rem;
+    bottom: 0.1rem;
+    max-width: calc(100% - 0.2rem);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .timeline-content p {

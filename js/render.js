@@ -192,9 +192,26 @@ function renderRouteStrip(overview, meta) {
   return `${regions}<div class="route-strip-track" role="list">${chips}</div>`;
 }
 
-function renderLodging(overview) {
+function renderLodgingDetailStrip(photos, tripId) {
+  if (!Array.isArray(photos) || !photos.length) return '';
+  // Horizontal scroll strip; itinerary controls count (no hard 1–2 cap).
+  const figs = photos
+    .filter((p) => p?.src)
+    .map((p) =>
+      photoHtml(
+        { ...p, src: tripAssetUrl(tripId, p.src) },
+        { className: 'ph--lodging-detail' }
+      )
+    )
+    .join('');
+  if (!figs) return '';
+  return `<div class="lodging-detail-strip">${figs}</div>`;
+}
+
+function renderLodging(overview, tripId) {
   // Every overview night with a real hotel name stays in 精選住宿 (logistics row).
   // Expand + Agoda are additive only when hotelBlurbTeaser/hotelBlurb and/or hotelUrl exist.
+  // hotelPhoto → side-image card; nights without it stay lodging-card--plain (no empty thumb).
   const stays = (overview || []).filter((r) => r.hotel && r.hotel !== '-');
   if (!stays.length) return '';
   // ponytail: pilot only — disclosure is section-level text; upgrade to per-network disclosure / consent UI if more affiliates land.
@@ -207,7 +224,9 @@ function renderLodging(overview) {
       const note = r.hotelNote
         ? `<p class="lodging-note">${esc(r.hotelNote)}</p>`
         : '';
+      const detailStrip = renderLodgingDetailStrip(r.hotelPhotos, tripId);
       // Phase 1 expandable narrative: teaser collapsed by default; full hotelBlurb on click/tap.
+      // Optional hotelPhotos[] render inside details after blurb (no empty strip if absent).
       // Nights without blurb stay plain rows (no empty details).
       let narrative = '';
       if (r.hotelBlurb) {
@@ -215,17 +234,17 @@ function renderLodging(overview) {
         narrative = `<details class="lodging-expand">
         <summary class="lodging-teaser">${esc(teaser)}</summary>
         <p class="lodging-blurb">${esc(r.hotelBlurb)}</p>
+        ${detailStrip}
       </details>`;
       } else if (r.hotelBlurbTeaser) {
         narrative = `<p class="lodging-teaser lodging-teaser--static">${esc(r.hotelBlurbTeaser)}</p>`;
       }
       // Affiliate CTA only when hotelUrl is present (disclosure is section-level above).
+      // Keep Agoda link outside <details> so it stays visible without expanding.
       const bookLink = r.hotelUrl
         ? `<p class="lodging-book"><a class="lodging-affiliate-link" href="${esc(r.hotelUrl)}" target="_blank" rel="sponsored noopener noreferrer">Agoda 訂房</a></p>`
         : '';
-      return `
-    <article class="lodging-card">
-      <div class="lodging-icon">${icon('hotel', 'icon')}</div>
+      const body = `
       <div class="lodging-body">
         <div class="lodging-meta">
           <span class="lodging-day">D${r.day}</span>
@@ -235,14 +254,29 @@ function renderLodging(overview) {
         ${note}
         ${narrative}
         ${bookLink}
-      </div>
+      </div>`;
+      if (r.hotelPhoto?.src) {
+        const thumb = photoHtml(
+          { ...r.hotelPhoto, src: tripAssetUrl(tripId, r.hotelPhoto.src) },
+          { className: 'ph--lodging-thumb' }
+        );
+        return `
+    <article class="lodging-card lodging-card--photo">
+      ${thumb}
+      ${body}
+    </article>`;
+      }
+      return `
+    <article class="lodging-card lodging-card--plain">
+      <div class="lodging-icon">${icon('hotel', 'icon')}</div>
+      ${body}
     </article>`;
     })
     .join('');
   return disclosure + cards;
 }
 
-function renderTimelineItem(item) {
+function renderTimelineItem(item, tripId) {
   const classes = ['timeline-item'];
   if (item.highlight) classes.push('highlight');
   const iconName = resolveTimelineIcon(item);
@@ -255,19 +289,45 @@ function renderTimelineItem(item) {
   const detailHtml = item.detail ? `<p class="timeline-detail">${esc(item.detail)}</p>` : '';
   const tagLabel = stripTagEmoji(item.tag);
   const tagHtml = tagLabel ? `<span class="timeline-tag">${esc(tagLabel)}</span>` : '';
+  // Optional key-stop thumb: only when timeline[].photo exists — no empty slot otherwise.
+  const thumb = item.photo?.src
+    ? photoHtml(
+        { ...item.photo, src: tripAssetUrl(tripId, item.photo.src) },
+        { className: 'ph--tl-thumb' }
+      )
+    : '';
+  if (thumb) classes.push('timeline-item--thumb');
+  const heading = thumb
+    ? `<div class="timeline-heading timeline-heading--thumb">${thumb}<h4>${esc(item.place)}</h4></div>`
+    : `<h4>${esc(item.place)}</h4>`;
 
   return `
     <div class="${classes.join(' ')}">
       ${iconHtml}
       ${timeHtml}
       <div class="timeline-content">
-        <h4>${esc(item.place)}</h4>
+        ${heading}
         <p>${esc(item.desc)}</p>
         ${detailHtml}
         ${tagHtml}
       </div>
     </div>
   `;
+}
+
+function renderDayPhotoStrip(photos, tripId) {
+  if (!Array.isArray(photos) || !photos.length) return '';
+  const figs = photos
+    .filter((p) => p?.src)
+    .map((p) =>
+      photoHtml(
+        { ...p, src: tripAssetUrl(tripId, p.src) },
+        { className: 'ph--day-strip' }
+      )
+    )
+    .join('');
+  if (!figs) return '';
+  return `<div class="day-photo-strip">${figs}</div>`;
 }
 
 /** Parse NT$/¥ display strings; ranges use midpoint. */
@@ -295,6 +355,7 @@ function renderDay(day, tripId) {
         { className: 'ph--day' }
       )
     : '';
+  const strip = renderDayPhotoStrip(day.photos, tripId);
   return `
     <section id="${day.id}" class="section day-section${photo ? ' day-section--photo' : ''}">
       ${photo}
@@ -306,8 +367,9 @@ function renderDay(day, tripId) {
             <h2>${esc(day.title)}</h2>
           </div>
         </div>
+        ${strip}
         <div class="timeline">
-          ${day.timeline.map(renderTimelineItem).join('')}
+          ${day.timeline.map((item) => renderTimelineItem(item, tripId)).join('')}
         </div>
         ${tipsHtml}
       </div>
@@ -556,7 +618,7 @@ export function renderItinerary(data, tripId = data.meta?.slug || '') {
   const stripHtml = renderRouteStrip(data.overview || [], data.meta);
   if (routeStripEl) routeStripEl.innerHTML = stripHtml;
 
-  const lodgingHtml = renderLodging(data.overview || []);
+  const lodgingHtml = renderLodging(data.overview || [], tripId);
   if (lodgingEl) lodgingEl.innerHTML = lodgingHtml;
   showSection('lodging', Boolean(lodgingHtml));
 

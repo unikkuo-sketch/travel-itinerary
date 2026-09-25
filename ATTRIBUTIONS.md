@@ -88,6 +88,13 @@ CC BY / CC BY-SA 圖片依授權條款標示作者、來源與授權；CC BY-SA 
 | `day6.webp` | 美瑛白金青池 | AndyLeungHK | [CC0](https://creativecommons.org/publicdomain/zero/1.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Shirogane_Blue_Pond,_Biei,_Hokkaido_Japan.jpg) |
 | `day7.webp` | 定山溪大橋 | t-konno | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:%E5%AE%9A%E5%B1%B1%E6%B8%93%E5%A4%A7%E6%A9%8B%EF%BC%88Jozankei_Ohashi%EF%BC%89_-_panoramio.jpg) |
 | `day8.webp` | 新千歲機場航廈 | 663highland | [CC BY 2.5](https://creativecommons.org/licenses/by/2.5/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Hokkaido_New_Chitose_Airport13n4272.jpg) |
+| `jozankei-hotel-exterior.webp` | 定山溪豪景飯店外觀 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（住宿主圖 `hotelPhoto`） |
+| `jozankei-kaiseki-zensai.webp` | 定山溪豪景懷石前菜 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（`hotelPhotos`） |
+| `jozankei-kaiseki-sashimi.webp` | 定山溪豪景懷石刺身 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（`hotelPhotos`） |
+| `jozankei-kaiseki-noodles.webp` | 定山溪豪景懷石麵壽司套 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（`hotelPhotos`） |
+| `jozankei-breakfast-tray.webp` | 定山溪豪景九格早餐 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（`hotelPhotos`） |
+| `jozankei-breakfast-buffet-maguro.webp` | 定山溪豪景自助早餐鮪魚台 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（`hotelPhotos`） |
+| `jozankei-breakfast-space.webp` | 定山溪豪景早餐餐廳窗景（已模糊可辨識臉） | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（`hotelPhotos`） |
 | `story-hokudai.webp` | 北海道大學札幌農學校演武場（時計台） | 十字軍ちゃん | [CC0](https://creativecommons.org/publicdomain/zero/1.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Hokkaido_University_clocktower.jpg) |
 | `story-tenguyama.webp` | 小樽天狗山夜景展望 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
 | `story-furano-wine.webp` | 富良野葡萄酒工房酒窖 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
