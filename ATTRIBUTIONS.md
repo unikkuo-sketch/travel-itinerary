@@ -93,6 +93,7 @@ CC BY / CC BY-SA 圖片依授權條款標示作者、來源與授權；CC BY-SA 
 | `jozankei-kaiseki-sashimi.webp` | 定山溪豪景懷石刺身 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（`hotelPhotos`） |
 | `jozankei-kaiseki-noodles.webp` | 定山溪豪景懷石麵壽司套 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（`hotelPhotos`） |
 | `jozankei-breakfast-tray.webp` | 定山溪豪景九格早餐 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（`hotelPhotos`） |
+| `jozankei-breakfast-buffet-maguro.webp` | 定山溪豪景自助早餐鮪魚台 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（`hotelPhotos`） |
 | `jozankei-breakfast-space.webp` | 定山溪豪景早餐餐廳窗景（已模糊可辨識臉） | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（`hotelPhotos`） |
 | `story-hokudai.webp` | 北海道大學札幌農學校演武場（時計台） | 十字軍ちゃん | [CC0](https://creativecommons.org/publicdomain/zero/1.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Hokkaido_University_clocktower.jpg) |
 | `story-tenguyama.webp` | 小樽天狗山夜景展望 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
