@@ -225,24 +225,26 @@ function renderLodging(overview, tripId) {
         ? `<p class="lodging-note">${esc(r.hotelNote)}</p>`
         : '';
       const detailStrip = renderLodgingDetailStrip(r.hotelPhotos, tripId);
-      // Phase 1 expandable narrative: teaser collapsed by default; full hotelBlurb on click/tap.
-      // Optional hotelPhotos[] render inside details after blurb (no empty strip if absent).
+      // Expandable narrative: teaser collapsed by default; full hotelBlurb + hotelPhotos on open.
       // Nights without blurb stay plain rows (no empty details).
       let narrative = '';
       if (r.hotelBlurb) {
         const teaser = r.hotelBlurbTeaser || '了解更多';
         narrative = `<details class="lodging-expand">
-        <summary class="lodging-teaser">${esc(teaser)}</summary>
+        <summary class="lodging-expand__teaser">
+          <span class="lodging-expand__lead">${esc(teaser)}</span>
+          <span class="lodging-expand__chev" aria-hidden="true"></span>
+          <span class="visually-hidden">展開或收合住宿說明</span>
+        </summary>
         <p class="lodging-blurb">${esc(r.hotelBlurb)}</p>
         ${detailStrip}
       </details>`;
       } else if (r.hotelBlurbTeaser) {
-        narrative = `<p class="lodging-teaser lodging-teaser--static">${esc(r.hotelBlurbTeaser)}</p>`;
+        narrative = `<p class="lodging-expand__teaser lodging-expand__teaser--static">${esc(r.hotelBlurbTeaser)}</p>`;
       }
-      // Affiliate CTA only when hotelUrl is present (disclosure is section-level above).
-      // Keep Agoda link outside <details> so it stays visible without expanding.
+      // Soft pill CTA outside <details> so it stays visible without expanding.
       const bookLink = r.hotelUrl
-        ? `<p class="lodging-book"><a class="lodging-affiliate-link" href="${esc(r.hotelUrl)}" target="_blank" rel="sponsored noopener noreferrer">Agoda 訂房</a></p>`
+        ? `<a class="lodging-book" href="${esc(r.hotelUrl)}" target="_blank" rel="sponsored noopener">Agoda 訂房</a>`
         : '';
       const body = `
       <div class="lodging-body">
@@ -276,7 +278,7 @@ function renderLodging(overview, tripId) {
   return disclosure + cards;
 }
 
-function renderTimelineItem(item, tripId) {
+function renderTimelineItem(item) {
   const classes = ['timeline-item'];
   if (item.highlight) classes.push('highlight');
   const iconName = resolveTimelineIcon(item);
@@ -289,45 +291,20 @@ function renderTimelineItem(item, tripId) {
   const detailHtml = item.detail ? `<p class="timeline-detail">${esc(item.detail)}</p>` : '';
   const tagLabel = stripTagEmoji(item.tag);
   const tagHtml = tagLabel ? `<span class="timeline-tag">${esc(tagLabel)}</span>` : '';
-  // Optional key-stop thumb: only when timeline[].photo exists — no empty slot otherwise.
-  const thumb = item.photo?.src
-    ? photoHtml(
-        { ...item.photo, src: tripAssetUrl(tripId, item.photo.src) },
-        { className: 'ph--tl-thumb' }
-      )
-    : '';
-  if (thumb) classes.push('timeline-item--thumb');
-  const heading = thumb
-    ? `<div class="timeline-heading timeline-heading--thumb">${thumb}<h4>${esc(item.place)}</h4></div>`
-    : `<h4>${esc(item.place)}</h4>`;
+  // Itinerary view: main day.photo only — timeline[].photo stays in data for Phase 2 eval.
 
   return `
     <div class="${classes.join(' ')}">
       ${iconHtml}
       ${timeHtml}
       <div class="timeline-content">
-        ${heading}
+        <h4>${esc(item.place)}</h4>
         <p>${esc(item.desc)}</p>
         ${detailHtml}
         ${tagHtml}
       </div>
     </div>
   `;
-}
-
-function renderDayPhotoStrip(photos, tripId) {
-  if (!Array.isArray(photos) || !photos.length) return '';
-  const figs = photos
-    .filter((p) => p?.src)
-    .map((p) =>
-      photoHtml(
-        { ...p, src: tripAssetUrl(tripId, p.src) },
-        { className: 'ph--day-strip' }
-      )
-    )
-    .join('');
-  if (!figs) return '';
-  return `<div class="day-photo-strip">${figs}</div>`;
 }
 
 /** Parse NT$/¥ display strings; ranges use midpoint. */
@@ -349,13 +326,13 @@ function renderDay(day, tripId) {
         <ul>${day.tips.map((t) => `<li>${t}</li>`).join('')}</ul>
       </div>`
     : '';
+  // Main/hero day.photo only — day.photos[] strip removed from itinerary UI (data kept).
   const photo = day.photo?.src
     ? photoHtml(
         { ...day.photo, src: tripAssetUrl(tripId, day.photo.src) },
         { className: 'ph--day' }
       )
     : '';
-  const strip = renderDayPhotoStrip(day.photos, tripId);
   return `
     <section id="${day.id}" class="section day-section${photo ? ' day-section--photo' : ''}">
       ${photo}
@@ -367,9 +344,8 @@ function renderDay(day, tripId) {
             <h2>${esc(day.title)}</h2>
           </div>
         </div>
-        ${strip}
         <div class="timeline">
-          ${day.timeline.map((item) => renderTimelineItem(item, tripId)).join('')}
+          ${day.timeline.map((item) => renderTimelineItem(item)).join('')}
         </div>
         ${tipsHtml}
       </div>
