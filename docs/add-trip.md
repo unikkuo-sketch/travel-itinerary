@@ -52,7 +52,7 @@ Copy-Item -Recurse trips\_template trips\2027_義大利托斯卡尼_蜜月
 | `hotelBlurbTeaser` / `hotelBlurb` | 選填；精選住宿展開短評（`<details>`） |
 | `hotelUrl` | 選填；Agoda 等聯盟訂房連結（有才顯示 CTA） |
 | `hotelPhoto` | 選填；`{ src, alt, credit }` 住宿主圖（側圖卡；無則維持純文字列） |
-| `hotelPhotos` | 選填；展開內 1–2 張細節圖（無陣列則不渲染細節列） |
+| `hotelPhotos` | 選填；展開內橫滑細節圖陣列（無陣列則不渲染細節列） |
 | `routeLabel` | 選填；路線動線 chip 短名（缺省取 `places` 最後一段） |
 | `transport` | 交通重點；已訂班次寫 `車次 · HH:MM`（例 `Hayabusa 1 · 08:05`）；當日多段用全形 `／` 分隔，會渲染成多行 tag |
 

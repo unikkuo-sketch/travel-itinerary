@@ -194,8 +194,8 @@ function renderRouteStrip(overview, meta) {
 
 function renderLodgingDetailStrip(photos, tripId) {
   if (!Array.isArray(photos) || !photos.length) return '';
+  // Horizontal scroll strip; itinerary controls count (no hard 1–2 cap).
   const figs = photos
-    .slice(0, 2)
     .filter((p) => p?.src)
     .map((p) =>
       photoHtml(
