@@ -435,6 +435,11 @@
       "hotelBlurbTeaser": "札幌近郊溫泉鄉收尾，本館一泊二食。",
       "hotelBlurb": "旅程倒數第二天轉住定山溪，選本館一泊二食。晚餐依飯店時間入席的懷石，早餐自助；隔天付溫泉稅後下山回札幌趕機。適合想在札幌近郊溫泉鄉收尾、少搬一次行李的家庭或小團體。",
       "hotelUrl": "https://www.agoda.com/zh-tw/jozankei-view-hotel/hotel/sapporo-jp.html?cid=1975511&hl=zh-tw",
+      "hotelPhoto": {
+        "src": "photos/day7.webp",
+        "alt": "定山溪大橋",
+        "credit": "t-konno / CC BY-SA 3.0"
+      },
       "routeLabel": "定山溪",
       "transport": "JR · 10:00／巴士 · 13:00",
       "transportClass": "",
@@ -497,7 +502,12 @@
           "desc": "晚餐／住宿",
           "detail": "杜鵑橋走路約8分；台幣含稅附早晚餐・1房・NT$3,019",
           "icon": "hotel",
-          "tag": "🏨 溫泉宿"
+          "tag": "🏨 溫泉宿",
+          "photo": {
+            "src": "photos/day1.webp",
+            "alt": "登別地獄谷夜景",
+            "credit": "宇宙碎片拍攝"
+          }
         }
       ],
       "tips": [
@@ -554,7 +564,12 @@
           "desc": "參拜",
           "detail": "円山公園駅；籤 NT$23",
           "icon": "shrine",
-          "tag": "神社"
+          "tag": "神社",
+          "photo": {
+            "src": "photos/day2.webp",
+            "alt": "北海道神宮本殿",
+            "credit": "宇宙碎片拍攝"
+          }
         },
         {
           "time": "17:00",
@@ -597,7 +612,14 @@
         "src": "photos/day2.webp",
         "alt": "北海道神宮本殿",
         "credit": "宇宙碎片拍攝"
-      }
+      },
+      "photos": [
+        {
+          "src": "photos/story-hokudai.webp",
+          "alt": "北海道大學札幌農學校演武場（時計台）",
+          "credit": "十字軍ちゃん / CC0"
+        }
+      ]
     },
     {
       "id": "day3",
@@ -659,7 +681,12 @@
           "desc": "賞夜景",
           "detail": "小樽站約17分；中央巴士套票（纜車來回＋巴士）NT$455；山頂滑索 NT$266、滑車 NT$133（至17:00）・合計約 NT$854",
           "icon": "sun",
-          "tag": "夜景"
+          "tag": "夜景",
+          "photo": {
+            "src": "photos/story-tenguyama.webp",
+            "alt": "小樽天狗山夜景展望",
+            "credit": "宇宙碎片拍攝"
+          }
         },
         {
           "time": "20:00",
@@ -686,7 +713,19 @@
         "src": "photos/day3.webp",
         "alt": "小樽運河",
         "credit": "宇宙碎片拍攝"
-      }
+      },
+      "photos": [
+        {
+          "src": "photos/story-tenguyama.webp",
+          "alt": "小樽天狗山夜景展望",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/food-letao.webp",
+          "alt": "LeTAO 小樽本店",
+          "credit": "663highland / CC BY-SA 4.0"
+        }
+      ]
     },
     {
       "id": "day4",
@@ -775,7 +814,14 @@
         "src": "photos/day4.webp",
         "alt": "札幌大通公園",
         "credit": "redlegsfan21 / CC BY-SA 2.0"
-      }
+      },
+      "photos": [
+        {
+          "src": "photos/food-kani.webp",
+          "alt": "北海道蟹飯丼",
+          "credit": "woinary / CC BY-SA 2.0"
+        }
+      ]
     },
     {
       "id": "day5",
@@ -829,7 +875,12 @@
           "desc": "Pizza 中餐",
           "detail": "中餐 NT$300・冰淇淋 NT$89",
           "icon": "food",
-          "tag": "午餐"
+          "tag": "午餐",
+          "photo": {
+            "src": "photos/day5.webp",
+            "alt": "富田農場花田",
+            "credit": "Douglas Perkins / CC BY 4.0"
+          }
         },
         {
           "time": "15:00",
@@ -878,7 +929,19 @@
         "src": "photos/day5.webp",
         "alt": "富田農場花田",
         "credit": "Douglas Perkins / CC BY 4.0"
-      }
+      },
+      "photos": [
+        {
+          "src": "photos/food-furano-cheese.webp",
+          "alt": "富良野起司工廠起司",
+          "credit": "Adam Jones / CC BY-SA 2.0"
+        },
+        {
+          "src": "photos/story-furano-wine.webp",
+          "alt": "富良野葡萄酒工房酒窖",
+          "credit": "宇宙碎片拍攝"
+        }
+      ]
     },
     {
       "id": "day6",
@@ -908,7 +971,12 @@
           "desc": "租電動自行車巡禮",
           "detail": "美瑛町本町；電動車 NT$400（當日實際）",
           "icon": "walk",
-          "tag": "單車"
+          "tag": "單車",
+          "photo": {
+            "src": "photos/day6.webp",
+            "alt": "美瑛白金青池",
+            "credit": "AndyLeungHK / CC0"
+          }
         },
         {
           "time": "17:39",
@@ -951,7 +1019,14 @@
         "src": "photos/day6.webp",
         "alt": "美瑛白金青池",
         "credit": "AndyLeungHK / CC0"
-      }
+      },
+      "photos": [
+        {
+          "src": "photos/food-jingisukan.webp",
+          "alt": "成吉思汗烤羊肉",
+          "credit": "Raita Futo / CC BY 2.0"
+        }
+      ]
     },
     {
       "id": "day7",
@@ -996,7 +1071,12 @@
           "desc": "住宿／懷石晚餐",
           "detail": "本館一泊二食；台幣含稅・1房・NT$3,620；自助早餐",
           "icon": "hotel",
-          "tag": "♨️ 溫泉宿"
+          "tag": "♨️ 溫泉宿",
+          "photo": {
+            "src": "photos/day7.webp",
+            "alt": "定山溪大橋",
+            "credit": "t-konno / CC BY-SA 3.0"
+          }
         }
       ],
       "tips": [
