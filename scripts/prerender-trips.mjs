@@ -172,10 +172,17 @@ function chaptersHtml(items, tripId, themeMap) {
           .map(
             (p) =>
               `<figure class="ph ph--story-related ph--loaded"><img class="ph-img" src="${esc(assetUrl(tripId, p.src))}" alt="${esc(p.alt || story.title || '')}" loading="lazy" decoding="async"></figure>`
-          )
-          .join('');
-        const strip = related
-          ? `<div class="story-related-strip" role="list" aria-label="相關照片">${related}</div>`
+          );
+        const countClass =
+          related.length === 1
+            ? 'story-related-grid--1'
+            : related.length === 2
+              ? 'story-related-grid--2'
+              : related.length >= 3
+                ? 'story-related-grid--3'
+                : '';
+        const grid = related.length
+          ? `<div class="story-related-grid ${countClass}" role="list" aria-label="相關照片">${related.join('')}</div>`
           : '';
         return `
     <section class="story-chapter story-chapter--essay story-chapter--visible">
@@ -184,7 +191,7 @@ function chaptersHtml(items, tripId, themeMap) {
         <h2 class="story-chapter-title">${esc(story.title || '')}</h2>
         ${hero}
         <blockquote class="story-chapter-reflection">${esc(story.reflection)}</blockquote>
-        ${strip}
+        ${grid}
         <p class="story-chapter-body">${esc(story.body || '')}</p>
         ${source}
       </div>

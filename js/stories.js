@@ -91,15 +91,15 @@ function renderImmersiveChapter(story, index, tripId) {
     </section>`;
 }
 
-function relatedStripHtml(story, index, tripId, zoomGroup) {
+function relatedGridHtml(story, index, tripId, zoomGroup) {
   const related = (Array.isArray(story.relatedPhotos) ? story.relatedPhotos : [])
     .slice(0, RELATED_MAX)
     .map((p) => resolvePhoto(p, tripId, story.title))
     .filter(Boolean);
   if (!related.length) return '';
 
-  // Related thumbs start after main (index 0) in the same lightbox group.
-  const thumbs = related
+  // Related cards start after main (index 0) in the same lightbox group.
+  const cards = related
     .map((p, i) =>
       photoHtml(p, {
         className: 'ph--story-related',
@@ -110,10 +110,17 @@ function relatedStripHtml(story, index, tripId, zoomGroup) {
     )
     .join('');
 
-  return `<div class="story-related-strip" role="list" aria-label="相關照片">${thumbs}</div>`;
+  const countClass =
+    related.length === 1
+      ? 'story-related-grid--1'
+      : related.length === 2
+        ? 'story-related-grid--2'
+        : 'story-related-grid--3';
+
+  return `<div class="story-related-grid ${countClass}" role="list" aria-label="相關照片">${cards}</div>`;
 }
 
-/** 漂漂 essay: meta → hero → reflection → related strip → body → source. */
+/** 漂漂 essay: meta → hero → reflection → related grid → body → source. */
 function renderEssayChapter(story, index, tripId) {
   const zoomGroup = `story-${index}`;
   const photo = resolvePhoto(story.photo, tripId, story.title);
@@ -134,7 +141,7 @@ function renderEssayChapter(story, index, tripId) {
         <h2 class="story-chapter-title">${esc(story.title || '')}</h2>
         ${hero}
         <blockquote class="story-chapter-reflection">${esc(story.reflection)}</blockquote>
-        ${relatedStripHtml(story, index, tripId, zoomGroup)}
+        ${relatedGridHtml(story, index, tripId, zoomGroup)}
         <p class="story-chapter-body">${esc(story.body || '')}</p>
         ${sourceHtml(story)}
       </div>
