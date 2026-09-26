@@ -3415,7 +3415,7 @@ a.lodging-book:active {
     color: var(--text-secondary);
     font-family: var(--font-serif);
     font-size: var(--text-base);
-    line-height: var(--leading-relaxed, 1.75);
+    line-height: var(--leading-normal);
     font-weight: 400;
 }
 
