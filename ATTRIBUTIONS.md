@@ -99,6 +99,11 @@ CC BY / CC BY-SA 圖片依授權條款標示作者、來源與授權；CC BY-SA 
 | `story-tenguyama.webp` | 小樽天狗山夜景展望 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
 | `story-otaru-warehouse.webp` | 小樽運河北日本倉庫特寫 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
 | `story-otaru-canal-panorama.webp` | 小樽運河全景（瓦斯燈／步道） | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
+| `story-hokudai-building.webp` | 北海道大學校園歷史洋館 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
+| `story-hokudai-stream.webp` | 北海道大學校園溪流 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
+| `story-jingu-gate.webp` | 北海道神宮參道門與廣場 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
+| `story-jingu-courtyard.webp` | 北海道神宮境內庭院 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
+| `story-jozankei-river.webp` | 定山溪河谷 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
 | `story-furano-wine.webp` | 富良野葡萄酒工房酒窖 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
 | `food-letao.webp` | LeTAO 小樽本店 | 663highland | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:220721_LeTAO_Otaru_Hokkaido_Japan02s3.jpg) |
 | `food-kani.webp` | 北海道蟹飯丼 | woinary | [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Kani_meshi_don_by_woinary_in_New_Chitose_Airport,_Hokkaido.jpg) |

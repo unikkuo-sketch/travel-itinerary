@@ -120,7 +120,7 @@ function relatedGridHtml(story, index, tripId, zoomGroup) {
   return `<div class="story-related-grid ${countClass}" role="list" aria-label="相關照片">${cards}</div>`;
 }
 
-/** 漂漂 essay: meta → hero → reflection → related grid → body → source. */
+/** 漂漂 essay: meta → hero → reflection? → related grid → body → source. */
 function renderEssayChapter(story, index, tripId) {
   const zoomGroup = `story-${index}`;
   const photo = resolvePhoto(story.photo, tripId, story.title);
@@ -133,6 +133,9 @@ function renderEssayChapter(story, index, tripId) {
         zoomable: { group: zoomGroup, index: 0 },
       })
     : '';
+  const reflection = story.reflection
+    ? `<blockquote class="story-chapter-reflection">${esc(story.reflection)}</blockquote>`
+    : '';
 
   return `
     <section class="story-chapter story-chapter--essay">
@@ -140,7 +143,7 @@ function renderEssayChapter(story, index, tripId) {
         ${metaHtml(story, index)}
         <h2 class="story-chapter-title">${esc(story.title || '')}</h2>
         ${hero}
-        <blockquote class="story-chapter-reflection">${esc(story.reflection)}</blockquote>
+        ${reflection}
         ${relatedGridHtml(story, index, tripId, zoomGroup)}
         <p class="story-chapter-body">${esc(story.body || '')}</p>
         ${sourceHtml(story)}
@@ -148,8 +151,14 @@ function renderEssayChapter(story, index, tripId) {
     </section>`;
 }
 
+function hasEssayLayout(story) {
+  if (story.reflection) return true;
+  const related = Array.isArray(story.relatedPhotos) ? story.relatedPhotos : [];
+  return related.length > 0;
+}
+
 function renderChapter(story, index, tripId) {
-  if (story.reflection) return renderEssayChapter(story, index, tripId);
+  if (hasEssayLayout(story)) return renderEssayChapter(story, index, tripId);
   return renderImmersiveChapter(story, index, tripId);
 }
 

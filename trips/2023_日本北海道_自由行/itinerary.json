@@ -149,7 +149,19 @@
         "src": "photos/story-hokudai.webp",
         "alt": "北海道大學札幌農學校演武場（時計台）",
         "credit": "十字軍ちゃん / CC0"
-      }
+      },
+      "relatedPhotos": [
+        {
+          "src": "photos/story-hokudai-building.webp",
+          "alt": "北海道大學校園歷史洋館",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/story-hokudai-stream.webp",
+          "alt": "北海道大學校園溪流",
+          "credit": "宇宙碎片拍攝"
+        }
+      ]
     },
     {
       "theme": "history",
@@ -164,7 +176,19 @@
         "src": "photos/day2.webp",
         "alt": "北海道神宮本殿",
         "credit": "宇宙碎片拍攝"
-      }
+      },
+      "relatedPhotos": [
+        {
+          "src": "photos/story-jingu-gate.webp",
+          "alt": "北海道神宮參道門與廣場",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/story-jingu-courtyard.webp",
+          "alt": "北海道神宮境內庭院",
+          "credit": "宇宙碎片拍攝"
+        }
+      ]
     },
     {
       "theme": "place",
@@ -222,7 +246,19 @@
         "src": "photos/day7.webp",
         "alt": "定山溪大橋",
         "credit": "t-konno / CC BY-SA 3.0"
-      }
+      },
+      "relatedPhotos": [
+        {
+          "src": "photos/jozankei-hotel-exterior.webp",
+          "alt": "定山溪豪景飯店外觀",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/story-jozankei-river.webp",
+          "alt": "定山溪河谷",
+          "credit": "宇宙碎片拍攝"
+        }
+      ]
     }
   ],
   "foods": [
