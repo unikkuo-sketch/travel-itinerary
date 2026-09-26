@@ -37,19 +37,37 @@ function renderEmpty(tripId) {
     </div>`;
 }
 
-function renderChapter(story, index, tripId) {
+function resolvePhoto(photo, tripId, title) {
+  if (!photo?.src) return null;
+  return {
+    src: tripAssetUrl(tripId, photo.src),
+    alt: photo.alt || title || '',
+    credit: photo.credit || '',
+    objectPosition: photo.objectPosition,
+    objectFit: photo.objectFit,
+    aspectRatio: photo.aspectRatio,
+  };
+}
+
+function metaHtml(story, index) {
   const n = String(index + 1).padStart(2, '0');
   const theme = THEME_LABEL[story.theme] || '';
-  const photo = story.photo
-    ? {
-        src: tripAssetUrl(tripId, story.photo.src),
-        alt: story.photo.alt || story.title || '',
-        credit: story.photo.credit || '',
-        objectPosition: story.photo.objectPosition,
-        objectFit: story.photo.objectFit,
-        aspectRatio: story.photo.aspectRatio,
-      }
-    : null;
+  return `
+    <div class="story-chapter-meta">
+      <span class="story-chapter-index" aria-hidden="true">${n}</span>
+      ${theme ? `<span class="story-chapter-theme">${esc(theme)}</span>` : ''}
+      ${story.kicker ? `<span class="story-chapter-kicker">${esc(story.kicker)}</span>` : ''}
+    </div>`;
+}
+
+function sourceHtml(story) {
+  if (!(story.source?.url && story.source?.label)) return '';
+  return `<a class="story-chapter-source" href="${esc(story.source.url)}" target="_blank" rel="noopener noreferrer">${esc(story.source.label)}</a>`;
+}
+
+/** Immersive full-bleed chapter (default when no reflection). */
+function renderImmersiveChapter(story, index, tripId) {
+  const photo = resolvePhoto(story.photo, tripId, story.title);
   const media = photo
     ? photoHtml(photo, {
         className: 'ph--story',
@@ -58,26 +76,62 @@ function renderChapter(story, index, tripId) {
         fetchPriority: index === 0 ? 'high' : undefined,
       })
     : '<div class="story-chapter-fallback" aria-hidden="true"></div>';
-  const source =
-    story.source?.url && story.source?.label
-      ? `<a class="story-chapter-source" href="${esc(story.source.url)}" target="_blank" rel="noopener noreferrer">${esc(story.source.label)}</a>`
-      : '';
 
   return `
     <section class="story-chapter">
       ${media}
       <div class="story-chapter-scrim" aria-hidden="true"></div>
       <div class="story-chapter-copy">
-        <div class="story-chapter-meta">
-          <span class="story-chapter-index" aria-hidden="true">${n}</span>
-          ${theme ? `<span class="story-chapter-theme">${esc(theme)}</span>` : ''}
-          ${story.kicker ? `<span class="story-chapter-kicker">${esc(story.kicker)}</span>` : ''}
-        </div>
+        ${metaHtml(story, index)}
         <h2 class="story-chapter-title">${esc(story.title || '')}</h2>
         <p class="story-chapter-body">${esc(story.body || '')}</p>
-        ${source}
+        ${sourceHtml(story)}
       </div>
     </section>`;
+}
+
+/** 漂漂 essay layout: meta → hero photo → reflection → body → optional inlines. */
+function renderEssayChapter(story, index, tripId) {
+  const photo = resolvePhoto(story.photo, tripId, story.title);
+  const hero = photo
+    ? photoHtml(photo, {
+        className: 'ph--story-hero',
+        eager: index === 0,
+        creditPosition: 'br',
+        fetchPriority: index === 0 ? 'high' : undefined,
+      })
+    : '';
+
+  const inlines = (Array.isArray(story.inlinePhotos) ? story.inlinePhotos : [])
+    .slice(0, 2)
+    .map((p) => resolvePhoto(p, tripId, story.title))
+    .filter(Boolean)
+    .map((p) =>
+      photoHtml(p, {
+        className: 'ph--story-inline',
+        eager: false,
+        creditPosition: 'br',
+      })
+    )
+    .join('');
+
+  return `
+    <section class="story-chapter story-chapter--essay">
+      <div class="story-chapter-essay">
+        ${metaHtml(story, index)}
+        <h2 class="story-chapter-title">${esc(story.title || '')}</h2>
+        ${hero}
+        <blockquote class="story-chapter-reflection">${esc(story.reflection)}</blockquote>
+        <p class="story-chapter-body">${esc(story.body || '')}</p>
+        ${sourceHtml(story)}
+        ${inlines ? `<div class="story-chapter-inlines">${inlines}</div>` : ''}
+      </div>
+    </section>`;
+}
+
+function renderChapter(story, index, tripId) {
+  if (story.reflection) return renderEssayChapter(story, index, tripId);
+  return renderImmersiveChapter(story, index, tripId);
 }
 
 function initReveal() {
