@@ -180,7 +180,19 @@
         "src": "photos/day3.webp",
         "alt": "小樽運河",
         "credit": "宇宙碎片拍攝"
-      }
+      },
+      "relatedPhotos": [
+        {
+          "src": "photos/story-otaru-warehouse.webp",
+          "alt": "小樽運河倉庫",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/story-otaru-canal-panorama.webp",
+          "alt": "小樽運河全景",
+          "credit": "宇宙碎片拍攝"
+        }
+      ]
     },
     {
       "theme": "place",
