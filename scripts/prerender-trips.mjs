@@ -166,14 +166,17 @@ function chaptersHtml(items, tripId, themeMap) {
         const hero = story.photo?.src
           ? `<figure class="ph ph--story-hero ph--loaded"><img class="ph-img" src="${esc(assetUrl(tripId, story.photo.src))}" alt="${esc(story.photo.alt || story.title || '')}" loading="${index === 0 ? 'eager' : 'lazy'}" decoding="async">${story.photo.credit ? `<span class="ph-credit ph-credit--br">${esc(story.photo.credit)}</span>` : ''}</figure>`
           : '';
-        const inlines = (Array.isArray(story.inlinePhotos) ? story.inlinePhotos : [])
-          .slice(0, 2)
+        const related = (Array.isArray(story.relatedPhotos) ? story.relatedPhotos : [])
+          .slice(0, 3)
           .filter((p) => p?.src)
           .map(
             (p) =>
-              `<figure class="ph ph--story-inline ph--loaded"><img class="ph-img" src="${esc(assetUrl(tripId, p.src))}" alt="${esc(p.alt || story.title || '')}" loading="lazy" decoding="async">${p.credit ? `<span class="ph-credit ph-credit--br">${esc(p.credit)}</span>` : ''}</figure>`
+              `<figure class="ph ph--story-related ph--loaded"><img class="ph-img" src="${esc(assetUrl(tripId, p.src))}" alt="${esc(p.alt || story.title || '')}" loading="lazy" decoding="async"></figure>`
           )
           .join('');
+        const strip = related
+          ? `<div class="story-related-strip" role="list" aria-label="相關照片">${related}</div>`
+          : '';
         return `
     <section class="story-chapter story-chapter--essay story-chapter--visible">
       <div class="story-chapter-essay">
@@ -181,9 +184,9 @@ function chaptersHtml(items, tripId, themeMap) {
         <h2 class="story-chapter-title">${esc(story.title || '')}</h2>
         ${hero}
         <blockquote class="story-chapter-reflection">${esc(story.reflection)}</blockquote>
+        ${strip}
         <p class="story-chapter-body">${esc(story.body || '')}</p>
         ${source}
-        ${inlines ? `<div class="story-chapter-inlines">${inlines}</div>` : ''}
       </div>
     </section>`;
       }

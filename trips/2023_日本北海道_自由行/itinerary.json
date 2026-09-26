@@ -180,7 +180,14 @@
         "src": "photos/day3.webp",
         "alt": "小樽運河",
         "credit": "宇宙碎片拍攝"
-      }
+      },
+      "relatedPhotos": [
+        {
+          "src": "photos/story-tenguyama.webp",
+          "alt": "小樽天狗山夜景展望",
+          "credit": "宇宙碎片拍攝"
+        }
+      ]
     },
     {
       "theme": "place",

@@ -1,6 +1,6 @@
 import { getTripId, loadTrip, tripUrl } from './load-trip.js';
 import { icon } from './icons.js';
-import { esc, photoHtml, tripAssetUrl } from './photo.js';
+import { esc, initPhotoLightbox, photoHtml, tripAssetUrl } from './photo.js';
 import { applyPageMeta, tripCanonicalUrl, tripOgImage, tripPageMeta } from './seo.js';
 
 const root = document.getElementById('stories-root');
@@ -8,6 +8,7 @@ const heroTitle = document.getElementById('stories-trip-title');
 const heroEl = document.querySelector('.hero-stories');
 
 const THEME_LABEL = { place: '景點', history: '歷史', culture: '文化' };
+const RELATED_MAX = 3;
 
 function mountHeroBack(tripId) {
   if (!heroEl || heroEl.querySelector('.hero-back')) return;
@@ -90,8 +91,31 @@ function renderImmersiveChapter(story, index, tripId) {
     </section>`;
 }
 
-/** 漂漂 essay layout: meta → hero photo → reflection → body → optional inlines. */
+function relatedStripHtml(story, index, tripId, zoomGroup) {
+  const related = (Array.isArray(story.relatedPhotos) ? story.relatedPhotos : [])
+    .slice(0, RELATED_MAX)
+    .map((p) => resolvePhoto(p, tripId, story.title))
+    .filter(Boolean);
+  if (!related.length) return '';
+
+  // Related thumbs start after main (index 0) in the same lightbox group.
+  const thumbs = related
+    .map((p, i) =>
+      photoHtml(p, {
+        className: 'ph--story-related',
+        eager: false,
+        creditPosition: 'br',
+        zoomable: { group: zoomGroup, index: i + 1 },
+      })
+    )
+    .join('');
+
+  return `<div class="story-related-strip" role="list" aria-label="相關照片">${thumbs}</div>`;
+}
+
+/** 漂漂 essay: meta → hero → reflection → related strip → body → source. */
 function renderEssayChapter(story, index, tripId) {
+  const zoomGroup = `story-${index}`;
   const photo = resolvePhoto(story.photo, tripId, story.title);
   const hero = photo
     ? photoHtml(photo, {
@@ -99,21 +123,9 @@ function renderEssayChapter(story, index, tripId) {
         eager: index === 0,
         creditPosition: 'br',
         fetchPriority: index === 0 ? 'high' : undefined,
+        zoomable: { group: zoomGroup, index: 0 },
       })
     : '';
-
-  const inlines = (Array.isArray(story.inlinePhotos) ? story.inlinePhotos : [])
-    .slice(0, 2)
-    .map((p) => resolvePhoto(p, tripId, story.title))
-    .filter(Boolean)
-    .map((p) =>
-      photoHtml(p, {
-        className: 'ph--story-inline',
-        eager: false,
-        creditPosition: 'br',
-      })
-    )
-    .join('');
 
   return `
     <section class="story-chapter story-chapter--essay">
@@ -122,9 +134,9 @@ function renderEssayChapter(story, index, tripId) {
         <h2 class="story-chapter-title">${esc(story.title || '')}</h2>
         ${hero}
         <blockquote class="story-chapter-reflection">${esc(story.reflection)}</blockquote>
+        ${relatedStripHtml(story, index, tripId, zoomGroup)}
         <p class="story-chapter-body">${esc(story.body || '')}</p>
         ${sourceHtml(story)}
-        ${inlines ? `<div class="story-chapter-inlines">${inlines}</div>` : ''}
       </div>
     </section>`;
 }
@@ -188,6 +200,7 @@ async function init() {
 
     root.innerHTML = stories.map((s, i) => renderChapter(s, i, tripId)).join('');
     initReveal();
+    initPhotoLightbox();
   } catch (err) {
     showError(err.message);
   }
