@@ -161,12 +161,13 @@ function chaptersHtml(items, tripId, themeMap) {
           ? `<a class="story-chapter-source" href="${esc(story.source.url)}" target="_blank" rel="noopener noreferrer">${esc(story.source.label)}</a>`
           : '';
 
-      // Essay layout when reflection is present (stories pilot; foods unchanged)
-      if (story.reflection) {
+      // Essay layout when reflection or relatedPhotos present (Layout A; foods unchanged)
+      const relatedList = Array.isArray(story.relatedPhotos) ? story.relatedPhotos : [];
+      if (story.reflection || relatedList.length) {
         const hero = story.photo?.src
           ? `<figure class="ph ph--story-hero ph--loaded"><img class="ph-img" src="${esc(assetUrl(tripId, story.photo.src))}" alt="${esc(story.photo.alt || story.title || '')}" loading="${index === 0 ? 'eager' : 'lazy'}" decoding="async">${story.photo.credit ? `<span class="ph-credit ph-credit--br">${esc(story.photo.credit)}</span>` : ''}</figure>`
           : '';
-        const related = (Array.isArray(story.relatedPhotos) ? story.relatedPhotos : [])
+        const related = relatedList
           .slice(0, 3)
           .filter((p) => p?.src)
           .map(
@@ -184,13 +185,16 @@ function chaptersHtml(items, tripId, themeMap) {
         const grid = related.length
           ? `<div class="story-related-grid ${countClass}" role="list" aria-label="相關照片">${related.join('')}</div>`
           : '';
+        const reflection = story.reflection
+          ? `<blockquote class="story-chapter-reflection">${esc(story.reflection)}</blockquote>`
+          : '';
         return `
     <section class="story-chapter story-chapter--essay story-chapter--visible">
       <div class="story-chapter-essay">
         ${meta}
         <h2 class="story-chapter-title">${esc(story.title || '')}</h2>
         ${hero}
-        <blockquote class="story-chapter-reflection">${esc(story.reflection)}</blockquote>
+        ${reflection}
         ${grid}
         <p class="story-chapter-body">${esc(story.body || '')}</p>
         ${source}
