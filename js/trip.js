@@ -3,6 +3,7 @@ import { renderItinerary } from './render.js';
 import { mountNav, initNavScroll } from './nav.js';
 import { initMap } from './map.js';
 import { icon } from './icons.js';
+import { initPhotoLightbox } from './photo.js';
 import { applyPageMeta, tripCanonicalUrl, tripOgImage, tripPageMeta } from './seo.js';
 
 function initAppIcons() {
@@ -63,6 +64,7 @@ async function init() {
     initNavScroll();
     initTimelineAnimation();
     initAppIcons();
+    initPhotoLightbox();
   } catch {
     showError();
   }

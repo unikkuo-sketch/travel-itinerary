@@ -192,17 +192,23 @@ function renderRouteStrip(overview, meta) {
   return `${regions}<div class="route-strip-track" role="list">${chips}</div>`;
 }
 
-function renderLodgingDetailStrip(photos, tripId) {
+function renderLodgingDetailStrip(photos, tripId, zoomableBase = null) {
   if (!Array.isArray(photos) || !photos.length) return '';
   // Horizontal scroll strip; itinerary controls count (no hard 1–2 cap).
+  // Phase 1.1: each thumb is a zoom trigger in the same gallery as hotelPhoto.
+  let index = zoomableBase?.startIndex ?? 0;
   const figs = photos
     .filter((p) => p?.src)
-    .map((p) =>
-      photoHtml(
+    .map((p) => {
+      const zoomable =
+        zoomableBase?.group != null
+          ? { group: zoomableBase.group, index: index++ }
+          : false;
+      return photoHtml(
         { ...p, src: tripAssetUrl(tripId, p.src) },
-        { className: 'ph--lodging-detail' }
-      )
-    )
+        { className: 'ph--lodging-detail', zoomable }
+      );
+    })
     .join('');
   if (!figs) return '';
   return `<div class="lodging-detail-strip">${figs}</div>`;
@@ -224,7 +230,16 @@ function renderLodging(overview, tripId) {
       const note = r.hotelNote
         ? `<p class="lodging-note">${esc(r.hotelNote)}</p>`
         : '';
-      const detailStrip = renderLodgingDetailStrip(r.hotelPhotos, tripId);
+      // Phase 1.1 lightbox gallery = hotelPhoto + hotelPhotos for this night only.
+      const galleryGroup = `lodging-d${r.day}`;
+      let galleryIndex = 0;
+      const mainZoomable = r.hotelPhoto?.src
+        ? { group: galleryGroup, index: galleryIndex++ }
+        : null;
+      const detailStrip = renderLodgingDetailStrip(r.hotelPhotos, tripId, {
+        group: galleryGroup,
+        startIndex: galleryIndex,
+      });
       // Expandable narrative: teaser collapsed by default; full hotelBlurb + hotelPhotos on open.
       // Nights without blurb stay plain rows (no empty details).
       let narrative = '';
@@ -260,7 +275,7 @@ function renderLodging(overview, tripId) {
       if (r.hotelPhoto?.src) {
         const thumb = photoHtml(
           { ...r.hotelPhoto, src: tripAssetUrl(tripId, r.hotelPhoto.src) },
-          { className: 'ph--lodging-thumb' }
+          { className: 'ph--lodging-thumb', zoomable: mainZoomable }
         );
         return `
     <article class="lodging-card lodging-card--photo">
