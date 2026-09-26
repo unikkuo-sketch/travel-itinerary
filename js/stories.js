@@ -1,6 +1,6 @@
 import { getTripId, loadTrip, tripUrl } from './load-trip.js';
 import { icon } from './icons.js';
-import { esc, photoHtml, tripAssetUrl } from './photo.js';
+import { esc, initPhotoLightbox, photoHtml, tripAssetUrl } from './photo.js';
 import { applyPageMeta, tripCanonicalUrl, tripOgImage, tripPageMeta } from './seo.js';
 
 const root = document.getElementById('stories-root');
@@ -8,6 +8,7 @@ const heroTitle = document.getElementById('stories-trip-title');
 const heroEl = document.querySelector('.hero-stories');
 
 const THEME_LABEL = { place: '景點', history: '歷史', culture: '文化' };
+const RELATED_MAX = 3;
 
 function mountHeroBack(tripId) {
   if (!heroEl || heroEl.querySelector('.hero-back')) return;
@@ -37,19 +38,37 @@ function renderEmpty(tripId) {
     </div>`;
 }
 
-function renderChapter(story, index, tripId) {
+function resolvePhoto(photo, tripId, title) {
+  if (!photo?.src) return null;
+  return {
+    src: tripAssetUrl(tripId, photo.src),
+    alt: photo.alt || title || '',
+    credit: photo.credit || '',
+    objectPosition: photo.objectPosition,
+    objectFit: photo.objectFit,
+    aspectRatio: photo.aspectRatio,
+  };
+}
+
+function metaHtml(story, index) {
   const n = String(index + 1).padStart(2, '0');
   const theme = THEME_LABEL[story.theme] || '';
-  const photo = story.photo
-    ? {
-        src: tripAssetUrl(tripId, story.photo.src),
-        alt: story.photo.alt || story.title || '',
-        credit: story.photo.credit || '',
-        objectPosition: story.photo.objectPosition,
-        objectFit: story.photo.objectFit,
-        aspectRatio: story.photo.aspectRatio,
-      }
-    : null;
+  return `
+    <div class="story-chapter-meta">
+      <span class="story-chapter-index" aria-hidden="true">${n}</span>
+      ${theme ? `<span class="story-chapter-theme">${esc(theme)}</span>` : ''}
+      ${story.kicker ? `<span class="story-chapter-kicker">${esc(story.kicker)}</span>` : ''}
+    </div>`;
+}
+
+function sourceHtml(story) {
+  if (!(story.source?.url && story.source?.label)) return '';
+  return `<a class="story-chapter-source" href="${esc(story.source.url)}" target="_blank" rel="noopener noreferrer">${esc(story.source.label)}</a>`;
+}
+
+/** Immersive full-bleed chapter (default when no reflection). */
+function renderImmersiveChapter(story, index, tripId) {
+  const photo = resolvePhoto(story.photo, tripId, story.title);
   const media = photo
     ? photoHtml(photo, {
         className: 'ph--story',
@@ -58,26 +77,80 @@ function renderChapter(story, index, tripId) {
         fetchPriority: index === 0 ? 'high' : undefined,
       })
     : '<div class="story-chapter-fallback" aria-hidden="true"></div>';
-  const source =
-    story.source?.url && story.source?.label
-      ? `<a class="story-chapter-source" href="${esc(story.source.url)}" target="_blank" rel="noopener noreferrer">${esc(story.source.label)}</a>`
-      : '';
 
   return `
     <section class="story-chapter">
       ${media}
       <div class="story-chapter-scrim" aria-hidden="true"></div>
       <div class="story-chapter-copy">
-        <div class="story-chapter-meta">
-          <span class="story-chapter-index" aria-hidden="true">${n}</span>
-          ${theme ? `<span class="story-chapter-theme">${esc(theme)}</span>` : ''}
-          ${story.kicker ? `<span class="story-chapter-kicker">${esc(story.kicker)}</span>` : ''}
-        </div>
+        ${metaHtml(story, index)}
         <h2 class="story-chapter-title">${esc(story.title || '')}</h2>
         <p class="story-chapter-body">${esc(story.body || '')}</p>
-        ${source}
+        ${sourceHtml(story)}
       </div>
     </section>`;
+}
+
+function relatedGridHtml(story, index, tripId, zoomGroup) {
+  const related = (Array.isArray(story.relatedPhotos) ? story.relatedPhotos : [])
+    .slice(0, RELATED_MAX)
+    .map((p) => resolvePhoto(p, tripId, story.title))
+    .filter(Boolean);
+  if (!related.length) return '';
+
+  // Related cards start after main (index 0) in the same lightbox group.
+  const cards = related
+    .map((p, i) =>
+      photoHtml(p, {
+        className: 'ph--story-related',
+        eager: false,
+        creditPosition: 'br',
+        zoomable: { group: zoomGroup, index: i + 1 },
+      })
+    )
+    .join('');
+
+  const countClass =
+    related.length === 1
+      ? 'story-related-grid--1'
+      : related.length === 2
+        ? 'story-related-grid--2'
+        : 'story-related-grid--3';
+
+  return `<div class="story-related-grid ${countClass}" role="list" aria-label="相關照片">${cards}</div>`;
+}
+
+/** 漂漂 essay: meta → hero → reflection → related grid → body → source. */
+function renderEssayChapter(story, index, tripId) {
+  const zoomGroup = `story-${index}`;
+  const photo = resolvePhoto(story.photo, tripId, story.title);
+  const hero = photo
+    ? photoHtml(photo, {
+        className: 'ph--story-hero',
+        eager: index === 0,
+        creditPosition: 'br',
+        fetchPriority: index === 0 ? 'high' : undefined,
+        zoomable: { group: zoomGroup, index: 0 },
+      })
+    : '';
+
+  return `
+    <section class="story-chapter story-chapter--essay">
+      <div class="story-chapter-essay">
+        ${metaHtml(story, index)}
+        <h2 class="story-chapter-title">${esc(story.title || '')}</h2>
+        ${hero}
+        <blockquote class="story-chapter-reflection">${esc(story.reflection)}</blockquote>
+        ${relatedGridHtml(story, index, tripId, zoomGroup)}
+        <p class="story-chapter-body">${esc(story.body || '')}</p>
+        ${sourceHtml(story)}
+      </div>
+    </section>`;
+}
+
+function renderChapter(story, index, tripId) {
+  if (story.reflection) return renderEssayChapter(story, index, tripId);
+  return renderImmersiveChapter(story, index, tripId);
 }
 
 function initReveal() {
@@ -134,6 +207,7 @@ async function init() {
 
     root.innerHTML = stories.map((s, i) => renderChapter(s, i, tripId)).join('');
     initReveal();
+    initPhotoLightbox();
   } catch (err) {
     showError(err.message);
   }

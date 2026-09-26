@@ -97,6 +97,8 @@ CC BY / CC BY-SA 圖片依授權條款標示作者、來源與授權；CC BY-SA 
 | `jozankei-breakfast-space.webp` | 定山溪豪景早餐餐廳窗景（已模糊可辨識臉） | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（`hotelPhotos`） |
 | `story-hokudai.webp` | 北海道大學札幌農學校演武場（時計台） | 十字軍ちゃん | [CC0](https://creativecommons.org/publicdomain/zero/1.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Hokkaido_University_clocktower.jpg) |
 | `story-tenguyama.webp` | 小樽天狗山夜景展望 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
+| `story-otaru-warehouse.webp` | 小樽運河北日本倉庫特寫 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
+| `story-otaru-canal-panorama.webp` | 小樽運河全景（瓦斯燈／步道） | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
 | `story-furano-wine.webp` | 富良野葡萄酒工房酒窖 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
 | `food-letao.webp` | LeTAO 小樽本店 | 663highland | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:220721_LeTAO_Otaru_Hokkaido_Japan02s3.jpg) |
 | `food-kani.webp` | 北海道蟹飯丼 | woinary | [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Kani_meshi_don_by_woinary_in_New_Chitose_Airport,_Hokkaido.jpg) |

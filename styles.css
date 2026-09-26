@@ -3349,6 +3349,154 @@ a.lodging-book:active {
     border-bottom-color: rgba(251, 254, 251, 0.7);
 }
 
+/* 漂漂 essay layout — chapters with reflection (pilot) */
+.story-chapter--essay {
+    min-height: 0;
+    display: block;
+    align-items: unset;
+    overflow: visible;
+    padding: 2.5rem 0 3rem;
+    background: var(--bg-page);
+}
+
+.story-chapter--essay + .story-chapter--essay {
+    border-top: 1px solid var(--border-soft);
+}
+
+.story-chapter-essay {
+    width: min(42rem, calc(100% - 2.5rem));
+    margin: 0 auto;
+}
+
+.story-chapter--essay .story-chapter-meta {
+    margin-bottom: 0.5rem;
+}
+
+.story-chapter--essay .story-chapter-index {
+    color: var(--text-muted);
+    opacity: 1;
+}
+
+.story-chapter--essay .story-chapter-theme {
+    color: var(--accent-dark);
+}
+
+.story-chapter--essay .story-chapter-kicker {
+    color: var(--text-secondary);
+    opacity: 1;
+}
+
+.story-chapter--essay .story-chapter-title {
+    color: var(--text-primary);
+    margin: 0 0 1.15rem;
+}
+
+.story-chapter--essay .ph--story-hero {
+    position: relative;
+    inset: auto;
+    width: 100%;
+    height: clamp(200px, 42vw, 280px);
+    margin: 0 0 1.15rem;
+    border-radius: 0;
+    overflow: hidden;
+}
+
+.story-chapter--essay > .story-chapter-essay > .ph-zoom-trigger {
+    display: block;
+    width: 100%;
+    margin: 0 0 1.15rem;
+}
+
+.story-chapter--essay > .story-chapter-essay > .ph-zoom-trigger .ph--story-hero {
+    margin: 0;
+}
+
+.story-chapter--essay .ph--story-hero .ph-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 45%;
+}
+
+.story-chapter-reflection {
+    margin: 0 0 1.25rem;
+    padding: 0.35rem 0 0.35rem 1.05rem;
+    border-left: 3px solid var(--accent);
+    color: var(--text-secondary);
+    font-family: var(--font-serif);
+    font-size: var(--text-base);
+    line-height: var(--leading-normal);
+    font-weight: 400;
+}
+
+.story-related-grid {
+    display: grid;
+    gap: 0.65rem;
+    margin: 0 0 1.35rem;
+}
+
+.story-related-grid--1 {
+    grid-template-columns: 1fr;
+    max-width: 22rem;
+}
+
+.story-related-grid--2 {
+    grid-template-columns: 1fr 1fr;
+}
+
+.story-related-grid--3 {
+    grid-template-columns: 1fr 1fr;
+}
+
+.story-related-grid--3 > :nth-child(3) {
+    grid-column: 1 / -1;
+    max-width: calc(50% - 0.325rem);
+    justify-self: center;
+}
+
+.story-related-grid > .ph-zoom-trigger,
+.story-related-grid > .ph--story-related {
+    width: 100%;
+    min-width: 0;
+}
+
+.story-chapter--essay .ph--story-related {
+    position: relative;
+    inset: auto;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 3;
+    margin: 0;
+    border-radius: var(--radius-sm);
+    overflow: hidden;
+}
+
+.story-chapter--essay .ph--story-related .ph-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.story-related-grid .ph-credit {
+    font-size: var(--text-xs);
+}
+
+.story-chapter--essay .story-chapter-body {
+    color: var(--text-primary);
+    opacity: 1;
+    max-width: none;
+}
+
+.story-chapter--essay .story-chapter-source {
+    color: var(--accent-dark);
+    border-bottom-color: color-mix(in srgb, var(--accent) 35%, transparent);
+}
+
+.story-chapter--essay .story-chapter-source:hover {
+    color: var(--accent);
+    border-bottom-color: var(--accent);
+}
+
 .stories-empty {
     text-align: center;
     padding: 4.5rem 1.5rem 5rem;
@@ -3376,6 +3524,34 @@ a.lodging-book:active {
     .story-chapter-copy {
         width: 100%;
         padding: 2.75rem 1.15rem 2.25rem;
+    }
+
+    .story-chapter--essay {
+        min-height: 0;
+        padding: 2rem 0 2.5rem;
+    }
+
+    .story-chapter-essay {
+        width: calc(100% - 2.3rem);
+    }
+
+    .story-chapter--essay .ph--story-hero {
+        height: clamp(200px, 55vw, 260px);
+    }
+
+    .story-related-grid {
+        gap: 0.5rem;
+    }
+
+    .story-related-grid--3 > :nth-child(3) {
+        max-width: none;
+        justify-self: stretch;
+    }
+}
+
+@media (min-width: 641px) {
+    .story-chapter--essay .ph--story-hero {
+        height: clamp(280px, 32vw, 400px);
     }
 }
 

@@ -171,15 +171,28 @@
       "title": "小樽運河與天狗山",
       "kicker": "小樽",
       "body": "石造倉庫與運河燈影是小樽的名片；午後轉往天狗山，纜車上看石狩灣夜景。本趟以中央巴士套票串起纜車與巴士，把海港與山脊收在同一天。",
+      "reflection": "白天走到運河岸，石造倉庫跟藍鐵皮屋頂一排排貼著水面，人不多，步道可以慢慢走。瓦斯燈與倉庫牆靠得很近，比明信片更有港邊工業味。運河本身適合白天慢慢逛；夜景另算天狗山那一段。",
       "source": {
         "label": "小樽市総合博物館・観光情報",
         "url": "https://otaru.gr.jp/"
       },
       "photo": {
-        "src": "photos/story-tenguyama.webp",
-        "alt": "小樽天狗山夜景展望",
+        "src": "photos/day3.webp",
+        "alt": "小樽運河",
         "credit": "宇宙碎片拍攝"
-      }
+      },
+      "relatedPhotos": [
+        {
+          "src": "photos/story-otaru-warehouse.webp",
+          "alt": "小樽運河倉庫",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/story-otaru-canal-panorama.webp",
+          "alt": "小樽運河全景",
+          "credit": "宇宙碎片拍攝"
+        }
+      ]
     },
     {
       "theme": "place",
