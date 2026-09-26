@@ -3410,8 +3410,8 @@ a.lodging-book:active {
 
 .story-chapter-reflection {
     margin: 0 0 1.25rem;
-    padding: 0.15rem 0 0.15rem 1rem;
-    border-left: 3px solid color-mix(in srgb, var(--accent) 70%, transparent);
+    padding: 0.35rem 0 0.35rem 1.05rem;
+    border-left: 3px solid var(--accent);
     color: var(--text-secondary);
     font-family: var(--font-serif);
     font-size: var(--text-base);
