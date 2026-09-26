@@ -3401,6 +3401,16 @@ a.lodging-book:active {
     overflow: hidden;
 }
 
+.story-chapter--essay > .story-chapter-essay > .ph-zoom-trigger {
+    display: block;
+    width: 100%;
+    margin: 0 0 1.15rem;
+}
+
+.story-chapter--essay > .story-chapter-essay > .ph-zoom-trigger .ph--story-hero {
+    margin: 0;
+}
+
 .story-chapter--essay .ph--story-hero .ph-img {
     width: 100%;
     height: 100%;
