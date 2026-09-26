@@ -208,6 +208,128 @@ h3 { font-size: var(--text-lg); }
     pointer-events: none;
 }
 
+/* Phase 1.1 — lodging photo zoom trigger + shared dialog lightbox */
+.ph-zoom-trigger {
+    display: block;
+    padding: 0;
+    margin: 0;
+    border: none;
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    text-align: inherit;
+    cursor: zoom-in;
+    border-radius: inherit;
+}
+
+.ph-zoom-trigger:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+}
+
+.ph-lightbox {
+    position: fixed;
+    inset: 0;
+    width: min(96vw, 1100px);
+    max-width: 96vw;
+    max-height: calc(100dvh - 2rem);
+    margin: auto;
+    padding: 3rem 3.25rem 1.25rem;
+    border: none;
+    background: transparent;
+    color: var(--bg-page);
+    overflow: visible;
+}
+
+.ph-lightbox::backdrop {
+    background: rgba(var(--shadow-color), 0.72);
+}
+
+.ph-lightbox__img {
+    display: block;
+    margin: 0 auto;
+    max-width: min(100%, calc(100dvh - 4rem));
+    max-height: min(100%, calc(100dvh - 4rem));
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    border-radius: var(--radius-sm);
+    box-shadow: var(--shadow-lg);
+}
+
+.ph-lightbox__credit {
+    margin: 0.75rem 0 0;
+    text-align: center;
+    font-family: var(--font-sans);
+    font-size: var(--text-xs);
+    letter-spacing: 0.03em;
+    color: rgba(251, 254, 251, 0.88);
+}
+
+.ph-lightbox__credit:empty,
+.ph-lightbox__credit[hidden] {
+    display: none;
+}
+
+.ph-lightbox__close,
+.ph-lightbox__prev,
+.ph-lightbox__next {
+    position: absolute;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 44px;
+    min-height: 44px;
+    padding: 0;
+    border: 1px solid color-mix(in srgb, var(--bg-page) 35%, transparent);
+    border-radius: 999px;
+    background: color-mix(in srgb, var(--text-primary) 42%, transparent);
+    color: var(--bg-page);
+    font-size: 1.35rem;
+    line-height: 1;
+    cursor: pointer;
+    transition: background var(--transition-fast), border-color var(--transition-fast);
+}
+
+.ph-lightbox__close:hover,
+.ph-lightbox__prev:hover,
+.ph-lightbox__next:hover {
+    background: color-mix(in srgb, var(--text-primary) 62%, transparent);
+    border-color: color-mix(in srgb, var(--bg-page) 55%, transparent);
+}
+
+.ph-lightbox__close:focus-visible,
+.ph-lightbox__prev:focus-visible,
+.ph-lightbox__next:focus-visible {
+    outline: 2px solid var(--accent-light);
+    outline-offset: 2px;
+}
+
+.ph-lightbox__close {
+    top: 0.15rem;
+    right: 0.15rem;
+    font-size: 1.5rem;
+}
+
+.ph-lightbox__prev,
+.ph-lightbox__next {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.ph-lightbox__prev {
+    left: 0.15rem;
+}
+
+.ph-lightbox__next {
+    right: 0.15rem;
+}
+
+.ph-lightbox__prev[hidden],
+.ph-lightbox__next[hidden] {
+    display: none;
+}
+
 .ph--fallback {
     display: flex;
     align-items: center;
@@ -664,9 +786,14 @@ h3 { font-size: var(--text-lg); }
     gap: 1.15rem;
 }
 
-.lodging-card--photo .ph--lodging-thumb {
+.lodging-card--photo > .ph-zoom-trigger {
     flex-shrink: 0;
     width: 128px;
+    border-radius: 8px;
+}
+
+.lodging-card--photo .ph--lodging-thumb {
+    width: 100%;
     aspect-ratio: 3 / 4;
     border-radius: 8px;
 }
@@ -687,9 +814,14 @@ h3 { font-size: var(--text-lg); }
     scrollbar-width: thin;
 }
 
-.lodging-detail-strip .ph--lodging-detail {
+.lodging-detail-strip .ph-zoom-trigger {
     flex: 0 0 auto;
     width: min(148px, 42vw);
+    border-radius: 6px;
+}
+
+.lodging-detail-strip .ph--lodging-detail {
+    width: 100%;
     aspect-ratio: 4 / 3;
     border-radius: 6px;
 }
@@ -875,9 +1007,33 @@ a.lodging-book:active {
         gap: 0.85rem;
     }
 
+    .lodging-card--photo > .ph-zoom-trigger {
+        width: 100%;
+    }
+
     .lodging-card--photo .ph--lodging-thumb {
         width: 100%;
         aspect-ratio: 16 / 9;
+    }
+
+    .ph-lightbox {
+        padding: 3rem 0.75rem 1rem;
+        width: min(100vw - 1rem, 1100px);
+    }
+
+    .ph-lightbox__prev,
+    .ph-lightbox__next {
+        top: auto;
+        bottom: 0.25rem;
+        transform: none;
+    }
+
+    .ph-lightbox__prev {
+        left: 0.75rem;
+    }
+
+    .ph-lightbox__next {
+        right: 0.75rem;
     }
 }
 
@@ -3275,6 +3431,12 @@ a.lodging-book:active {
         opacity: 1;
         transition: none;
         transform: none !important;
+    }
+
+    .ph-lightbox__close,
+    .ph-lightbox__prev,
+    .ph-lightbox__next {
+        transition: none;
     }
 
     .ticket-status,
