@@ -319,7 +319,19 @@
         "src": "photos/food-letao.webp",
         "alt": "LeTAO 小樽本店",
         "credit": "663highland / CC BY-SA 4.0"
-      }
+      },
+      "relatedPhotos": [
+        {
+          "src": "photos/food-letao-double-cheese-plate.webp",
+          "alt": "小樽 LeTAO 本店甜點拼盤：雙層起司蛋糕、草莓塔與哈密瓜蛋糕",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/food-letao-montblanc-plate.webp",
+          "alt": "小樽 LeTAO 本店盤面：蒙布朗、雙層起司蛋糕與水果果凍杯",
+          "credit": "宇宙碎片拍攝"
+        }
+      ]
     },
     {
       "theme": "food",
