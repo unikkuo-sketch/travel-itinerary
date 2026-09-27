@@ -164,10 +164,22 @@
         "url": "https://www.ritsurinpark.jp/"
       },
       "photo": {
-        "src": "photos/day1.webp",
-        "alt": "栗林公園池畔庭園",
-        "credit": "KimonBerlin / CC BY-SA 2.0"
-      }
+        "src": "photos/day1-ritsurin-pond.webp",
+        "alt": "栗林公園池畔松樹與倒影",
+        "credit": "宇宙碎片拍攝"
+      },
+      "relatedPhotos": [
+        {
+          "src": "photos/story-ritsurin-bridge.webp",
+          "alt": "栗林公園園內松與木橋／水面",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/story-ritsurin-stone.webp",
+          "alt": "栗林公園園內石碑近景",
+          "credit": "宇宙碎片拍攝"
+        }
+      ]
     },
     {
       "theme": "place",
@@ -577,9 +589,9 @@
         "✅ <strong>住宿</strong>：Hostel JAQ，隔天往高松港方便"
       ],
       "photo": {
-        "src": "photos/day1.webp",
-        "alt": "栗林公園池畔松林",
-        "credit": "KimonBerlin / CC BY-SA 2.0"
+        "src": "photos/day1-ritsurin-pond.webp",
+        "alt": "栗林公園池畔松樹與倒影",
+        "credit": "宇宙碎片拍攝"
       }
     },
     {

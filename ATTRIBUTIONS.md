@@ -55,7 +55,10 @@ CC BY / CC BY-SA 圖片依授權條款標示作者、來源與授權；CC BY-SA 
 | 檔案 | 內容 | 作者 | 授權 | 來源 |
 |---|---|---|---|---|
 | `cover.webp` | 小豆島天使之路沙洲與前島 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（來源 `天使之路.jpg`） |
-| `day1.webp` | 栗林公園池畔松林 | KimonBerlin | [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Ritsurin_Garden,_Takamatsu_3-27_(26501902471).jpg) |
+| `day1.webp` | 栗林公園池畔松樹與倒影（與 `day1-ritsurin-pond.webp` 同檔） | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（覆寫原 Wikimedia 第三方圖，避免舊路徑誤用） |
+| `day1-ritsurin-pond.webp` | 栗林公園池畔松樹與倒影 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
+| `story-ritsurin-bridge.webp` | 栗林公園園內松與木橋／水面 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
+| `story-ritsurin-stone.webp` | 栗林公園園內石碑近景 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
 | `day2.webp` | 小豆島天使之路沙洲 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（來源 `天使之路.jpg`） |
 | `day3.webp` | 金刀比羅宮本宮建築 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（來源 `金刀比羅宮.jpg`） |
 | `day4.webp` | 下灘駅月台與瀬戸内海 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（來源 `下灘.jpg`） |
@@ -68,7 +71,7 @@ CC BY / CC BY-SA 圖片依授權條款標示作者、來源與授權；CC BY-SA 
 | `story-oboke.webp` | 祖谷藤蔓橋與溪谷 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（來源 `祖谷.jpg`） |
 | `story-uwajima.webp` | 宇和島城天守與石垣 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
 | `story-train-ryoma.webp` | 志国土佐時代の夜明けのものがたり觀光列車 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
-| `food-udon.webp` | 讚岐烏龍麵天婦羅定食 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（來源 `烏龍麵.jpg`） |
+| `food-udon.webp` | 讚岐烏龍麵天婦羅定食 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（覆寫為 `food-udon-bowl.webp` 同趟自攝主圖） |
 | `food-ozu-aburaya.webp` | 大洲爐端油屋的栗子甜點 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（來源 `大洲爐端 油屋_栗子.jpg`） |
 | `food-katsuo.webp` | 居酒屋かど家夜定食與鰹魚たたき | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（來源 `居酒屋かど家.jpg`） |
 | `food-hirome.webp` | 弘人市場入口 | Maarten Heerlien | [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Entrance_to_Hirome_Ichiba_(6453684561).jpg) |
