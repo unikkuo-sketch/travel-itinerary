@@ -115,7 +115,8 @@ CC BY / CC BY-SA 圖片依授權條款標示作者、來源與授權；CC BY-SA 
 | `food-kani-legs.webp` | 開陽亭蟹腳與蟹鉗盤 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（`foods[].relatedPhotos`） |
 | `food-kani-kegani.webp` | 開陽亭毛蟹盤（蟹肉與蟹味噌） | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（`foods[].relatedPhotos`） |
 | `food-soup-curry.webp` | 札幌湯咖哩 | Koichi Oda | [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:A_soup_curry_dish_in_Sapporo_-_Flickr_-_odako1.jpg)（已自 `foods[]` 卸下，檔案暫留） |
-| `food-jingisukan.webp` | 成吉思汗烤羊肉 | Raita Futo | [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Jingisukan_(46537378761).jpg) |
+| `food-jingisukan.webp` | 成吉思汗烤羊肉 | Raita Futo | [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Jingisukan_(46537378761).jpg)（已自 `foods[]` 主圖卸下；檔案暫留，`days[].photos` 仍引用） |
+| `food-jingisukan-cooking.webp` | 旭川ひつじ家成吉思汗鐵鍋烤羊肉與豆芽洋蔥 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（`foods[].photo`） |
 | `food-jingisukan-grill.webp` | 旭川ひつじ家成吉思汗鐵鍋 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（`foods[].relatedPhotos`） |
 | `food-jingisukan-plate.webp` | ひつじ家羊肉盤（プレミアムサフォーク） | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（`foods[].relatedPhotos`） |
 | `food-takasago-main.webp` | 旭川高砂酒造館內旭高砂招牌與酒瓶牆 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（`foods[].photo`） |
