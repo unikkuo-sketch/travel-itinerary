@@ -240,14 +240,14 @@
         "url": "https://www.furanobieijp/"
       },
       "photo": {
-        "src": "photos/day5.webp",
-        "alt": "富田農場花田",
-        "credit": "Douglas Perkins / CC BY 4.0"
+        "src": "photos/story-furano-hills-valley.webp",
+        "alt": "富良野盆地綠黃田塊與遠山丘陵全景",
+        "credit": "宇宙碎片拍攝"
       },
       "relatedPhotos": [
         {
-          "src": "photos/story-furano-hills-valley.webp",
-          "alt": "富良野盆地綠黃田塊與遠山丘陵全景",
+          "src": "photos/story-furano-hills-bridge.webp",
+          "alt": "富良野橋上遠望谷地綠意與遠山",
           "credit": "宇宙碎片拍攝"
         }
       ]
