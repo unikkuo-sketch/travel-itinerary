@@ -275,7 +275,17 @@
         "src": "photos/food-kani.webp",
         "alt": "北海道蟹飯丼",
         "credit": "woinary / CC BY-SA 2.0"
-      }
+      },
+      "relatedPhotos": [
+        {
+          "src": "photos/food-kani-legs.webp",
+          "alt": "開陽亭蟹腳與蟹鉗盤，旁有檸檬與竹葉"
+        },
+        {
+          "src": "photos/food-kani-kegani.webp",
+          "alt": "開陽亭毛蟹盤：蟹肉、蟹味噌與檸檬"
+        }
+      ]
     },
     {
       "theme": "food",
