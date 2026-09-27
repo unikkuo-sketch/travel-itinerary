@@ -168,7 +168,7 @@ function chaptersHtml(items, tripId, themeMap) {
           ? `<figure class="ph ph--story-hero ph--loaded"><img class="ph-img" src="${esc(assetUrl(tripId, story.photo.src))}" alt="${esc(story.photo.alt || story.title || '')}" loading="${index === 0 ? 'eager' : 'lazy'}" decoding="async">${story.photo.credit ? `<span class="ph-credit ph-credit--br">${esc(story.photo.credit)}</span>` : ''}</figure>`
           : '';
         const related = relatedList
-          .slice(0, 3)
+          .slice(0, 4)
           .filter((p) => p?.src)
           .map(
             (p) =>
@@ -179,9 +179,11 @@ function chaptersHtml(items, tripId, themeMap) {
             ? 'story-related-grid--1'
             : related.length === 2
               ? 'story-related-grid--2'
-              : related.length >= 3
-                ? 'story-related-grid--3'
-                : '';
+              : related.length === 4
+                ? 'story-related-grid--4'
+                : related.length >= 3
+                  ? 'story-related-grid--3'
+                  : '';
         const grid = related.length
           ? `<div class="story-related-grid ${countClass}" role="list" aria-label="相關照片">${related.join('')}</div>`
           : '';

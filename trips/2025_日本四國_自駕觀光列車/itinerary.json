@@ -14,7 +14,7 @@
     "footerDate": "行程實錄 · 2025年5月12日 - 5月19日",
     "cover": {
       "src": "photos/cover.webp",
-      "alt": "小豆島天使之路沙洲與前島",
+      "alt": "退潮時的小豆島天使之路沙洲與前島",
       "credit": "宇宙碎片拍攝",
       "objectPosition": "center 42%"
     },
@@ -164,58 +164,168 @@
         "url": "https://www.ritsurinpark.jp/"
       },
       "photo": {
-        "src": "photos/day1.webp",
-        "alt": "栗林公園池畔庭園",
-        "credit": "KimonBerlin / CC BY-SA 2.0"
-      }
+        "src": "photos/day1-ritsurin-pond.webp",
+        "alt": "栗林公園池畔松樹與倒影",
+        "credit": "宇宙碎片拍攝"
+      },
+      "relatedPhotos": [
+        {
+          "src": "photos/story-ritsurin-bridge.webp",
+          "alt": "栗林公園園內松與木橋／水面",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/story-ritsurin-stone.webp",
+          "alt": "栗林公園園內石碑近景",
+          "credit": "宇宙碎片拍攝"
+        }
+      ]
     },
     {
       "theme": "place",
       "title": "寒霞溪與天使之路",
       "kicker": "香川・小豆島",
-      "body": "瀬戸内海的島嶼一日遊：纜車上看奇岩溪谷，退潮時分踩上連接前島的沙洲「天使之路」。藍色海面與白沙，是這趟最 chill 的午后。",
+      "body": "從高松搭渡輪到小豆島，先看寒霞溪奇岩，再走到退潮才會露出的天使之路沙洲。想踏上沙洲前，務必先對照當日漲退潮時間，再依現場狀況決定停留。藍色海面與白沙，是這趟最 chill 的午后。",
       "source": {
         "label": "小豆島観光協会",
         "url": "https://shodoshima.or.jp/"
       },
       "photo": {
-        "src": "photos/day2.webp",
-        "alt": "小豆島天使之路沙洲與前島",
+        "src": "photos/story-angel-road.webp",
+        "alt": "退潮時的小豆島天使之路沙洲與前島",
         "credit": "宇宙碎片拍攝",
         "objectPosition": "center 42%"
-      }
+      },
+      "relatedPhotos": [
+        {
+          "src": "photos/story-shodoshima-ferry.webp",
+          "alt": "高松往小豆島渡輪船尾甲板與航跡",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/story-kankakei-rocks.webp",
+          "alt": "寒霞溪奇岩峭壁與山林",
+          "credit": "宇宙碎片拍攝"
+        }
+      ]
+    },
+    {
+      "theme": "place",
+      "title": "橄欖公園",
+      "kicker": "香川・小豆島",
+      "body": "魔女宅急便影迷可以在橄欖公園找白色風車與大型魔法書造景；旁邊伴手禮店可買橄欖油和素麵，適合小豆島一日遊順路停一下。",
+      "source": {
+        "label": "道の駅 小豆島オリーブ公園（公式）",
+        "url": "https://olive-pk.jp/"
+      },
+      "photo": {
+        "src": "photos/story-olive-windmill.webp",
+        "alt": "小豆島橄欖公園白色風車與橄欖樹",
+        "credit": "宇宙碎片拍攝"
+      },
+      "relatedPhotos": [
+        {
+          "src": "photos/story-olive-magic-book.webp",
+          "alt": "橄欖公園大型魔法書造景",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/story-olive-history-panel.webp",
+          "alt": "伴手禮店內小豆島橄欖歷史展板",
+          "credit": "宇宙碎片拍攝"
+        }
+      ]
     },
     {
       "theme": "history",
       "title": "金刀比羅宮",
       "kicker": "香川・琴平",
-      "body": "通稱「金比羅さん」，主祭大物主神，自古為海運與旅行者守護。長長的石階參道是身體與心情一起換檔的儀式。",
+      "body": "通稱「金比羅さん」，主祭大物主神，自古為海運與旅行者守護。長長的石階參道是身體與心情一起換檔的儀式；參道商店街可慢慢逛，黑色御朱印也是這趟值得收進本子的一頁。",
       "source": {
         "label": "金刀比羅宮（公式）",
         "url": "https://www.konpira.or.jp/"
       },
       "photo": {
-        "src": "photos/day3.webp",
-        "alt": "金刀比羅宮本宮建築",
-        "credit": "宇宙碎片拍攝",
-        "objectPosition": "center 28%"
-      }
+        "src": "photos/story-konpira-goshuin.webp",
+        "alt": "金刀比羅宮黑色御朱印與朱色社殿背景",
+        "credit": "宇宙碎片拍攝"
+      },
+      "relatedPhotos": [
+        {
+          "src": "photos/story-konpira-stairs.webp",
+          "alt": "金刀比羅宮參道石階與林蔭",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/story-konpira-entrance.webp",
+          "alt": "金刀比羅宮參道入口木門與石燈籠",
+          "credit": "宇宙碎片拍攝"
+        }
+      ]
+    },
+    {
+      "theme": "culture",
+      "title": "金陵酒造／金陵の郷",
+      "kicker": "香川・金刀比羅",
+      "body": "金刀比羅宮參道入口的御神酒釀造元；走進酒藏可參觀史料，酒香飄逸。參拜前後停一下，把金陵的瓶子與現場的酒製冰淇淋一起帶下山。",
+      "source": {
+        "label": "金陵酒造（公式）",
+        "url": "https://www.kinryo.co.jp/"
+      },
+      "photo": {
+        "src": "photos/story-kinryo-entrance.webp",
+        "alt": "金陵酒造參道入口外觀與暖簾",
+        "credit": "宇宙碎片拍攝"
+      },
+      "relatedPhotos": [
+        {
+          "src": "photos/story-kinryo-pouring.webp",
+          "alt": "金陵酒造室內酒瓶出酒展示",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/story-kinryo-history-panel.webp",
+          "alt": "金陵の郷酒造史料展板",
+          "credit": "宇宙碎片拍攝"
+        }
+      ]
     },
     {
       "theme": "place",
       "title": "道後溫泉",
       "kicker": "愛媛・松山",
-      "body": "日本最古老溫泉地之一，本館木造建築與 haikara 通商店街並存。參拜與城下町之後，適合在這裡把步伐再放慢一點。",
+      "body": "以溫泉為中心的商店街，沿途店家不少，入口附近有名物時鐘與坊っちゃん列車。本館人潮很多；夜晚從本館後方看，燈光落在木造外觀上，比較安靜。若本館太擠，可改去附近的飛鳥乃湯：人少一些、設施完善，泉質較滑。泡完可回商店街買布丁、喝柑橘汁。",
       "source": {
         "label": "道後溫泉公式",
         "url": "https://dogo.jp/"
       },
       "photo": {
         "src": "photos/story-dogo.webp",
-        "alt": "道後溫泉本館暮色外觀",
-        "credit": "宇宙碎片拍攝",
-        "objectPosition": "center 40%"
-      }
+        "alt": "夜晚道後溫泉本館後方",
+        "credit": "宇宙碎片拍攝"
+      },
+      "relatedPhotos": [
+        {
+          "src": "photos/story-dogo-clock.webp",
+          "alt": "道後溫泉站前名物時鐘",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/story-dogo-botchan.webp",
+          "alt": "道後坊っちゃん列車",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/story-asuka-entrance.webp",
+          "alt": "飛鳥乃湯泉入口",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/story-asuka-sign.webp",
+          "alt": "飛鳥乃湯泉館內標示",
+          "credit": "宇宙碎片拍攝"
+        }
+      ]
     },
     {
       "theme": "place",
@@ -301,6 +411,22 @@
     },
     {
       "theme": "food",
+      "title": "小豆島橄欖霜淇淋／伴手",
+      "kicker": "香川・小豆島",
+      "body": "橄欖霜淇淋是現場先嚐一口的風味；旁邊伴手禮店可買橄欖油與素麵——個人推薦素麵 Q 彈好吃，橄欖油香氣純。",
+      "source": {
+        "label": "道の駅 小豆島オリーブ公園（公式）",
+        "url": "https://olive-pk.jp/"
+      },
+      "photo": {
+        "src": "photos/food-olive-softserve.webp",
+        "alt": "小豆島橄欖霜淇淋",
+        "credit": "宇宙碎片拍攝",
+        "objectPosition": "center center"
+      }
+    },
+    {
+      "theme": "food",
       "title": "霧の森菓子",
       "kicker": "愛媛・松山",
       "body": "抹茶大福，外層灑滿抹茶粉，中間帶有奶凍感內餡，抹茶苦味與內餡平衡的剛剛好。",
@@ -362,17 +488,45 @@
       "theme": "sake",
       "title": "金陵酒造",
       "kicker": "香川・金刀比羅",
-      "body": "金刀比羅宮參道口的御神酒釀造元，一七八九年創業。參拜前後走進酒藏門面，把「金刀比羅宮御神酒」與金陵的瓶子帶下山，是這趟最貼近信仰地的一杯。",
+      "body": "位於金刀比羅宮參道入口，販售酒製冰淇淋與地酒。酒粕冰淇淋甜度較高，不嗜甜要注意；想帶伴手可選金陵地酒與御神酒下山。",
       "source": {
         "label": "金陵酒造（公式）",
         "url": "https://www.kinryo.co.jp/"
       },
       "photo": {
-        "src": "photos/food-sake.webp",
-        "alt": "金陵酒造酒藏外觀",
+        "src": "photos/food-kinryo-sake-kasu-ice.webp",
+        "alt": "金陵酒造酒粕冰淇淋",
         "credit": "宇宙碎片拍攝",
-        "objectPosition": "center 35%"
+        "objectPosition": "center center"
       }
+    },
+    {
+      "theme": "food",
+      "title": "道後商店街柑橘汁／布丁",
+      "kicker": "愛媛・道後",
+      "body": "道後商店街的柑橘汁大推，品種很多、可以自己選。三杯任選：拿杯子和盤子挑品種，開水龍頭裝好後到櫃台付款。喜歡酸的可以選不知火。旁邊也有布丁，適合配著喝。",
+      "source": {
+        "label": "愛媛の食卓1970",
+        "url": "https://w-harmony.jp/shop/ehimenosyokutaku1970/"
+      },
+      "photo": {
+        "src": "photos/food-dogo-citrus.webp",
+        "alt": "道後商店街三杯柑橘汁",
+        "credit": "宇宙碎片拍攝",
+        "objectPosition": "center center"
+      },
+      "relatedPhotos": [
+        {
+          "src": "photos/food-dogo-pudding.webp",
+          "alt": "道後布丁",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/food-dogo-juice-bar.webp",
+          "alt": "愛媛の食卓1970 店面與取汁檯",
+          "credit": "宇宙碎片拍攝"
+        }
+      ]
     }
   ],
   "tickets": [
@@ -434,7 +588,27 @@
       "date": "05/12",
       "places": "高松機場→烏龍→栗林→商店街",
       "hotel": "Hostel JAQ takamatsu",
-      "hotelNote": "高松市區，抵達日步行友善",
+      "hotelNote": "雅房・衛浴共用・含早餐烏龍・距栗林約10分",
+      "hotelBlurbTeaser": "背包客 hostel，附簡單早餐烏龍，走路約十分鐘到栗林。",
+      "hotelBlurb": "高松市區的 Hostel JAQ，有宿舍房也有雙人房；屬雅房，衛浴在外面。入住含簡單早餐烏龍麵。離栗林公園近，走路大約十分鐘。有停車位，出發前可先詢問。適合抵達高松當日慢逛、隔天往高松港渡輪的兩晚基地。",
+      "hotelUrl": "https://www.agoda.com/zh-tw/hostel-jaq-takamatsu/hotel/takamatsu-jp.html?cid=1975511&hl=zh-tw",
+      "hotelPhoto": {
+        "src": "photos/jaq-hotel-entrance.webp",
+        "alt": "Hostel JAQ Takamatsu 入口暖簾",
+        "credit": "宇宙碎片拍攝"
+      },
+      "hotelPhotos": [
+        {
+          "src": "photos/jaq-hotel-sign.webp",
+          "alt": "Hostel JAQ Takamatsu 外牆圓形招牌",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/jaq-breakfast-udon.webp",
+          "alt": "Hostel JAQ 附贈早餐烏龍麵",
+          "credit": "宇宙碎片拍攝"
+        }
+      ],
       "routeLabel": "高松",
       "transport": "抵達高松機場 · 11:00",
       "transportClass": "",
@@ -445,7 +619,27 @@
       "date": "05/13",
       "places": "高松港→小豆島→永旺高松",
       "hotel": "Hostel JAQ takamatsu",
-      "hotelNote": "返回高松續住",
+      "hotelNote": "雅房・衛浴共用・含早餐烏龍・距栗林約10分",
+      "hotelBlurbTeaser": "背包客 hostel，附簡單早餐烏龍，走路約十分鐘到栗林。",
+      "hotelBlurb": "高松市區的 Hostel JAQ，有宿舍房也有雙人房；屬雅房，衛浴在外面。入住含簡單早餐烏龍麵。離栗林公園近，走路大約十分鐘。有停車位，出發前可先詢問。適合抵達高松當日慢逛、隔天往高松港渡輪的兩晚基地。",
+      "hotelUrl": "https://www.agoda.com/zh-tw/hostel-jaq-takamatsu/hotel/takamatsu-jp.html?cid=1975511&hl=zh-tw",
+      "hotelPhoto": {
+        "src": "photos/jaq-hotel-entrance.webp",
+        "alt": "Hostel JAQ Takamatsu 入口暖簾",
+        "credit": "宇宙碎片拍攝"
+      },
+      "hotelPhotos": [
+        {
+          "src": "photos/jaq-hotel-sign.webp",
+          "alt": "Hostel JAQ Takamatsu 外牆圓形招牌",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/jaq-breakfast-udon.webp",
+          "alt": "Hostel JAQ 附贈早餐烏龍麵",
+          "credit": "宇宙碎片拍攝"
+        }
+      ],
       "routeLabel": "小豆島",
       "transport": "渡輪 高松⇄土庄",
       "transportClass": "",
@@ -577,9 +771,9 @@
         "✅ <strong>住宿</strong>：Hostel JAQ，隔天往高松港方便"
       ],
       "photo": {
-        "src": "photos/day1.webp",
-        "alt": "栗林公園池畔松林",
-        "credit": "KimonBerlin / CC BY-SA 2.0"
+        "src": "photos/day1-ritsurin-pond.webp",
+        "alt": "栗林公園池畔松樹與倒影",
+        "credit": "宇宙碎片拍攝"
       }
     },
     {
@@ -660,13 +854,13 @@
         }
       ],
       "tips": [
-        "✅ <strong>渡輪</strong>：高松⇄土庄，留意班次與風浪",
-        "✅ <strong>天使之路</strong>：務必查潮汐表，退潮才能步行沙洲",
-        "✅ <strong>寒霞溪</strong>：紅雲亭站纜車為經典動線"
+        "✅ <strong>渡輪</strong>：高松往返土庄搭渡輪，出發前留意班次與風浪",
+        "✅ <strong>天使之路</strong>：務必先查當日漲退潮時間；退潮時才適合步行沙洲，並依現場狀況調整停留",
+        "✅ <strong>橄欖公園</strong>：魔女宅急便影迷可找風車與魔法書；旁邊伴手禮店可買橄欖油、素麵，推薦素麵 Q 彈好吃、橄欖油香純"
       ],
       "photo": {
         "src": "photos/day2.webp",
-        "alt": "小豆島天使之路沙洲",
+        "alt": "退潮時的小豆島天使之路沙洲與前島",
         "credit": "宇宙碎片拍攝"
       }
     },
@@ -729,13 +923,16 @@
         }
       ],
       "tips": [
-        "✅ <strong>金刀比羅宮</strong>：石階多，預留體力與防滑鞋",
+        "✅ <strong>參道</strong>：有商店街可以慢慢逛；石階樓梯需要點肌力，預留體力與防滑鞋",
+        "✅ <strong>金陵酒造</strong>：金刀比羅宮參道入口；有酒造史料可參觀、酒香飄逸，販售酒製冰淇淋與地酒（冰淇淋甜度較高）",
+        "✅ <strong>主社之後</strong>：爬到主社後若還有力氣，可再從主社後方往上爬；有嚴魂神社與好看的黑色御朱印",
+        "✅ <strong>天狗石</strong>：神社左邊岩壁上有天狗石，考眼力",
         "✅ <strong>自駕</strong>：琴平→西条→松山，預留休息與用餐緩衝",
-        "✅ <strong>道後</strong>：haikara通適合傍晚慢逛"
+        "✅ <strong>道後</strong>：以溫泉為中心的商店街，店家可逛；入口有名物時鐘與坊っちゃん列車。本館人很多，夜晚從後方看比較安靜。人多可去附近飛鳥乃湯（人少、舒服、設施完善、泉質較滑）。泡完可買布丁；柑橘汁大推，三杯任選——拿杯子盤子挑品種、開水龍頭裝好後到櫃台付款，喜歡酸的可選不知火"
       ],
       "photo": {
-        "src": "photos/day3.webp",
-        "alt": "金刀比羅宮本宮建築",
+        "src": "photos/story-dogo.webp",
+        "alt": "夜晚道後溫泉本館後方",
         "credit": "宇宙碎片拍攝"
       }
     },
