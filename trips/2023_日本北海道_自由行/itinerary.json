@@ -315,22 +315,46 @@
         "src": "photos/food-jingisukan.webp",
         "alt": "成吉思汗烤羊肉",
         "credit": "Raita Futo / CC BY 2.0"
-      }
+      },
+      "relatedPhotos": [
+        {
+          "src": "photos/food-jingisukan-grill.webp",
+          "alt": "旭川ひつじ家成吉思汗鐵鍋",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/food-jingisukan-plate.webp",
+          "alt": "ひつじ家羊肉盤（プレミアムサフォーク）",
+          "credit": "宇宙碎片拍攝"
+        }
+      ]
     },
     {
-      "theme": "food",
-      "title": "湯咖哩",
-      "kicker": "札幌・在地味",
-      "body": "蔬菜高湯與香料並存的札幌靈魂料理。回程日原訂奥芝商店，後改於機場用餐，把最後一碗湯咖哩留給離境前。",
+      "theme": "sake",
+      "title": "旭川高砂酒造",
+      "kicker": "旭川・酒造",
+      "body": "旭川日午前走進明治酒蔵直賣店：國士無雙暖簾外、館內「旭高砂」酒瓶牆與菰樽，再於試飲區認識旭神威等銘柄。把美瑛丘陵行程前的空檔，換成一杯道產清酒的香氣。",
       "source": {
-        "label": "奥芝商店",
-        "url": "https://okushiba.jp/"
+        "label": "髙砂酒造株式会社",
+        "url": "https://www.takasagoshuzo.com/"
       },
       "photo": {
-        "src": "photos/food-soup-curry.webp",
-        "alt": "札幌湯咖哩",
-        "credit": "Koichi Oda / CC BY-SA 2.0"
-      }
+        "src": "photos/food-takasago-main.webp",
+        "alt": "旭川高砂酒造館內旭高砂招牌與清酒瓶牆",
+        "credit": "宇宙碎片拍攝"
+      },
+      "relatedPhotos": [
+        {
+          "src": "photos/food-takasago-exterior.webp",
+          "alt": "高砂酒造外觀與國士無雙暖簾",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/food-takasago-tasting.webp",
+          "alt": "高砂酒造直賣店旭神威純米大吟釀與試飲杯",
+          "credit": "宇宙碎片拍攝"
+        }
+      ]
     },
     {
       "theme": "food",

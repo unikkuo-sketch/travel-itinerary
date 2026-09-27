@@ -109,8 +109,13 @@ CC BY / CC BY-SA 圖片依授權條款標示作者、來源與授權；CC BY-SA 
 | `food-kani.webp` | 北海道蟹飯丼 | woinary | [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Kani_meshi_don_by_woinary_in_New_Chitose_Airport,_Hokkaido.jpg) |
 | `food-kani-legs.webp` | 開陽亭蟹腳與蟹鉗盤 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（`foods[].relatedPhotos`） |
 | `food-kani-kegani.webp` | 開陽亭毛蟹盤（蟹肉與蟹味噌） | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（`foods[].relatedPhotos`） |
-| `food-soup-curry.webp` | 札幌湯咖哩 | Koichi Oda | [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:A_soup_curry_dish_in_Sapporo_-_Flickr_-_odako1.jpg) |
+| `food-soup-curry.webp` | 札幌湯咖哩 | Koichi Oda | [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:A_soup_curry_dish_in_Sapporo_-_Flickr_-_odako1.jpg)（已自 `foods[]` 卸下，檔案暫留） |
 | `food-jingisukan.webp` | 成吉思汗烤羊肉 | Raita Futo | [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Jingisukan_(46537378761).jpg) |
+| `food-jingisukan-grill.webp` | 旭川ひつじ家成吉思汗鐵鍋 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（`foods[].relatedPhotos`） |
+| `food-jingisukan-plate.webp` | ひつじ家羊肉盤（プレミアムサフォーク） | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（`foods[].relatedPhotos`） |
+| `food-takasago-main.webp` | 旭川高砂酒造館內旭高砂招牌與酒瓶牆 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（`foods[].photo`） |
+| `food-takasago-exterior.webp` | 高砂酒造外觀與國士無雙暖簾 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（`foods[].relatedPhotos`） |
+| `food-takasago-tasting.webp` | 高砂酒造直賣店旭神威與試飲杯 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（`foods[].relatedPhotos`） |
 | `food-furano-cheese.webp` | 富良野起司工廠起司 | Adam Jones | [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Wine_Cheddar_Brand_of_Furano_Cheese_-_Cheese_Factory_-_Furano_-_Hokkaido_-_Japan_(48012225498).jpg) |
 
 ## trips/2018_日本中部北陸_自助旅遊/photos/
