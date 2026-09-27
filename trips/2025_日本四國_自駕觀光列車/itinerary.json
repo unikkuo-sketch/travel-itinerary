@@ -14,7 +14,7 @@
     "footerDate": "行程實錄 · 2025年5月12日 - 5月19日",
     "cover": {
       "src": "photos/cover.webp",
-      "alt": "小豆島天使之路沙洲與前島",
+      "alt": "退潮時的小豆島天使之路沙洲與前島",
       "credit": "宇宙碎片拍攝",
       "objectPosition": "center 42%"
     },
@@ -185,17 +185,56 @@
       "theme": "place",
       "title": "寒霞溪與天使之路",
       "kicker": "香川・小豆島",
-      "body": "瀬戸内海的島嶼一日遊：纜車上看奇岩溪谷，退潮時分踩上連接前島的沙洲「天使之路」。藍色海面與白沙，是這趟最 chill 的午后。",
+      "body": "從高松搭渡輪到小豆島，先看寒霞溪奇岩，再走到退潮才會露出的天使之路沙洲。想踏上沙洲前，務必先對照當日漲退潮時間，再依現場狀況決定停留。藍色海面與白沙，是這趟最 chill 的午后。",
       "source": {
         "label": "小豆島観光協会",
         "url": "https://shodoshima.or.jp/"
       },
       "photo": {
-        "src": "photos/day2.webp",
-        "alt": "小豆島天使之路沙洲與前島",
+        "src": "photos/story-angel-road.webp",
+        "alt": "退潮時的小豆島天使之路沙洲與前島",
         "credit": "宇宙碎片拍攝",
         "objectPosition": "center 42%"
-      }
+      },
+      "relatedPhotos": [
+        {
+          "src": "photos/story-shodoshima-ferry.webp",
+          "alt": "高松往小豆島渡輪船尾甲板與航跡",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/story-kankakei-rocks.webp",
+          "alt": "寒霞溪奇岩峭壁與山林",
+          "credit": "宇宙碎片拍攝"
+        }
+      ]
+    },
+    {
+      "theme": "place",
+      "title": "橄欖公園",
+      "kicker": "香川・小豆島",
+      "body": "魔女宅急便影迷可以在橄欖公園找白色風車與大型魔法書造景；旁邊伴手禮店可買橄欖油和素麵，適合小豆島一日遊順路停一下。",
+      "source": {
+        "label": "道の駅 小豆島オリーブ公園（公式）",
+        "url": "https://olive-pk.jp/"
+      },
+      "photo": {
+        "src": "photos/story-olive-windmill.webp",
+        "alt": "小豆島橄欖公園白色風車與橄欖樹",
+        "credit": "宇宙碎片拍攝"
+      },
+      "relatedPhotos": [
+        {
+          "src": "photos/story-olive-magic-book.webp",
+          "alt": "橄欖公園大型魔法書造景",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/story-olive-history-panel.webp",
+          "alt": "伴手禮店內小豆島橄欖歷史展板",
+          "credit": "宇宙碎片拍攝"
+        }
+      ]
     },
     {
       "theme": "history",
@@ -307,6 +346,22 @@
       "photo": {
         "src": "photos/food-udon.webp",
         "alt": "讚岐烏龍麵天婦羅定食",
+        "credit": "宇宙碎片拍攝",
+        "objectPosition": "center center"
+      }
+    },
+    {
+      "theme": "food",
+      "title": "小豆島橄欖霜淇淋／伴手",
+      "kicker": "香川・小豆島",
+      "body": "橄欖霜淇淋是現場先嚐一口的風味；旁邊伴手禮店可買橄欖油與素麵——個人推薦素麵 Q 彈好吃，橄欖油香氣純。",
+      "source": {
+        "label": "道の駅 小豆島オリーブ公園（公式）",
+        "url": "https://olive-pk.jp/"
+      },
+      "photo": {
+        "src": "photos/food-olive-softserve.webp",
+        "alt": "小豆島橄欖霜淇淋",
         "credit": "宇宙碎片拍攝",
         "objectPosition": "center center"
       }
@@ -712,13 +767,13 @@
         }
       ],
       "tips": [
-        "✅ <strong>渡輪</strong>：高松⇄土庄，留意班次與風浪",
-        "✅ <strong>天使之路</strong>：務必查潮汐表，退潮才能步行沙洲",
-        "✅ <strong>寒霞溪</strong>：紅雲亭站纜車為經典動線"
+        "✅ <strong>渡輪</strong>：高松往返土庄搭渡輪，出發前留意班次與風浪",
+        "✅ <strong>天使之路</strong>：務必先查當日漲退潮時間；退潮時才適合步行沙洲，並依現場狀況調整停留",
+        "✅ <strong>橄欖公園</strong>：魔女宅急便影迷可找風車與魔法書；旁邊伴手禮店可買橄欖油、素麵，推薦素麵 Q 彈好吃、橄欖油香純"
       ],
       "photo": {
         "src": "photos/day2.webp",
-        "alt": "小豆島天使之路沙洲",
+        "alt": "退潮時的小豆島天使之路沙洲與前島",
         "credit": "宇宙碎片拍攝"
       }
     },
