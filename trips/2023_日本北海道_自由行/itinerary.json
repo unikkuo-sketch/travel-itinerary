@@ -132,9 +132,21 @@
       },
       "photo": {
         "src": "photos/day1.webp",
-        "alt": "登別地獄谷夜景",
+        "alt": "登別地獄谷日間硫氣谷與木棧道空景",
         "credit": "宇宙碎片拍攝"
-      }
+      },
+      "relatedPhotos": [
+        {
+          "src": "photos/story-jigokudani-sign.webp",
+          "alt": "登別地獄谷木製園區標示牌（支笏洞爺國立公園）",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/story-jigokudani-night.webp",
+          "alt": "登別地獄谷夜間展望台燈照岩壁",
+          "credit": "宇宙碎片拍攝"
+        }
+      ]
     },
     {
       "theme": "place",
@@ -207,13 +219,13 @@
       },
       "relatedPhotos": [
         {
-          "src": "photos/story-otaru-warehouse.webp",
-          "alt": "小樽運河倉庫",
+          "src": "photos/story-otaru-rokkatei.webp",
+          "alt": "小樽堺町六花亭石倉外觀與店招",
           "credit": "宇宙碎片拍攝"
         },
         {
-          "src": "photos/story-otaru-canal-panorama.webp",
-          "alt": "小樽運河全景",
+          "src": "photos/story-otaru-steam-clock.webp",
+          "alt": "小樽蒸汽鐘與音樂盒館磚牆",
           "credit": "宇宙碎片拍攝"
         }
       ]
@@ -596,7 +608,7 @@
           "tag": "🏨 溫泉宿",
           "photo": {
             "src": "photos/day1.webp",
-            "alt": "登別地獄谷夜景",
+            "alt": "登別地獄谷日間硫氣谷與木棧道空景",
             "credit": "宇宙碎片拍攝"
           }
         }
@@ -607,7 +619,7 @@
       ],
       "photo": {
         "src": "photos/day1.webp",
-        "alt": "登別地獄谷夜景",
+        "alt": "登別地獄谷日間硫氣谷與木棧道空景",
         "credit": "宇宙碎片拍攝"
       }
     },

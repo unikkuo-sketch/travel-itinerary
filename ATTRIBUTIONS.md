@@ -80,7 +80,7 @@ CC BY / CC BY-SA 圖片依授權條款標示作者、來源與授權；CC BY-SA 
 | 檔案 | 內容 | 作者 | 授權 | 來源 |
 |---|---|---|---|---|
 | `cover.webp` | 中富良野日之出公園薰衣草花田 | Totti | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Hinode_park_lavender_2.jpg) |
-| `day1.webp` | 登別地獄谷夜景 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
+| `day1.webp` | 登別地獄谷日間硫氣谷與木棧道空景 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
 | `day2.webp` | 北海道神宮本殿 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
 | `day3.webp` | 小樽運河 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
 | `day4.webp` | 札幌大通公園 | redlegsfan21 | [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Odori_Park_(15982613668).jpg) |
@@ -97,8 +97,12 @@ CC BY / CC BY-SA 圖片依授權條款標示作者、來源與授權；CC BY-SA 
 | `jozankei-breakfast-space.webp` | 定山溪豪景早餐餐廳窗景（已模糊可辨識臉） | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（`hotelPhotos`） |
 | `story-hokudai.webp` | 北海道大學札幌農學校演武場（時計台） | 十字軍ちゃん | [CC0](https://creativecommons.org/publicdomain/zero/1.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Hokkaido_University_clocktower.jpg) |
 | `story-tenguyama.webp` | 小樽天狗山夜景展望 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
-| `story-otaru-warehouse.webp` | 小樽運河北日本倉庫特寫 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
-| `story-otaru-canal-panorama.webp` | 小樽運河全景（瓦斯燈／步道） | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
+| `story-otaru-warehouse.webp` | 小樽運河北日本倉庫特寫 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（目前未掛 related；檔案保留） |
+| `story-otaru-canal-panorama.webp` | 小樽運河全景（瓦斯燈／步道） | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（目前未掛 related；檔案保留） |
+| `story-jigokudani-sign.webp` | 登別地獄谷木製園區標示牌（支笏洞爺國立公園） | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（`stories[].relatedPhotos`） |
+| `story-jigokudani-night.webp` | 登別地獄谷夜間展望台燈照岩壁 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（`stories[].relatedPhotos`） |
+| `story-otaru-rokkatei.webp` | 小樽堺町六花亭石倉外觀與店招 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（`stories[].relatedPhotos`） |
+| `story-otaru-steam-clock.webp` | 小樽蒸汽鐘與音樂盒館磚牆 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（`stories[].relatedPhotos`） |
 | `story-hokudai-building.webp` | 北海道大學校園歷史洋館 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
 | `story-hokudai-stream.webp` | 北海道大學校園溪流 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
 | `story-jingu-gate.webp` | 北海道神宮參道門與廣場 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
