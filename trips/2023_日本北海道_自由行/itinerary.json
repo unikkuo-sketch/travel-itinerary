@@ -506,6 +506,71 @@
       "places": "桃園→新千歲→登別",
       "hotel": "瀧乃家 玉之湯",
       "hotelNote": "杜鵑橋走路約8分；含早晚餐・1房",
+      "hotelBlurbTeaser": "登別溫泉街一泊二食，玉乃湯懷石與源泉湯。",
+      "hotelBlurb": "飛抵新千歲當日轉登別，從杜鵑橋步行約八分就到瀧乃家別館玉之湯。一泊二食含玉乃湯懷石晚餐與早餐重箱，泡完源泉湯可在囲炉裏大廳歇腳。適合把地獄谷當開場、再把熱氣換成溫泉宿節奏的家庭行程。",
+      "hotelUrl": "https://www.agoda.com/zh-tw/takinoya-bekkan-tamanoyu/hotel/noboribetsu-jp.html?cid=1975511&hl=zh-tw",
+      "hotelPhoto": {
+        "src": "photos/tamanoyu-hotel-exterior.webp",
+        "alt": "瀧乃家玉之湯白天外觀",
+        "credit": "宇宙碎片拍攝"
+      },
+      "hotelPhotos": [
+        {
+          "src": "photos/tamanoyu-room-window.webp",
+          "alt": "客房窗邊浴衣",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/tamanoyu-room-genkan.webp",
+          "alt": "玄關／榻榻米／行李",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/tamanoyu-kaiseki-boat.webp",
+          "alt": "懷石海鮮船盤",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/tamanoyu-kaiseki-menu.webp",
+          "alt": "御品書（館名證據）",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/tamanoyu-kaiseki-nabe.webp",
+          "alt": "赤茄子鍋",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/tamanoyu-kaiseki-sashimi.webp",
+          "alt": "扇貝殼刺身",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/tamanoyu-kaiseki-grilled-fish.webp",
+          "alt": "烤魚",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/tamanoyu-lobby-slippers.webp",
+          "alt": "大廳拖鞋列",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/tamanoyu-lobby-irori.webp",
+          "alt": "囲炉裏休憩",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/tamanoyu-breakfast-jubako.webp",
+          "alt": "早餐重箱",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/tamanoyu-breakfast-sides.webp",
+          "alt": "早餐小缽",
+          "credit": "宇宙碎片拍攝"
+        }
+      ],
       "routeLabel": "登別",
       "transport": "JX850 · 10:05／JR · 15:54",
       "transportClass": "",
@@ -528,6 +593,41 @@
       "places": "札幌→小樽",
       "hotel": "托麗芙特飯店",
       "hotelNote": "小樽站走路約8分・1房・無早餐",
+      "hotelBlurbTeaser": "小樽站步行可達，運河旁家庭房上下舖好用。",
+      "hotelBlurb": "從小樽站走路約八分就到運河旁的托麗芙特，無早餐、行李放下就能出門。家庭房上下舖好用，雙人床與館內睡衣也齊。適合當運河散步、堺町逛街與天狗山夜景的一晚基地。",
+      "hotelUrl": "https://www.agoda.com/zh-tw/hotel-torifito-otaru-canal/hotel/otaru-jp.html?cid=1975511&hl=zh-tw",
+      "hotelPhoto": {
+        "src": "photos/torifito-hotel-exterior.webp",
+        "alt": "小樽運河托麗芙特外觀招牌",
+        "credit": "宇宙碎片拍攝"
+      },
+      "hotelPhotos": [
+        {
+          "src": "photos/torifito-lobby-art.webp",
+          "alt": "大廳黃牆藝術",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/torifito-room-bunk.webp",
+          "alt": "上下舖客房全景",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/torifito-room-beds.webp",
+          "alt": "雙床與館內睡衣",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/torifito-lobby-lounge.webp",
+          "alt": "大廳休憩窗景",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/torifito-lobby-entrance.webp",
+          "alt": "大廳入口",
+          "credit": "宇宙碎片拍攝"
+        }
+      ],
       "routeLabel": "小樽",
       "transport": "JR · 10:00–11:25",
       "transportClass": "",
