@@ -13,8 +13,8 @@
     ],
     "footerDate": "行程實錄 · 2023年8月27日 - 9月3日",
     "cover": {
-      "src": "photos/cover-tenguyama-night.webp",
-      "alt": "小樽天狗山夜景展望：港灣與街燈",
+      "src": "photos/cover-tenguyama-harbor-tight.webp",
+      "alt": "天狗山夜景／港灣燈火",
       "credit": "宇宙碎片拍攝"
     },
     "theme": "ocean",
@@ -215,17 +215,12 @@
       "relatedPhotos": [
         {
           "src": "photos/story-tenguyama-night.webp",
-          "alt": "小樽天狗山夜景展望：港灣與街燈",
+          "alt": "天狗山夜景／港灣燈火",
           "credit": "宇宙碎片拍攝"
         },
         {
           "src": "photos/story-otaru-rokkatei.webp",
           "alt": "小樽堺町六花亭石倉外觀與店招",
-          "credit": "宇宙碎片拍攝"
-        },
-        {
-          "src": "photos/story-otaru-steam-clock.webp",
-          "alt": "小樽蒸汽鐘與音樂盒館磚牆",
           "credit": "宇宙碎片拍攝"
         }
       ]
@@ -248,6 +243,11 @@
         {
           "src": "photos/story-furano-hills-bridge.webp",
           "alt": "富良野橋上遠望谷地綠意與遠山",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/story-furano-valley-overview.webp",
+          "alt": "富良野谷地綠黃田塊與遠山全景",
           "credit": "宇宙碎片拍攝"
         }
       ]
@@ -300,6 +300,11 @@
           "src": "photos/food-kani-kegani.webp",
           "alt": "開陽亭毛蟹盤：蟹肉、蟹味噌與檸檬",
           "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/food-kani-sashimi.webp",
+          "alt": "開陽亭刺身拼盤：蝦、雲丹與白身",
+          "credit": "宇宙碎片拍攝"
         }
       ]
     },
@@ -346,13 +351,13 @@
       },
       "relatedPhotos": [
         {
-          "src": "photos/food-jingisukan-plate-meat.webp",
-          "alt": "ひつじ家羊肉生肉盤",
+          "src": "photos/food-jingisukan-lettuce-meat.webp",
+          "alt": "ひつじ家成吉思汗：生菜與烤羊肉",
           "credit": "宇宙碎片拍攝"
         },
         {
-          "src": "photos/food-jingisukan-plate.webp",
-          "alt": "ひつじ家羊肉盤（プレミアムサフォーク）",
+          "src": "photos/food-jingisukan-meat-close2.webp",
+          "alt": "ひつじ家羊肉生肉特寫",
           "credit": "宇宙碎片拍攝"
         }
       ]
@@ -407,11 +412,6 @@
         {
           "src": "photos/food-furano-cheese-softserve.webp",
           "alt": "富良野起司工廠鮮奶霜淇淋甜筒",
-          "credit": "宇宙碎片拍攝"
-        },
-        {
-          "src": "photos/food-furano-cheese-cow.webp",
-          "alt": "富良野起司工廠館內荷斯坦乳牛模型與工房木牌",
           "credit": "宇宙碎片拍攝"
         }
       ]
@@ -956,7 +956,7 @@
           "tag": "夜景",
           "photo": {
             "src": "photos/story-tenguyama-night.webp",
-            "alt": "小樽天狗山夜景展望：港灣與街燈",
+            "alt": "天狗山夜景／港灣燈火",
             "credit": "宇宙碎片拍攝"
           }
         },
@@ -989,7 +989,7 @@
       "photos": [
         {
           "src": "photos/story-tenguyama-night.webp",
-          "alt": "小樽天狗山夜景展望：港灣與街燈",
+          "alt": "天狗山夜景／港灣燈火",
           "credit": "宇宙碎片拍攝"
         },
         {
@@ -1091,6 +1091,31 @@
         {
           "src": "photos/food-kani-legs.webp",
           "alt": "開陽亭蟹腳與蟹鉗盤，旁有檸檬與竹葉",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/food-kani-sign.webp",
+          "alt": "函館開陽亭夜招牌（暮色）",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/food-kani-ikura-uni.webp",
+          "alt": "開陽亭鮭魚卵與雲丹手捲",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/food-kani-kinki.webp",
+          "alt": "開陽亭金目鯛烤魚",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/food-kani-oyster.webp",
+          "alt": "開陽亭生蠔",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/food-kani-scallop.webp",
+          "alt": "開陽亭扇貝殼料理",
           "credit": "宇宙碎片拍攝"
         }
       ]
