@@ -228,10 +228,17 @@
         "url": "https://www.furanobieijp/"
       },
       "photo": {
-        "src": "photos/day6.webp",
-        "alt": "美瑛白金青池",
-        "credit": "AndyLeungHK / CC0"
-      }
+        "src": "photos/day5.webp",
+        "alt": "富田農場花田",
+        "credit": "Douglas Perkins / CC BY 4.0"
+      },
+      "relatedPhotos": [
+        {
+          "src": "photos/story-furano-hills-valley.webp",
+          "alt": "富良野盆地綠黃田塊與遠山丘陵全景",
+          "credit": "宇宙碎片拍攝"
+        }
+      ]
     },
     {
       "theme": "culture",
@@ -342,10 +349,27 @@
         "url": "https://www.furano-cheese.jp/"
       },
       "photo": {
-        "src": "photos/food-furano-cheese.webp",
-        "alt": "富良野起司工廠起司",
-        "credit": "Adam Jones / CC BY-SA 2.0"
-      }
+        "src": "photos/food-furano-cheese-exterior.webp",
+        "alt": "富良野起司工廠外觀與「富良野チーズ工房」招牌",
+        "credit": "宇宙碎片拍攝"
+      },
+      "relatedPhotos": [
+        {
+          "src": "photos/food-furano-cheese-pizza.webp",
+          "alt": "富良野起司工廠披薩（起司、番茄、洋蔥、蘑菇）",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/food-furano-cheese-softserve.webp",
+          "alt": "富良野起司工廠鮮奶霜淇淋甜筒",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/food-furano-cheese-cow.webp",
+          "alt": "富良野起司工廠館內荷斯坦乳牛模型與工房木牌",
+          "credit": "宇宙碎片拍攝"
+        }
+      ]
     },
     {
       "theme": "sake",
@@ -360,7 +384,19 @@
         "src": "photos/story-furano-wine.webp",
         "alt": "富良野葡萄酒工房酒窖",
         "credit": "宇宙碎片拍攝"
-      }
+      },
+      "relatedPhotos": [
+        {
+          "src": "photos/food-furano-wine-tasting.webp",
+          "alt": "Chateau Furano 有料試飲角與自動斟酒機",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/food-furano-wine-barrel.webp",
+          "alt": "ふらのワイン木桶與試飲龍頭",
+          "credit": "宇宙碎片拍攝"
+        }
+      ]
     }
   ],
   "tickets": [
