@@ -109,6 +109,7 @@ CC BY / CC BY-SA 圖片依授權條款標示作者、來源與授權；CC BY-SA 
 | `story-jingu-courtyard.webp` | 北海道神宮境內庭院 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
 | `story-jozankei-river.webp` | 定山溪河谷 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
 | `story-furano-wine.webp` | 富良野葡萄酒工房酒窖 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
+| `story-furano-hills-valley.webp` | 富良野盆地綠黃田塊與遠山丘陵全景 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（`stories[].relatedPhotos`） |
 | `food-letao.webp` | LeTAO 小樽本店 | 663highland | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:220721_LeTAO_Otaru_Hokkaido_Japan02s3.jpg) |
 | `food-kani.webp` | 北海道蟹飯丼 | woinary | [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Kani_meshi_don_by_woinary_in_New_Chitose_Airport,_Hokkaido.jpg) |
 | `food-kani-legs.webp` | 開陽亭蟹腳與蟹鉗盤 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（`foods[].relatedPhotos`） |
@@ -121,6 +122,12 @@ CC BY / CC BY-SA 圖片依授權條款標示作者、來源與授權；CC BY-SA 
 | `food-takasago-exterior.webp` | 高砂酒造外觀與國士無雙暖簾 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（`foods[].relatedPhotos`） |
 | `food-takasago-tasting.webp` | 高砂酒造直賣店旭神威與試飲杯 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（`foods[].relatedPhotos`） |
 | `food-furano-cheese.webp` | 富良野起司工廠起司 | Adam Jones | [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Wine_Cheddar_Brand_of_Furano_Cheese_-_Cheese_Factory_-_Furano_-_Hokkaido_-_Japan_(48012225498).jpg) |
+| `food-furano-cheese-exterior.webp` | 富良野起司工廠外觀與「富良野チーズ工房」招牌 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（`foods[].photo`） |
+| `food-furano-cheese-pizza.webp` | 富良野起司工廠披薩 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（`foods[].relatedPhotos`） |
+| `food-furano-cheese-softserve.webp` | 富良野起司工廠鮮奶霜淇淋甜筒 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（`foods[].relatedPhotos`） |
+| `food-furano-cheese-cow.webp` | 富良野起司工廠館內荷斯坦乳牛模型與工房木牌 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（`foods[].relatedPhotos`） |
+| `food-furano-wine-tasting.webp` | Chateau Furano 有料試飲角與自動斟酒機 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（`foods[].relatedPhotos`） |
+| `food-furano-wine-barrel.webp` | ふらのワイン木桶與試飲龍頭 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（`foods[].relatedPhotos`） |
 
 ## trips/2018_日本中部北陸_自助旅遊/photos/
 
