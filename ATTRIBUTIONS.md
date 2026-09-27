@@ -96,6 +96,24 @@ CC BY / CC BY-SA 圖片依授權條款標示作者、來源與授權；CC BY-SA 
 | `jozankei-breakfast-tray.webp` | 定山溪豪景九格早餐 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（`hotelPhotos`） |
 | `jozankei-breakfast-buffet-maguro.webp` | 定山溪豪景自助早餐鮪魚台 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（`hotelPhotos`） |
 | `jozankei-breakfast-space.webp` | 定山溪豪景早餐餐廳窗景（已模糊可辨識臉） | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（`hotelPhotos`） |
+| `tamanoyu-hotel-exterior.webp` | 瀧乃家玉之湯白天外觀 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（住宿主圖 `hotelPhoto`） |
+| `tamanoyu-room-window.webp` | 客房窗邊浴衣 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（`hotelPhotos`） |
+| `tamanoyu-room-genkan.webp` | 玄關／榻榻米／行李 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（`hotelPhotos`） |
+| `tamanoyu-kaiseki-boat.webp` | 懷石海鮮船盤 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（`hotelPhotos`） |
+| `tamanoyu-kaiseki-menu.webp` | 御品書（館名證據） | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（`hotelPhotos`） |
+| `tamanoyu-kaiseki-nabe.webp` | 赤茄子鍋 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（`hotelPhotos`） |
+| `tamanoyu-kaiseki-sashimi.webp` | 扇貝殼刺身 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（`hotelPhotos`） |
+| `tamanoyu-kaiseki-grilled-fish.webp` | 烤魚 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（`hotelPhotos`） |
+| `tamanoyu-lobby-slippers.webp` | 大廳拖鞋列 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（`hotelPhotos`） |
+| `tamanoyu-lobby-irori.webp` | 囲炉裏休憩 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（`hotelPhotos`） |
+| `tamanoyu-breakfast-jubako.webp` | 早餐重箱 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（`hotelPhotos`） |
+| `tamanoyu-breakfast-sides.webp` | 早餐小缽 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（`hotelPhotos`） |
+| `torifito-hotel-exterior.webp` | 小樽運河托麗芙特外觀招牌 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（住宿主圖 `hotelPhoto`） |
+| `torifito-lobby-art.webp` | 大廳黃牆藝術 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（`hotelPhotos`） |
+| `torifito-room-bunk.webp` | 上下舖客房全景 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（`hotelPhotos`） |
+| `torifito-room-beds.webp` | 雙床與館內睡衣 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（`hotelPhotos`） |
+| `torifito-lobby-lounge.webp` | 大廳休憩窗景 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（`hotelPhotos`） |
+| `torifito-lobby-entrance.webp` | 大廳入口 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（`hotelPhotos`） |
 | `story-hokudai.webp` | 北海道大學札幌農學校演武場（時計台） | 十字軍ちゃん | [CC0](https://creativecommons.org/publicdomain/zero/1.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Hokkaido_University_clocktower.jpg)（已自 `stories[]`／`days[].photos` 卸下；檔案暫留） |
 | `story-tenguyama.webp` | 小樽天狗山夜景展望 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（已由高解析 `story-tenguyama-night.webp` 取代；檔案暫留） |
 | `story-tenguyama-night.webp` | 小樽天狗山夜景展望：港灣與街燈 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（day3 gallery／`stories[].relatedPhotos`） |
