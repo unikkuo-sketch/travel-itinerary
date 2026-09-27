@@ -264,6 +264,33 @@
       ]
     },
     {
+      "theme": "culture",
+      "title": "金陵酒造／金陵の郷",
+      "kicker": "香川・金刀比羅",
+      "body": "金刀比羅宮參道入口的御神酒釀造元；走進酒藏可參觀史料，酒香飄逸。參拜前後停一下，把金陵的瓶子與現場的酒製冰淇淋一起帶下山。",
+      "source": {
+        "label": "金陵酒造（公式）",
+        "url": "https://www.kinryo.co.jp/"
+      },
+      "photo": {
+        "src": "photos/story-kinryo-entrance.webp",
+        "alt": "金陵酒造參道入口外觀與暖簾",
+        "credit": "宇宙碎片拍攝"
+      },
+      "relatedPhotos": [
+        {
+          "src": "photos/story-kinryo-pouring.webp",
+          "alt": "金陵酒造室內酒瓶出酒展示",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/story-kinryo-history-panel.webp",
+          "alt": "金陵の郷酒造史料展板",
+          "credit": "宇宙碎片拍攝"
+        }
+      ]
+    },
+    {
       "theme": "place",
       "title": "道後溫泉",
       "kicker": "愛媛・松山",
@@ -440,16 +467,16 @@
       "theme": "sake",
       "title": "金陵酒造",
       "kicker": "香川・金刀比羅",
-      "body": "金刀比羅宮參道口的御神酒釀造元，一七八九年創業。參拜前後走進酒藏門面，把「金刀比羅宮御神酒」與金陵的瓶子帶下山，是這趟最貼近信仰地的一杯。",
+      "body": "位於金刀比羅宮參道入口，販售酒製冰淇淋與地酒。酒粕冰淇淋甜度較高，不嗜甜要注意；想帶伴手可選金陵地酒與御神酒下山。",
       "source": {
         "label": "金陵酒造（公式）",
         "url": "https://www.kinryo.co.jp/"
       },
       "photo": {
-        "src": "photos/food-sake.webp",
-        "alt": "金陵酒造酒藏外觀",
+        "src": "photos/food-kinryo-sake-kasu-ice.webp",
+        "alt": "金陵酒造酒粕冰淇淋",
         "credit": "宇宙碎片拍攝",
-        "objectPosition": "center 35%"
+        "objectPosition": "center center"
       }
     }
   ],
@@ -848,6 +875,7 @@
       ],
       "tips": [
         "✅ <strong>參道</strong>：有商店街可以慢慢逛；石階樓梯需要點肌力，預留體力與防滑鞋",
+        "✅ <strong>金陵酒造</strong>：金刀比羅宮參道入口；有酒造史料可參觀、酒香飄逸，販售酒製冰淇淋與地酒（冰淇淋甜度較高）",
         "✅ <strong>主社之後</strong>：爬到主社後若還有力氣，可再從主社後方往上爬；有嚴魂神社與好看的黑色御朱印",
         "✅ <strong>天狗石</strong>：神社左邊岩壁上有天狗石，考眼力",
         "✅ <strong>自駕</strong>：琴平→西条→松山，預留休息與用餐緩衝",

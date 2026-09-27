@@ -89,7 +89,11 @@ CC BY / CC BY-SA 圖片依授權條款標示作者、來源與授權；CC BY-SA 
 | `food-katsuo.webp` | 居酒屋かど家夜定食與鰹魚たたき | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（來源 `居酒屋かど家.jpg`） |
 | `food-hirome.webp` | 弘人市場入口 | Maarten Heerlien | [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Entrance_to_Hirome_Ichiba_(6453684561).jpg) |
 | `food-kirinomori.webp` | 霧の森大福 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（來源 `霧之森.jpg`） |
-| `food-sake.webp` | 金陵酒造酒藏外觀 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（來源 `金陵酒造.jpg`） |
+| `food-sake.webp` | 金陵酒造酒粕冰淇淋（與 `food-kinryo-sake-kasu-ice.webp` 同檔） | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（覆寫原外觀圖，避免舊路徑語意不符） |
+| `food-kinryo-sake-kasu-ice.webp` | 金陵酒造酒粕冰淇淋 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
+| `story-kinryo-entrance.webp` | 金陵酒造參道入口外觀與暖簾 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
+| `story-kinryo-pouring.webp` | 金陵酒造室內酒瓶出酒展示 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
+| `story-kinryo-history-panel.webp` | 金陵の郷酒造史料展板 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
 
 ## trips/2023_日本北海道_自由行/photos/
 
