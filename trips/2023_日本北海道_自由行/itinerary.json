@@ -13,9 +13,9 @@
     ],
     "footerDate": "行程實錄 · 2023年8月27日 - 9月3日",
     "cover": {
-      "src": "photos/cover.webp",
-      "alt": "中富良野日之出公園薰衣草花田",
-      "credit": "Totti / CC BY-SA 4.0"
+      "src": "photos/cover-tenguyama-night.webp",
+      "alt": "小樽天狗山夜景展望：港灣與街燈",
+      "credit": "宇宙碎片拍攝"
     },
     "theme": "ocean",
     "routeRegions": "北海道・登別・札幌・小樽・旭川・富良野・美瑛・定山溪",
@@ -78,14 +78,14 @@
             "name": "富良野起司工廠乳製品／伴手",
             "price": "約 ¥500–",
             "priceNote": "含稅參考價・實際以店面為準",
-            "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/52/Wine_Cheddar_Brand_of_Furano_Cheese_-_Cheese_Factory_-_Furano_-_Hokkaido_-_Japan_%2848012225498%29.jpg",
+            "imageUrl": "/trips/2023_日本北海道_自由行/photos/food-furano-cheese-exterior.webp",
             "url": "https://www.furano-cheese.jp/"
           },
           {
             "name": "富良野葡萄酒工房葡萄酒",
             "price": "約 ¥1,000–",
             "priceNote": "含稅參考價・可試飲參觀",
-            "imageUrl": "https://www.furanowine.jp/img/index_hero_img_01.png",
+            "imageUrl": "/trips/2023_日本北海道_自由行/photos/story-furano-wine.webp",
             "url": "https://www.furanowine.jp/"
           }
         ]
@@ -158,16 +158,11 @@
         "url": "https://www.hokudai.ac.jp/"
       },
       "photo": {
-        "src": "photos/story-hokudai.webp",
-        "alt": "北海道大學札幌農學校演武場（時計台）",
-        "credit": "十字軍ちゃん / CC0"
+        "src": "photos/story-hokudai-building.webp",
+        "alt": "北海道大學校園歷史洋館",
+        "credit": "宇宙碎片拍攝"
       },
       "relatedPhotos": [
-        {
-          "src": "photos/story-hokudai-building.webp",
-          "alt": "北海道大學校園歷史洋館",
-          "credit": "宇宙碎片拍攝"
-        },
         {
           "src": "photos/story-hokudai-stream.webp",
           "alt": "北海道大學校園溪流",
@@ -219,6 +214,11 @@
       },
       "relatedPhotos": [
         {
+          "src": "photos/story-tenguyama-night.webp",
+          "alt": "小樽天狗山夜景展望：港灣與街燈",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
           "src": "photos/story-otaru-rokkatei.webp",
           "alt": "小樽堺町六花亭石倉外觀與店招",
           "credit": "宇宙碎片拍攝"
@@ -262,19 +262,19 @@
         "url": "https://jozankei.jp/"
       },
       "photo": {
-        "src": "photos/day7.webp",
-        "alt": "定山溪大橋",
-        "credit": "t-konno / CC BY-SA 3.0"
+        "src": "photos/story-jozankei-waterfall.webp",
+        "alt": "定山溪森林溪瀑",
+        "credit": "宇宙碎片拍攝"
       },
       "relatedPhotos": [
         {
-          "src": "photos/jozankei-hotel-exterior.webp",
-          "alt": "定山溪豪景飯店外觀",
+          "src": "photos/story-jozankei-river-centered.webp",
+          "alt": "定山溪河谷（置中構圖）",
           "credit": "宇宙碎片拍攝"
         },
         {
-          "src": "photos/story-jozankei-river.webp",
-          "alt": "定山溪河谷",
+          "src": "photos/jozankei-hotel-exterior.webp",
+          "alt": "定山溪豪景飯店外觀",
           "credit": "宇宙碎片拍攝"
         }
       ]
@@ -291,18 +291,15 @@
         "url": "https://www.kaiyoutei.co.jp/"
       },
       "photo": {
-        "src": "photos/food-kani.webp",
-        "alt": "北海道蟹飯丼",
-        "credit": "woinary / CC BY-SA 2.0"
+        "src": "photos/food-kani-legs.webp",
+        "alt": "開陽亭蟹腳與蟹鉗盤，旁有檸檬與竹葉",
+        "credit": "宇宙碎片拍攝"
       },
       "relatedPhotos": [
         {
-          "src": "photos/food-kani-legs.webp",
-          "alt": "開陽亭蟹腳與蟹鉗盤，旁有檸檬與竹葉"
-        },
-        {
           "src": "photos/food-kani-kegani.webp",
-          "alt": "開陽亭毛蟹盤：蟹肉、蟹味噌與檸檬"
+          "alt": "開陽亭毛蟹盤：蟹肉、蟹味噌與檸檬",
+          "credit": "宇宙碎片拍攝"
         }
       ]
     },
@@ -316,14 +313,14 @@
         "url": "https://www.letao.jp/"
       },
       "photo": {
-        "src": "photos/food-letao.webp",
-        "alt": "LeTAO 小樽本店",
-        "credit": "663highland / CC BY-SA 4.0"
+        "src": "photos/food-letao-strawberry-hero.webp",
+        "alt": "小樽 LeTAO 草莓塔（圓塔置中）",
+        "credit": "宇宙碎片拍攝"
       },
       "relatedPhotos": [
         {
-          "src": "photos/food-letao-double-cheese-plate.webp",
-          "alt": "小樽 LeTAO 本店甜點拼盤：雙層起司蛋糕、草莓塔與哈密瓜蛋糕",
+          "src": "photos/food-letao-double-fromage-hero.webp",
+          "alt": "小樽 LeTAO 雙層起司蛋糕（Double Fromage）",
           "credit": "宇宙碎片拍攝"
         },
         {
@@ -343,14 +340,14 @@
         "url": "https://www.asahikawa-kankou.or.jp/"
       },
       "photo": {
-        "src": "photos/food-jingisukan-cooking.webp",
-        "alt": "旭川ひつじ家成吉思汗鐵鍋烤羊肉與豆芽洋蔥",
+        "src": "photos/food-jingisukan-main-fix.webp",
+        "alt": "旭川ひつじ家成吉思汗鐵鍋烤羊肉",
         "credit": "宇宙碎片拍攝"
       },
       "relatedPhotos": [
         {
-          "src": "photos/food-jingisukan-grill.webp",
-          "alt": "旭川ひつじ家成吉思汗鐵鍋",
+          "src": "photos/food-jingisukan-plate-meat.webp",
+          "alt": "ひつじ家羊肉生肉盤",
           "credit": "宇宙碎片拍攝"
         },
         {
@@ -790,9 +787,9 @@
       },
       "photos": [
         {
-          "src": "photos/story-hokudai.webp",
-          "alt": "北海道大學札幌農學校演武場（時計台）",
-          "credit": "十字軍ちゃん / CC0"
+          "src": "photos/story-hokudai-building.webp",
+          "alt": "北海道大學校園歷史洋館",
+          "credit": "宇宙碎片拍攝"
         }
       ]
     },
@@ -858,8 +855,8 @@
           "icon": "sun",
           "tag": "夜景",
           "photo": {
-            "src": "photos/story-tenguyama.webp",
-            "alt": "小樽天狗山夜景展望",
+            "src": "photos/story-tenguyama-night.webp",
+            "alt": "小樽天狗山夜景展望：港灣與街燈",
             "credit": "宇宙碎片拍攝"
           }
         },
@@ -891,14 +888,14 @@
       },
       "photos": [
         {
-          "src": "photos/story-tenguyama.webp",
-          "alt": "小樽天狗山夜景展望",
+          "src": "photos/story-tenguyama-night.webp",
+          "alt": "小樽天狗山夜景展望：港灣與街燈",
           "credit": "宇宙碎片拍攝"
         },
         {
-          "src": "photos/food-letao.webp",
-          "alt": "LeTAO 小樽本店",
-          "credit": "663highland / CC BY-SA 4.0"
+          "src": "photos/food-letao-strawberry-hero.webp",
+          "alt": "小樽 LeTAO 草莓塔（圓塔置中）",
+          "credit": "宇宙碎片拍攝"
         }
       ]
     },
@@ -992,9 +989,9 @@
       },
       "photos": [
         {
-          "src": "photos/food-kani.webp",
-          "alt": "北海道蟹飯丼",
-          "credit": "woinary / CC BY-SA 2.0"
+          "src": "photos/food-kani-legs.webp",
+          "alt": "開陽亭蟹腳與蟹鉗盤，旁有檸檬與竹葉",
+          "credit": "宇宙碎片拍攝"
         }
       ]
     },
@@ -1107,9 +1104,9 @@
       },
       "photos": [
         {
-          "src": "photos/food-furano-cheese.webp",
-          "alt": "富良野起司工廠起司",
-          "credit": "Adam Jones / CC BY-SA 2.0"
+          "src": "photos/food-furano-cheese-exterior.webp",
+          "alt": "富良野起司工廠外觀與「富良野チーズ工房」招牌",
+          "credit": "宇宙碎片拍攝"
         },
         {
           "src": "photos/story-furano-wine.webp",
@@ -1197,9 +1194,9 @@
       },
       "photos": [
         {
-          "src": "photos/food-jingisukan.webp",
-          "alt": "成吉思汗烤羊肉",
-          "credit": "Raita Futo / CC BY 2.0"
+          "src": "photos/food-jingisukan-main-fix.webp",
+          "alt": "旭川ひつじ家成吉思汗鐵鍋烤羊肉",
+          "credit": "宇宙碎片拍攝"
         }
       ]
     },
@@ -1248,9 +1245,9 @@
           "icon": "hotel",
           "tag": "♨️ 溫泉宿",
           "photo": {
-            "src": "photos/day7.webp",
-            "alt": "定山溪大橋",
-            "credit": "t-konno / CC BY-SA 3.0"
+            "src": "photos/story-jozankei-waterfall.webp",
+            "alt": "定山溪森林溪瀑",
+            "credit": "宇宙碎片拍攝"
           }
         }
       ],
@@ -1259,9 +1256,9 @@
         "本館懷石請依飯店通知時間入席"
       ],
       "photo": {
-        "src": "photos/day7.webp",
-        "alt": "定山溪大橋",
-        "credit": "t-konno / CC BY-SA 3.0"
+        "src": "photos/story-jozankei-waterfall.webp",
+        "alt": "定山溪森林溪瀑",
+        "credit": "宇宙碎片拍攝"
       }
     },
     {
