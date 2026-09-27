@@ -67,7 +67,7 @@ CC BY / CC BY-SA 圖片依授權條款標示作者、來源與授權；CC BY-SA 
 | `story-olive-magic-book.webp` | 橄欖公園大型魔法書造景 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
 | `story-olive-history-panel.webp` | 伴手禮店內小豆島橄欖歷史展板 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
 | `food-olive-softserve.webp` | 小豆島橄欖霜淇淋 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
-| `day3.webp` | 金刀比羅宮朱色社殿與林蔭 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
+| `day3.webp` | 金刀比羅宮朱色社殿與林蔭（Day3 卡片已改指夜晚道後本館後方 `story-dogo.webp`；此檔暫留） | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
 | `story-konpira-goshuin.webp` | 金刀比羅宮黑色御朱印與朱色社殿背景 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
 | `story-konpira-stairs.webp` | 金刀比羅宮參道石階與林蔭 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
 | `story-konpira-entrance.webp` | 金刀比羅宮參道入口木門與石燈籠 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
@@ -76,7 +76,11 @@ CC BY / CC BY-SA 圖片依授權條款標示作者、來源與授權；CC BY-SA 
 | `day6.webp` | 高知城天守 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（來源 `高知城.jpg`） |
 | `day7.webp` | 祖谷藤蔓橋 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（來源 `祖谷.jpg`） |
 | `day8.webp` | 瀬戸大橋（南備讃瀬戸大橋） | Kanchi1979 | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:JP-Kagawa-Great-Seto-Bridge-Minami_Bisan-Seto-Bridge.jpg) |
-| `story-dogo.webp` | 道後溫泉本館暮色外觀 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（來源 `道後溫泉.jpg`） |
+| `story-dogo.webp` | 夜晚道後溫泉本館後方 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（覆寫原暮色外觀） |
+| `story-dogo-clock.webp` | 道後溫泉站前名物時鐘 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
+| `story-dogo-botchan.webp` | 道後坊っちゃん列車 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
+| `story-asuka-entrance.webp` | 飛鳥乃湯泉入口 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
+| `story-asuka-sign.webp` | 飛鳥乃湯泉館內標示 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
 | `story-shimonada.webp` | 下灘駅月台與瀬戸内海 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（來源 `下灘.jpg`） |
 | `story-oboke.webp` | 祖谷藤蔓橋與溪谷 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（來源 `祖谷.jpg`） |
 | `story-uwajima.webp` | 宇和島城天守與石垣 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |

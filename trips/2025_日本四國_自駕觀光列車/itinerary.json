@@ -294,17 +294,38 @@
       "theme": "place",
       "title": "道後溫泉",
       "kicker": "愛媛・松山",
-      "body": "日本最古老溫泉地之一，本館木造建築與 haikara 通商店街並存。參拜與城下町之後，適合在這裡把步伐再放慢一點。",
+      "body": "以溫泉為中心的商店街，沿途店家不少，入口附近有名物時鐘與坊っちゃん列車。本館人潮很多；夜晚從本館後方看，燈光落在木造外觀上，比較安靜。若本館太擠，可改去附近的飛鳥乃湯：人少一些、設施完善，泉質較滑。泡完可回商店街買布丁、喝柑橘汁。",
       "source": {
         "label": "道後溫泉公式",
         "url": "https://dogo.jp/"
       },
       "photo": {
         "src": "photos/story-dogo.webp",
-        "alt": "道後溫泉本館暮色外觀",
-        "credit": "宇宙碎片拍攝",
-        "objectPosition": "center 40%"
-      }
+        "alt": "夜晚道後溫泉本館後方",
+        "credit": "宇宙碎片拍攝"
+      },
+      "relatedPhotos": [
+        {
+          "src": "photos/story-dogo-clock.webp",
+          "alt": "道後溫泉站前名物時鐘",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/story-dogo-botchan.webp",
+          "alt": "道後坊っちゃん列車",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/story-asuka-entrance.webp",
+          "alt": "飛鳥乃湯泉入口",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/story-asuka-sign.webp",
+          "alt": "飛鳥乃湯泉館內標示",
+          "credit": "宇宙碎片拍攝"
+        }
+      ]
     },
     {
       "theme": "place",
@@ -879,11 +900,11 @@
         "✅ <strong>主社之後</strong>：爬到主社後若還有力氣，可再從主社後方往上爬；有嚴魂神社與好看的黑色御朱印",
         "✅ <strong>天狗石</strong>：神社左邊岩壁上有天狗石，考眼力",
         "✅ <strong>自駕</strong>：琴平→西条→松山，預留休息與用餐緩衝",
-        "✅ <strong>道後</strong>：haikara通適合傍晚慢逛"
+        "✅ <strong>道後</strong>：以溫泉為中心的商店街，店家可逛；入口有名物時鐘與坊っちゃん列車。本館人很多，夜晚從後方看比較安靜。人多可去附近飛鳥乃湯（人少、舒服、設施完善、泉質較滑）。泡完可買布丁、喝柑橘汁"
       ],
       "photo": {
-        "src": "photos/day3.webp",
-        "alt": "金刀比羅宮朱色社殿與林蔭",
+        "src": "photos/story-dogo.webp",
+        "alt": "夜晚道後溫泉本館後方",
         "credit": "宇宙碎片拍攝"
       }
     },

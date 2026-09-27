@@ -8,7 +8,7 @@ const heroTitle = document.getElementById('stories-trip-title');
 const heroEl = document.querySelector('.hero-stories');
 
 const THEME_LABEL = { place: '景點', history: '歷史', culture: '文化' };
-const RELATED_MAX = 3;
+const RELATED_MAX = 4;
 
 function mountHeroBack(tripId) {
   if (!heroEl || heroEl.querySelector('.hero-back')) return;
@@ -115,7 +115,9 @@ function relatedGridHtml(story, index, tripId, zoomGroup) {
       ? 'story-related-grid--1'
       : related.length === 2
         ? 'story-related-grid--2'
-        : 'story-related-grid--3';
+        : related.length === 4
+          ? 'story-related-grid--4'
+          : 'story-related-grid--3';
 
   return `<div class="story-related-grid ${countClass}" role="list" aria-label="相關照片">${cards}</div>`;
 }
