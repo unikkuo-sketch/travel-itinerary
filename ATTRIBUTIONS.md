@@ -109,7 +109,8 @@ CC BY / CC BY-SA 圖片依授權條款標示作者、來源與授權；CC BY-SA 
 | `story-jingu-courtyard.webp` | 北海道神宮境內庭院 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
 | `story-jozankei-river.webp` | 定山溪河谷 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
 | `story-furano-wine.webp` | 富良野葡萄酒工房酒窖 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
-| `story-furano-hills-valley.webp` | 富良野盆地綠黃田塊與遠山丘陵全景 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（`stories[].relatedPhotos`） |
+| `story-furano-hills-valley.webp` | 富良野盆地綠黃田塊與遠山丘陵全景 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（`stories[].photo`） |
+| `story-furano-hills-bridge.webp` | 富良野橋上遠望谷地綠意與遠山 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（`stories[].relatedPhotos`） |
 | `food-letao.webp` | LeTAO 小樽本店 | 663highland | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:220721_LeTAO_Otaru_Hokkaido_Japan02s3.jpg) |
 | `food-letao-double-cheese-plate.webp` | 小樽 LeTAO 本店甜點拼盤：雙層起司蛋糕、草莓塔與哈密瓜蛋糕 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（`foods[].relatedPhotos`） |
 | `food-letao-montblanc-plate.webp` | 小樽 LeTAO 本店盤面：蒙布朗、雙層起司蛋糕與水果果凍杯 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（`foods[].relatedPhotos`） |
