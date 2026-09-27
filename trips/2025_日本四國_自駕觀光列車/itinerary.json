@@ -446,7 +446,27 @@
       "date": "05/12",
       "places": "高松機場→烏龍→栗林→商店街",
       "hotel": "Hostel JAQ takamatsu",
-      "hotelNote": "高松市區，抵達日步行友善",
+      "hotelNote": "雅房・衛浴共用・含早餐烏龍・距栗林約10分",
+      "hotelBlurbTeaser": "背包客 hostel，附簡單早餐烏龍，走路約十分鐘到栗林。",
+      "hotelBlurb": "高松市區的 Hostel JAQ，有宿舍房也有雙人房；屬雅房，衛浴在外面。入住含簡單早餐烏龍麵。離栗林公園近，走路大約十分鐘。有停車位，出發前可先詢問。適合抵達高松當日慢逛、隔天往高松港渡輪的兩晚基地。",
+      "hotelUrl": "https://www.agoda.com/zh-tw/hostel-jaq-takamatsu/hotel/takamatsu-jp.html?cid=1975511&hl=zh-tw",
+      "hotelPhoto": {
+        "src": "photos/jaq-hotel-entrance.webp",
+        "alt": "Hostel JAQ Takamatsu 入口暖簾",
+        "credit": "宇宙碎片拍攝"
+      },
+      "hotelPhotos": [
+        {
+          "src": "photos/jaq-hotel-sign.webp",
+          "alt": "Hostel JAQ Takamatsu 外牆圓形招牌",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/jaq-breakfast-udon.webp",
+          "alt": "Hostel JAQ 附贈早餐烏龍麵",
+          "credit": "宇宙碎片拍攝"
+        }
+      ],
       "routeLabel": "高松",
       "transport": "抵達高松機場 · 11:00",
       "transportClass": "",
@@ -457,7 +477,27 @@
       "date": "05/13",
       "places": "高松港→小豆島→永旺高松",
       "hotel": "Hostel JAQ takamatsu",
-      "hotelNote": "返回高松續住",
+      "hotelNote": "雅房・衛浴共用・含早餐烏龍・距栗林約10分",
+      "hotelBlurbTeaser": "背包客 hostel，附簡單早餐烏龍，走路約十分鐘到栗林。",
+      "hotelBlurb": "高松市區的 Hostel JAQ，有宿舍房也有雙人房；屬雅房，衛浴在外面。入住含簡單早餐烏龍麵。離栗林公園近，走路大約十分鐘。有停車位，出發前可先詢問。適合抵達高松當日慢逛、隔天往高松港渡輪的兩晚基地。",
+      "hotelUrl": "https://www.agoda.com/zh-tw/hostel-jaq-takamatsu/hotel/takamatsu-jp.html?cid=1975511&hl=zh-tw",
+      "hotelPhoto": {
+        "src": "photos/jaq-hotel-entrance.webp",
+        "alt": "Hostel JAQ Takamatsu 入口暖簾",
+        "credit": "宇宙碎片拍攝"
+      },
+      "hotelPhotos": [
+        {
+          "src": "photos/jaq-hotel-sign.webp",
+          "alt": "Hostel JAQ Takamatsu 外牆圓形招牌",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/jaq-breakfast-udon.webp",
+          "alt": "Hostel JAQ 附贈早餐烏龍麵",
+          "credit": "宇宙碎片拍攝"
+        }
+      ],
       "routeLabel": "小豆島",
       "transport": "渡輪 高松⇄土庄",
       "transportClass": "",

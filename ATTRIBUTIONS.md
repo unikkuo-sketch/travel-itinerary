@@ -72,6 +72,9 @@ CC BY / CC BY-SA 圖片依授權條款標示作者、來源與授權；CC BY-SA 
 | `story-uwajima.webp` | 宇和島城天守與石垣 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
 | `story-train-ryoma.webp` | 志国土佐時代の夜明けのものがたり觀光列車 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
 | `food-udon.webp` | 讚岐烏龍麵天婦羅定食 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（覆寫為 `food-udon-bowl.webp` 同趟自攝主圖） |
+| `jaq-hotel-entrance.webp` | Hostel JAQ Takamatsu 入口暖簾 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
+| `jaq-hotel-sign.webp` | Hostel JAQ Takamatsu 外牆圓形招牌 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
+| `jaq-breakfast-udon.webp` | Hostel JAQ 附贈早餐烏龍麵 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
 | `food-ozu-aburaya.webp` | 大洲爐端油屋的栗子甜點 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（來源 `大洲爐端 油屋_栗子.jpg`） |
 | `food-katsuo.webp` | 居酒屋かど家夜定食與鰹魚たたき | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（來源 `居酒屋かど家.jpg`） |
 | `food-hirome.webp` | 弘人市場入口 | Maarten Heerlien | [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Entrance_to_Hirome_Ichiba_(6453684561).jpg) |
