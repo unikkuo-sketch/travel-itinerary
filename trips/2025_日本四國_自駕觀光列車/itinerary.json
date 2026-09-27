@@ -499,6 +499,34 @@
         "credit": "宇宙碎片拍攝",
         "objectPosition": "center center"
       }
+    },
+    {
+      "theme": "food",
+      "title": "道後商店街柑橘汁／布丁",
+      "kicker": "愛媛・道後",
+      "body": "道後商店街的柑橘汁大推，品種很多、可以自己選。三杯任選：拿杯子和盤子挑品種，開水龍頭裝好後到櫃台付款。喜歡酸的可以選不知火。旁邊也有布丁，適合配著喝。",
+      "source": {
+        "label": "愛媛の食卓1970",
+        "url": "https://w-harmony.jp/shop/ehimenosyokutaku1970/"
+      },
+      "photo": {
+        "src": "photos/food-dogo-citrus.webp",
+        "alt": "道後商店街三杯柑橘汁",
+        "credit": "宇宙碎片拍攝",
+        "objectPosition": "center center"
+      },
+      "relatedPhotos": [
+        {
+          "src": "photos/food-dogo-pudding.webp",
+          "alt": "道後布丁",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/food-dogo-juice-bar.webp",
+          "alt": "愛媛の食卓1970 店面與取汁檯",
+          "credit": "宇宙碎片拍攝"
+        }
+      ]
     }
   ],
   "tickets": [
@@ -900,7 +928,7 @@
         "✅ <strong>主社之後</strong>：爬到主社後若還有力氣，可再從主社後方往上爬；有嚴魂神社與好看的黑色御朱印",
         "✅ <strong>天狗石</strong>：神社左邊岩壁上有天狗石，考眼力",
         "✅ <strong>自駕</strong>：琴平→西条→松山，預留休息與用餐緩衝",
-        "✅ <strong>道後</strong>：以溫泉為中心的商店街，店家可逛；入口有名物時鐘與坊っちゃん列車。本館人很多，夜晚從後方看比較安靜。人多可去附近飛鳥乃湯（人少、舒服、設施完善、泉質較滑）。泡完可買布丁、喝柑橘汁"
+        "✅ <strong>道後</strong>：以溫泉為中心的商店街，店家可逛；入口有名物時鐘與坊っちゃん列車。本館人很多，夜晚從後方看比較安靜。人多可去附近飛鳥乃湯（人少、舒服、設施完善、泉質較滑）。泡完可買布丁；柑橘汁大推，三杯任選——拿杯子盤子挑品種、開水龍頭裝好後到櫃台付款，喜歡酸的可選不知火"
       ],
       "photo": {
         "src": "photos/story-dogo.webp",
