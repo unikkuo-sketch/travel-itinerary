@@ -240,17 +240,28 @@
       "theme": "history",
       "title": "金刀比羅宮",
       "kicker": "香川・琴平",
-      "body": "通稱「金比羅さん」，主祭大物主神，自古為海運與旅行者守護。長長的石階參道是身體與心情一起換檔的儀式。",
+      "body": "通稱「金比羅さん」，主祭大物主神，自古為海運與旅行者守護。長長的石階參道是身體與心情一起換檔的儀式；參道商店街可慢慢逛，黑色御朱印也是這趟值得收進本子的一頁。",
       "source": {
         "label": "金刀比羅宮（公式）",
         "url": "https://www.konpira.or.jp/"
       },
       "photo": {
-        "src": "photos/day3.webp",
-        "alt": "金刀比羅宮本宮建築",
-        "credit": "宇宙碎片拍攝",
-        "objectPosition": "center 28%"
-      }
+        "src": "photos/story-konpira-goshuin.webp",
+        "alt": "金刀比羅宮黑色御朱印與朱色社殿背景",
+        "credit": "宇宙碎片拍攝"
+      },
+      "relatedPhotos": [
+        {
+          "src": "photos/story-konpira-stairs.webp",
+          "alt": "金刀比羅宮參道石階與林蔭",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/story-konpira-entrance.webp",
+          "alt": "金刀比羅宮參道入口木門與石燈籠",
+          "credit": "宇宙碎片拍攝"
+        }
+      ]
     },
     {
       "theme": "place",
@@ -836,13 +847,15 @@
         }
       ],
       "tips": [
-        "✅ <strong>金刀比羅宮</strong>：石階多，預留體力與防滑鞋",
+        "✅ <strong>參道</strong>：有商店街可以慢慢逛；石階樓梯需要點肌力，預留體力與防滑鞋",
+        "✅ <strong>主社之後</strong>：爬到主社後若還有力氣，可再從主社後方往上爬；有嚴魂神社與好看的黑色御朱印",
+        "✅ <strong>天狗石</strong>：神社左邊岩壁上有天狗石，考眼力",
         "✅ <strong>自駕</strong>：琴平→西条→松山，預留休息與用餐緩衝",
         "✅ <strong>道後</strong>：haikara通適合傍晚慢逛"
       ],
       "photo": {
         "src": "photos/day3.webp",
-        "alt": "金刀比羅宮本宮建築",
+        "alt": "金刀比羅宮朱色社殿與林蔭",
         "credit": "宇宙碎片拍攝"
       }
     },
