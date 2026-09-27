@@ -126,7 +126,9 @@ CC BY / CC BY-SA 圖片依授權條款標示作者、來源與授權；CC BY-SA 
 | `story-otaru-steam-clock.webp` | 小樽蒸汽鐘與音樂盒館磚牆 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（已自小樽 `stories[].relatedPhotos` 卸下以湊慣例 A 總數 3；檔案暫留） |
 | `story-furano-valley-overview.webp` | 富良野谷地綠黃田塊與遠山全景 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（`stories[].relatedPhotos` 丘陵） |
 | `story-hokudai-building.webp` | 北海道大學校園歷史洋館 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（`stories[].photo`／day2 gallery） |
-| `story-hokudai-stream.webp` | 北海道大學校園溪流 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（已自北大 `stories[].relatedPhotos` 卸下：無第三自攝角時維持 main-only 總數 1；檔案暫留） |
+| `story-hokudai-cafeteria-meal.webp` | 北海道大學中央食堂定食盤 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（`stories[].relatedPhotos`） |
+| `story-hokudai-yogurt.webp` | 北大マルシェ North Plain Farm 有機優格 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（`stories[].relatedPhotos`） |
+| `story-hokudai-stream.webp` | 北海道大學校園溪流 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（已自北大 `stories[].relatedPhotos` 卸下；檔案暫留） |
 | `story-jingu-gate.webp` | 北海道神宮參道門與廣場 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
 | `story-jingu-courtyard.webp` | 北海道神宮境內庭院 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
 | `story-jozankei-river.webp` | 定山溪河谷 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（已自 day7／定山溪主圖卸下；檔案暫留） |
