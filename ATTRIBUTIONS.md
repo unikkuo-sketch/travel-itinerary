@@ -107,6 +107,8 @@ CC BY / CC BY-SA 圖片依授權條款標示作者、來源與授權；CC BY-SA 
 | `story-furano-wine.webp` | 富良野葡萄酒工房酒窖 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
 | `food-letao.webp` | LeTAO 小樽本店 | 663highland | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:220721_LeTAO_Otaru_Hokkaido_Japan02s3.jpg) |
 | `food-kani.webp` | 北海道蟹飯丼 | woinary | [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Kani_meshi_don_by_woinary_in_New_Chitose_Airport,_Hokkaido.jpg) |
+| `food-kani-legs.webp` | 開陽亭蟹腳與蟹鉗盤 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（`foods[].relatedPhotos`） |
+| `food-kani-kegani.webp` | 開陽亭毛蟹盤（蟹肉與蟹味噌） | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（`foods[].relatedPhotos`） |
 | `food-soup-curry.webp` | 札幌湯咖哩 | Koichi Oda | [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:A_soup_curry_dish_in_Sapporo_-_Flickr_-_odako1.jpg) |
 | `food-jingisukan.webp` | 成吉思汗烤羊肉 | Raita Futo | [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Jingisukan_(46537378761).jpg) |
 | `food-furano-cheese.webp` | 富良野起司工廠起司 | Adam Jones | [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Wine_Cheddar_Brand_of_Furano_Cheese_-_Cheese_Factory_-_Furano_-_Hokkaido_-_Japan_(48012225498).jpg) |
