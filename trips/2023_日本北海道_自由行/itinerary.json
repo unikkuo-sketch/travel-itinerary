@@ -313,14 +313,14 @@
         "url": "https://www.letao.jp/"
       },
       "photo": {
-        "src": "photos/food-letao-double-fromage-hero.webp",
-        "alt": "小樽 LeTAO 雙層起司蛋糕（Double Fromage）",
+        "src": "photos/food-letao-strawberry-hero.webp",
+        "alt": "小樽 LeTAO 草莓塔（圓塔置中）",
         "credit": "宇宙碎片拍攝"
       },
       "relatedPhotos": [
         {
-          "src": "photos/food-letao-strawberry-centered.webp",
-          "alt": "小樽 LeTAO 草莓塔（置中）",
+          "src": "photos/food-letao-double-fromage-hero.webp",
+          "alt": "小樽 LeTAO 雙層起司蛋糕（Double Fromage）",
           "credit": "宇宙碎片拍攝"
         },
         {
@@ -893,8 +893,8 @@
           "credit": "宇宙碎片拍攝"
         },
         {
-          "src": "photos/food-letao-double-fromage-hero.webp",
-          "alt": "小樽 LeTAO 雙層起司蛋糕（Double Fromage）",
+          "src": "photos/food-letao-strawberry-hero.webp",
+          "alt": "小樽 LeTAO 草莓塔（圓塔置中）",
           "credit": "宇宙碎片拍攝"
         }
       ]

@@ -117,8 +117,9 @@ CC BY / CC BY-SA 圖片依授權條款標示作者、來源與授權；CC BY-SA 
 | `story-furano-hills-bridge.webp` | 富良野橋上遠望谷地綠意與遠山 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（`stories[].relatedPhotos`） |
 | `food-letao.webp` | LeTAO 小樽本店（檔名／舊 credit 為外觀；實際像素為店內蒙布朗，credit mismatch） | 663highland | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:220721_LeTAO_Otaru_Hokkaido_Japan02s3.jpg)（已自 `foods[]`／day3 gallery 卸下；檔案暫留） |
 | `food-letao-double-cheese-plate.webp` | 小樽 LeTAO 本店甜點拼盤：雙層起司蛋糕、草莓塔與哈密瓜蛋糕 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（已自 `foods[]` 主圖卸下；三件拼盤構圖偏散，檔案暫留） |
-| `food-letao-double-fromage-hero.webp` | 小樽 LeTAO 雙層起司蛋糕（Double Fromage） | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（`foods[].photo`／day3 gallery） |
-| `food-letao-strawberry-centered.webp` | 小樽 LeTAO 草莓塔（置中） | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（`foods[].relatedPhotos`） |
+| `food-letao-strawberry-hero.webp` | 小樽 LeTAO 草莓塔（圓塔置中） | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（`foods[].photo`／day3 gallery） |
+| `food-letao-double-fromage-hero.webp` | 小樽 LeTAO 雙層起司蛋糕（Double Fromage） | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（`foods[].relatedPhotos`；構圖待重裁，本輪不作主圖） |
+| `food-letao-strawberry-centered.webp` | 小樽 LeTAO 草莓塔（偏心構圖，已拒用） | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（未掛 `foods[]`；檔案暫留） |
 | `food-letao-montblanc-plate.webp` | 小樽 LeTAO 本店盤面：蒙布朗、雙層起司蛋糕與水果果凍杯 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（`foods[].relatedPhotos`） |
 | `food-kani.webp` | 北海道蟹飯丼 | woinary | [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Kani_meshi_don_by_woinary_in_New_Chitose_Airport,_Hokkaido.jpg)（已自 `foods[]`／day4 gallery 卸下；檔案暫留） |
 | `food-kani-legs.webp` | 開陽亭蟹腳與蟹鉗盤 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（`foods[].photo`／day4 gallery） |
