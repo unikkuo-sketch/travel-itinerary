@@ -79,7 +79,8 @@ CC BY / CC BY-SA 圖片依授權條款標示作者、來源與授權；CC BY-SA 
 
 | 檔案 | 內容 | 作者 | 授權 | 來源 |
 |---|---|---|---|---|
-| `cover.webp` | 中富良野日之出公園薰衣草花田 | Totti | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Hinode_park_lavender_2.jpg) |
+| `cover.webp` | 中富良野日之出公園薰衣草花田 | Totti | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Hinode_park_lavender_2.jpg)（已自 `meta.cover` 卸下；檔案暫留） |
+| `cover-tenguyama-night.webp` | 小樽天狗山夜景展望：港灣與街燈 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（`meta.cover`） |
 | `day1.webp` | 登別地獄谷日間硫氣谷與木棧道空景 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
 | `day2.webp` | 北海道神宮本殿 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
 | `day3.webp` | 小樽運河 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
@@ -96,7 +97,8 @@ CC BY / CC BY-SA 圖片依授權條款標示作者、來源與授權；CC BY-SA 
 | `jozankei-breakfast-buffet-maguro.webp` | 定山溪豪景自助早餐鮪魚台 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（`hotelPhotos`） |
 | `jozankei-breakfast-space.webp` | 定山溪豪景早餐餐廳窗景（已模糊可辨識臉） | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（`hotelPhotos`） |
 | `story-hokudai.webp` | 北海道大學札幌農學校演武場（時計台） | 十字軍ちゃん | [CC0](https://creativecommons.org/publicdomain/zero/1.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Hokkaido_University_clocktower.jpg)（已自 `stories[]`／`days[].photos` 卸下；檔案暫留） |
-| `story-tenguyama.webp` | 小樽天狗山夜景展望 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
+| `story-tenguyama.webp` | 小樽天狗山夜景展望 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（已由高解析 `story-tenguyama-night.webp` 取代；檔案暫留） |
+| `story-tenguyama-night.webp` | 小樽天狗山夜景展望：港灣與街燈 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（day3 gallery／`stories[].relatedPhotos`） |
 | `story-otaru-warehouse.webp` | 小樽運河北日本倉庫特寫 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（目前未掛 related；檔案保留） |
 | `story-otaru-canal-panorama.webp` | 小樽運河全景（瓦斯燈／步道） | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（目前未掛 related；檔案保留） |
 | `story-jigokudani-sign.webp` | 登別地獄谷木製園區標示牌（支笏洞爺國立公園） | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（`stories[].relatedPhotos`） |
@@ -107,20 +109,26 @@ CC BY / CC BY-SA 圖片依授權條款標示作者、來源與授權；CC BY-SA 
 | `story-hokudai-stream.webp` | 北海道大學校園溪流 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（`stories[].relatedPhotos`） |
 | `story-jingu-gate.webp` | 北海道神宮參道門與廣場 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
 | `story-jingu-courtyard.webp` | 北海道神宮境內庭院 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
-| `story-jozankei-river.webp` | 定山溪河谷 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（day7 hero／`stories[].photo`） |
+| `story-jozankei-river.webp` | 定山溪河谷 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（已自 day7／定山溪主圖卸下；檔案暫留） |
+| `story-jozankei-waterfall.webp` | 定山溪森林溪瀑 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（day7 hero／`stories[].photo`） |
+| `story-jozankei-river-centered.webp` | 定山溪河谷（置中構圖） | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（`stories[].relatedPhotos`） |
 | `story-furano-wine.webp` | 富良野葡萄酒工房酒窖 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（`foods[].photo`／day5 gallery／shopping） |
 | `story-furano-hills-valley.webp` | 富良野盆地綠黃田塊與遠山丘陵全景 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（`stories[].photo`） |
 | `story-furano-hills-bridge.webp` | 富良野橋上遠望谷地綠意與遠山 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（`stories[].relatedPhotos`） |
 | `food-letao.webp` | LeTAO 小樽本店（檔名／舊 credit 為外觀；實際像素為店內蒙布朗，credit mismatch） | 663highland | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:220721_LeTAO_Otaru_Hokkaido_Japan02s3.jpg)（已自 `foods[]`／day3 gallery 卸下；檔案暫留） |
-| `food-letao-double-cheese-plate.webp` | 小樽 LeTAO 本店甜點拼盤：雙層起司蛋糕、草莓塔與哈密瓜蛋糕 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（`foods[].photo`／day3 gallery） |
+| `food-letao-double-cheese-plate.webp` | 小樽 LeTAO 本店甜點拼盤：雙層起司蛋糕、草莓塔與哈密瓜蛋糕 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（已自 `foods[]` 主圖卸下；三件拼盤構圖偏散，檔案暫留） |
+| `food-letao-double-fromage-hero.webp` | 小樽 LeTAO 雙層起司蛋糕（Double Fromage） | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（`foods[].photo`／day3 gallery） |
+| `food-letao-strawberry-centered.webp` | 小樽 LeTAO 草莓塔（置中） | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（`foods[].relatedPhotos`） |
 | `food-letao-montblanc-plate.webp` | 小樽 LeTAO 本店盤面：蒙布朗、雙層起司蛋糕與水果果凍杯 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（`foods[].relatedPhotos`） |
 | `food-kani.webp` | 北海道蟹飯丼 | woinary | [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Kani_meshi_don_by_woinary_in_New_Chitose_Airport,_Hokkaido.jpg)（已自 `foods[]`／day4 gallery 卸下；檔案暫留） |
 | `food-kani-legs.webp` | 開陽亭蟹腳與蟹鉗盤 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（`foods[].photo`／day4 gallery） |
 | `food-kani-kegani.webp` | 開陽亭毛蟹盤（蟹肉與蟹味噌） | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（`foods[].relatedPhotos`） |
 | `food-soup-curry.webp` | 札幌湯咖哩 | Koichi Oda | [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:A_soup_curry_dish_in_Sapporo_-_Flickr_-_odako1.jpg)（已自 `foods[]` 卸下，檔案暫留） |
 | `food-jingisukan.webp` | 成吉思汗烤羊肉 | Raita Futo | [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Jingisukan_(46537378761).jpg)（已自 `foods[]`／day6 gallery 卸下；檔案暫留） |
-| `food-jingisukan-cooking.webp` | 旭川ひつじ家成吉思汗鐵鍋烤羊肉與豆芽洋蔥 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（`foods[].photo`） |
-| `food-jingisukan-grill.webp` | 旭川ひつじ家成吉思汗鐵鍋 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（`foods[].relatedPhotos`） |
+| `food-jingisukan-cooking.webp` | 旭川ひつじ家成吉思汗鐵鍋烤羊肉與豆芽洋蔥 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（已由 `food-jingisukan-main-fix.webp` 取代主圖；檔案暫留） |
+| `food-jingisukan-main-fix.webp` | 旭川ひつじ家成吉思汗鐵鍋烤羊肉 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（`foods[].photo`／day6 gallery） |
+| `food-jingisukan-grill.webp` | 旭川ひつじ家成吉思汗鐵鍋（空鍋） | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（已自 `foods[].relatedPhotos` 卸下；檔案暫留） |
+| `food-jingisukan-plate-meat.webp` | ひつじ家羊肉生肉盤 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（`foods[].relatedPhotos`） |
 | `food-jingisukan-plate.webp` | ひつじ家羊肉盤（プレミアムサフォーク） | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（`foods[].relatedPhotos`） |
 | `food-takasago-main.webp` | 旭川高砂酒造館內旭高砂招牌與酒瓶牆 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（`foods[].photo`） |
 | `food-takasago-exterior.webp` | 高砂酒造外觀與國士無雙暖簾 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（`foods[].relatedPhotos`） |
