@@ -74,7 +74,7 @@ npm run check
 
 ## Cursor Cloud specific instructions
 
-- Static frontend only (Vite + vanilla JS). No backend, database, env vars, or secrets required (no `.env`).
+- Static frontend only (Vite + vanilla JS). No backend, database, env vars, or secrets required (no `.env`; see `.env.example`).
 - Package manager is npm (`package-lock.json`). Commands are in `package.json` / README.
 - Verification: `npm run check` then `npm run dev` (or `npm run build`) plus manual browser check.
 - Dev server serves at `http://localhost:5173/` — root base; do not use `/travel-itinerary/`.

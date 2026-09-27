@@ -9,7 +9,7 @@
 
 在 repo 根目錄執行：
 
-無需 `.env`（靜態站、無 secrets）。
+無需 `.env`（靜態站、無 secrets）。說明見根目錄 `.env.example`。
 
 ```powershell
 npm install

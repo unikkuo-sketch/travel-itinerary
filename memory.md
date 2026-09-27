@@ -1,6 +1,6 @@
 # memory — Travel Hub
 
-最後更新：2026-08-27
+最後更新：2026-09-27
 
 ## 待辦
 
@@ -12,9 +12,7 @@
 
 ## 近期
 
-- 公開站：Vercel `https://universum-sliver.vercel.app/`（`base: '/'`）；舊 GitHub Pages 已關閉
-- 決策全文：`docs/decisions/`（public-vercel、seo、GA4）；內容審稿：`docs/content-audit-2026-07-25.md`
-- 2026-08-27：全庫 bug／ponytail 稽核——錯誤頁 XSS、照片／票券用 URL trip id、nav 略過 hidden section、購物 JSON.parse、tips escape、刪未用 manholeCardsUrl／gen-sitemap stub、SITE_ORIGIN 單一來源、`npm run check`
+- 2026-09-27：規則對照通過。行程 JSON 慣例 0 項不符；補 `.env.example`（靜態站無環境變數，`.gitignore` 以 `!.env.example` 保留）；`npm run check` 通過
 
 ## 決策
 
