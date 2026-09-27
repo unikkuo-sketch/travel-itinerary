@@ -152,7 +152,7 @@
       "theme": "place",
       "title": "北海道大學",
       "kicker": "札幌・北區",
-      "body": "從札幌農學校走來的校園，銀杏大道與中央草坪是夏季散步首選。本趟於北十二條駅進出，搭配中餐與下午茶，把抵達日換成大學城節奏。",
+      "body": "從札幌農學校走來的校園，銀杏大道與中央草坪是夏季散步首選。本趟於北十二條駅進出；中午去中央食堂體驗學生價的便宜粗飽，下午再在北大マルシェ買 North Plain Farm（オホーツクおこっぺ）有機優格——乳製品濃醇香，一定要吃。",
       "source": {
         "label": "北海道大学",
         "url": "https://www.hokudai.ac.jp/"
@@ -162,7 +162,18 @@
         "alt": "北海道大學校園歷史洋館",
         "credit": "宇宙碎片拍攝"
       },
-      "relatedPhotos": []
+      "relatedPhotos": [
+        {
+          "src": "photos/story-hokudai-cafeteria-meal.webp",
+          "alt": "北海道大學中央食堂定食盤",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/story-hokudai-yogurt.webp",
+          "alt": "北大マルシェ North Plain Farm 有機優格",
+          "credit": "宇宙碎片拍攝"
+        }
+      ]
     },
     {
       "theme": "history",
