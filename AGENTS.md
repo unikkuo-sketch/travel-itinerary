@@ -53,6 +53,12 @@ ATTRIBUTIONS.md         照片素材授權紀錄（新增圖片必須補列）
 - 行程總覽 `overview[].transport`：已訂班次寫 `車次 · HH:MM`；當日多段用全形 `／` 分隔（渲染成多行 tag）
 - 風土：`stories[]` → `/trips/{id}/stories.html`（`theme`=`place`｜`history`｜`culture`）；滿版章節＋下緣疊文；空陣列顯示空狀態
 - 飲食：`foods[]` → `/trips/{id}/food.html`（`theme`=`food`｜`sake`）；呈現同構風土；空陣列顯示空狀態
+- 風土／飲食構圖標準（essay 主圖與相關圖，2026-09-28）：
+  - 有 `relatedPhotos`、`reflection`，或 `photo.objectFit === "contain"` 的章節走 essay（主圖在標題下、可點開）。`objectFit: contain` 只用來改版面，不在 essay 框裡留白
+  - 檔案先裁成 **4:3** WebP（長邊最多 1600、品質約 80），再由 CSS `aspect-ratio: 4 / 3` + `object-fit: cover` 鋪滿。主圖欄寬 100%；相關圖同一列同高
+  - 裁切以主體進框為準，不要用 `objectPosition` 去救一張沒裁好的圖。反例：直式原圖塞進橫幅（主體被切掉）；每張依原圖比例排（有的高有的矮）
+  - 相關圖最多 4 張。4 張為 2×2（`story-related-grid--4`）；3 張桌面三等欄
+  - 換圖時改 `alt`，並在 `ATTRIBUTIONS.md` 補一句。滿版章節（`.ph--story`，沒有相關圖且未標 contain）維持原設計，不套這套 4:3
 - SEO：build 預渲染每趟 meta（含 cover OG）＋行程／風土／飲食正文；shopping `noindex`；機器入口 `/llms.txt`、`/llms-full.txt`、`/trips/manifest.json`、`/trips/{id}/itinerary.json`；評估見 `docs/seo-assessment-2026-07-30.md`
 
 ## 常用指令
