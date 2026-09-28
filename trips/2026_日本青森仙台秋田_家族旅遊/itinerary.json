@@ -14,7 +14,7 @@
     "footerDate": "行程規劃 · 2026年7月31日 - 8月7日",
     "cover": {
       "src": "photos/cover.webp",
-      "alt": "青森睡魔祭的燈籠山車",
+      "alt": "青森睡魔祭風神雷神燈籠山車",
       "credit": "宇宙碎片拍攝"
     },
     "theme": "ocean",
@@ -228,9 +228,8 @@
       },
       "photo": {
         "src": "photos/day7.webp",
-        "alt": "松島瑞巖寺國寶庫裏與藍天",
-        "credit": "宇宙碎片拍攝",
-        "objectPosition": "center 50%"
+        "alt": "松島灣的松樹、小亭與水面",
+        "credit": "宇宙碎片拍攝"
       }
     },
     {
@@ -244,10 +243,8 @@
       },
       "photo": {
         "src": "photos/day1.webp",
-        "alt": "仙台七夕祭名掛丁拱廊的吹流し裝飾",
-        "credit": "宇宙碎片拍攝",
-        "objectPosition": "center 20%",
-        "objectFit": "contain"
+        "alt": "仙台七夕祭拱廊垂下的吹流し",
+        "credit": "宇宙碎片拍攝"
       }
     },
     {
@@ -261,10 +258,8 @@
       },
       "photo": {
         "src": "photos/story-kanto.webp",
-        "alt": "秋田竿燈祭夜空中彎曲的燈籠竿",
-        "credit": "宇宙碎片拍攝",
-        "objectPosition": "center 30%",
-        "objectFit": "contain"
+        "alt": "秋田竿燈祭夜空中的燈籠竿",
+        "credit": "宇宙碎片拍攝"
       }
     },
     {
@@ -277,8 +272,8 @@
         "url": "https://www.nebuta.jp/"
       },
       "photo": {
-        "src": "photos/cover.webp",
-        "alt": "青森睡魔祭的燈籠山車",
+        "src": "photos/day3.webp",
+        "alt": "青森睡魔祭風神雷神燈籠山車",
         "credit": "宇宙碎片拍攝"
       }
     },
@@ -293,8 +288,8 @@
       },
       "photo": {
         "src": "photos/day6.webp",
-        "alt": "角館武家屋敷通",
-        "credit": "掬茶 / CC BY-SA 4.0"
+        "alt": "角館武家屋敷的木門與屋瓦",
+        "credit": "宇宙碎片拍攝"
       }
     }
   ],
@@ -310,7 +305,7 @@
       },
       "photo": {
         "src": "photos/food-gyutan.webp",
-        "alt": "善治郎炭烤厚切牛舌與配菜",
+        "alt": "善治郎炭烤牛舌、高麗菜與漬菜",
         "credit": "宇宙碎片拍攝"
       }
     },
@@ -340,7 +335,7 @@
       },
       "photo": {
         "src": "photos/food-morioka-noodles.webp",
-        "alt": "ぴょんぴょん舎盛岡冷麺（西瓜、半熟蛋與泡菜）",
+        "alt": "ぴょんぴょん舎盛岡冷麺（西瓜、半熟蛋與小黃瓜）",
         "credit": "宇宙碎片拍攝"
       }
     },
@@ -355,9 +350,8 @@
       },
       "photo": {
         "src": "photos/food-hasshoku.webp",
-        "alt": "八食中心冰台上的生蠔、帆立與海膽",
-        "credit": "宇宙碎片拍攝",
-        "objectPosition": "center 40%"
+        "alt": "八食中心的帆立貝刺身",
+        "credit": "宇宙碎片拍攝"
       }
     },
     {
@@ -610,9 +604,8 @@
       ],
       "photo": {
         "src": "photos/day1.webp",
-        "alt": "仙台七夕祭名掛丁拱廊的吹流し裝飾",
-        "credit": "宇宙碎片拍攝",
-        "objectPosition": "center 20%"
+        "alt": "仙台七夕祭拱廊垂下的吹流し",
+        "credit": "宇宙碎片拍攝"
       }
     },
     {
@@ -697,8 +690,8 @@
       ],
       "photo": {
         "src": "photos/day2.webp",
-        "alt": "小岩井農場的羊群與草原",
-        "credit": "掬茶 / CC BY-SA 4.0"
+        "alt": "小岩井農場牛舍裡的乳牛",
+        "credit": "宇宙碎片拍攝"
       }
     },
     {
@@ -796,7 +789,7 @@
       ],
       "photo": {
         "src": "photos/day3.webp",
-        "alt": "青森睡魔祭燈籠山車夜景",
+        "alt": "青森睡魔祭風神雷神燈籠山車",
         "credit": "宇宙碎片拍攝"
       }
     },
@@ -896,9 +889,7 @@
       "photo": {
         "src": "photos/day4.webp",
         "alt": "弘前ねぷた祭扇形燈籠山車",
-        "credit": "宇宙碎片拍攝",
-        "objectPosition": "center center",
-        "aspectRatio": "3 / 4"
+        "credit": "宇宙碎片拍攝"
       }
     },
     {
@@ -978,10 +969,8 @@
       ],
       "photo": {
         "src": "photos/day5.webp",
-        "alt": "Resort 白神號（橅編成）車頭停靠月台",
-        "credit": "宇宙碎片拍攝",
-        "objectPosition": "center center",
-        "aspectRatio": "3 / 4"
+        "alt": "白神號車窗望向彎道、田野與聚落",
+        "credit": "宇宙碎片拍攝"
       }
     },
     {
@@ -1066,8 +1055,8 @@
       ],
       "photo": {
         "src": "photos/day6.webp",
-        "alt": "角館武家屋敷通的枝垂櫻",
-        "credit": "掬茶 / CC BY-SA 4.0"
+        "alt": "角館武家屋敷的木門與屋瓦",
+        "credit": "宇宙碎片拍攝"
       }
     },
     {
@@ -1129,9 +1118,8 @@
       ],
       "photo": {
         "src": "photos/day7.webp",
-        "alt": "松島瑞巖寺國寶庫裏與藍天",
-        "credit": "宇宙碎片拍攝",
-        "objectPosition": "center 50%"
+        "alt": "松島灣的松樹、小亭與水面",
+        "credit": "宇宙碎片拍攝"
       }
     },
     {
@@ -1195,8 +1183,8 @@
       ],
       "photo": {
         "src": "photos/day8.webp",
-        "alt": "瑞鳳殿本殿",
-        "credit": "663highland / CC BY 2.5"
+        "alt": "瑞鳳殿匾額與開啟的唐門",
+        "credit": "宇宙碎片拍攝"
       }
     }
   ],

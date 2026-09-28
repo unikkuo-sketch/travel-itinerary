@@ -29,26 +29,28 @@ CC BY / CC BY-SA 圖片依授權條款標示作者、來源與授權；CC BY-SA 
 
 ## trips/2026_日本青森仙台秋田_家族旅遊/photos/
 
+2026-09-28：封面、每日、風土與部分飲食改從桌面相簿整包（`2026青森秋田盛岡仙台夏日祭典-1-001.zip`）重選，統一裁成 4:3（封面為 16:9 橫幅）。未採用影片截圖。睡魔、ねぷた、竿燈、七夕的裁切去掉前景人群，沒有另做模糊。角館改取木門上緣與屋瓦，避開步道上的人。小岩井乳製品、Shiny、陸奥八仙在整包裡沒有更清楚的 4:3，沿用原檔。
+
 | 檔案 | 內容 | 作者 | 授權 | 來源 |
 |---|---|---|---|---|
-| `cover.webp` | 青森睡魔祭燈籠山車（風神雷神） | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（來源 Google Photos 分享相簿，2026-08-02） |
-| `day1.webp` | 仙台七夕祭名掛丁吹流し | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（來源 Google Photos 分享相簿） |
-| `day2.webp` | 小岩井農場羊群 | 掬茶 | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Sheep_pusture_in_Koiwai_Farm.jpg) |
-| `day3.webp` | 青森睡魔祭燈籠山車 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（來源 Google Photos 分享相簿） |
-| `day4.webp` | 弘前ねぷた祭扇形燈籠山車 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（來源 Google Photos 分享相簿） |
-| `day5.webp` | Resort 白神號（橅編成）車頭 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（來源 Google Photos 分享相簿） |
-| `day6.webp` | 角館武家屋敷通 | 掬茶 | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Bukeyashiki_Street_in_Kakunodate_20180428b.jpg) |
-| `day7.webp` | 松島瑞巖寺國寶庫裏（橫式全景） | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（來源 Google Photos 分享相簿，2026-08-06） |
-| `day8.webp` | 瑞鳳殿 | 663highland | [CC BY 2.5](https://creativecommons.org/licenses/by/2.5/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Zuiho-den02s3200.jpg) |
-| `story-kanto.webp` | 秋田竿燈祭夜空燈籠竿 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（來源 Google Photos 分享相簿） |
+| `cover.webp` | 青森睡魔祭風神雷神燈籠山車（裁掉前景人群） | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（相簿整包，2026-08-02） |
+| `day1.webp` | 仙台七夕祭拱廊吹流し（裁掉下方人群） | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（相簿整包，2026-08-06） |
+| `day2.webp` | 小岩井農場牛舍裡的乳牛 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（相簿整包，2026-08-01） |
+| `day3.webp` | 青森睡魔祭風神雷神燈籠山車（裁掉前景人群） | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（相簿整包，2026-08-02） |
+| `day4.webp` | 弘前ねぷた祭扇形燈籠山車（裁掉拉車的人） | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（相簿整包，2026-08-03） |
+| `day5.webp` | 白神號車窗望向彎道與田野 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（相簿整包，2026-08-04） |
+| `day6.webp` | 角館武家屋敷木門與屋瓦（裁掉步道上的人） | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（相簿整包，2026-08-05） |
+| `day7.webp` | 松島灣的松樹、小亭與水面（裁掉上方天空，讓小亭與水面留在行程寬幅裡） | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（相簿整包，2026-08-06） |
+| `day8.webp` | 瑞鳳殿匾額與開啟的唐門 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（相簿整包，2026-08-07） |
+| `story-kanto.webp` | 秋田竿燈祭夜空燈籠竿（裁掉下方觀眾） | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（相簿整包，2026-08-04） |
 | `story-tazawako.webp` | 田澤湖湖面與周邊山景 | 掬茶 | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Lake_Tazawa_20170709.jpg) |
-| `food-gyutan.webp` | 善治郎炭烤厚切牛舌 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（來源 Google Photos 分享相簿） |
-| `food-koiwai-dairy.webp` | 小岩井農場優格、牛乳與冰淇淋 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（來源 Google Photos 分享相簿） |
-| `food-hasshoku.webp` | 八食中心冰台海鮮（生蠔・帆立・海膽） | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（來源 Google Photos 分享相簿） |
-| `food-morioka-noodles.webp` | ぴょんぴょん舎盛岡冷麺 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（來源 Google Photos 分享相簿） |
-| `food-shiny-apple.webp` | Shiny 青森蘋果氣泡果汁 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（來源 Google Photos 分享相簿） |
-| `food-hassen.webp` | 八戶酒造陸奥八仙特別純米 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（來源 Google Photos 分享相簿） |
-| `food-inaniwa-udon.webp` | 角館ふきや比內地雞丼與稻庭烏龍 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（來源 Google Photos 分享相簿） |
+| `food-gyutan.webp` | 善治郎炭烤牛舌、高麗菜與漬菜 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（相簿整包，2026-07-31） |
+| `food-koiwai-dairy.webp` | 小岩井農場優格、牛乳與冰淇淋 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（沿用原檔；整包沒有更清楚的乳製品特寫） |
+| `food-hasshoku.webp` | 八食中心帆立貝刺身 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（相簿整包，2026-08-03） |
+| `food-morioka-noodles.webp` | ぴょんぴょん舎盛岡冷麺 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（相簿整包，2026-08-01） |
+| `food-shiny-apple.webp` | Shiny 青森蘋果氣泡果汁 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（沿用原檔；整包沒有更清楚的橫式瓶照） |
+| `food-hassen.webp` | 八戶酒造陸奥八仙特別純米 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（沿用原檔；整包沒有這支酒瓶的更清楚特寫） |
+| `food-inaniwa-udon.webp` | 角館ふきや比內地雞親子丼與稻庭烏龍 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（相簿整包，2026-08-05） |
 
 ## trips/2025_日本四國_自駕觀光列車/photos/
 
