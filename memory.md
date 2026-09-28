@@ -1,6 +1,6 @@
 # memory — Travel Hub
 
-最後更新：2026-09-27
+最後更新：2026-09-28
 
 ## 待辦
 
@@ -33,3 +33,4 @@
 - 行程地圖底圖對齊 Hub；票券狀態 JSON 預設＋本機 pill
 - 勿用舊 commit 整段覆寫 `days[].photo` metadata
 - 預算每人 `NT$`；刪已付／待付卡
+- 風土／飲食 essay 主圖與相關圖統一 4:3（相機原檔重選後裁切，版面 cover 對齊）；滿版章節維持原設計。沒有相關圖的飲食以 `objectFit: contain` 改走 essay

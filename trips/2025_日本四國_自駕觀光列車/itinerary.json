@@ -383,7 +383,7 @@
       },
       "photo": {
         "src": "photos/story-shimonada.webp",
-        "alt": "下灘駅站舍入口與月台",
+        "alt": "下灘駅月台列車與瀬戸内海",
         "credit": "宇宙碎片拍攝",
         "objectPosition": "center center"
       },
@@ -529,7 +529,7 @@
         },
         {
           "src": "photos/story-kochijo-model.webp",
-          "alt": "高知城模型平視",
+          "alt": "高知城天守近景",
           "credit": "宇宙碎片拍攝"
         }
       ]
@@ -587,7 +587,8 @@
         "src": "photos/food-udon.webp",
         "alt": "讚岐烏龍麵天婦羅定食",
         "credit": "宇宙碎片拍攝",
-        "objectPosition": "center center"
+        "objectPosition": "center center",
+        "objectFit": "contain"
       }
     },
     {
@@ -603,7 +604,8 @@
         "src": "photos/food-olive-softserve.webp",
         "alt": "小豆島橄欖霜淇淋",
         "credit": "宇宙碎片拍攝",
-        "objectPosition": "center center"
+        "objectPosition": "center center",
+        "objectFit": "contain"
       }
     },
     {
@@ -704,7 +706,7 @@
       "relatedPhotos": [
         {
           "src": "photos/food-tosa-market-aisle.webp",
-          "alt": "土佐市場洋蔥攤",
+          "alt": "土佐市場農產賣場",
           "credit": "宇宙碎片拍攝",
           "objectPosition": "center center"
         },
@@ -738,7 +740,8 @@
         "src": "photos/food-kinryo-sake-kasu-ice.webp",
         "alt": "金陵酒造酒粕冰淇淋",
         "credit": "宇宙碎片拍攝",
-        "objectPosition": "center center"
+        "objectPosition": "center center",
+        "objectFit": "contain"
       }
     },
     {

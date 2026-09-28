@@ -31,7 +31,9 @@ export function photoHtml(photo, { className = '', eager = false, creditPosition
     ? `<span class="ph-credit ph-credit--${creditPosition}">${esc(photo.credit)}</span>`
     : '';
   const fp = fetchPriority ? ` fetchpriority="${esc(fetchPriority)}"` : '';
-  const fitContain = photo.objectFit === 'contain';
+  // Essay frames are a shared 4:3 crop. objectFit=contain there only selects the layout.
+  const uniformFrame = /ph--story-hero|ph--story-related/.test(className);
+  const fitContain = photo.objectFit === 'contain' && !uniformFrame;
   const styles = [];
   if (photo.objectPosition) styles.push(`object-position: ${esc(photo.objectPosition)}`);
   if (fitContain) styles.push('object-fit: contain');

@@ -8,7 +8,7 @@ const heroTitle = document.getElementById('food-trip-title');
 const heroEl = document.querySelector('.hero-stories');
 
 const THEME_LABEL = { food: '食物', sake: '酒' };
-const RELATED_MAX = 3;
+const RELATED_MAX = 4;
 
 function mountHeroBack(tripId) {
   if (!heroEl || heroEl.querySelector('.hero-back')) return;
@@ -115,7 +115,9 @@ function relatedGridHtml(item, index, tripId, zoomGroup) {
       ? 'story-related-grid--1'
       : related.length === 2
         ? 'story-related-grid--2'
-        : 'story-related-grid--3';
+        : related.length === 4
+          ? 'story-related-grid--4'
+          : 'story-related-grid--3';
 
   return `<div class="story-related-grid ${countClass}" role="list" aria-label="相關照片">${cards}</div>`;
 }
@@ -153,6 +155,7 @@ function renderEssayChapter(item, index, tripId) {
 
 function hasEssayLayout(item) {
   if (item.reflection) return true;
+  if (item.photo?.objectFit === 'contain') return true;
   const related = Array.isArray(item.relatedPhotos) ? item.relatedPhotos : [];
   return related.length > 0;
 }

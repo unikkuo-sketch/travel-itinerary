@@ -161,9 +161,9 @@ function chaptersHtml(items, tripId, themeMap) {
           ? `<a class="story-chapter-source" href="${esc(story.source.url)}" target="_blank" rel="noopener noreferrer">${esc(story.source.label)}</a>`
           : '';
 
-      // Essay layout when reflection or relatedPhotos present (Layout A; foods unchanged)
+      // Essay when reflection, related photos, or an uncropped (contain) main photo.
       const relatedList = Array.isArray(story.relatedPhotos) ? story.relatedPhotos : [];
-      if (story.reflection || relatedList.length) {
+      if (story.reflection || relatedList.length || story.photo?.objectFit === 'contain') {
         const hero = story.photo?.src
           ? `<figure class="ph ph--story-hero ph--loaded"><img class="ph-img" src="${esc(assetUrl(tripId, story.photo.src))}" alt="${esc(story.photo.alt || story.title || '')}" loading="${index === 0 ? 'eager' : 'lazy'}" decoding="async">${story.photo.credit ? `<span class="ph-credit ph-credit--br">${esc(story.photo.credit)}</span>` : ''}</figure>`
           : '';

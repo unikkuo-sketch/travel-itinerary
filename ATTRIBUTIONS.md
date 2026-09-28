@@ -52,6 +52,8 @@ CC BY / CC BY-SA 圖片依授權條款標示作者、來源與授權；CC BY-SA 
 
 ## trips/2025_日本四國_自駕觀光列車/photos/
 
+2026-09-28：風土與飲食用圖改從相機原檔重選，統一裁成 4:3。授權仍為本人拍攝。
+
 | 檔案 | 內容 | 作者 | 授權 | 來源 |
 |---|---|---|---|---|
 | `cover.webp` | 退潮時的小豆島天使之路沙洲與前島（與 `day2.webp`／`story-angel-road.webp` 同檔） | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
@@ -81,9 +83,9 @@ CC BY / CC BY-SA 圖片依授權條款標示作者、來源與授權；CC BY-SA 
 | `story-dogo-botchan.webp` | 道後坊っちゃん列車 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
 | `story-asuka-entrance.webp` | 飛鳥乃湯泉入口 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
 | `story-asuka-sign.webp` | 飛鳥乃湯泉館內標示 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
-| `story-shimonada.webp` | 下灘駅站舍入口與月台 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（Phase-2 densify 覆寫） |
+| `story-shimonada.webp` | 下灘駅月台列車與瀬戸内海 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（主圖改為停靠中的列車） |
 | `story-oboke.webp` | 祖谷藤蔓橋正面對稱構圖 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（Phase-2 densify 覆寫） |
-| `story-uwajima-tenshu.webp` | 宇和島城天守 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（故事主圖；橫式與開闊遠眺因重複已刪） |
+| `story-uwajima-tenshu.webp` | 宇和島城天守 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（4:3 裁切保留天守與石垣，樹葉當框） |
 | `story-uwajima-sign.webp` | 宇和島城解說看板 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
 | `story-uwajima-armor.webp` | 宇和島城內甲冑展示 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
 | `story-uwajima-noren.webp` | 宇和島城下暖簾招牌 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（已自 related 卸下以維持總數 5；檔案暫留） |

@@ -155,6 +155,7 @@ function renderEssayChapter(story, index, tripId) {
 
 function hasEssayLayout(story) {
   if (story.reflection) return true;
+  if (story.photo?.objectFit === 'contain') return true;
   const related = Array.isArray(story.relatedPhotos) ? story.relatedPhotos : [];
   return related.length > 0;
 }
