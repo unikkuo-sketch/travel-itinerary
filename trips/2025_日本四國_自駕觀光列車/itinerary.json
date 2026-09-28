@@ -360,8 +360,9 @@
         },
         {
           "src": "photos/story-matsuyamajo-ropeway.webp",
-          "alt": "松山城纜車乘車入口",
-          "credit": "宇宙碎片拍攝"
+          "alt": "松山城纜車綠牌與入口",
+          "credit": "宇宙碎片拍攝",
+          "objectPosition": "center center"
         }
       ]
     },
@@ -404,15 +405,22 @@
       },
       "photo": {
         "src": "photos/story-uwajima.webp",
-        "alt": "宇和島城天守與樹影構圖",
+        "alt": "宇和島城天守橫式置中",
         "credit": "宇宙碎片拍攝",
         "objectPosition": "center center"
       },
       "relatedPhotos": [
         {
+          "src": "photos/story-uwajima-tenshu.webp",
+          "alt": "宇和島城天守樹影直式",
+          "credit": "宇宙碎片拍攝",
+          "objectPosition": "center center"
+        },
+        {
           "src": "photos/story-uwajima-vista.webp",
           "alt": "宇和島城天守與石垣遠眺",
-          "credit": "宇宙碎片拍攝"
+          "credit": "宇宙碎片拍攝",
+          "objectPosition": "center center"
         },
         {
           "src": "photos/story-uwajima-sign.webp",
@@ -422,11 +430,6 @@
         {
           "src": "photos/story-uwajima-armor.webp",
           "alt": "宇和島城內甲冑展示",
-          "credit": "宇宙碎片拍攝"
-        },
-        {
-          "src": "photos/story-uwajima-noren.webp",
-          "alt": "宇和島城下暖簾招牌",
           "credit": "宇宙碎片拍攝"
         }
       ]
@@ -442,7 +445,7 @@
       },
       "photo": {
         "src": "photos/story-ryugado.webp",
-        "alt": "龍河洞洞口與神社",
+        "alt": "龍河洞洞口神社與刻字",
         "credit": "宇宙碎片拍攝",
         "objectPosition": "center center"
       },
@@ -705,8 +708,9 @@
       "relatedPhotos": [
         {
           "src": "photos/food-tosa-market-aisle.webp",
-          "alt": "土佐市場賣場走道",
-          "credit": "宇宙碎片拍攝"
+          "alt": "土佐市場洋蔥攤",
+          "credit": "宇宙碎片拍攝",
+          "objectPosition": "center center"
         },
         {
           "src": "photos/food-tosa-market-strawberry.webp",

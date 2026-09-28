@@ -73,7 +73,7 @@ CC BY / CC BY-SA 圖片依授權條款標示作者、來源與授權；CC BY-SA 
 | `story-konpira-entrance.webp` | 金刀比羅宮參道入口木門與石燈籠 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
 | `day4.webp` | 下灘駅站舍入口與月台 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（Phase-2 densify 覆寫） |
 | `day5.webp` | 笑淵瀑布與碧綠水潭 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（來源 `笑淵.jpg`） |
-| `day6.webp` | 高知城天守與庭園 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（Phase-2 densify 覆寫） |
+| `day6.webp` | 高知城天守與庭園 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（構圖重裁：與 `story-kochijo.webp` 同檔） |
 | `day7.webp` | 祖谷藤蔓橋正面對稱構圖 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（Phase-2 densify 覆寫） |
 | `day8.webp` | 瀬戸大橋（南備讃瀬戸大橋） | Kanchi1979 | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:JP-Kagawa-Great-Seto-Bridge-Minami_Bisan-Seto-Bridge.jpg) |
 | `story-dogo.webp` | 夜晚道後溫泉本館後方 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（覆寫原暮色外觀） |
@@ -83,12 +83,13 @@ CC BY / CC BY-SA 圖片依授權條款標示作者、來源與授權；CC BY-SA 
 | `story-asuka-sign.webp` | 飛鳥乃湯泉館內標示 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
 | `story-shimonada.webp` | 下灘駅站舍入口與月台 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（Phase-2 densify 覆寫） |
 | `story-oboke.webp` | 祖谷藤蔓橋正面對稱構圖 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（Phase-2 densify 覆寫） |
-| `story-uwajima.webp` | 宇和島城天守與樹影構圖 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（Phase-2 densify 覆寫） |
-| `story-uwajima-vista.webp` | 宇和島城天守與石垣遠眺 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
+| `story-uwajima.webp` | 宇和島城天守橫式置中（城體完整入鏡） | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（構圖重裁：橫式天守置中） |
+| `story-uwajima-vista.webp` | 宇和島城天守與石垣遠眺 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（構圖重裁：減少過半天空） |
+| `story-uwajima-tenshu.webp` | 宇和島城天守樹影直式 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（直式 related；橫式為主圖） |
 | `story-uwajima-sign.webp` | 宇和島城解說看板 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
 | `story-uwajima-armor.webp` | 宇和島城內甲冑展示 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
-| `story-uwajima-noren.webp` | 宇和島城下暖簾招牌 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
-| `story-train-ryoma.webp` | 志国土佐時代の夜明けのものがたり車頭與銘板 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（Phase-2 densify 覆寫） |
+| `story-uwajima-noren.webp` | 宇和島城下暖簾招牌 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（已自 related 卸下以維持總數 5；檔案暫留） |
+| `story-train-ryoma.webp` | 志国土佐時代の夜明けのものがたり車頭與銘板 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（構圖重裁：車頭與銘板置中） |
 | `food-udon.webp` | 讚岐烏龍麵天婦羅定食 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（覆寫為 `food-udon-bowl.webp` 同趟自攝主圖） |
 | `jaq-hotel-entrance.webp` | Hostel JAQ Takamatsu 入口暖簾 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
 | `jaq-hotel-sign.webp` | Hostel JAQ Takamatsu 外牆圓形招牌 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
@@ -107,13 +108,13 @@ CC BY / CC BY-SA 圖片依授權條款標示作者、來源與授權；CC BY-SA 
 | `story-matsuyamajo-courtyard.webp` | 松山城本丸庭院與市區遠景 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
 | `story-matsuyamajo-roof.webp` | 松山城屋頂瓦片與海景 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
 | `story-matsuyamajo-banner.webp` | 松山城家紋旗幟拍照點 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
-| `story-matsuyamajo-ropeway.webp` | 松山城纜車乘車入口 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
-| `story-ryugado.webp` | 龍河洞洞口與神社 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
+| `story-matsuyamajo-ropeway.webp` | 松山城纜車綠牌與入口 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（構圖重裁：綠牌與入口置中） |
+| `story-ryugado.webp` | 龍河洞洞口神社與刻字 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（構圖重裁：神社與刻字置中） |
 | `story-ryugado-waterfall.webp` | 龍河洞藍色燈光瀑布 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
 | `story-ryugado-skull.webp` | 龍河洞頭蓋骨狀岩層 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
 | `story-ryugado-kami-no-tubo.webp` | 龍河洞神の壷鐘乳石 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
 | `story-ryugado-centre.webp` | 龍河洞觀光中心入口 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
-| `story-kochijo.webp` | 高知城天守與庭園 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
+| `story-kochijo.webp` | 高知城天守與庭園 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（構圖重裁：天守置中；與 `day6.webp` 同檔） |
 | `story-kochijo-model-overhead.webp` | 高知城模型俯瞰 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
 | `story-kochijo-model.webp` | 高知城模型平視 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
 | `story-train-ryoma-aisle.webp` | 觀光列車車廂星空天花板走道 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
@@ -131,7 +132,7 @@ CC BY / CC BY-SA 圖片依授權條款標示作者、來源與授權；CC BY-SA 
 | `food-katsuo-close.webp` | 鰹魚たたき特寫 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
 | `food-katsuo-sign.webp` | 居酒屋かど家木製招牌 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
 | `food-tosa-market.webp` | とさのさと Agri Colletto 標誌 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
-| `food-tosa-market-aisle.webp` | 土佐市場賣場走道 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
+| `food-tosa-market-aisle.webp` | 土佐市場洋蔥攤 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（構圖重裁：檔名保留，內容改洋蔥攤） |
 | `food-tosa-market-strawberry.webp` | 土佐市場草莓陳列 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
 | `food-tosa-market-tomato.webp` | 土佐市場番茄陳列 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
 | `food-tosa-market-exterior.webp` | とさのさと農民市場外觀 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
