@@ -71,28 +71,58 @@ CC BY / CC BY-SA 圖片依授權條款標示作者、來源與授權；CC BY-SA 
 | `story-konpira-goshuin.webp` | 金刀比羅宮黑色御朱印與朱色社殿背景 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
 | `story-konpira-stairs.webp` | 金刀比羅宮參道石階與林蔭 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
 | `story-konpira-entrance.webp` | 金刀比羅宮參道入口木門與石燈籠 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
-| `day4.webp` | 下灘駅月台與瀬戸内海 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（來源 `下灘.jpg`） |
+| `day4.webp` | 下灘駅站房與入口（與 `story-shimonada.webp` 同檔） | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（覆寫原月台海景；置中構圖） |
 | `day5.webp` | 笑淵瀑布與碧綠水潭 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（來源 `笑淵.jpg`） |
-| `day6.webp` | 高知城天守 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（來源 `高知城.jpg`） |
-| `day7.webp` | 祖谷藤蔓橋 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（來源 `祖谷.jpg`） |
+| `day6.webp` | 高知城天守與庭園（與 `story-kochijo.webp` 同檔） | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（覆寫原天守圖；置中構圖） |
+| `day7.webp` | 祖谷藤蔓橋正面（與 `story-oboke.webp` 同檔） | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（覆寫原側面圖；置中構圖） |
 | `day8.webp` | 瀬戸大橋（南備讃瀬戸大橋） | Kanchi1979 | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:JP-Kagawa-Great-Seto-Bridge-Minami_Bisan-Seto-Bridge.jpg) |
 | `story-dogo.webp` | 夜晚道後溫泉本館後方 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（覆寫原暮色外觀） |
 | `story-dogo-clock.webp` | 道後溫泉站前名物時鐘 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
 | `story-dogo-botchan.webp` | 道後坊っちゃん列車 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
 | `story-asuka-entrance.webp` | 飛鳥乃湯泉入口 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
 | `story-asuka-sign.webp` | 飛鳥乃湯泉館內標示 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
-| `story-shimonada.webp` | 下灘駅月台與瀬戸内海 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（來源 `下灘.jpg`） |
-| `story-oboke.webp` | 祖谷藤蔓橋與溪谷 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（來源 `祖谷.jpg`） |
-| `story-uwajima.webp` | 宇和島城天守與石垣 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
-| `story-train-ryoma.webp` | 志国土佐時代の夜明けのものがたり觀光列車 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
+| `story-shimonada.webp` | 下灘駅站房與入口 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（覆寫原月台海景；置中構圖） |
+| `story-shimonada-sign.webp` | 下灘駅 JR 站名牌與瀬戸内海 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
+| `story-shimonada-shop.webp` | 下灘商店櫃台 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
+| `story-matsuyamajo.webp` | 松山城木造城門與石階 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（訪客已模糊） |
+| `story-matsuyamajo-courtyard.webp` | 松山城本丸廣場與市區展望 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
+| `story-matsuyamajo-roof-vista.webp` | 松山城屋頂瓦面與海景 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
+| `story-matsuyamajo-crest.webp` | 松山城家紋旗拍照點 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
+| `story-matsuyamajo-ropeway.webp` | 松山城纜車乘車口 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
+| `story-ryugado.webp` | 龍河洞洞口神社與刻字 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
+| `story-ryugado-waterfall.webp` | 龍河洞內藍色照明瀑布 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
+| `story-ryugado-skull.webp` | 龍河洞頭骨狀鐘乳石 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
+| `story-ryugado-kami-no-tubo.webp` | 龍河洞「神の壺」鐘乳石 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
+| `story-ryugado-tourist-centre.webp` | 龍河洞觀光中心入口 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
+| `story-kochijo.webp` | 高知城天守與庭園 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
+| `story-kochijo-model-overhead.webp` | 高知城模型俯瞰 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
+| `story-kochijo-model.webp` | 高知城模型近景 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
+| `story-oboke.webp` | 祖谷藤蔓橋正面 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（覆寫原側面圖；置中構圖） |
+| `story-oboke-gorge.webp` | 大步危峽谷岩壁與河谷 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
+| `story-oboke-boat-ticket.webp` | 大步危峽谷觀光遊覽船船票 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
+| `story-oboke-bridge-landscape.webp` | 祖谷藤蔓橋橫跨溪谷 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
+| `story-oboke-bridge-entrance.webp` | 祖谷藤蔓橋入口步道 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
+| `story-uwajima.webp` | 宇和島城天守與石垣 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（本輪僅更新文案；照片待下一包） |
+| `story-train-ryoma.webp` | 志国土佐時代の夜明けのものがたり觀光列車 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（本輪僅更新文案；照片待下一包） |
 | `food-udon.webp` | 讚岐烏龍麵天婦羅定食 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（覆寫為 `food-udon-bowl.webp` 同趟自攝主圖） |
 | `jaq-hotel-entrance.webp` | Hostel JAQ Takamatsu 入口暖簾 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
 | `jaq-hotel-sign.webp` | Hostel JAQ Takamatsu 外牆圓形招牌 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
 | `jaq-breakfast-udon.webp` | Hostel JAQ 附贈早餐烏龍麵 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
-| `food-ozu-aburaya.webp` | 大洲爐端油屋的栗子甜點 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（來源 `大洲爐端 油屋_栗子.jpg`） |
-| `food-katsuo.webp` | 居酒屋かど家夜定食與鰹魚たたき | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（來源 `居酒屋かど家.jpg`） |
+| `food-ozu-aburaya.webp` | 大洲爐端油屋のとんくりまぶし（栗子豬肉飯） | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（覆寫原誤標甜點主圖） |
+| `food-ozu-aburaya-tray.webp` | とんくりまぶし全套與吃法說明卡 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
+| `food-ozu-aburaya-menu.webp` | 大洲爐端油屋午餐菜單 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
+| `food-katsuo.webp` | 居酒屋かど家鰹魚たたき定食全套 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（覆寫原夜定食圖） |
+| `food-katsuo-closeup.webp` | 鰹魚たたき近景 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
+| `food-katsuo-sign.webp` | 居酒屋かど家木製招牌 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
+| `food-tosa-market.webp` | とさのさと Agri Colletto／土佐 GARDEN MARCHÉ 標誌 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
+| `food-tosa-market-aisle.webp` | とさのさと賣場走道 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（訪客已模糊） |
+| `food-tosa-market-strawberries.webp` | とさのさと草莓架 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
+| `food-tosa-market-tomatoes.webp` | とさのさと番茄陳列 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
+| `food-tosa-market-exterior.webp` | とさのさと農產直賣所外觀 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
 | `food-hirome.webp` | 弘人市場入口 | Maarten Heerlien | [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Entrance_to_Hirome_Ichiba_(6453684561).jpg) |
-| `food-kirinomori.webp` | 霧の森大福 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（來源 `霧之森.jpg`） |
+| `food-kirinomori.webp` | 霧の森抹茶霜淇淋 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（覆寫原大福主圖；置中構圖） |
+| `food-kirinomori-daifuku-pack.webp` | 霧の森大福包裝 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
+| `food-kirinomori-mochi.webp` | 霧の森抹茶大福剖面 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
 | `food-sake.webp` | 金陵酒造酒粕冰淇淋（與 `food-kinryo-sake-kasu-ice.webp` 同檔） | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（覆寫原外觀圖，避免舊路徑語意不符） |
 | `food-dogo-citrus.webp` | 道後商店街三杯柑橘汁 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
 | `food-dogo-pudding.webp` | 道後布丁 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
