@@ -404,10 +404,32 @@
       },
       "photo": {
         "src": "photos/story-uwajima.webp",
-        "alt": "宇和島城天守與石垣",
+        "alt": "宇和島城天守與樹影構圖",
         "credit": "宇宙碎片拍攝",
         "objectPosition": "center center"
-      }
+      },
+      "relatedPhotos": [
+        {
+          "src": "photos/story-uwajima-vista.webp",
+          "alt": "宇和島城天守與石垣遠眺",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/story-uwajima-sign.webp",
+          "alt": "宇和島城解說看板",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/story-uwajima-armor.webp",
+          "alt": "宇和島城內甲冑展示",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/story-uwajima-noren.webp",
+          "alt": "宇和島城下暖簾招牌",
+          "credit": "宇宙碎片拍攝"
+        }
+      ]
     },
     {
       "theme": "place",

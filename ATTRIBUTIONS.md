@@ -83,7 +83,11 @@ CC BY / CC BY-SA 圖片依授權條款標示作者、來源與授權；CC BY-SA 
 | `story-asuka-sign.webp` | 飛鳥乃湯泉館內標示 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
 | `story-shimonada.webp` | 下灘駅站舍入口與月台 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（Phase-2 densify 覆寫） |
 | `story-oboke.webp` | 祖谷藤蔓橋正面對稱構圖 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（Phase-2 densify 覆寫） |
-| `story-uwajima.webp` | 宇和島城天守與石垣 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
+| `story-uwajima.webp` | 宇和島城天守與樹影構圖 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（Phase-2 densify 覆寫） |
+| `story-uwajima-vista.webp` | 宇和島城天守與石垣遠眺 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
+| `story-uwajima-sign.webp` | 宇和島城解說看板 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
+| `story-uwajima-armor.webp` | 宇和島城內甲冑展示 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
+| `story-uwajima-noren.webp` | 宇和島城下暖簾招牌 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
 | `story-train-ryoma.webp` | 志国土佐時代の夜明けのものがたり車頭與銘板 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（Phase-2 densify 覆寫） |
 | `food-udon.webp` | 讚岐烏龍麵天婦羅定食 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照（覆寫為 `food-udon-bowl.webp` 同趟自攝主圖） |
 | `jaq-hotel-entrance.webp` | Hostel JAQ Takamatsu 入口暖簾 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
