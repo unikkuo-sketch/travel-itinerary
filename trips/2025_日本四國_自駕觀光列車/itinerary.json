@@ -328,68 +328,253 @@
       ]
     },
     {
+      "theme": "history",
+      "title": "松山城",
+      "kicker": "愛媛・松山",
+      "body": "互動裝置滿多的，試拿武士刀、VR等等，可以搭纜車或健走上去，坐單人纜車滿好玩的但是天氣太好會有點熱。",
+      "source": {
+        "label": "松山城（松山市）",
+        "url": "https://www.matsuyamajo.jp/"
+      },
+      "photo": {
+        "src": "photos/story-matsuyamajo.webp",
+        "alt": "松山城木造城門與石段",
+        "credit": "宇宙碎片拍攝",
+        "objectPosition": "center center"
+      },
+      "relatedPhotos": [
+        {
+          "src": "photos/story-matsuyamajo-courtyard.webp",
+          "alt": "松山城本丸庭院與市區遠景",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/story-matsuyamajo-roof.webp",
+          "alt": "松山城屋頂瓦片與海景",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/story-matsuyamajo-banner.webp",
+          "alt": "松山城家紋旗幟拍照點",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/story-matsuyamajo-ropeway.webp",
+          "alt": "松山城纜車綠牌與入口",
+          "credit": "宇宙碎片拍攝",
+          "objectPosition": "center center"
+        }
+      ]
+    },
+    {
       "theme": "place",
       "title": "下灘駅",
       "kicker": "愛媛・伊予",
-      "body": "予讚線海邊無人車站，月台外就是瀬戸内海。自駕南下宇和島的途中停靠，是把鐵道與海景一起收入鏡頭的經典點。",
+      "body": "人氣車站，很多攝影師會來等特定時間列車，拍攝海與列車的照片，大概是台東多良野車站的概念，想來要注意列車班次喔!",
       "source": {
         "label": "えひめ旅観光ナビ",
         "url": "https://ehime-tourism.jp/"
       },
       "photo": {
         "src": "photos/story-shimonada.webp",
-        "alt": "下灘駅月台與瀬戸内海",
+        "alt": "下灘駅站舍入口與月台",
         "credit": "宇宙碎片拍攝",
-        "objectPosition": "35% 45%"
-      }
+        "objectPosition": "center center"
+      },
+      "relatedPhotos": [
+        {
+          "src": "photos/story-shimonada-sign.webp",
+          "alt": "下灘駅 JR 標誌與瀬戸内海",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/story-shimonada-shop.webp",
+          "alt": "下灘駅商店櫃檯",
+          "credit": "宇宙碎片拍攝"
+        }
+      ]
     },
     {
       "theme": "history",
       "title": "宇和島城",
       "kicker": "愛媛・宇和島",
-      "body": "藤堂高虎築城、伊達氏居城，現存天守為江戸時代建築。從沿岸公路抵達後登上城山，能俯瞰宇和海的港灣城市格局。",
+      "body": "位在小小城市的小小城堡，跟松山城、高知城相比小很多，但逛起來很舒服人也很少，登頂幾乎沒人可以包場天守遠眺四周景色。",
       "source": {
         "label": "宇和島市観光協会",
         "url": "https://www.uwajima.org/"
       },
       "photo": {
         "src": "photos/story-uwajima.webp",
-        "alt": "宇和島城天守與石垣",
+        "alt": "宇和島城天守橫式置中",
         "credit": "宇宙碎片拍攝",
-        "objectPosition": "center 40%"
-      }
+        "objectPosition": "center center"
+      },
+      "relatedPhotos": [
+        {
+          "src": "photos/story-uwajima-tenshu.webp",
+          "alt": "宇和島城天守樹影直式",
+          "credit": "宇宙碎片拍攝",
+          "objectPosition": "center center"
+        },
+        {
+          "src": "photos/story-uwajima-vista.webp",
+          "alt": "宇和島城天守與石垣遠眺",
+          "credit": "宇宙碎片拍攝",
+          "objectPosition": "center center"
+        },
+        {
+          "src": "photos/story-uwajima-sign.webp",
+          "alt": "宇和島城解說看板",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/story-uwajima-armor.webp",
+          "alt": "宇和島城內甲冑展示",
+          "credit": "宇宙碎片拍攝"
+        }
+      ]
+    },
+    {
+      "theme": "place",
+      "title": "龍河洞",
+      "kicker": "高知・香美",
+      "body": "跟沖繩的玉泉洞一樣屬於日本九大鐘乳石洞之一，也有一般參觀跟冒險路線，當然依然選擇冒險路線，這個洞比較需要體力、肌力和柔軟度，跟玉泉洞相比，有很多洞要鑽跟攀爬，可以來挑戰。帶長輩的就不要想了，不適合冒險! 不過真的很壯觀，石筍石柱還有遺址，燈光打下去也是美的不行。",
+      "source": {
+        "label": "龍河洞（公式）",
+        "url": "https://ryugadou.or.jp/"
+      },
+      "photo": {
+        "src": "photos/story-ryugado.webp",
+        "alt": "龍河洞洞口神社與刻字",
+        "credit": "宇宙碎片拍攝",
+        "objectPosition": "center center"
+      },
+      "relatedPhotos": [
+        {
+          "src": "photos/story-ryugado-waterfall.webp",
+          "alt": "龍河洞藍色燈光瀑布",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/story-ryugado-skull.webp",
+          "alt": "龍河洞頭蓋骨狀岩層",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/story-ryugado-kami-no-tubo.webp",
+          "alt": "龍河洞神の壷鐘乳石",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/story-ryugado-centre.webp",
+          "alt": "龍河洞觀光中心入口",
+          "credit": "宇宙碎片拍攝"
+        }
+      ]
     },
     {
       "theme": "culture",
       "title": "四國觀光列車",
       "kicker": "JR四国・ものがたり",
-      "body": "JR四国把島內風景編成三則「ものがたり」：愛媛沿岸的伊予灘ものがたり、穿山過谷的四国まんなか千年ものがたり，以及高知的志国土佐・時代の夜明けのものがたり。這趟搭的是後者——俗稱龍馬號——走土讚線高知→窪川（立志の抄），車窗對上龍馬脫藩路徑的田園、山間與太平洋緣，車內是土佐流餐飲與全車綠車指定席的慢節奏。",
+      "body": "四國有許多有名的觀光列車，不同主題不同路線不同車體設計，雖然很想每種都搭但預算有限。這次就先選龍馬(畢竟高知還是龍馬的地盤)。這個觀光列車行程明顯比以交通為主的觀光列車還要高級許多，目的以體驗為主，從車廂、服務人員制服、內裝、餐點設計等非常好看。預約的時候可以選擇是否含餐，建議加購，雖然稱不上便宜，但整個體驗、餐食美味程度很加分，也不用煩惱車上要吃什麼 就好好享受吧。",
       "source": {
         "label": "志国土佐 時代の夜明けのものがたり（JR四国）",
         "url": "https://www.jr-shikoku.co.jp/yoakenomonogatari/"
       },
       "photo": {
         "src": "photos/story-train-ryoma.webp",
-        "alt": "志国土佐時代の夜明けのものがたり觀光列車",
+        "alt": "志国土佐時代の夜明けのものがたり車頭與銘板",
         "credit": "宇宙碎片拍攝",
-        "objectPosition": "center 45%"
-      }
+        "objectPosition": "center center"
+      },
+      "relatedPhotos": [
+        {
+          "src": "photos/story-train-ryoma-aisle.webp",
+          "alt": "觀光列車車廂星空天花板走道",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/story-train-ryoma-bento.webp",
+          "alt": "觀光列車六角便當餐點",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/story-train-ryoma-exterior.webp",
+          "alt": "觀光列車兩節車廂外觀",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/story-train-ryoma-ticket.webp",
+          "alt": "高知往窪川車票與沿線地圖",
+          "credit": "宇宙碎片拍攝"
+        }
+      ]
+    },
+    {
+      "theme": "history",
+      "title": "高知城",
+      "kicker": "高知・高知市",
+      "body": "都來高知了總要看一下當地名城。",
+      "source": {
+        "label": "高知城（公式）",
+        "url": "https://kochipark.jp/kochijyo/"
+      },
+      "photo": {
+        "src": "photos/story-kochijo.webp",
+        "alt": "高知城天守與庭園",
+        "credit": "宇宙碎片拍攝",
+        "objectPosition": "center center"
+      },
+      "relatedPhotos": [
+        {
+          "src": "photos/story-kochijo-model-overhead.webp",
+          "alt": "高知城模型俯瞰",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/story-kochijo-model.webp",
+          "alt": "高知城模型平視",
+          "credit": "宇宙碎片拍攝"
+        }
+      ]
     },
     {
       "theme": "place",
       "title": "祖谷藤蔓橋與大步危",
       "kicker": "徳島・三好",
-      "body": "日本三大奇橋之一的藤蔓橋，與吉野川刻出的大步危峽谷相距不遠。自駕回高松前的山間主菜，把四國的垂直風景一次走完。",
+      "body": "算是觀光客景點? 很有歷史的藤蔓橋跟附近的大步危可以安排在一起，個人覺得可能比較適合春秋來，不然就是岩石XD。",
       "source": {
         "label": "三好市観光協会",
         "url": "https://miyoshi-tourism.jp/"
       },
       "photo": {
         "src": "photos/story-oboke.webp",
-        "alt": "祖谷藤蔓橋與溪谷",
+        "alt": "祖谷藤蔓橋正面對稱構圖",
         "credit": "宇宙碎片拍攝",
-        "objectPosition": "center 55%"
-      }
+        "objectPosition": "center center"
+      },
+      "relatedPhotos": [
+        {
+          "src": "photos/story-oboke-gorge.webp",
+          "alt": "大步危峽谷岩壁與溪流",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/story-oboke-boat-ticket.webp",
+          "alt": "大步危觀光遊船票券",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/story-oboke-bridge-landscape.webp",
+          "alt": "祖谷藤蔓橋與河谷風景",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/story-oboke-bridge-frame.webp",
+          "alt": "祖谷藤蔓橋入口框景",
+          "credit": "宇宙碎片拍攝"
+        }
+      ]
     }
   ],
   "foods": [
@@ -429,45 +614,120 @@
       "theme": "food",
       "title": "霧の森菓子",
       "kicker": "愛媛・松山",
-      "body": "抹茶大福，外層灑滿抹茶粉，中間帶有奶凍感內餡，抹茶苦味與內餡平衡的剛剛好。",
+      "body": "松山城附近的抹茶點心，抹茶大福的粉會小心被噎死 給好給滿，冰淇淋普普可以不用吃。",
       "source": {
         "label": "霧の森（公式）",
         "url": "https://www.kirinomori.co.jp/"
       },
       "photo": {
         "src": "photos/food-kirinomori.webp",
-        "alt": "霧の森大福",
+        "alt": "霧の森抹茶霜淇淋",
         "credit": "宇宙碎片拍攝",
         "objectPosition": "center center"
-      }
+      },
+      "relatedPhotos": [
+        {
+          "src": "photos/food-kirinomori-daifuku.webp",
+          "alt": "霧の森大福包裝",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/food-kirinomori-mochi.webp",
+          "alt": "霧の森抹茶大福剖面",
+          "credit": "宇宙碎片拍攝"
+        }
+      ]
     },
     {
       "theme": "food",
       "title": "大洲爐端 油屋",
       "kicker": "愛媛・大洲",
-      "body": "可愛小鎮的一角，栗子豬肉飯超級好吃! 栗子香甜跟軟嫩豬肉完美搭配，必推。",
+      "body": "路過來吃的栗子豬肉飯，位於小小城市中，驚喜的好吃!! 栗子的香氣跟軟嫩的豬肉完美結合，還有不同種吃法喔~ 城鎮給人很悠閒的感覺可惜沒時間逛逛 下次再來。",
       "source": {
         "label": "大洲炉端 油屋（公式）",
         "url": "https://www.roundtable-tky.com/aburaya/"
       },
       "photo": {
         "src": "photos/food-ozu-aburaya.webp",
-        "alt": "大洲爐端油屋的栗子甜點",
+        "alt": "大洲爐端油屋栗子豬肉飯",
         "credit": "宇宙碎片拍攝",
-        "objectPosition": "center 45%"
-      }
+        "objectPosition": "center center"
+      },
+      "relatedPhotos": [
+        {
+          "src": "photos/food-ozu-aburaya-tray.webp",
+          "alt": "栗子豬肉飯定食全盤",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/food-ozu-aburaya-menu.webp",
+          "alt": "大洲爐端油屋午間菜單",
+          "credit": "宇宙碎片拍攝"
+        }
+      ]
     },
     {
       "theme": "food",
       "title": "居酒屋かど家",
       "kicker": "高知・北本町",
-      "body": "高知駅南側的小居酒屋，看板是夜定食：鰹魚たたき搭配飯、湯與小鉢一次到位。不是弘人市場的共食長桌，而是店家家常節奏——抵達高知後補一頓土佐味的好選擇。",
+      "body": "這家大推! 高知名物鰹魚半敲燒好吃之外，平日晚上定食竟然只要￥1,600，還附一杯飲料而且可以點酒喔!!好吃cp值高。",
       "photo": {
         "src": "photos/food-katsuo.webp",
-        "alt": "居酒屋かど家的夜定食與鰹魚たたき",
+        "alt": "居酒屋かど家鰹魚定食全盤",
         "credit": "宇宙碎片拍攝",
-        "objectPosition": "center 60%"
-      }
+        "objectPosition": "center center"
+      },
+      "relatedPhotos": [
+        {
+          "src": "photos/food-katsuo-close.webp",
+          "alt": "鰹魚たたき特寫",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/food-katsuo-sign.webp",
+          "alt": "居酒屋かど家木製招牌",
+          "credit": "宇宙碎片拍攝"
+        }
+      ]
+    },
+    {
+      "theme": "food",
+      "title": "とさのさと／土佐市場",
+      "kicker": "高知・高知市",
+      "body": "喜歡逛超市的一定會喜歡! 在龍河洞附近消耗完體力剛好可以來，有農產專賣也有超市，買水果、點心買得很開心XD。",
+      "source": {
+        "label": "とさのさと AGRI COLLETTO（JA高知県）",
+        "url": "https://ja-kochi.or.jp/food/sales_offices/5716/"
+      },
+      "photo": {
+        "src": "photos/food-tosa-market.webp",
+        "alt": "とさのさと Agri Colletto 標誌",
+        "credit": "宇宙碎片拍攝",
+        "objectPosition": "center center"
+      },
+      "relatedPhotos": [
+        {
+          "src": "photos/food-tosa-market-aisle.webp",
+          "alt": "土佐市場洋蔥攤",
+          "credit": "宇宙碎片拍攝",
+          "objectPosition": "center center"
+        },
+        {
+          "src": "photos/food-tosa-market-strawberry.webp",
+          "alt": "土佐市場草莓陳列",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/food-tosa-market-tomato.webp",
+          "alt": "土佐市場番茄陳列",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/food-tosa-market-exterior.webp",
+          "alt": "とさのさと農民市場外觀",
+          "credit": "宇宙碎片拍攝"
+        }
+      ]
     },
     {
       "theme": "food",
@@ -1008,8 +1268,9 @@
       ],
       "photo": {
         "src": "photos/day4.webp",
-        "alt": "下灘駅月台與瀬戸内海",
-        "credit": "宇宙碎片拍攝"
+        "alt": "下灘駅站舍入口與月台",
+        "credit": "宇宙碎片拍攝",
+        "objectPosition": "center center"
       }
     },
     {
@@ -1140,9 +1401,9 @@
       ],
       "photo": {
         "src": "photos/day6.webp",
-        "alt": "高知城天守",
+        "alt": "高知城天守與庭園",
         "credit": "宇宙碎片拍攝",
-        "objectPosition": "center 58%"
+        "objectPosition": "center center"
       }
     },
     {
@@ -1203,8 +1464,9 @@
       ],
       "photo": {
         "src": "photos/day7.webp",
-        "alt": "祖谷藤蔓橋",
-        "credit": "宇宙碎片拍攝"
+        "alt": "祖谷藤蔓橋正面對稱構圖",
+        "credit": "宇宙碎片拍攝",
+        "objectPosition": "center center"
       }
     },
     {
