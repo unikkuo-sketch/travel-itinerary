@@ -166,7 +166,8 @@
       "photo": {
         "src": "photos/day1-ritsurin-pond.webp",
         "alt": "栗林公園池畔松樹與倒影",
-        "credit": "宇宙碎片拍攝"
+        "credit": "宇宙碎片拍攝",
+        "objectPosition": "center center"
       },
       "relatedPhotos": [
         {
@@ -221,18 +222,21 @@
       "photo": {
         "src": "photos/story-olive-windmill.webp",
         "alt": "小豆島橄欖公園白色風車與橄欖樹",
-        "credit": "宇宙碎片拍攝"
+        "credit": "宇宙碎片拍攝",
+        "objectPosition": "center center"
       },
       "relatedPhotos": [
         {
           "src": "photos/story-olive-magic-book.webp",
-          "alt": "橄欖公園大型魔法書造景",
-          "credit": "宇宙碎片拍攝"
+          "alt": "橄欖公園魔法書造景",
+          "credit": "宇宙碎片拍攝",
+          "objectPosition": "center center"
         },
         {
           "src": "photos/story-olive-history-panel.webp",
-          "alt": "伴手禮店內小豆島橄欖歷史展板",
-          "credit": "宇宙碎片拍攝"
+          "alt": "小豆島橄欖歷史展板",
+          "credit": "宇宙碎片拍攝",
+          "objectPosition": "center center"
         }
       ]
     },
@@ -258,8 +262,9 @@
         },
         {
           "src": "photos/story-konpira-entrance.webp",
-          "alt": "金刀比羅宮參道入口木門與石燈籠",
-          "credit": "宇宙碎片拍攝"
+          "alt": "金刀比羅宮參道木門",
+          "credit": "宇宙碎片拍攝",
+          "objectPosition": "center center"
         }
       ]
     },
@@ -337,17 +342,12 @@
         "url": "https://www.matsuyamajo.jp/"
       },
       "photo": {
-        "src": "photos/story-matsuyamajo.webp",
-        "alt": "松山城木造城門與石段",
+        "src": "photos/story-matsuyamajo-courtyard.webp",
+        "alt": "松山城天守與市區遠景",
         "credit": "宇宙碎片拍攝",
         "objectPosition": "center center"
       },
       "relatedPhotos": [
-        {
-          "src": "photos/story-matsuyamajo-courtyard.webp",
-          "alt": "松山城本丸庭院與市區遠景",
-          "credit": "宇宙碎片拍攝"
-        },
         {
           "src": "photos/story-matsuyamajo-roof.webp",
           "alt": "松山城屋頂瓦片與海景",
@@ -361,6 +361,12 @@
         {
           "src": "photos/story-matsuyamajo-ropeway.webp",
           "alt": "松山城纜車綠牌與入口",
+          "credit": "宇宙碎片拍攝",
+          "objectPosition": "center center"
+        },
+        {
+          "src": "photos/story-matsuyamajo.webp",
+          "alt": "松山城木造城門",
           "credit": "宇宙碎片拍攝",
           "objectPosition": "center center"
         }
@@ -404,33 +410,23 @@
         "url": "https://www.uwajima.org/"
       },
       "photo": {
-        "src": "photos/story-uwajima.webp",
-        "alt": "宇和島城天守橫式置中",
+        "src": "photos/story-uwajima-tenshu.webp",
+        "alt": "宇和島城天守",
         "credit": "宇宙碎片拍攝",
         "objectPosition": "center center"
       },
       "relatedPhotos": [
         {
-          "src": "photos/story-uwajima-tenshu.webp",
-          "alt": "宇和島城天守樹影直式",
-          "credit": "宇宙碎片拍攝",
-          "objectPosition": "center center"
-        },
-        {
-          "src": "photos/story-uwajima-vista.webp",
-          "alt": "宇和島城天守與石垣遠眺",
-          "credit": "宇宙碎片拍攝",
-          "objectPosition": "center center"
-        },
-        {
           "src": "photos/story-uwajima-sign.webp",
           "alt": "宇和島城解說看板",
-          "credit": "宇宙碎片拍攝"
+          "credit": "宇宙碎片拍攝",
+          "objectPosition": "center center"
         },
         {
           "src": "photos/story-uwajima-armor.webp",
           "alt": "宇和島城內甲冑展示",
-          "credit": "宇宙碎片拍攝"
+          "credit": "宇宙碎片拍攝",
+          "objectPosition": "center center"
         }
       ]
     },
@@ -445,7 +441,7 @@
       },
       "photo": {
         "src": "photos/story-ryugado.webp",
-        "alt": "龍河洞洞口神社與刻字",
+        "alt": "龍河洞洞穴入口與神社",
         "credit": "宇宙碎片拍攝",
         "objectPosition": "center center"
       },
@@ -483,7 +479,7 @@
       },
       "photo": {
         "src": "photos/story-train-ryoma.webp",
-        "alt": "志国土佐時代の夜明けのものがたり車頭與銘板",
+        "alt": "志国土佐時代の夜明けのものがたり車頭",
         "credit": "宇宙碎片拍攝",
         "objectPosition": "center center"
       },
@@ -728,21 +724,6 @@
           "credit": "宇宙碎片拍攝"
         }
       ]
-    },
-    {
-      "theme": "food",
-      "title": "弘人市場",
-      "kicker": "高知・帯屋町",
-      "body": "高知人的夜間食堂集合體：烤物、くじら、地酒與大聲交談混在同一屋簷下。龍河洞之後回到市區，最適合在這裡收尾。",
-      "source": {
-        "label": "ひろめ市場",
-        "url": "https://hirome.co.jp/"
-      },
-      "photo": {
-        "src": "photos/food-hirome.webp",
-        "alt": "弘人市場入口",
-        "credit": "Maarten Heerlien / CC BY 2.0"
-      }
     },
     {
       "theme": "sake",
