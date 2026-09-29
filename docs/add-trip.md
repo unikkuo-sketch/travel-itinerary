@@ -167,7 +167,7 @@ Copy-Item -Recurse trips\_template trips\2027_義大利托斯卡尼_蜜月
 | `stories[]` | `/trips/{id}/stories.html` | `place`｜`history`｜`culture` | 景點、歷史與文化 |
 | `foods[]` | `/trips/{id}/food.html` | `food`｜`sake` | 食物與酒（含酒藏／地酒；`sake`＝酒） |
 
-兩頁皆以滿版章節＋下緣疊文呈現；未填或空陣列顯示空狀態。建議各至少約 5 則；可重用 `photos/` 既有封面／每日照，新圖須補 `ATTRIBUTIONS.md`。
+文案與選圖照 `AGENTS.md`「作者口吻與選圖」：遊記口吻、有圖走 essay。未填或空陣列顯示空狀態。建議各至少約 5 則；新圖須補 `ATTRIBUTIONS.md`。
 
 ### 6. 預覽
 

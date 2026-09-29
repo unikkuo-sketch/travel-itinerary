@@ -59,6 +59,13 @@ ATTRIBUTIONS.md         照片素材授權紀錄（新增圖片必須補列）
   - 裁切以主體進框為準，不要用 `objectPosition` 去救一張沒裁好的圖。反例：直式原圖塞進橫幅（主體被切掉）；每張依原圖比例排（有的高有的矮）
   - 相關圖最多 4 張。4 張為 2×2（`story-related-grid--4`）；3 張桌面三等欄
   - 換圖時改 `alt`，並在 `ATTRIBUTIONS.md` 補一句。滿版章節（`.ph--story`，沒有相關圖且未標 contain）維持原設計，不套這套 4:3
+- 作者口吻與選圖（2026-09-29，東北這趟改稿後的標準；新章照這套寫，不要寫回導覽腔）：
+  - **文案**：`stories[].body`、`foods[].body`、住宿 `hotelNote`／`hotelBlurbTeaser`／`hotelBlurb` 用第一人稱遊記。寫實際怎麼逛、好吃在哪、跟哪家比、人潮／預約／離開時機。口語可留 `~`、`!`、`XD`、括號吐槽。不要寫成官網或抒情短句（反例：「把腳步放慢」「收成可帶走的記憶」）
+  - **錯字**：明顯打字改通（提怎→提早、酒葬→酒造、正宗→政宗、parrt→part）。作者的叫法照留（三颯舞、熟麗）
+  - **住宿三段不重複**：`hotelNote` 常駐一句、`hotelBlurbTeaser` 下一句、`hotelBlurb` 只放展開後才出現的剩下那句。有照片的夜對齊四國：一張封面 + `hotelPhotos` 橫列（在 `<details>` 裡）
+  - **選圖**：只從對應該章的下載資料夾挑，不從別夾借、不從整包相簿自配。看了要認得是哪（街道、整棟、招牌、成排燈籠）。看不出是什麼就換。同一章不要連放幾乎同一張；夠好的只有一張就只放一張
+  - **排版**：有圖的風土／飲食都走 essay。沒有相關圖（如七夕）仍加 `photo.objectFit: "contain"` 維持 essay，不要退回滿版。每日代表照若會被寬幅卡裁掉主體，檔案裁 **16:9** 並設 `photo.aspectRatio: "16 / 9"`
+  - **張數**：相關圖最多 4（連主圖共 5，4 張為 2×2）。作者說再多幾張時補進 `relatedPhotos`，不要另做版面
 - SEO：build 預渲染每趟 meta（含 cover OG）＋行程／風土／飲食正文；shopping `noindex`；機器入口 `/llms.txt`、`/llms-full.txt`、`/trips/manifest.json`、`/trips/{id}/itinerary.json`；評估見 `docs/seo-assessment-2026-07-30.md`
 
 ## 常用指令

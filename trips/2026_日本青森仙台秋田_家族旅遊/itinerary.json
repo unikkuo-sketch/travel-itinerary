@@ -218,21 +218,6 @@
   },
   "stories": [
     {
-      "theme": "place",
-      "title": "松島",
-      "kicker": "宮城",
-      "body": "日本三景之一，島嶼與松林交錯於灣內。伊達家信仰與古寺遺韻並陳，是這趟東北旅程裡最廣為流傳的風景碎片。",
-      "source": {
-        "label": "日本三景松島－松島観光協会",
-        "url": "https://www.matsushima-kanko.com/"
-      },
-      "photo": {
-        "src": "photos/day7.webp",
-        "alt": "松島灣的松樹、小亭與水面",
-        "credit": "宇宙碎片拍攝"
-      }
-    },
-    {
       "theme": "culture",
       "title": "仙台七夕祭",
       "kicker": "宮城・仙台",
@@ -244,8 +229,174 @@
       "photo": {
         "src": "photos/day1.webp",
         "alt": "仙台七夕祭拱廊垂下的吹流し",
-        "credit": "宇宙碎片拍攝"
+        "credit": "宇宙碎片拍攝",
+        "objectFit": "contain"
       }
+    },
+    {
+      "theme": "place",
+      "title": "盛岡八幡宮與赤煉瓦館",
+      "kicker": "岩手・盛岡",
+      "body": "盛岡市區可以到總鎮守的八幡宮，和明治時期的岩手銀行赤煉瓦館逛逛，殺個時間慢慢往三颯舞祭典的會場走。",
+      "photo": {
+        "src": "photos/story-morioka-brick.webp",
+        "alt": "岩手銀行赤煉瓦館的鐘樓與紅磚立面",
+        "credit": "宇宙碎片拍攝"
+      },
+      "relatedPhotos": [
+        {
+          "src": "photos/story-morioka-hachiman.webp",
+          "alt": "盛岡八幡宮拜殿與朱欄",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/story-morioka-hall.webp",
+          "alt": "赤煉瓦館內部木造挑高大廳",
+          "credit": "宇宙碎片拍攝"
+        }
+      ]
+    },
+    {
+      "theme": "place",
+      "title": "廣田神社與善知鳥神社",
+      "kicker": "青森",
+      "body": "來到青森市區，有名的青森蘋果水池就在廣田神社，人很多是個人氣景點，逛完也推薦去附近的善知鳥神社走走喔~ 寧靜很多，有種舒暢感。",
+      "photo": {
+        "src": "photos/story-hirota.webp",
+        "alt": "廣田神社拜殿、黃幕與善知鳥繪",
+        "credit": "宇宙碎片拍攝"
+      },
+      "relatedPhotos": [
+        {
+          "src": "photos/story-hirota-ema.webp",
+          "alt": "廣田神社繪馬架上的紅白魚形繪馬",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/story-hirota-garden.webp",
+          "alt": "廣田神社境內岩石與水面的繪馬",
+          "credit": "宇宙碎片拍攝"
+        }
+      ]
+    },
+    {
+      "theme": "place",
+      "title": "Moya Hills",
+      "kicker": "青森・月見野",
+      "body": "位於青森市區附近，公車可抵達，冬天是滑雪勝地，夏天開放草坡滑車，想體驗速度感的人，非常推薦來這邊~",
+      "photo": {
+        "src": "photos/story-moya.webp",
+        "alt": "MOYA HILLS 玻璃大廳外觀",
+        "credit": "宇宙碎片拍攝"
+      },
+      "relatedPhotos": [
+        {
+          "src": "photos/story-moya-hills.webp",
+          "alt": "滑車終點的草地與 GOAL 旗",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/story-moya-carvings.webp",
+          "alt": "Moya Hills 木雕熊與貓頭鷹",
+          "credit": "宇宙碎片拍攝"
+        }
+      ]
+    },
+    {
+      "theme": "place",
+      "title": "青森睡魔祭",
+      "kicker": "青森",
+      "body": "青森最有名的夏日祭典非睡魔祭莫屬，巨大且各式各樣的花燈在街上趴趴走，人超級多，要留意腳步和小孩~ 注意! 祭典結束後會有大批人潮往車站，如果你不住在青森市區，一定要提早離開，太晚走有可能卡在車站大廳排隊，搭不上原本想搭的那班車。",
+      "source": {
+        "label": "青森ねぶた祭（公式）",
+        "url": "https://www.nebuta.jp/"
+      },
+      "photo": {
+        "src": "photos/story-nebuta.webp",
+        "alt": "青森睡魔祭風神與蛇的燈籠山車",
+        "credit": "宇宙碎片拍攝"
+      },
+      "relatedPhotos": [
+        {
+          "src": "photos/story-nebuta-green.webp",
+          "alt": "青森睡魔祭綠色鬼神燈籠",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/story-nebuta-tiger.webp",
+          "alt": "青森睡魔祭虎斑燈籠山車",
+          "credit": "宇宙碎片拍攝"
+        }
+      ]
+    },
+    {
+      "theme": "culture",
+      "title": "弘前睡魔祭",
+      "kicker": "青森・弘前",
+      "body": "和青森的立體ねぶた不同，弘前的睡魔祭花燈走2D風，規模跟人潮都小很多，逛起來比較舒服。",
+      "photo": {
+        "src": "photos/story-neputa.webp",
+        "alt": "弘前ねぷた扇形燈籠上的武者與鬼神",
+        "credit": "宇宙碎片拍攝"
+      },
+      "relatedPhotos": [
+        {
+          "src": "photos/story-neputa-float.webp",
+          "alt": "弘前ねぷた扇面上的鬼神",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/story-neputa-street.webp",
+          "alt": "弘前ねぷた持劍武者的扇形燈籠",
+          "credit": "宇宙碎片拍攝"
+        }
+      ]
+    },
+    {
+      "theme": "culture",
+      "title": "白神號",
+      "kicker": "五能線",
+      "body": "弘前往秋田的觀光列車-白神號。沿著五能線走海線，沿途會停千疊岩，放大家走走看海~想搭的記得1個月前預約搶票，2號車廂是包廂款。",
+      "photo": {
+        "src": "photos/story-shirakami.webp",
+        "alt": "白神號駕駛座望向田野與彎道",
+        "credit": "宇宙碎片拍攝"
+      },
+      "relatedPhotos": [
+        {
+          "src": "photos/story-shirakami-train.webp",
+          "alt": "白神號青綠色車頭停在月台",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/story-shirakami-seat.webp",
+          "alt": "白神號包廂座與小桌",
+          "credit": "宇宙碎片拍攝"
+        }
+      ]
+    },
+    {
+      "theme": "culture",
+      "title": "秋田市民俗藝能傳承館",
+      "kicker": "秋田",
+      "body": "在晚上的竿燈祭上場前，可以來這邊了解文化歷史，還可以體驗撐個小竿燈喔~真的有重!",
+      "photo": {
+        "src": "photos/story-kanto-museum.webp",
+        "alt": "傳承館內成串的竿燈燈籠",
+        "credit": "宇宙碎片拍攝"
+      },
+      "relatedPhotos": [
+        {
+          "src": "photos/story-kanto-museum-pole.webp",
+          "alt": "館內豎起的燈籠竿",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/story-kanto-museum-door.webp",
+          "alt": "秋田市竿燈會館入口",
+          "credit": "宇宙碎片拍攝"
+        }
+      ]
     },
     {
       "theme": "place",
@@ -257,25 +408,22 @@
         "url": "https://www.kantou.gr.jp/"
       },
       "photo": {
-        "src": "photos/story-kanto.webp",
-        "alt": "秋田竿燈祭夜空中的燈籠竿",
+        "src": "photos/story-kanto-night.webp",
+        "alt": "秋田竿燈祭夜空中彎成弧的燈籠竿",
         "credit": "宇宙碎片拍攝"
-      }
-    },
-    {
-      "theme": "place",
-      "title": "青森睡魔祭",
-      "kicker": "青森",
-      "body": "以武者繪巨燈巡行街巷的夏祭；最後一夜的海上運行與花火，把一整年的力氣推向最高潮。本趟封面所記，正是這道光。",
-      "source": {
-        "label": "青森ねぶた祭（公式）",
-        "url": "https://www.nebuta.jp/"
       },
-      "photo": {
-        "src": "photos/day3.webp",
-        "alt": "青森睡魔祭風神雷神燈籠山車",
-        "credit": "宇宙碎片拍攝"
-      }
+      "relatedPhotos": [
+        {
+          "src": "photos/story-kanto-pole.webp",
+          "alt": "夜色裡直立的燈籠竿",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/story-kanto-row.webp",
+          "alt": "秋田竿燈祭成排的燈籠竿",
+          "credit": "宇宙碎片拍攝"
+        }
+      ]
     },
     {
       "theme": "place",
@@ -287,10 +435,76 @@
         "url": "https://tazawako-kakunodate.com/"
       },
       "photo": {
-        "src": "photos/day6.webp",
-        "alt": "角館武家屋敷的木門與屋瓦",
+        "src": "photos/story-kakunodate.webp",
+        "alt": "角館武家屋敷的白壁與黑木骨架",
         "credit": "宇宙碎片拍攝"
-      }
+      },
+      "relatedPhotos": [
+        {
+          "src": "photos/story-kakunodate-street.webp",
+          "alt": "角館武家屋敷黑板塀與杉木街道",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/story-kakunodate-noren.webp",
+          "alt": "寫著角館的暖簾",
+          "credit": "宇宙碎片拍攝"
+        }
+      ]
+    },
+    {
+      "theme": "place",
+      "title": "松島",
+      "kicker": "宮城",
+      "body": "日本三景之一，島嶼與松林交錯於灣內。伊達家信仰與古寺遺韻並陳，是這趟東北旅程裡最廣為流傳的風景碎片。",
+      "source": {
+        "label": "日本三景松島－松島観光協会",
+        "url": "https://www.matsushima-kanko.com/"
+      },
+      "photo": {
+        "src": "photos/story-matsushima.webp",
+        "alt": "松島灣的松島、遊船與島上屋瓦",
+        "credit": "宇宙碎片拍攝"
+      },
+      "relatedPhotos": [
+        {
+          "src": "photos/story-matsushima-pine.webp",
+          "alt": "松島兩座松島與中間水道",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/story-zuiganji.webp",
+          "alt": "瑞巖寺庫裡全景",
+          "credit": "宇宙碎片拍攝"
+        }
+      ]
+    },
+    {
+      "theme": "history",
+      "title": "瑞鳳殿",
+      "kicker": "宮城・仙台",
+      "body": "伊達政宗粉必來參觀-瑞鳳殿，伊達家的靈廟都在這邊可以看的到喔。",
+      "source": {
+        "label": "瑞鳳殿（公式）",
+        "url": "https://www.zuihoden.com/"
+      },
+      "photo": {
+        "src": "photos/story-zuihoden.webp",
+        "alt": "瑞鳳殿匾額與唐門",
+        "credit": "宇宙碎片拍攝"
+      },
+      "relatedPhotos": [
+        {
+          "src": "photos/story-zuihoden-gate.webp",
+          "alt": "瑞鳳殿唐門與吊燈",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/story-zuihoden-altar.webp",
+          "alt": "瑞鳳殿內部須彌壇與暖簾",
+          "credit": "宇宙碎片拍攝"
+        }
+      ]
     }
   ],
   "foods": [
@@ -298,61 +512,192 @@
       "theme": "food",
       "title": "仙台牛タン",
       "kicker": "宮城・仙台",
-      "body": "昭和二十三年起自仙台的炭火牛舌文化；定食常配麥飯與尾湯，各店部位與調味各有堅持。本趟於善治郎收下這口厚切炭香。",
+      "body": "一定要點厚切牛舌! 軟嫩Q彈超好吃，牛尾湯也好好喝，肉很軟嫩，不過湯偏鹹，需要多喝水XD",
       "source": {
         "label": "せんだい旅日和（仙台観光情報）",
         "url": "https://www.sentabi.jp/features/42"
       },
       "photo": {
-        "src": "photos/food-gyutan.webp",
-        "alt": "善治郎炭烤牛舌、高麗菜與漬菜",
+        "src": "photos/food-zenjiro.webp",
+        "alt": "善治郎炭烤牛舌與高麗菜",
         "credit": "宇宙碎片拍攝"
-      }
+      },
+      "relatedPhotos": [
+        {
+          "src": "photos/food-zenjiro-shop.webp",
+          "alt": "善治郎店門與暖簾",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/food-zenjiro-set.webp",
+          "alt": "善治郎牛舌定食、湯與麥飯",
+          "credit": "宇宙碎片拍攝"
+        }
+      ]
+    },
+    {
+      "theme": "food",
+      "title": "喜久水庵 毛豆霜淇淋",
+      "kicker": "宮城・仙台",
+      "body": "仙台有名的還有毛豆製品，雖然我是毛豆控，雖然毛豆做成甜的不難吃不違和，可是需要注意糖分爆擊。",
+      "photo": {
+        "src": "photos/food-edamame.webp",
+        "alt": "喜久水庵枝豆霜淇淋",
+        "credit": "宇宙碎片拍攝"
+      },
+      "relatedPhotos": [
+        {
+          "src": "photos/food-edamame-menu.webp",
+          "alt": "枝豆霜淇淋菜單",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/food-edamame-shop.webp",
+          "alt": "喜久水庵店招",
+          "credit": "宇宙碎片拍攝"
+        }
+      ]
     },
     {
       "theme": "food",
       "title": "小岩井牧場乳製品",
       "kicker": "岩手・雫石",
-      "body": "開業自明治的小岩井農場，把鮮乳做成飲用優格、瓶裝牛乳與牧場冰淇淋。遼闊草原走一圈後，坐下來收一口「農場育ち」的濃厚，是 Day 2 親子行程最甜的休息。",
+      "body": "明治開業的小岩井農場，歷史悠久，優格、瓶裝牛乳與牧場冰淇淋肯定是好吃，最驚豔的是披薩!! 那個起司那個番茄，好好吃喔。",
       "source": {
         "label": "小岩井農場（公式）",
         "url": "https://www.makiba.or.jp/"
       },
       "photo": {
-        "src": "photos/food-koiwai-dairy.webp",
-        "alt": "小岩井農場飲用優格、瓶裝牛乳與冰淇淋",
+        "src": "photos/food-koiwai-set.webp",
+        "alt": "小岩井優格、瓶裝牛乳與冰淇淋",
         "credit": "宇宙碎片拍攝"
-      }
+      },
+      "relatedPhotos": [
+        {
+          "src": "photos/food-koiwai-pizza.webp",
+          "alt": "小岩井農場的番茄起司披薩",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/food-koiwai-station.webp",
+          "alt": "小岩井驛站招牌",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/food-koiwai-sign.webp",
+          "alt": "小岩井農場招牌",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/food-koiwai-cows.webp",
+          "alt": "小岩井農場牛舍裡的乳牛",
+          "credit": "宇宙碎片拍攝"
+        }
+      ]
+    },
+    {
+      "theme": "sake",
+      "title": "朝開酒藏",
+      "kicker": "岩手・盛岡",
+      "body": "到哪裡都要去當地酒造一下! 這次帶回來朝開酒造的熟麗，酒香足不會太甜太嗆，主打平衡且不用冰 (個人覺得最好喝的那支要冰袋不回來啊)。",
+      "photo": {
+        "src": "photos/food-asabiraki.webp",
+        "alt": "朝開酒藏霜淇淋",
+        "credit": "宇宙碎片拍攝"
+      },
+      "relatedPhotos": [
+        {
+          "src": "photos/food-asabiraki-shop.webp",
+          "alt": "朝日釀造外牆的あさ開招牌",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/food-asabiraki-bottles.webp",
+          "alt": "朝開酒藏架上的清酒瓶",
+          "credit": "宇宙碎片拍攝"
+        }
+      ]
     },
     {
       "theme": "food",
       "title": "盛岡三大麵",
       "kicker": "岩手・盛岡",
-      "body": "冷麵、蕎麥麵（わんこそば）、炸醬麵（じゃじゃ麺）——韓系涼麵的彈牙、一口蕎麥的無限續碗、肉味噌拌麵的家常味。盛岡把日韓中三條麵線收成一口城下町的日常，走在站前就能挑一碗開吃。",
+      "body": "盛岡三大麵點-冷麵、蕎麥麵、炸醬麵。冷麵的口感Q彈降火，夏天吃超級搭。",
       "source": {
         "label": "盛岡三大麺（Wikipedia）",
         "url": "https://ja.wikipedia.org/wiki/%E7%9B%9B%E5%B2%A1%E4%B8%89%E5%A4%A7%E9%BA%BA"
       },
       "photo": {
-        "src": "photos/food-morioka-noodles.webp",
-        "alt": "ぴょんぴょん舎盛岡冷麺（西瓜、半熟蛋與小黃瓜）",
+        "src": "photos/food-morioka-reimen.webp",
+        "alt": "ぴょんぴょん舎盛岡冷麺",
         "credit": "宇宙碎片拍攝"
-      }
+      },
+      "relatedPhotos": [
+        {
+          "src": "photos/food-morioka-menu.webp",
+          "alt": "菜單上的盛岡冷麺",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/food-morioka-shop.webp",
+          "alt": "盛岡冷麵店外牆",
+          "credit": "宇宙碎片拍攝"
+        }
+      ]
+    },
+    {
+      "theme": "food",
+      "title": "A-FACTORY",
+      "kicker": "青森",
+      "body": "青森站前知名景點A-FACTORY，內有許多蘋果伴手禮、甜點、蘋果汁/酒。推一個 Gelato Natura Due ，有多種用在地蘋果做成的口味~ (偷偷說：蘋果調味茶包NONO~ 蘋果乾買! )",
+      "source": {
+        "label": "A-FACTORY（公式）",
+        "url": "https://www.a-factory.jp/"
+      },
+      "photo": {
+        "src": "photos/food-afactory.webp",
+        "alt": "A-FACTORY 蘋果霜淇淋兩球",
+        "credit": "宇宙碎片拍攝"
+      },
+      "relatedPhotos": [
+        {
+          "src": "photos/food-afactory-bridge.webp",
+          "alt": "A-FACTORY 與青森灣大橋",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/food-afactory-counter.webp",
+          "alt": "Gelato Natura Due 櫃檯",
+          "credit": "宇宙碎片拍攝"
+        }
+      ]
     },
     {
       "theme": "food",
       "title": "八食中心",
       "kicker": "青森・八戶",
-      "body": "八戶港岸邊的大型室內市場，約六十家攤位賣當日鮮魚、蔬果與鄉土點心；可現場點海鮮丼，或把選好的魚貝帶去七輪村炭烤。東北最大級的海鮮主題公園，把太平洋的鮮，收進胃袋。",
+      "body": "位於八戶的海鮮市場，海鮮控一定要來，內有座位可以買完直接開吃，也可以買去炭烤(要另外付人頭費)。",
       "source": {
         "label": "八食センター（公式）",
         "url": "https://www.849net.com/"
       },
       "photo": {
-        "src": "photos/food-hasshoku.webp",
+        "src": "photos/food-hasshoku-scallop.webp",
         "alt": "八食中心的帆立貝刺身",
         "credit": "宇宙碎片拍攝"
-      }
+      },
+      "relatedPhotos": [
+        {
+          "src": "photos/food-hasshoku-stall.webp",
+          "alt": "八食中心魚攤與價牌",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/food-hasshoku-sashimi.webp",
+          "alt": "八食中心的綜合刺身",
+          "credit": "宇宙碎片拍攝"
+        }
+      ]
     },
     {
       "theme": "food",
@@ -375,7 +720,7 @@
       "theme": "sake",
       "title": "陸奥八仙",
       "kicker": "青森・八戶酒造",
-      "body": "八戶酒造的招牌銘柄；特別純米以青森縣產米釀造，酒標「八仙」二字醒目。八戶海鮮行程旁，收一瓶能帶回台灣的津輕氣口。",
+      "body": "八戶有名的酒造-八戶酒造，這次沒時間去逛逛，不過八食中心有酒商可以買到地酒，喜歡清酒的推一個。",
       "source": {
         "label": "八戸酒造（公式）",
         "url": "https://www.hachinohe-shuzou.co.jp/"
@@ -390,6 +735,29 @@
     },
     {
       "theme": "food",
+      "title": "秋田長屋酒場",
+      "kicker": "秋田",
+      "body": "超級有特色的居酒屋，可以點套餐吃到秋田名物，有神秘表演喔~",
+      "photo": {
+        "src": "photos/food-nagaya.webp",
+        "alt": "秋田長屋酒場的刺身拼盤",
+        "credit": "宇宙碎片拍攝"
+      },
+      "relatedPhotos": [
+        {
+          "src": "photos/food-nagaya-shop.webp",
+          "alt": "秋田長屋酒場店招",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/food-nagaya-grill.webp",
+          "alt": "秋田長屋酒場的烤鮭魚",
+          "credit": "宇宙碎片拍攝"
+        }
+      ]
+    },
+    {
+      "theme": "food",
       "title": "稲庭うどん",
       "kicker": "秋田・湯沢",
       "body": "湯澤稻庭一帶手延乾麵，江戶時代曾為佐竹藩獻上品；小麥、鹽與清水反復揉延，口感細緻有筋。Day 6 角館ふきや以佐藤養助麵搭配比內地雞親子丼，把秋田鄉土味一次收進托盤。",
@@ -398,10 +766,45 @@
         "url": "http://inaniwa-udon.jp/about/"
       },
       "photo": {
-        "src": "photos/food-inaniwa-udon.webp",
-        "alt": "角館ふきや比內地雞親子丼與稻庭烏龍定食",
+        "src": "photos/food-inaniwa-set.webp",
+        "alt": "角館ふきや比內地雞親子丼與稻庭烏龍",
         "credit": "宇宙碎片拍攝"
-      }
+      },
+      "relatedPhotos": [
+        {
+          "src": "photos/food-inaniwa-noodles.webp",
+          "alt": "竹簍上的稻庭烏龍麵",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/food-inaniwa-shop.webp",
+          "alt": "角館ふきや店頭",
+          "credit": "宇宙碎片拍攝"
+        }
+      ]
+    },
+    {
+      "theme": "food",
+      "title": "司 牛舌",
+      "kicker": "宮城・仙台",
+      "body": "牛舌 part 2，司的牛舌相較善治郎屬於脆的流派，個人比較喜歡善治郎。",
+      "photo": {
+        "src": "photos/food-tsukasa.webp",
+        "alt": "司牛舌的炭烤牛舌",
+        "credit": "宇宙碎片拍攝"
+      },
+      "relatedPhotos": [
+        {
+          "src": "photos/food-tsukasa-set.webp",
+          "alt": "司牛舌定食：牛舌、漬菜與麥飯",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/food-tsukasa-soup.webp",
+          "alt": "司牛舌的牛舌尾湯",
+          "credit": "宇宙碎片拍攝"
+        }
+      ]
     }
   ],
   "tickets": [
@@ -526,7 +929,36 @@
       "transport": "Komachi 14 · 09:50／Komachi 24 · 13:54",
       "transportClass": "",
       "summary": "角館武家屋敷散策、佐藤養助稻庭烏龍，夜宿松島溫泉",
-      "hotelNote": "日本三景松島溫泉，灣景與湯浴收束長移動",
+      "hotelNote": "松島海岸邊的溫泉飯店，場館大，一泊二食自助餐非常豐盛!",
+      "hotelBlurbTeaser": "自製海鮮丼吃到飽，還有飲料吧紅白啤酒喝到飽。",
+      "hotelBlurb": "晚上天氣好，推薦去戶外的躺椅，躺平耍廢看星空，當然也要去泡溫泉!",
+      "hotelPhoto": {
+        "src": "photos/hotel-soukan.webp",
+        "alt": "夜間的ホテル壮観館舍與落地窗",
+        "credit": "宇宙碎片拍攝"
+      },
+      "hotelPhotos": [
+        {
+          "src": "photos/hotel-soukan-breakfast.webp",
+          "alt": "自助餐的海鮮丼、烤魚與小菜",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/hotel-soukan-door.webp",
+          "alt": "客房木格門與 224 號",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/hotel-soukan-lounge.webp",
+          "alt": "ホテル壮観交誼廳與落地窗",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/hotel-soukan-night.webp",
+          "alt": "夜間的ホテル壮観館舍與庭園石組",
+          "credit": "宇宙碎片拍攝"
+        }
+      ],
       "routeLabel": "松島"
     },
     {
@@ -789,8 +1221,9 @@
       ],
       "photo": {
         "src": "photos/day3.webp",
-        "alt": "青森睡魔祭風神雷神燈籠山車",
-        "credit": "宇宙碎片拍攝"
+        "alt": "青森睡魔祭風神與蛇的燈籠山車",
+        "credit": "宇宙碎片拍攝",
+        "aspectRatio": "16 / 9"
       }
     },
     {
@@ -969,8 +1402,9 @@
       ],
       "photo": {
         "src": "photos/day5.webp",
-        "alt": "白神號車窗望向彎道、田野與聚落",
-        "credit": "宇宙碎片拍攝"
+        "alt": "白神號青綠色車頭",
+        "credit": "宇宙碎片拍攝",
+        "aspectRatio": "16 / 9"
       }
     },
     {
@@ -1055,8 +1489,9 @@
       ],
       "photo": {
         "src": "photos/day6.webp",
-        "alt": "角館武家屋敷的木門與屋瓦",
-        "credit": "宇宙碎片拍攝"
+        "alt": "角館武家屋敷黑板塀街道",
+        "credit": "宇宙碎片拍攝",
+        "aspectRatio": "16 / 9"
       }
     },
     {
@@ -1183,8 +1618,9 @@
       ],
       "photo": {
         "src": "photos/day8.webp",
-        "alt": "瑞鳳殿匾額與開啟的唐門",
-        "credit": "宇宙碎片拍攝"
+        "alt": "瑞鳳殿匾額",
+        "credit": "宇宙碎片拍攝",
+        "aspectRatio": "16 / 9"
       }
     }
   ],
