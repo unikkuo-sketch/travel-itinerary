@@ -13,19 +13,71 @@ CC BY / CC BY-SA 圖片依授權條款標示作者、來源與授權；CC BY-SA 
 
 ## trips/2026_日本熱海長瀞_家族旅遊/photos/
 
+2026-09-30：改以下載區已分好的 zip。明治神宮、熱海布丁刪除（含購物清單）。封面與每日裁 16:9，風土／飲食／住宿展開圖裁 4:3，住宿封面裁 3:4 對齊縮圖。池袋兩晚沒有照片。
+
 | 檔案 | 內容 | 作者 | 授權 | 來源 |
 |---|---|---|---|---|
-| `cover.webp` | 熱海サンビーチ全景 | m-louis .® | [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:View_of_Atami_Sun_Beach_from_northeast_-_Mar_14,_2024.jpg) |
-| `day1.webp` | 熱海サンビーチ | Izu navi | [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Atami_Sun_Beach_-_Aug_29,_2013_(1).jpg) |
-| `day2.webp` | 城ヶ崎海岸門脇吊橋 | Takuya ASADA | [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:J%C5%8Dgasaki_-Kadowaki_Bridge_01.jpg) |
-| `day3.webp` | 小室山公園 | hiroaki | [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:De_berg_Komuro_en_het_Komuroyama_Park,_-18_mei_2014_b.jpg) |
-| `day4.webp` | 長瀞岩疊溪谷 | Suikotei | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Nagatoro_gorge_2019_01.jpg) |
-| `day5.webp` | 三峯神社隨身門 | Zengame | [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Zuishinmon_Gate,_Mitsumine_Shrine,_Chichibu_-_Sep_23,_2022.jpg) |
-| `day6.webp` | 明治神宮南參道鳥居 | Asanagi | [CC0](https://creativecommons.org/publicdomain/zero/1.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Meiji_Shrine_Minami-sando-torii_2023-01-26.jpg) |
-| `story-kinomiya.webp` | 來宮神社拜殿 | Batholith | [Public domain](https://creativecommons.org/publicdomain/mark/1.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Kinomiya_Jinja_(Kinomiya_Shrine)_20100612.jpg) |
-| `food-atami-purin.webp` | 日式焦糖布丁（プリン） | Clairenguyen23 | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Japanese_Caramel_Custard_Pudding,_Purin,_Flan.jpg) |
-| `food-aobasha.webp` | 熱海青葉舍抹茶飲品與富士布丁 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
-| `food-bukou.webp` | 武甲酒造柳田總本店外觀 | 宇宙碎片拍攝 | 本人拍攝 | 本趟旅程自拍照 |
+| `cover.webp` | 寶登山一帶兩側盛開的櫻花道路 | 宇宙碎片拍攝 | 本人拍攝 | 下載區熱海照片包 |
+| `story-kinomiya.webp` | 來宮神社拜殿與奉納白幡 | 宇宙碎片拍攝 | 本人拍攝 | 下載區熱海照片包 |
+| `story-kinomiya-tree.webp` | 來宮神社境內的大楠 | 宇宙碎片拍攝 | 本人拍攝 | 下載區熱海照片包 |
+| `story-kinomiya-torii.webp` | 來宮神社紅鳥居與竹林 | 宇宙碎片拍攝 | 本人拍攝 | 下載區熱海照片包 |
+| `story-omuro.webp` | 大室山纜車站與紅色鳥居 | 宇宙碎片拍攝 | 本人拍攝 | 下載區熱海照片包 |
+| `story-omuro-crater.webp` | 大室山山頂的草皮火山口 | 宇宙碎片拍攝 | 本人拍攝 | 下載區熱海照片包 |
+| `story-omuro-view.webp` | 從大室山纜車上看伊豆海岸 | 宇宙碎片拍攝 | 本人拍攝 | 下載區熱海照片包 |
+| `story-jogasaki.webp` | 城崎海岸懸崖、松樹與海 | 宇宙碎片拍攝 | 本人拍攝 | 下載區熱海照片包 |
+| `story-jogasaki-sign.webp` | 城崎海岸入口的解說牌 | 宇宙碎片拍攝 | 本人拍攝 | 下載區熱海照片包 |
+| `story-ito.webp` | 伊東市區河岸與黑瓦屋 | 宇宙碎片拍攝 | 本人拍攝 | 下載區熱海照片包 |
+| `story-ito-hotei.webp` | 伊東街上的布袋尊石像 | 宇宙碎片拍攝 | 本人拍攝 | 下載區熱海照片包 |
+| `story-ito-station.webp` | 伊東駅直式站名 | 宇宙碎片拍攝 | 本人拍攝 | 下載區熱海照片包 |
+| `story-komuro.webp` | 小室神社鳥居 | 宇宙碎片拍攝 | 本人拍攝 | 下載區熱海照片包 |
+| `story-komuro-boardwalk.webp` | 小室山草坡上的木棧道 | 宇宙碎片拍攝 | 本人拍攝 | 下載區熱海照片包 |
+| `story-komuro-view.webp` | 從小室山望向海與丘陵 | 宇宙碎片拍攝 | 本人拍攝 | 下載區熱海照片包 |
+| `story-seibu.webp` | 西武秩父站前的深色站舍 | 宇宙碎片拍攝 | 本人拍攝 | 下載區熱海照片包 |
+| `story-seibu-clock.webp` | 西武秩父站前的時鐘與櫻花 | 宇宙碎片拍攝 | 本人拍攝 | 下載區熱海照片包 |
+| `story-seibu-noren.webp` | 西武秩父站前的紅色暖簾 | 宇宙碎片拍攝 | 本人拍攝 | 下載區熱海照片包 |
+| `story-nagatoro.webp` | 長瀞岩疊邊停著的遊船 | 宇宙碎片拍攝 | 本人拍攝 | 下載區熱海照片包 |
+| `story-nagatoro-rocks.webp` | 遊人走在長瀞岩疊上 | 宇宙碎片拍攝 | 本人拍攝 | 下載區熱海照片包 |
+| `story-hodosan.webp` | 寶登山神社石碑與白鳥居 | 宇宙碎片拍攝 | 本人拍攝 | 下載區熱海照片包 |
+| `story-hodosan-hall.webp` | 寶登山神社拜殿 | 宇宙碎片拍攝 | 本人拍攝 | 下載區熱海照片包 |
+| `story-hodosan-stairs.webp` | 寶登山神社參道石階 | 宇宙碎片拍攝 | 本人拍攝 | 下載區熱海照片包 |
+| `story-mitsumine.webp` | 三峯神社随身門與三峯山匾 | 宇宙碎片拍攝 | 本人拍攝 | 下載區熱海照片包 |
+| `story-mitsumine-hall.webp` | 三峯神社金碧的拜殿 | 宇宙碎片拍攝 | 本人拍攝 | 下載區熱海照片包 |
+| `story-mitsumine-sign.webp` | 三峯神社正參道石碑 | 宇宙碎片拍攝 | 本人拍攝 | 下載區熱海照片包 |
+| `story-jigenji.webp` | 慈眼寺屋頂的金色匾額 | 宇宙碎片拍攝 | 本人拍攝 | 下載區熱海照片包 |
+| `story-jigenji-sakura.webp` | 慈眼寺屋頂與旁邊的櫻花 | 宇宙碎片拍攝 | 本人拍攝 | 下載區熱海照片包 |
+| `story-jigenji-basin.webp` | 刻著洗心的手水鉢 | 宇宙碎片拍攝 | 本人拍攝 | 下載區熱海照片包 |
+| `story-chichibu.webp` | 秩父神社社殿前的垂櫻 | 宇宙碎片拍攝 | 本人拍攝 | 下載區熱海照片包 |
+| `story-chichibu-carving.webp` | 秩父神社正面的雕飾 | 宇宙碎片拍攝 | 本人拍攝 | 下載區熱海照片包 |
+| `story-chichibu-hall.webp` | 秩父神社社殿與垂櫻 | 宇宙碎片拍攝 | 本人拍攝 | 下載區熱海照片包 |
+| `food-aobasha.webp` | 熱海青葉舍富士布丁與抹茶 | 宇宙碎片拍攝 | 本人拍攝 | 下載區熱海照片包 |
+| `food-aobasha-sign.webp` | 熱海青葉舍金色招牌 | 宇宙碎片拍攝 | 本人拍攝 | 下載區熱海照片包 |
+| `food-aobasha-shelf.webp` | 青葉舍架上的茶罐與富士山盒子 | 宇宙碎片拍攝 | 本人拍攝 | 下載區熱海照片包 |
+| `food-hamayaki.webp` | 伊豆浜焼本舗的窗口 | 宇宙碎片拍攝 | 本人拍攝 | 下載區熱海照片包 |
+| `food-hamayaki-building.webp` | 伊東魚市場藍頂白牆的建築 | 宇宙碎片拍攝 | 本人拍攝 | 下載區熱海照片包 |
+| `food-hamayaki-fish.webp` | 浜焼本舗的烤魚 | 宇宙碎片拍攝 | 本人拍攝 | 下載區熱海照片包 |
+| `food-tanichi.webp` | 丹一門口與店內的餐盤 | 宇宙碎片拍攝 | 本人拍攝 | 下載區熱海照片包 |
+| `food-tanichi-ayu.webp` | 丹一的鮎魚飯與長瀞駅 | 宇宙碎片拍攝 | 本人拍攝 | 下載區熱海照片包 |
+| `food-tanichi-bowls.webp` | 丹一的漆器碗與湯匙 | 宇宙碎片拍攝 | 本人拍攝 | 下載區熱海照片包 |
+| `food-azami.webp` | 阿佐美冰的刨冰、抹茶與糖漿 | 宇宙碎片拍攝 | 本人拍攝 | 下載區熱海照片包 |
+| `food-azami-shop.webp` | 阿佐美冰店門口的紅旗 | 宇宙碎片拍攝 | 本人拍攝 | 下載區熱海照片包 |
+| `food-azami-bowl.webp` | 上面再加一層冰的深色甜品 | 宇宙碎片拍攝 | 本人拍攝 | 下載區熱海照片包 |
+| `food-bukou.webp` | 武甲酒造柳田總本店藍暖簾 | 宇宙碎片拍攝 | 本人拍攝 | 下載區熱海照片包 |
+| `food-bukou-can.webp` | 武甲正宗暖簾與罐裝酒 | 宇宙碎片拍攝 | 本人拍攝 | 下載區熱海照片包 |
+| `food-bukou-bottle.webp` | 武甲正宗的酒瓶展示 | 宇宙碎片拍攝 | 本人拍攝 | 下載區熱海照片包 |
+| `hotel-resorpia.webp` | Resorpia 熱海的雙床房 | 宇宙碎片拍攝 | 本人拍攝 | 下載區熱海照片包 |
+| `hotel-resorpia-balcony.webp` | 從房間陽台看出去的海 | 宇宙碎片拍攝 | 本人拍攝 | 下載區熱海照片包 |
+| `hotel-resorpia-coast.webp` | 窗前的熱海海岸、船與遠方市街 | 宇宙碎片拍攝 | 本人拍攝 | 下載區熱海照片包 |
+| `hotel-yoshino.webp` | Hotel Yoshino 早餐漆盒裡的鮑魚與刺身 | 宇宙碎片拍攝 | 本人拍攝 | 下載區熱海照片包 |
+| `hotel-yoshino-fish.webp` | 早餐盒裡的烤魚與玉子燒 | 宇宙碎片拍攝 | 本人拍攝 | 下載區熱海照片包 |
+| `hotel-yoshino-soup.webp` | 浮著蝦的味噌湯與烤魚 | 宇宙碎片拍攝 | 本人拍攝 | 下載區熱海照片包 |
+| `hotel-routeinn.webp` | Route-Inn 秩父和室裡的四張床 | 宇宙碎片拍攝 | 本人拍攝 | 下載區熱海照片包 |
+| `hotel-routeinn-living.webp` | 和室客廳的圓桌與電視 | 宇宙碎片拍攝 | 本人拍攝 | 下載區熱海照片包 |
+| `hotel-routeinn-konbini.webp` | 圓桌上的超商便當與飲料 | 宇宙碎片拍攝 | 本人拍攝 | 下載區熱海照片包 |
+| `day1.webp` | 從房間看出去的熱海海岸與遠方市街 | 宇宙碎片拍攝 | 本人拍攝 | 下載區熱海照片包 |
+| `day2.webp` | 大室山纜車上望向伊豆海岸 | 宇宙碎片拍攝 | 本人拍攝 | 下載區熱海照片包 |
+| `day3.webp` | 小室山上看見的海與對岸丘陵 | 宇宙碎片拍攝 | 本人拍攝 | 下載區熱海照片包 |
+| `day4.webp` | 長瀞岩疊邊停著的遊船 | 宇宙碎片拍攝 | 本人拍攝 | 下載區熱海照片包 |
+| `day5.webp` | 三峯神社随身門與三峯山匾額 | 宇宙碎片拍攝 | 本人拍攝 | 下載區熱海照片包 |
 
 ## trips/2026_日本青森仙台秋田_家族旅遊/photos/
 

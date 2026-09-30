@@ -14,8 +14,8 @@
     "footerDate": "行程規劃 · 2026年3月27日 - 4月1日",
     "cover": {
       "src": "photos/cover.webp",
-      "alt": "熱海サンビーチ與市街全景",
-      "credit": "m-louis .® / CC BY-SA 2.0"
+      "alt": "寶登山一帶兩側盛開的櫻花道路",
+      "credit": "宇宙碎片拍攝"
     },
     "theme": "sakura",
     "routeRegions": "靜岡・東京・埼玉",
@@ -89,13 +89,6 @@
         "priceNote": "含稅參考價・實際以店面為準"
       },
       {
-        "name": "熱海布丁",
-        "price": "約 ¥400",
-        "priceNote": "含稅參考價・實際以店面為準",
-        "imageUrl": "https://www.atami-purin.com/images/20241101_Caramel-purin.jpg",
-        "url": "https://www.atami-purin.com/"
-      },
-      {
         "name": "溫泉饅頭",
         "price": "約 ¥500",
         "priceNote": "含稅參考價・實際以店面為準",
@@ -128,13 +121,6 @@
             "priceNote": "含稅參考價・實際以店面為準",
             "imageUrl": "https://atami-sakurai.com/wp-content/uploads/2025/08/cha1.jpg",
             "url": "https://atami-sakurai.com/"
-          },
-          {
-            "name": "熱海布丁",
-            "price": "約 ¥400",
-            "priceNote": "含稅參考價・實際以店面為準",
-            "imageUrl": "https://www.atami-purin.com/images/20241101_Caramel-purin.jpg",
-            "url": "https://www.atami-purin.com/"
           }
         ]
       },
@@ -218,110 +204,383 @@
   "stories": [
     {
       "theme": "place",
-      "title": "明治神宮",
-      "kicker": "東京・代代木",
-      "body": "供奉明治天皇與昭憲皇太后的神社，境內是以人工造林長成的代代木之森。返程日走進參道，像把都會喧囂暫時收進一片靜謐。",
-      "source": {
-        "label": "明治神宮（公式）",
-        "url": "https://www.meijijingu.or.jp/"
-      },
-      "photo": {
-        "src": "photos/day6.webp",
-        "alt": "明治神宮南參道鳥居",
-        "credit": "Asanagi / CC0"
-      }
-    },
-    {
-      "theme": "place",
-      "title": "三峯神社",
-      "kicker": "埼玉・秩父",
-      "body": "相傳日本武尊東征時於此祀神；山犬（狼）為神使，守護深山信仰。海拔約一千公尺，是這趟旅程裡最沉靜的一塊碎片。",
-      "source": {
-        "label": "秩父 三峯神社（公式）",
-        "url": "https://www.mitsuminejinja.or.jp/"
-      },
-      "photo": {
-        "src": "photos/day5.webp",
-        "alt": "三峯神社隨身門",
-        "credit": "Zengame / CC BY 2.0"
-      }
-    },
-    {
-      "theme": "place",
-      "title": "長瀞岩疊",
-      "kicker": "埼玉・長瀞",
-      "body": "荒川河岸層層岩床，屬國指定名勝・天然紀念物；長瀞町大半劃入県立自然公園。站在岩面上，能讀到地質與河川共同刻下的時間。",
-      "source": {
-        "label": "長瀞町観光協会",
-        "url": "https://www.nagatoro.gr.jp/"
-      },
-      "photo": {
-        "src": "photos/day4.webp",
-        "alt": "長瀞岩疊溪谷與荒川",
-        "credit": "Suikotei / CC BY-SA 4.0"
-      }
-    },
-    {
-      "theme": "place",
       "title": "來宮神社",
       "kicker": "靜岡・熱海",
-      "body": "境內大楠樹齡約二千百年，繞樹一圈的祈願傳說，讓這座神社成為熱海的守護象徵。傍晚參道亮起燈火時，更像把溫泉街的熱鬧輕輕放下。",
+      "body": "從來宮駅走進去就是竹林，拜殿前掛著「奉納 別表 來宮神社」的白幡，很好認。大楠在旁邊，樹幹粗到要退很遠才拍得進。人不少，我們繞一圈就出來。",
       "source": {
         "label": "熱海市観光協会（來宮神社）",
         "url": "https://www.igaitoatami.com/spot/%E4%BE%86%E5%AE%AE%E7%A5%9E%E7%A4%BE-2/"
       },
       "photo": {
         "src": "photos/story-kinomiya.webp",
-        "alt": "來宮神社拜殿",
-        "credit": "Batholith / Public domain"
-      }
+        "alt": "來宮神社拜殿與奉納白幡",
+        "credit": "宇宙碎片拍攝"
+      },
+      "relatedPhotos": [
+        {
+          "src": "photos/story-kinomiya-tree.webp",
+          "alt": "來宮神社境內的大楠",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/story-kinomiya-torii.webp",
+          "alt": "來宮神社紅鳥居與竹林",
+          "credit": "宇宙碎片拍攝"
+        }
+      ]
+    },
+    {
+      "theme": "place",
+      "title": "大室山",
+      "kicker": "靜岡・伊東",
+      "body": "坐纜車椅上去，山頂是一個草皮火山口，風很大。往海的那邊看得到伊豆的海岸跟小鎮。山腳紅色鳥居跟「大室山リフト」就在售票口前面，排隊的人還不少。",
+      "photo": {
+        "src": "photos/story-omuro.webp",
+        "alt": "大室山纜車站與紅色鳥居",
+        "credit": "宇宙碎片拍攝"
+      },
+      "relatedPhotos": [
+        {
+          "src": "photos/story-omuro-crater.webp",
+          "alt": "大室山山頂的草皮火山口",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/story-omuro-view.webp",
+          "alt": "從大室山纜車上看伊豆海岸",
+          "credit": "宇宙碎片拍攝"
+        }
+      ]
+    },
+    {
+      "theme": "place",
+      "title": "城崎海岸",
+      "kicker": "靜岡・伊東",
+      "body": "走到城崎海岸的懸崖邊，松樹長在岩盤上，欄杆外就是海。人會沿著崖線站一排拍照。入口有解說牌，我們看完就沿著步道走，風比熱海街上大。",
+      "photo": {
+        "src": "photos/story-jogasaki.webp",
+        "alt": "城崎海岸懸崖、松樹與海",
+        "credit": "宇宙碎片拍攝"
+      },
+      "relatedPhotos": [
+        {
+          "src": "photos/story-jogasaki-sign.webp",
+          "alt": "城崎海岸入口的解說牌",
+          "credit": "宇宙碎片拍攝"
+        }
+      ]
+    },
+    {
+      "theme": "place",
+      "title": "伊東市區",
+      "kicker": "靜岡・伊東",
+      "body": "晚上沿河看對岸的黑瓦屋，隔天早上湯之花通的燈籠還亮著。路上每隔一段就有一尊七福神石像，布袋尊那尊肚子最大、最好認。回程經過伊東駅，站名直式寫在柱子上。",
+      "photo": {
+        "src": "photos/story-ito.webp",
+        "alt": "伊東市區河岸與黑瓦屋",
+        "credit": "宇宙碎片拍攝"
+      },
+      "relatedPhotos": [
+        {
+          "src": "photos/story-ito-hotei.webp",
+          "alt": "伊東街上的布袋尊石像",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/story-ito-station.webp",
+          "alt": "伊東駅直式站名",
+          "credit": "宇宙碎片拍攝"
+        }
+      ]
+    },
+    {
+      "theme": "place",
+      "title": "小室山公園",
+      "kicker": "靜岡・伊東",
+      "body": "草坡上有一條木棧道，走上去看海。小室神社的鳥居就在坡下，牌子寫得很清楚。這天櫻花還沒在這裡爆開，海跟草比花搶眼。",
+      "photo": {
+        "src": "photos/story-komuro.webp",
+        "alt": "小室神社鳥居",
+        "credit": "宇宙碎片拍攝"
+      },
+      "relatedPhotos": [
+        {
+          "src": "photos/story-komuro-boardwalk.webp",
+          "alt": "小室山草坡上的木棧道",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/story-komuro-view.webp",
+          "alt": "從小室山望向海與丘陵",
+          "credit": "宇宙碎片拍攝"
+        }
+      ]
+    },
+    {
+      "theme": "place",
+      "title": "西武秩父站",
+      "kicker": "埼玉・秩父",
+      "body": "Laview 下來就是西武秩父，站前櫻花已經開了，時鐘杆旁邊也掛著花。紅色暖簾的店排在站舍旁邊，我們先在這裡晃一下再轉去長瀞。",
+      "photo": {
+        "src": "photos/story-seibu.webp",
+        "alt": "西武秩父站前的深色站舍",
+        "credit": "宇宙碎片拍攝"
+      },
+      "relatedPhotos": [
+        {
+          "src": "photos/story-seibu-clock.webp",
+          "alt": "西武秩父站前的時鐘與櫻花",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/story-seibu-noren.webp",
+          "alt": "西武秩父站前的紅色暖簾",
+          "credit": "宇宙碎片拍攝"
+        }
+      ]
+    },
+    {
+      "theme": "place",
+      "title": "長瀞岩疊",
+      "kicker": "埼玉・長瀞",
+      "body": "岩疊是一片一片的岩床，人直接走在石頭上。岩疊遊船靠在岩邊，穿救生衣的人已經坐上去。天氣陰，石頭是灰的，還是值得下來走一圈。",
+      "source": {
+        "label": "長瀞町観光協会",
+        "url": "https://www.nagatoro.gr.jp/"
+      },
+      "photo": {
+        "src": "photos/story-nagatoro.webp",
+        "alt": "長瀞岩疊邊停著的遊船",
+        "credit": "宇宙碎片拍攝"
+      },
+      "relatedPhotos": [
+        {
+          "src": "photos/story-nagatoro-rocks.webp",
+          "alt": "遊人走在長瀞岩疊上",
+          "credit": "宇宙碎片拍攝"
+        }
+      ]
+    },
+    {
+      "theme": "place",
+      "title": "寶登山神社",
+      "kicker": "埼玉・長瀞",
+      "body": "石碑寫著寶登山神社，白鳥居後面整排櫻花。石階走上去才到拜殿，這天的花比小室山開得多。",
+      "photo": {
+        "src": "photos/story-hodosan.webp",
+        "alt": "寶登山神社石碑與白鳥居",
+        "credit": "宇宙碎片拍攝"
+      },
+      "relatedPhotos": [
+        {
+          "src": "photos/story-hodosan-hall.webp",
+          "alt": "寶登山神社拜殿",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/story-hodosan-stairs.webp",
+          "alt": "寶登山神社參道石階",
+          "credit": "宇宙碎片拍攝"
+        }
+      ]
+    },
+    {
+      "theme": "place",
+      "title": "三峯神社",
+      "kicker": "埼玉・秩父",
+      "body": "山裡還很冷，櫻花不在這裡。三峯山的匾在随身門上，狼的狛犬坐在兩邊。再進去是金碧的拜殿，人比熱海的神社少。參道石碑寫「三峯神社正參道」，很好找。",
+      "source": {
+        "label": "秩父 三峯神社（公式）",
+        "url": "https://www.mitsuminejinja.or.jp/"
+      },
+      "photo": {
+        "src": "photos/story-mitsumine.webp",
+        "alt": "三峯神社随身門與三峯山匾",
+        "credit": "宇宙碎片拍攝"
+      },
+      "relatedPhotos": [
+        {
+          "src": "photos/story-mitsumine-hall.webp",
+          "alt": "三峯神社金碧的拜殿",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/story-mitsumine-sign.webp",
+          "alt": "三峯神社正參道石碑",
+          "credit": "宇宙碎片拍攝"
+        }
+      ]
+    },
+    {
+      "theme": "place",
+      "title": "慈眼寺",
+      "kicker": "埼玉・秩父",
+      "body": "秩父市區這一間，屋頂匾額是金色的字，櫻花從旁邊壓過來。手水鉢刻著「洗心」。跟三峯比起來近很多，走過去就到。",
+      "photo": {
+        "src": "photos/story-jigenji.webp",
+        "alt": "慈眼寺屋頂的金色匾額",
+        "credit": "宇宙碎片拍攝"
+      },
+      "relatedPhotos": [
+        {
+          "src": "photos/story-jigenji-sakura.webp",
+          "alt": "慈眼寺屋頂與旁邊的櫻花",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/story-jigenji-basin.webp",
+          "alt": "刻著洗心的手水鉢",
+          "credit": "宇宙碎片拍攝"
+        }
+      ]
+    },
+    {
+      "theme": "place",
+      "title": "秩父神社",
+      "kicker": "埼玉・秩父",
+      "body": "垂櫻直接掛在社殿欄杆上，白幡寫「御鎮座二千年」。雕飾在另一面，我們繞到正面才看到。人會停在櫻花下面拍照，我們也是。",
+      "photo": {
+        "src": "photos/story-chichibu.webp",
+        "alt": "秩父神社社殿前的垂櫻",
+        "credit": "宇宙碎片拍攝"
+      },
+      "relatedPhotos": [
+        {
+          "src": "photos/story-chichibu-carving.webp",
+          "alt": "秩父神社正面的雕飾",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/story-chichibu-hall.webp",
+          "alt": "秩父神社社殿與垂櫻",
+          "credit": "宇宙碎片拍攝"
+        }
+      ]
     }
   ],
   "foods": [
     {
       "theme": "food",
-      "title": "熱海布丁",
-      "kicker": "靜岡・熱海",
-      "body": "溫泉街第一家布丁專門店，以單純素材與手工蒸製追求細緻口感。帶回一盒，是把熱海的溫度收進行李裡的最小單位。",
-      "source": {
-        "label": "熱海プリン（公式）",
-        "url": "https://www.atami-purin.com/"
-      },
-      "photo": {
-        "src": "photos/food-atami-purin.webp",
-        "alt": "日式焦糖布丁",
-        "credit": "Clairenguyen23 / CC BY-SA 4.0"
-      }
-    },
-    {
-      "theme": "food",
       "title": "熱海青葉舍",
       "kicker": "靜岡・熱海・抹茶",
-      "body": "京都「八十八良葉舎」在渚町開的抹茶專門店。用靜岡茶葉調成的「富士抹茶」現點現打，鹽抹茶拿鐵把抹茶當海、鹽奶油當雲。海風裡喝一杯，熱海甜點線的綠色段落。",
+      "body": "招牌是金色的「熱海 青葉舍」。點了富士布丁，綠色的山加上白奶油，旁邊兩杯抹茶，一杯加白玉跟冰淇淋。架子上還有茶罐跟富士山的盒子，我們沒全帶，喝完就走。",
       "source": {
         "label": "熱海青葉舎（公式）",
         "url": "https://atamiseiyousha.com/"
       },
       "photo": {
         "src": "photos/food-aobasha.webp",
-        "alt": "熱海青葉舍抹茶拿鐵與富士布丁",
+        "alt": "熱海青葉舍富士布丁與抹茶",
         "credit": "宇宙碎片拍攝"
-      }
+      },
+      "relatedPhotos": [
+        {
+          "src": "photos/food-aobasha-sign.webp",
+          "alt": "熱海青葉舍金色招牌",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/food-aobasha-shelf.webp",
+          "alt": "青葉舍架上的茶罐與富士山盒子",
+          "credit": "宇宙碎片拍攝"
+        }
+      ]
+    },
+    {
+      "theme": "food",
+      "title": "伊豆浜焼本舗",
+      "kicker": "靜岡・伊東",
+      "body": "伊東魚市場這棟是藍頂白牆，很好認。裡面排伊豆浜焼本舗，窗口一直有人。我們點了一條烤魚，皮很脆，就坐在旁邊吃完。",
+      "photo": {
+        "src": "photos/food-hamayaki.webp",
+        "alt": "伊豆浜焼本舗的窗口",
+        "credit": "宇宙碎片拍攝"
+      },
+      "relatedPhotos": [
+        {
+          "src": "photos/food-hamayaki-building.webp",
+          "alt": "伊東魚市場藍頂白牆的建築",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/food-hamayaki-fish.webp",
+          "alt": "浜焼本舗的烤魚",
+          "credit": "宇宙碎片拍攝"
+        }
+      ]
+    },
+    {
+      "theme": "food",
+      "title": "丹一",
+      "kicker": "埼玉・長瀞",
+      "body": "長瀞駅出來沒幾步就是丹一，暖簾跟圓形的字很好認。鮎魚鋪在飯上，葱很多。漆器碗也是店裡的，我們點了這鍋當午餐。",
+      "photo": {
+        "src": "photos/food-tanichi.webp",
+        "alt": "丹一門口與店內的餐盤",
+        "credit": "宇宙碎片拍攝"
+      },
+      "relatedPhotos": [
+        {
+          "src": "photos/food-tanichi-ayu.webp",
+          "alt": "丹一的鮎魚飯與長瀞駅",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/food-tanichi-bowls.webp",
+          "alt": "丹一的漆器碗與湯匙",
+          "credit": "宇宙碎片拍攝"
+        }
+      ]
+    },
+    {
+      "theme": "food",
+      "title": "阿佐美冰",
+      "kicker": "埼玉・長瀞",
+      "body": "刨冰很大一座，旁邊一小碟抹茶跟糖漿。另一碗是深色的，上面再補一層冰。店在外面，紅旗掛在門口，長瀞這天吃的。",
+      "photo": {
+        "src": "photos/food-azami.webp",
+        "alt": "阿佐美冰的刨冰、抹茶與糖漿",
+        "credit": "宇宙碎片拍攝"
+      },
+      "relatedPhotos": [
+        {
+          "src": "photos/food-azami-shop.webp",
+          "alt": "阿佐美冰店門口的紅旗",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/food-azami-bowl.webp",
+          "alt": "上面再加一層冰的深色甜品",
+          "credit": "宇宙碎片拍攝"
+        }
+      ]
     },
     {
       "theme": "sake",
       "title": "武甲酒造",
       "kicker": "埼玉・秩父・日本酒",
-      "body": "寶曆三年創業的秩父老舖，以「平成の名水百選」武甲山伏流水釀造「武甲正宗」。柳田總本店為國登錄有形文化財，站前短短一拐就能帶回一瓶秩父地酒。",
+      "body": "柳田總本店的藍暖簾寫武甲正宗、寶曆三年創業。我們在門口拍了瓶子跟一罐，沒有在裡頭坐很久。站前拐個彎就到。",
       "source": {
         "label": "武甲酒造（公式）",
         "url": "https://www.bukou.co.jp/"
       },
       "photo": {
         "src": "photos/food-bukou.webp",
-        "alt": "武甲酒造柳田總本店外觀",
+        "alt": "武甲酒造柳田總本店藍暖簾",
         "credit": "宇宙碎片拍攝"
-      }
+      },
+      "relatedPhotos": [
+        {
+          "src": "photos/food-bukou-can.webp",
+          "alt": "武甲正宗暖簾與罐裝酒",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/food-bukou-bottle.webp",
+          "alt": "武甲正宗的酒瓶展示",
+          "credit": "宇宙碎片拍攝"
+        }
+      ]
     }
   ],
   "tickets": [
@@ -363,8 +622,28 @@
       "transport": "起飛 06:40／巴士 11:10／新幹線 12:27",
       "transportClass": "",
       "summary": "飛抵成田，轉往熱海溫泉初體驗",
-      "hotelNote": "熱海溫泉區，海風與湯浴展開旅程",
-      "routeLabel": "熱海"
+      "hotelNote": "雙床房對著海，窗簾一拉開就是熱海的海岸。",
+      "routeLabel": "熱海",
+      "hotelBlurbTeaser": "晚上沿岸的燈跟白天的海平線是同一面窗。",
+      "hotelBlurb": "床邊有兩盞壁燈，房間不大但看海夠用。斜坡走到車站有點累，海景把這點補回來。",
+      "hotelUrl": "https://www.agoda.com/zh-tw/hotel-resorpia-atami/hotel/atami-jp.html?cid=1975511&hl=zh-tw",
+      "hotelPhoto": {
+        "src": "photos/hotel-resorpia.webp",
+        "alt": "Resorpia 熱海的雙床房",
+        "credit": "宇宙碎片拍攝"
+      },
+      "hotelPhotos": [
+        {
+          "src": "photos/hotel-resorpia-balcony.webp",
+          "alt": "從房間陽台看出去的海",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/hotel-resorpia-coast.webp",
+          "alt": "窗前的熱海海岸、船與遠方市街",
+          "credit": "宇宙碎片拍攝"
+        }
+      ]
     },
     {
       "day": 2,
@@ -374,8 +653,28 @@
       "transport": "IC卡 (伊東線)",
       "transportClass": "",
       "summary": "伊東深度遊，溫泉與海岸節奏",
-      "hotelNote": "伊東溫泉街，步行可達主要景點",
-      "routeLabel": "伊東"
+      "hotelNote": "伊東這晚記得的是早餐，不是房間。",
+      "routeLabel": "伊東",
+      "hotelBlurbTeaser": "漆盒裡有鮑魚、刺身，還有烤過的魚。",
+      "hotelBlurb": "味噌湯浮著蝦，筷子紙寫伊東。吃得很飽，吃完就出門。",
+      "hotelUrl": "https://www.agoda.com/zh-tw/yoshino/hotel/izu-atami-jp.html?cid=1975511&hl=zh-tw",
+      "hotelPhoto": {
+        "src": "photos/hotel-yoshino.webp",
+        "alt": "Hotel Yoshino 早餐漆盒裡的鮑魚與刺身",
+        "credit": "宇宙碎片拍攝"
+      },
+      "hotelPhotos": [
+        {
+          "src": "photos/hotel-yoshino-fish.webp",
+          "alt": "早餐盒裡的烤魚與玉子燒",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/hotel-yoshino-soup.webp",
+          "alt": "浮著蝦的味噌湯與烤魚",
+          "credit": "宇宙碎片拍攝"
+        }
+      ]
     },
     {
       "day": 3,
@@ -396,8 +695,28 @@
       "transport": "西武特急 · 07:30",
       "transportClass": "seibu",
       "summary": "長瀞溪谷與秩父山城夜宿",
-      "hotelNote": "秩父市區，銜接三峯與神社巡禮",
-      "routeLabel": "秩父"
+      "hotelNote": "和室加大床，四張床鋪開來一家人夠睡。",
+      "routeLabel": "秩父",
+      "hotelBlurbTeaser": "榻榻米客廳有圓桌，晚上直接在房裡吃。",
+      "hotelBlurb": "超商便當跟飲料擺滿桌，沒有再出門找餐廳。秩父晚上冷，這樣最省事。",
+      "hotelUrl": "https://www.agoda.com/zh-tw/hotel-route-inn-grand-chichibu/hotel/chichibu-jp.html?cid=1975511&hl=zh-tw",
+      "hotelPhoto": {
+        "src": "photos/hotel-routeinn.webp",
+        "alt": "Route-Inn 秩父和室裡的四張床",
+        "credit": "宇宙碎片拍攝"
+      },
+      "hotelPhotos": [
+        {
+          "src": "photos/hotel-routeinn-living.webp",
+          "alt": "和室客廳的圓桌與電視",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/hotel-routeinn-konbini.webp",
+          "alt": "圓桌上的超商便當與飲料",
+          "credit": "宇宙碎片拍攝"
+        }
+      ]
     },
     {
       "day": 5,
@@ -483,8 +802,9 @@
       ],
       "photo": {
         "src": "photos/day1.webp",
-        "alt": "熱海サンビーチ的沙灘與海岸線",
-        "credit": "Izu navi / CC BY 2.0"
+        "alt": "從房間看出去的熱海海岸與遠方市街",
+        "credit": "宇宙碎片拍攝",
+        "aspectRatio": "16 / 9"
       }
     },
     {
@@ -532,8 +852,9 @@
       ],
       "photo": {
         "src": "photos/day2.webp",
-        "alt": "城ヶ崎海岸門脇吊橋",
-        "credit": "Takuya ASADA / CC BY 2.0"
+        "alt": "大室山纜車上望向伊豆海岸",
+        "credit": "宇宙碎片拍攝",
+        "aspectRatio": "16 / 9"
       }
     },
     {
@@ -589,8 +910,9 @@
       ],
       "photo": {
         "src": "photos/day3.webp",
-        "alt": "小室山公園的山丘步道",
-        "credit": "hiroaki / CC BY 2.0"
+        "alt": "小室山上看見的海與對岸丘陵",
+        "credit": "宇宙碎片拍攝",
+        "aspectRatio": "16 / 9"
       }
     },
     {
@@ -647,8 +969,9 @@
       ],
       "photo": {
         "src": "photos/day4.webp",
-        "alt": "長瀞岩疊溪谷與荒川",
-        "credit": "Suikotei / CC BY-SA 4.0"
+        "alt": "長瀞岩疊邊停著的遊船",
+        "credit": "宇宙碎片拍攝",
+        "aspectRatio": "16 / 9"
       }
     },
     {
@@ -712,8 +1035,9 @@
       ],
       "photo": {
         "src": "photos/day5.webp",
-        "alt": "三峯神社隨身門",
-        "credit": "Zengame / CC BY 2.0"
+        "alt": "三峯神社随身門與三峯山匾額",
+        "credit": "宇宙碎片拍攝",
+        "aspectRatio": "16 / 9"
       }
     },
     {
@@ -756,12 +1080,7 @@
           "icon": "plane"
         }
       ],
-      "tips": [],
-      "photo": {
-        "src": "photos/day6.webp",
-        "alt": "明治神宮南參道鳥居",
-        "credit": "Asanagi / CC0"
-      }
+      "tips": []
     }
   ],
   "budget": {
