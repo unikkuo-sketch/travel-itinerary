@@ -59,6 +59,14 @@ async function init() {
     if (meta.theme) document.body.classList.add(`theme-${meta.theme}`);
 
     renderItinerary(data, tripId);
+    // Cards are injected after the browser's first fragment scroll.
+    let hashId = '';
+    try {
+      hashId = decodeURIComponent(location.hash.replace(/^#/, ''));
+    } catch {
+      hashId = '';
+    }
+    if (hashId) document.getElementById(hashId)?.scrollIntoView({ block: 'start' });
     mountNav(tripId, data.days);
     initMap(data.map);
     initNavScroll();

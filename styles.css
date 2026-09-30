@@ -781,6 +781,7 @@ h3 { font-size: var(--text-lg); }
     align-items: flex-start;
     padding: 1rem 0;
     border-bottom: 1px solid var(--border-soft);
+    scroll-margin-top: 7.5rem;
 }
 
 .lodging-card--photo {

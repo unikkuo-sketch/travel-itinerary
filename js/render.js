@@ -278,13 +278,13 @@ function renderLodging(overview, tripId) {
           { className: 'ph--lodging-thumb', zoomable: mainZoomable }
         );
         return `
-    <article class="lodging-card lodging-card--photo">
+    <article class="lodging-card lodging-card--photo" id="lodging-d${r.day}">
       ${thumb}
       ${body}
     </article>`;
       }
       return `
-    <article class="lodging-card lodging-card--plain">
+    <article class="lodging-card lodging-card--plain" id="lodging-d${r.day}">
       <div class="lodging-icon">${icon('hotel', 'icon')}</div>
       ${body}
     </article>`;
