@@ -26,6 +26,7 @@ CC BY / CC BY-SA 圖片依授權條款標示作者、來源與授權；CC BY-SA 
 | `story-omuro-view.webp` | 從大室山纜車上看伊豆海岸 | 宇宙碎片拍攝 | 本人拍攝 | 下載區熱海照片包 |
 | `story-jogasaki.webp` | 城崎海岸懸崖、松樹與海 | 宇宙碎片拍攝 | 本人拍攝 | 下載區熱海照片包 |
 | `story-jogasaki-sign.webp` | 城崎海岸入口的解說牌 | 宇宙碎片拍攝 | 本人拍攝 | 下載區熱海照片包 |
+| `story-jogasaki-rocks.webp` | 城崎海岸岩場上的松樹 | 宇宙碎片拍攝 | 本人拍攝 | 下載區熱海照片包 |
 | `story-ito.webp` | 伊東市區河岸與黑瓦屋 | 宇宙碎片拍攝 | 本人拍攝 | 下載區熱海照片包 |
 | `story-ito-hotei.webp` | 伊東街上的布袋尊石像 | 宇宙碎片拍攝 | 本人拍攝 | 下載區熱海照片包 |
 | `story-ito-station.webp` | 伊東駅直式站名 | 宇宙碎片拍攝 | 本人拍攝 | 下載區熱海照片包 |
@@ -37,6 +38,7 @@ CC BY / CC BY-SA 圖片依授權條款標示作者、來源與授權；CC BY-SA 
 | `story-seibu-noren.webp` | 西武秩父站前的紅色暖簾 | 宇宙碎片拍攝 | 本人拍攝 | 下載區熱海照片包 |
 | `story-nagatoro.webp` | 長瀞岩疊邊停著的遊船 | 宇宙碎片拍攝 | 本人拍攝 | 下載區熱海照片包 |
 | `story-nagatoro-rocks.webp` | 遊人走在長瀞岩疊上 | 宇宙碎片拍攝 | 本人拍攝 | 下載區熱海照片包 |
+| `story-nagatoro-ticket.webp` | 手上的岩疊周遊船票 | 宇宙碎片拍攝 | 本人拍攝 | 下載區熱海照片包 |
 | `story-hodosan.webp` | 寶登山神社石碑與白鳥居 | 宇宙碎片拍攝 | 本人拍攝 | 下載區熱海照片包 |
 | `story-hodosan-hall.webp` | 寶登山神社拜殿 | 宇宙碎片拍攝 | 本人拍攝 | 下載區熱海照片包 |
 | `story-hodosan-stairs.webp` | 寶登山神社參道石階 | 宇宙碎片拍攝 | 本人拍攝 | 下載區熱海照片包 |
@@ -56,10 +58,10 @@ CC BY / CC BY-SA 圖片依授權條款標示作者、來源與授權；CC BY-SA 
 | `food-hamayaki-building.webp` | 伊東魚市場藍頂白牆的建築 | 宇宙碎片拍攝 | 本人拍攝 | 下載區熱海照片包 |
 | `food-hamayaki-fish.webp` | 浜焼本舗的烤魚 | 宇宙碎片拍攝 | 本人拍攝 | 下載區熱海照片包 |
 | `food-tanichi.webp` | 丹一門口與店內的餐盤 | 宇宙碎片拍攝 | 本人拍攝 | 下載區熱海照片包 |
-| `food-tanichi-ayu.webp` | 丹一的鮎魚飯與長瀞駅 | 宇宙碎片拍攝 | 本人拍攝 | 下載區熱海照片包 |
+| `food-tanichi-ayu.webp` | 丹一鍋裡的鮎魚飯，上面鋪著葱 | 宇宙碎片拍攝 | 本人拍攝 | 下載區熱海照片包 |
 | `food-tanichi-bowls.webp` | 丹一的漆器碗與湯匙 | 宇宙碎片拍攝 | 本人拍攝 | 下載區熱海照片包 |
 | `food-azami.webp` | 阿佐美冰的刨冰、抹茶與糖漿 | 宇宙碎片拍攝 | 本人拍攝 | 下載區熱海照片包 |
-| `food-azami-shop.webp` | 阿佐美冰店門口的紅旗 | 宇宙碎片拍攝 | 本人拍攝 | 下載區熱海照片包 |
+| `food-azami-shop.webp` | 阿佐美冰門口的紅旗與格子旗 | 宇宙碎片拍攝 | 本人拍攝 | 下載區熱海照片包 |
 | `food-azami-bowl.webp` | 上面再加一層冰的深色甜品 | 宇宙碎片拍攝 | 本人拍攝 | 下載區熱海照片包 |
 | `food-bukou.webp` | 武甲酒造柳田總本店藍暖簾 | 宇宙碎片拍攝 | 本人拍攝 | 下載區熱海照片包 |
 | `food-bukou-can.webp` | 武甲正宗暖簾與罐裝酒 | 宇宙碎片拍攝 | 本人拍攝 | 下載區熱海照片包 |
@@ -67,12 +69,16 @@ CC BY / CC BY-SA 圖片依授權條款標示作者、來源與授權；CC BY-SA 
 | `hotel-resorpia.webp` | Resorpia 熱海的雙床房 | 宇宙碎片拍攝 | 本人拍攝 | 下載區熱海照片包 |
 | `hotel-resorpia-balcony.webp` | 從房間陽台看出去的海 | 宇宙碎片拍攝 | 本人拍攝 | 下載區熱海照片包 |
 | `hotel-resorpia-coast.webp` | 窗前的熱海海岸、船與遠方市街 | 宇宙碎片拍攝 | 本人拍攝 | 下載區熱海照片包 |
-| `hotel-yoshino.webp` | Hotel Yoshino 早餐漆盒裡的鮑魚與刺身 | 宇宙碎片拍攝 | 本人拍攝 | 下載區熱海照片包 |
+| `hotel-resorpia-rail.webp` | 陽台欄杆外的海平面 | 宇宙碎片拍攝 | 本人拍攝 | 下載區熱海照片包 |
+| `hotel-resorpia-table.webp` | 窗邊桌上的杯子，外面是海 | 宇宙碎片拍攝 | 本人拍攝 | 下載區熱海照片包 |
+| `hotel-yoshino.webp` | Hotel Yoshino 早餐的烤魚、刺身與沙拉 | 宇宙碎片拍攝 | 本人拍攝 | 下載區熱海照片包 |
 | `hotel-yoshino-fish.webp` | 早餐盒裡的烤魚與玉子燒 | 宇宙碎片拍攝 | 本人拍攝 | 下載區熱海照片包 |
 | `hotel-yoshino-soup.webp` | 浮著蝦的味噌湯與烤魚 | 宇宙碎片拍攝 | 本人拍攝 | 下載區熱海照片包 |
-| `hotel-routeinn.webp` | Route-Inn 秩父和室裡的四張床 | 宇宙碎片拍攝 | 本人拍攝 | 下載區熱海照片包 |
+| `hotel-yoshino-wrap.webp` | 早餐桌上的粉巾包與味噌湯 | 宇宙碎片拍攝 | 本人拍攝 | 下載區熱海照片包 |
+| `hotel-routeinn.webp` | Route-Inn 秩父房裡的床與沙發 | 宇宙碎片拍攝 | 本人拍攝 | 下載區熱海照片包 |
 | `hotel-routeinn-living.webp` | 和室客廳的圓桌與電視 | 宇宙碎片拍攝 | 本人拍攝 | 下載區熱海照片包 |
 | `hotel-routeinn-konbini.webp` | 圓桌上的超商便當與飲料 | 宇宙碎片拍攝 | 本人拍攝 | 下載區熱海照片包 |
+| `hotel-routeinn-room.webp` | 和室裡鋪開的四張床 | 宇宙碎片拍攝 | 本人拍攝 | 下載區熱海照片包 |
 | `day1.webp` | 從房間看出去的熱海海岸與遠方市街 | 宇宙碎片拍攝 | 本人拍攝 | 下載區熱海照片包 |
 | `day2.webp` | 大室山纜車上望向伊豆海岸 | 宇宙碎片拍攝 | 本人拍攝 | 下載區熱海照片包 |
 | `day3.webp` | 小室山上看見的海與對岸丘陵 | 宇宙碎片拍攝 | 本人拍攝 | 下載區熱海照片包 |

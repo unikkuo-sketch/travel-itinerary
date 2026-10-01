@@ -267,6 +267,11 @@
           "src": "photos/story-jogasaki-sign.webp",
           "alt": "城崎海岸入口的解說牌",
           "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/story-jogasaki-rocks.webp",
+          "alt": "城崎海岸岩場上的松樹",
+          "credit": "宇宙碎片拍攝"
         }
       ]
     },
@@ -357,6 +362,11 @@
         {
           "src": "photos/story-nagatoro-rocks.webp",
           "alt": "遊人走在長瀞岩疊上",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/story-nagatoro-ticket.webp",
+          "alt": "手上的岩疊周遊船票",
           "credit": "宇宙碎片拍攝"
         }
       ]
@@ -463,7 +473,7 @@
       "theme": "food",
       "title": "熱海青葉舍",
       "kicker": "靜岡・熱海・抹茶",
-      "body": "招牌是金色的「熱海 青葉舍」。點了富士布丁，綠色的山加上白奶油，旁邊兩杯抹茶，一杯加白玉跟冰淇淋。架子上還有茶罐跟富士山的盒子，我們沒全帶，喝完就走。",
+      "body": "抹茶控請來這邊報到! 茶香回甘，問了店家是用靜岡和京都的抹茶調配的~ 忍不住買了一罐回去自己刷，刷的時候真的超香，口感也很溫潤! 布丁我覺得還好，但是抹茶跟糰子很合我的胃。",
       "source": {
         "label": "熱海青葉舎（公式）",
         "url": "https://atamiseiyousha.com/"
@@ -490,7 +500,7 @@
       "theme": "food",
       "title": "伊豆浜焼本舗",
       "kicker": "靜岡・伊東",
-      "body": "伊東魚市場這棟是藍頂白牆，很好認。裡面排伊豆浜焼本舗，窗口一直有人。我們點了一條烤魚，皮很脆，就坐在旁邊吃完。",
+      "body": "伊東魚市場有兩層樓，二樓是店家，一樓有很多店鋪跟伴手禮店，吃飽後到一樓逛逛買好買滿! 這家浜焼可以選擇自己烤或是店家烤，懶人的我當然是請專業的師傅烤XD 魚很新鮮、鮮甜無腥味，滿足!",
       "photo": {
         "src": "photos/food-hamayaki.webp",
         "alt": "伊豆浜焼本舗的窗口",
@@ -513,16 +523,16 @@
       "theme": "food",
       "title": "丹一",
       "kicker": "埼玉・長瀞",
-      "body": "長瀞駅出來沒幾步就是丹一，暖簾跟圓形的字很好認。鮎魚鋪在飯上，葱很多。漆器碗也是店裡的，我們點了這鍋當午餐。",
+      "body": "長瀞站出來往岩疊的方向走就會遇到這家在地美食餐廳，進去的幾乎都是日本人，是會有鍋巴的那種炊飯喔",
       "photo": {
-        "src": "photos/food-tanichi.webp",
-        "alt": "丹一門口與店內的餐盤",
+        "src": "photos/food-tanichi-ayu.webp",
+        "alt": "丹一鍋裡的鮎魚飯，上面鋪著葱",
         "credit": "宇宙碎片拍攝"
       },
       "relatedPhotos": [
         {
-          "src": "photos/food-tanichi-ayu.webp",
-          "alt": "丹一的鮎魚飯與長瀞駅",
+          "src": "photos/food-tanichi.webp",
+          "alt": "丹一門口與店內的餐盤",
           "credit": "宇宙碎片拍攝"
         },
         {
@@ -536,7 +546,7 @@
       "theme": "food",
       "title": "阿佐美冰",
       "kicker": "埼玉・長瀞",
-      "body": "刨冰很大一座，旁邊一小碟抹茶跟糖漿。另一碗是深色的，上面再補一層冰。店在外面，紅旗掛在門口，長瀞這天吃的。",
+      "body": "長瀞這邊還有一個名產是河川的冰做的冰XD 最有名的就是這家，真的就是冰+糖漿或抹茶醬，但是糖感覺是三溫糖之類的，非常的溫和很有趣，抹茶也好好吃喔~",
       "photo": {
         "src": "photos/food-azami.webp",
         "alt": "阿佐美冰的刨冰、抹茶與糖漿",
@@ -545,7 +555,7 @@
       "relatedPhotos": [
         {
           "src": "photos/food-azami-shop.webp",
-          "alt": "阿佐美冰店門口的紅旗",
+          "alt": "阿佐美冰門口的紅旗與格子旗",
           "credit": "宇宙碎片拍攝"
         },
         {
@@ -559,7 +569,7 @@
       "theme": "sake",
       "title": "武甲酒造",
       "kicker": "埼玉・秩父・日本酒",
-      "body": "柳田總本店的藍暖簾寫武甲正宗、寶曆三年創業。我們在門口拍了瓶子跟一罐，沒有在裡頭坐很久。站前拐個彎就到。",
+      "body": "秩父當地的酒造之一，武甲酒造，這次小小買個梅酒，個人覺得普通",
       "source": {
         "label": "武甲酒造（公式）",
         "url": "https://www.bukou.co.jp/"
@@ -622,10 +632,10 @@
       "transport": "起飛 06:40／巴士 11:10／新幹線 12:27",
       "transportClass": "",
       "summary": "飛抵成田，轉往熱海溫泉初體驗",
-      "hotelNote": "雙床房對著海，窗簾一拉開就是熱海的海岸。",
+      "hotelNote": "雙床房+榻榻米客廳，壁櫥有附床套組，要鋪床睡榻榻米也是沒問題的!",
       "routeLabel": "熱海",
-      "hotelBlurbTeaser": "晚上沿岸的燈跟白天的海平線是同一面窗。",
-      "hotelBlurb": "床邊有兩盞壁燈，房間不大但看海夠用。斜坡走到車站有點累，海景把這點補回來。",
+      "hotelBlurbTeaser": "落地窗推出去就可以看到海。",
+      "hotelBlurb": "飯店離熱海市區跟海灘大約走路15分鐘，慢慢逛其實還好~不過會有坡路要保留點腳力啊XD",
       "hotelUrl": "https://www.agoda.com/zh-tw/hotel-resorpia-atami/hotel/atami-jp.html?cid=1975511&hl=zh-tw",
       "hotelPhoto": {
         "src": "photos/hotel-resorpia.webp",
@@ -642,6 +652,16 @@
           "src": "photos/hotel-resorpia-coast.webp",
           "alt": "窗前的熱海海岸、船與遠方市街",
           "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/hotel-resorpia-rail.webp",
+          "alt": "陽台欄杆外的海平面",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/hotel-resorpia-table.webp",
+          "alt": "窗邊桌上的杯子，外面是海",
+          "credit": "宇宙碎片拍攝"
         }
       ]
     },
@@ -653,14 +673,14 @@
       "transport": "IC卡 (伊東線)",
       "transportClass": "",
       "summary": "伊東深度遊，溫泉與海岸節奏",
-      "hotelNote": "伊東這晚記得的是早餐，不是房間。",
+      "hotelNote": "伊東溫泉飯店 Yoshino 一泊二食，是位親切的爺爺接待。",
       "routeLabel": "伊東",
-      "hotelBlurbTeaser": "漆盒裡有鮑魚、刺身，還有烤過的魚。",
-      "hotelBlurb": "味噌湯浮著蝦，筷子紙寫伊東。吃得很飽，吃完就出門。",
+      "hotelBlurbTeaser": "預定的時候可以選擇要什麼套餐。",
+      "hotelBlurb": "這次是訂漆盒便當，一口氣吃到金目鯛跟沙朗牛。",
       "hotelUrl": "https://www.agoda.com/zh-tw/yoshino/hotel/izu-atami-jp.html?cid=1975511&hl=zh-tw",
       "hotelPhoto": {
         "src": "photos/hotel-yoshino.webp",
-        "alt": "Hotel Yoshino 早餐漆盒裡的鮑魚與刺身",
+        "alt": "Hotel Yoshino 早餐的烤魚、刺身與沙拉",
         "credit": "宇宙碎片拍攝"
       },
       "hotelPhotos": [
@@ -672,6 +692,11 @@
         {
           "src": "photos/hotel-yoshino-soup.webp",
           "alt": "浮著蝦的味噌湯與烤魚",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/hotel-yoshino-wrap.webp",
+          "alt": "早餐桌上的粉巾包與味噌湯",
           "credit": "宇宙碎片拍攝"
         }
       ]
@@ -695,14 +720,14 @@
       "transport": "西武特急 · 07:30",
       "transportClass": "seibu",
       "summary": "長瀞溪谷與秩父山城夜宿",
-      "hotelNote": "和室加大床，四張床鋪開來一家人夠睡。",
+      "hotelNote": "房間超級大~~廁所有兩間，還有客廳、和室加四張床鋪，要在裡面跑也可以!",
       "routeLabel": "秩父",
-      "hotelBlurbTeaser": "榻榻米客廳有圓桌，晚上直接在房裡吃。",
-      "hotelBlurb": "超商便當跟飲料擺滿桌，沒有再出門找餐廳。秩父晚上冷，這樣最省事。",
+      "hotelBlurbTeaser": "附近就有超市，買回到房間客廳吃100分!!",
+      "hotelBlurb": "推推",
       "hotelUrl": "https://www.agoda.com/zh-tw/hotel-route-inn-grand-chichibu/hotel/chichibu-jp.html?cid=1975511&hl=zh-tw",
       "hotelPhoto": {
         "src": "photos/hotel-routeinn.webp",
-        "alt": "Route-Inn 秩父和室裡的四張床",
+        "alt": "Route-Inn 秩父房裡的床與沙發",
         "credit": "宇宙碎片拍攝"
       },
       "hotelPhotos": [
@@ -714,6 +739,11 @@
         {
           "src": "photos/hotel-routeinn-konbini.webp",
           "alt": "圓桌上的超商便當與飲料",
+          "credit": "宇宙碎片拍攝"
+        },
+        {
+          "src": "photos/hotel-routeinn-room.webp",
+          "alt": "和室裡鋪開的四張床",
           "credit": "宇宙碎片拍攝"
         }
       ]
