@@ -1,6 +1,7 @@
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import './leaflet-icons.js';
+import { addBasemap } from './basemap.js';
 import { loadManifest, tripUrl } from './load-trip.js';
 import { icon } from './icons.js';
 import { esc, photoHtml, tripAssetUrl } from './photo.js';
@@ -123,12 +124,7 @@ function renderFeaturedMap(sorted) {
     maxZoom: 4,
   }).setView([20, 10], 2);
 
-  L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-    attribution:
-      '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>',
-    subdomains: 'abcd',
-    maxZoom: 4,
-  }).addTo(map);
+  addBasemap(map);
 
   const pinIcon = fragmentMarkerIcon();
   pinned.forEach((t) => {

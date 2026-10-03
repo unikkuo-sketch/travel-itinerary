@@ -31,7 +31,7 @@
 - 向 Flipsnack 學 IA，不抄橘紅主題；P0 亮點卡＋住宿總覽
 - 已訂班次寫 `overview[].transport`；多段全形 `／`
 - 風土獨立滿版章節，取代旅後 recap
-- Hub 地圖維持 Leaflet＋CARTO Positron（否決 3D／SVG）
+- Hub 地圖維持 Leaflet（否決 3D／SVG）。底圖改 OpenFreeMap Positron（CARTO light_all 已要 API key，會畫出 API KEY REQUIRED）
 - 行程地圖底圖對齊 Hub；票券狀態 JSON 預設＋本機 pill
 - 勿用舊 commit 整段覆寫 `days[].photo` metadata
 - 預算每人 `NT$`；刪已付／待付卡
