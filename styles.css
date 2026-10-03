@@ -2348,7 +2348,7 @@ a.lodging-book:active {
     border-bottom: none;
 }
 
-/* Map — Carto Positron + warm peach blend (matches Hub featured-map) */
+/* Map — OpenFreeMap Positron + warm peach blend (matches Hub featured-map) */
 .leaflet-map {
     height: 400px;
     border-radius: var(--radius-lg);
@@ -2362,6 +2362,11 @@ a.lodging-book:active {
 .leaflet-map .leaflet-tile-pane {
     /* Slightly lighter than Hub — route colors stay readable */
     filter: sepia(0.22) saturate(0.75) hue-rotate(-12deg) brightness(1.03) contrast(0.96);
+}
+
+/* MapLibre canvas lives in the tile pane; Leaflet positions it with transforms. */
+.leaflet-container .leaflet-gl-layer.maplibregl-map {
+    position: absolute;
 }
 
 .leaflet-map .leaflet-control-attribution {
@@ -2526,7 +2531,7 @@ a.lodging-book:active {
     box-shadow: var(--shadow-sm);
 }
 
-/* Warm peach/cream blend over Carto Positron — keeps map editorial, not nav-app */
+/* Warm peach/cream blend over OpenFreeMap Positron — keeps map editorial, not nav-app */
 .featured-map .leaflet-tile-pane {
     filter: sepia(0.28) saturate(0.72) hue-rotate(-12deg) brightness(1.03) contrast(0.96);
 }
