@@ -24,6 +24,7 @@ import { SITE_ORIGIN } from '../js/site.js';
 const cliArgs = process.argv.slice(2);
 const hydrationOnly = cliArgs.includes('--hydration');
 const blockInit = cliArgs.includes('--block-init');
+const INIT_TIMEOUT_MS = 8000;
 const preview = (cliArgs.find((arg) => !arg.startsWith('--')) || 'http://127.0.0.1:4173').replace(/\/$/, '');
 const manifest = JSON.parse(readFileSync('trips/manifest.json', 'utf8'));
 const trips = manifest.trips;
@@ -360,8 +361,6 @@ const COLLECT = `(() => {
     title: document.title,
   };
 })()`;
-
-const INIT_TIMEOUT_MS = 8000;
 
 // Markers are created by client init and are absent from prerendered HTML.
 // Static <a href> values are not init evidence.
