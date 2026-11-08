@@ -1,5 +1,5 @@
 import { getTripId, loadTrip, tripUrl } from './load-trip.js';
-import { icon } from './icons.js';
+import { heroBackAnchorHtml } from './nav.js';
 import { esc, initPhotoLightbox, photoHtml, tripAssetUrl } from './photo.js';
 import { applyPageMeta, tripCanonicalUrl, tripOgImage, tripPageMeta } from './seo.js';
 
@@ -12,12 +12,7 @@ const RELATED_MAX = 4;
 
 function mountHeroBack(tripId) {
   if (!heroEl || heroEl.querySelector('.hero-back')) return;
-  const back = document.createElement('a');
-  back.className = 'hero-back';
-  back.href = tripUrl(tripId);
-  back.setAttribute('aria-label', '返回行程');
-  back.innerHTML = `${icon('arrowLeft', 'icon icon--sm')}<span>返回行程</span>`;
-  heroEl.prepend(back);
+  heroEl.insertAdjacentHTML('afterbegin', heroBackAnchorHtml(tripUrl(tripId), '返回行程'));
 }
 
 function showError(message) {
