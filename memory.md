@@ -1,14 +1,26 @@
 # memory — Travel Hub
 
-最後更新：2026-09-29
+最後更新：2026-11-08
 
 ## 待辦
 
-無
+- 靜態導航 PR 交 Grok Bot 獨立驗收；本端不宣告最終通過、不合併、不部署正式
 
 ## 進行中 / 已知問題
 
-無
+- 2026-11-08 共識：只把既有 JS 導航變成初始 HTML 的 `<a href>`。範圍＝首頁各行程卡，以及同一趟主頁／風土／飲食間**已經存在**的導航。排版、文章、導航外觀／位置／操作不變。不新增依賴、不改 title／description／其他 SEO 文案、不 redesign。不承諾搜尋收錄。
+- 驗收（須附可複核證據，不截圖）：(1) 正式輸出初始 HTML 可解析出上述 `a[href]`，resolve 後為 canonical（中文編碼、主頁尾斜線）；(2) JS 前後導航不重複，既有篩選／切頁／互動仍在，用 DOM 斷言；(3) 無新可見區塊，文章與 title／description 未改寫；(4) 最終 `npm run build` 與連結／互動測試各一次，失敗只重測失敗項，最多 3 輪。
+- repo 無 `PRODUCT.md`、`DESIGN.md`、`.impeccable`（無 launcher，不跑 context）。
+
+## JS 前後連結（2026-11-08，改碼前；本機 dev 與正式站渲染一致）
+
+抽樣：首頁、熱海（含「瀞」）主頁／風土／飲食。初始 HTML 用 HTTP 原文；JS 後用 headless Chrome DOM。
+
+- 首頁初始：`#hub-grid`、`#featured`、GitHub、manholecard。JS 後多 6 張 `a.trip-card`（編碼路徑、尾斜線），順序東北→熱海→四國→北海道→沖繩→中部，皆「旅程結束」。無 input／select。地圖「查看行程」只在點標記後出現。
+- 行程主頁初始：站內只有 hero `a.hero-back` → `/`。JS 後 `.nav-shell` 一條：行程／亮點／票券／住宿／路線／預算／風土／飲食／購物＋ Day chips。另有 route-chip、票券 pill、住宿 `<details>`、相片放大、地圖縮放。
+- 風土、飲食初始：無站內連結。JS 後各一顆 hero「返回行程」→ 該趟 `/trips/{id}/`。兩邊都沒有連到對方。
+- 不新增：風土↔飲食、地圖彈窗常駐連結、購物頁返回（仍只在 JS）。sticky 整條既有導航（含購物與 Day）改寫進初始 HTML，避免半條導航。
+- 2026-11-08 實作後各跑一次 `npm run build`、`node scripts/check-nav.mjs`：673 通過、0 失敗、19 頁 JS 關／開連結一致。不宣告通過。
 
 ## 近期
 
