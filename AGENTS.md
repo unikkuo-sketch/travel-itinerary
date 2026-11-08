@@ -7,6 +7,7 @@ index.html              Hub 行程總覽
 trip.html / stories.html / food.html  頁殼（legacy；正式見 path）
 shopping.html           購物清單（?trip=；noindex）
 js/hub.js               Hub 渲染
+js/hub-cards.js         行程卡 HTML（Hub 與 prerender 共用）
 js/photo.js             共用圖片元件（lazy、skeleton、fallback、署名）
 js/trip.js              行程頁入口
 js/shopping.js          購物頁入口
@@ -38,6 +39,7 @@ ATTRIBUTIONS.md         照片素材授權紀錄（新增圖片必須補列）
 
 - 正式行程 URL：`/trips/{id}/`、`/trips/{id}/stories.html`、`/trips/{id}/food.html`；購物維持 `shopping.html?trip=`
 - 動態導覽：`js/nav.js`（僅行程頁）；hero 左上「返回總覽」；sticky 雙列（`nav-shell` 對齊 `.main-content` `max-width: 1200px`；上：行程→亮點→票券→住宿→路線→預算→風土→飲食→購物；下：Day chips＋捲動高亮／橫滑跟蹤）；購物／風土／飲食無 sticky，hero 左上「返回行程」連回本趟行程頁
+- 2026-11-08 靜態導航（不改版面）：建置輸出的初始 HTML 必須已有既有導航的 `<a href>`，不依賴 JS 才插入。範圍只含首頁行程卡 → `/trips/{id}/`，以及同一趟主頁 sticky 導航、風土／飲食 hero「返回行程」。風土與飲食彼此原本沒有連結，不新增可見區塊。外觀、位置、文章、title、description 維持；JS 仍可原位更新，不可變成第二條導航。hydration 逾時必須失敗，且不能用初始 HTML 已有的 href 當客戶端初始化證據。驗收見 `memory.md`
 - 全站 UI token 在 `styles.css` `:root`（Palette 1：`#D0B8AC` → `#FBFEFB` 蜜桃奶油系；字級 `--text-*`、行距 `--leading-*`）
 - 改行程內容：只編輯 `trips/{id}/itinerary.json`
 - 新增行程：複製 `_template`、更新 `manifest.json`（見 docs/add-trip.md）；`npm run build` 會重跑 gen-seo＋預渲染
