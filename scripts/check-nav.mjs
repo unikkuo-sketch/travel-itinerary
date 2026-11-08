@@ -1,10 +1,13 @@
 /**
  * Static + hydrated nav checks. No browser screenshots.
  * Usage: node scripts/check-nav.mjs [previewOrigin]
+ *        node scripts/check-nav.mjs --hydration [previewOrigin]
+ *        node scripts/check-nav.mjs --hydration --block-init [previewOrigin]
  * Expects dist/ from `npm run build` and a preview server (default http://127.0.0.1:4173).
+ * --hydration only checks client init. --block-init must exit non-zero.
  */
 import assert from 'node:assert/strict';
-import { spawn } from 'node:child_process';
+import { execSync, spawn } from 'node:child_process';
 import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { sortTrips, tripIsPast } from '../js/hub-cards.js';
@@ -18,7 +21,10 @@ import {
 import { tripCanonicalUrl, tripPageMeta } from '../js/seo.js';
 import { SITE_ORIGIN } from '../js/site.js';
 
-const preview = (process.argv[2] || 'http://127.0.0.1:4173').replace(/\/$/, '');
+const cliArgs = process.argv.slice(2);
+const hydrationOnly = cliArgs.includes('--hydration');
+const blockInit = cliArgs.includes('--block-init');
+const preview = (cliArgs.find((arg) => !arg.startsWith('--')) || 'http://127.0.0.1:4173').replace(/\/$/, '');
 const manifest = JSON.parse(readFileSync('trips/manifest.json', 'utf8'));
 const trips = manifest.trips;
 const ATAMI = '2026_日本熱海長瀞_家族旅遊';
@@ -94,6 +100,81 @@ function expectedSectionHrefs(id, data) {
 
 function expectedDayHrefs(id, data) {
   return hrefs(anchorsIn(navDayAnchorsHtml(id, data.days || [])));
+}
+
+async function runHydrationProbe() {
+  const head = execSync('git rev-parse HEAD', { encoding: 'utf8' }).trim();
+  const enc = encodeURIComponent(ATAMI);
+  const sample = [
+    { kind: 'hub', file: 'dist/index.html', path: '/' },
+    { kind: 'trip', file: join('dist/trips', ATAMI, 'index.html'), path: `/trips/${enc}/` },
+    { kind: 'stories', file: join('dist/trips', ATAMI, 'stories.html'), path: `/trips/${enc}/stories.html` },
+    { kind: 'food', file: join('dist/trips', ATAMI, 'food.html'), path: `/trips/${enc}/food.html` },
+  ];
+  const absent = {
+    hub: ['welcome-card', 'leaflet-container'],
+    trip: ['data-ticket-status-bound', 'ph-lightbox'],
+    stories: ['ph-lightbox'],
+    food: ['ph-lightbox'],
+  };
+  const staticProblems = [];
+  for (const page of sample) {
+    const html = readFileSync(page.file, 'utf8');
+    for (const needle of absent[page.kind]) {
+      if (html.includes(needle)) staticProblems.push(`${page.kind} initial HTML contains ${needle}`);
+    }
+  }
+  if (staticProblems.length) {
+    console.error(staticProblems.join('\n'));
+    console.log(JSON.stringify({ head, hydrationMatches: 0, failed: staticProblems.length, blockInit, pages: sample.map((p) => p.kind) }));
+    process.exit(1);
+  }
+
+  const failures = [];
+  let hydrationMatches = 0;
+  await withChrome(async ({ send, events }) => {
+    const { targetId } = await send('Target.createTarget', { url: 'about:blank' });
+    const { sessionId } = await send('Target.attachToTarget', { targetId, flatten: true });
+    await send('Page.enable', {}, sessionId);
+    await send('Runtime.enable', {}, sessionId);
+    for (const page of sample) {
+      try {
+        await openPage(send, sessionId, events, preview + page.path, !blockInit);
+        const evidence = await waitForClientInit(send, sessionId, page.kind);
+        if (blockInit) {
+          const reason = `${page.kind}: init marker appeared while scripts blocked ${JSON.stringify(evidence)}`;
+          failures.push(reason);
+          console.error(`FAIL ${reason}`);
+        } else {
+          hydrationMatches += 1;
+          console.log(`ok ${page.kind} ${JSON.stringify(evidence)}`);
+        }
+      } catch (err) {
+        const reason = `${page.kind}: ${String(err.message || err).split('\n')[0]}`;
+        failures.push(reason);
+        if (blockInit) console.log(`blocked ${reason}`);
+        else console.error(`FAIL ${reason}`);
+      }
+    }
+  });
+
+  const summary = { head, hydrationMatches, failed: failures.length, blockInit, pages: sample.map((p) => p.kind) };
+  console.log(JSON.stringify(summary));
+  if (blockInit) {
+    console.error(failures.join('\n'));
+    process.exit(1);
+  }
+  if (failures.length || hydrationMatches !== sample.length) {
+    console.error(failures.join('\n'));
+    process.exit(1);
+  }
+  console.log('check-nav hydration: ok');
+  process.exit(0);
+}
+
+if (hydrationOnly) {
+  await runHydrationProbe();
+  process.exit(failed.length ? 1 : 0);
 }
 
 const homeHtml = readFileSync('dist/index.html', 'utf8');
@@ -196,7 +277,7 @@ for (const t of trips) {
   check(!anchorsIn(foodHtml).some((a) => a.href.includes('/stories.html')), `no new food→stories ${t.id}`);
   check(storiesHtml.indexOf('class="hero-back"') < storiesHtml.indexOf('id="stories-root"'), `stories back above chapters ${t.id}`);
   check(foodHtml.indexOf('class="hero-back"') < foodHtml.indexOf('id="food-root"'), `food back above chapters ${t.id}`);
-  check((tripHtml.match(/class="route-chip"/g) || []).length === 0, `route chips stay JS-only ${t.id}`);
+  // route-chip 與購物頁不在這次靜態導航範圍，不斷言它們必須一直維持 JS-only。
 
   pages.push(
     { kind: 'trip', id: t.id, file: tripFile, path: `/trips/${enc}/` },
@@ -280,13 +361,42 @@ const COLLECT = `(() => {
   };
 })()`;
 
-function markerExpr(kind) {
+const INIT_TIMEOUT_MS = 8000;
+
+// Markers are created by client init and are absent from prerendered HTML.
+// Static <a href> values are not init evidence.
+function clientInitExpr(kind) {
   if (kind === 'hub') {
-    return `document.querySelector('.welcome-card')`;
+    return `({ welcome: !!document.querySelector('#welcome-grid .welcome-card'), leaflet: !!document.querySelector('#featured-map.leaflet-container') })`;
   }
-  if (kind === 'trip') return `document.querySelector('.ticket-status, a.route-chip')`;
-  if (kind === 'stories') return `document.querySelector('#stories-root img[onload], #stories-root .stories-empty')`;
-  return `document.querySelector('#food-root img[onload], #food-root .stories-empty')`;
+  if (kind === 'trip') {
+    return `({ ticketBound: document.querySelector('#ticket-grid')?.getAttribute('data-ticket-status-bound') === '1', lightbox: !!document.querySelector('dialog.ph-lightbox') })`;
+  }
+  if (kind === 'stories' || kind === 'food') {
+    return `({ lightbox: !!document.querySelector('dialog.ph-lightbox') })`;
+  }
+  return 'null';
+}
+
+function clientReady(kind, evidence) {
+  if (!evidence || typeof evidence !== 'object') return false;
+  if (kind === 'hub') return evidence.welcome === true && evidence.leaflet === true;
+  if (kind === 'trip') return evidence.ticketBound === true && evidence.lightbox === true;
+  if (kind === 'stories' || kind === 'food') return evidence.lightbox === true;
+  return false;
+}
+
+function waitExpr(kind) {
+  return `new Promise((resolve, reject) => {
+    const start = Date.now();
+    const tick = () => {
+      const evidence = ${clientInitExpr(kind)};
+      if (${kind === 'hub' ? 'evidence.welcome && evidence.leaflet' : kind === 'trip' ? 'evidence.ticketBound && evidence.lightbox' : 'evidence.lightbox'}) resolve(evidence);
+      else if (Date.now() - start > ${INIT_TIMEOUT_MS}) reject(new Error('init marker timeout: ${kind}'));
+      else setTimeout(tick, 50);
+    };
+    tick();
+  })`;
 }
 
 async function waitLoad(events) {
@@ -296,24 +406,47 @@ async function waitLoad(events) {
   }
 }
 
-async function readDom(send, sessionId, events, url, kind, scripts) {
+function evalError(result) {
+  const details = result?.exceptionDetails;
+  if (!details) return null;
+  return details.exception?.description || details.text || 'evaluate failed';
+}
+
+async function waitForClientInit(send, sessionId, kind) {
+  const result = await Promise.race([
+    send('Runtime.evaluate', {
+      expression: waitExpr(kind),
+      awaitPromise: true,
+      returnByValue: true,
+    }, sessionId),
+    sleep(INIT_TIMEOUT_MS + 2000).then(() => {
+      throw new Error(`init marker timeout: ${kind}`);
+    }),
+  ]);
+  const error = evalError(result);
+  if (error) throw new Error(String(error).replace(/^Error:\s*/, '').split('\n')[0]);
+  const evidence = result.result?.value;
+  if (!clientReady(kind, evidence)) throw new Error(`init marker missing: ${kind}`);
+  return evidence;
+}
+
+async function openPage(send, sessionId, events, url, allowPageScripts) {
   events.length = 0;
-  await send('Emulation.setScriptExecutionDisabled', { value: !scripts }, sessionId);
+  await send('Network.enable', {}, sessionId);
+  await send('Network.setBlockedURLs', { urls: allowPageScripts ? [] : ['*.js'] }, sessionId);
+  await send('Emulation.setScriptExecutionDisabled', { value: !allowPageScripts }, sessionId);
   await send('Page.navigate', { url }, sessionId);
   await waitLoad(events);
-  if (scripts) {
-    const expr = `new Promise((resolve) => {
-      const start = Date.now();
-      const tick = () => {
-        if (${markerExpr(kind)} || Date.now() - start > 8000) resolve(true);
-        else setTimeout(tick, 50);
-      };
-      tick();
-    })`;
-    await send('Runtime.evaluate', { expression: expr, awaitPromise: true }, sessionId);
-  }
+}
+
+async function readDom(send, sessionId, events, url, kind, scripts) {
+  await openPage(send, sessionId, events, url, scripts);
+  let initEvidence = null;
+  if (scripts) initEvidence = await waitForClientInit(send, sessionId, kind);
   const result = await send('Runtime.evaluate', { expression: COLLECT, returnByValue: true }, sessionId);
-  return result.result.value;
+  const error = evalError(result);
+  if (error) throw new Error(error);
+  return { ...result.result.value, initEvidence, initOk: Boolean(scripts && clientReady(kind, initEvidence)) };
 }
 
 let browserPages = 0;
@@ -330,7 +463,13 @@ await withChrome(async ({ send, events }) => {
     const url = preview + page.path;
     const html = readFileSync(page.file, 'utf8');
     const off = await readDom(send, sessionId, events, url, page.kind, false);
-    const on = await readDom(send, sessionId, events, url, page.kind, true);
+    let on;
+    try {
+      on = await readDom(send, sessionId, events, url, page.kind, true);
+    } catch (err) {
+      check(false, `client init ${page.kind} ${page.id || 'home'}: ${String(err.message || err).split('\n')[0]}`);
+      continue;
+    }
     browserPages += 1;
     const staticCards = hrefs(anchorsIn(html), (a) => a.className.split(/\s+/).includes('trip-card'));
     const staticSections = hrefs(anchorsIn(html.slice(html.indexOf('id="nav-container"'), html.indexOf('id="nav-days"') === -1 ? html.length : html.indexOf('id="nav-days"'))));
@@ -362,7 +501,8 @@ await withChrome(async ({ send, events }) => {
     if (page.kind === 'food') {
       check(on.foodChapters === off.foodChapters && on.foodChapters > 0, `food chapter count ${label}`);
     }
-    hydrationMatches += 1;
+    check(on.initOk === true, `client init ${label}`);
+    if (on.initOk) hydrationMatches += 1;
   }
 
   const atami = encodeURIComponent(ATAMI);
