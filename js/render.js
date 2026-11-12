@@ -214,16 +214,42 @@ function renderLodgingDetailStrip(photos, tripId, zoomableBase = null) {
   return `<div class="lodging-detail-strip">${figs}</div>`;
 }
 
+function lodgingNetwork(url) {
+  // CJ deep link from the dashboard template: www.kqzyfj.com / click-101911030-17293139
+  // (PID 101911030, AID 17293139). The only query key is url, an encodeURIComponent'd
+  // clean Booking .zh-tw.html page with no query string of its own.
+  // The destination host picks the label. A hotel with no Booking page keeps a direct agoda.com URL.
+  let host = '';
+  try {
+    const parsed = new URL(url);
+    host = parsed.hostname;
+    if (host === 'kqzyfj.com' || host.endsWith('.kqzyfj.com')) {
+      const dest = parsed.searchParams.get('url');
+      if (dest) host = new URL(dest).hostname;
+    }
+  } catch {
+    return '';
+  }
+  if (host === 'agoda.com' || host.endsWith('.agoda.com')) return 'Agoda';
+  if (host === 'booking.com' || host.endsWith('.booking.com')) return 'Booking.com';
+  return '';
+}
+
 function renderLodging(overview, tripId) {
   // Every overview night with a real hotel name stays in 精選住宿 (logistics row).
-  // Expand + Agoda are additive only when hotelBlurbTeaser/hotelBlurb and/or hotelUrl exist.
+  // Expand + book CTA are additive only when hotelBlurbTeaser/hotelBlurb and/or hotelUrl exist.
   // hotelPhoto → side-image card; nights without it stay lodging-card--plain (no empty thumb).
   const stays = (overview || []).filter((r) => r.hotel && r.hotel !== '-');
   if (!stays.length) return '';
-  // ponytail: pilot only — disclosure is section-level text; upgrade to per-network disclosure / consent UI if more affiliates land.
-  const hasAffiliate = stays.some((r) => r.hotelUrl);
-  const disclosure = hasAffiliate
-    ? `<p class="lodging-affiliate-note">本頁精選住宿含 Agoda 聯盟連結；經連結訂房本站可能獲得佣金，讀者無需額外付費。</p>`
+  // Name only the networks this page actually links, in destination-host order.
+  const networks = [];
+  for (const r of stays) {
+    const net = lodgingNetwork(r.hotelUrl);
+    if (net && !networks.includes(net)) networks.push(net);
+  }
+  networks.sort((a, b) => Number(b === 'Booking.com') - Number(a === 'Booking.com'));
+  const disclosure = networks.length
+    ? `<p class="lodging-affiliate-note">本頁精選住宿含 ${networks.join(' 與 ')} 聯盟連結；經連結訂房本站可能獲得佣金，讀者無需額外付費。</p>`
     : '';
   const cards = stays
     .map((r) => {
@@ -258,8 +284,11 @@ function renderLodging(overview, tripId) {
         narrative = `<p class="lodging-expand__teaser lodging-expand__teaser--static">${esc(r.hotelBlurbTeaser)}</p>`;
       }
       // Soft pill CTA outside <details> so it stays visible without expanding.
+      // Label follows the destination host: Booking.com 訂房, or Agoda 訂房 when that link stays.
+      const network = lodgingNetwork(r.hotelUrl);
+      const bookLabel = network ? `${network} 訂房` : '訂房';
       const bookLink = r.hotelUrl
-        ? `<a class="lodging-book" href="${esc(r.hotelUrl)}" target="_blank" rel="sponsored noopener">Agoda 訂房</a>`
+        ? `<a class="lodging-book" href="${esc(r.hotelUrl)}" target="_blank" rel="sponsored noopener">${esc(bookLabel)}</a>`
         : '';
       const body = `
       <div class="lodging-body">
