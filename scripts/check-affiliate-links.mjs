@@ -21,6 +21,7 @@ const EXPECTED = [
 ];
 
 const SKIP = new Set(['node_modules', 'dist', 'build', '.git', '.vercel']);
+const BANNED = ['agoda' + '.com', 'cid=' + '1975511'];
 
 function walk(dir, out = []) {
   for (const name of readdirSync(dir)) {
@@ -31,6 +32,11 @@ function walk(dir, out = []) {
     else out.push(path);
   }
   return out;
+}
+
+function isHistoryNote(path) {
+  const norm = path.replaceAll('\\', '/');
+  return norm === 'memory.md' || norm.startsWith('docs/');
 }
 
 function extract(text) {
@@ -64,6 +70,20 @@ const dests = links.map(({ path, url }) => {
 });
 
 assert.deepEqual([...dests].sort(), [...EXPECTED].sort());
+
+for (const path of walk('.')) {
+  if (isHistoryNote(path)) continue;
+  const text = readFileSync(path);
+  if (text.includes(0)) continue;
+  const haystack = text.toString('utf8').toLowerCase();
+  for (const needle of BANNED) {
+    assert.equal(
+      haystack.includes(needle),
+      false,
+      `${path} still contains ${needle}`
+    );
+  }
+}
 
 console.log('affiliate-links: ok');
 console.log(`count ${links.length}; JAQ identical; PID ${PID}; AID ${AID}`);

@@ -50,7 +50,7 @@ Copy-Item -Recurse trips\_template trips\2027_義大利托斯卡尼_蜜月
 |------|------|
 | `hotelNote` | 選填；住宿總覽卡片說明（站距／賣點） |
 | `hotelBlurbTeaser` / `hotelBlurb` | 選填；精選住宿展開短評（`<details>`） |
-| `hotelUrl` | 選填；有才顯示訂房 CTA。Booking.com 用 CJ 深層連結：網域 `www.kqzyfj.com`、路徑 `click-101911030-17293139`（PID `101911030`、AID `17293139`），查詢參數只留 `url`，值是 `encodeURIComponent` 過的乾淨繁中住宿頁（`.zh-tw.html`，不帶任何查詢參數）。按鈕文字與揭露句依連結實際網域顯示（`booking.com` →「Booking.com 訂房」；`agoda.com` →「Agoda 訂房」）。Booking 上找不到的住宿可留 Agoda 連結。 |
+| `hotelUrl` | 選填；有才顯示「Booking.com 訂房」，沒有就不渲染按鈕。用 CJ 深層連結：網域 `www.kqzyfj.com`、路徑 `click-101911030-17293139`（PID `101911030`、AID `17293139`），查詢參數只留 `url`，值是 `encodeURIComponent` 過的乾淨繁中住宿頁（`.zh-tw.html`，不帶任何查詢參數）。揭露句只提 Booking.com。 |
 | `hotelPhoto` | 選填；`{ src, alt, credit }` 住宿主圖（側圖卡；無則維持純文字列） |
 | `hotelPhotos` | 選填；展開內橫滑細節圖陣列（無陣列則不渲染細節列） |
 | `routeLabel` | 選填；路線動線 chip 短名（缺省取 `places` 最後一段） |
