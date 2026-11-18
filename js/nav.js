@@ -1,4 +1,5 @@
 import { tripUrl } from './load-trip.js';
+import { icon } from './icons.js';
 
 function linkHtml(l) {
   if (l.active) return `<span class="nav-link active">${l.label}</span>`;
@@ -13,7 +14,7 @@ function dayLinks(tripId, days) {
   }));
 }
 
-function buildTripSectionLinks(tripId) {
+function sectionModels(tripId) {
   return [
     { href: `${tripUrl(tripId)}#overview`, label: '行程' },
     { href: `${tripUrl(tripId)}#highlights`, label: '亮點' },
@@ -24,12 +25,45 @@ function buildTripSectionLinks(tripId) {
     { href: tripUrl(tripId, 'stories'), label: '風土' },
     { href: tripUrl(tripId, 'food'), label: '飲食' },
     { href: tripUrl(tripId, 'shopping'), label: '購物' },
-  ].filter((l) => {
+  ];
+}
+
+/** Same visibility as renderItinerary: highlights/lodging follow the data; the shell always shows the rest. */
+export function sectionIsVisible(data, id) {
+  const meta = data?.meta || {};
+  if (id === 'highlights') {
+    if (meta.highlightCards?.length) return true;
+    return (meta.highlights || []).some(Boolean);
+  }
+  if (id === 'lodging') {
+    return (data?.overview || []).some((r) => r.hotel && r.hotel !== '-');
+  }
+  return id === 'overview' || id === 'tickets' || id === 'route-map' || id === 'budget';
+}
+
+function buildTripSectionLinks(tripId, isVisible) {
+  return sectionModels(tripId).filter((l) => {
     const hash = l.href.includes('#') ? l.href.slice(l.href.indexOf('#') + 1) : '';
     if (!hash) return true;
-    const el = document.getElementById(hash);
-    return el && !el.hidden;
+    return isVisible(hash);
   });
+}
+
+export function navSectionAnchorsHtml(tripId, isVisible) {
+  return buildTripSectionLinks(tripId, isVisible).map(linkHtml).join('');
+}
+
+export function navDayAnchorsHtml(tripId, days) {
+  return dayLinks(tripId, days)
+    .map(
+      (l) =>
+        `<a href="${l.href}" class="nav-link nav-link--day" data-day="${l.dayId}">${l.label}</a>`
+    )
+    .join('');
+}
+
+export function heroBackAnchorHtml(href, label) {
+  return `<a class="hero-back" href="${href}" aria-label="${label}">${icon('arrowLeft', 'icon icon--sm')}<span>${label}</span></a>`;
 }
 
 function ensureNavShell(container) {
@@ -63,18 +97,17 @@ export function mountNav(tripId, days = []) {
 
   const { sectionsEl, daysEl } = ensureNavShell(container);
 
-  sectionsEl.innerHTML = buildTripSectionLinks(tripId).map(linkHtml).join('');
+  const isVisible = (id) => {
+    const el = document.getElementById(id);
+    return Boolean(el && !el.hidden);
+  };
+  sectionsEl.innerHTML = navSectionAnchorsHtml(tripId, isVisible);
 
   if (daysEl) {
-    const links = dayLinks(tripId, days);
-    if (links.length) {
+    const html = navDayAnchorsHtml(tripId, days);
+    if (html) {
       daysEl.hidden = false;
-      daysEl.innerHTML = links
-        .map(
-          (l) =>
-            `<a href="${l.href}" class="nav-link nav-link--day" data-day="${l.dayId}">${l.label}</a>`
-        )
-        .join('');
+      daysEl.innerHTML = html;
     } else {
       daysEl.hidden = true;
       daysEl.innerHTML = '';

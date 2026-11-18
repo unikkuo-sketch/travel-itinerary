@@ -6,6 +6,14 @@ import { readFileSync, writeFileSync, existsSync, mkdirSync } from 'node:fs';
 import { join } from 'node:path';
 import { SITE_ORIGIN as ORIGIN } from '../js/site.js';
 import { tripPageMeta } from '../js/seo.js';
+import { tripUrl } from '../js/load-trip.js';
+import { sortTrips, tripIsPast, tripCardHtml } from '../js/hub-cards.js';
+import {
+  heroBackAnchorHtml,
+  navDayAnchorsHtml,
+  navSectionAnchorsHtml,
+  sectionIsVisible,
+} from '../js/nav.js';
 const DIST = 'dist';
 
 function esc(text) {
@@ -222,6 +230,52 @@ function chaptersHtml(items, tripId, themeMap) {
     .join('');
 }
 
+function fillEmptyDiv(html, id, className, inner) {
+  const re = new RegExp(
+    `<div\\b(?=[^>]*\\bid="${id}")(?=[^>]*\\bclass="${className}")[^>]*>\\s*</div>`
+  );
+  if (!re.test(html)) throw new Error(`prerender: empty #${id} not found`);
+  return html.replace(re, `<div id="${id}" class="${className}">${inner}</div>`);
+}
+
+function setDivHidden(html, id, hidden) {
+  const re = new RegExp(`<div\\b[^>]*\\bid="${id}"[^>]*>`);
+  if (!re.test(html)) throw new Error(`prerender: #${id} not found`);
+  return html.replace(re, (tag) => {
+    const without = tag.replace(/\s+hidden\b/g, '');
+    return hidden ? without.replace(/\s*>$/, ' hidden>') : without;
+  });
+}
+
+function injectTripNav(html, tripId, data) {
+  const sections = navSectionAnchorsHtml(tripId, (id) => sectionIsVisible(data, id));
+  let out = fillEmptyDiv(html, 'nav-container', 'nav-row nav-row--sections', sections);
+  const daysHtml = navDayAnchorsHtml(tripId, data.days || []);
+  if (daysHtml) {
+    out = fillEmptyDiv(out, 'nav-days', 'nav-row nav-row--days', daysHtml);
+  }
+  return out;
+}
+
+function injectHeroBack(html, tripId) {
+  if (html.includes('class="hero-back"')) return html;
+  const anchor = heroBackAnchorHtml(tripUrl(tripId), '返回行程');
+  const re = /<header\b[^>]*class="hero hero-stories"[^>]*>/;
+  if (!re.test(html)) throw new Error('prerender: hero-stories not found');
+  return html.replace(re, (tag) => `${tag}${anchor}`);
+}
+
+function injectHub(html, trips) {
+  const sorted = sortTrips(trips);
+  const upcoming = sorted.filter((t) => !tripIsPast(t));
+  const past = sorted.filter((t) => tripIsPast(t));
+  let out = fillEmptyDiv(html, 'hub-upcoming', 'hub-grid', upcoming.map(tripCardHtml).join(''));
+  out = fillEmptyDiv(out, 'hub-past', 'hub-grid', past.map(tripCardHtml).join(''));
+  out = setDivHidden(out, 'hub-upcoming-wrap', upcoming.length === 0);
+  out = setDivHidden(out, 'hub-past-wrap', past.length === 0);
+  return out;
+}
+
 function setBodyTheme(html, theme) {
   if (!theme) return html;
   return html.replace(/<body([^>]*)>/, (m, attrs) => {
@@ -259,6 +313,7 @@ function writeTripPages(tripId, data, templates) {
       /<div id="days-root"><\/div>/,
       `<div id="days-root">${daySections(data.days, tripId)}</div>`
     );
+    html = injectTripNav(html, tripId, data);
     writeFileSync(join(dir, 'index.html'), html);
   }
 
@@ -277,6 +332,7 @@ function writeTripPages(tripId, data, templates) {
       /<main id="stories-root" class="stories-chapters" aria-label="風土"><\/main>/,
       `<main id="stories-root" class="stories-chapters" aria-label="風土">${chaptersHtml(data.stories, tripId, THEME_STORY)}</main>`
     );
+    html = injectHeroBack(html, tripId);
     writeFileSync(join(dir, 'stories.html'), html);
   }
 
@@ -295,6 +351,7 @@ function writeTripPages(tripId, data, templates) {
       /<main id="food-root" class="stories-chapters" aria-label="飲食"><\/main>/,
       `<main id="food-root" class="stories-chapters" aria-label="飲食">${chaptersHtml(data.foods, tripId, THEME_FOOD)}</main>`
     );
+    html = injectHeroBack(html, tripId);
     writeFileSync(join(dir, 'food.html'), html);
   }
 }
@@ -327,6 +384,10 @@ function main() {
     writeTripPages(id, data, templates);
     n += 1;
   }
+  const indexPath = join(DIST, 'index.html');
+  if (!existsSync(indexPath)) throw new Error('prerender: dist/index.html missing');
+  const indexHtml = injectHub(readFileSync(indexPath, 'utf8'), manifest.trips);
+  writeFileSync(indexPath, indexHtml);
   console.log('prerender: wrote trip/stories/food HTML for', n, 'trips');
 }
 

@@ -9,7 +9,8 @@
     "build": "node scripts/gen-seo.mjs && vite build && node scripts/prerender-trips.mjs",
     "preview": "vite preview",
     "gen-seo": "node scripts/gen-seo.mjs",
-    "check": "node scripts/check.mjs"
+    "check": "node scripts/check.mjs",
+    "check:nav": "node scripts/check-nav.mjs"
   },
   "devDependencies": {
     "vite": "^7.3.0"
